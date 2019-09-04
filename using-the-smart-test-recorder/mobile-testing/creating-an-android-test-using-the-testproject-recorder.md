@@ -22,11 +22,11 @@ You can add an application in a few different ways. A very simple way to do this
 
 To select an application from your device, select it from the dropdown
 
-![Choose a Device](../../.gitbook/assets/image%20%2851%29.png)
+![Choose a Device](../../.gitbook/assets/image%20%2853%29.png)
 
 The App dropdown will then be populated with all the apps on the device you have chosen and you can select the application you want to use from the list. There is a search field that can be used to help you quickly find the application you are looking for
 
-![Select an Application](../../.gitbook/assets/image%20%2846%29.png)
+![Select an Application](../../.gitbook/assets/image%20%2847%29.png)
 
 Once you have picked the application you want to use and given it a name you can click on Finish to select that application for the test you are creating.
 
@@ -34,7 +34,7 @@ Once you have picked the application you want to use and given it a name you can
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers
 
-![Record a Test](../../.gitbook/assets/image%20%2848%29.png)
+![Record a Test](../../.gitbook/assets/image%20%2850%29.png)
 
 Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
 
@@ -48,7 +48,7 @@ You can repeat that for each test step that you want to recorded to quickly and 
 
 After completing the test creation you can simple click on the Save and Exit button to save your changes and your test is ready to use!
 
-![Save and Exit](../../.gitbook/assets/image%20%2853%29.png)
+![Save and Exit](../../.gitbook/assets/image%20%2855%29.png)
 
 ## Next Steps
 

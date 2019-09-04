@@ -10,7 +10,7 @@ Before you create your first web test, you will need to have a project that you 
 
 In order to create a project log into the TestProject application and click on the Add a new Project button:
 
-![Add new Project](../../.gitbook/assets/image%20%2835%29.png)
+![Add new Project](../../.gitbook/assets/image%20%2836%29.png)
 
 Give your project a name and description and then create it. TestProject will take you to the tests page for that project. From here you can do a few things. You can create tests, create jobs, add elements or add data sources for data driven tests and more!
 

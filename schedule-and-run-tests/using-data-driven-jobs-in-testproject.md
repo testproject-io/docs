@@ -38,7 +38,7 @@ Click on the Save button on the test step panel and you will now have your input
 
 In order to run a data driven test, you will need to create the data that you want to use and add it to the system. An easy way to get started with that is to go to the test you want to generate data for and use the more menu on it to download a Data Source Template.
 
-![Data Source Template](../.gitbook/assets/image%20%2834%29.png)
+![Data Source Template](../.gitbook/assets/image%20%2835%29.png)
 
 This will download a .csv file to your computer with headers for each of the parameters you have defined in your test. You can open the file in Excel or any other spreadsheet editing program and add in rows for each input you want to add.
 
