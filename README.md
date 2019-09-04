@@ -17,5 +17,5 @@ Test automation is about more than just using tools. There are ways of thinking 
 
  If you have any questions about any aspect of using TestProject we are always ready to help out. You can contact us through the built in chat that you will see on the bottom right hand side of our website and within the application itself as well. We also have a [forum](https://forum.testproject.io/)  where you can ask questions and interact withother tester using our product. You can also check the FAQ to see if your question is answered there. If you have any questions or are stuck on anything, please do reach out to us. We would love to be of ****assistance to you.  
 
-![TestProject Chat](.gitbook/assets/image%20%2812%29.png)
+![TestProject Chat](.gitbook/assets/image%20%2825%29.png)
 
