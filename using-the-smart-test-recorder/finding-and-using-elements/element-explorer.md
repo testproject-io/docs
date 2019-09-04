@@ -4,9 +4,9 @@ The TestProject Element Explorer can be used to view and examine the structure o
 
 You can access the element explorer when you recording a mobile test, by clicking on the Element Explorer button near the top of page.
 
-![Element Explorer](../../.gitbook/assets/image%20%2834%29.png)
+![Element Explorer](../../.gitbook/assets/image%20%2837%29.png)
 
 This will launch the explorer with a tree view of the application layout that you can drill into and interact with as you study the layout and structure of the application you are testing
 
-![Element Explorer](../../.gitbook/assets/image%20%2817%29.png)
+![Element Explorer](../../.gitbook/assets/image%20%2819%29.png)
 
