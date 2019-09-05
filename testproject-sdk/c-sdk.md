@@ -51,8 +51,7 @@ The *Execute()* method returns *ExecutionResult* enum which can be **PASSED** or
 
 Below are some examples for Test implementation on different platforms:
 
-<details><summary>Web Test</summary>
-<p>
+#### Web Test
 
 BasicTest class implements the *IWebTest* interface:
 
@@ -106,11 +105,7 @@ The following return statement will assert test result:
 return profilePage.Saved ? ExecutionResult.Passed : ExecutionResult.Failed;
 ```
 
-</p>
-</details>
-
-<details><summary>Android Test</summary>
-<p>
+#### Android Test
 
 BasicTest class implements the *IAndroidTest* interface:
 
@@ -156,11 +151,7 @@ The following return statement will assert test result:
 return profilePage.Saved ? ExecutionResult.Passed : ExecutionResult.Failed;
 ```
 
-</p>
-</details>
-
-<details><summary>iOS Test</summary>
-<p>
+#### iOS Test
 
 BasicTest class implements the *IIOSTest* interface:
 
@@ -206,11 +197,7 @@ The following return statement will assert test result:
 return profilePage.Saved ? ExecutionResult.Passed : ExecutionResult.Failed;
 ```
 
-</p>
-</details>
-
-<details><summary>Generic Test</summary>
-<p>
+#### Generic Test
 
 BasicTest class implements the *IGenericTest* interface:
 
@@ -233,11 +220,7 @@ if (a + b == 2)
     return ExecutionResult.Passed;
 else
     return ExecutionResult.Failed;
-
 ```
-
-</p>
-</details>
 
 ### Debugging / Running Test
 
@@ -248,58 +231,39 @@ Development token for authentication can be easily obtained from the [Developers
 It should be used as a parameter in one of the *Runner* factory methods:
 
 #### Web
+
 ```csharp
 var runner = RunnerFactory.Instance.CreateWeb("YOUR_DEV_TOKEN", AutomatedBrowserType.Chrome) // Use the BrowserName you need
 
-<details><summary>Android</summary>
-<p>
+#### Android
 
 ```csharp
 var runner = RunnerFactory.Instance.CreateAndroid("YOUR_DEV_TOKEN", "YOUR_EMULATOR_ID", "YOUR_APP_PACKAGE", "YOUR_ACTIVITY")
 ```
 
-</p>
-</details>
-
-<details><summary>Chrome on Android</summary>
-<p>
+#### Chrome on Android
 
 ```csharp
 var runner = RunnerFactory.Instance.CreateAndroidWeb("YOUR_DEV_TOKEN", "YOUR_EMULATOR_ID", BrowserName.Chrome) // Use the BrowserName you need
 ```
 
-</p>
-</details>
-
-<details><summary>iOS</summary>
-<p>
+#### iOS
 
 ```csharp
 var runner = RunnerFactory.Instance.CreateIOS("YOUR_DEV_TOKEN", "YOUR_IOS_DEVICE_ID", "YOUR_IOS_DEVICE_NAME", "YOUR_IOS_APP")
 ```
 
-</p>
-</details>
-
-<details><summary>Safari on iOS</summary>
-<p>
+#### Safari on iOS
 
 ```csharp
 var runner = RunnerFactory.Instance.CreateIOSWeb("YOUR_DEV_TOKEN", "YOUR_IOS_DEVICE_ID", "YOUR_IOS_DEVICE_NAME")
 ```
 
-</p>
-</details>
-
-<details><summary>Generic</summary>
-<p>
+#### Generic
 
 ```csharp
 var runner = RunnerFactory.Instance.Create("YOUR_DEV_TOKEN")
 ```
-
-</p>
-</details>
 
 ### Using parameters and step reports in your tests
 
@@ -381,8 +345,7 @@ Action class can also be decorated with the *[Action]* attribute to provide extr
 Interface implementation requires an implementation of the *Execute()* method, that will be be invoked by the platform to run the Action.\
 The *Execute()* method returns *ExecutionResult* enum which can be **PASSED** or **FAILED**.
 
-<details><summary>Web Action</summary>
-<p>
+#### Web Action
 
 ```csharp
 [Action(Name = "Clear Fields")]
@@ -416,11 +379,7 @@ foreach (IWebElement form in driver.FindElements(By.TagName("form")))
 return ExecutionResult.Passed;
 ```
 
-</p>
-</details>
-
-<details><summary>Android Action</summary>
-<p>
+#### Android Action
 
 ```csharp
 [Action(Name = "Clear Fields")]
@@ -440,11 +399,7 @@ foreach (AndroidElement element in helper.Driver.FindElements(By.ClassName("andr
     element.Clear();
 ```
 
-</p>
-</details>
-
-<details><summary>iOS Action</summary>
-<p>
+#### iOS Action
 
 ```csharp
 @Action(name = "Clear Fields")
@@ -467,11 +422,7 @@ for (IOSElement element : helper.Driver.findElements(By.className("XCUIElementTy
     element.clear();
 ```
 
-</p>
-</details>
-
-<details><summary>Generic Action</summary>
-<p>
+#### Generic Action
 
 ```csharp
 [Action(Name = "Addition", Description = "Add {{a}} to {{b}}")]
@@ -490,16 +441,11 @@ Action code performs an addition of values in two variables, assigning result to
 result = a + b;
 ```
 
-</p>
-</details>
-
-
 Actions run in context of a test and assume that required UI state is already in place.\
 When the action will be used in a test it will be represented as a single step, usually preceded by other steps.\
 However, when debugging it locally, preparations should be done using the *Runner* class to start from expected UI state:
 
-<details><summary>Web - State Preparation</summary>
-<p>
+#### Web - State Preparation
 
 ```csharp
 // Create Action
@@ -515,11 +461,7 @@ driver.FindElement(By.Id("password")).SendKeys("12345");
 runner.Run(action);
 ```
 
-</p>
-</details>
-
-<details><summary>Android - State Preparation</summary>
-<p>
+#### Android - State Preparation
 
 ```csharp
 // Create Action
@@ -534,11 +476,7 @@ driver.FindElement(By.Id("password")).SendKeys("12345");
 runner.Run(action);
 ```
 
-</p>
-</details>
-
-<details><summary>iOS - State Preparation</summary>
-<p>
+#### iOS - State Preparation
 
 ```csharp
 // Create Action
@@ -552,9 +490,6 @@ driver.FindElement(By.Id("password")).SendKeys("12345");
 // Run action
 runner.Run(action);
 ```
-
-</p>
-</details>
 
 #### Action Attributes
 
@@ -611,8 +546,7 @@ After the Addon is uploaded to TestProject platform this will be done via UI.
 Element Actions are made to be used on a specific Element Types.
 Element Types are defined in TestProject using XPath to describe target elements similarities:
 
-<details><summary>Web - Element Type</summary>
-<p>
+#### Web - Element Type
 
 It can be a simple definitions such as:
 
@@ -626,10 +560,7 @@ Or a more complex one, such as:
 //div[contains(@class, 'progressbar') and contains(@class, 'widget') and @role = 'progressbar']
 ```
 
-</p></details>
-
-<details><summary>Android - Element Type</summary>
-<p>
+#### Android - Element Type
 
 It can be a simple definitions such as:
 
@@ -643,10 +574,7 @@ Or a more complex one, such as:
 //android.support.v7.widget.RecyclerView[contains(@resource-id, 'my_view') and .//android.widget.TextView[not(contains(@resource-id, 'average_value'))]]
 ```
 
-</p></details>
-
-<details><summary>iOS - Element Type</summary>
-<p>
+#### iOS - Element Type
 
 It can be a simple definitions such as:
 
@@ -659,8 +587,6 @@ Or a more complex one, such as:
 ```xml
 //XCUIElementTypeSearchField[contains(@label = 'Categories')]
 ```
-
-</p></details>
 
 It is up to the Action developer how to narrow and limit the list of element types that the action developed will be applicable to.
 
@@ -692,7 +618,6 @@ See examples:
 * [Generic - Proxy Test](Generic/Test/TestProject.SDK.Examples.Generic.Tests/Tests/ProxyTest.cs)
 
 ## Packaging
-
 
 In order to upload your Addons or Tests to TestProject you must prepare either a *DLL* file or a *ZIP* file:\
 * If your package only depends on TestProject SDK, you can upload the built *DLL* file to TestProject UI.
