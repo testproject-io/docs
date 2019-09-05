@@ -247,15 +247,9 @@ Debugging or running a test locally with the *Runner* class, requires authentica
 Development token for authentication can be easily obtained from the [Developers](https://app.testproject.io/#/developers) page.
 It should be used as a parameter in one of the *Runner* factory methods:
 
-<details><summary>Web</summary>
-<p>
-
+#### Web
 ```csharp
 var runner = RunnerFactory.Instance.CreateWeb("YOUR_DEV_TOKEN", AutomatedBrowserType.Chrome) // Use the BrowserName you need
-```
-
-</p>
-</details>
 
 <details><summary>Android</summary>
 <p>
