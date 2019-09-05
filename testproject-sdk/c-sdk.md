@@ -27,6 +27,7 @@ You can download TestProject SDK for C# from the [Developers](https://app.testpr
 ## Test Development
 
 The best way to start developing automated tests with TestProject is by reviewing the source code of a basic test that performs a login and updates a profile form, expecting the save to succeed.\
+
 * [Web](Web/Test/TestProject.SDK.Examples.Web.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
 * [Android](Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
 * [iOS](IOS/Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
@@ -35,7 +36,9 @@ There is also a [Generic](Generic/Test/TestProject.SDK.Examples.Generic.Test/Tes
 It can be used as a reference for real scenarios that automate a non-UI sequences (those that do not require a Selenium or Appium driver).
 
 ### Build your first C# Project
+
 To begin, let's create a .Net Core project and add TestProject SDK as a reference:
+
 * Open Visual studio and create a new project
 * From the left side select ```Visual C# => .Net Core```. Then, select ```Class Library```
 * Once the project has been created, right-click the project and select ```Manage Nuget Packages...```.
@@ -94,7 +97,7 @@ loginPage.Login(name, password);
 // Initialize the properties of the profilePage with the driver
 var profilePage = new ProfilePage();
 PageFactory.InitElements(driver, profilePage);
-            
+
 // Complete profile forms and save it
 profilePage.UpdateProfile(country, address, email, phone);
 ```
@@ -322,6 +325,7 @@ Once created, Actions can be used to design steps of automated tests.
 
 To start developing an Addon a manifest file is required. The manifest is a descriptor of your Addon, it contains a unique GUID for the addon and a list of required permissions.\
 Create an Addon in the [Addons](https://app.testproject.io/#/addons/account) screen and download the generated manifest. Then, add the manifest to your package as follows:
+
 * If your addon consists of a single file (e.g. has no dependencies), add the manifest to your project root folder. Then, mark it as an embedded resource by opening the *Properties* panel and change *Build Action* to *Embedded Resource*.
 * If your addon consists of multiple files (e.g. has dependencies), add the manifest to the .zip file that you are going to upload to TestProject.
 
@@ -620,14 +624,15 @@ See examples:
 ## Packaging
 
 In order to upload your Addons or Tests to TestProject you must prepare either a *DLL* file or a *ZIP* file:\
+
 * If your package only depends on TestProject SDK, you can upload the built *DLL* file to TestProject UI.
 * If your package has other dependencies (e.g. DropBox API), Create a zip file from your project output (including dependencies, excluding TestProject SDK) and upload it to TestProject UI.
 
 Here's a simple example based on our [Web - Proxy Test](Web/Test/TestProject.SDK.Examples.Web.Tests/Tests/ProxyTest.cs) Example\
 To upload this test we will have to create a *ZIP* file containing 2 *DLL* files:
+
 * TestProject.SDK.Examples.Web.Tests.dll - This is the project output.
 * AddonProxy.dll - the addon proxy this test uses.
-
 
 We are currently working on tools to make deployment easier for you. Stay tuned!
 
