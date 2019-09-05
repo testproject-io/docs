@@ -1,7 +1,3 @@
-# C\# SDK
-
-# TestProject C# SDK
-
 This repository contains code examples based on TestProject C# SDK.
 
 ## Briefing
