@@ -10,7 +10,7 @@ This tutorial will work off of a simple login test using the TestProject [sample
 
 Once you have a test setup, the first thing you will need to do is to parameterize the variable that you want to use to drive the test. In this example that will be in the input to the full name field of the login form. To do that open the test in the test editor by clicking on it in the project view. You can then open the parameters panel for that test from the more menu.
 
-![Access Test Parameters](../.gitbook/assets/image%20%2824%29.png)
+![Access Test Parameters](../.gitbook/assets/image%20%2825%29.png)
 
 You can then add a new parameter with the plus button at the bottom of the panel.
 
@@ -38,7 +38,7 @@ Click on the Save button on the test step panel and you will now have your input
 
 In order to run a data driven test, you will need to create the data that you want to use and add it to the system. An easy way to get started with that is to go to the test you want to generate data for and use the more menu on it to download a Data Source Template.
 
-![Data Source Template](../.gitbook/assets/image%20%2835%29.png)
+![Data Source Template](../.gitbook/assets/image%20%2837%29.png)
 
 This will download a .csv file to your computer with headers for each of the parameters you have defined in your test. You can open the file in Excel or any other spreadsheet editing program and add in rows for each input you want to add.
 
@@ -46,7 +46,7 @@ This will download a .csv file to your computer with headers for each of the par
 
 Once you have added the data that you want you can save the file as a .csv file again and upload it back into the TestProject app. To do that, go to the Data Sources menu option and choose to Add a data file.
 
-![Add a data file](../.gitbook/assets/image%20%2822%29.png)
+![Add a data file](../.gitbook/assets/image%20%2823%29.png)
 
 Choose the .csv file you created and give it a name on click on Create. This will add the file to the system as an input source that you can use
 
