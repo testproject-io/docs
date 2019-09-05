@@ -1,6 +1,6 @@
 # Introduction to Mobile Testing
 
-Creating and running tests on mobile platforms can be difficult and time consuming. However, these tests are often very important to the ongoing success of a project. With the TestProject agent installed, the ability to create and run mobile tests, becomes as easy as connecting a mobile device to your computer and using the TestProject Recorder to create the tests you want.  TestProject supports both [android ](creating-an-android-test-using-the-testproject-recorder.md)and [iOS ](creating-an-ios-test-using-the-testproject-recorder.md)devices
+Creating and running tests on mobile platforms can be difficult and time consuming. However, these tests are often very important to the ongoing success of a project. With the TestProject agent installed, the ability to create and run mobile tests, becomes as easy as connecting a mobile device to your computer and using the TestProject Recorder to create the tests you want. TestProject supports both [android ](creating-an-android-test-using-the-testproject-recorder.md)and [iOS ](creating-an-ios-test-using-the-testproject-recorder.md)devices
 
 ## Getting Ready
 

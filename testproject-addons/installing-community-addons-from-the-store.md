@@ -1,6 +1,6 @@
 # Installing Community Addons from the store
 
-In order to install addons that the community has shared, you need to be logged into your TestProject account.  You can then navigate to the Addons [page ](https://app.testproject.io/#/addons/community)where you can find the addon that you want.  You can browse through them or use the search option to search for an addon that has the commands you want.
+In order to install addons that the community has shared, you need to be logged into your TestProject account. You can then navigate to the Addons [page ](https://app.testproject.io/#/addons/community)where you can find the addon that you want. You can browse through them or use the search option to search for an addon that has the commands you want.
 
 ![Addon Search](../.gitbook/assets/image%20%2855%29.png)
 

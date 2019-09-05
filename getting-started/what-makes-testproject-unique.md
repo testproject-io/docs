@@ -1,8 +1,8 @@
 # What Makes TestProject Unique
 
-With so many testing tools out there, why use this one? Well TestProject offers a few things that no other test automation platform has. For example TestProject is a first of its kind community powered test automation framework. No other automation platform out there gives you the ability to extend the framework by using addons shared by others on the platform.
+With so many testing tools out there, why use this one? Well, TestProject offers a few things that no other test automation platform has. For example TestProject is the first of its kind community powered test automation framework. No other automation platform out there gives you the ability to extend the framework by using addons shared by others on the platform.
 
-TestProject is also the first free SaaS test automation development framework designed for agile teams! It is built on top of industry standard open source tools, supports all major operating systems, and most importantly it enables a team first approach to test automation that makes it easy for every member of your software team to test Web, Android and iOS apps, effortlessly. Using TestProject’s testing repository, teams can easily collaborate, all while locally creating, running and analyzing their test automation. 
+TestProject is also the first free SaaS test automation development framework designed for agile teams! It is built on top of industry standard open source tools, supports all major operating systems, and most importantly it enables a team first approach to test automation that makes it easy for every member of your software team to test Web, Android and iOS apps effortlessly. Using TestProject’s testing repository, teams can easily collaborate, all while locally creating, running and analyzing their test automation. 
 
 Another thing that makes TestProject stand out is the advanced built-in recording capabilities. TestProject has made it easy to share recorded steps between test cases and has made it so that anyone can create simple and useful tests without needing coding experience.
 

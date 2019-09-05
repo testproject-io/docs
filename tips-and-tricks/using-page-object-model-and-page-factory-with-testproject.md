@@ -20,12 +20,11 @@ This let's you re-use the same login test in multiple tests which means that if 
 
 ## Page Object in Coded Tests
 
-The Page object model is of course well suited to coded tests. This section will walk you through and example of how you can use the page object model in an android test ****written in Java.
+The Page object model is of course well suited to coded tests. This section will walk you through an example of how you can use the page object model in an android test ****written in Java.
 
 ### **Build your First Test with Appium**
 
-Let’s start by learning how to create a “plain” Appium automated test for Android.  
-The code below automates the TestProject Demo app. You can download its [APK](https://github.com/testproject-io/android-demo-app/tree/master/APK) or view the [complete source code](https://github.com/testproject-io/android-demo-app).
+Let’s start by learning how to create a “plain” Appium automated test for Android. The code below automates the TestProject Demo app. You can download its [APK](https://github.com/testproject-io/android-demo-app/tree/master/APK) or view the [complete source code](https://github.com/testproject-io/android-demo-app).
 
 To start the automation, the test prepares Android driver capabilities with all the required information about the device under test \(DUT\) and App under test \(AUT\). Then, using these capabilities, it initiates the Android driver that will be used to invoke various Appium actions on the mobile application. To perform the actions, Appium must identify the elements it interacts with. To do so, it uses various location strategies.
 

@@ -38,7 +38,7 @@ During recording you can conveniently use the TestProject [Element Inspector](..
 
 ![Element Inspector and Locator](https://blog.testproject.io/wp-content/uploads/2018/06/iOS-Element-Locator-512x441.png)
 
-Action that you perform on the mirror device will be added as steps in your test and you can quickly and easily build the test that you need. 
+Actions that you perform on the mirror device will be added as steps in your test and you can quickly and easily build the test that you need. 
 
 ## Next Steps
 

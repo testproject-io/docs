@@ -1,6 +1,6 @@
 # Organizing and Managing Test Data
 
-Test Data is important to any test automation effort, but as an application gets bigger and more tests are added, test data management becomes more difficult. Management of test data is important to any successful test automation project. There are a few tools that you can use within TestProject to help with this.
+Test Data is important to any test automation effort, but as an application gets bigger and more tests are added, test data management becomes more difficult. There are a few tools that you can use within TestProject to help with this.
 
 ## Elements
 
@@ -18,13 +18,13 @@ Keeping structure and organization like this in place will help make test mainte
 
 ## Tests
 
-Tests themselves are an important part of the data that needs to be maintained in a test automation initiative. As with elements, tests can also be organized and placed into folders. You can use this to structure tests into logical areas that make it easy to decide which tests to run and to setup and [schedule ](../schedule-and-run-tests/create-and-schedule-jobs.md)them into the jobs that you want
+Tests themselves are an important part of the data that needs to be maintained in a test automation initiative. As with elements, tests can also be organized and placed into folders. You can use this to structure tests into logical areas that make it easy to decide which tests to run and to setup and [schedule ](../schedule-and-run-tests/create-and-schedule-jobs.md)them into the jobs that you want.
 
 ![Test Folders](../.gitbook/assets/image%20%2836%29.png)
 
-In the same was as with elements, tests can be moved to different folder by either using the drag and drop mechanism, or by using the Move to folder option on the more menu for the test. 
+In the same way as with elements, tests can be moved to different folder by either using the drag and drop mechanism, or by using the Move to folder option on the more menu for the test. 
 
 ## Parameters
 
-TestProject makes it very easy to parameterize tests and so it is important to consider how to manage and organize parameters within the system. Parameters can be setup and either the test level or the project level. More details on how to effectively use them can be found in the section of the documentation on the [effective use of parameters](using-parameters-effectively.md)
+TestProject makes it very easy to parameterize tests and so it is important to consider how to manage and organize parameters within the system. Parameters can be setup and either the test level or the project level. More details on how to effectively use them can be found in the section of the documentation on the [effective use of parameters](using-parameters-effectively.md).
 

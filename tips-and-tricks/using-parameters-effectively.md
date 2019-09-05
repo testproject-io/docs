@@ -8,7 +8,7 @@ You can see and manage all the parameters for a test by clicking on the test in 
 
 ![Access Test Parameters](../.gitbook/assets/image%20%2827%29.png)
 
-This will open the parameters panel for you where you can view, edit, add or remove parameters for the test. Parameters can be created that are only for the particular test you are working on, or they can be created at the project level so that you can use the same parameter in multiple tests. You can then add a new parameter with the plus button at the bottom of the panel.
+This will open the parameters panel for you where you can view, edit, add or remove parameters for the test. Parameters can be created that are only for the particular test you are working on, or they can be created at the project level so that you can use the same parameter in multiple tests. You can add a new parameter with the plus button at the bottom of the panel.
 
 ![Add New Parameter](../.gitbook/assets/image%20%2815%29.png)
 
@@ -40,7 +40,7 @@ This will add the parameter as a variable in the input field and you can click o
 
 ![Apply Changes](../.gitbook/assets/image%20%2819%29.png)
 
-Click on the Save button on the test step panel and you will now have your input field parameterized. You can use multiple parameters in one input field by clicking on them in the list. You can also include non-parameterized values with parameters in the same field if you want. For example, you could parameterize both the first name and last name values and us a manually entered string like Mr. all in the same input field
+Click on the Save button on the test step panel and you will now have your input field parameterized. You can use multiple parameters in one input field by clicking on them in the list. You can also include non-parameterized values with parameters in the same field if you want. For example, you could parameterize both the first name and last name values and use a manually entered string like Mr. all in the same input field
 
 ![Multiple Parameters](../.gitbook/assets/image%20%2832%29.png)
 

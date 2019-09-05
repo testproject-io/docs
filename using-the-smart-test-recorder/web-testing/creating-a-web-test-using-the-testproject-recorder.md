@@ -36,7 +36,7 @@ This will open a new instance of your browser and start recording. If a new inst
 
 ## Step 3 - Add Test Steps
 
-Now that the example web application is open in the test recorder you can start adding test steps to the test. The example will walk through adding steps to do a login workflow. The first thing will be to put in a user name. To do this, simply mouse over the Full Name field and click on it.  You will notice that when you click a step is automatically added to the test
+Now that the example web application is open in the test recorder you can start adding test steps to the test. This example will walk through adding steps to do a login workflow. The first thing will be to put in a user name. To do this, simply mouse over the Full Name field and click on it.  You will notice that when you click a step is automatically added to the test
 
 ![Test Step Added](../../.gitbook/assets/image%20%2853%29.png)
 
@@ -48,11 +48,11 @@ You can then repeat this for the password field. First click on the field and th
 
 ## Step 4 - Adding Validation
 
-Being able to create test steps that send commands to a web page is very powerful, but testers also need to be able to validate that a site is doing the correct thing. In this example you will validate that the second page of the form is using the name you entered on the first page. To do this you can mouse over the name on the page and then hit shift twice quickly \(Double Shift\) to freeze the element
+Being able to create test steps that send commands to a web page is very powerful, but testers also need to be able to validate that a site is doing the correct thing. In this example you will validate that the second page of the form is using the name you entered on the first page. To do this you can mouse over the name on the page and then hit shift twice quickly \(Double Shift\) to freeze the element.
 
 ![Mouse Over Name](../../.gitbook/assets/image%20%2833%29.png)
 
-Doing this will bring up a menu with a few options. Since you are trying to validate something, you will choose the Validations option. Just mouse over that to bring up the validation options. For this validation you can use the Contains Text? option by clicking on it.
+Doing this will bring up a menu with a few options. Since you are trying to validate something, you will choose the Validations option. Just mouse over that to bring up the available options. For this validation you can use the Contains Text? option by clicking on it.
 
 ![Contains Text](../../.gitbook/assets/image%20%2839%29.png)
 
@@ -60,7 +60,7 @@ This will open the create step panel where you can type in the text that you exp
 
 ![Create Validation step](../../.gitbook/assets/image%20%2847%29.png)
 
-And with that you have created your first web test!  You can close down the browser window and the test will be saved into you project, ready for you to run.
+And with that you have created your first web test!  You can close down the browser window and the test will be saved into your project, ready for you to run.
 
 ## Next Steps
 
