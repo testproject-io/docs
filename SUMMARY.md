@@ -38,6 +38,12 @@
 * [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
 * [Using Data Driven Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
 
+## TestProject SDK
+
+* [Overview](testproject-sdk/overview.md)
+* [Java SDK](testproject-sdk/java-sdk.md)
+* [C\# SDK](testproject-sdk/c-sdk.md)
+
 ## Tips and Tricks
 
 * [Using Page object model and Page Factory with TestProject](tips-and-tricks/using-page-object-model-and-page-factory-with-testproject.md)
