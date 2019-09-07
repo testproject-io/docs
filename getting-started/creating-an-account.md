@@ -6,7 +6,7 @@ In order to use TestProject, you will need to have an account.  Creating an acco
 
 On the signup page, enter in your email address, name and password along with your company name if you want. Once you agree to the license terms and click on the signup button, you will have your free account ready to use!
 
-![Sign Up Form](../.gitbook/assets/signupform.PNG)
+![Sign up form](../.gitbook/assets/sign-up-form.PNG)
 
 After signing in, you will need to install and setup an agent so that you can start using the powerful features TestProject has to offer
 
