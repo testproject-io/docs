@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome to TestProject!](README.md)
-* [Untitled](untitled.md)
+* [Test Page](untitled.md)
 
 ## Getting Started
 
