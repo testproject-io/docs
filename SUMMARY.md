@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome to TestProject!](README.md)
-* [API TEST](api-test.md)
 
 ## Getting Started
 
