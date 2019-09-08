@@ -44,6 +44,10 @@
 * [Java SDK](testproject-sdk/java-sdk.md)
 * [C\# SDK](testproject-sdk/c-sdk.md)
 
+## TestProject API <a id="api"></a>
+
+* [RESTful API v2](api/v2.md)
+
 ## Tips and Tricks
 
 * [Using Page object model and Page Factory with TestProject](tips-and-tricks/using-page-object-model-and-page-factory-with-testproject.md)
