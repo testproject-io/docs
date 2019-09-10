@@ -55,3 +55,12 @@
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
 
+## Releases
+
+* [v0.54](releases/v0.54.md)
+* [v0.53](releases/v0.53.md)
+* [v0.52](releases/v0.52.md)
+* [v0.51](releases/v0.51.md)
+* [v0.50](releases/v0.50.md)
+* [v0.49](releases/v0.49.md)
+
