@@ -2,7 +2,7 @@
 
 Welcome to the home of the TestProject documentation! You will find here resources to guide you as you learn how to use this test automation tool. TestProject is a powerful automation solution that aims to simplify your test automation experience. It also enables a full team approach to quality by enabling effective collaboration on test automation solutions. 
 
-It provides users with powerful record and playback capabilities along with a developer SKD and the ability to use and create addons to extend the capabilities as needed. TestProject is built on top of open source automation tools like selenium and appium, but it removes the complexity of managing and installing drivers for each platform and browser that you need to test. With the installation of single executable you have the ability to use all browsers and devices on a computer and you can instantly start recording, creating and executing tests
+It provides users with powerful record and playback capabilities along with a developer SDK and the ability to use and create addons to extend the capabilities as needed. TestProject is built on top of open source automation tools like Selenium and Appium, but it removes the complexity of managing and installing drivers for each platform and browser that you need to test. With the installation of single executable you have the ability to use all browsers and devices on a computer and you can instantly start recording, creating and executing tests
 
 TestProject is a community driven tool and has a free forever plan that is fully featured and that you can get started with in moments. Our documentation will help you with all the details you need to use TestProject to create effective test automation that your whole team can use. 
 
