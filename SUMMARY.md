@@ -57,6 +57,7 @@
 
 ## Releases
 
+* [v0.55](releases/v0.55.md)
 * [v0.54](releases/v0.54.md)
 * [v0.53](releases/v0.53.md)
 * [v0.52](releases/v0.52.md)
