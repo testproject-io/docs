@@ -2,7 +2,9 @@
 
 ## Briefing
 
-This document describes the bare minimum steps to start developing tests using the Java SDK. TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source Selenium and Appium frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more.
+This document describes the bare minimum steps to start developing tests using the Java SDK. TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source [Selenium](https://www.seleniumhq.org/) and [Appium](http://appium.io/) frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more.
+
+> This documentation and code examples can be found in our [GitHub repository](https://github.com/testproject-io/java-sdk-examples).
 
 ## JDK / JRE
 

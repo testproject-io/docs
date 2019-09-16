@@ -6,6 +6,8 @@ This repository contains code examples based on TestProject C\# SDK.
 
 This document describes the bare minimum steps to start developing tests using the C\# .Net Core SDK. TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source Selenium and Appium frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more. TestProject's C\# SDK adds several features not present in .Net Core such as Page Object support via PageFactory.
 
+> This documentation and code examples can be found in our [GitHub repository](https://github.com/testproject-io/csharp-sdk-examples).
+
 ## Minimum Requirements
 
 * In order to develop TestProject C\# tests/addons, you must have .Net Core SDK version v2.1 or greater \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
