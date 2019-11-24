@@ -26,9 +26,9 @@ You can download TestProject SDK for C\# from the [Developers](https://app.testp
 
 The best way to start developing automated tests with TestProject is by reviewing the source code of a basic test that performs a login and updates a profile form, expecting the save to succeed.\
 
-* [Web](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Web/Test/TestProject.SDK.Examples.Web.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
-* [Android](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
-* [iOS](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/IOS/Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
+* [Web](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
+* [Android](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
+* [iOS](https://github.com/testproject-io/csharp-sdk-examples/blob/master/IOS/Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
 
 There is also a [Generic](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Generic/Test/TestProject.SDK.Examples.Generic.Test/Test/BasicTest.cs) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
 
