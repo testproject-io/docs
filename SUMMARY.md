@@ -55,7 +55,6 @@
 * [Organizing and Managing Test Data](tips-and-tricks/organizing-and-managing-test-data.md)
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
-* [Element Mangement](tips-and-tricks/element-mangement.md)
 
 ## Releases
 
@@ -66,7 +65,4 @@
 * [v0.51](releases/v0.51.md)
 * [v0.50](releases/v0.50.md)
 * [v0.49](releases/v0.49.md)
-* [Integration to Slack](integration-to-slack.md)
-* [Integration with Jenkins](integration-with-jenkins.md)
-* [Setting up Email Notification](setting-up-email-notification.md)
 
