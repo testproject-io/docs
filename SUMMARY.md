@@ -11,7 +11,6 @@
 * [Supported Environments](getting-started/supported-environments.md)
 * [Getting started with iOS testing from Windows](getting-started/getting-started-with-ios-testing-from-windows.md)
 * [FAQs](getting-started/faqs.md)
-* [Untitled](getting-started/untitled.md)
 
 ## Create Your First Test <a id="using-the-smart-test-recorder"></a>
 
@@ -45,6 +44,12 @@
 * [Java SDK](testproject-sdk/java-sdk.md)
 * [C\# SDK](testproject-sdk/c-sdk.md)
 
+## TestProject Integrations
+
+* [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
+* [Integration to Slack](testproject-integrations/integration-to-slack.md)
+* [Integration with Jenkins](testproject-integrations/integration-with-jenkins.md)
+
 ## TestProject API <a id="api"></a>
 
 * [RESTful API v2](api/v2.md)
@@ -55,6 +60,7 @@
 * [Organizing and Managing Test Data](tips-and-tricks/organizing-and-managing-test-data.md)
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
+* [Element Mangement](tips-and-tricks/element-mangement.md)
 
 ## Releases
 
