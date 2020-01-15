@@ -65,6 +65,7 @@
 
 ## Releases
 
+* [v0.60](releases/v0.60.md)
 * [v0.59](releases/v0.59.md)
 * [v0.58](releases/v0.58.md)
 * [v0.57](releases/v0.57.md)
