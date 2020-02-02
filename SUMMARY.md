@@ -50,6 +50,7 @@
 * [Integration to Slack](testproject-integrations/integration-to-slack.md)
 * [Integration with Jenkins](testproject-integrations/integration-with-jenkins.md)
 * [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
+* [BrowserStack Integration](testproject-integrations/browserstack-integration.md)
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
 
 ## TestProject API <a id="api"></a>
