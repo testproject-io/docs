@@ -14,12 +14,12 @@ Users can choose from more than 1,200 on-demand real mobile devices, browsers an
 
 Integrating TestProject with BrowserStack allows you and your teammates to run your automation on many different devices and browsers that are provided by the BrowserStack cloud. This means that you can, for example, test your app compatibility on many variations of **Operating Systems - Browser versions - Devices** without having to setup complicated test matrices.
 
-## Setting Up BrowserStack  Integration
+## Setting Up BrowserStack Integration
 
 ### Requirements
 
 * [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free forever plan [here](https://app.testproject.io/signup/).
-* [**BrowserStack**](https://www.browserstack.com/) account - To utilize BrowserStack cloud you need an account. If you don't already have one, just visit [here ](https://saucelabs.com/sign-up)to create a free trial.
+* [**BrowserStack**](https://www.browserstack.com/) account - To utilize BrowserStack cloud you need an account. If you don't already have one, just visit [here](https://www.browserstack.com/users/sign_up) to create a free trial.
 
 ### Get BrowserStack Username & Access Key
 
