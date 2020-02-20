@@ -10,6 +10,11 @@
 * [Installation and Setup](getting-started/installation-and-setup.md)
 * [Supported Environments](getting-started/supported-environments.md)
 * [Getting started with iOS testing from Windows](getting-started/getting-started-with-ios-testing-from-windows.md)
+* [Create a Test Step](getting-started/create-a-test-step/README.md)
+  * [Steps Widget](getting-started/create-a-test-step/steps-widget.md)
+  * [Using Parameters in Test Steps](getting-started/create-a-test-step/using-parameters-in-test-steps.md)
+* [Available Actions](getting-started/available-actions.md)
+* [Available Validations](getting-started/available-validations.md)
 * [FAQs](getting-started/faqs.md)
 
 ## Create Your First Test <a id="using-the-smart-test-recorder"></a>
@@ -53,6 +58,11 @@
 * [BrowserStack Integration](testproject-integrations/browserstack-integration.md)
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
 
+## TestProject Agents
+
+* [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
+* [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
+
 ## TestProject API <a id="api"></a>
 
 * [RESTful API v2](api/v2.md)
@@ -64,6 +74,16 @@
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
 * [Element Mangement](tips-and-tricks/element-mangement.md)
+* [Best Practices for Element Locators](tips-and-tricks/best-practices-for-element-locators.md)
+* [How to Deal with Dynamic Elements](tips-and-tricks/how-to-deal-with-dynamic-elements.md)
+* [Creating automation building blocks with TestProject](tips-and-tricks/creating-automation-building-blocks-with-testproject.md)
+* [Expanding UI Automation Capabilities with Javascript](tips-and-tricks/expanding-ui-automation-capabilities-with-javascript.md)
+* [Using TestProject with iFrames](tips-and-tricks/using-testproject-with-iframes.md)
+* [How to Execute Tests from Outside the Test Recorder](tips-and-tricks/how-to-execute-tests-from-outside-the-test-recorder.md)
+* [Create Tests with Random Data](tips-and-tricks/create-tests-with-random-data.md)
+* [Performing Operations only on Visible Elements](tips-and-tricks/performing-operations-only-on-visible-elements.md)
+* [Deploy new APK/IPA with TestProject APIs](tips-and-tricks/extending-testproject-recorder-capabilities-for-dedicated-elements.md)
+* [Image Comparison in TestProject](tips-and-tricks/image-comparison-in-testproject.md)
 
 ## Releases
 

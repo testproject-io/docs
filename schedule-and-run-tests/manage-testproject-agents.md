@@ -4,7 +4,7 @@ TestProject agents allows you to create and run tests on local machine. They are
 
 If you want to restrict your agent to only be accessible for you, you can go to the agents tab and find your agent in the list and disable the Public Agent option.
 
-![Disable Public Agent](../.gitbook/assets/image%20%2825%29.png)
+![Disable Public Agent](../.gitbook/assets/image%20%2842%29.png)
 
 You can turn this option on and off as needed and so control how each agent is used. 
 
