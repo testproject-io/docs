@@ -10,8 +10,8 @@ This document describes the bare minimum steps to start developing tests using t
 
 ## Minimum Requirements
 
-* In order to develop TestProject C\# tests/addons, you must have .Net Core SDK version v2.1 or greater \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
-* In order to execute C\# tests/addons, you must have .Net Runtime v2.1 or greater \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
+* In order to develop TestProject C\# tests/addons, you must have .Net Core SDK version **v2.1** \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
+* In order to execute C\# tests/addons, you must have .Net Runtime **v2.1** \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
 * If you are developing with visual studio, you must use Visual Studio 2017 \(Can be downloaded [here](https://visualstudio.microsoft.com/downloads/)\)
 
 ## Preparations
@@ -24,7 +24,7 @@ You can download TestProject SDK for C\# from the [Developers](https://app.testp
 
 ## Test Development
 
-The best way to start developing automated tests with TestProject is by reviewing the source code of a basic test that performs a login and updates a profile form, expecting the save to succeed.\
+The best way to start developing automated tests with TestProject is by reviewing the source code of a basic test that performs a login and updates a profile form, expecting the save to succeed.
 
 * [Web](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
 * [Android](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
