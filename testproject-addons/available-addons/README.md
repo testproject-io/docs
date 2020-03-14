@@ -4,7 +4,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 
 | Addons: |
 | :--- |
-| Shell Commands |
+| [Shell Commands](https://docs.testproject.io/testproject-addons/available-addons/shell-commands) |
 | [Android Monkey](android-monkey-addon.md) |
 | [Android Permissions Manager](android-permissions-manager-addon.md) |
 | [Element Extensions](element-extensions-addon.md) |
