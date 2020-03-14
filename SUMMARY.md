@@ -36,6 +36,23 @@
 * [What is an Addon?](testproject-addons/what-is-an-addon.md)
 * [Installing Community Addons from the store](testproject-addons/installing-community-addons-from-the-store.md)
 * [Using Addons in the TestProject Recorder](testproject-addons/using-addons-in-the-testproject-recorder.md)
+* [Available Addons](testproject-addons/available-addons/README.md)
+  * [Android Monkey Addon](testproject-addons/available-addons/android-monkey-addon.md)
+  * [Android Permissions Manager Addon](testproject-addons/available-addons/android-permissions-manager-addon.md)
+  * [Element Extensions Addon](testproject-addons/available-addons/element-extensions-addon.md)
+  * [Generic Extensions Addon](testproject-addons/available-addons/generic-extensions-addon.md)
+  * [Geolocation Utils Addon](testproject-addons/available-addons/geolocation-utils-addon.md)
+  * [Image Comparison Addon](testproject-addons/available-addons/image-comparison-addon.md)
+  * [JS Actions Addon](testproject-addons/available-addons/js-actions-addon.md)
+  * [Live Currency Converter Addon](testproject-addons/available-addons/live-currency-converter-addon.md)
+  * [Mobile Extensions Addon](testproject-addons/available-addons/mobile-extensions-addon.md)
+  * [Parameters Operations Addon](testproject-addons/available-addons/parameters-operations-addon.md)
+  * [Reporting Utilities Addon](testproject-addons/available-addons/reporting-utilities-addon.md)
+  * [RESTful API Client Addon](testproject-addons/available-addons/restful-api-client-addon.md)
+  * [Scroll to Element Addon](testproject-addons/available-addons/scroll-to-element-addon.md)
+  * [Slack Actions Addon](testproject-addons/available-addons/slack-actions-addon.md)
+  * [Swipe and Find Element addon](testproject-addons/available-addons/swipe-and-find-element-addon.md)
+  * [Web Extensions Addon](testproject-addons/available-addons/web-extensions-addon.md)
 
 ## Schedule and Run Tests
 

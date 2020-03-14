@@ -1,0 +1,4 @@
+# Parameters Operations Addon
+
+One of the most powerful concepts in TestProject is that of [parameters](../../getting-started/create-a-test-step/using-parameters-in-test-steps.md). The Parameters Operations addon contains an action that assigns a value into a new or existing parameter. You can use this action to change the parameter's value dynamically during the execution or to create a new parameter dynamically.  Parameters can be used to set [data driven tests](../../schedule-and-run-tests/using-data-driven-jobs-in-testproject.md), but by default they are static. This addon allows you to deal with them in dynamic ways and to manipulate and change them at will. 
+
