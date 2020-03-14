@@ -1,16 +1,17 @@
 # Available Addons
 
-There are many addons available in TestProject. Most of these addons are straightforward to use, but if further information is needed, you can follow the links below to get more details on how each addons works and why you might use it
+There are many [Addons](https://addons.testproject.io/) available in TestProject. Most of these Addons are straightforward to use, but if further information is needed, you can follow the links below to get more details on how each Addon works and why you might use it.
 
-| Addon: |
+| Addons: |
 | :--- |
+| Shell Commands |
 | [Android Monkey](android-monkey-addon.md) |
 | [Android Permissions Manager](android-permissions-manager-addon.md) |
 | [Element Extensions](element-extensions-addon.md) |
 | [Generic Extensions](generic-extensions-addon.md) |
 | [Geolocation Utils](geolocation-utils-addon.md) |
 | [Image Comparison](image-comparison-addon.md) |
-| [Js Actions](js-actions-addon.md) |
+| [JS Actions](js-actions-addon.md) |
 | [Live Currency Converter](live-currency-converter-addon.md) |
 | [Mobile Extensions](mobile-extensions-addon.md) |
 | [Parameters Operations](parameters-operations-addon.md) |
@@ -21,9 +22,8 @@ There are many addons available in TestProject. Most of these addons are straigh
 | [Swipe and Find Element](swipe-and-find-element-addon.md) |
 | [Web Extensions](web-extensions-addon.md) |
 | Web Touch Gestures |
-|  |
 | Random Values From CSV File |
-| Csv Operations |
+| CSV Operations |
 | Deep Link Toolkit |
 | Google Authenticaor OTP Automation |
 | Visible Element Operations |

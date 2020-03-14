@@ -37,6 +37,7 @@
 * [Installing Community Addons from the store](testproject-addons/installing-community-addons-from-the-store.md)
 * [Using Addons in the TestProject Recorder](testproject-addons/using-addons-in-the-testproject-recorder.md)
 * [Available Addons](testproject-addons/available-addons/README.md)
+  * [Shell Commands](testproject-addons/available-addons/shell-commands.md)
   * [Android Monkey Addon](testproject-addons/available-addons/android-monkey-addon.md)
   * [Android Permissions Manager Addon](testproject-addons/available-addons/android-permissions-manager-addon.md)
   * [Element Extensions Addon](testproject-addons/available-addons/element-extensions-addon.md)
