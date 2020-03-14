@@ -50,7 +50,9 @@ In this example, we’ll create a new folder within a folder on our macOS deskto
 
 ![Execute Shell Command Action in the TestProject Recorder Step Widget](../../.gitbook/assets/shell-commands-addon-macos1.png)
 
-Once we complete our test run, we'll be able to see the new folder at the desired location.
+Once we complete our test run, we'll be able to see the new folder at the desired location:
+
+![New folder created on our macOS desktop](../../.gitbook/assets/shell-commands-addon-macos2.png)
 
 
 
