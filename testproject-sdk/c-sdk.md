@@ -609,6 +609,6 @@ We are currently working on tools to make deployment easier for you. Stay tuned!
 
 For any further inquiries, please use TestProject support channels:
 
-* [Forum](https://forum.testproject.io/index.php/board,11.0.html)
-* [Help Desk](https://support.testproject.io/)
+* [Forum](https://forum.testproject.io/)
+* Chat built-in the platform
 
