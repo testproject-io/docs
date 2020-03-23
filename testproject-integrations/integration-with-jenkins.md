@@ -1,4 +1,4 @@
-# Integration with Jenkins
+# Jenkins Integration
 
 ## Installing TestProject Jenkins Plugin
 
@@ -12,11 +12,11 @@ That’s it! After a few seconds, the plugin will be installed in your Jenkins s
 
 In order to integrate with TestProject, you will need an API key that your Jenkins server will use to trigger your automation jobs. In order to do that, open the TestProject application and go to the Integration tab and select the API option
 
-![TestProject API](../.gitbook/assets/image%20%28115%29.png)
+![TestProject API](../.gitbook/assets/image%20%28116%29.png)
 
 From there you can create a new API key and set the access you want Jenkins to have. API keys can have unrestricted access which means that they can be used in any project or they can be scoped to only have access to specific projects.
 
-![Manage API Access](../.gitbook/assets/image%20%2875%29.png)
+![Manage API Access](../.gitbook/assets/image%20%2876%29.png)
 
 After the new API key has been created, copy it and head back to your Jenkins server.
 
@@ -37,13 +37,13 @@ After installing the TestProject Jenkins plugin, generating an API key and confi
 
 In order to run a TestProject job remotely, you will need the **Project ID** and the **Job ID** of the job you want to run. These IDs are unique strings and can be found in the TestProject application. To get the Project ID, just navigate to the homepage and copy the ID from the project’s context menu. 
 
-![Project ID](../.gitbook/assets/image%20%28157%29.png)
+![Project ID](../.gitbook/assets/image%20%28159%29.png)
 
 
 
 Similarly you can select the job ID from its context menu.
 
-![Job ID](../.gitbook/assets/image%20%28103%29.png)
+![Job ID](../.gitbook/assets/image%20%28104%29.png)
 
 ### Freestyle Jenkins Projects
 

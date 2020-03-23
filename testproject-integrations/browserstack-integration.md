@@ -59,7 +59,7 @@ As you probably already know, TestProject allows you to connect infinite number 
 
 In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** \(1\), choose the **Agent browsers** \(2\) section, choose your browser \(3\) or device and run your test.
 
-![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28172%29.png)
+![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28175%29.png)
 
 #### **Running on** BrowserStack **Cloud using own Agents**
 
@@ -75,7 +75,7 @@ This method is useful for cases where tests need access to your local resources 
 
 In addition to the two ways described above, another great option is running entirely in the cloud using the **Virtual Agent**. Once you've set up your BrowserStack integration you will see that a **Virtual Agent** was added to [your lab](https://app.testproject.io/#/agents).
 
-![A TestProject Virtual Agent](../.gitbook/assets/image%20%2847%29.png)
+![A TestProject Virtual Agent](../.gitbook/assets/image%20%2848%29.png)
 
 This type of execution does not require an Agent at all. This means that you can execute your tests and jobs even if you do not have any agents that are currently available for execution. To use this capability when running a test, just choose the **Virtual Agent** \(1\), expand the BrowserStack section \(2\), choose the desired browser \(3\) or device and run your test. Because BrowserStack provides many browsers and devices and the list can get long, we've added an easy quick search option that will allow you to filter out all the unnecessary targets.
 

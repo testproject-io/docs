@@ -54,6 +54,15 @@
   * [Slack Actions Addon](testproject-addons/available-addons/slack-actions-addon.md)
   * [Swipe and Find Element addon](testproject-addons/available-addons/swipe-and-find-element-addon.md)
   * [Web Extensions Addon](testproject-addons/available-addons/web-extensions-addon.md)
+  * [Web Touch Gestures Addon](testproject-addons/available-addons/web-touch-gestures-addon.md)
+  * [Random Values from CSV File Addon](testproject-addons/available-addons/random-values-from-csv-file-addon.md)
+  * [CSV Operations Addon](testproject-addons/available-addons/csv-operations-addon.md)
+  * [Deep Link Toolkit Addon](testproject-addons/available-addons/deep-link-toolkit-addon.md)
+  * [Google Authenticator OTP Automation Addon](testproject-addons/available-addons/google-authenticator-otp-automation-addon.md)
+  * [Visible Elements Operations Addon](testproject-addons/available-addons/visible-elements-operations-addon.md)
+  * [Angular Element Actions Addon](testproject-addons/available-addons/angular-element-actions-addon.md)
+  * [Clicks Multiplier Addon](testproject-addons/available-addons/clicks-multiplier-addon.md)
+  * [Natural Language Processing Engine Addon](testproject-addons/available-addons/natural-language-processing-engine-addon.md)
 
 ## Schedule and Run Tests
 
@@ -69,12 +78,13 @@
 
 ## TestProject Integrations
 
-* [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
-* [Integration to Slack](testproject-integrations/integration-to-slack.md)
-* [Integration with Jenkins](testproject-integrations/integration-with-jenkins.md)
-* [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
+* [qTest Integration](testproject-integrations/qtest-integration.md)
 * [BrowserStack Integration](testproject-integrations/browserstack-integration.md)
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
+* [Jenkins Integration](testproject-integrations/integration-with-jenkins.md)
+* [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
+* [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
+* [Slack Integration](testproject-integrations/integration-to-slack.md)
 
 ## TestProject Agents
 

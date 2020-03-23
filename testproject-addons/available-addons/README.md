@@ -21,15 +21,15 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Slack Actions](slack-actions-addon.md) |
 | [Swipe and Find Element](swipe-and-find-element-addon.md) |
 | [Web Extensions](web-extensions-addon.md) |
-| Web Touch Gestures |
-| Random Values From CSV File |
-| CSV Operations |
-| Deep Link Toolkit |
-| Google Authenticaor OTP Automation |
-| Visible Element Operations |
-| Angular Element Actions |
-| Clicks Multiplier |
-| Natural Language Processing Engine |
+| [Web Touch Gestures](web-touch-gestures-addon.md) |
+| [Random Values From CSV File](random-values-from-csv-file-addon.md) |
+| [CSV Operations](csv-operations-addon.md) |
+| [Deep Link Toolkit](deep-link-toolkit-addon.md) |
+| [Google Authenticaor OTP Automation](google-authenticator-otp-automation-addon.md) |
+| [Visible Element Operations](visible-elements-operations-addon.md) |
+| [Angular Element Actions](angular-element-actions-addon.md) |
+| [Clicks Multiplier](clicks-multiplier-addon.md) |
+| [Natural Language Processing Engine](natural-language-processing-engine-addon.md) |
 | ADB Wrapper |
 | Phone Numbers |
 | Date-Time Operations |
