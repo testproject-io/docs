@@ -6,7 +6,9 @@ If you get stuck on something, try some of suggestions below or feel free to [co
 
 Some organizations have firewall rules in place that prevent the TestProject agent from communicating to the app in the way that it needs to. Check with your IT team to see if this may be the issue.  You can also check your computer's firewall settings to make sure TestProject is not getting blocked
 
-If you are using a proxy or vpn to connect to the internet, you may need to configure it. There is a file named `agent-configuration.json` in `%USERPROFILE%\AppData\Roaming\TestProject\Agent` where you can provide the proxy details and set enableProxy to true.
+## Proxy / Self Signed Certificate
+
+If your internet connection is trough a corporate proxy server, and the certificate is self signed, You may need to add the root CA of this certificate to the list of trusted publishers on your computer.
 
 ## Can't find my agent to run tests against
 
