@@ -24,8 +24,6 @@ The **output** parameters are:
 
 \*\*Please note, that the step will be considered passed even if the command itself fails. You will be able to determine the success of the command by checking if your expected result is contained in the output of the shell command.
 
-
-
 ### **Examples**
 
 #### **Windows:**
