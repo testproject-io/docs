@@ -63,6 +63,22 @@
   * [Angular Element Actions Addon](testproject-addons/available-addons/angular-element-actions-addon.md)
   * [Clicks Multiplier Addon](testproject-addons/available-addons/clicks-multiplier-addon.md)
   * [Natural Language Processing Engine Addon](testproject-addons/available-addons/natural-language-processing-engine-addon.md)
+  * [ADB Wrapper Addon](testproject-addons/available-addons/adb-wrapper-addon.md)
+  * [Phone Numbers Addon](testproject-addons/available-addons/phone-numbers-addon.md)
+  * [Date-Time Operations Addon](testproject-addons/available-addons/date-time-operations-addon.md)
+  * [Random Data Generator Addon](testproject-addons/available-addons/random-data-generator-addon.md)
+  * [iOS Network Operations Addon](testproject-addons/available-addons/ios-network-operations-addon.md)
+  * [Random Login Credentials Addon](testproject-addons/available-addons/random-login-credentials-addon.md)
+  * [Numeric Utils Addon](testproject-addons/available-addons/numeric-utils-addon.md)
+  * [Android Key Events Addon](testproject-addons/available-addons/android-key-events-addon.md)
+  * [iOS Screen Orientation Addon](testproject-addons/available-addons/ios-screen-orientation-addon.md)
+  * [Math Calculations Addon](testproject-addons/available-addons/math-calculations-addon.md)
+  * [String Utils Addon](testproject-addons/available-addons/string-utils-addon.md)
+  * [MSSQL Database Addon](testproject-addons/available-addons/mssql-database-addon.md)
+  * [MySQL Database Addon](testproject-addons/available-addons/mysql-database-addon.md)
+  * [PostreSQL Database Addon](testproject-addons/available-addons/postresql-database-addon.md)
+  * [Oracle Database Addon](testproject-addons/available-addons/oracle-database-addon.md)
+  * [Web List Operations Addon](testproject-addons/available-addons/web-list-operations-addon.md)
 
 ## Schedule and Run Tests
 

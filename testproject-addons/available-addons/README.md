@@ -30,21 +30,22 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Angular Element Actions](angular-element-actions-addon.md) |
 | [Clicks Multiplier](clicks-multiplier-addon.md) |
 | [Natural Language Processing Engine](natural-language-processing-engine-addon.md) |
-| ADB Wrapper |
-| Phone Numbers |
-| Date-Time Operations |
-| Random Data Generator |
-| iOS Network Operations |
-| Random Login Credentials |
-| Numeric Utils |
-| Android Key Events |
-| iOS Screen Orientation |
-| Math Calculations |
-| String Utils |
-| MSSQL Database |
-| MySQL Database |
-| PostgreSQL Database |
-| Web List Operations |
+| [ADB Wrapper](adb-wrapper-addon.md) |
+| [Phone Numbers](phone-numbers-addon.md) |
+| [Date-Time Operations](date-time-operations-addon.md) |
+| [Random Data Generator](random-data-generator-addon.md) |
+| [iOS Network Operations](ios-network-operations-addon.md) |
+| [Random Login Credentials](random-login-credentials-addon.md) |
+| [Numeric Utils](numeric-utils-addon.md) |
+| [Android Key Events](android-key-events-addon.md) |
+| [iOS Screen Orientation](ios-screen-orientation-addon.md) |
+| [Math Calculations](math-calculations-addon.md) |
+| [String Utils](string-utils-addon.md) |
+| [MSSQL Database](mssql-database-addon.md) |
+| [MySQL Database](mysql-database-addon.md) |
+| [PostgreSQL Database](postresql-database-addon.md) |
+| [Oracle Database](oracle-database-addon.md) |
+| [Web List Operations](web-list-operations-addon.md) |
 | File Uploader |
 | JSON Operations |
 | jQuery - Slider |

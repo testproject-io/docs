@@ -10,17 +10,21 @@ This Addon contains a single action for sending those commands called: 'Execute'
 
 The **input** parameters are: 
 
-* Command 
+* Command
+* Expected result 
 * Timeout
 * Output file path
-* Output file name.
+* Output file name
 
 The **output** parameters are: 
 
 * The exit code
-* The output file path.
+* The output file path
+* The shell output
 
-\*\*Please note, that the step will be considered passed even if the command itself fails.
+\*\*Please note, that the step will be considered passed even if the command itself fails. You will be able to determine the success of the command by checking if your expected result is contained in the output of the shell command.
+
+
 
 ### **Examples**
 
