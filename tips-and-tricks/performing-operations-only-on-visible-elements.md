@@ -8,5 +8,5 @@ This is where the Visible Elements Operations addon can be helpful. This addon p
 
 As with any addon in TestProject, using it is as easy as a [_1-click installation_](../testproject-addons/installing-community-addons-from-the-store.md) __and all the actions from this addon will immediately be available for you to use in your tests. 
 
-![Install Visible Elements Operations Addon](../.gitbook/assets/image%20%28107%29.png)
+![Install Visible Elements Operations Addon](../.gitbook/assets/image%20%28113%29.png)
 

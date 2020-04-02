@@ -2,7 +2,7 @@
 
 Parameters are a very helpful way to organize and extend the capabilities of tests. Parameters can be used when there is a text box input with and add parameters plus icon beside it.
 
-![Parameterizable Input](../../.gitbook/assets/image%20%2867%29.png)
+![Parameterizable Input](../../.gitbook/assets/image%20%2871%29.png)
 
 Click on the plus icon opens the parameters widget where you can use already defined parameters or define you own.
 
@@ -20,7 +20,7 @@ Output parameters on the other hand are used to store information that is genera
 
 Parameters can be used on an input field on their own or they can be used together with non-parameterized inputs. 
 
-![Parameters Combined with non-parameterized input](../../.gitbook/assets/image%20%28192%29.png)
+![Parameters Combined with non-parameterized input](../../.gitbook/assets/image%20%28204%29.png)
 
 When combing the two types of inputs together it is important to be sure that the input box is cleared before starting. The easiest way to create something like the above example, is to create the desired parameters and then clear the text box completely. Type `Hi` and then click on the FirstName parameter to add it and then type the rest of that sentence. Click on the next parameter to finish the setup of this input. Setting it up in the linear way helps to ensure that TestProject correctly understands the combination of inputs given.
 

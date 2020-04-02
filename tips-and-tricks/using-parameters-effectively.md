@@ -6,19 +6,19 @@ Parameters are a powerful way to make your tests more maintainable. They also ma
 
 You can see and manage all the parameters for a test by clicking on the test in the project view to open it in the recorder and then choosing Parameters from the more menu
 
-![Access Test Parameters](../.gitbook/assets/image%20%2873%29.png)
+![Access Test Parameters](../.gitbook/assets/image%20%2877%29.png)
 
 This will open the parameters panel for you where you can view, edit, add or remove parameters for the test. Parameters can be created that are only for the particular test you are working on, or they can be created at the project level so that you can use the same parameter in multiple tests. You can add a new parameter with the plus button at the bottom of the panel.
 
-![Add New Parameter](../.gitbook/assets/image%20%2837%29.png)
+![Add New Parameter](../.gitbook/assets/image%20%2839%29.png)
 
 Fill in the name, description and value for the parameter and click on the add button to add it to your test.
 
-![Add a Parameter](../.gitbook/assets/image%20%2833%29.png)
+![Add a Parameter](../.gitbook/assets/image%20%2835%29.png)
 
 This parameter is now ready to be used in the test. You can also access the parameters directly from a test step \(for actions that can have parameters\), by click on the + button beside the parameter input box.
 
-![Access Test Parameters](../.gitbook/assets/image%20%2868%29.png)
+![Access Test Parameters](../.gitbook/assets/image%20%2872%29.png)
 
 ## Output Parameters
 
@@ -38,11 +38,11 @@ Parameters can be used in multiple test steps and can also be used for [data dri
 
 This will add the parameter as a variable in the input field and you can click on the check mark at the bottom of the panel to apply the change. 
 
-![Apply Changes](../.gitbook/assets/image%20%2844%29.png)
+![Apply Changes](../.gitbook/assets/image%20%2847%29.png)
 
 Click on the Save button on the test step panel and you will now have your input field parameterized. You can use multiple parameters in one input field by clicking on them in the list. You can also include non-parameterized values with parameters in the same field if you want. For example, you could parameterize both the first name and last name values and use a manually entered string like Mr. all in the same input field
 
-![Multiple Parameters](../.gitbook/assets/image%20%2890%29.png)
+![Multiple Parameters](../.gitbook/assets/image%20%2896%29.png)
 
 
 

@@ -16,35 +16,35 @@ The first thing we will look at is executing javascript directly on the page. Us
 
 On the page we are looking at, there is a button that we can click to add a new element to the page. If we inspect that element, we can see that it calls a javascript method called `addElement()`. 
 
-![addElement\(\)](../.gitbook/assets/image%20%28143%29.png)
+![addElement\(\)](../.gitbook/assets/image%20%28152%29.png)
 
 We could of course just setup TestProject to click directly on the button, but in order to demonstrate using the Execute Javascript action, let's take a look at how we could call this method directly from our test.
 
 In order to use the Execute Javascript action we need to add a test step and then set the step Type to Action.
 
-![Set Step Type to Action](../.gitbook/assets/image%20%28145%29.png)
+![Set Step Type to Action](../.gitbook/assets/image%20%28154%29.png)
 
 We can then search for javascript in the actions and select the Execute Javascript option. Notice that this action come from the web extensions addon.
 
-![Execute Javascript Action](../.gitbook/assets/image%20%2861%29.png)
+![Execute Javascript Action](../.gitbook/assets/image%20%2865%29.png)
 
 This addon will now allow us to specify the javascript code that we want to run. In our case we want to run the `addElement()` method, so we can type that into the code input parameter for this addon. The `addElement()` method does not have any arguments, so we can leave that field blank.
 
-![Execute addElement method](../.gitbook/assets/image%20%2894%29.png)
+![Execute addElement method](../.gitbook/assets/image%20%28100%29.png)
 
 With that we can click on Create to create the test step and then run the test to see what happens.
 
-![Run Test](../.gitbook/assets/image%20%28187%29.png)
+![Run Test](../.gitbook/assets/image%20%28199%29.png)
 
 When we do that, you can see that it has added a new button to the page
 
-![Delete Button Added](../.gitbook/assets/image%20%28157%29.png)
+![Delete Button Added](../.gitbook/assets/image%20%28167%29.png)
 
 Let's try doing one more thing with directly executed javascript. Let's set a hidden attribute on that Delete button we just created.  To do this we will once again create a new test step with the type set to Action and the Action itself set to Execute JavaScript. Now to modify the element attribute with Javascript we need to somehow get the element. We can find out some information about the element by freezing it and then looking at it's attributes.
 
 To freeze and element we just hoover over it and hit shift twice quickly. We can then go to the Attributes option and see what attributes this element has.
 
-![Element Attributes](../.gitbook/assets/image%20%28142%29.png)
+![Element Attributes](../.gitbook/assets/image%20%28151%29.png)
 
 To get this element with Javascript we can use the class and access it `document.getElementsByClassName()` method. Since this method returns a list, we need to index it to get the first element and then call the `setAttribute()` method on that element. Putting that all together the javascript code that we will need to execute to hide this button will look like this:
 
@@ -54,7 +54,7 @@ document.getElementsByClassName("added-manually")[0].setAttribute("hidden", true
 
 We can put that code directly into the step in TestProject
 
-![Execute Javascript](../.gitbook/assets/image%20%28191%29.png)
+![Execute Javascript](../.gitbook/assets/image%20%28203%29.png)
 
 If we then run this step, the Delete Button will be hidden.
 
@@ -64,19 +64,19 @@ Now that we have a hidden element on the page, imagine that you wanted to be abl
 
 First of all, we will add another test step and leave the Type as Element Action. We then need to select the element, but since it is not visible on the page we will need to find it in another way. We can do this with the Element Explorer
 
-![Element Explorer](../.gitbook/assets/image%20%2855%29.png)
+![Element Explorer](../.gitbook/assets/image%20%2858%29.png)
 
 If we then drill down into the on page elements we can find the hidden Delete button
 
-![Hidden Delete Button](../.gitbook/assets/image%20%2892%29.png)
+![Hidden Delete Button](../.gitbook/assets/image%20%2898%29.png)
 
 Clicking on this will bring up the menu options for this element and we can then copy the xpath to use in our test step. We can then close the element explorer and return to the Create Step panel and click on select element. We can then use the plus at the bottom of that panel to add a new element.
 
-![Add a New Element](../.gitbook/assets/image%20%28134%29.png)
+![Add a New Element](../.gitbook/assets/image%20%28143%29.png)
 
 We can name the element, set the type to Button and use the XPATH locator. We can then paste in the xpath that we copied and add the element to our project.
 
-![Create New DeleteButton Element](../.gitbook/assets/image%20%28152%29.png)
+![Create New DeleteButton Element](../.gitbook/assets/image%20%28161%29.png)
 
 The element is then immediately available to choose in the select element panel and so we can click on it to use that element in our test step. The remaining thing is to choose the step action. We can't just click on this element since it is hidden, but let's try sending a click using javascript. We can search for javascript and then choose the Click \(using JavaScript\) action which is included in the Javascript Actions addon.
 

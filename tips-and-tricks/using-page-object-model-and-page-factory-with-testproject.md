@@ -10,11 +10,11 @@ To do that in the test recorder, just add a new test and change the type to Test
 
 ![Add a test and change the type](../.gitbook/assets/image%20%286%29.png)
 
-![Set the type to Test](../.gitbook/assets/image%20%2841%29.png)
+![Set the type to Test](../.gitbook/assets/image%20%2843%29.png)
 
 You can then chose the login test as test step in your current test case. 
 
-![Select Test](../.gitbook/assets/image%20%2895%29.png)
+![Select Test](../.gitbook/assets/image%20%28101%29.png)
 
 This let's you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test and all tests using it will get that change.
 

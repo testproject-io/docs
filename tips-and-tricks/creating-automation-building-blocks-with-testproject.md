@@ -12,7 +12,7 @@ Let's take a look at these concepts by walking through setting up a test against
 
 The first thing we need to do after navigating to the demo page is to login. Creating a test to do this is simple as setting up a project that uses the demo site url and then clicking on the name field and typing in a name and then similarly clicking on the password field and typing in the password. You can then click on the login button, and you will be taken to a sample page with a form you can fill out.
 
-![Example Form After Login](../.gitbook/assets/image%20%2857%29.png)
+![Example Form After Login](../.gitbook/assets/image%20%2860%29.png)
 
 If you have not yet set up a test in TestProject, you can find details on how to do that [here](../using-the-smart-test-recorder/web-testing/) in the documentation. 
 
@@ -22,7 +22,7 @@ At this point though, imagine you want to create a few tests for this form. For 
 
 For each of these tests we will need to login. Rather than implement the login steps in each of the tests we can create one test for the login and then use that test in each of the other tests that we want to run. So if we go to the project where we have created this login test and we create a new test, we can remove the default Navigate to step
 
-![Delete Step](../.gitbook/assets/image%20%28186%29.png)
+![Delete Step](../.gitbook/assets/image%20%28198%29.png)
 
 We can now add a step and in the create step slide-out click on the Element action link in the Type section to change the step type.
 
@@ -30,19 +30,19 @@ We can now add a step and in the create step slide-out click on the Element acti
 
 Set the step Type to Test and save the changes.
 
-![Set Step Type to Test](../.gitbook/assets/image%20%28180%29.png)
+![Set Step Type to Test](../.gitbook/assets/image%20%28192%29.png)
 
 You can then select the test you want and choose the Login test that you made earlier. Once you have added that test, click on Create to complete the creation of the test step.
 
-![Select a test](../.gitbook/assets/image%20%2827%29.png)
+![Select a test](../.gitbook/assets/image%20%2828%29.png)
 
 Now, we can continue on with creating the rest of the test, but clicking on the record button.
 
-![Record button](../.gitbook/assets/image%20%2883%29.png)
+![Record button](../.gitbook/assets/image%20%2888%29.png)
 
 This will bring up the the TestProject recorder, and you can run the login step.
 
-![Run Test Step](../.gitbook/assets/image%20%2854%29.png)
+![Run Test Step](../.gitbook/assets/image%20%2857%29.png)
 
 Once you have done this, you can write the rest of your test. So in this case, let's complete the filling out of the form with a valid email address. We can click on the Country dropdown and select the country we want, and then type in the address we want to use. Similarly, we can enter in the phone number and email address that we want to use and then click on the Save button. The TestProject recorder will add test steps for each of these actions. 
 
@@ -50,11 +50,11 @@ Once you have done this, you can write the rest of your test. So in this case, l
 
 Now, we know that we want to create another similar test that uses a different email address, so we can parameterize the email field by clicking on that step.
 
-![Email Test Step](../.gitbook/assets/image%20%28155%29.png)
+![Email Test Step](../.gitbook/assets/image%20%28164%29.png)
 
 In the step detail panel for this step we can then parameterize the input text that we are giving this field by clicking on the plus beside the field.
 
-![Create a Parameter](../.gitbook/assets/image%20%2886%29.png)
+![Create a Parameter](../.gitbook/assets/image%20%2891%29.png)
 
 On the parameters page that is brought up, you need to click on the new parameter plus button at the bottom left.
 
@@ -66,21 +66,21 @@ Fill in the form for creating a parameter, giving it a name, and click on Add to
 
 Ensure that the new parameter you just created is now being used as the text for the email address test step, and save and apply all changes.
 
-![Use the new Parameter](../.gitbook/assets/image%20%2864%29.png)
+![Use the new Parameter](../.gitbook/assets/image%20%2868%29.png)
 
 ### Creating a Second Test
 
 Now that the first test has been created you can make a second test with another email address. We will once again remove the default step as we did above and then add a step and change the type to test. We can then select a test, and in this case we will use the Valid Email test that we made above.
 
-![Select Test](../.gitbook/assets/image%20%2822%29.png)
+![Select Test](../.gitbook/assets/image%20%2823%29.png)
 
 When choosing a test that has parameters, TestProject will prompt you asking if you would like to create the same parameters in the existing test. Choose yes to this prompt. We can then modify this parameter if we want by clicking on the plus icon beside the parameter.
 
-![Go to Parameters](../.gitbook/assets/image%20%2881%29.png)
+![Go to Parameters](../.gitbook/assets/image%20%2886%29.png)
 
 You can then modify the parameter using the edit icon.
 
-![Modify Parameter](../.gitbook/assets/image%20%28164%29.png)
+![Modify Parameter](../.gitbook/assets/image%20%28176%29.png)
 
 Parameters can also be managed at the project leve and controlled at run time, which make it easy to run and maintain test like this.
 
