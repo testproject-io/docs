@@ -46,21 +46,21 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [PostgreSQL Database](postresql-database-addon.md) |
 | [Oracle Database](oracle-database-addon.md) |
 | [Web List Operations](web-list-operations-addon.md) |
-| File Uploader |
-| JSON Operations |
-| jQuery - Slider |
-| jQuery - spinner |
-| jQuery - Progressbar |
-| jQuery - Checkboxradio |
-| jQuery -Tabs |
-| jQuery -Dialog |
-| jQuery - Accordian |
-| Foundation - Accordion |
-| Foundation - Pagination |
-| Foundation - Orbit |
-| Foundation - Tabs |
-| KendoUI - Scheduler |
-| KendoUI - Grid |
-| Bootstrap4 - Buttons Group |
-| Bootstrap4 - Dropdown |
+| [File Uploader](file-uploader-addon.md) |
+| [JSON Operation](json-operations-addon.md)s |
+| [jQuery - Slider](jquery-slider-addon.md) |
+| [jQuery - spinner](jquery-spinner-addon.md) |
+| [jQuery - Progressbar](jquery-progressbar-addon.md) |
+| [jQuery - Checkboxradio](jquery-checkboxradio-addon.md) |
+| [jQuery -Tabs](jquery-tabs-addon.md) |
+| [jQuery -Dialog](jquery-dialog-addon.md) |
+| [jQuery - Accordian](jqueryui-accordion-addon.md) |
+| [Foundation - Accordion](foundation-accordion-addon.md) |
+| [Foundation - Pagination](foundation-pagination-addon.md) |
+| [Foundation - Orbit](foundation-orbit-addon.md) |
+| [Foundation - Tabs](foundation-tabs-addon.md) |
+| [KendoUI - Scheduler](kendoui-scheduler.md) |
+| [KendoUI - Grid](kendoui-grid-addon.md) |
+| [Bootstrap4 - Buttons Group](bootstrap4-buttons-group-addon.md) |
+| [Bootstrap4 - Dropdown](bootstrap4-dropdown-addon.md) |
 

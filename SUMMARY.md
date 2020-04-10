@@ -79,6 +79,23 @@
   * [PostreSQL Database Addon](testproject-addons/available-addons/postresql-database-addon.md)
   * [Oracle Database Addon](testproject-addons/available-addons/oracle-database-addon.md)
   * [Web List Operations Addon](testproject-addons/available-addons/web-list-operations-addon.md)
+  * [File Uploader Addon](testproject-addons/available-addons/file-uploader-addon.md)
+  * [JSON Operations Addon](testproject-addons/available-addons/json-operations-addon.md)
+  * [jQuery - Slider Addon](testproject-addons/available-addons/jquery-slider-addon.md)
+  * [jQuery - Spinner Addon](testproject-addons/available-addons/jquery-spinner-addon.md)
+  * [jQuery - Progressbar Addon](testproject-addons/available-addons/jquery-progressbar-addon.md)
+  * [jQuery - Checkboxradio Addon](testproject-addons/available-addons/jquery-checkboxradio-addon.md)
+  * [jQuery Tabs Addon](testproject-addons/available-addons/jquery-tabs-addon.md)
+  * [jQuery - Dialog Addon](testproject-addons/available-addons/jquery-dialog-addon.md)
+  * [jQueryUI - Accordion Addon](testproject-addons/available-addons/jqueryui-accordion-addon.md)
+  * [Foundation - Accordion Addon](testproject-addons/available-addons/foundation-accordion-addon.md)
+  * [Foundation - Pagination Addon](testproject-addons/available-addons/foundation-pagination-addon.md)
+  * [Foundation - Orbit Addon](testproject-addons/available-addons/foundation-orbit-addon.md)
+  * [Foundation - Tabs Addon](testproject-addons/available-addons/foundation-tabs-addon.md)
+  * [KendoUI - Scheduler](testproject-addons/available-addons/kendoui-scheduler.md)
+  * [KendoUI - Grid Addon](testproject-addons/available-addons/kendoui-grid-addon.md)
+  * [Bootstrap4 - Buttons Group Addon](testproject-addons/available-addons/bootstrap4-buttons-group-addon.md)
+  * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
 
 ## Schedule and Run Tests
 

@@ -1,8 +1,8 @@
 # Visible Elements Operations Addon
 
-This addon provides actions the will perform only if the element is visible. The actions will not fail the step in case the element is not visible.
+This addon provides actions the will perform only if the element is visible. The actions will not fail the step in case the element is not visible. You can see an example of how you might use this action [here](../../tips-and-tricks/performing-operations-only-on-visible-elements.md)
 
-### Actions
+### Available Actions
 
 `Clear contents (if visible)` - Clear the contents of the current element if it's visible
 
