@@ -4,9 +4,9 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 
 | Addons: |
 | :--- |
-| [Shell Commands](https://docs.testproject.io/testproject-addons/available-addons/shell-commands) |
 | [Android Monkey](android-monkey-addon.md) |
 | [Android Permissions Manager](android-permissions-manager-addon.md) |
+| [Base64 Encoder/Decoder](https://docs.testproject.io/testproject-addons/available-addons/base64-encoder-decoder-addon) |
 | [Element Extensions](element-extensions-addon.md) |
 | [Generic Extensions](generic-extensions-addon.md) |
 | [Geolocation Utils](geolocation-utils-addon.md) |
@@ -19,6 +19,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [RESTful API Client](restful-api-client-addon.md) |
 | [Scroll to Element](scroll-to-element-addon.md) |
 | [Slack Actions](slack-actions-addon.md) |
+| [Shell Commands](https://docs.testproject.io/testproject-addons/available-addons/shell-commands) |
 | [Swipe and Find Element](swipe-and-find-element-addon.md) |
 | [Web Extensions](web-extensions-addon.md) |
 | [Web Touch Gestures](web-touch-gestures-addon.md) |
