@@ -1,4 +1,4 @@
-# Shell Commands
+# Shell Commands Addon
 
 The [Shell Commands Addon](https://addons.testproject.io/shell-commands) allows you to execute commands and scripts while running your tests. It supports all major operating systems: Windows \(CMD\), Linux \(sh\) and macOS. By utilizing “Command” parameter, you can execute any system command or a locally stored script.
 
