@@ -40,6 +40,8 @@ To begin, let's create a .Net Core project and add TestProject SDK as a referenc
 * From the left side select `Visual C# => .Net Core`. Then, select `Class Library`
 * Once the project has been created, right-click the project and select `Manage Nuget Packages...`.
 * Search for `TestProject SDK` and install it in your project.
+* Right click your project file and press `Edit Project File`
+* Find the `<PackageReference>` tag containing TestProject SDK and add to it the `Publish="false"` property. This is required to package your final code for uploading to TestProject website.
 
 There we go, now we're all set! Let's see what
 
@@ -602,6 +604,17 @@ Here's a simple example based on our [Web - Proxy Test](https://github.com/testp
 
 * TestProject.SDK.Examples.Web.Tests.dll - This is the project output.
 * AddonProxy.dll - the addon proxy this test uses.
+
+### Packaging Projects with dependencies
+
+If your project contains external dependencies, follow these step to package it:
+
+* Open a Terminal/PowerShell/Command prompt and navigate to the folder of your main project
+* Run the following command: `dotnet publish -o ./publish ./your-project.csproj`. make sure to use your project's csproj file.
+* Open the publish folder we just created and zip all the files
+
+> When using windows you can select all files and right click -&gt; Send to -&gt; Compressed archive.   
+> If using a different application to compress, always use Normal compression
 
 We are currently working on tools to make deployment easier for you. Stay tuned!
 
