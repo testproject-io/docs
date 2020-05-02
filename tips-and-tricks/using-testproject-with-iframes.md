@@ -16,33 +16,33 @@ Start up the test recorder and for this example let's see if we can type somethi
 
 In order to actually interact with element inside the iframe, you will first need to tell TestProject to navigate into that iframe. In order to do this you can use the Switch to iFrame action. This action is available through the Element Extensions addon. More information on installing and using addons can be found in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md). 
 
-![iFrame action from Element Extensions Addon](../.gitbook/assets/image%20%28106%29.png)
+![iFrame action from Element Extensions Addon](../.gitbook/assets/image%20%28131%29.png)
 
 This action, will allow you to navigate into the iframe, but in order to do that you will need to let it know what element on the page is the iframe you are interested. You can find the iframe id on the page using the Element Explorer.
 
-![iframe ID in Element Explorer](../.gitbook/assets/image%20%2820%29.png)
+![iframe ID in Element Explorer](../.gitbook/assets/image%20%2822%29.png)
 
 Once you have found the ID you can close the element explorer and return to the Create Step panel and click on select element. On the next panel we can search for elements, but since the iframe has not yet been added to the test, you can use the plus at the bottom of this panel to add a new element.
 
-![Add a New Element](../.gitbook/assets/image%20%28143%29.png)
+![Add a New Element](../.gitbook/assets/image%20%28174%29.png)
 
 Name the element to something like iframe and set the element type to be a generic web element. For the locator, use ID and then in text box type in the ID you found in the Element Explorer.
 
-![Create iframe element](../.gitbook/assets/image%20%28102%29.png)
+![Create iframe element](../.gitbook/assets/image%20%28125%29.png)
 
 You can then click on the Create button to create this element and add it your test step. Once you have done that, use the more option beside the test step and choose the Run Until Here option.
 
-![More Menu](../.gitbook/assets/image%20%2893%29.png)
+![More Menu](../.gitbook/assets/image%20%28111%29.png)
 
 ### Locate Elements in an iFrame
 
 Now that you are inside the iFrame you can start to interact with elements on this part of the page. The test recorder still won't record the clicks and interactions on the screen, but we can easily find the elements we wan using the Element Explorer. 
 
-![iFrame Element](../.gitbook/assets/image%20%28125%29.png)
+![iFrame Element](../.gitbook/assets/image%20%28154%29.png)
 
 You can see that the id of the is tinymce and then from the menu for this element we can select Actions and then Clear Contents to add a step that will clear the contents of the cell.
 
-![Clear Contents Action](../.gitbook/assets/image%20%28145%29.png)
+![Clear Contents Action](../.gitbook/assets/image%20%28176%29.png)
 
 Once you hit create to create the step, you can follow a similar process to create a test step that lets you type in the text you want, but using the Type text action.
 

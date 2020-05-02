@@ -104,6 +104,10 @@
 * [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
 * [Using Data Driven Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
 
+## Reports
+
+* [Get Test Reports via API](reports/get-test-reports-via-api.md)
+
 ## TestProject SDK
 
 * [Overview](testproject-sdk/overview.md)
@@ -128,6 +132,7 @@
 ## TestProject API <a id="api"></a>
 
 * [RESTful API v2](api/v2.md)
+* [Getting Started With Using the TestProject API](api/getting-started-with-using-the-testproject-api.md)
 
 ## Tips and Tricks
 
@@ -146,6 +151,10 @@
 * [Performing Operations only on Visible Elements](tips-and-tricks/performing-operations-only-on-visible-elements.md)
 * [Deploy new APK/IPA with TestProject APIs](tips-and-tricks/extending-testproject-recorder-capabilities-for-dedicated-elements.md)
 * [Image Comparison in TestProject](tips-and-tricks/image-comparison-in-testproject.md)
+* [Calling REST APIs in a Test](tips-and-tricks/calling-rest-apis-in-a-test.md)
+* [Scrolling to an Element](tips-and-tricks/scrolling-to-an-element.md)
+* [Window Management in TestProject](tips-and-tricks/window-management-in-testproject.md)
+* [Using Natural Language Commands to Run a Test](tips-and-tricks/using-natural-language-commands-to-run-a-test.md)
 
 ## Releases
 
