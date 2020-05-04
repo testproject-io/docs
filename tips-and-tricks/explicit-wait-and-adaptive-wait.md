@@ -4,11 +4,17 @@ There are various ways to add waits in your tests. Let's review them and underst
 
 ## **Explicit Wait Times**
 
-Explicit wait times in TestProject are in the form of an action called **Pause.**
+Explicit wait times are an option available for **each step** of your test as "Step Pause". You can choose to add an explicit wait time either **before** or **after** the execution of your test step.
 
-You will need to add this action as a separate step, either before or after the step you need to wait for. The input parameter of this step is the amount of time in milliseconds your test execution will stop to wait.
+![Explicit Wait - Step Pause](../.gitbook/assets/explicit-wait.png)
 
-![Explicit Wait Times](../.gitbook/assets/explicit-waits.png)
+You will need to set the duration of the wait time in milliseconds.
+
+![Explicit Wait - Set pause duration](../.gitbook/assets/explicit-wait-set-time.png)
+
+You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default step pause.
+
+![Test Settings](../.gitbook/assets/test-settings.png)
 
 ## **Adaptive Wait Time**
 
