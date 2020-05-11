@@ -142,9 +142,9 @@ pipeline {
 
 ## Troubleshooting
 
-In case of a permanent execution engine scenario, one should ensure that their active account is linked & registered. You can verify registered agents & their status from the top Navigation Bar under the Agents tab.
+In case of a permanent execution engine scenario, one should ensure that their active account is linked & registered. You can verify registered agents & their status from the top Navigation Bar under the [Agents tab](https://app.testproject.io/#/agents).
 
-![](https://lh3.googleusercontent.com/1JrQNZsAz9ygXOvTVyoMAYhT3ZF0nrxJcEuOSf--j91qcYqRAb5SyAuj14u5PFy8n4fNCyTd2opstDv8WW8kINm833-XM1toPpwQnfmWu4B-_t0NVLHtQnMVlxQenkC8SBqnBmq8)
+![TestProject Agents](https://lh3.googleusercontent.com/1JrQNZsAz9ygXOvTVyoMAYhT3ZF0nrxJcEuOSf--j91qcYqRAb5SyAuj14u5PFy8n4fNCyTd2opstDv8WW8kINm833-XM1toPpwQnfmWu4B-_t0NVLHtQnMVlxQenkC8SBqnBmq8)
 
 ## **Conclusion**
 
