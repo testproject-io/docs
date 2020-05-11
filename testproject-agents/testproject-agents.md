@@ -150,5 +150,3 @@ In case of a permanent execution engine scenario, one should ensure that their a
 
 The containerized version of the TestProject Agent takes testing to the next level by eliminating the need to set up entire servers for testing & provides the flexibility to create temporary & permanent instances for automated testing.
 
-![](../.gitbook/assets/image%20%2827%29.png)
-
