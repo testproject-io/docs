@@ -17,6 +17,11 @@
 * [Available Validations](getting-started/available-validations.md)
 * [FAQs](getting-started/faqs.md)
 
+## TestProject Agents
+
+* [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
+* [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
+
 ## Create Your First Test <a id="using-the-smart-test-recorder"></a>
 
 * [Web Testing](using-the-smart-test-recorder/web-testing/README.md)
@@ -30,6 +35,12 @@
   * [Element Locator](using-the-smart-test-recorder/finding-and-using-elements/element-locator.md)
   * [Element Inspector](using-the-smart-test-recorder/finding-and-using-elements/element-inspector.md)
   * [Element Explorer](using-the-smart-test-recorder/finding-and-using-elements/element-explorer.md)
+
+## Schedule and Run Tests
+
+* [Manage TestProject Agents](schedule-and-run-tests/manage-testproject-agents.md)
+* [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
+* [Using Data Driven Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
 
 ## TestProject Addons
 
@@ -98,12 +109,6 @@
   * [Bootstrap4 - Buttons Group Addon](testproject-addons/available-addons/bootstrap4-buttons-group-addon.md)
   * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
 
-## Schedule and Run Tests
-
-* [Manage TestProject Agents](schedule-and-run-tests/manage-testproject-agents.md)
-* [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
-* [Using Data Driven Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
-
 ## Reports
 
 * [Get Test Reports via API](reports/get-test-reports-via-api.md)
@@ -123,11 +128,6 @@
 * [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
 * [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
 * [Slack Integration](testproject-integrations/integration-to-slack.md)
-
-## TestProject Agents
-
-* [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
-* [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
 
 ## TestProject API <a id="api"></a>
 
