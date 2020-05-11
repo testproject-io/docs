@@ -21,7 +21,7 @@
 
 * [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
 * [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
-* [TestProject Agent in Docker](testproject-agents/testproject-agent-docker.md)
+* [TestProject Agent in Docker](testproject-agents/testproject-agent-in-docker.md)
 
 ## Create Your First Test <a id="using-the-smart-test-recorder"></a>
 
