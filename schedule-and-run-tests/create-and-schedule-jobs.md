@@ -4,15 +4,15 @@ One important aspect of test automation is being able to run the tests on a regu
 
 To create a job, navigate to the project you want to add a job for and in the right hand panel click on the Add a job button.
 
-![Add a Job](../.gitbook/assets/image%20%28172%29.png)
+![Add a Job](../.gitbook/assets/image%20%28173%29.png)
 
 This will bring up the job creation wizard. Enter in a name and description for the job and click next. On the next page you can choose where you want the job to run. You can either run a mobile or web test and you can pick which agent you want to use to run the job. Make sure that you are selecting compatible agents for the kind of testing that you want to do. For example, if you want to run the job as a mobile android test, be sure to pick an agent that will have an android device attached. 
 
-![Select job type](../.gitbook/assets/image%20%2892%29.png)
+![Select job type](../.gitbook/assets/image%20%2893%29.png)
 
 After selecting the job type and clicking Next you will be prompted to pick the device you want to use \(for mobile tests\) or the browser\(s\) you want the job to run on \(for web tests\).
 
-![Select Browsers](../.gitbook/assets/image%20%28139%29.png)
+![Select Browsers](../.gitbook/assets/image%20%28140%29.png)
 
 The next step is to pick the schedule that you want the job to run on. The On demand option will create a job for you with the settings that you've picked.  You can then run this job any time you want by pressing the Run Job button. This option is helpful for features that you need to check once in a while, but that may not need to be run on a regular schedule.
 
@@ -26,7 +26,7 @@ With the schedule setup, you can click on Finish to create the job. This will ad
 
 You can also setup email notifications for the job by click on the email icon and then choosing if you want to be notified when the job starts, finishes or both. 
 
-![Job Notifications](../.gitbook/assets/image%20%28173%29.png)
+![Job Notifications](../.gitbook/assets/image%20%28174%29.png)
 
 If you need to run different tests on different schedules you can create several jobs and set them each up the way that you want, giving you the fine grained control you need over tests executions.
 

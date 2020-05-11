@@ -12,7 +12,7 @@ Elements make up the core of any test automation effort and so within each proje
 
 Elements can be easily moved to different folders by dragging and dropping them. You can also move them to another folder by using the more menu. 
 
-![Move to folder](../.gitbook/assets/image%20%28194%29.png)
+![Move to folder](../.gitbook/assets/image%20%28195%29.png)
 
 Keeping structure and organization like this in place will help make test maintenance easier and make it a lot easier to work together and collaborate as a team on the ongoing work of test automation
 
@@ -20,7 +20,7 @@ Keeping structure and organization like this in place will help make test mainte
 
 Tests themselves are an important part of the data that needs to be maintained in a test automation initiative. As with elements, tests can also be organized and placed into folders. You can use this to structure tests into logical areas that make it easy to decide which tests to run and to setup and [schedule ](../schedule-and-run-tests/create-and-schedule-jobs.md)them into the jobs that you want.
 
-![Test Folders](../.gitbook/assets/image%20%28132%29.png)
+![Test Folders](../.gitbook/assets/image%20%28133%29.png)
 
 In the same way as with elements, tests can be moved to different folder by either using the drag and drop mechanism, or by using the Move to folder option on the more menu for the test. 
 

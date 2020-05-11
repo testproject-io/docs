@@ -6,7 +6,7 @@ Slack is a powerful communication tool used by many companies. Test Project can 
 
 After logging into your TestProject account, go to the Integrations tab and click on the Web Hooks + Slack option
 
-![Slack integrations](../.gitbook/assets/image%20%2852%29.png)
+![Slack integrations](../.gitbook/assets/image%20%2853%29.png)
 
 Click the ![](https://blog.testproject.io/wp-content/uploads/2019/03/add_to_slack.png) icon and you will be redirected to the Slack authorization page.
 
@@ -16,7 +16,7 @@ After the redirect you will need to choose the team and a channel where your Tes
 
 After setting up Slack integration and authorizing a designated channel, notifications can be sent. Simply navigate to a project that has jobs setup and click on the _envelope_ icon of your job of choice to open the notifications preferences. You can then Enable Web Hooks and select the Slack integration you want to use.
 
-![](../.gitbook/assets/image%20%28226%29.png)
+![](../.gitbook/assets/image%20%28227%29.png)
 
 This is it! You will now receive a well formatted job execution summary in Slack after the job completes its execution. Here is an example of such a notification for a “Sanity” job that was executed on Chrome and IE browsers and contained 2 tests. The notification also contains a direct link to the generated TestProject report.
 

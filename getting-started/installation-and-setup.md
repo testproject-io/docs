@@ -12,7 +12,7 @@ After that there is only one step left. You need to register you agent with the 
 
 On Windows the easiest way to run the agent is just to search for TestProject in the Windows search bar and clicking on the Agent to start it.
 
-![TestProject Agent on Windows](../.gitbook/assets/image%20%28177%29.png)
+![TestProject Agent on Windows](../.gitbook/assets/image%20%28178%29.png)
 
 The agent will then start up on your computer and you will be able to see the status of it by right clicking on the icon in the system tray.
 
@@ -28,13 +28,13 @@ On Mac, after you have installed the agent, you can run it by finding it in the 
 
 On Linux you will need to run the `TestProjectAgent` command from the `testproject/agent` folder
 
-![Starting TestProject agent on Linux](../.gitbook/assets/image%20%28162%29.png)
+![Starting TestProject agent on Linux](../.gitbook/assets/image%20%28163%29.png)
 
 ## Register the Agent
 
 Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the Agents menu.
 
-![Register an Agent](../.gitbook/assets/image%20%28101%29.png)
+![Register an Agent](../.gitbook/assets/image%20%28102%29.png)
 
 You will be prompted to give your agent an alias. Put something meaningful in here like "Joe Smith's Windows laptop" as it is possible to share agents with other team members. Once you have done that you just need to click on the register button to automatically register your agent with the TestProject application, and you are ready to start using TestProject!
 
