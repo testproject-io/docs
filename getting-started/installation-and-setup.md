@@ -2,7 +2,7 @@
 
 Once you have [created an account](creating-an-account.md) with TestProject you just need to follow a few simple steps to get setup and ready for testing.  TestProject works on almost any platform, with the install of a single agent.
 
-The first thing you will need to do is login to the TestProject app. Once you have done that you can go to the agents tab at the top of the page and click on the link for the platform you are on to download the agent executable.  Once that download has finished you can use it to install the TestProject agent on your machine.
+The first thing you will need to do is login to the TestProject app. Once you have done that you can go to the agents tab at the top of the page and click on the link for the platform you are on to download the agent executable or go to [Agent Download](https://app.testproject.io/#/download). Once that download has finished you can use it to install the TestProject agent on your machine.
 
 After that there is only one step left. You need to register you agent with the TestProject app so that you can use it to create and run tests. In order to do that, the agent needs to be running on your local machine. You can start it up by finding the installed TestProjectAgent executable on your machine and running that.
 
