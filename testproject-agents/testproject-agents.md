@@ -2,7 +2,7 @@
 description: Leverage TestProject Agents to run in Docker containers and setup virtual labs
 ---
 
-# Setup TestProject Agents in Docker
+# TestProject Agent in Docker
 
 ## What is Docker?
 
@@ -66,7 +66,7 @@ Using the API\_KEY, you can link the plugin to your TestProject account seamless
 
 ![](https://lh5.googleusercontent.com/6kK_uCaMT5ith0jvnz-0hcno44N1uQssrzFuGNJ1_UWiuIRHbb_CETEgBDMDVIjo4UaYBrttbLJ61-daEtPd64A9CGZn0AN0A_3XWxzMIGSjxSneN8V0bE2w2SfmLEHKA7tjCwGN)
 
-Create a Freestyle project under the build section and add a build step with **Run TestProject Job** selected. The Id’s can be found from the TestProject’s web console.  
+Create a Freestyle project under the build section and add a build step with **Run TestProject Job** selected:
 
 ![](https://lh4.googleusercontent.com/SQPqF9PLGmJJ26PIf-JpYjvc3vwdsRJ4lERpgFWGHIMqmkwiA810G8GBhqc4qBmRqpNfzpUSJvEEs5yc2e1Z70pqe7rPHFtO8D18ODFPixjWsb1MO8g-1TFYZvvqjf_WR5K2mwql)
 
