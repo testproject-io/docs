@@ -160,6 +160,7 @@
 
 ## Releases
 
+* [v0.62](releases/v0.62.md)
 * [v0.61](releases/v0.61.md)
 * [v0.60](releases/v0.60.md)
 * [v0.59](releases/v0.59.md)
