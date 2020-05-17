@@ -56,6 +56,7 @@
   * [Element Extensions Addon](testproject-addons/available-addons/element-extensions-addon.md)
   * [Generic Extensions Addon](testproject-addons/available-addons/generic-extensions-addon.md)
   * [Geolocation Utils Addon](testproject-addons/available-addons/geolocation-utils-addon.md)
+  * [HTML Table Actions](testproject-addons/available-addons/html-table-actions.md)
   * [Image Comparison Addon](testproject-addons/available-addons/image-comparison-addon.md)
   * [JS Actions Addon](testproject-addons/available-addons/js-actions-addon.md)
   * [Live Currency Converter Addon](testproject-addons/available-addons/live-currency-converter-addon.md)
@@ -112,6 +113,14 @@
 
 ## Reports
 
+* [Introduction to Reports in TestProject](reports/introduction-to-reports-in-testproject.md)
+* [Types of Plots in TestProject Reports](reports/types-of-plots-in-testproject-reports/README.md)
+  * [Velocity Chart](reports/types-of-plots-in-testproject-reports/velocity-chart.md)
+  * [Distribution Chart](reports/types-of-plots-in-testproject-reports/distribution-chart.md)
+  * [Platforms Chart](reports/types-of-plots-in-testproject-reports/platforms-chart.md)
+  * [Trends Chart](reports/types-of-plots-in-testproject-reports/trends-chart.md)
+  * [Targets Chart](reports/types-of-plots-in-testproject-reports/targets-chart.md)
+* [Individual Run Reports](reports/individual-run-reports.md)
 * [Get Test Reports via API](reports/get-test-reports-via-api.md)
 
 ## TestProject SDK

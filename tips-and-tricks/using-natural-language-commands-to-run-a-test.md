@@ -12,15 +12,15 @@ If you have not yet created a test, you can follow the instructions in on [creat
 
 Let's first look at creating the test steps the way we usually would.  First we will click on the Login button at the top of the page.
 
-![Login Button](../.gitbook/assets/image%20%28207%29.png)
+![Login Button](../.gitbook/assets/image%20%28221%29.png)
 
 This adds a step to the test, called `Click Login <span>.` If you click on that test step and look at it you can see that it has found the element using an XPATH locator
 
-![Found using XPATH](../.gitbook/assets/image%20%28181%29.png)
+![Found using XPATH](../.gitbook/assets/image%20%28193%29.png)
 
 This is fine for now, but if this page was ever redesigned and the login button was moved elsewhere on the page this test step would not be able to find the element and would time out. For now let's keep going with the test and fill in the username and password fields. After clicking in the username field and typing in an email address and typing a \(fake\) password into the password field, your test steps should look something like this:
 
-![Test Steps](../.gitbook/assets/image%20%2868%29.png)
+![Test Steps](../.gitbook/assets/image%20%2873%29.png)
 
 This is a nice enough test, but let's a take a look at how we could do it with the natural language processing engine instead.
 
@@ -30,13 +30,13 @@ Close the test recorder and create a new web test that also points to [https://f
 
 This time instead of just clicking on the elements we are going to add test steps. Use the plus button at the bottom of the test steps page to create a new test step. Change the Type to Action and click the check mark to apply the changes.
 
-![Add an Action Test Step](../.gitbook/assets/image%20%2876%29.png)
+![Add an Action Test Step](../.gitbook/assets/image%20%2881%29.png)
 
 You can now click on the Select Action link and search for NLP. Click on the `Run NLP Command`action. In the sentence field type `Click Login Button`This will click on login button, but in this case it does not use the xpath, so if the button was to move to another location on the page this test step would continue to work.
 
 Now add another test step using the `Run NLP Command` and this time type in the text `Enter bob@example.com into username` This will type the email address into the username field. Similarly create a NLP test step that  has the sentence  `Enter 12345 into password` to type in the password field.  Your test should now look something like this:
 
-![Test With NLP Commands](../.gitbook/assets/image%20%2812%29.png)
+![Test With NLP Commands](../.gitbook/assets/image%20%2813%29.png)
 
 As you can see when comparing this test to the previous one, not only does the login button have more resilience to change, but you were also able to combine two steps into one when entering text in the form fields. 
 

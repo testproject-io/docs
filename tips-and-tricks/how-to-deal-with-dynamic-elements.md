@@ -18,11 +18,11 @@ This example will be based on the [_TestProject example page_](https://example.t
 
 First of all let's enter a full name. We can click on the full name box and type in the name we want to use. and the Recorder will automatically add steps for those actions. Now, we will want to use the full name that we just entered to help us find a locator later, so let's just parameterize it right now. If we click on the test step and go to the plus beside the text input field we can add a parameter. 
 
-![Add a parameter](../.gitbook/assets/image%20%28234%29.png)
+![Add a parameter](../.gitbook/assets/image%20%28248%29.png)
 
 We can then click on the plus a the bottom of the parameters page to create a new parameter. Give it a name and a value that matches the name entered earlier and then click add to add the parameter. In the input text box, make sure that the new parameter is now being used and delete the previous text if it is still there. Once the parameter is correctly set, click on the check mark at the bottom of the page to apply the changes and then click on save to add them to the test step.
 
-![Apply Parameter Changes](../.gitbook/assets/image%20%28190%29.png)
+![Apply Parameter Changes](../.gitbook/assets/image%20%28202%29.png)
 
 You can now click on the password field and type in `12345` and hit the login button to complete the login process. As you do these actions the Test Recorder will automatically add steps to the test for you. 
 
@@ -32,15 +32,15 @@ At this point we are taken to the next page and there is a welcome message on th
 
 First of all we will add a new test step.
 
-![Add a New Test Step](../.gitbook/assets/image%20%28131%29.png)
+![Add a New Test Step](../.gitbook/assets/image%20%28140%29.png)
 
 Then in the Element section we will click on the Select an Element link and then click on the plus at the bottom of the panel to add a new element.
 
-![Add New Element](../.gitbook/assets/image%20%28216%29.png)
+![Add New Element](../.gitbook/assets/image%20%28230%29.png)
 
 Give the new element and name and set the locator to be `XPATH` and then beside the text box click on the plus button.
 
-![Add Locator Parameter](../.gitbook/assets/image%20%28128%29.png)
+![Add Locator Parameter](../.gitbook/assets/image%20%28137%29.png)
 
 In the resulting dialogue type the following  `//*[text()="`and then click on the parameter you made during the login steps to select it as the text to search for.  Then complete the string by putting in closing quotation marks and a square bracket. The final string should look like this `//*[text()="FullName"]` where `FullName` is the name of the parameter you created.  Then click Save to apply your changes. 
 

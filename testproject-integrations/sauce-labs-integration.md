@@ -23,7 +23,7 @@ Integrating TestProject with Sauce Labs allows you and your teammates to run you
 
 In order to setup the integration, you will have to obtain a Sauce Labs Access key. After logging into your Sauce Labs account, visit the [setting area](https://app.saucelabs.com/user-settings) \(1-2\) and copy your **User Name \(3\)** and **Access Key \(4\)**.
 
-![Obtaining Sauce Labs Username and Access Key](../.gitbook/assets/image%20%2861%29.png)
+![Obtaining Sauce Labs Username and Access Key](../.gitbook/assets/image%20%2866%29.png)
 
 ### Enabling Sauce Labs Integration in TestProject
 
@@ -33,9 +33,9 @@ Only account administrators can set up Sauce Labs integration.
 
 After you have the Sauce Labs **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)\(1\) section of your TestProject account and click on the **Cloud Execution** \(2\) option on the left hand side menu. Click on the toggle ![](../.gitbook/assets/8hvmgc32do.png) \(3\) near the Sauce Labs logo to enable the integration. You will now see the Sauce Labs integration settings window, just paste your **Username** \(4\) and **Access Key** \(5\) in the relevant places and click **Save** \(6\).
 
-![Configuring Sauce Labs access information in TestProject](../.gitbook/assets/image%20%283%29.png)
+![Configuring Sauce Labs access information in TestProject](../.gitbook/assets/image%20%284%29.png)
 
-Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active ![](../.gitbook/assets/image%20%28143%29.png) That's it!
+Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active ![](../.gitbook/assets/image%20%28153%29.png) That's it!
 
 {% hint style="info" %}
 Once you set up the integration you cannot retrieve your access key from TestProject, as it is being stored in an encrypted state. You can always click on the cog icon to change your credentials.
@@ -57,13 +57,13 @@ As you probably already know, TestProject allows you to connect infinite number 
 
 In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** \(1\), choose the **Agent browsers** \(2\) section, choose your browser \(3\) or device and run your test.
 
-![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28224%29.png)
+![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28238%29.png)
 
 #### **Running on Sauce Labs Cloud using own Agents**
 
 Once you have the integration set up, you can use your own TestProject Agents to run tests and jobs on the Sauce Labs cloud. This means that your agents \(wherever they are installed\) will be running your tests in the cloud using Sauce Labs devices or browsers. To achieve that, choose one of your **Agents \(1\)**, expand the **Sauce Labs** \(2\) section and select a browser \(3\) or device from the Sauce Labs cloud and run your test. That's it!
 
-![Running the &quot;Login&quot; web test on the Sauce Labs Edge 18 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28188%29.png)
+![Running the &quot;Login&quot; web test on the Sauce Labs Edge 18 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%28200%29.png)
 
 {% hint style="info" %}
 This method is useful for cases where tests need access to your local resources that are not accessible from the cloud. For example, let's say that in some of your steps you are using the TestProject [RESTful API Client Addon](https://addons.testproject.io/restful-api-client) to access your back office API. You can test your website in the cloud and make your validations internally.
@@ -73,11 +73,11 @@ This method is useful for cases where tests need access to your local resources 
 
 In addition to the two ways described above, another great option is running entirely in the cloud using the **Virtual Agent**. Once you've set up your Sauce Labs integration you will see that a **Virtual Agent** was added to [your lab](https://app.testproject.io/#/agents).
 
-![A TestProject Virtual Agent](../.gitbook/assets/image%20%2864%29.png)
+![A TestProject Virtual Agent](../.gitbook/assets/image%20%2869%29.png)
 
 This type of execution does not require an Agent at all. This means that you can execute your tests and jobs even if you do not have any agents that are currently available for execution. To use this capability when running a test, just choose the **Virtual Agent** \(1\), expand the **Sauce Labs** section \(2\), choose the desired browser \(3\) or device and run your test. Because Sauce Labs provides many browsers and devices and the list can get long, we've added an easy quick search option that will allow you to filter out all the unnecessary targets.
 
-![Running the &quot;Login&quot; web test on the Sauce Labs Chrome 79 \(on Mac 10.14\) browser using the Virtual Agent](../.gitbook/assets/image%20%28180%29.png)
+![Running the &quot;Login&quot; web test on the Sauce Labs Chrome 79 \(on Mac 10.14\) browser using the Virtual Agent](../.gitbook/assets/image%20%28192%29.png)
 
 {% hint style="info" %}
 Note: Virtual Agents can take up to a minute to initialize before starting the execution.
@@ -93,7 +93,7 @@ When creating a new job or editing an existing one, you have the option to defin
 You can toggle the **Show only selected** \(3\) option to conveniently see all the selected targets.
 {% endhint %}
 
-![Defining a job to run using own Agent on locally installed Chrome and on 6 additional Sauce Labs browsers](../.gitbook/assets/image%20%28152%29.png)
+![Defining a job to run using own Agent on locally installed Chrome and on 6 additional Sauce Labs browsers](../.gitbook/assets/image%20%28162%29.png)
 
 Once the jobs is triggered, the Agent will run all of your tests on each of the selected browsers or devices. If you choose to assign the **Virtual Agent** to the job \(instead of selecting one of your own agents\), no physical agents are required to be available when the job is executed.
 
@@ -101,7 +101,7 @@ Once the jobs is triggered, the Agent will run all of your tests on each of the 
 When using the **Virtual Agent**, local browsers / devices are not displayed. Meaning that only Sauce Labs browsers and devices will be available. 
 {% endhint %}
 
-![Defining a job to run using the Virtual Agent on 6 different Sauce Labs browsers](../.gitbook/assets/image%20%2897%29.png)
+![Defining a job to run using the Virtual Agent on 6 different Sauce Labs browsers](../.gitbook/assets/image%20%28104%29.png)
 
 ## Reviewing the Progress & the Results of my Execution
 
@@ -111,7 +111,7 @@ After we've successfully defined our integration and ran our tests on various ta
 
 First of all, when tests or jobs are executed on the Sauce Labs cloud, you can see the progress in the [TestProject Monitor](https://app.testproject.io/#/monitor) with some additional information about the executed test or job.
 
-![TestProject Monitor showing the progress of currently running test on Sauce Labs Edge 44 browser](../.gitbook/assets/image%20%28108%29.png)
+![TestProject Monitor showing the progress of currently running test on Sauce Labs Edge 44 browser](../.gitbook/assets/image%20%28116%29.png)
 
 {% hint style="info" %}
 While in the Monitor, notice that the browser has a Sauce Labs icon over it, indicating that it is running in the Sauce Labs cloud. Hovering over the browser icon will show the exact version of the used browser.
@@ -119,13 +119,13 @@ While in the Monitor, notice that the browser has a Sauce Labs icon over it, ind
 
 In addition to that, if you open your [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/tests), you can see the execution happens in real time and even control the browser or device if needed.
 
-![](../.gitbook/assets/image%20%28243%29.png)
+![](../.gitbook/assets/image%20%28259%29.png)
 
 ### Execution Reports
 
 Once your execution has finished, you can hop over to the [Reports ](https://app.testproject.io/#/reports)section in your TestProject account to see the results of your test\(s\). As you are already used to, all the information is here with some additional elements. You can see that the browser \(1\) has the Sauce Labs logo on it \(just like in the Monitor\) which indicates that the execution was performed on a Sauce Labs browser. Hovering with your mouse on the browser icon will show the exact used version. On the right hand side \(3\), you can still see all the steps of your test with all the information that you are used to seeing there, including full screenshots. Besides that, all of the tests of your job will have a link \(2\) that will take you directly to the related execution session in the Sauce Labs Dashboard.
 
-![A TestProject report of the &quot;Login&quot; test that was executed on Sauce Labs Edge browser](../.gitbook/assets/image%20%28157%29.png)
+![A TestProject report of the &quot;Login&quot; test that was executed on Sauce Labs Edge browser](../.gitbook/assets/image%20%28168%29.png)
 
 Once you click the **Open Sauce Labs report** link, you will be redirected to Sauce Labs where you will be able to see some additional information about that execution: 
 
@@ -135,7 +135,7 @@ Once you click the **Open Sauce Labs report** link, you will be redirected to Sa
 4. Extended logs related to the execution.
 5. Additional metadata. Among other things, you will find the name of your project and a link to the TestProject report.
 
-![Sauce Labs &quot;Login&quot; test execution information](../.gitbook/assets/image%20%28231%29.png)
+![Sauce Labs &quot;Login&quot; test execution information](../.gitbook/assets/image%20%28245%29.png)
 
 ## Some Additional Information
 

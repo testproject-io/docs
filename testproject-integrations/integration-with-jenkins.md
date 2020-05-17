@@ -29,13 +29,13 @@ After installing the TestProject Jenkins plugin, generating an API key and confi
 
 In order to run a TestProject job remotely, you will need the **Project ID** and the **Job ID** of the job you want to run. These IDs are unique strings and can be found in the TestProject application. To get the Project ID, just navigate to the homepage and copy the ID from the project’s context menu. 
 
-![Project ID](../.gitbook/assets/image%20%28205%29.png)
+![Project ID](../.gitbook/assets/image%20%28219%29.png)
 
 
 
 Similarly you can select the job ID from its context menu.
 
-![Job ID](../.gitbook/assets/image%20%28136%29.png)
+![Job ID](../.gitbook/assets/image%20%28145%29.png)
 
 ### Freestyle Jenkins Projects
 

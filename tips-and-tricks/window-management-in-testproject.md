@@ -12,11 +12,11 @@ If you have not yet created a test, you can follow the instructions in on [creat
 
 The first thing we will do in this test is create a test step to resize the window. You can add a new test step using the plus button at the bottom of the panel, and then change the step type to action. 
 
-![Change step type to Action](../.gitbook/assets/image%20%28137%29.png)
+![Change step type to Action](../.gitbook/assets/image%20%28147%29.png)
 
 You can then click on the select action link and search for `window`. In the resulting list, select the `Set window size` action. With this action you can set the both the width and the height that you want the window to have. Put in values of something like 1000 and 600 and save the test step. Click the arrow beside the test step and run it.
 
-![Run the Test Step](../.gitbook/assets/image%20%2859%29.png)
+![Run the Test Step](../.gitbook/assets/image%20%2864%29.png)
 
 This will run the test step and resize the window for you.
 
@@ -26,15 +26,15 @@ At this point we could create the rest of the test steps to ensure that elements
 
 If you go to the test step you can click on the plus button beside the input parameters to parameterize them.
 
-![Parameterize Button](../.gitbook/assets/image%20%28125%29.png)
+![Parameterize Button](../.gitbook/assets/image%20%28134%29.png)
 
 This will bring up the parameters panel.Clear the Width field and then click on the plus to add a new parameter
 
-![Add new parameter](../.gitbook/assets/image%20%2841%29.png)
+![Add new parameter](../.gitbook/assets/image%20%2846%29.png)
 
 Name the parameter something like `WindowWidth` and give a value of 100 and then click on Add. This will create a new parameter and put it in the Width field. Click on the green check mark to save it. 
 
-![Save Parameter](../.gitbook/assets/image%20%2847%29.png)
+![Save Parameter](../.gitbook/assets/image%20%2852%29.png)
 
 Repeat the same process to add a `WindowHeight` parameter to the height field and then save the test step.
 
@@ -42,11 +42,11 @@ Repeat the same process to add a `WindowHeight` parameter to the height field an
 
 Now that we have the width and height parameterized, let's look at how we can drive this test with multiple values for those parameters. Close the test recorder and go to the page for the project that has the test you are creating. Click on the `more` menu beside the test and choose the Data Source Template option 
 
-![Download a Data Source Template](../.gitbook/assets/image%20%2856%29.png)
+![Download a Data Source Template](../.gitbook/assets/image%20%2861%29.png)
 
 This will download a `.csv` file for you. Open that file. You can remove the  ApplicationURL column since we don't want to change that. Then create values that looks something like this.
 
-![Window Sizes](../.gitbook/assets/image%20%287%29.png)
+![Window Sizes](../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="info" %}
 Note that the column names \(in this example WindowWidth and WindowHeight\) should match the names of the parameters you made in the test.
@@ -54,15 +54,15 @@ Note that the column names \(in this example WindowWidth and WindowHeight\) shou
 
 Click on the Data Sources tab in the left hand navigation and then click on the Add a new Data Source button.
 
-![Add a new Data source](../.gitbook/assets/image%20%28149%29.png)
+![Add a new Data source](../.gitbook/assets/image%20%28159%29.png)
 
 Choose the `.csv` file you just created and name the data source something like `WindowSizes.`Now go back to the tests and click on the run button beside the test you are working on.
 
-![Run Test](../.gitbook/assets/image%20%28118%29.png)
+![Run Test](../.gitbook/assets/image%20%28126%29.png)
 
 On the resulting popup, choose the browser you want to run the test on and then click Next.  Now choose the `Use data source` option and select the data source you just created.
 
-![Use Window Sizes data source](../.gitbook/assets/image%20%28199%29.png)
+![Use Window Sizes data source](../.gitbook/assets/image%20%28213%29.png)
 
 Run the test and you will notice that the test is run once for each of the window sizes that you specified in the `.csv` file.
 

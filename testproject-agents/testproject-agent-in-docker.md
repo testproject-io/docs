@@ -78,27 +78,27 @@ The story at the source code level brings unwanted configurations to the code**,
 
 ```text
 version: "3.1"
-Services:
+services:
   Testproject-agent:
     image: testproject/agent:latest
     container_name: testproject-agent3
-    Depends_on:
+    depends_on:
       - chrome
       - firefox
-    Environment:
+    environment:
       TP_API_KEY: <your_api_key>
       TP_AGENT_ALIAS: "Docker Agent"
       TP_JOB_ID: <job_id>
       TP_JOB_PARAMS: '"jobParameters" : { "browsers": [ "chrome", "firefox" ] }'
       CHROME: "chrome:4444"
       FIREFOX: "firefox:4444"
-  Chrome:
+  chrome:
     image: selenium/standalone-chrome
     Volumes:
       - /dev/shm:/dev/shm
-  Firefox:
+  firefox:
     image: selenium/standalone-firefox
-    Volumes:
+    volumes:
       - /dev/shm:/dev/shm
 ```
 
