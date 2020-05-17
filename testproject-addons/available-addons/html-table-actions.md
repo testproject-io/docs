@@ -1,6 +1,6 @@
 # HTML Table Actions
 
-With the HTML Table actions Addon you can perform various tasks on HTML tables.
+With the [HTML Table actions Addon](https://addons.testproject.io/html-table-actions) you can perform various tasks on HTML tables.
 
 {% hint style="info" %}
 The most important thing is to capture the table element in the HTML DOM.
