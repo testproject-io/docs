@@ -6,5 +6,5 @@ These reports can be viewed directly in the TestProject app, or can be downloade
 
 In order to view reports in TestProject go to the Reports menu option at the top of the page. 
 
-![Reports](../.gitbook/assets/image%20%283%29.png)
+![Reports](../.gitbook/assets/image%20%2892%29.png)
 

@@ -8,5 +8,5 @@ Some examples of popular addons in the library include an addon that allows you 
 
 There are many other addons available as well, so if you are looking for a particular command or action checkout the addons section of TestProject.
 
-![Addons Menu](../.gitbook/assets/image%20%28240%29.png)
+![Addons Menu](../.gitbook/assets/image%20%2879%29%20%281%29.png)
 

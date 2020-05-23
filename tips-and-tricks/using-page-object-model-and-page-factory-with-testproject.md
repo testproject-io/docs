@@ -8,13 +8,13 @@ The page object model is essentially a way of organizing your tests so that you 
 
 To do that in the test recorder, just add a new test and change the type to Test.
 
-![Add a test and change the type](../.gitbook/assets/image%20%287%29.png)
+![Add a test and change the type](../.gitbook/assets/image%20%282%29%20%281%29.png)
 
-![Set the type to Test](../.gitbook/assets/image%20%2859%29.png)
+![Set the type to Test](../.gitbook/assets/image%20%2823%29.png)
 
 You can then chose the login test as test step in your current test case. 
 
-![Select Test](../.gitbook/assets/image%20%28130%29.png)
+![Select Test](../.gitbook/assets/image%20%2846%29%20%282%29.png)
 
 This let's you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test and all tests using it will get that change.
 

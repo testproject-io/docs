@@ -6,7 +6,7 @@ The TestProject Test Recorder is a powerful and versatile tool that let's you ea
 
 If you navigate to a project with tests, you can run those tests directly from the project folder. Doing this is as simple as mousing over the test you are interested in and then click on the run icon.
 
-![Run Tests from Project](../.gitbook/assets/image%20%28183%29.png)
+![Run Tests from Project](../.gitbook/assets/image%20%28128%29%20%281%29.png)
 
 When you do that, you will be prompted to pick the test agent and browser or device that you want to run the test on. If the test has parameters defined, you will then have the option to override those parameters if you want. You can also at this point import or use a data source to set your test parameters \(see[ the documentation on data driven testing ](../schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)for more details on how this works\).
 

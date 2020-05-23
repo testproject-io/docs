@@ -16,13 +16,13 @@ For this example, we will use the TestProject landing page \(testproject.io\). I
 
 For the purposes of this example, let's say we want to scroll to the Learn More button in the Shared Addons section of the page. This button is about 2/3 of the way down the page. In the test recorded scroll down until you see that button.  You will see that the test recorder has automatically added one or more test steps that say `Scroll window by` and then a value to indicate how much the window should scroll.
 
-![Scroll window commands](../.gitbook/assets/image%20%2834%29.png)
+![Scroll window commands](../.gitbook/assets/image%20%2829%29.png)
 
 Instead of using those commands, we want to use one of the `Scroll to element by` commands. In order to do that, click on the blue plus button to add a new test step. Change the type on the step creation panel from Element action to Action, and then in the action section click on the Select action link. Type `scroll` into the search field and it should give you back a list of different commands. From this list select the `Scroll to element by xpath` action. There are of course a number of other ways that you can choose for scrolling to an element, but for this example we will look at getting it by xpath
 
 This action requires you to specify the xpath of the element you want and we can get it by hoovering over the Learn more button on the page and hitting the shift key twice in row in rapid succession \(double shift\). On the resulting menu, go to the `Attributes` option.  One of the attributes on there should be the xpath of the element. You can copy this by using the `copy to clipboard` icon.
 
-![Copy xpath to clipboard](../.gitbook/assets/image%20%2829%29.png)
+![Copy xpath to clipboard](../.gitbook/assets/image%20%2825%29.png)
 
 Paste this value into the xpath field for the `scroll to element by xpath` action and save the test step. 
 
@@ -30,11 +30,11 @@ Paste this value into the xpath field for the `scroll to element by xpath` actio
 
 Now, we have created a test step that will scroll to the desired element, but before we consider this test complete we should do a little bit of cleanup. We have all those `Scroll window by` steps that we really don't need anymore, so let's remove them.  We can do this with the `Multiple Select` tool.
 
-![Multiple Select Tool](../.gitbook/assets/image%20%2882%29.png)
+![Multiple Select Tool](../.gitbook/assets/image%20%2876%29.png)
 
 After click on this, you can select the check boxes beside each of the `Scroll window by` test steps and then choose the trash can icon to delete them all in on go. 
 
-![Delete Multiple Test Steps](../.gitbook/assets/image%20%28148%29.png)
+![Delete Multiple Test Steps](../.gitbook/assets/image%20%28137%29.png)
 
 And with that you have cleaned up and completed the test
 

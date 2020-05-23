@@ -14,33 +14,33 @@ The first thing to test is the login page. Click on the Full Name field and a st
 
 Click on this most recently created test step and make some changes to it. Change the type of the test step from Element Action to Action.
 
-![Change the type to Action](../.gitbook/assets/image%20%28258%29.png)
+![Change the type to Action](../.gitbook/assets/image%20%28189%29%20%281%29.png)
 
 Next click on the select action link and search for `random name` in the search box. In the search results notice that there is a Random name action. This action is available in the jRand addon. There is more information on how to install and use addons in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md). With the jRand addon installed click on that action to select it to add it to the test step. Under the Output parameters section of the test step, click on the Select Parameter link.
 
-![Select Parameter](../.gitbook/assets/image%20%2867%29.png)
+![Select Parameter](../.gitbook/assets/image%20%2845%29.png)
 
 Use the plus icon on the bottom of the panel to add a new parameter
 
-![Add New Parameter](../.gitbook/assets/image%20%28198%29.png)
+![Add New Parameter](../.gitbook/assets/image%20%28142%29.png)
 
 Name the parameter, but leave the value field blank \(it will be filled in by the addon\) and click Add to add that parameter to the test.
 
 Now use the More menu on the test step created when the Full Name box was clicked and select the Duplicate option to create a duplicate of that test step
 
-![Duplicate Test Step](../.gitbook/assets/image%20%2885%29.png)
+![Duplicate Test Step](../.gitbook/assets/image%20%2859%29.png)
 
 Take this duplicate test step and drag it to the end of the test and click on it. The action for this test step is set to Click. Click on that action and search for type text. Select that action and then in the input parameters section choose the plus beside the input box to select a parameter for this input.
 
-![Use a Parameter](../.gitbook/assets/image%20%2878%29.png)
+![Use a Parameter](../.gitbook/assets/image%20%2855%29%20%281%29.png)
 
 Choose the parameter you created above and then click on the check mark at the bottom of the panel to use that parameter in this test step
 
-![Choose Parameter](../.gitbook/assets/image%20%28260%29.png)
+![Choose Parameter](../.gitbook/assets/image%20%28191%29.png)
 
 Save the Test Step and then use the Run until here option from the more menu to run the test and notice that a random name has been input into the Full Name textbox.
 
-![Random Full name](../.gitbook/assets/image%20%28114%29.png)
+![Random Full name](../.gitbook/assets/image%20%2881%29%20%282%29.png)
 
 Click on the password box and type `12345`to enter the password and then click login. This will add those actions as steps to the test.
 

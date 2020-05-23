@@ -10,7 +10,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Element Extensions](element-extensions-addon.md) |
 | [Generic Extensions](generic-extensions-addon.md) |
 | [Geolocation Utils](geolocation-utils-addon.md) |
-| HTML Table Actions |
+| [HTML Table Actions](https://docs.testproject.io/testproject-addons/available-addons/html-table-actions) |
 | [Image Comparison](image-comparison-addon.md) |
 | [JS Actions](js-actions-addon.md) |
 | [Live Currency Converter](live-currency-converter-addon.md) |

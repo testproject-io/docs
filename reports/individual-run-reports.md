@@ -6,19 +6,19 @@ TestProject [provides a number of built-in plots](types-of-plots-in-testproject-
 
 If you run a test and it fails, you can go to the report for that test run. To do that go to the Reports tab and then click on the project that the test belongs to. TestProject will show you the summary charts of the test runs for that project but if you want to see the results of an individual test run you can easily do that by clicking on the job or test run in the left-hand navigation tree.
 
-![Navigation Tree](../.gitbook/assets/image%20%2823%29.png)
+![Navigation Tree](../.gitbook/assets/image%20%28103%29.png)
 
 Select the test you are interested in and you should see a summary of the test run showing you details like the agent that rand the test, and the time it took to run the test along with a summary of how many tests passed or failed. The is also a link on this panel that allows you to download PDF reports. You can either download just the summary, or if you want, the detailed step-by-step report.
 
-![Test Run Summary](../.gitbook/assets/image%20%28167%29.png)
+![Test Run Summary](../.gitbook/assets/image%20%28115%29.png)
 
 The right hand panel shows you the test steps that were executed. Any failed steps will be marked with a red bar and if you click on them to expand that test step, TestProject will show you some additional details about the failure. You will see a summary of the action that test step was trying to perform and a message indicating what went wrong. If you have screen shots enabled for you test you will also see the screen shot for the failing test, which you can click on to expand.
 
-![Failing Test Step](../.gitbook/assets/image%20%28146%29.png)
+![Failing Test Step](../.gitbook/assets/image%20%28114%29.png)
 
 The right-hand panel also has an option that you can toggle to show only failing test steps which can be helpful if you have a lot of test steps to look through.
 
-![Show only Failed Test Steps](../.gitbook/assets/image%20%2817%29.png)
+![Show only Failed Test Steps](../.gitbook/assets/image%20%28100%29.png)
 
 
 

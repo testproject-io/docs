@@ -39,7 +39,7 @@ Once an integration is initiated, the **qTest** artifacts that will be integrate
 
 Users of **qTest** \(Cloud Elite or Cloud Trial\) should now see the TestProject icon within their 9-box:
 
-![TestProject logo within the qTest 9-box.](../.gitbook/assets/image%20%28233%29.png)
+![TestProject logo within the qTest 9-box.](../.gitbook/assets/image%20%28170%29.png)
 
 Clicking on the TestProject logo within the **qTest** 9-box will trigger the account creation process in TestProject for that **qTest** user**.**  First, TestProject will check to see if there is an existing TestProject account for that **qTest** user's email address.
 
@@ -47,11 +47,11 @@ If the **qTest** user's email is already established as a user in TestProject, T
 
 If the **qTest** user's email is not yet established as a user in TestProject, TestProject will automatically initiate the process of creating an integrated TestProject account with that user's email address.  First, the user must validate their email address:
 
-![Notification of email validation send to the newly created TestProject user. ](../.gitbook/assets/image%20%28170%29.png)
+![Notification of email validation send to the newly created TestProject user. ](../.gitbook/assets/image%20%28121%29.png)
 
 Then, the user must click the link in the email from TestProject to validate their email address:
 
-![Email validation sent to the user.](../.gitbook/assets/image%20%28253%29.png)
+![Email validation sent to the user.](../.gitbook/assets/image%20%28189%29.png)
 
 {% hint style="info" %}
 If you do not receive the validation email, please contact us at support@testproject.io to manually validate your email.
@@ -59,13 +59,13 @@ If you do not receive the validation email, please contact us at support@testpro
 
 Finally, the user must accept TestProject's separate Terms of Service related to the separate TestProject free license before their account is fully activated and ready to be used:
 
-![TestProject Terms of Service, which must be agreed to for account activation.](../.gitbook/assets/image%20%2812%29.png)
+![TestProject Terms of Service, which must be agreed to for account activation.](../.gitbook/assets/image%20%2810%29.png)
 
 From this point, the integration is automatically set, according to default settings.  You should see the TestProject projects list populated with projects from qTest:  
 
-![Project list in qTest.](../.gitbook/assets/image%20%2843%29.png)
+![Project list in qTest.](../.gitbook/assets/image%20%2832%29.png)
 
-![Project list in TestProject.  2 projects have been synced from qTest to TestProject.](../.gitbook/assets/image%20%28178%29.png)
+![Project list in TestProject.  2 projects have been synced from qTest to TestProject.](../.gitbook/assets/image%20%28134%29.png)
 
 {% hint style="info" %}
 All projects created in qTest will be synced to TestProject in a 1:1 fashion.  Users should make sure to work in the correct project in TestProject to ensure results from TestProject flow into the proper account in qTest.
@@ -79,7 +79,7 @@ Projects are only synced from qTest to TestProject.  Projects created directly i
 
 The integration between qTest and TestProject will automatically be set and updated each time a user logs in to TestProject from qTest using the 9-box.  If changes need to be made or the integration needs to be turned off completely, you are are able to do so in TestProject in the  Integrations &gt; qTest panel: 
 
-![Updating the domain, bearer token, or integration status \(on/off\) from TestProject.](../.gitbook/assets/image%20%2863%29.png)
+![Updating the domain, bearer token, or integration status \(on/off\) from TestProject.](../.gitbook/assets/image%20%2846%29%20%281%29.png)
 
 {% hint style="info" %}
 Updating the integration settings incorrectly may result in an interruption in data flow between the two tools.  If you are unsure about making these changes, please contact us at support@testproject.io to assist you before making any updates.
@@ -89,7 +89,7 @@ Updating the integration settings incorrectly may result in an interruption in d
 
 To receive data from TestProject into qTest, you must first enable the automation settings in each qTest project by turning the slider to the "ON" status:
 
-![Navigate to the &quot;Automation Settings&quot; area in each project to turn the slider to &quot;ON&quot;.](../.gitbook/assets/image%20%28176%29.png)
+![Navigate to the &quot;Automation Settings&quot; area in each project to turn the slider to &quot;ON&quot;.](../.gitbook/assets/image%20%28132%29.png)
 
 {% hint style="info" %}
 If you decide to edit the mapping of Automation Statuses to qTest Statuses, please make sure you retain a mapping for the "PASS", "FAIL", and "SKIP" status to ensure data is not lost between TestProject and qTest.
@@ -99,9 +99,9 @@ If you decide to edit the mapping of Automation Statuses to qTest Statuses, plea
 
 All test folders created in synced projects in TestProject will be synced into the corresponding qTest project's Test Design as a module, under a parent module named "TestProject":
 
-![A folder called &quot;Test Folder&quot; is created in TestProject, in a project synced from qTest](../.gitbook/assets/image%20%28122%29.png)
+![A folder called &quot;Test Folder&quot; is created in TestProject, in a project synced from qTest](../.gitbook/assets/image%20%2895%29.png)
 
-![This &quot;Test Folder&quot; is synced from TestProject and created as a module in Test Design, in the corresponding project.](../.gitbook/assets/image%20%28155%29.png)
+![This &quot;Test Folder&quot; is synced from TestProject and created as a module in Test Design, in the corresponding project.](../.gitbook/assets/image%20%28117%29%20%281%29.png)
 
 The test module data synchronized to qTest will be as follows: 
 
@@ -116,9 +116,9 @@ You can move synced modules in qTest without affecting the results of the synchr
 
 All test cases created in synced projects in TestProject will be synced into the synced qTest modules in Test Design, under a parent module named "TestProject":
 
-![&quot;Test \#1&quot; created in TestProject.](../.gitbook/assets/image%20%28220%29.png)
+![&quot;Test \#1&quot; created in TestProject.](../.gitbook/assets/image%20%28171%29.png)
 
-![&quot;Test \#1&quot; synced into qTest, in the newly synced &quot;Test Folder&quot; module.](../.gitbook/assets/image%20%28106%29.png)
+![&quot;Test \#1&quot; synced into qTest, in the newly synced &quot;Test Folder&quot; module.](../.gitbook/assets/image%20%2881%29%20%281%29.png)
 
 The test case data synchronized to qTest will be as follows: 
 
@@ -137,9 +137,9 @@ Test case data only flows from TestProject to qTest.  Any updates to synchronize
 
 All test jobs created in synced projects in TestProject will become test cycles in Test Execution.  These cycles will have child suites below them which are organized by browser \(for web tests\) or device \(for mobile tests\):
 
-![Test Job &quot;Demo Web Tests&quot; created in TestProject.](../.gitbook/assets/image%20%28218%29.png)
+![Test Job &quot;Demo Web Tests&quot; created in TestProject.](../.gitbook/assets/image%20%28169%29.png)
 
-![Test Cycle &quot;Demo Web Tests&quot; synced into qTest, with test suites for browsers created as children.](../.gitbook/assets/image%20%2880%29.png)
+![Test Cycle &quot;Demo Web Tests&quot; synced into qTest, with test suites for browsers created as children.](../.gitbook/assets/image%20%2861%29.png)
 
 The test cycle data synchronized to qTest will be as follows: 
 
@@ -158,9 +158,9 @@ Any ad-hoc executions in TestProject \(i.e. directly from the test case\) will b
 
 All tests executed in synced projects in TestProject will become test runs in Test Execution \(in the corresponding test cycles/test suites.  These runs will have corresponding test logs created within them for each subsequent execution:
 
-![&quot;Test\#1&quot; executed in test job &quot;Demo Web Tests&quot; in TestProject.](../.gitbook/assets/image%20%28214%29.png)
+![&quot;Test\#1&quot; executed in test job &quot;Demo Web Tests&quot; in TestProject.](../.gitbook/assets/image%20%28166%29.png)
 
-![&quot;Test \#1&quot; synced into test cycle and suite in qTest, with a test log created for each subsequent run.](../.gitbook/assets/image%20%2825%29.png)
+![&quot;Test \#1&quot; synced into test cycle and suite in qTest, with a test log created for each subsequent run.](../.gitbook/assets/image%20%2819%29.png)
 
 The test run data synchronized to qTest will be as follows: 
 

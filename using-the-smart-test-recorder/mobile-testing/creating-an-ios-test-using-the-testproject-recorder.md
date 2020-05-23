@@ -10,11 +10,11 @@ Once you have followed those steps you will be able to start creating iOS tests 
 
 Creating a new mobile test is as simple as clicking on the New Test button and then choosing the Mobile test option as your test type
 
-![Add New Test](../../.gitbook/assets/image%20%2850%29.png)
+![Add New Test](../../.gitbook/assets/image%20%2817%29.png)
 
 Once you have done that you can fill in a name and description for your test and press Next.  You will then need to select which platform and application you want to use. For recording on an iOS device you would choose the IOS platform and then you can select the app that you want to test.  If this is the first test you are creating for this device there will not be any applications in the list and so you will need to click on the Add a new application for testing button.
 
-![Select Platform and Application](../../.gitbook/assets/image%20%28164%29.png)
+![Select Platform and Application](../../.gitbook/assets/image%20%2855%29%20%282%29.png)
 
 ## Adding an Application
 
@@ -28,11 +28,11 @@ Once you have picked the application you want to use and given it a name you can
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers
 
-![Record a Test](../../.gitbook/assets/image%20%28217%29.png)
+![Record a Test](../../.gitbook/assets/image%20%2872%29.png)
 
 Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
 
-![TestProject Recorder](../../.gitbook/assets/image%20%2883%29.png)
+![TestProject Recorder](../../.gitbook/assets/image%20%2830%29%20%281%29.png)
 
 During recording you can conveniently use the TestProject [Element Inspector](../finding-and-using-elements/element-inspector.md) and [Element Locator ](../finding-and-using-elements/element-locator.md)to verify your location strategies as you interact with your application through the mirrored view.
 
