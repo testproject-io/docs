@@ -65,7 +65,7 @@ The **Wait to finish** parameter will set the amount of time the build will wait
 
 **If** **you do not want to wait for the TestProject job to finish**, set it to 0, causing the build to continue normally even if the TestProject job fails. This means that the result of the TestProject job will not affect the result of the Jenkins build.
 
-The **Path to the Junit XML report** will create an XML format file containing the results needed for the **JUnit plugin**, it will be created **relative to your Jenkins workspace**. This will be explained in more detail in the JUnit section below.
+The **Path to the Junit XML report** will create an XML format file containing the results needed for the **JUnit plugin**, it will be created **relative to your Jenkins workspace**. This will be explained in more detail in the [JUnit section below](https://app.gitbook.com/@testproject/s/documentation/testproject-integrations/integration-with-jenkins#get-testproject-automation-execution-reports-in-jenkins-scope).
 
 The final parameter is the **Execution parameters**, you can fill in extra parameters and specifications, the syntax is the same as using the TestProject API. You can find more about that in our [API documentation](https://api.testproject.io/docs/v2/).
 
