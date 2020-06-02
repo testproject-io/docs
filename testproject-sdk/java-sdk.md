@@ -50,7 +50,7 @@ The best way to start developing automated tests with TestProject is by reviewin
 * [Android](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
 * [iOS](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
 
-There is also a [Generic](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
+There is also a [Generic](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
 
 ### Test Class
 
@@ -255,10 +255,10 @@ Let's make our example more advanced by adding parameters. To add parameters to 
 
 See the relevant platform link for full source code:
 
-* [Web - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Web/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [Android - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Android/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [iOS - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [Generic - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
+* [Web - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
+* [Android - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
+* [iOS - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
+* [Generic - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
 
 #### Test Annotations
 
