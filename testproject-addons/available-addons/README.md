@@ -11,7 +11,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Generic Extensions](generic-extensions-addon.md) |
 | [Geolocation Utils](geolocation-utils-addon.md) |
 | [HTML Table Actions](https://docs.testproject.io/testproject-addons/available-addons/html-table-actions) |
-| [Image Comparison](image-comparison-addon.md) |
+| [Image Comparison](image-comparison-addon/) |
 | [JS Actions](js-actions-addon.md) |
 | [Live Currency Converter](live-currency-converter-addon.md) |
 | [Mobile Extensions](mobile-extensions-addon.md) |
