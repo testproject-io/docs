@@ -30,7 +30,7 @@ The best way to start developing automated tests with TestProject is by reviewin
 * [Android](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
 * [iOS](https://github.com/testproject-io/csharp-sdk-examples/blob/master/IOS/Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
 
-There is also a [Generic](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Generic/Test/TestProject.SDK.Examples.Generic.Test/Test/BasicTest.cs) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
+There is also a [Generic](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Generic/Test/TestProject.SDK.Examples.Generic.Test/Test/BasicTest.cs) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
 
 ### Build your first C\# Project
 
@@ -266,10 +266,10 @@ Let's make our example more advanced by adding parameters. To add parameters to 
 
 See the relevant platform link for full source code:
 
-* [Web - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ExtendedTest.cs)
-* [Android - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Android/Test/TestProject.SDK.Examples.Android.Test/Test/ExtendedTest.cs)
-* [iOS - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/IOS/Test/Test/ExtendedTest.cs)
-* [Generic - Extended Test](https://github.com/testproject-io/docs/tree/6de98c8a5239402a8a2278765409111c92a22e54/testproject-sdk/Generic/Test/TestProject.SDK.Examples.Generic.Test/Test/ExtendedTest.cs)
+* [Web - Extended Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ExtendedTest.cs)
+* [Android - Extended Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/ExtendedTest.cs)
+* [iOS - Extended Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/IOS/Test/Test/ExtendedTest.cs)
+* [Generic - Extended Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Generic/Test/TestProject.SDK.Examples.Generic.Test/Test/ExtendedTest.cs)
 
 #### Test Attributes
 
