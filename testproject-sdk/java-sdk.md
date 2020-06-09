@@ -584,10 +584,10 @@ StepExecutionResult result = helper.executeProxy(clearFieldsAction);
 
 See examples:
 
-* Web - Proxy Test
-* Android - Proxy Test
-* iOS - Proxy Test
-* Generic - Proxy Test
+* [Web - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
+* [Android - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
+* [iOS - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
+* [Generic - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
 
 ## Packaging
 
