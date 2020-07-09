@@ -1,604 +1,481 @@
+---
+description: TestProject SDK For Java
+---
+
 # Java SDK
 
-## Briefing
+[TestProject](https://testproject.io/) is a **Free** Test Automation platform for Web and Mobile.  
+ To get familiar with the TestProject, visit our main [documentation](https://docs.testproject.io/) website.
 
-This document describes the bare minimum steps to start developing tests using the Java SDK. TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source [Selenium](https://www.seleniumhq.org/) and [Appium](http://appium.io/) frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more.
+TestProject SDK is a single, integrated interface to scripting with the most popular open source test automation frameworks.
 
-> This documentation and code examples can be found in our [GitHub repository](https://github.com/testproject-io/java-sdk-examples).
+From now on, you can effortlessly execute Selenium and Appium native tests using a single automation platform that already takes care of all the complex setup, maintenance and configs.
 
-## JDK / JRE
+With one unified SDK available across multiple languages, developers and testers receive a go-to toolset, solving some of the greatest challenges in open source test automation.
 
-Please use JDK 8, higher versions are not yet supported.
+With TestProject SDK, users save a bunch of time and enjoy the following benefits out of the box:
 
-## Preparations
+* 100% open source and available as a [Maven](https://mvnrepository.com/artifact/io.testproject/java-sdk) dependency.
+* 5-minute simple Selenium and Appium setup with a single [Agent](https://docs.testproject.io/testproject-agents) deployment.
+* Automatic test reports in HTML/PDF format \(including screenshots\).
+* Collaborative reporting dashboards with execution history and RESTful API support.
+* Always up-to-date with the latest and stable Selenium driver version.
+* A simplified, familiar syntax for both web and mobile applications.
+* Complete test runner capabilities for both local and remote executions, anywhere.
+* Cross platform support for Mac, Windows, Linux and Docker.
+* Ability to store and execute tests locally on any source control tool, such as Git.
 
-To kick-off automation development with TestProject, it is necessary to have an active TestProject account and the TestProject Agent installed. TestProject's Agent is a cross-platform desktop application, allowing you to create, debug and execute your test automation locally. TestProject Agent can be downloaded from [Agents](https://app.testproject.io/#/agents) page.
+## Getting Started
 
-### Getting Java SDK
+To get started, you need to complete the following prerequisites checklist:
 
-You can download TestProject SDK for Java from the [Developers](https://app.testproject.io/#/developers) page and reference it in your project.
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register](https://app.testproject.io/signup/) a new one.
+* [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
+* Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account.
+* Get a development token from [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
 
-#### Installing SDK
+### Installation
 
-To use TestProject SDK you have to add it as a reference to your project. Here are some examples for how it should be done using Maven or Gradle.
+For a Maven project, add the following to your `pom.xml` file:
+
+```text
+<dependency>
+  <groupId>io.testprojectgroupId>
+  <artifactId>java-sdkartifactId>
+  <version>0.63.2version>
+  <classifier>sourcesclassifier>
+dependency>
+```
+
+For a Gradle project, add the following to your `build.gradle` file:
+
+```text
+compile 'io.testproject:java-sdk:0.63.2'
+```
+
+## Test Development
+
+Using a TestProject driver is exactly identical to using a Selenium driver.  
+ Changing the import statement is enough in most cases.
+
+> Following examples are based on the `ChromeDriver`, however are applicable to any other supported drivers.
+
+Here's an example of how to create a TestProject version of `ChromeDriver`:
+
+```text
+// import org.openqa.selenium.chrome.ChromeDriver; <-- Replaced
+import io.testproject.sdk.drivers.web.ChromeDriver;
+
+...
+
+public class MyTest {
+  ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+}
+```
+
+Here a complete test example:
+
+```text
+package io.testproject.sdk.tests.examples.simple;
+
+import io.testproject.sdk.drivers.web.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public final class WebTest {
+
+    public static void main(final String[] args) throws Exception {
+        ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+
+        driver.navigate().to("https://example.testproject.io/web/");
+
+        driver.findElement(By.cssSelector("#name")).sendKeys("John Smith");
+        driver.findElement(By.cssSelector("#password")).sendKeys("12345");
+        driver.findElement(By.cssSelector("#login")).click();
+
+        boolean passed = driver.findElement(By.cssSelector("#logout")).isDisplayed();
+        if (passed) {
+            System.out.println("Test Passed");
+        } else {
+            System.out.println("Test Failed");
+        }
+
+        driver.quit();
+    }
+}
+```
+
+## Drivers
+
+TestProject SDK overrides standard Selenium/Appium drivers with extended functionality.  
+ Below is the packages structure containing all supported drivers:
+
+```text
+io.testproject.sdk.drivers
+├── web
+│   ├── ChromeDriver
+│   ├── EdgeDriver
+│   ├── FirefoxDriver
+│   ├── InternetExplorerDriver
+│   ├── SafariDriver
+│   └── RemoteWebDriver
+├── android
+│   └── AndroidDriver
+└── ios
+    └── IOSDriver
+```
+
+### Development Token
+
+The SDK uses a development token for communication with the Agent and the TestProject platform.  
+ Drivers search the developer token in an environment variable `TP_DEV_TOKEN`.  
+ Token can be also provided explicitly using this constructor:
+
+```text
+public ChromeDriver(final String token, final ChromeOptions options)
+```
+
+### Remote Agent
+
+By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585/).
+
+Agent URL \(host and port\), can be also provided explicitly using this constructor:
+
+```text
+public ChromeDriver(final URL remoteAddress, final ChromeOptions options)
+```
+
+It can also be set using the `TP_AGENT_URL` environment variable.
+
+### Driver Builder
+
+The SDK provides a generic builder for the drivers - `DriverBuilder`, for example:
+
+```text
+ChromeDriver driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
+  .withRemoteAddress(new URL("http://remote-agent-url:9999"))
+  .withToken("***")
+  .build(ChromeDriver.class);
+```
+
+## Reports
+
+TestProject SDK reports all driver commands and their results to the TestProject Cloud.  
+ Doing so, allows us to present beautifully designed reports and statistics in it's dashboards.
+
+Reports can be completely disabled using this constructor:
+
+```text
+public ChromeDriver(final ChromeOptions options, final boolean disableReports)
+```
+
+There are other constructor permutations, refer to method summaries of each specific driver class.
+
+### Implicit Project and Job Names
+
+The SDK will attempt to infer Project and Job names from JUnit / TestNG annotations.  
+ If found the following logic and priorities take place:
+
+* _Package_ name of the class containing the method is used for **Project** name.
+* JUnit 4 / 5
+  * _Class_ name or the _@DisplayName_ annotation \(JUnit 5 only\) on the class is used for the **Job** name
+  * _Method_ name or the _@DisplayName_ annotation \(JUnit 5 only\) on the method is used for the **Test** name\(s\)
+* TestNG
+  * _Class_ name or _description_ from _@BeforeSuite_ / _@BeforeClass_ annotations if found, are used for the **Job** name
+  * _Method_ name or the _@Test_ annotation \(and it's _testName_ / _description_ fields\) on the method is used for the **Test** name\(s\)
+
+Examples of implicit Project & Job names inferred from annotations:
+
+* [JUnit 5 example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit5/InferredReportTest.java)
+* [TestNG example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/testng/InferredReportTest.java)
+
+### Explicit Names
+
+Project and Job names can be also specified explicitly using this constructor:
+
+```text
+public ChromeDriver(final ChromeOptions options, final String projectName, final String jobName)
+```
+
+For example:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions(), "My First Project", "My First Job");
+```
+
+Same can be achieved using the `DriverBuilder`:
+
+```text
+ChromeDriver driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
+  .withProjectName("My First Project")
+  .withJobName("My First Job")
+  .build(ChromeDriver.class);
+```
+
+Examples of explicit Project & Job names configuration:
+
+* [JUnit 5 example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit5/ExplicitReportTest.java)
+* [TestNG example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/testng/ExplicitReportTest.java)
+
+### Tests Reports
+
+#### Automatic Tests Reporting
+
+Tests are reported automatically when a test **ends** or when driver _quits_.  
+ This behavior can be overridden or disabled \(see [Disabling Reports]() section below\).
+
+In order to determine that a test ends, call stack is traversed searching for an annotated methods.  
+ When an annotated method execution starts and previously detected ends, test end is concluded.
+
+Any unit testing framework annotations is reckoned, creating a _separate_ test in report for every annotated method.  
+ For example, following JUnit based code, will generate the following _six_ tests in the report:
+
+```text
+@BeforeEach
+void beforeTestExample(TestInfo testInfo) {
+    driver.report().step("Preparing Test: " + testInfo.getDisplayName());
+}
+
+@Test
+@DisplayName(value = "Google")
+void testGoogle() {
+    driver.navigate().to("https://www.google.com/");
+}
+
+@Test
+@DisplayName(value = "Yahoo!")
+void testYahoo() {
+    driver.navigate().to("https://yahoo.com/");
+}
+
+@AfterEach
+void afterTestExample(TestInfo testInfo) {
+    driver.report().step("Finishing Test: " + testInfo.getDisplayName());
+}
+```
+
+Report:
+
+```text
+Report
+├── beforeTestExample
+│   ├── Preparing Test: Yahoo!
+├── Yahoo! Test
+│   ├── Navigate To https://yahoo.com/
+├── afterTestExample
+│   ├── Finishing Test: Yahoo!
+├── beforeTestExample
+│   ├── Preparing Test: Google
+├── Google Test
+│   ├── Navigate To https://google.com/
+└── afterTestExample
+    └── Finishing Test: Google
+```
+
+See a [complete example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/reports/AutomaticReporting.java) with automatic test reporting.
+
+**Limitations**
+
+JUnit5 dynamic test names cannot be inferred, and should be reported manually.  
+ These will be reported as _Dynamic Test_ when reported automatically.
+
+#### Manual Tests Reporting
+
+To report tests manually, use `driver.report().tests()` method and it's overloads, for example:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().test("My First Test").submit();
+```
+
+> It's important to disable automatic tests reporting when using the manual option to avoid collision.
+
+Note that `driver.report().test()` returns a `ClosableTestReport` object.  
+ An explicit call to `submit()` or closing hte object is required for the report to be sent.
+
+Using this closable object can be beneficial in the following case:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+try (ClosableTestReport report = driver.report().test("Example Test with Exception")) {
+  driver.findElement(By.id("NO_SUCH_ELEMENT")).click();
+}
+```
+
+Assuming there is no element on the DOM with such an ID: `NO_SUCH_ELEMENT`, an exception will be thrown and test will fail, but before that, closable object will get closed and test will be reported.
+
+See a [complete example](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/reports/ManualReporting.java) with manual test reporting.
+
+#### Steps
+
+Steps are reported automatically when driver commands are executed.  
+ If this feature is disabled, or in addition, manual reports can be performed, for example:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().step("User logged in successfully");
+```
+
+### Disabling Reports
+
+If reports were **not** disabled when the driver was created, they can be disabled or enabled later.  
+ However, if reporting was explicitly disabled when the driver was created, it can **not** be enabled later.
+
+#### Disable all reports
+
+Following will disable all types of reports:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().disableReports(true);
+```
+
+#### Disable tests automatic reports
+
+Following will disable tests automatic reporting.  
+ All steps will reside in a single test report, unless tests are reported manually using `driver.report().tests()`:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().disableTestAutoReports(true);
+```
+
+#### Disable driver commands reports
+
+Following will disable driver _commands_ reporting.  
+ Report will have no steps, unless reported manually using `driver.report().step()`:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().disableCommandReports(true);
+```
+
+#### Disable commands redaction
+
+When reporting driver commands, SDK performs a redaction of sensitive data \(values\) sent to secured elements.  
+ If the element is one of the following:
+
+* Any element with `type` attribute set to `password`
+* With XCUITest, on iOS an element type of `XCUIElementTypeSecureTextField`
+
+Values sent to these elements will be converted to three asterisks - `***`.  
+ This behavior can be disabled as following:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.report().disableRedaction(true);
+```
+
+## Logging
+
+TestProject SDK uses SLF4J API for logging.  
+ This means it only bind to a thin logger wrapper API, and itself does not provide a logging implementation.
+
+Developers must choose a concrete implementation to use in order to control the logging output.  
+ There are many SLF4J logger implementation choices, such as the following:
+
+* [Logback](http://logback.qos.ch/)
+* [Log4j](https://logging.apache.org/log4j/2.x/)
+* [Java Logging](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html)
+
+Note that each logger implementation would have it's own configuration format.  
+ Consult specific logger documentation for on how to use it.
+
+### Using slf4j-simple
+
+This is the simplest option that requires no configuration at all.  
+ All needed is to add a [dependency](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple) to the project:
 
 Maven:
 
-```markup
+```text
 <dependency>
-    <groupId>io.testproject</groupId>
-    <artifactId>java-sdk</artifactId>
-    <version>1.0</version>
-    <systemPath>/path/to/sdk/io.testproject.sdk.java.jar</systemPath>
-    <scope>system</scope>
-</dependency>
+    <groupId>org.slf4jgroupId>
+    <artifactId>slf4j-simpleartifactId>
+    <version>1.7.30version>
+    <scope>testscope>
+dependency>
 ```
 
 Gradle:
 
-```groovy
- compile files("/path/to/sdk/io.testproject.sdk.java.jar")
+```text
+testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
 ```
 
-Refer to _pom.xml_ and _build.gradle_ files in the provided examples for more details.
+By default, logging level is set to _INFO_.  
+ To see _TRACE_ verbose messages, add this System Property `-Dorg.slf4j.simpleLogger.defaultLogLevel=TRACE`
 
-## Test Development
+### Using Logback
 
-The best way to start developing automated tests with TestProject is by reviewing the source code of a basic test that performs a login and updates a profile form, expecting the save to succeed.
+Logback is a very popular logger implementation that is production ready and packed with many features.  
+ To use it, add a [dependency](https://mvnrepository.com/artifact/ch.qos.logback/logback-classic) to the project:
 
-* [Web](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
-* [Android](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
-* [iOS](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
+Maven:
 
-There is also a [Generic](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/BasicTest.java) test, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI sequences \(those that do not require a Selenium or Appium driver\).
-
-### Test Class
-
-In order to build a Test that can be executed by TestProject, the class has to implement on of the interfaces that the SDK provides. Interface implementation requires an implementation of the _execute\(\)_ method, that will be be invoked by the platform to run the Test. The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
-
-Below are some examples for Test implementation on different platforms:
-
-#### Web Test
-
-BasicTest class implements the _WebTest_ interface:
-
-```java
-public class BasicTest implements WebTest
+```text
+<dependency>
+    <groupId>ch.qos.logbackgroupId>
+    <artifactId>logback-classicartifactId>
+    <version>1.2.3version>
+    <scope>testscope>
+dependency>
 ```
 
-Test entry point is the _execute_ method:
+Gradle:
 
-```java
-public ExecutionResult execute(WebTestHelper helper) throws FailureException
+```text
+testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 ```
 
-The following line of code retrieves a driver to automate the browser.
+Create a new file `src/main/resources/logback.xml` in your project and paste the following:
 
-```java
-// Get driver initialized by TestProject Agent
-// No need to specify browser type, it can be done later via UI
-WebDriver driver = helper.getDriver();
+```text
+<configuration>
+
+    
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %-20logger{0} %message%n
+            Pattern>
+        layout>
+    appender>
+
+    <logger name="io.testproject" level="ALL" />
+
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE"/>
+    root>
+
+configuration>
 ```
 
-Following code is used to navigate the browser to the relevant URL. After it is executed, TestProject Demo page is loaded.
-
-```java
-// Navigate to TestProject Demo website
-driver.navigate().to("https://example.testproject.io/web/");
-```
-
-The following code uses the Page Object Model pattern to login in and complete a profile form, saving it:
-
-```java
-// Login using provided credentials
-LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-loginPage.login(name, password);
-
-// Complete profile forms and save it
-ProfilePage profilePage = PageFactory.initElements(driver, ProfilePage.class);
-profilePage.updateProfile(country, address, email, phone);
-```
-
-The following return statement will assert test result:
-
-```java
-return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
-```
-
-#### Android Test
-
-BasicTest class implements the _AndroidTest_ interface:
-
-```java
-public class BasicTest implements AndroidTest
-```
-
-Test entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(AndroidTestHelper helper) throws FailureException
-```
-
-The following line of code retrieves a driver to automate the App.
-
-```java
-// Get driver initialized by TestProject Agent
-AndroidDriver driver = helper.getDriver();
-```
-
-The following code resets the App and uses the Page Object Model pattern to login in and complete a profile form, saving it:
-
-```java
- driver.resetApp();
-
-LoginPage loginPage = new LoginPage(driver);
-loginPage.login(name, password);
-
-ProfilePage profilePage = new ProfilePage(driver);
-profilePage.updateProfile(country, address, email, phone);
-```
-
-The following return statement will assert test result:
-
-```java
-return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
-```
-
-#### iOS Test
-
-BasicTest class implements the _IOSTest_ interface:
-
-```java
-public class BasicTest implements IOSTest
-```
-
-Test entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(IOSTestHelper helper) throws FailureException
-```
-
-The following line of code retrieves a driver to automate the App.
-
-```java
-// Get driver initialized by TestProject Agent
-IOSDriver driver = helper.getDriver();
-```
-
-The following code resets the App and uses the Page Object Model pattern to login in and complete a profile form, saving it:
-
-```java
- driver.resetApp();
-
-LoginPage loginPage = new LoginPage(driver);
-loginPage.login(name, password);
-
-ProfilePage profilePage = new ProfilePage(driver);
-profilePage.updateProfile(country, address, email, phone);
-```
-
-The following return statement will assert test result:
-
-```java
-return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
-```
-
-#### Generic Test
-
-BasicTest class implements the _GenericTest_ interface:
-
-```java
-public class BasicTest implements GenericTest
-```
-
-Test entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(TestHelper helper) throws FailureException
-```
-
-The following code adds the value stored in 'a' variable to the value in 'b' and if equals 2, asserts success:
-
-```java
-int a = 1, b = 1;
-
-if (a + b == 2) {
-    return ExecutionResult.PASSED;
-} else {
-    return ExecutionResult.FAILED;
-}
-```
-
-### Debugging / Running Test
-
-To debug or run the test locally, you will have to use the _Runner_ class from TestProject SDK. All code examples, have JUnit tests that use _Runner_ to debug the automation locally. Debugging or running a test locally with the _Runner_ class, requires authentication before communication with the TestProject Agent \(since it is the execution engine\). Development token for authentication can be easily obtained from the [Developers](https://app.testproject.io/#/developers) page. It should be used as a parameter in one of the _Runner_ factory methods:
-
-#### Web
-
-```java
-Runner runner = Runner.createWeb("YOUR_DEV_TOKEN", ...
-```
-
-#### Android
-
-```java
-Runner runner = Runner.createAndroid("YOUR_DEV_TOKEN", ...
-```
-
-#### Chrome on Android
-
-```java
-Runner runner = Runner.createAndroidWeb("YOUR_DEV_TOKEN", ...
-```
-
-#### iOS
-
-```java
-Runner runner = Runner.createIOS("YOUR_DEV_TOKEN", ...
-```
-
-#### Safari on iOS
-
-```java
-Runner runner = Runner.createIOSWeb("YOUR_DEV_TOKEN", ...
-```
-
-#### Generic
-
-```java
-Runner runner = Runner.create("YOUR_DEV_TOKEN"...
-```
-
-### Using parameters and step reports in your tests
-
-Let's make our example more advanced by adding parameters. To add parameters to your test, you simply need to add fields with relevant annotations. In addition, we will create step reports to separate the different stages of the test \(each report will appear as a separate step in the future execution reports\).
-
-See the relevant platform link for full source code:
-
-* [Web - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [Android - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [iOS - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-* [Generic - Extended Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/ExtendedTest.java)
-
-#### Test Annotations
-
-TestProject SDK provides annotations to describe the test and its parameters:
-
-1. The _**Test**_ annotation is used to better describe the Test and define how it will appear later in TestProject UI:
-   * **name** - The name of the test \(if omitted, the name of the class will be used\).
-   * **description** - A description of the test which is shown in various places in TestProject platform \(e.g. reporting dashboard\). The description may contain placeholders  that will be changed dynamically according to test parameters.
-   * **version** - A version string which is used for future reference.
-2. The _**Parameter**_ annotation is used to better describe your Test inputs and outputs, in the example above there are two inputs - _url_ and _expectedTitle_.
-   * **description** - The description of the parameter
-   * **direction** - Defines the parameter as an _input_ \(default if omitted\) or an _output_ parameter. An _input_ parameter will receive values when the test is executed while the _output_ parameter value will be retrieved at the end of test execution \(and can be used in following steps later on in the automation scenario\).
-   * **defaultValue** - Defines a default value that will be used for the parameter.
-
-#### Reports
-
-Implemented _execute\(\)_ method receives a _Helper_ instance as a parameter. Via this helper, you can obtain an instance of _TestReporter_ class.
-
-```java
-TestReporter report = helper.getReporter();
-```
-
-Notice the following line in the Extended Test example. This line reports a step based on provided condition and takes a screenshot:
-
-```java
-report.step("Profile information saved", profilePage.isSaved(), TakeScreenshotConditionType.Always);
-```
-
-Using the following code one can set test result message:
-
-```java
-report.result("Test completed successfully");
-```
-
-## Addon development
-
-Much like Tests you can develop custom Addons to extend TestProject and shape your automated testing solution for your needs. An Addon is a set of Actions \(one or more\) where each Action does a specific task, a common Addon scenario will be to extend basic set of Actions on complicated UI elements or make wrappers for user defined API. Once created, Actions can be used to design steps of automated tests.
-
-### Addon Manifest
-
-To start developing an Addon a manifest file is required. The manifest is a descriptor of your Addon, it contains a unique GUID for the addon and a list of required permissions. Create an Addon in the [Addons](https://app.testproject.io/#/addons/account) screen and download the generated manifest, placing it in your project resources folder.
-
-### Implement the Addon
-
-Lets review a simple Addon with a **ClearFields** action that clears a form. It can be used on the login form in TestProject Demo website or mobile App:
-
-* [Web - Action](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Addon/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
-* [Android - Action](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Addon/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
-* [iOS - Action](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Addon/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
-
-There is also a [Generic](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Addon/src/main/java/io/testproject/examples/sdk/actions/AdditionAction.java) action, representing a dummy scenario that can be automated. It can be used as a reference for real scenarios that automate a non-UI \(those hat do not require a Selenium or Appium driver\) actions.
-
-#### Action Class
-
-In order to build an Action that can be executed by TestProject, the class has to implement one of the interfaces that the SDK provides. Action class can also be decorated with the _@Action_ annotation to provide extra information about the action.
-
-Interface implementation requires an implementation of the _execute\(\)_ method, that will be be invoked by the platform to run the Action. The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
-
-#### Web Action
-
-ClearFields class implements the _WebAction_ interface:
-
-```java
-@Action(name = "Clear Fields")
-public class ClearFields implements WebAction
-```
-
-Action entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(WebAddonHelper helper) throws FailureException
-```
-
-Action code searches for visible Forms and then for contained inputs elements, clearing them one by one:
-
-```java
-// Get Driver
-WebDriver driver = helper.getDriver();
-
-// Search for Form elements
-for (WebElement form : driver.findElements(By.tagName("form"))) {
-
-    // Ignore invisible forms
-    if (!form.isDisplayed()) {
-        continue;
-    }
-
-    // Clear all inputs
-    for (WebElement element : form.findElements(By.tagName("input"))) {
-        element.clear();
-    }
-}
-```
-
-#### Android Action
-
-ClearFields class implements the _AndroidAction_ interface:
-
-```java
-@Action(name = "Clear Fields")
-public class ClearFields implements AndroidAction
-```
-
-Action entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(AndroidAddonHelper helper) throws FailureException
-```
-
-Action code searches for EditText elements, clearing them one by one:
-
-```java
-for (AndroidElement element : helper.getDriver().findElements(By.className("android.widget.EditText"))) {
-    element.clear();
-}
-```
-
-#### iOS Action
-
-ClearFields class implements the _IOSAction_ interface:
-
-```java
-@Action(name = "Clear Fields")
-public class ClearFields implements IOSAction
-```
-
-Action entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(IOSAddonHelper helper) throws FailureException
-```
-
-Action code searches for XCUIElementTypeTextField and XCUIElementTypeSecureTextField elements, clearing them one by one:
-
-```java
-for (IOSElement element : helper.getDriver().findElements(By.className("XCUIElementTypeTextField"))) {
-    element.clear();
-}
-
-for (IOSElement element : helper.getDriver().findElements(By.className("XCUIElementTypeSecureTextField"))) {
-    element.clear();
-}
-```
-
-#### Generic Action
-
-Addition class implements the _GenericAction_ interface:
-
-```java
-@Action(name = "Addition", description = "Add {{a}} to {{b}}")
-public class Addition implements GenericAction
-```
-
-Action entry point is the _execute_ method:
-
-```java
-public ExecutionResult execute(AddonHelper helper) throws FailureException
-```
-
-Action code performs an addition of values in two variables, assigning result to third:
-
-```java
-this.result = a + b;
-```
-
-Actions run in context of a test and assume that required UI state is already in place. When the action will be used in a test it will be represented as a single step, usually preceded by other steps. However, when debugging it locally, preparations should be done using the _Runner_ class to start from expected UI state:
-
-#### Web - State Preparation
-
-```java
-// Create Action
-ClearFields action = new ClearFields();
-
-// Prepare state
-WebDriver driver = runner.getDriver();
-driver.navigate().to("https://example.testproject.io/web/");
-driver.findElement(By.id("name")).sendKeys("John Smith");
-driver.findElement(By.id("password")).sendKeys("12345");
-
-// Run action
-runner.run(action);
-```
-
-#### Android - State Preparation
-
-```java
-// Create Action
-ClearFields action = new ClearFields();
-
-// Prepare state
-AndroidDriver driver = runner.getDriver();
-driver.findElement(By.id("name")).sendKeys("John Smith");
-driver.findElement(By.id("password")).sendKeys("12345");
-
-// Run action
-runner.run(action);
-```
-
-#### iOS - State Preparation
-
-```java
-// Create Action
-ClearFields action = new ClearFields();
-
-// Prepare state
-IOSDriver driver = runner.getDriver();
-driver.findElement(By.id("name")).sendKeys("John Smith");
-driver.findElement(By.id("password")).sendKeys("12345");
-
-// Run action
-runner.run(action);
-```
-
-#### Action Annotations
-
-TestProject SDK provides annotations to describe the action:
-
-1. The _**Action**_ annotation is used to better describe your action and define how it will appear later in TestProject UI:
-   * **name** - The name of the action \(if omitted, the name of the class will be used\).
-   * **description** - A description of the test which is shown in various places in TestProject platform \(reports for example\). The description can use placeholders  do dynamically change the text according to test properties.
-   * **version** - A version string which is used for future reference.
-2. The _**Parameter**_ annotation is used to better describe your action's inputs and outputs, in the example above there are two parameters - _question_ and _answer_.
-   * **description** - The description of the parameter
-   * **direction** - Defines the parameter as an _input_ \(default if omitted\) or an _output_ parameter. An _input_ parameter will able to receive values when it is being executed while the _output_ parameter value will be retrieved at the end of test execution \(and can be used in other places later on in the automation scenario\).
-   * **defaultValue** - Defines a default value that will be used for the parameter.
-
-> NOTE: Unlike tests, actions cannot use assertions because an action is a single generic reusable unit.
-
-### Debugging / Running Actions
-
-To debug or run the action locally, you will have to use the _Runner_ class from TestProject SDK. All code examples, have JUnit tests that use _Runner_ to debug the automation locally.
-
-### Element Actions
-
-Actions can be element based, when their scope is limited to operations on a specific element and not the whole DOM. This allows creating smart crowd based addons for industry common elements and libraries.
-
-_TypeRandomPhone_ is an example of an Element Action:
-
-* [Web - Element Action](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
-* [Android - Element Action](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
-* [iOS - Element Action](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
-
-This action generates a random phone number based on provided country code and max digits amount, typing it in a text field:
-
-```java
-long number = (long) (Math.random() * Math.pow(10, maxDigits));
-phone = String.format("+%s%s", countryCode, number);
-element.sendKeys(phone);
-return ExecutionResult.PASSED;
-```
-
-It also stores the result in an output field \(see the annotation and _**ParameterDirection.OUTPUT**_ configuration\) for further use later in test. When the action is debugged using a Runner, via JUnit test, it's important to pass the element search criteria into the action:
-
-```java
-runner.run(action, By.id("phone"));
-```
-
-After the Addon is uploaded to TestProject platform this will be done via UI.
-
-#### Element Type
-
-Element Actions are made to be used on a specific Element Types. Element Types are defined in TestProject using XPath to describe target elements similarities:
-
-#### Web - Element Type
-
-It can be a simple definitions such as:
-
-```java
-//div
-```
-
-Or a more complex one, such as:
-
-```java
-//div[contains(@class, 'progressbar') and contains(@class, 'widget') and @role = 'progressbar']
-```
-
-#### Android - Element Type
-
-It can be a simple definitions such as:
-
-```java
-//android.widget.Button
-```
-
-Or a more complex one, such as:
-
-```java
-//android.support.v7.widget.RecyclerView[contains(@resource-id, 'my_view') and .//android.widget.TextView[not(contains(@resource-id, 'average_value'))]]
-```
-
-#### iOS - Element Type
-
-It can be a simple definitions such as:
-
-```java
-//XCUIElementTypeButton
-```
-
-Or a more complex one, such as:
-
-```java
-//XCUIElementTypeSearchField[contains(@label = 'Categories')]
-```
-
-It is up to the Action developer how to narrow and limit the list of element types that the action developed will be applicable to.
-
-## Crowd Code / Addon Proxy
-
-One of the greatest features of the TestProject environment is the ability to execute a code written by someone else. It can be your account colleagues writing actions that you can reuse, or TestProject community users. Developer must download a binary file with the proxy class for the Action he wants to execute.
-
-Assuming your account member uploaded the example Addon, named it _**Example**_ and you want to reuse it's code your Test. To do so, you can download it's proxy JAR and use it like this:
-
-```java
-ClearFields clearFieldsAction = ExampleAddon.clearFields();
-```
-
-Implemented _execute\(\)_ method receives a _Helper_ instance as a parameter. Via this helper, you can execute the proxy by invoking the _**executeProxy**_ method:
-
-```java
-StepExecutionResult result = helper.executeProxy(clearFieldsAction);
-```
-
-See examples:
-
-* [Web - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Web/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
-* [Android - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Android/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
-* [iOS - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/iOS/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
-* [Generic - Proxy Test](https://github.com/testproject-io/java-sdk-examples/blob/master/Generic/Test/src/main/java/io/testproject/examples/sdk/tests/ProxyTest.java)
-
-## Packaging
-
-In order to upload your Addons or Tests to TestProject, you have to package it as JAR file. Export your code as an uber JAR file with dependencies, excluding TestProject SDK.
-
-See _build.gradle_ or _pom.xml_ files in code examples for details.
-
-## Support
-
-For any further inquiries, please use TestProject support channels:
-
-* [Forum](https://forum.testproject.io/)
-* Chat built-in the platform
+## Examples
+
+Here are [the examples](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples) for each driver:
+
+* Mobile
+  * Android
+    * Android
+      * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverTest.java)
+      * [Native App Source](https://github.com/testproject-io/android-demo-app)
+      * [Web Test on Mobile Chrome](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverChromeTest.java)
+    * iOS
+      * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSDriverTest.java)
+      * [Native App Source](https://github.com/testproject-io/ios-demo-app)
+      * [Web Test on Mobile Safari](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSSafariDriverTest.java)
+    * Web
+      * [Chrome Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/ChromeDriverTest.java)
+      * [Edge Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/EdgeDriverTest.java)
+      * [Firefox Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/FirefoxDriverTest.java)
+      * [Internet Explorer Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/InternetExplorerDriverTest.java)
+      * [Safari Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/SafariDriverTest.java)
+      * [Remote Web Driver Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/RemoteWebDriverTest.java)
+
+## License
+
+TestProject SDK For Java is licensed under the LICENSE file in the root directory of this source tree.
 

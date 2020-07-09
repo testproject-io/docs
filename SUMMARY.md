@@ -111,6 +111,7 @@
   * [KendoUI - Grid Addon](testproject-addons/available-addons/kendoui-grid-addon.md)
   * [Bootstrap4 - Buttons Group Addon](testproject-addons/available-addons/bootstrap4-buttons-group-addon.md)
   * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
+* [Develop an Addon](testproject-addons/develop-an-addon.md)
 
 ## Reports
 
@@ -129,6 +130,7 @@
 * [Overview](testproject-sdk/overview.md)
 * [Java SDK](testproject-sdk/java-sdk.md)
 * [C\# SDK](testproject-sdk/c-sdk.md)
+* [Python SDK](testproject-sdk/python-sdk.md)
 
 ## TestProject Integrations
 
