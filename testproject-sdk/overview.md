@@ -6,5 +6,5 @@ TestProject’s SDK supports standard Selenium and Appium API commands, so you d
 
 TestProject extends the driver classes by adding extra functionality under the \`testproject\(\)\` property. In a nutshell, in order to get started for a seasoned Selenium/Appium developer, it’s enough to obtain a Driver instance after implementing one of the relevant interfaces, that is injected into the execute\(\) method, from the passed \`helper\` variable, like this: \`helper.getDriver\(\)\`
 
-Currently, TestProject’s SDK has a Java and C\# \(.NET Core\) implementation. Soon, we will provide support for additional programming languages, such as: Python, JavaScript, etc.
+Currently, TestProject’s SDK has a [Java](https://github.com/testproject-io/java-sdk), [C\# \(.NET Core\)](https://github.com/testproject-io/csharp-sdk-examples) and [Python](https://github.com/testproject-io/python-sdk) implementation. Soon, we will provide support for additional programming languages, such as: JavaScript, Groovy, etc.
 
