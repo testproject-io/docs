@@ -197,7 +197,7 @@ var runner = new RunnerBuilder("DEV_TOKEN")
 ```
 
 There are more options to disable reporting of specific entities.  
- See [Disabling Reports]() section for more information.
+ See [Disabling Reports](https://github.com/testproject-io/csharp-sdk-examples#disabling-reports) section for more information.
 
 ### Implicit Project and Job Names
 
@@ -226,7 +226,7 @@ var runner = new RunnerBuilder("DEV_TOKEN")
 ```
 
 You can specify a Project, a Job name or both. If you don't, the value will be inferred automatically.  
- See [Implicit Project and Job Names]() section for more information on how these names are inferred.
+ See [Implicit Project and Job Names](https://github.com/testproject-io/csharp-sdk-examples#implicit-project-and-job-names) section for more information on how these names are inferred.
 
 Examples of explicit Project & Job names configuration:
 
@@ -343,7 +343,7 @@ var runner = new RunnerBuilder("DEV_TOKEN")
 
 #### Disable driver commands reports
 
-Disabling commands reporting will result in tets reports with no steps, unless they are reported manually using `helper.Reporter.step()`. The following will disable driver _commands_ reporting:
+Disabling commands reporting will result in test reports with no steps, unless they are reported manually using `helper.Reporter.step()`. The following will disable driver _commands_ reporting:
 
 ```text
 var runner = new RunnerBuilder("DEV_TOKEN")
