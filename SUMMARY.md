@@ -131,6 +131,7 @@
 * [Java SDK](testproject-sdk/java-sdk.md)
 * [C\# SDK](testproject-sdk/c-sdk.md)
 * [Python SDK](testproject-sdk/python-sdk.md)
+* [Using TestProject Scripted Tests within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 
 ## TestProject Integrations
 
