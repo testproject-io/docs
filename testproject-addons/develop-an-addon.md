@@ -125,7 +125,7 @@ Below are complete source examples:
 
 * [Web - Action](https://github.com/testproject-io/addons/blob/master/Examples/Web/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
 * [Android - Action](https://github.com/testproject-io/addons/blob/master/Examples/Android/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
-* [iOS - Action](https://github.com/testproject-io/addons/blob/master/Example/iOS/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
+* [iOS - Action](https://github.com/testproject-io/addons/blob/master/Examples/IOS/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java)
 
 There is also a [Generic](https://github.com/testproject-io/addons/blob/master/Examples/Generic/src/main/java/io/testproject/examples/sdk/actions/AdditionAction.java) action, representing a dummy scenario that can be automated.  
  It can be used as a reference for real scenarios that automate a non-UI \(those hat do not require a Selenium or Appium driver\) actions.
