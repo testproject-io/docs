@@ -348,9 +348,9 @@ Actions can be element based, when their scope is limited to operations on a spe
 
 _TypeRandomPhone_ is an example of an Element Action:
 
-* [Web - Element Action](https://github.com/testproject-io/addons/blob/master/Web/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
-* [Android - Element Action](https://github.com/testproject-io/addons/blob/master/Android/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
-* [iOS - Element Action](https://github.com/testproject-io/addons/blob/master/iOS/Addon/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
+* [Web - Element Action](https://github.com/testproject-io/addons/blob/master/Examples/Web/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
+* [Android - Element Action](https://github.com/testproject-io/addons/blob/master/Examples/Android/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
+* [iOS - Element Action](https://github.com/testproject-io/addons/blob/master/Examples/IOS/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
 
 This action generates a random phone number based on provided country code and max digits amount, typing it in a text field:
 
