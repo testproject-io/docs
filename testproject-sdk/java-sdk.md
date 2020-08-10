@@ -23,7 +23,7 @@ For a Maven project, add the following to your `pom.xml` file:
 <dependency>
   <groupId>io.testproject</groupId>
   <artifactId>java-sdk</artifactId>
-  <version>0.63.2-RELEASE</version>
+  <version>0.63.4-RELEASE</version>
   <classifier>sources</classifier>
 </dependency>
 ```
@@ -31,13 +31,13 @@ For a Maven project, add the following to your `pom.xml` file:
 For a Gradle project, add the following to your `build.gradle` file:
 
 ```text
-implementation 'io.testproject:java-sdk:0.63.2-RELEASE'
+implementation 'io.testproject:java-sdk:0.63.4-RELEASE'
 ```
 
 ## Test Development
 
 Using a TestProject driver is exactly identical to using a Selenium driver.  
-Changing the import statement is enough in most cases.
+ Changing the import statement is enough in most cases.
 
 > Following examples are based on the `ChromeDriver`, however are applicable to any other supported drivers.
 
@@ -55,6 +55,8 @@ public class MyTest {
 ```
 
 Here a complete test example:
+
+> Make sure to [configure a development token](https://github.com/testproject-io/java-sdk#test-development) before running this example.
 
 ```text
 package io.testproject.sdk.tests.examples.simple;
@@ -89,7 +91,7 @@ public final class WebTest {
 ## Drivers
 
 TestProject SDK overrides standard Selenium/Appium drivers with extended functionality.  
-Below is the packages structure containing all supported drivers:
+ Below is the packages structure containing all supported drivers:
 
 ```text
 io.testproject.sdk.drivers
@@ -109,8 +111,8 @@ io.testproject.sdk.drivers
 ### Development Token
 
 The SDK uses a development token for communication with the Agent and the TestProject platform.  
-Drivers search the developer token in an environment variable `TP_DEV_TOKEN`.  
-Token can be also provided explicitly using this constructor:
+ Drivers search the developer token in an environment variable `TP_DEV_TOKEN`.  
+ Token can be also provided explicitly using this constructor:
 
 ```text
 public ChromeDriver(final String token, final ChromeOptions options)
@@ -128,6 +130,23 @@ public ChromeDriver(final URL remoteAddress, final ChromeOptions options)
 
 It can also be set using the `TP_AGENT_URL` environment variable.
 
+### Remote \(Cloud\) Driver
+
+By default, TestProject Agent communicates with the local Selenium or Appium server.  
+ In order to initialize a remote driver for cloud providers such as SauceLabs or BrowserStack,  
+ a custom capability `cloud:URL` should be set, for example:
+
+```text
+import io.testproject.sdk.drivers.web.ChromeDriver;
+import io.testproject.sdk.drivers.TestProjectCapabilityType;
+
+ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.setCapability(
+        TestProjectCapabilityType.CLOUD_URL,
+        "https://{USERNAME}:{PASSWORD}@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+ChromeDriver driver = new ChromeDriver(chromeOptions);
+```
+
 ### Driver Builder
 
 The SDK provides a generic builder for the drivers - `DriverBuilder`, for example:
@@ -142,7 +161,7 @@ ChromeDriver driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
 ## Reports
 
 TestProject SDK reports all driver commands and their results to the TestProject Cloud.  
-Doing so, allows us to present beautifully designed reports and statistics in it's dashboards.
+ Doing so, allows us to present beautifully designed reports and statistics in it's dashboards.
 
 Reports can be completely disabled using this constructor:
 
@@ -155,7 +174,7 @@ There are other constructor permutations, refer to method summaries of each spec
 ### Implicit Project and Job Names
 
 The SDK will attempt to infer Project and Job names from JUnit / TestNG annotations.  
-If found the following logic and priorities take place:
+ If found the following logic and priorities take place:
 
 * _Package_ name of the class containing the method is used for **Project** name.
 * JUnit 4 / 5
@@ -203,13 +222,13 @@ Examples of explicit Project & Job names configuration:
 #### Automatic Tests Reporting
 
 Tests are reported automatically when a test **ends** or when driver _quits_.  
-This behavior can be overridden or disabled \(see [Disabling Reports](https://github.com/testproject-io/java-sdk/blob/master/README.md#disabling-reports) section below\).
+ This behavior can be overridden or disabled \(see [Disabling Reports]() section below\).
 
 In order to determine that a test ends, call stack is traversed searching for an annotated methods.  
-When an annotated method execution starts and previously detected ends, test end is concluded.
+ When an annotated method execution starts and previously detected ends, test end is concluded.
 
 Any unit testing framework annotations is reckoned, creating a _separate_ test in report for every annotated method.  
-For example, following JUnit based code, will generate the following _six_ tests in the report:
+ For example, following JUnit based code, will generate the following _six_ tests in the report:
 
 ```text
 @BeforeEach
@@ -258,7 +277,7 @@ See a [complete example](https://github.com/testproject-io/java-sdk/blob/master/
 **Limitations**
 
 JUnit5 dynamic test names cannot be inferred, and should be reported manually.  
-These will be reported as _Dynamic Test_ when reported automatically.
+ These will be reported as _Dynamic Test_ when reported automatically.
 
 #### Manual Tests Reporting
 
@@ -272,7 +291,7 @@ driver.report().test("My First Test").submit();
 > It's important to disable automatic tests reporting when using the manual option to avoid collision.
 
 Note that `driver.report().test()` returns a `ClosableTestReport` object.  
-An explicit call to `submit()` or closing hte object is required for the report to be sent.
+ An explicit call to `submit()` or closing hte object is required for the report to be sent.
 
 Using this closable object can be beneficial in the following case:
 
@@ -290,7 +309,7 @@ See a [complete example](https://github.com/testproject-io/java-sdk/blob/master/
 #### Steps
 
 Steps are reported automatically when driver commands are executed.  
-If this feature is disabled, or in addition, manual reports can be performed, for example:
+ If this feature is disabled, or in addition, manual reports can be performed, for example:
 
 ```text
 ChromeDriver driver = new ChromeDriver(new ChromeOptions());
@@ -300,7 +319,7 @@ driver.report().step("User logged in successfully");
 ### Disabling Reports
 
 If reports were **not** disabled when the driver was created, they can be disabled or enabled later.  
-However, if reporting was explicitly disabled when the driver was created, it can **not** be enabled later.
+ However, if reporting was explicitly disabled when the driver was created, it can **not** be enabled later.
 
 #### Disable all reports
 
@@ -314,7 +333,7 @@ driver.report().disableReports(true);
 #### Disable tests automatic reports
 
 Following will disable tests automatic reporting.  
-All steps will reside in a single test report, unless tests are reported manually using `driver.report().tests()`:
+ All steps will reside in a single test report, unless tests are reported manually using `driver.report().tests()`:
 
 ```text
 ChromeDriver driver = new ChromeDriver(new ChromeOptions());
@@ -324,7 +343,7 @@ driver.report().disableTestAutoReports(true);
 #### Disable driver commands reports
 
 Following will disable driver _commands_ reporting.  
-Report will have no steps, unless reported manually using `driver.report().step()`:
+ Report will have no steps, unless reported manually using `driver.report().step()`:
 
 ```text
 ChromeDriver driver = new ChromeDriver(new ChromeOptions());
@@ -334,13 +353,13 @@ driver.report().disableCommandReports(true);
 #### Disable commands redaction
 
 When reporting driver commands, SDK performs a redaction of sensitive data \(values\) sent to secured elements.  
-If the element is one of the following:
+ If the element is one of the following:
 
 * Any element with `type` attribute set to `password`
 * With XCUITest, on iOS an element type of `XCUIElementTypeSecureTextField`
 
 Values sent to these elements will be converted to three asterisks - `***`.  
-This behavior can be disabled as following:
+ This behavior can be disabled as following:
 
 ```text
 ChromeDriver driver = new ChromeDriver(new ChromeOptions());
@@ -350,32 +369,32 @@ driver.report().disableRedaction(true);
 ## Logging
 
 TestProject SDK uses SLF4J API for logging.  
-This means it only bind to a thin logger wrapper API, and itself does not provide a logging implementation.
+ This means it only bind to a thin logger wrapper API, and itself does not provide a logging implementation.
 
 Developers must choose a concrete implementation to use in order to control the logging output.  
-There are many SLF4J logger implementation choices, such as the following:
+ There are many SLF4J logger implementation choices, such as the following:
 
 * [Logback](http://logback.qos.ch/)
 * [Log4j](https://logging.apache.org/log4j/2.x/)
 * [Java Logging](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html)
 
 Note that each logger implementation would have it's own configuration format.  
-Consult specific logger documentation for on how to use it.
+ Consult specific logger documentation for on how to use it.
 
 ### Using slf4j-simple
 
 This is the simplest option that requires no configuration at all.  
-All needed is to add a [dependency](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple) to the project:
+ All needed is to add a [dependency](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple) to the project:
 
 Maven:
 
 ```text
 <dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.7.30</version>
-    <scope>test</scope>
-</dependency>
+    <groupId>org.slf4jgroupId>
+    <artifactId>slf4j-simpleartifactId>
+    <version>1.7.30version>
+    <scope>testscope>
+dependency>
 ```
 
 Gradle:
@@ -385,22 +404,22 @@ testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
 ```
 
 By default, logging level is set to _INFO_.  
-To see _TRACE_ verbose messages, add this System Property `-Dorg.slf4j.simpleLogger.defaultLogLevel=TRACE`
+ To see _TRACE_ verbose messages, add this System Property `-Dorg.slf4j.simpleLogger.defaultLogLevel=TRACE`
 
 ### Using Logback
 
 Logback is a very popular logger implementation that is production ready and packed with many features.  
-To use it, add a [dependency](https://mvnrepository.com/artifact/ch.qos.logback/logback-classic) to the project:
+ To use it, add a [dependency](https://mvnrepository.com/artifact/ch.qos.logback/logback-classic) to the project:
 
 Maven:
 
 ```text
 <dependency>
-    <groupId>ch.qos.logback</groupId>
-    <artifactId>logback-classic</artifactId>
-    <version>1.2.3</version>
-    <scope>test</scope>
-</dependency>
+    <groupId>ch.qos.logbackgroupId>
+    <artifactId>logback-classicartifactId>
+    <version>1.2.3version>
+    <scope>testscope>
+dependency>
 ```
 
 Gradle:
@@ -414,47 +433,59 @@ Create a new file `src/main/resources/logback.xml` in your project and paste the
 ```text
 <configuration>
 
-    <!--Silence initial configuration logs-->
+    
     <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>
                 %d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %-20logger{0} %message%n
-            </Pattern>
-        </layout>
-    </appender>
+            Pattern>
+        layout>
+    appender>
 
     <logger name="io.testproject" level="ALL" />
 
     <root level="ERROR">
         <appender-ref ref="CONSOLE"/>
-    </root>
+    root>
 
-</configuration>
+configuration>
 ```
 
 ## Examples
 
-Here are [the examples](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples) for each driver:
+Here are more [examples](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples):
 
-* Mobile
-  * Android
-    * Android
-      * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverTest.java)
-      * [Native App Source](https://github.com/testproject-io/android-demo-app)
-      * [Web Test on Mobile Chrome](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverChromeTest.java)
-    * iOS
-      * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSDriverTest.java)
-      * [Native App Source](https://github.com/testproject-io/ios-demo-app)
-      * [Web Test on Mobile Safari](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSSafariDriverTest.java)
-    * Web
-      * [Chrome Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/ChromeDriverTest.java)
-      * [Edge Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/EdgeDriverTest.java)
-      * [Firefox Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/FirefoxDriverTest.java)
-      * [Internet Explorer Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/InternetExplorerDriverTest.java)
-      * [Safari Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/SafariDriverTest.java)
-      * [Remote Web Driver Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/RemoteWebDriverTest.java)
+* Simple Flows \(without JUnit / TestNG\)
+  * [Web](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/simple/WebTest.java)
+  * [Android](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/simple/AndroidTest.java)
+  * [iOS](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/simple/IOSTest.java)
+* Web
+  * [Chrome Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/ChromeDriverTest.java)
+  * [Edge Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/EdgeDriverTest.java)
+  * [Firefox Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/FirefoxDriverTest.java)
+  * [Internet Explorer Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/InternetExplorerDriverTest.java)
+  * [Safari Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/SafariDriverTest.java)
+  * [Remote Web Driver Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/RemoteWebDriverTest.java)
+* Android
+  * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverTest.java)
+  * [Native App Source](https://github.com/testproject-io/android-demo-app)
+  * [Web Test on Mobile Chrome](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/AndroidDriverChromeTest.java)
+* iOS
+  * [Native App Test](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSDriverTest.java)
+  * [Native App Source](https://github.com/testproject-io/ios-demo-app)
+  * [Web Test on Mobile Safari](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/drivers/IOSSafariDriverTest.java)
+* Frameworks
+  * JUnit 4
+    * [Inferred Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit4/InferredReportTest.java)
+    * [Explicit Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit4/ExplicitReportTest.java)
+  * JUnit 5
+    * [Inferred Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit5/InferredReportTest.java)
+    * [Explicit Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/junit5/ExplicitReportTest.java)
+  * TestNG
+    * [Inferred Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/testng/InferredReportTest.java)
+    * [Explicit Report](https://github.com/testproject-io/java-sdk/blob/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/testng/ExplicitReportTest.java)
 
 ## License
 
