@@ -139,6 +139,7 @@
 * [BrowserStack Integration](testproject-integrations/browserstack-integration.md)
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
 * [Jenkins Integration](testproject-integrations/integration-with-jenkins.md)
+* [TeamCity Integration](testproject-integrations/integration-with-teamcity.md)
 * [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
 * [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
 * [Slack Integration](testproject-integrations/integration-to-slack.md)
