@@ -15,6 +15,10 @@ The first thing you need to do is to provide your Apple’s Developer Program Te
 
 _**Note that you have to have the “Apple Developer Program” label** \(as seen in the image above\). If you **don’t** have this label, it means that you only have a simple Apple ID and that you do not have an Apple Developer Program subscription \(As required in the prerequisites above\)._ 
 
+{% hint style="info" %}
+You must have Apple admin rights in order to manage the iOS settings.
+{% endhint %}
+
 You can then copy your Team ID.
 
 ![](https://blog.testproject.io/wp-content/uploads/2019/01/2.2.png)
