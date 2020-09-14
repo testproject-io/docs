@@ -11,6 +11,7 @@ Input Parameters:
 * `CurrentDateTimeValue` - Current DateTime value \(for example: 28/05/2019 or Sept 22, 1999, 21:01 etc.\)
 * `CurrentDateTimeFormat` - The DateTime format used in the `CurrentDateTimeValue`field \(for example: dd/mm/yyyy or MMM dd, yyyy, HH:mm etc.\)
 * `ExpectedDateTimeFormatFormat` - The DateTime format you want your date converted into \(for example: dd/mm/yyyy or MMM dd, yyyy, HH:mm etc.\)
+* `Locale` - The Locale of the format to use, by default it takes the System Locale.
 
 `Get day of the week from a DateTime object` - Returns the day of a week from the given DateTime object.
 
