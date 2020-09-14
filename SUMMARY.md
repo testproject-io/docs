@@ -57,6 +57,7 @@
   * [Element Extensions Addon](testproject-addons/available-addons/element-extensions-addon.md)
   * [Generic Extensions Addon](testproject-addons/available-addons/generic-extensions-addon.md)
   * [Geolocation Utils Addon](testproject-addons/available-addons/geolocation-utils-addon.md)
+  * [Get Attribute Value \(Mobile\)](testproject-addons/available-addons/get-attribute-value-mobile.md)
   * [Get Page Source \(Mobile\)](testproject-addons/available-addons/get-page-source-mobile.md)
   * [HTML Table Actions](testproject-addons/available-addons/html-table-actions.md)
   * [Image Comparison Addon](testproject-addons/available-addons/image-comparison-addon/README.md)
