@@ -10,6 +10,8 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Element Extensions](element-extensions-addon.md) |
 | [Generic Extensions](generic-extensions-addon.md) |
 | [Geolocation Utils](geolocation-utils-addon.md) |
+| [Get Attribute Value \(Mobile\)](https://docs.testproject.io/testproject-addons/available-addons/get-attribute-value-mobile) |
+| [Get Page Source \(Mobile\)](https://docs.testproject.io/testproject-addons/available-addons/get-page-source-mobile) |
 | [HTML Table Actions](https://docs.testproject.io/testproject-addons/available-addons/html-table-actions) |
 | [Image Comparison](image-comparison-addon/) |
 | [JS Actions](js-actions-addon.md) |
