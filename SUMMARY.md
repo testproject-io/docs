@@ -142,7 +142,8 @@
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
 * [Jenkins Integration](testproject-integrations/integration-with-jenkins.md)
 * [TeamCity Integration](testproject-integrations/integration-with-teamcity.md)
-* [Sauce Labs Integration](testproject-integrations/sauce-labs-integration.md)
+* [Sauce Labs Integration](testproject-integrations/sauce-labs-integration/README.md)
+  * [Sauce Labs Proxy Tunnel Integration](testproject-integrations/sauce-labs-integration/sauce-labs-proxy-tunnel-integration.md)
 * [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
 * [Slack Integration](testproject-integrations/integration-to-slack.md)
 
