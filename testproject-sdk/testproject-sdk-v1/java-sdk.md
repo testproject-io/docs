@@ -620,5 +620,6 @@ See _build.gradle_ or _pom.xml_ files in code examples for details.
 For any further inquiries, please use TestProject support channels:
 
 * [Forum](https://forum.testproject.io/)
-* [Help Desk](https://support.testproject.io/)
+* In-app Chat
+* Email at support@testproject.io
 
