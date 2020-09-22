@@ -138,7 +138,7 @@
   * [Java](testproject-sdk/opensdk-v2/java-sdk.md)
   * [Python](testproject-sdk/opensdk-v2/python-sdk.md)
   * [C\#](testproject-sdk/opensdk-v2/c-sdk.md)
-* [Using OpenSDK \(v2\) within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
+* [Using OpenSDK within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 
 ## TestProject Integrations
 

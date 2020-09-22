@@ -1,8 +1,4 @@
----
-description: Using OpenSDK (v2) within CI/CD
----
-
-# Using OpenSDK \(v2\) within CI/CD
+# Using OpenSDK within CI/CD
 
 ## Introduction
 
