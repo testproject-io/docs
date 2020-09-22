@@ -129,8 +129,8 @@
 
 ## TestProject SDK
 
-* [Overview](testproject-sdk/overview.md)
-* [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/sdk-v1-vs.-opensdk-v2.md)
+* [Overview](testproject-sdk/overview/README.md)
+  * [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/overview/sdk-v1-vs.-opensdk-v2.md)
 * [OpenSDK \(v2\)](testproject-sdk/opensdk-v2/README.md)
   * [Java](testproject-sdk/opensdk-v2/java-sdk.md)
   * [Python](testproject-sdk/opensdk-v2/python-sdk.md)
