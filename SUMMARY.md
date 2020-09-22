@@ -133,11 +133,11 @@
   * [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/overview/sdk-v1-vs.-opensdk-v2.md)
 * [SDK \(v1\)](testproject-sdk/testproject-sdk-v1/README.md)
   * [Java](testproject-sdk/testproject-sdk-v1/java-sdk.md)
-  * [C\#](testproject-sdk/testproject-sdk-v1/c.md)
+  * [C\#](testproject-sdk/testproject-sdk-v1/csharp-sdk.md)
 * [OpenSDK \(v2\)](testproject-sdk/opensdk-v2/README.md)
   * [Java](testproject-sdk/opensdk-v2/java-sdk.md)
   * [Python](testproject-sdk/opensdk-v2/python-sdk.md)
-  * [C\#](testproject-sdk/opensdk-v2/c-sdk.md)
+  * [C\#](testproject-sdk/opensdk-v2/csharp-sdk.md)
 * [Using OpenSDK within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 
 ## TestProject Integrations

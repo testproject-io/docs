@@ -20,7 +20,7 @@ Jobs different combinations of tests and are easy to create directly in the Test
 
 ## Running Tests in CI
 
-Tests can also be from outside of the TestProject app. For example, you can run tests in you CI with Jenkins by following the documentation [here](../testproject-integrations/integration-with-jenkins.md). You can also run tests that you have developed with an SDK. For example the [C\# SDK](../testproject-sdk/opensdk-v2/c-sdk.md) documentation shows you how to setup running tests that you have developed in this way. 
+Tests can also be from outside of the TestProject app. For example, you can run tests in you CI with Jenkins by following the documentation [here](../testproject-integrations/integration-with-jenkins.md). You can also run tests that you have developed with an SDK. For example the [C\# SDK](../testproject-sdk/opensdk-v2/csharp-sdk.md) documentation shows you how to setup running tests that you have developed in this way. 
 
 There are many ways to run tests from within TestProject. You can run tests directly in the test recorder, from the project page, as part of a job or even from outside of the TestProject app. No matter what your needs are for running tests, TestProject has a way to do it that you can use.
 
