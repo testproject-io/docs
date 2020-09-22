@@ -62,7 +62,9 @@ In order to build a Test that can be executed by TestProject, the class has to i
  Interface implementation requires an implementation of the _execute\(\)_ method, that will be be invoked by the platform to run the Test.  
  The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
 
-Below are some examples for Test implementation on different platforms:Web Test
+Below are some examples for Test implementation on different platforms:
+
+**Web Test**
 
 BasicTest class implements the _WebTest_ interface:
 
@@ -109,7 +111,7 @@ The following return statement will assert test result:
 return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
 ```
 
-Android Test
+**Android Test**
 
 BasicTest class implements the _AndroidTest_ interface:
 
@@ -148,7 +150,7 @@ The following return statement will assert test result:
 return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
 ```
 
-iOS Test
+**iOS Test**
 
 BasicTest class implements the _IOSTest_ interface:
 
@@ -187,7 +189,7 @@ The following return statement will assert test result:
 return profilePage.isSaved() ? ExecutionResult.PASSED : ExecutionResult.FAILED;
 ```
 
-Generic Test
+**Generic Test**
 
 BasicTest class implements the _GenericTest_ interface:
 
@@ -215,37 +217,39 @@ if (a + b == 2) {
 
 ### Debugging / Running Test
 
-To debug or run the test locally, you will have to use the _Runner_ class from TestProject SDK. All code examples, have JUnit tests that use _Runner_ to debug the automation locally. Debugging or running a test locally with the _Runner_ class, requires authentication before communication with the TestProject Agent \(since it is the execution engine\). Development token for authentication can be easily obtained from the [Developers](https://app.testproject.io/#/developers) page. It should be used as a parameter in one of the _Runner_ factory methods:Web
+To debug or run the test locally, you will have to use the _Runner_ class from TestProject SDK. All code examples, have JUnit tests that use _Runner_ to debug the automation locally. Debugging or running a test locally with the _Runner_ class, requires authentication before communication with the TestProject Agent \(since it is the execution engine\). Development token for authentication can be easily obtained from the [Developers](https://app.testproject.io/#/developers) page. It should be used as a parameter in one of the _Runner_ factory methods:
+
+**Web**
 
 ```text
 Runner runner = Runner.createWeb("YOUR_DEV_TOKEN", ...
 ```
 
-Android
+**Android**
 
 ```text
 Runner runner = Runner.createAndroid("YOUR_DEV_TOKEN", ...
 ```
 
-Chrome on Android
+**Chrome on Android**
 
 ```text
 Runner runner = Runner.createAndroidWeb("YOUR_DEV_TOKEN", ...
 ```
 
-iOS
+**iOS**
 
 ```text
 Runner runner = Runner.createIOS("YOUR_DEV_TOKEN", ...
 ```
 
-Safari on iOS
+**Safari on iOS**
 
 ```text
 Runner runner = Runner.createIOSWeb("YOUR_DEV_TOKEN", ...
 ```
 
-Generic
+**Generic**
 
 ```text
 Runner runner = Runner.create("YOUR_DEV_TOKEN"...
@@ -326,7 +330,9 @@ In order to build an Action that can be executed by TestProject, the class has t
  Action class can also be decorated with the _@Action_ annotation to provide extra information about the action.
 
 Interface implementation requires an implementation of the _execute\(\)_ method, that will be be invoked by the platform to run the Action.  
- The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.Web Action
+ The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
+
+**Web Action**
 
 ClearFields class implements the _WebAction_ interface:
 
@@ -362,7 +368,7 @@ for (WebElement form : driver.findElements(By.tagName("form"))) {
 }
 ```
 
-Android Action
+**Android Action**
 
 ClearFields class implements the _AndroidAction_ interface:
 
@@ -385,7 +391,7 @@ for (AndroidElement element : helper.getDriver().findElements(By.className("andr
 }
 ```
 
-iOS Action
+**iOS Action**
 
 ClearFields class implements the _IOSAction_ interface:
 
@@ -412,7 +418,7 @@ for (IOSElement element : helper.getDriver().findElements(By.className("XCUIElem
 }
 ```
 
-Generic Action
+**Generic Action**
 
 Addition class implements the _GenericAction_ interface:
 
@@ -430,8 +436,10 @@ public ExecutionResult execute(AddonHelper helper) throws FailureException
 Action code performs an addition of values in two variables, assigning result to third:
 
 Actions run in context of a test and assume that required UI state is already in place.  
- When the action will be used in a test it will be represented as a single step, usually preceded by other steps.  
- However, when debugging it locally, preparations should be done using the _Runner_ class to start from expected UI state:Web - State Preparation
+When the action will be used in a test it will be represented as a single step, usually preceded by other steps.  
+However, when debugging it locally, preparations should be done using the _Runner_ class to start from expected UI state:
+
+**Web - State Preparation**
 
 ```text
 // Create Action
@@ -447,7 +455,7 @@ driver.findElement(By.id("password")).sendKeys("12345");
 runner.run(action);
 ```
 
-Android - State Preparation
+**Android - State Preparation**
 
 ```text
 // Create Action
@@ -462,7 +470,7 @@ driver.findElement(By.id("password")).sendKeys("12345");
 runner.run(action);
 ```
 
-iOS - State Preparation
+**iOS - State Preparation**
 
 ```text
 // Create Action
@@ -527,9 +535,15 @@ After the Addon is uploaded to TestProject platform this will be done via UI.
 
 #### Element Type
 
-Element Actions are made to be used on a specific Element Types. Element Types are defined in TestProject using XPath to describe target elements similarities:Web - Element Type
+Element Actions are made to be used on a specific Element Types. Element Types are defined in TestProject using XPath to describe target elements similarities:
 
-It can be a simple definitions such as:
+**Web - Element Type**
+
+It can be a simple definition such as:
+
+```text
+//div
+```
 
 Or a more complex one, such as:
 
@@ -537,9 +551,13 @@ Or a more complex one, such as:
 //div[contains(@class, 'progressbar') and contains(@class, 'widget') and @role = 'progressbar']
 ```
 
-Android - Element Type
+**Android - Element Type**
 
-It can be a simple definitions such as:
+It can be a simple definition such as:
+
+```text
+//android.widget.Button
+```
 
 Or a more complex one, such as:
 
@@ -547,9 +565,13 @@ Or a more complex one, such as:
 //android.support.v7.widget.RecyclerView[contains(@resource-id, 'my_view') and .//android.widget.TextView[not(contains(@resource-id, 'average_value'))]]
 ```
 
-iOS - Element Type
+**iOS - Element Type**
 
-It can be a simple definitions such as:
+It can be a simple definition such as:
+
+```text
+//XCUIElementTypeButton
+```
 
 Or a more complex one, such as:
 
@@ -597,6 +619,6 @@ See _build.gradle_ or _pom.xml_ files in code examples for details.
 
 For any further inquiries, please use TestProject support channels:
 
-* [Forum](https://forum.testproject.io/index.php/board,11.0.html)
+* [Forum](https://forum.testproject.io/)
 * [Help Desk](https://support.testproject.io/)
 
