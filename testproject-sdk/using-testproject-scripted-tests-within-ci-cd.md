@@ -1,8 +1,8 @@
 ---
-description: Using OpenSDK v2 within CI/CD
+description: Using OpenSDK (v2) within CI/CD
 ---
 
-# Using TestProject Scripted Tests within CI/CD
+# Using OpenSDK \(v2\) within CI/CD
 
 ## Introduction
 
