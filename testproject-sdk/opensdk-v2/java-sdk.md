@@ -1,4 +1,4 @@
-# Java OpenSDK
+# Java
 
 ## Getting Started
 

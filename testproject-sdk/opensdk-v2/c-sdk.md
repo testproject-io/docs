@@ -2,7 +2,7 @@
 description: 'TestProject SDK for C#'
 ---
 
-# C\# SDK
+# C\#
 
 ## Getting Started
 
