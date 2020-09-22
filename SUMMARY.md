@@ -130,9 +130,13 @@
 ## TestProject SDK
 
 * [Overview](testproject-sdk/overview.md)
-* [Java SDK](testproject-sdk/java-sdk.md)
-* [C\# SDK](testproject-sdk/c-sdk.md)
-* [Python SDK](testproject-sdk/python-sdk.md)
+* [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/sdk-v1-vs.-opensdk-v2.md)
+* [OpenSDK \(v2\)](testproject-sdk/opensdk-v2/README.md)
+  * [Java OpenSDK](testproject-sdk/opensdk-v2/java-sdk.md)
+  * [Python OpenSDK](testproject-sdk/opensdk-v2/python-sdk.md)
+* [TestProject SDK \(v1\)](testproject-sdk/testproject-sdk-v1/README.md)
+  * [Java SDK](testproject-sdk/testproject-sdk-v1/java-sdk.md)
+  * [C\# SDK](testproject-sdk/testproject-sdk-v1/c-sdk.md)
 * [Using TestProject Scripted Tests within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 
 ## TestProject Integrations
