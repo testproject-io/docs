@@ -101,7 +101,7 @@ You can create a new pipeline the same way you created the Freestyle job above, 
 
 For running a TestProject job through a pipeline, use the following syntax:
 
-`runtpjob jobId: 'YOUR_JOB_ID', projectId: 'YOUR_PROJECT_ID', waitJobFinishSeconds: 1800`
+`tpJobRun jobId: 'YOUR_JOB_ID', projectId: 'YOUR_PROJECT_ID', waitJobFinishSeconds: 1800`
 
 You will need to **input the value of your project and job Id**, along with the **wait to finish time** parameter, behaving the same way as in the Freestyle job. 
 
