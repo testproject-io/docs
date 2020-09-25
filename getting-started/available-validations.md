@@ -7,7 +7,7 @@ A test that doesn't check things isn't much of a test, and so TestProject provid
 | Contains text? | Checks if an element contains the given text |
 | Is clickable? | Check if element is clickable |
 | Is enabled now? | Checks if an element is enabled \(no waiting timeout allowed\) |
-| Is invisible? | Checks if an element is invisible or not present on the Screen/DOM |
+| Is invisible? | Checks if an element is invisible or not on the Screen/DOM |
 | Is present? | Checks if an element is present on the Screen/DOM |
 | Is selected now? | Checks if an element is selected \(no waiting timeout allowed\) |
 | Is selected? | Checks if an element is selected |
