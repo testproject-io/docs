@@ -60,6 +60,7 @@
   * [Get Attribute Value \(Mobile\)](testproject-addons/available-addons/get-attribute-value-mobile.md)
   * [Get Page Source \(Mobile\)](testproject-addons/available-addons/get-page-source-mobile.md)
   * [HTML Table Actions](testproject-addons/available-addons/html-table-actions.md)
+  * [iOS Wheel Picker](testproject-addons/available-addons/ios-wheel-picker.md)
   * [Image Comparison Addon](testproject-addons/available-addons/image-comparison-addon/README.md)
     * [Dropbox Actions](testproject-addons/available-addons/image-comparison-addon/dropbox-actions-addon.md)
   * [JS Actions Addon](testproject-addons/available-addons/js-actions-addon.md)
