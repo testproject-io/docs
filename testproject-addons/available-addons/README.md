@@ -13,6 +13,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Get Attribute Value \(Mobile\)](https://docs.testproject.io/testproject-addons/available-addons/get-attribute-value-mobile) |
 | [Get Page Source \(Mobile\)](https://docs.testproject.io/testproject-addons/available-addons/get-page-source-mobile) |
 | [HTML Table Actions](https://docs.testproject.io/testproject-addons/available-addons/html-table-actions) |
+| [iOS Wheel Picker](https://docs.testproject.io/testproject-addons/available-addons/ios-wheel-picker) |
 | [Image Comparison](image-comparison-addon/) |
 | [JS Actions](js-actions-addon.md) |
 | [Live Currency Converter](live-currency-converter-addon.md) |
