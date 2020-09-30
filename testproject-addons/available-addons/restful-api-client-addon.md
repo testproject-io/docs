@@ -8,7 +8,7 @@ description: >-
 
 ## Actions
 
-There are 4 actions in this Addon:
+There are 5 actions in this Addon:
 
 * HTTP GET Request
 * HTTP POST Request
