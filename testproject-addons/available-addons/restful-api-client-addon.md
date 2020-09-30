@@ -4,7 +4,7 @@ description: >-
   and DELETE methods.
 ---
 
-# testproject-io/addons
+# RESTful API Client
 
 ## Actions
 
