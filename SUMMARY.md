@@ -68,7 +68,7 @@
   * [Mobile Extensions Addon](testproject-addons/available-addons/mobile-extensions-addon.md)
   * [Parameters Operations Addon](testproject-addons/available-addons/parameters-operations-addon.md)
   * [Reporting Utilities Addon](testproject-addons/available-addons/reporting-utilities-addon.md)
-  * [RESTful API Client Addon](testproject-addons/available-addons/restful-api-client-addon.md)
+  * [testproject-io/addons](testproject-addons/available-addons/restful-api-client-addon.md)
   * [Scroll to Element Addon](testproject-addons/available-addons/scroll-to-element-addon.md)
   * [Slack Actions Addon](testproject-addons/available-addons/slack-actions-addon.md)
   * [Swipe and Find Element addon](testproject-addons/available-addons/swipe-and-find-element-addon.md)
