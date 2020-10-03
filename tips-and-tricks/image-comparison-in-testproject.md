@@ -32,3 +32,7 @@ Once you have done that, save the test step and click on the menu arrow beside i
 
 ![Run Test](../.gitbook/assets/image%20%28129%29%20%281%29.png)
 
+{% hint style="info" %}
+If you have any issues with taking screenshots using the actions in the addon on mobile devices, try closing your keyboard.
+{% endhint %}
+
