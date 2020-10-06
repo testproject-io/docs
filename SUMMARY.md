@@ -165,6 +165,7 @@
 * [Organizing and Managing Test Data](tips-and-tricks/organizing-and-managing-test-data.md)
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
+* [Troubleshooting Android Device Connection Issues](tips-and-tricks/troubleshooting-android-device-connection-issues.md)
 * [Element Mangement](tips-and-tricks/element-mangement.md)
 * [Best Practices for Element Locators](tips-and-tricks/best-practices-for-element-locators.md)
 * [How to Deal with Dynamic Elements](tips-and-tricks/how-to-deal-with-dynamic-elements.md)
