@@ -36,8 +36,8 @@ Below is a short summary of key differences between the two:
 If you are utilizing the upload code feature and coded tests deployment by TestProject platform – then SDK v1 is for you. However, if you are looking to enrich your existing platform with the power of automatic reporting and driver management, while having a flexibility framework with your own build and deployment pipelines \(while storing the artifacts locally\) – you should probably try the OpenSDK \(v2\).  
 
 
-_**\[1\]**_  Automatic deployment and execution will be implemented for the OpenSDK in the future.  
-Automatic deployment and execution \(currently only supported with SDK v1\) refers to uploading the code to the TestProject cloud platform to be able to schedule the execution of the code. For example, when you add a test in a Job, you enable TestProject to manage the deployment of the test. When you upload the code, you simply press a button and the code executes from the platform on your machine, meaning that TestProject handles the pipeline from the moment when you start the test until the test executes.
+_**\[1\]**_  Automatic deployment and execution will be implemented for the OpenSDK in the future.
 
-Using the OpenSDK \(v2\), executions are local so the flow of the test execution is on the side of the developer, as well as the deployment. Some can find if better since they have existing pipelines for deployment and they don't require TestProject for handling that.
+* Automatic deployment and execution \(currently only supported with SDK v1\) refers to uploading the code to the TestProject cloud platform to be able to schedule the execution of the code. For example, when you add a test in a Job, you enable TestProject to manage the deployment of the test. When you upload the code, you simply press a button and the code executes from the platform on your machine, meaning that TestProject handles the pipeline from the moment when you start the test until the test executes.
+* Using the OpenSDK \(v2\), executions are local so the flow of the test execution is on the side of the developer, as well as the deployment. Some can find if better since they have existing pipelines for deployment and they don't require TestProject for handling that.
 
