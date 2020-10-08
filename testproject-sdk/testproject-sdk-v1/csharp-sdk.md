@@ -618,7 +618,7 @@ In order to upload your Addons or Tests to TestProject you must prepare either a
 * If your package only depends on TestProject SDK, you can upload the built _DLL_ file to TestProject UI.
 * If your package has other dependencies \(e.g. DropBox API\), Create a zip file from your project output \(including dependencies, excluding TestProject SDK\) and upload it to TestProject UI.
 
-Here's a simple example based on our [Web - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/c2521f270b79b0e89bf4b309016cb06b732cc0dd/Web/Test/TestProject.SDK.Examples.Web.Tests/Tests/ProxyTest.cs) Example  
+Here's a simple example based on our [Web - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ProxyTest.cs) Example  
  To upload this test we will have to create a _ZIP_ file containing 2 _DLL_ files:
 
 * TestProject.SDK.Examples.Web.Tests.dll - This is the project output.
