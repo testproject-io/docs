@@ -613,13 +613,19 @@ See examples:
 
 ## Packaging
 
-In order to upload your Addons or Tests to TestProject you must prepare either a _DLL_ file or a _ZIP_ file:\
+In order to upload your Addons or Tests to TestProject you must prepare either a _DLL_ file or a _ZIP_ file:
 
 * If your package only depends on TestProject SDK, you can upload the built _DLL_ file to TestProject UI.
 * If your package has other dependencies \(e.g. DropBox API\), Create a zip file from your project output \(including dependencies, excluding TestProject SDK\) and upload it to TestProject UI.
 
+You can build the solution through your IDE, such as Visual Studio:
+
+![](../../.gitbook/assets/t6uf7teij6.gif)
+
+You can also build it through your Terminal/PowerShell/Command prompt.
+
 Here's a simple example based on our [Web - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ProxyTest.cs) Example  
- To upload this test we will have to create a _ZIP_ file containing 2 _DLL_ files:
+ To upload this test we will have to create a _ZIP_  file containing 2 _DLL_ files:
 
 * TestProject.SDK.Examples.Web.Tests.dll - This is the project output.
 * AddonProxy.dll - the addon proxy this test uses.
@@ -629,6 +635,26 @@ If your project contains external dependencies, follow these step to package it:
 * Open a Terminal/PowerShell/Command prompt and navigate to the folder of your main project
 * Run the following command: `dotnet publish -o ./publish ./your-project.csproj`. make sure to use your project's csproj file.
 * Open the publish folder we just created and zip all the files
+
+To upload the package, head to your project on the TestProject platform, and create a **new test**.
+
+![](../../.gitbook/assets/5%20%285%29.png)
+
+Select the **code** option.
+
+![](../../.gitbook/assets/6%20%284%29.png)
+
+**Upload** your DLL or zip.
+
+![](../../.gitbook/assets/7%20%284%29.png)
+
+ Press **next**.
+
+![](../../.gitbook/assets/8%20%283%29.png)
+
+Give your package a **name**, **description** and choose an **application** and press next to complete the process.
+
+![](../../.gitbook/assets/9%20%283%29.png)
 
 > When using windows you can select all files and right click -&gt; Send to -&gt; Compressed archive.  
 >  If using a different application to compress, always use Normal compression
