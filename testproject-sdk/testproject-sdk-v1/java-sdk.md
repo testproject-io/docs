@@ -638,6 +638,8 @@ Open the Maven tab, select **Lifecycle**, and execute the following in order:
 * compile
 * package
 
+![](../../.gitbook/assets/3%20%286%29.png)
+
 Once the package command ends; the jar will be created in the **target** directory.
 
 ![](../../.gitbook/assets/4%20%285%29.png)
