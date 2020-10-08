@@ -610,10 +610,59 @@ See examples:
 
 ## Packaging
 
-In order to upload your Addons or Tests to TestProject, you have to package it as JAR file.  
- Export your code as an uber JAR file with dependencies, excluding TestProject SDK.
+To package and upload coded tests written using the **TestProject V1 SDK** in **Java**, you will need to package it as a **.jar** file. 
 
-See _build.gradle_ or _pom.xml_ files in code examples for details.
+Export your code as an uber .jar file with dependencies, excluding the TestProject SDK.
+
+Once the jar is compiled and uploaded, TestProject will display your project as a package with **all** the tests inside of it.
+
+Please note that once uploaded, the tests **cannot be edited unless reuploaded** after performing the changes in your local development environment.
+
+The following examples have been created using **IntelliJ**.
+
+_**Gradle**_
+
+Open the Gradle tab in your IDE, you will need to compile a jar using **Tasks/build/jar**.
+
+![](../../.gitbook/assets/1%20%284%29.png)
+
+After running the task, the jar will be created in the **build/libs** directory.
+
+![](../../.gitbook/assets/2%20%284%29.png)
+
+_**Maven**_
+
+Open the Maven tab, select **Lifecycle**, and execute the following in order:
+
+* clean
+* compile
+* package
+
+Once the package command ends; the jar will be created in the **target** directory.
+
+![](../../.gitbook/assets/4%20%285%29.png)
+
+To upload the package, head to your project on the TestProject platform, and create a **new test**.
+
+![](../../.gitbook/assets/5%20%285%29.png)
+
+Select the **code** option.
+
+![](../../.gitbook/assets/6%20%284%29.png)
+
+**Upload** your jar.
+
+![](../../.gitbook/assets/7%20%284%29.png)
+
+Press **next**.
+
+![](../../.gitbook/assets/8%20%283%29.png)
+
+Give your package a **name**, **description** and choose an **application** and press next to complete the process.
+
+![](../../.gitbook/assets/9%20%283%29.png)
+
+See build.gradle or pom.xml files in code examples for details on how to include the TestProject V1 SDK dependency in your project.
 
 ## Support
 
