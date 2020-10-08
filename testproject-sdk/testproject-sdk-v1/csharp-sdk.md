@@ -607,10 +607,9 @@ StepExecutionResult result = helper.ExecuteProxy(clearFieldsAction);
 
 See examples:
 
-* [Web - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/c2521f270b79b0e89bf4b309016cb06b732cc0dd/Web/Test/TestProject.SDK.Examples.Web.Tests/Tests/ProxyTest.cs)
-* [Android - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/c2521f270b79b0e89bf4b309016cb06b732cc0dd/Android/Test/TestProject.SDK.Examples.Android.Tests/Tests/ProxyTest.cs)
-* [iOS - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/c2521f270b79b0e89bf4b309016cb06b732cc0dd/IOS/Test/TestProject.SDK.Examples.IOS.Tests/Tests/ProxyTest.cs)
-* [Generic - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/c2521f270b79b0e89bf4b309016cb06b732cc0dd/Generic/Test/TestProject.SDK.Examples.Generic.Tests/Tests/ProxyTest.cs)
+* [Web - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ProxyTest.cs)
+* [Android - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/ProxyTest.cs)
+* [iOS - Proxy Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/IOS/Test/Test/ProxyTest.cs)
 
 ## Packaging
 
