@@ -18,7 +18,7 @@ To kick-off automation development with TestProject, it is necessary to have an 
 
 ### Getting Java SDK
 
-You can download TestProject SDK for Java from the [Developers](https://app.testproject.io/#/developers) page and reference it in your project.
+You can download TestProject SDK for Java from the [Developers](https://app.testproject.io/#/integrations/develop-addon) page and reference it in your project.
 
 #### Installing SDK
 
