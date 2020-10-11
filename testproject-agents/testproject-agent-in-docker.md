@@ -140,6 +140,21 @@ pipeline {
 }
 ```
 
+The following pipeline will start a job on a ephemeral instance. Notice the usage of the **--rm** flag, which will cause the container to be deleted once the TestProject agent finishes the job's execution and exits.
+
+```text
+pipeline {
+    agent any
+    stages {
+        stage('RunJob') {
+            steps {
+                bat 'docker run --rm -e TP_API_KEY="MY_API_KEY" -e TP_JOB_ID="MY_JOB_ID" testproject/agent:latest'
+            }
+        }
+    }
+}
+```
+
 ## Troubleshooting
 
 In case of a permanent execution engine scenario, one should ensure that their active account is linked & registered. You can verify registered agents & their status from the top Navigation Bar under the [Agents tab](https://app.testproject.io/#/agents).
