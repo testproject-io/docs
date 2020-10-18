@@ -18,7 +18,7 @@ To get started, you need to complete the following prerequisites checklist:
 The TestProject Python SDK is [available on PyPI](https://pypi.org/project/testproject-python-sdk/). All you need to do is add it as a Python module using:
 
 ```text
-pip install testproject-python-sdk
+pip3 install testproject-python-sdk
 ```
 
 and you're good to go.
