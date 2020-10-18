@@ -40,3 +40,10 @@ This action takes in the following inputs:
 * `JsonString` - The JSON string you want to check the validity of
 * `ExpectedResult` -  If you expect the string to be a valid json object or not \(true/false\)
 
+`Extract multiple JsonPaths` - **Extract up to 10** JsonPath values in one action.
+
+This action takes in the following inputs:
+
+* `JsonFile`- The JSON object to extract values from.
+* `JsonPaths`- The JsonPaths values to search for, **delimited by a new line**.
+
