@@ -68,5 +68,5 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [KendoUI - Grid](kendoui-grid-addon.md) |
 | [Bootstrap4 - Buttons Group](bootstrap4-buttons-group-addon.md) |
 | [Bootstrap4 - Dropdown](bootstrap4-dropdown-addon.md) |
-| Tap and Get Toast Message |
+| [Tap and Get Toast Message](https://docs.testproject.io/testproject-addons/available-addons/tap-and-get-toast-message) |
 
