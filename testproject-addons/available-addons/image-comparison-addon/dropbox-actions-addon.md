@@ -4,6 +4,7 @@ As part of the [Image Comparison Addon](https://docs.testproject.io/testproject-
 
 * List the contents of your Dropbox directory
 * Upload / Delete / Download files from your Dropbox storage
+* Upload documents from Dropbox to web elements
 * Save element screenshots to Dropbox
 * Compare images from Dropbox
 
@@ -22,7 +23,11 @@ Go to the Dropbox developer section [here](https://www.dropbox.com/developers/do
   
 Configure your settings as follows:
 
-![Configure Dropbox Settings](../../../.gitbook/assets/4.png)
+![App Settings](../../../.gitbook/assets/1%20%285%29.png)
+
+In the **permissions** tab, enable the following settings:
+
+![](../../../.gitbook/assets/2%20%285%29.png)
 
   
 Now, you will have the option to generate a token:
