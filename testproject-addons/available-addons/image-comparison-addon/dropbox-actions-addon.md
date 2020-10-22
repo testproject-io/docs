@@ -27,7 +27,7 @@ Configure your settings as follows:
 
 In the **permissions** tab, enable the following settings:
 
-![](../../../.gitbook/assets/2%20%285%29.png)
+![Files and folders permissions](../../../.gitbook/assets/2%20%285%29.png)
 
   
 Now, you will have the option to generate a token:
