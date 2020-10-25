@@ -50,7 +50,6 @@
 * [Using Addons in the TestProject Recorder](testproject-addons/using-addons-in-the-testproject-recorder.md)
 * [Develop an Addon](testproject-addons/develop-an-addon.md)
 * [Available Addons](testproject-addons/available-addons/README.md)
-  * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
   * [Tap and Get Toast Message](testproject-addons/available-addons/tap-and-get-toast-message.md)
   * [Base64 Encoder/Decoder Addon](testproject-addons/available-addons/base64-encoder-decoder-addon.md)
   * [Shell Commands Addon](testproject-addons/available-addons/shell-commands.md)
@@ -117,6 +116,7 @@
   * [KendoUI - Grid Addon](testproject-addons/available-addons/kendoui-grid-addon.md)
   * [Bootstrap4 - Buttons Group Addon](testproject-addons/available-addons/bootstrap4-buttons-group-addon.md)
   * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
+  * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
 
 ## Reports
 
