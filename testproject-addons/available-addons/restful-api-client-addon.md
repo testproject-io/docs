@@ -70,6 +70,10 @@ There are 5 actions in this Addon:
   connection=keep-alive,content-type=application/json
   ```
 
+
+
+  * > Note: You can delimit the headers with a different character by using the **HeaderDelimiter** field.
+
 * `body`- Body that will be sent in the request
 * `format`- Body \(if provided\) format. For example: _application/json_ or _text/html_, etc...
 
@@ -80,6 +84,7 @@ There are 5 actions in this Addon:
   If the actual status code is not the expected status code then action fail.  
    Accepted values are numbers between 100 and 599 \(1xx - 5xx\).
 
+* `HeaderDelimiter` - This parameter is used to decide the character to delimit the headers around, by default '=' will be used.
 * `jsonPath` - This parameter is used to extract nodes or value from server's JSON response \(if such is available\).
 
   Supported syntax is the _Jayway JsonPath_ syntax.  
