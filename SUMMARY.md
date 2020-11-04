@@ -183,6 +183,8 @@
 * [Scrolling to an Element](tips-and-tricks/scrolling-to-an-element.md)
 * [Window Management in TestProject](tips-and-tricks/window-management-in-testproject.md)
 * [Using Natural Language Commands to Run a Test](tips-and-tricks/using-natural-language-commands-to-run-a-test.md)
+* [Resources Auto-login](tips-and-tricks/resources-auto-login/README.md)
+  * [Google Autologin](tips-and-tricks/resources-auto-login/google-autologin.md)
 
 ## Releases
 
