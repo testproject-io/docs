@@ -1,11 +1,17 @@
 # What Makes TestProject Unique
 
-With so many testing tools out there, why use this one? Well, TestProject offers a few things that no other test automation platform has. For example TestProject is the first of its kind community powered test automation framework. No other automation platform out there gives you the ability to extend the framework by using addons shared by others on the platform.
+With so many testing tools out there, why use this one? Well, TestProject offers a few things that no other test automation platform has. For example TestProject is the **first of its kind community powered test automation framework**. No other automation platform out there gives you the ability to extend the framework by using addons shared by others on the platform.
 
-TestProject is also the first free SaaS test automation development framework designed for agile teams! It is built on top of industry standard open source tools, supports all major operating systems, and most importantly it enables a team first approach to test automation that makes it easy for every member of your software team to test Web, Android and iOS apps effortlessly. Using TestProject’s testing repository, teams can easily collaborate, all while locally creating, running and analyzing their test automation. 
+TestProject is also the **first free SaaS test automation development framework designed for agile teams**! It is built on top of industry standard open source tools, supports all major operating systems, and most importantly it enables a team first approach to test automation that makes it easy for every member of your software team to test Web, Android and iOS apps effortlessly. Using TestProject’s testing repository, teams can easily collaborate, all while locally creating, running and analyzing their test automation. 
 
-Another thing that makes TestProject stand out is the advanced built-in recording capabilities. TestProject has made it easy to share recorded steps between test cases and has made it so that anyone can create simple and useful tests without needing coding experience.
+Another thing that makes TestProject stand out is the **advanced built-in recording capabilities**. TestProject has made it easy to share recorded steps between test cases and has made it so that anyone can create simple and useful tests without needing coding experience.
 
-Our mission is to create a powerful and collaborative environment that the entire test automation community can use without any barriers, including the barrier of cost. We believe in the importance  of test automation and want to make sure that no one is prevented from using our tool and so we provide a first of its kind in the test automation world. A SaaS test automation framework that is free forever for anyone to use.  
+The TestProject Smart Recorder also has **AI-Powered Self-Healing technology built right in**. This means that if an element locator changes or the element moves slightly, the test maintenace will be automatically handled by the Smart Recorder. As you can imagine, this lead to much less time spent debugging tests and a much lower percentage of false failures in test runs. 
+
+It doesn't stop there though. The Smart Recorder also has best in class support of the most complex problems faced in UI automation. For example, **it seamlessly supports iFrames, Popups and Dynamic Elements**. This means that is fully compatible with automating even the most complex web apps like SalesForce, MS Sharepoint, Service Now and many many others. 
+
+As any test automation engineer will tell you, UI automation often requires coding in wait times, and as you might have guessed, TestProject also takes care of this problem! **With built in Adaptive-wait technology it automatically handles deviations in web application loading times**. No more hard coding in wait times and slowing down tests. 
+
+Our mission is to create a powerful and collaborative environment that the entire test automation community can use without any barriers, including the barrier of cost. We believe in the importance  of test automation and want to make sure that no one is prevented from using our tool and so we provide a first of its kind in the test automation world. A SaaS test automation framework that is **free forever** for anyone to use.  
 ****
 
