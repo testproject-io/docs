@@ -22,7 +22,6 @@ Sauce Connect Proxy is a built-in HTTP proxy server that opens a secure "tunnel"
 * [**Sauce Labs**](https://saucelabs.com/) **account** - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here](https://saucelabs.com/sign-up) to create a free trial.
 * Download **Sauce Connect Proxy.**
 * Open outbound **port 443** in your machine
-* TestProject **OpenSDK** Java/C\#/Python.
 
 ### **Get Sauce Labs Username & Access Key**
 
@@ -74,7 +73,33 @@ You can also copy an already generated command for you in the Sauce Labs UI unde
 
 ![](../../.gitbook/assets/14.png)
 
-### **Configure Remote \(Cloud\) Driver to your Sauce Labs proxy tunnel**
+## Run Recorded Tests from TestProject Platform
+
+TestProject's Agent supports running tests both locally on-premise, and on the cloud. Therefore, you can test private \(local\) web sites or access local resources such as databases, local directories, APIs, etc. 
+
+What happens if you want to achieve the same functionality while utilizing the TestProject virtual agent, executing tests on remote Sauce Labs environments? You can achieve that with TestProject! All you need to do is enable the desired capability while executing your job, according to the following steps:
+
+* Create a new job by clicking on "Add a new job" button:
+
+![](../../.gitbook/assets/job.png)
+
+* Drag and drop your test into the job, and configure your job to execute on Sauce Labs:
+
+![](../../.gitbook/assets/sauce-labs.png)
+
+* Set the desired capability to this job, that will active the tunnel and enable access to your app:
+
+![](../../.gitbook/assets/desired-capabilities.png)
+
+{% hint style="info" %}
+You can find a tunnel's ID/Name under the "Tunnels" section in your Sauce Labs account.
+{% endhint %}
+
+![](../../.gitbook/assets/desired-capabilities-in-sauce.png)
+
+## Run Coded Tests using TestProject OpenSDK
+
+### **Configure Remote \(Cloud\) Driver to your Sauce Labs proxy tunnel**
 
 By default, TestProject Agent communicates with the local Selenium drivers or Appium server that are bundled within the agent application, then send automatic execution reports to TestProject Dashboard In order to initialize a remote driver for a Sauce Labs proxy tunnel, a custom capability “cloud:URL” and a “tunnelIndetifier” with a given tunnel id/name should be set.
 
