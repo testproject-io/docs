@@ -1,6 +1,6 @@
-# Getting started with iOS testing from Windows
+# Getting started with iOS testing
 
-The TestProject framework enables you to run iOS test automation on Windows operating system, [without the need for macOS or Xcode](https://blog.testproject.io/2018/06/11/ios-test-windows-without-mac/)! In order to get started with this you can follow this step-by-step tutorial to setup your iOS settings.
+The TestProject framework enables you to run iOS test automation on any operating system, and even on Windows operating system, [without the need for macOS or Xcode](https://blog.testproject.io/2018/06/11/ios-test-windows-without-mac/)! In order to get started with this you can follow this step-by-step tutorial to setup your iOS settings.
 
 ### Prerequisites
 
