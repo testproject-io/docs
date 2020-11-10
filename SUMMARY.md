@@ -9,7 +9,7 @@
 * [Creating an Account](getting-started/creating-an-account.md)
 * [Installation and Setup](getting-started/installation-and-setup.md)
 * [Supported Environments](getting-started/supported-environments.md)
-* [Getting started with iOS testing](getting-started/getting-started-with-ios-testing-from-windows.md)
+* [Getting started with iOS testing](getting-started/getting-started-with-ios-testing.md)
 * [Create a Test Step](getting-started/create-a-test-step/README.md)
   * [Steps Widget](getting-started/create-a-test-step/steps-widget.md)
   * [Using Parameters in Test Steps](getting-started/create-a-test-step/using-parameters-in-test-steps.md)

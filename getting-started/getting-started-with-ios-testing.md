@@ -107,9 +107,9 @@ And that’s it! ****If you’ve followed all of the steps above, you should see
 
 **If you see a toast with an error, go over this guide again and check the most common errors**:
 
-1. The certificate you uploaded to TestProject was not the one that was generated using TestProject CSR \(Certificate Signing Request\). Go back to[ ](getting-started-with-ios-testing-from-windows.md#step-3-create-a-certificate-signing-request-csr)the step on [creating certificate signing](getting-started-with-ios-testing-from-windows.md#create-a-certificate-signing-request-csr).
+1. The certificate you uploaded to TestProject was not the one that was generated using TestProject CSR \(Certificate Signing Request\). Go back to[ ](getting-started-with-ios-testing.md#step-3-create-a-certificate-signing-request-csr)the step on [creating certificate signing](getting-started-with-ios-testing.md#create-a-certificate-signing-request-csr).
 2. You selected the wrong App ID \(You must choose the Wildcard option\). 
-3. The provisioning profile you uploaded does not contain the certificate that was generated using TestProject’s CSR. Carefully work through [t](getting-started-with-ios-testing-from-windows.md#step-4-create-your-mobile-provisioning-profile)his step again.
+3. The provisioning profile you uploaded does not contain the certificate that was generated using TestProject’s CSR. Carefully work through [t](getting-started-with-ios-testing.md#step-4-create-your-mobile-provisioning-profile)his step again.
 
 ### Record or Develop iOS Test Automation using TestProject
 
