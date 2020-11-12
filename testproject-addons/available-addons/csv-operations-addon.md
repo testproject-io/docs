@@ -53,7 +53,7 @@ This action requires the following inputs:
 * `filePath` - Path to the CSV file you wish to read \(e.g. C:\Test\test.csv\)
 * `row` - the index other the row to read \(starts from 1\)
 
-`Read CSV column` - Read the entire data of a given row.
+`Read CSV column` - Read the entire data of a given column.
 
 * `filePath` - Path to the CSV file you wish to read \(e.g. C:\Test\test.csv\)
 * `column`- the index other the column to read \(starts from 1\)
