@@ -146,7 +146,8 @@
 ## TestProject Integrations
 
 * [qTest Integration](testproject-integrations/qtest-integration.md)
-* [BrowserStack Integration](testproject-integrations/browserstack-integration.md)
+* [BrowserStack Integration](testproject-integrations/browserstack-integration/README.md)
+  * [BrowserStack Local Testing Integration](testproject-integrations/browserstack-integration/browserstack-local-testing-integration.md)
 * [Genymotion Desktop Integration](testproject-integrations/genymotion-desktop-integration.md)
 * [Jenkins Integration](testproject-integrations/integration-with-jenkins.md)
 * [TeamCity Integration](testproject-integrations/integration-with-teamcity.md)

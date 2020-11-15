@@ -25,7 +25,7 @@ Integrating TestProject with BrowserStack allows you and your teammates to run y
 
 In order to setup the integration, you will have to obtain a BrowserStack Access key. After logging into your BrowserStack  account, visit the [setting area](https://www.browserstack.com/accounts/settings) \(1-2\) and copy your **User Name \(3\)** and **Access Key \(4\)**.
 
-![Obtaining BrowserStack Username and Access Key](../.gitbook/assets/djpmifkyvk.png)
+![Obtaining BrowserStack Username and Access Key](../../.gitbook/assets/djpmifkyvk.png)
 
 ### Enabling BrowserStack Integration in TestProject
 
@@ -33,11 +33,11 @@ In order to setup the integration, you will have to obtain a BrowserStack Access
 Only account administrators can set up BrowserStack integration.
 {% endhint %}
 
-After you have the BrowserStack **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)\(1\) section of your TestProject account and click on the **Cloud Execution** \(2\) option on the left hand side menu. Click on the toggle ![](../.gitbook/assets/8hvmgc32do.png) \(3\) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** \(4\) and **Access Key** \(5\) in the relevant places and click **Save** \(6\).
+After you have the BrowserStack **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)\(1\) section of your TestProject account and click on the **Cloud Execution** \(2\) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) \(3\) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** \(4\) and **Access Key** \(5\) in the relevant places and click **Save** \(6\).
 
-![Configuring BrowserStack access information in TestProject](../.gitbook/assets/nufiuwudwg.png)
+![Configuring BrowserStack access information in TestProject](../../.gitbook/assets/nufiuwudwg.png)
 
-Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active ![](../.gitbook/assets/chrome_a2uisafeu5.png) That's it!
+Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active ![](../../.gitbook/assets/chrome_a2uisafeu5.png) That's it!
 
 {% hint style="info" %}
 Once you set up the integration you cannot retrieve your access key from TestProject, as it is being stored in an encrypted state. You can always click on the cog icon to change your credentials.
@@ -51,7 +51,7 @@ Now that we're all set up, you can go ahead and start running your tests and job
 
 #### Running in your own lab using own Agents
 
-As you probably already know, TestProject allows you to connect infinite number of [agents ](../schedule-and-run-tests/manage-testproject-agents.md)that can run on any operating system and are used to record, develop and run your tests. Using this option means that agents connected to your account are being used to run your tests on:
+As you probably already know, TestProject allows you to connect infinite number of [agents ](../../schedule-and-run-tests/manage-testproject-agents.md)that can run on any operating system and are used to record, develop and run your tests. Using this option means that agents connected to your account are being used to run your tests on:
 
 * Devices that are physically connected to the agent machine.
 * Emulators running on the agent machine.
@@ -59,13 +59,13 @@ As you probably already know, TestProject allows you to connect infinite number 
 
 In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** \(1\), choose the **Agent browsers** \(2\) section, choose your browser \(3\) or device and run your test.
 
-![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../.gitbook/assets/image%20%2893%29%20%281%29.png)
+![Running the &quot;Login&quot; web test on the Chrome 79 browser using Eldar&apos;s Agent](../../.gitbook/assets/image%20%2893%29%20%281%29.png)
 
 #### **Running on** BrowserStack **Cloud using own Agents**
 
 Once you have the integration set up, you can use your own TestProject Agents to run tests and jobs on the BrowserStack cloud. This means that your agents \(wherever they are installed\) will be running your tests in the cloud using BrowserStack devices or browsers. To achieve that, choose one of your **Agents \(1\)**, expand the BrowserStack \(2\) section and select a browser \(you can use the search option to quickly find the desired target\) \(3\) or device from the BrowserStack cloud and run your test. That's it!
 
-![Running the &quot;Login&quot; web test on the BrowserStack Edge 18 browser using Eldar&apos;s Agent](../.gitbook/assets/qhanuxgyqk.png)
+![Running the &quot;Login&quot; web test on the BrowserStack Edge 18 browser using Eldar&apos;s Agent](../../.gitbook/assets/qhanuxgyqk.png)
 
 {% hint style="info" %}
 This method is useful for cases where tests need access to your local resources that are not accessible from the cloud. For example, let's say that in some of your steps you are using the TestProject [RESTful API Client Addon](https://addons.testproject.io/restful-api-client) to access your back office API. You can test your website in the cloud and make your validations internally.
@@ -75,11 +75,11 @@ This method is useful for cases where tests need access to your local resources 
 
 In addition to the two ways described above, another great option is running entirely in the cloud using the **Virtual Agent**. Once you've set up your BrowserStack integration you will see that a **Virtual Agent** was added to [your lab](https://app.testproject.io/#/agents).
 
-![A TestProject Virtual Agent](../.gitbook/assets/image%20%2829%29%20%281%29.png)
+![A TestProject Virtual Agent](../../.gitbook/assets/image%20%2829%29%20%281%29.png)
 
 This type of execution does not require an Agent at all. This means that you can execute your tests and jobs even if you do not have any agents that are currently available for execution. To use this capability when running a test, just choose the **Virtual Agent** \(1\), expand the BrowserStack section \(2\), choose the desired browser \(3\) or device and run your test. Because BrowserStack provides many browsers and devices and the list can get long, we've added an easy quick search option that will allow you to filter out all the unnecessary targets.
 
-![Running the &quot;Login&quot; test on the BrowserStack Chrome 79 \(on Win 10\) browser using the Virtual Agent](../.gitbook/assets/41khkze0hn.png)
+![Running the &quot;Login&quot; test on the BrowserStack Chrome 79 \(on Win 10\) browser using the Virtual Agent](../../.gitbook/assets/41khkze0hn.png)
 
 {% hint style="info" %}
 Note: Virtual Agents can take up to a minute to initialize before starting the execution.
@@ -95,7 +95,7 @@ When creating a new job or editing an existing one, you have the option to defin
 You can toggle the **Show only selected** \(3\) option to conveniently see all the selected targets.
 {% endhint %}
 
-![Defining a job to run using own Agent on locally installed Chrome and on 3 BrowserStack browsers](../.gitbook/assets/rlttxcxes9.png)
+![Defining a job to run using own Agent on locally installed Chrome and on 3 BrowserStack browsers](../../.gitbook/assets/rlttxcxes9.png)
 
 Once the jobs is triggered, the Agent will run all of your tests on each of the selected browsers or devices. If you choose to assign the **Virtual Agent** to the job \(instead of selecting one of your own agents\), no physical agents are required to be available when the job is executed.
 
@@ -103,7 +103,7 @@ Once the jobs is triggered, the Agent will run all of your tests on each of the 
 When using the **Virtual Agent**, local browsers / devices are not displayed. Meaning that only BrowserStack browsers and devices will be available. 
 {% endhint %}
 
-![Defining a job to run using the Virtual Agent on 5 different BrowserStack browsers](../.gitbook/assets/mhsjnrzazb.png)
+![Defining a job to run using the Virtual Agent on 5 different BrowserStack browsers](../../.gitbook/assets/mhsjnrzazb.png)
 
 ## Reviewing the Progress & the Results of my Execution
 
@@ -113,7 +113,7 @@ After we've successfully defined our integration and ran our tests on various ta
 
 First of all, when tests or jobs are executed on the BrowserStack cloud, you can see the progress in the [TestProject Monitor](https://app.testproject.io/#/monitor) with some additional information about the executed test or job.
 
-![](../.gitbook/assets/yksggftyqv.png)
+![](../../.gitbook/assets/yksggftyqv.png)
 
 {% hint style="info" %}
 While in the Monitor, notice that the browser has a BrowserStack icon over it, indicating that it is running in the BrowserStack cloud. Hovering over the browser icon will show the exact version of the used browser.
@@ -125,7 +125,7 @@ In addition to that, if you open your [BrowserStack Dashboard](https://automate.
 
 Once your execution has finished, you can hop over to the [Reports ](https://app.testproject.io/#/reports)section in your TestProject account to see the results of your test\(s\). As you are already used to, all the information is here with some additional elements. You can see that the browser \(1\) has the BrowserStack logo on it \(just like in the Monitor\) which indicates that the execution was performed on a BrowserStack browser. Hovering with your mouse on the browser icon will show the exact used version. On the right hand side \(3\), you can still see all the steps of your test with all the information that you are used to seeing there, including full screenshots. Besides that, all of the tests of your job will have a link \(2\) that will take you directly to the related execution session in the BrowserStack Dashboard.
 
-![](../.gitbook/assets/qfcaaspbvp.png)
+![](../../.gitbook/assets/qfcaaspbvp.png)
 
 Once you click the **Open BrowserStack report** link, you will be redirected to BrowserStack where you will be able to see some additional information about that execution: 
 
@@ -134,7 +134,7 @@ Once you click the **Open BrowserStack report** link, you will be redirected to 
 3. Driver capabilities that were used for the execution.
 4. The exact Selenium / Appium commands that were executed and other logs.
 
-![BrowserStack &quot;Login&quot; test execution information](../.gitbook/assets/89oqvxeryr.png)
+![BrowserStack &quot;Login&quot; test execution information](../../.gitbook/assets/89oqvxeryr.png)
 
 ## Some Additional Information
 
