@@ -14,7 +14,7 @@ Local Testing on BrowserStack will let you test your applications hosted on your
 
 In order for BrowserStack to be able to test your in-house/non-public tests, and make it accessible for BrowserStack’s servers, a tunnel should be opened between your machine to BrowserStack.![](file:///C:/Users/TESTPR~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)If you will try to test your in-house/non-public tests on BrowserStack, your test will fail, due to ERR\_CONNECTION\_REFUSED, your app will not be accessible.
 
-
+![](../../.gitbook/assets/image%20%28149%29.png)
 
 ## Execute TestProject Recorded Tests on Local Resources via BrowserStack
 
@@ -70,7 +70,7 @@ Expected output:
 
 *  Create a job by clicking on “New Job” button
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](../../.gitbook/assets/image%20%28156%29.png)
 
 * Configure your job to execute assigned tests on BrowserStack remote browsers, Drag and Drop the required tests into it. For example:
 
@@ -80,7 +80,7 @@ Expected output:
 
         set **browserstack.local** capability to true by adding the following:
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](../../.gitbook/assets/image%20%28152%29.png)
 
 You are all set to run your job.
 
@@ -261,7 +261,7 @@ if __name__ == "__main__":
 
 Once your recorded/coded test execution has been completed, you can hop over to the [Reports](https://app.testproject.io/#/reports) section in your TestProject account to see the results of your test\(s\).
 
-![](../../.gitbook/assets/image%20%28149%29.png)
+![](../../.gitbook/assets/image%20%28151%29.png)
 
 ### **BrowserStack** **test execution information**
 
