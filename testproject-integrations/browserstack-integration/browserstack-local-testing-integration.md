@@ -112,7 +112,7 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 **1. Within your code**, using browsetstack-local dependency 
 
-**Java –** \(available in maven-center\)
+#### **Java –** \(available in maven-center\)
 
 \*\*\*\*[Gradle:](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary)
 
@@ -130,7 +130,7 @@ Maven:
 </dependency>
 ```
 
-**Python -**
+#### **Python -**
 
 ```text
 pip install browserstack-local
