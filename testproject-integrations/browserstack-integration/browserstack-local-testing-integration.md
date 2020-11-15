@@ -38,11 +38,7 @@ To use BrowserStack with local resources you need to download   **BrowserStackLo
 
 BrowserStack Access Key can be found under your account in the “Settings” section [https://www.browserstack.com/accounts/settings](https://www.browserstack.com/accounts/settings).
 
-Copy your access key to clipboard
-
-Open CMD/Terminal in the folder where BrowserStackLocal binary is located in your machine.
-
-Run the following command according to your operation system:
+Copy your access key to clipboard, open CMD/Terminal in the folder where BrowserStackLocal binary is located in your machine, run the following command according to your operating system:
 
 OS X & Linux:
 
@@ -66,7 +62,7 @@ Expected output:
 
 1. First, we need to create a recorded test, in this example, we will use a web test
 2. Create a job and assign the desired tests– a job is a tool to aggregate, manage, schedule and run    tests
-3. .Set desired capability
+3. Set desired capability
 
 *  Create a job by clicking on “New Job” button
 
@@ -76,7 +72,7 @@ Expected output:
 
 ![](../../.gitbook/assets/image%20%28131%29.png)
 
-* Set a Desired Capability to this job, that will activate the connection with BrowserStack and enable       access to your app. ![](file:///C:/Users/TESTPR~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+* Set a Desired Capability to this job, that will activate the connection with BrowserStack and enable access to your app. ![](file:///C:/Users/TESTPR~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
 
         set **browserstack.local** capability to true by adding the following:
 
@@ -118,13 +114,13 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 **Java –** \(available in maven-center\)
 
-**Gradle:**
+\*\*\*\*[Gradle:](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary)
 
 ```text
 compile group: 'com.browserstack', name: 'browserstack-local-java', version: '1.0.3'
 ```
 
-**Maven:**
+Maven:
 
 ```text
 <dependency>
@@ -142,9 +138,11 @@ pip install browserstack-local
 
 **2. By running BroswerStack Local binary** via command-line interface as mentioned in “Run Recorded Tests from TestProject Platform” guide above \(link\)
 
+\*\*\*\*
+
 **Within your code:**
 
-Integrate your code with the following to establish BrowserStack Local connection:
+Integrate your code with the following to establish the ****BrowserStack Local connection:
 
 ```text
 import com.browserstack.local.Local;
@@ -176,6 +174,8 @@ import com.browserstack.local.Local;
 import java.util.HashMap;
 
 public final class WebTest {
+
+
   public static void main(final String[] args) throws Exception {
 
     // perparing URL for remote driver
@@ -226,7 +226,7 @@ public final class WebTest {
 
 **By running BroswerStack Local binary:**
 
-**As mentioned in** [**Get** **Your BrowserStack** **Access Key** **& Run BrowserStack Binary**](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) **you can easily run** **BroswerStack Local binary via command-line interface, and only** set **browserstack.local** capability to true in driver’s desired capabilities:
+As mentioned in [Get Your BrowserStack Access Key & Run BrowserStack Binary](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) you can easily run BroswerStack Local binary via command-line interface, and only set **browserstack.local** capability to true in driver’s desired capabilities:
 
 ```text
 setCapability("browserstack.local", "true");
