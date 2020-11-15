@@ -114,7 +114,7 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 #### **Java –** \(available in maven-center\)
 
-\*\*\*\*[Gradle:](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary)
+Gradle:
 
 ```text
 compile group: 'com.browserstack', name: 'browserstack-local-java', version: '1.0.3'
