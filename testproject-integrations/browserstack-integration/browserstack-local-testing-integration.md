@@ -128,7 +128,7 @@ Maven:
 pip install browserstack-local
 ```
 
-**2. By running BroswerStack Local binary** via command-line interface as mentioned in “Run Recorded Tests from TestProject Platform” guide above \(link\)
+**2. By running BroswerStack Local binary** via command-line interface as mentioned in[ “**Get** **Your BrowserStack** **Access Key** **& Run it with the BrowserStack Binary**”](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) guide above.
 
 \*\*\*\*
 
