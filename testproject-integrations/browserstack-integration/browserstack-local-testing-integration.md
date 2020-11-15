@@ -99,12 +99,15 @@ import io.testproject.sdk.drivers.TestProjectCapabilityType;
 import io.testproject.sdk.drivers.web.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
 String AUTOMATE_USERNAME = "{BS_USERNAME}";
 String AUTOMATE_ACCESS_KEY = "{BS_ACCESS_KEY}";
 String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
+
 ChromeOptions chromeOptions = new ChromeOptions();
 chromeOptions.setCapability(TestProjectCapabilityType.CLOUD_URL,URL);
+
 
 ChromeDriver driver = new ChromeDriver(chromeOptions);
 ```
@@ -146,6 +149,7 @@ Integrate your code with the following to establish BrowserStack Local connectio
 ```text
 import com.browserstack.local.Local;
 
+
 Local bsLocal = new Local();
 HashMap<String, String> bsLocalArgs = new HashMap<String, String>();
 bsLocalArgs.put("key", {BS_ACCESS_KEY});
@@ -222,7 +226,7 @@ public final class WebTest {
 
 **By running BroswerStack Local binary:**
 
-**As mentioned in \*Get** **Your BrowserStack** **Access Key** **& Run BrowserStack Binary\* \(link\)** **you can easily run** **BroswerStack Local binary via command-line interface, and only** set **browserstack.local** capability to true in driver’s desired capabilities:
+**As mentioned in** [**Get** **Your BrowserStack** **Access Key** **& Run BrowserStack Binary**](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) **you can easily run** **BroswerStack Local binary via command-line interface, and only** set **browserstack.local** capability to true in driver’s desired capabilities:
 
 ```text
 setCapability("browserstack.local", "true");
