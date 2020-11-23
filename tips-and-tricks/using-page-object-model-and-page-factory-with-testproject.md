@@ -417,5 +417,36 @@ public class DemoTestWithDefaults implements AndroidTest {
 
 ```
 
+To run the test locally, create a Runner as can be seen in the following example:
+
+```text
+import io.testproject.java.sdk.v2.Runner;
+
+import java.io.IOException;
+
+public class RunTests {
+    private static Runner runner;
+
+    public static void init() throws InstantiationException {
+        runner = Runner.createAndroid("TP_DEV_TOKEN", "DEVICE_UDID", "io.testproject.demo", "io.testproject.demo.MainActivity");
+
+    }
+
+    public static void tearDown() throws IOException {
+        runner.close();
+    }
+
+    public static void main(String[] args) throws Exception {
+        init();
+        runner.run(new DemoTestWithDefaults());
+        tearDown();
+    }
+}
+```
+
+
+
+
+
 You can find more documentation for TestProject SDK here: [https://github.com/testproject-io/java-sdk-examples.](https://github.com/testproject-io/java-sdk-examples)
 
