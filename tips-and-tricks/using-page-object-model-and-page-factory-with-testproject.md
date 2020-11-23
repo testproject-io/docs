@@ -354,17 +354,12 @@ This test can be enhanced even further by utilizing TestProject, so let's look a
 
 * The pages classes remain the same.
 * Test class is annotated with @_Test_ annotation providing the test with a friendlier name.
-* Input fields declarations annotated with @_TestParameter_ allowing the test to be parameterized when executed and supplying default values.
 * Calls to _report.step_ allow reporting of test milestones and provided better progress granulation when reviewing them in the results and reporting dashboard.
 * The call to _report.result_ allows for providing a final statement for the test execution before it passes or fails.
 
 ```text
-package io.testproject.appium.tests;
-
-import io.testproject.examples.sdk.java.pages.LoginPage;
-import io.testproject.examples.sdk.java.pages.ProfilePage;
+import io.testproject.java.annotations.v2.Parameter;
 import io.testproject.java.annotations.v2.Test;
-import io.testproject.java.annotations.v2.TestParameter;
 import io.testproject.java.enums.TakeScreenshotConditionType;
 import io.testproject.java.sdk.v2.drivers.AndroidDriver;
 import io.testproject.java.sdk.v2.enums.ExecutionResult;
@@ -376,45 +371,44 @@ import io.testproject.java.sdk.v2.tests.helpers.AndroidTestHelper;
 @Test(name = "Demo Test with Defaults")
 public class DemoTestWithDefaults implements AndroidTest {
 
- @TestParameter(defaultValue = "John Smith")
- public String name;
+    @Parameter
+    public String name = "John Smith";
 
- @TestParameter(defaultValue = "12345")
- public String password;
+    @Parameter
+    public String password = "12345";
 
- @TestParameter(defaultValue = "Canada")
- public String country;
+    @Parameter
+    public String country = "Canada";
 
- @TestParameter(defaultValue = "8 Ness Ave")
- public String address;
+    @Parameter
+    public String address = "8 Ness Ave";
 
- @TestParameter(defaultValue = "someone@somewhere.com")
- public String email;
+    @Parameter
+    public String email = "someone@somewhere.com";
 
- @TestParameter(defaultValue = "+1 555 555")
- public String phone;
+    @Parameter
+    public String phone = "+1 555 555";
 
- public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {
- AndroidDriver driver = helper.getDriver();
- TestReporter report = helper.getReporter();
+    public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {
+        AndroidDriver driver = helper.getDriver();
+        TestReporter report = helper.getReporter();
 
- driver.resetApp();
+        driver.resetApp();
 
- LoginPage loginPage = new LoginPage(driver);
- report.step("Launched TestProject Demo app", loginPage.isDisplayed());
+        LoginPage loginPage = new LoginPage(driver);
+        report.step("Launched TestProject Demo app", loginPage.isDisplayed());
 
- loginPage.login(name, password);
- ProfilePage profilePage = new ProfilePage(driver);
- report.step(String.format("Logged in with %s:%s", name, password), profilePage.isDisplayed(), TakeScreenshotConditionType.Always);
+        loginPage.login(name, password);
+        ProfilePage profilePage = new ProfilePage(driver);
+        report.step(String.format("Logged in with %s:%s", name, password), profilePage.isDisplayed(), TakeScreenshotConditionType.Always);
 
- profilePage.updateProfile(country, address, email, phone);
- report.step(String.format("Profile information saved"), profilePage.isSaved(), TakeScreenshotConditionType.Always);
+        profilePage.updateProfile(country, address, email, phone);
+        report.step(String.format("Profile information saved"), profilePage.isSaved(), TakeScreenshotConditionType.Always);
 
- report.result("Test completed successfully");
- return ExecutionResult.PASSED;
- }
+        report.result("Test completed successfully");
+        return ExecutionResult.PASSED;
+    }
 }
-
 ```
 
 To run the test locally, create a Runner as can be seen in the following example:
