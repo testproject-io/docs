@@ -72,7 +72,7 @@ public class PositiveLoginTest {
 
  // Hide keyboard if visible
  if (driver.findElements(By.className("UIAKeyboard")).size() != 0) {
- driver.pressKeyCode(AndroidKeyCode.KEYCODE_ESCAPE);
+ driver.pressKey(new KeyEvent(AndroidKey.ESCAPE));
  }
 
  // Type Full Name
@@ -128,63 +128,64 @@ package io.testproject.appium.pom.tests.pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
+
 public class LoginPage {
 
- private AndroidDriver<AndroidElement> driver;
+    private AndroidDriver<AndroidElement> driver;
 
- public LoginPage() {
- }
+    public LoginPage() {
+    }
 
- public LoginPage(AndroidDriver<AndroidElement> driver) {
- this.driver = driver;
- PageFactory.initElements(new AppiumFieldDecorator(driver), this);
- }
+    public LoginPage(AndroidDriver<AndroidElement> driver) {
+        this.driver = driver;
+        PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(5)), this);
+    }
 
- @AndroidFindBy(className = "UIAKeyboard")
- private AndroidElement keyboard;
+    @AndroidFindBy(className = "UIAKeyboard")
+    private AndroidElement keyboard;
 
- @AndroidFindBy(id = "name")
- private AndroidElement nameElement;
+    @AndroidFindBy(id = "name")
+    private AndroidElement nameElement;
 
- @AndroidFindBy(id = "password")
- private AndroidElement passwordElement;
+    @AndroidFindBy(id = "password")
+    private AndroidElement passwordElement;
 
- @AndroidFindBy(id = "login")
- private AndroidElement loginElement;
+    @AndroidFindBy(id = "login")
+    private AndroidElement loginElement;
 
- public boolean isDisplayed() {
- return loginElement.isDisplayed();
- }
+    public boolean isDisplayed() {
+        return loginElement.isDisplayed();
+    }
 
- public void typeName(String name) {
- nameElement.sendKeys(name);
- }
+    public void typeName(String name) {
+        nameElement.sendKeys(name);
+    }
 
- public void typePassword(String password) {
- passwordElement.sendKeys(password);
- }
+    public void typePassword(String password) {
+        passwordElement.sendKeys(password);
+    }
 
- public void clickLogin() {
- loginElement.click();
- }
+    public void clickLogin() {
+        loginElement.click();
+    }
 
- public void hideKeyboardIfVisible() {
- if (keyboard != null) {
- driver.pressKeyCode(AndroidKeyCode.KEYCODE_ESCAPE);
- }
- }
+    public void hideKeyboardIfVisible() {
+        if (keyboard != null) {
+            driver.hideKeyboard();
+        }
+    }
 
- public void login (String name, String password) {
- hideKeyboardIfVisible();
- typeName(name);
- typePassword(password);
- clickLogin();
- }
+    public void login (String name, String password) {
+        hideKeyboardIfVisible();
+        typeName(name);
+        typePassword(password);
+        clickLogin();
+    }
 }
 ```
 
@@ -197,85 +198,93 @@ The element inspector and locator can be used to find the profile page class on 
 ```text
 package io.testproject.appium.pom.tests.pages;
 
-
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.concurrent.TimeUnit;
-
 public class ProfilePage {
 
- private AndroidDriver driver;
+    private AndroidDriver driver;
 
- public ProfilePage() {
- }
+    public ProfilePage() {
+    }
 
- public ProfilePage(AndroidDriver driver) {
- this.driver = driver;
- PageFactory.initElements(new AppiumFieldDecorator(driver), this);
- }
+    public ProfilePage(AndroidDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
 
- @AndroidFindBy(className = "UIAKeyboard")
- private AndroidElement keyboard;
+    @AndroidFindBy(className = "UIAKeyboard")
+    private AndroidElement keyboard;
 
- @AndroidFindBy(id = "greetings")
- private AndroidElement greetingsElement;
+    @AndroidFindBy(id = "greetings")
+    private AndroidElement greetingsElement;
 
- @AndroidFindBy(id = "logout")
- private AndroidElement logoutElement;
+    @AndroidFindBy(id = "logout")
+    private AndroidElement logoutElement;
 
- @AndroidFindBy(id = "country")
- private AndroidElement countryElement;
+    @AndroidFindBy(id = "country")
+    private AndroidElement countryElement;
 
- @AndroidFindBy(id = "address")
- private AndroidElement addressElement;
+    @AndroidFindBy(id = "address")
+    private AndroidElement addressElement;
 
- @AndroidFindBy(id = "email")
- private AndroidElement emailElement;
+    @AndroidFindBy(id = "email")
+    private AndroidElement emailElement;
 
- @AndroidFindBy(id = "phone")
- private AndroidElement phoneElement;
+    @AndroidFindBy(id = "phone")
+    private AndroidElement phoneElement;
 
- @AndroidFindBy(id = "save")
- private AndroidElement saveElement;
+    @AndroidFindBy(id = "save")
+    private AndroidElement saveElement;
 
- @AndroidFindBy(id = "saved")
- private AndroidElement savedElement;
+    @AndroidFindBy(id = "saved")
+    private AndroidElement savedElement;
 
- public boolean isDisplayed() {
- return greetingsElement.isDisplayed();
- }
+    public boolean isDisplayed() {
+        return greetingsElement.isDisplayed();
+    }
 
- public void typeAddress(String address) {
- addressElement.sendKeys(address);
- }
+    public void typeCountry(String country) {
+        countryElement.sendKeys(country);
+    }
 
- public void typeEmail(String email) {
- emailElement.sendKeys(email);
- }
+    public void typeAddress(String address) {
+        addressElement.sendKeys(address);
+    }
 
- public void typePhone(String phone) {
- phoneElement.sendKeys(phone);
- }
+    public void typeEmail(String email) {
+        emailElement.sendKeys(email);
+    }
 
- public void hideKeyboardIfVisible() {
- if (keyboard != null) {
- driver.pressKeyCode(AndroidKeyCode.KEYCODE_ESCAPE);
- }
- }
+    public void typePhone(String phone) {
+        phoneElement.sendKeys(phone);
+    }
 
- public void save() {
- saveElement.click();
- }
+    public void hideKeyboardIfVisible() {
+        if (keyboard != null) {
+            driver.hideKeyboard();
+        }
+    }
 
- public boolean isSaved() {
- return savedElement.isDisplayed();
- }
+    public void save() {
+        saveElement.click();
+    }
+
+    public void updateProfile(String country, String address, String email, String phone) {
+        hideKeyboardIfVisible();
+        typeCountry(country);
+        typeAddress(address);
+        typeEmail(email);
+        typePhone(phone);
+        save();
+    }
+
+    public boolean isSaved() {
+        return savedElement.isDisplayed();
+    }
 
 }
 ```
