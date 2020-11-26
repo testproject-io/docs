@@ -409,7 +409,59 @@ It is up to the Action developer how to narrow and limit the list of element typ
 In order to upload your Addons or Tests to TestProject, you have to package it as JAR file.  
  Export your code as an uber JAR file with dependencies, excluding TestProject SDK.
 
-See _build.gradle_ or _pom.xml_ files in code examples for details.
+You can use the following build.gradle file to package your addons, just update the **TP\_SDK** variable to the correct location of the TestProject SDK on your system.
+
+```text
+group 'io.testproject'
+version '1.0.1'
+
+apply plugin: 'java'
+
+// Update the location of TestProject SDK JAR file
+def TP_SDK = "__PATH_TO_LOCAL_JAR__/io.testproject.sdk.java.jar"
+
+compileJava.options.encoding = 'UTF-8'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+// Configurations
+configurations {
+    tpsdk
+    compile.extendsFrom tpsdk
+}
+
+// JAR Task
+jar {
+    assert file("${TP_SDK}").exists() : "TestProject SDK JAR file was not found, please update the TP_SDK variable"
+    archiveName "${rootProject.name}-${version}.jar"
+    dependsOn configurations.runtime
+    from {
+        // Removes TestProject SDK from the final jar file
+        (configurations.runtime - configurations.tpsdk).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    // Extract SDK version
+    from {
+        (configurations.tpsdk).collect {
+            zipTree(it).matching {
+                include 'testproject-sdk.properties'
+            }
+        }
+    }
+}
+
+dependencies {
+    tpsdk files("${TP_SDK}")
+}
+```
+
+See more _build.gradle_ or _pom.xml_ files in code examples for details.
 
 ## License
 
