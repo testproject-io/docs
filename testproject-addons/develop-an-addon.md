@@ -352,6 +352,12 @@ _TypeRandomPhone_ is an example of an Element Action:
 * [Android - Element Action](https://github.com/testproject-io/addons/blob/master/Examples/Android/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
 * [iOS - Element Action](https://github.com/testproject-io/addons/blob/master/Examples/IOS/src/main/java/io/testproject/examples/sdk/actions/TypeRandomPhoneAction.java)
 
+Starting from Addon SDK 0.65.0, elements need to be located inside the element action using the driver. They can be found simply by using the search criteria provided by the helper object:
+
+```text
+element = driver.findElement(helper.getSearchCriteria());
+```
+
 This action generates a random phone number based on provided country code and max digits amount, typing it in a text field:
 
 ```text
