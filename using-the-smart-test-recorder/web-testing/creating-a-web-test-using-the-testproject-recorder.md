@@ -6,19 +6,23 @@ Creating a web test is a simple and straightforward process with the TestProject
 
 Creating a web test is as simple as clicking on the New Test button and then choosing the Web option as your test type
 
-![Add New Test](../../.gitbook/assets/image%20%2817%29.png)
+![Create a New Test](../../.gitbook/assets/image%20%28195%29.png)
 
-Once you have done that you can fill in a name and description for your test.  For this test we can just put in TestProject Example as the name.
+You will then need to select what type of test you want to create. In this tutorial, you are going to create a Web test, so choose that option and then click on Next.
 
-![Create Test Details](../../.gitbook/assets/image%20%2849%29%20%282%29.png)
+![Selct Web Test](../../.gitbook/assets/image%20%28181%29.png)
+
+You can now give your test a name and description and then click Next again. 
+
+![Add Test Details](../../.gitbook/assets/image%20%28196%29.png)
 
 The next thing you will be asked for is the application you are going to test. If this is the first test you are creating there will not be any applications in the list and so you will need to click on the Add a new application for testing button
 
-![Add a new Application](../../.gitbook/assets/image%20%2884%29.png)
+![Add a New Application](../../.gitbook/assets/image%20%28218%29.png)
 
 This will prompt you for the URL of the application that you want to test and also ask you to give it a name for the system to use. For this example we will put in the URL of the TestProject example site.
 
-![TestProject Application](../../.gitbook/assets/image%20%2890%29.png)
+![Add New Example Site](../../.gitbook/assets/image%20%28216%29.png)
 
 After entering in the required information you can click Finish and you will be taken back to the test creation wizard which will automatically select the application you just created. You can then click Next and move on to the next step.
 
@@ -26,25 +30,21 @@ After entering in the required information you can click Finish and you will be 
 
 Now that you have named your test and the system knows what site to use for the testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers. In order to use the recorder you will need to make sure that you have a local agent setup and running.  If you have not yet setup and started an agent you can follow the instructions in the [installation and setup](../../getting-started/installation-and-setup.md) section to do so. 
 
-![Need to Start Local Agent](../../.gitbook/assets/image%20%2875%29%20%281%29.png)
+![No Agent Available](../../.gitbook/assets/image%20%28202%29.png)
 
-Once a local agent is running you will be able to click on the record button and then choose the Start Testing option
+Once a local agent is running you will be able to click on the record button and then choose the Start recording option. This will open the new Smart Test Recorder for you and is the recommended options, however, if you want you can still use the legacy recorder by selecting that option. 
 
-![Start Testing](../../.gitbook/assets/image%20%2845%29%20%281%29.png)
+![Start Recording with the Smart Recorder](../../.gitbook/assets/image%20%28203%29.png)
 
 This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
 
 ## Step 3 - Add Test Steps
 
-Now that the example web application is open in the test recorder you can start adding test steps to the test. This example will walk through adding steps to do a login workflow. The first thing will be to put in a user name. To do this, simply mouse over the Full Name field and click on it.  You will notice that when you click a step is automatically added to the test
+Now that the example web application is open in the test recorder you can start adding test steps to the test. This example will walk through adding steps to do a login workflow. The first thing will be to put in a username. To do this, simply mouse over the Full Name field and click on it.  You will notice that when you click a step is automatically added to the test
 
-![Test Step Added](../../.gitbook/assets/image%20%2867%29%20%282%29.png)
+![Click on Full Name Field](../../.gitbook/assets/image%20%28168%29.png)
 
-You can then type in your full name and click away from the field to apply it.  You will once again notice that the recorder has automatically added a step to the test for you
-
-![Full Name Step Added](../../.gitbook/assets/image%20%2883%29.png)
-
-You can then repeat this for the password field. First click on the field and then type in the password \(in this example site the password is 12345\) and TestProject will add the steps for you.  Once you have done that you can click on the login button and you will be taken to the next page on the form. 
+You can then type in your full name and click away from the field to apply it.  You will once again notice that the recorder has automatically added a step to the test for you. You can then repeat this for the password field. First click on the field and then type in the password \(in this example site the password is 12345\) and TestProject will add the steps for you.  Once you have done that you can click on the login button and you will be taken to the next page on the form. 
 
 ## Step 4 - Adding Validation
 
@@ -54,13 +54,13 @@ Being able to create test steps that send commands to a web page is very powerfu
 
 Doing this will bring up a menu with a few options. Since you are trying to validate something, you will choose the Validations option. Just mouse over that to bring up the available options. For this validation you can use the Contains Text? option by clicking on it.
 
-![Contains Text](../../.gitbook/assets/image%20%2851%29.png)
+![Choose Contains Text Validation Option](../../.gitbook/assets/image%20%28213%29.png)
 
-This will open the create step panel where you can type in the text that you expect to see in this element \(in this case the name you entered on the login page\). You can then click on the Create button to add this test step to your test. 
+This will open the create a new step panel where you can type in the text that you expect to see in this element \(in this case the name you entered on the login page\). You can then click on the Save Step button to add this test step to your test. 
 
-![Create Validation step](../../.gitbook/assets/image%20%2861%29%20%282%29.png)
+![Add Validation Step to the Test](../../.gitbook/assets/image%20%28214%29.png)
 
-And with that you have created your first web test!  You can close down the browser window and the test will be saved into your project, ready for you to run.
+And with that you have created your first web test!  You can use the run button at the top of the recorder to run the test and make sure everything is working and close down the browser window and the test will be saved into your project, ready for you to run anytime you want!
 
 ## Next Steps
 

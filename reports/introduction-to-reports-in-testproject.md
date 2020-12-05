@@ -8,3 +8,5 @@ In order to view reports in TestProject go to the Reports menu option at the top
 
 ![Reports](../.gitbook/assets/image%20%2892%29.png)
 
+TestProjects reports give you access to a number of [different charts and plots ](types-of-plots-in-testproject-reports/)to help you see trends and other interesting data at a glance. You can also [view the reports for individual test runs](individual-run-reports.md) for debugging and investigation purposes. Test that have be automatically corrected using TestProject's self-healing technology will also [provide you with information on how the test was corrected](individual-run-reports.md#self-healing-test-reports).
+

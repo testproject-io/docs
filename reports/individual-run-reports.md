@@ -20,5 +20,15 @@ The right-hand panel also has an option that you can toggle to show only failing
 
 ![Show only Failed Test Steps](../.gitbook/assets/image%20%28100%29.png)
 
+### Self-healing Test Reports
+
+Test Project also has self-healing capabilities built in and so if it cannot find an element it will automatically attempt to alternative element locators. When it does so, it lets you know in the reports by showing a beating heart icon to indicate that the test has been automatically healed. 
+
+![Self-healed Test Icon](../.gitbook/assets/image%20%28175%29.png)
+
+The description for that step in the report will also let you know which selector it switched to when it healed the test.
+
+![Self-healed test Information](../.gitbook/assets/image%20%28174%29.png)
+
 
 
