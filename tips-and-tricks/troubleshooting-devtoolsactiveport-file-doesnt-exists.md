@@ -30,14 +30,15 @@ If the above options didn't solve the issue go to `C:\Users\<username>\AppData\R
 
 **Antivirus is blocking the recorder and tests**
 
-In case you are using Quick Heal antivirus you need to disable browser sandbox.
+In case you are using Quick Heal antivirus you need to disable browser sandbox. Open Quick Heal Total Security dashboard and go to Protection and select Browser Sandbox
 
-1. Open Quick Heal Total Security dashboard
-2. Go to Protection and select Browser Sandbox
+![](../.gitbook/assets/capture%20%282%29.png)
 
-   ![](../.gitbook/assets/capture%20%281%29.png) 
+And turn browser sandbox off by toggling the the on/off switch
 
-3. Turn browser sandbox off by toggling the the on/off switch ![](../.gitbook/assets/capture1.png) 
+![](../.gitbook/assets/capture1%20%281%29.png)
 
  
+
+
 
