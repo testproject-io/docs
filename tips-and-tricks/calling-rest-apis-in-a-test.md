@@ -36,7 +36,7 @@ Now we have the project ID but we still need the parameter ID.  Since the parame
 
 To do this we can manually add a test step to our test.  We then need to change the Type to action
 
-![Change Test Step Type to Action](../.gitbook/assets/image%20%2889%29.png)
+![Change Test Step Type to Action](../.gitbook/assets/image%20%28136%29.png)
 
  Once we've done that we can search for "API"  and click on the  `HTTP GET Request` action in the search results. To use this action you will need to have installed the [RESTful API Client Addon](../testproject-addons/available-addons/restful-api-client-addon.md).
 

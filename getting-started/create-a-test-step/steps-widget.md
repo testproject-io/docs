@@ -36,7 +36,7 @@ You can see that it will first try to use the `CSS Selector,` but if that doesn 
 
 One other item worth noting about the element field on a test step, is that you can click on the Find Element magnifying glass and TestProject will highlight where on the page the element is.
 
-![Find Element on Page](../../.gitbook/assets/image%20%28193%29.png)
+![Find Element on Page](../../.gitbook/assets/image%20%28193%29%20%281%29.png)
 
 This is very helpful to check that the locator is working correctly and to see what exactly is going on.
 

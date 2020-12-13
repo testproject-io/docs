@@ -12,7 +12,7 @@ If you have not yet created a test, you can follow the instructions in on [creat
 
 The first thing we will do in this test is create a test step to resize the window. You can add a new test step using the plus button at the bottom of the panel, and then change the step type to action. 
 
-![Change step type to Action](../.gitbook/assets/image%20%28136%29.png)
+![Change step type to Action](../.gitbook/assets/image%20%28136%29%20%281%29.png)
 
 You can then click on the select action link and search for `window`. In the resulting list, select the `Set window size` action. With this action you can set the both the width and the height that you want the window to have. Put in values of something like 1000 and 600 and save the test step. Click the arrow beside the test step and run it.
 

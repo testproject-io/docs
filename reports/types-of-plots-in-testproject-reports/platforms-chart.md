@@ -8,7 +8,7 @@ The platforms chart in the TestProject reports lets you see at a glance how your
 
 The platform chart can be found by clicking on the middle navigation dot under the charts.
 
-![Platform and Distribution Plots Location](../../.gitbook/assets/image%20%28126%29.png)
+![Platform and Distribution Plots Location](../../.gitbook/assets/image%20%28105%29%20%281%29.png)
 
 These charts are available at the main reports level as a summary view and are also available for each project you have defined
 

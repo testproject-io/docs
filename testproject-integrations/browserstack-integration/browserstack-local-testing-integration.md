@@ -14,7 +14,7 @@ Local Testing on BrowserStack will let you test your applications hosted on your
 
 In order for BrowserStack to be able to test your in-house/non-public tests, and make it accessible for BrowserStack’s servers, a tunnel should be opened between your machine to BrowserStack. If you will try to test your in-house/non-public tests on BrowserStack, your test will fail, due to ERR\_CONNECTION\_REFUSED, your app will not be accessible.
 
-![](../../.gitbook/assets/image%20%28149%29.png)
+![](../../.gitbook/assets/image%20%28149%29%20%281%29.png)
 
 ## Execute TestProject Recorded Tests on Local Resources via BrowserStack
 
@@ -60,7 +60,7 @@ Expected output:
 
 *  Create a job by clicking on “New Job” button
 
-![](../../.gitbook/assets/image%20%28156%29.png)
+![](../../.gitbook/assets/image%20%28138%29%20%282%29.png)
 
 * Configure your job to execute assigned tests on BrowserStack remote browsers, Drag and Drop the required tests into it. For example:
 

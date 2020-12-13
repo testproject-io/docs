@@ -50,7 +50,7 @@ Once we complete the test run, we can see the file was created as expected on ou
 
 In this example, we’ll create a new folder within a folder on our macOS desktop. We will use the Execute action with the command “mkdir path folder\_name.”:
 
-![Execute Shell Command Action in the TestProject Recorder Step Widget](../../.gitbook/assets/shell-commands-addon-macos1.png)
+![Execute Shell Command Action in the TestProject Recorder Step Widget](../../.gitbook/assets/shell-commands-addon-macos1%20%281%29.png)
 
 Once we complete our test run, we'll be able to see the new folder at the desired location:
 
