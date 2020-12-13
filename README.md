@@ -1,4 +1,4 @@
-# Troubleshooting DevToolsActivePort file doesn't exists \| Articles \| TestProject
+# Troubleshooting DevToolsActivePort file doesn't exists
 
 The recorder is crashing with the error Operation failed please try again.
 

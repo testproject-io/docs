@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Troubleshooting DevToolsActivePort file doesn't exists \| Articles \| TestProject](README.md)
+* [Troubleshooting DevToolsActivePort file doesn't exists](README.md)
 
 ## Getting Started
 
