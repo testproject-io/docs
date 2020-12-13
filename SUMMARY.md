@@ -18,6 +18,7 @@
   * [Running a Test Step Conditionally](getting-started/create-a-test-step/running-a-test-step-conditionally.md)
 * [Available Actions](getting-started/available-actions.md)
 * [Available Validations](getting-started/available-validations.md)
+* [Step output validations](getting-started/step-output-validations.md)
 * [FAQs](getting-started/faqs.md)
 
 ## TestProject Agents
