@@ -2,9 +2,7 @@
 
 The recorder is crashing with the error Operation failed please try again.
 
-In the agent logs you can see the error message
-
-Caused by: org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed. \(unknown error: DevToolsActivePort file doesn't exist\).
+In the agent logs you can see the error message `Caused by: org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed. (unknown error: DevToolsActivePort file doesn't exist)`
 
 This can happen in several scenarios:
 

@@ -18,11 +18,14 @@ Select the output field and validation type and insert the value you want to com
 
 | Validation Name | Validation Summary |
 | :--- | :--- |
-| Starts with | Check if a string starts with value |
-| Ends with |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Starts with | Check if a string output starts with the validation value |
+| Ends with | Check if a string output ends with the validation value |
+| Contains | Check if a string output contains the validation value |
+| Equals | Check if a string or a number output is equal to the validation value |
+| Not equals | Check if a string or a number output is not equal to the validation value |
+| Greater than | Check if a number output is greater than the validation value |
+| Greater than or Equals | Check if a number output is greater than or equals to the validation value |
+| Less than | Check if a number output is less than validation value |
+| Less than or Equals | Check if a number output is less than or equals to the validation value |
+| RegEx | Validate the output field by regex |
 
