@@ -189,9 +189,8 @@
 * [Using Natural Language Commands to Run a Test](tips-and-tricks/using-natural-language-commands-to-run-a-test.md)
 * [Setting up Safari for Automation](tips-and-tricks/setting-up-safari-for-automation.md)
 * [Setting Up Internet Explorer for Automation](tips-and-tricks/setting-up-internet-explorer-for-automation.md)
-* [Resources Auto-login](tips-and-tricks/resources-auto-login/README.md)
-  * [Troubleshooting DevToolsActivePort file doesn't exists](tips-and-tricks/resources-auto-login/troubleshooting-devtoolsactiveport-file-doesnt-exists.md)
-  * [Google Autologin](tips-and-tricks/resources-auto-login/google-autologin.md)
+* [Google Autologin](tips-and-tricks/google-autologin.md)
+* [Troubleshooting DevToolsActivePort file doesn't exists](tips-and-tricks/troubleshooting-devtoolsactiveport-file-doesnt-exists.md)
 
 ## Releases
 
