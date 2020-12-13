@@ -8,26 +8,36 @@ Caused by: org.openqa.selenium.WebDriverException: unknown error: Chrome failed 
 
 This can happen in several scenarios:
 
-1. TestProjects support Chrome versions 77 and newer, make sure the Chrome version installed on your machine \(including other users\) is suitable. You can find the Chrome version by navigating to`chrome://version/` in the browser and looking at the first line ![](../.gitbook/assets/image%20%28224%29.png) 
+**Chrome version mismatch**
 
-   To update Chrome go to the 3 dots next to the profile icon on the top toolbar &gt; help &gt; About Google 
+TestProjects support Chrome versions 77 and newer, make sure the Chrome version installed on your machine \(including other users\) is suitable. You can find the Chrome version by navigating to`chrome://version/` in the browser and looking at the first line  
 
-   Chrome
+![](../.gitbook/assets/image%20%28227%29.png)
 
-    ![](../.gitbook/assets/image-1-.png) 
+To update Chrome go to the 3 dots next to the profile icon on the top toolbar &gt; help &gt; About Google Chrome
 
-2. The Agent is running as administrator. Running and installing the Agent should be as regular user, not as administrator.
-3.  If the above options didn't solve the issue go to `C:\Users\<username>\AppData\Roaming\TestProject\Agent` and add a file called `debug-configuration.json` with the content
+![](../.gitbook/assets/image-1-%20%281%29.png)
 
-   `{ "tp.config.chrome.no.sandbox" : "true" }`
+**Running Agent as administrator**
 
-4. In case you are using Quick Heal antivirus you need to disable browser sandbox.
-   1. Open Quick Heal Total Security dashboard
-   2. Go to Protection and select Browser Sandbox
+The Agent is running as administrator. Running and installing the Agent should be as regular user, not as administrator.
 
-      ![](../.gitbook/assets/capture%20%281%29.png) 
+**Missing debug configuration for Windows**
 
-   3. Turn browser sandbox off by toggling the the on/off switch ![](../.gitbook/assets/capture1.png) 
+If the above options didn't solve the issue go to `C:\Users\<username>\AppData\Roaming\TestProject\Agent` and add a file called `debug-configuration.json` with the content
+
+`{ "tp.config.chrome.no.sandbox" : "true" }`
+
+**Antivirus is blocking the recorder and tests**
+
+In case you are using Quick Heal antivirus you need to disable browser sandbox.
+
+1. Open Quick Heal Total Security dashboard
+2. Go to Protection and select Browser Sandbox
+
+   ![](../.gitbook/assets/capture%20%281%29.png) 
+
+3. Turn browser sandbox off by toggling the the on/off switch ![](../.gitbook/assets/capture1.png) 
 
  
 
