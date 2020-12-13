@@ -4,6 +4,8 @@ The recorder is crashing with the error Operation failed please try again.
 
 In the agent logs you can see the error message `Caused by: org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed. (unknown error: DevToolsActivePort file doesn't exist)`
 
+The Agent logs can be found in the Agents tab &gt; click on the 3 dots in you agent bar &gt; download logs. [See gif](https://downloads.intercomcdn.com/i/o/148685195/28ed8bab622f67fe3d364baf/FkjHUZVhLW.gif).
+
 This can happen in several scenarios:
 
 **Chrome version mismatch**
