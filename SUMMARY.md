@@ -133,6 +133,7 @@
   * [Targets Chart](reports/types-of-plots-in-testproject-reports/targets-chart.md)
 * [Individual Run Reports](reports/individual-run-reports.md)
 * [Get Test Reports via API](reports/get-test-reports-via-api.md)
+* [Deleting old reports](reports/clearing-reports.md)
 
 ## TestProject SDK
 
