@@ -194,6 +194,7 @@
 * [Setting Up Internet Explorer for Automation](tips-and-tricks/setting-up-internet-explorer-for-automation.md)
 * [Google Autologin](tips-and-tricks/google-autologin.md)
 * [Troubleshooting DevToolsActivePort file doesn't exists](tips-and-tricks/troubleshooting-devtoolsactiveport-file-doesnt-exists.md)
+* [Running a Web Test on a Mobile Device](tips-and-tricks/running-a-web-test-on-a-mobile-device.md)
 
 ## Releases
 
