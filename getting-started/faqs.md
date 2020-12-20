@@ -6,7 +6,7 @@ Sure! With TestProject you can connect your physical devices \(both Android and 
 
 ## Can I automate iOS tests on Windows?
 
-Yes! TestProject enhances Appium’s driver and enables you to easily run iOS test automation on Windows operating system, without the need for macOS or Xcode! All you need to do is follow our[ step-by-step tutorial](getting-started-with-ios-testing.md) to get started.
+Yes! TestProject enhances Appium’s driver and enables you to easily run iOS test automation on Windows operating system, without the need for macOS or Xcode! All you need to do is follow our[ step-by-step tutorial](getting-started-with-ios-testing/) to get started.
 
 ## How can I collaborate with my teammates?
 
