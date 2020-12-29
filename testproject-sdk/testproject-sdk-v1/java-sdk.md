@@ -29,12 +29,12 @@ Maven:
 
 ```text
 <dependency>
-    <groupId>io.testprojectgroupId>
-    <artifactId>java-sdkartifactId>
-    <version>1.0version>
-    <systemPath>/path/to/sdk/io.testproject.sdk.java.jarsystemPath>
-    <scope>systemscope>
-dependency>
+    <groupId>io.testproject</groupId>
+    <artifactId>java-sdk</artifactId>
+    <version>1.0</version>
+    <systemPath>/path/to/sdk/io.testproject.sdk.java.jar</systemPath>
+    <scope>system</scope>
+</dependency>
 ```
 
 Gradle:
