@@ -390,11 +390,11 @@ Maven:
 
 ```text
 <dependency>
-    <groupId>org.slf4jgroupId>
-    <artifactId>slf4j-simpleartifactId>
-    <version>1.7.30version>
-    <scope>testscope>
-dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.30</version>
+    <scope>test</scope>
+</dependency>
 ```
 
 Gradle:
