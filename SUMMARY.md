@@ -164,6 +164,7 @@
 * [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
 * [Untitled](testproject-integrations/untitled.md)
 * [Slack Integration](testproject-integrations/integration-to-slack.md)
+* [CircleCI Integration](testproject-integrations/circleci-integration.md)
 
 ## TestProject API <a id="api"></a>
 
