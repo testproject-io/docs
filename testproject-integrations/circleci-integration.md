@@ -127,7 +127,7 @@ jobs:
     executor: python/default
     steps:
      - run:
-          command: curl -X POST "Request URL"  -H "accept:application/json"  -H "Authorization:YOUR API KEY" -H "Content-Type:application/json" -d "{}"
+          command: curl -X POST "Request URL"  -H "accept:application/json"  -H "Authorization:YOUR API KEY" -H "Content-Type:application/json" -d "{'testParameters': [{'data': [{'username': 'TestProject','passowrd': '12345'}]}]}"
           name: Run Test On Build
 workflows:
   main:
