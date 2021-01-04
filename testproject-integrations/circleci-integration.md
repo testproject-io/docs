@@ -65,7 +65,7 @@ To just run the Job as is, with the default values, you can just keep the body e
 
 ![](../.gitbook/assets/5%20%286%29.png)
 
-In our example we will edit the values of the body to override default values from the Job.
+In our example, we will edit the values of the body to override default values from the Job.
 
 We will override the default params **username** and **password** in the test with custom values.
 
@@ -99,16 +99,17 @@ Now we can set up our pipeline using the above command to execute the Job every 
 
 ![](../.gitbook/assets/10%20%282%29.png)
 
-1. Select the project
+2.     Select the project
 
 ![](../.gitbook/assets/11%20%282%29.png)
 
-1. In the following window, we will have the options to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file since the project is in python.
-2. Paste the curl command in the proper step.
+3.   In the following window, we will have the options to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file since the project is in python.
 
- ![](../.gitbook/assets/12%20%282%29.png)
+4.   Paste the curl command in the proper step.
 
-   3. Click on **Commit and Run** to configure the pipeline in the selected branch
+![](../.gitbook/assets/image%20%28256%29.png)
+
+   5.   Click on **Commit and Run** to configure the pipeline in the selected branch
 
 Now every time we push a change to the selected branch, the Pipeline will trigger the Curl command which in the following will trigger the tests.
 
@@ -142,7 +143,7 @@ You can view the pipeline execution in the Dashboard:
 
 **Running TestProject recorded tests with CircleCI CI/CD Pipelines using Docker Ephemeral Agent**
 
-In the previous example, we saw how to execute tests on a permanent agent by supplying a Job ID and API key. This example will explain how to execute Web tests on Docker agents, which will allow you to spin up agents on demand. We will utilize docker compose to create agents on the fly for a specific job to run and terminate them afterward.
+In the previous example, we saw how to execute tests on a permanent agent by supplying a Job ID and API key. This example will explain how to execute Web tests on Docker agents, which will allow you to spin up agents on demand. We will utilize docker-compose to create agents on the fly for a specific job to run and terminate them afterward.
 
 It will also allow you to execute multiple tests in Parallel within your pipeline.
 
@@ -174,7 +175,7 @@ You can set them in CircleCI Dashboard:
 
 **Configuring Docker Compose YML file**
 
-You will need an docker-compose.yml file which will spin up the Docker agent.
+You will need a docker-compose.yml file thatt will spin up the Docker agent.
 
 In this example we are overriding the **username**/**password** parameters that are used in the tests by using this YAML file:
 
@@ -261,12 +262,12 @@ jobs:
           command: |
             sudo apt-get -y update
             sudo apt-get install -y curl wget git
-            git clone https://github.com/Rantzur1992/python_example.git
+            git clone https://github.com/testproject-io/circle-ci-python-example
             python3 --version
       - run:
           name: Start Docker Agent
           command: |
-            cd python_example
+            cd circle-ci-python-example
             set -x
             docker-compose up -d
             pip3 install testproject-python-sdk
@@ -274,15 +275,15 @@ jobs:
           name: Run Tests
           command: |
             sleep 20
-            cd python_example
-            python3 python_example.py
+            cd circle-ci-python-example
+            python3 web_test.py
 workflows:
   main:
     jobs:
       - build-compose-run-test
 ```
 
-The following config above uses this Environment variables:
+The following config above uses these environment variables:
 
 ![](../.gitbook/assets/20.png)
 
@@ -336,7 +337,7 @@ dependencies {
 
 In our config we will use Gradle to run that main method.
 
-Example of **build.gradle**\(Also visible in the Git Repository\):
+Example of **build.gradle:**
 
 ```text
 plugins {
@@ -389,11 +390,11 @@ jobs:
  - run:
    name: Clone Code Repo
    command: |
-     git clone https://github.com/Rantzur1992/java_example.git
+     git clone https://github.com/testproject-io/circle-ci-java-example.git
  - run:
    name: Start Docker Agent
    command: |
-     cd java_example
+     cd circle-ci-java-example
      set -x
      docker-compose up -d
      sleep 10
@@ -401,7 +402,6 @@ jobs:
  - run:
    name: Run Test
    command: |
-     cd java_example
      gradle run
 ```
 
