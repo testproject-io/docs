@@ -162,7 +162,6 @@
 * [Sauce Labs Integration](testproject-integrations/sauce-labs-integration/README.md)
   * [Sauce Labs Proxy Tunnel Integration](testproject-integrations/sauce-labs-integration/sauce-labs-proxy-tunnel-integration.md)
 * [Setting up Email Notification](testproject-integrations/setting-up-email-notification.md)
-* [Untitled](testproject-integrations/untitled.md)
 * [Slack Integration](testproject-integrations/integration-to-slack.md)
 * [CircleCI Integration](testproject-integrations/circleci-integration.md)
 
