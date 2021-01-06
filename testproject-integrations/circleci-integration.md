@@ -224,9 +224,9 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command:
-            - set -x
-            - docker-compose up -d
+          command:  |
+              set -x
+              docker-compose up --abort-on-container-exit
 
 workflows:
   main:
@@ -279,9 +279,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install SDK
-          command:
-            - pip3 install -r requirements.txt
+          name: Install Requirements
+          command:  pip3 install -r requirements.txt
 
       - run:
           name: Start Agent and wait for agent to register
@@ -304,8 +303,7 @@ jobs:
 
       - run:
           name: Run Tests
-          command:
-            - pytest
+          command:  pytest python_example.py
 
 ```
 
@@ -383,16 +381,16 @@ jobs:
       - checkout
       - run:
           name: Update Dependencies And Install Java 11
-          command:
-            - sudo apt-get -y update
-            - sudo apt install -y openjdk-11-jdk
-            - java -version
+          command:  |
+              sudo apt-get -y update
+              sudo apt install -y openjdk-11-jdk
+              java -version
 
       - run:
           name: Build the code
-          command:
-            - chmod +x gradlew
-            - ./gradlew build -x test
+          command:  |
+              chmod +x gradlew
+              ./gradlew build -x test
             
       - run:
           name: Start Agent and Wait for agent to register
@@ -416,8 +414,7 @@ jobs:
       # run tests
       - run:
           name: Run Test
-          command: 
-              - ./gradlew test
+          command: ./gradlew test
 
 ```
 
