@@ -103,7 +103,7 @@ Now we can set up our pipeline using the above command to execute the Job every 
 
 ![](../.gitbook/assets/11%20%282%29.png)
 
-3.   In the following window, we will have the options to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file since the project is in python.
+3.   In the following window, we will have the option to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file.
 
 4.   Paste the curl command in the proper step.
 
@@ -113,7 +113,7 @@ Now we can set up our pipeline using the above command to execute the Job every 
 
 Now every time we push a change to the selected branch, the Pipeline will trigger the Curl command which in the following will trigger the tests.
 
-**Complete example of a pipeline config.yml**
+**A Complete example of a pipeline config.yml**
 
 ```text
 version: 2.1
@@ -128,7 +128,7 @@ jobs:
     executor: python/default
     steps:
      - run:
-          command: curl -X POST "Request URL"  -H "accept:application/json"  -H "Authorization:YOUR API KEY" -H "Content-Type:application/json" -d "{'testParameters': [{'data': [{'username': 'TestProject','passowrd': '12345'}]}]}"
+          command: curl -X POST "Request URL"  -H "accept:application/json"  -H "Authorization:YOUR API KEY" -H "Content-Type:application/json" -d "{'testParameters': [{'data': [{'username': 'TestProject','passowrd': $PASSWORD}]}]}"
           name: Run Test On Build
 workflows:
   main:
@@ -165,17 +165,17 @@ You can set them in CircleCI Dashboard:
 
 ![](../.gitbook/assets/16%20%281%29.png)
 
-1. Click on Environment Variables:
+2.  Click on Environment Variables:
 
 ![](../.gitbook/assets/17.png)
 
-1. Add Environment Variable:
+3.  Add Environment Variable:
 
 ![](../.gitbook/assets/18.png)
 
 **Configuring Docker Compose YML file**
 
-You will need a docker-compose.yml file thatt will spin up the Docker agent.
+You will need a docker-compose.yml file that will spin up the Docker agent.
 
 In this example we are overriding the **username**/**password** parameters that are used in the tests by using this YAML file:
 
@@ -191,11 +191,11 @@ services:
     environment:
       TP_API_KEY: $TP_API_KEY
       TP_JOB_ID: $TP_JOB_ID
-      TP_JOB_PARAMS: '"jobParameters" : {"browsers": [ "chrome", "firefox" ],  "testParameters": [{"data": [{"username":"TestProject", "password":"12345"}]}]}'
+      TP_JOB_PARAMS: '"jobParameters" : {"browsers": [ "chrome", "firefox" ],  "testParameters": [{"data": [{"username":"TestProject", "password":$PASSWORD}]}]}'
       CHROME: "chrome:4444"
       FIREFOX: "firefox:4444"
     ports:
-    - "8888:8589"
+      - "8888:8589"
   chrome:
     image: selenium/standalone-chrome
     volumes:
@@ -211,6 +211,32 @@ Using the above compose file, we will spin a docker agent which will execute the
 The variable **TP\_JOB\_PARAMS** holds the JSON which holds the username and password parameters that will be overridden in runtime.
 
 Using [this](https://github.com/Rantzur1992/recorded_example/blob/main/.circleci/config.yml) config in the pipeline to execute the Job on the Docker agent.
+
+```text
+version: 2.1
+jobs:
+  run-recorded-tests:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: Update
+          command: |
+            sudo apt-get -y update
+          
+      - run:
+          name: Run tests
+          command: |
+            set -x
+            docker-compose up --abort-on-container-exit
+
+workflows:
+  main:
+    jobs:
+      - run-recorded-tests
+
+```
 
 You can read more on TestProject Docker agent [here](https://hub.docker.com/r/testproject/agent).
 
@@ -237,7 +263,7 @@ In CircleCI, open a new project like shown previously, and select the Project fo
 
 Like previously, we will select a pre-configured Python yml file, and configure it to run our Tests.
 
-Here is a complete example of a config.yml which does the following:
+Here is a complete example of a config.yml that does the following:
 
 1. Creates a clean ubuntu 20.04 environment.
 2. Spins up docker container using docker-compose from a public example’s repo from TestProject.
@@ -248,39 +274,44 @@ Here is a complete example of a config.yml which does the following:
 **Config.yml:**
 
 ```text
-version: 2.1
-orbs:
-  python: circleci/python@0.2.1
+version: 2
 jobs:
-  build-compose-run-test:
+  build:
     machine:
       image: ubuntu-2004:202010-01
-    working_directory: testproject
     steps:
+      - checkout
       - run:
-          name: Update And Install Dependancies
+          name: Update And Install SDK
           command: |
             sudo apt-get -y update
-            sudo apt-get install -y curl wget git
-            git clone https://github.com/testproject-io/circle-ci-python-example
             python3 --version
+            pip3 install -r requirements.txt
+
       - run:
-          name: Start Docker Agent
+          name: Start Agent and wait for agent to register
           command: |
-            cd circle-ci-python-example
-            set -x
-            docker-compose up -d
-            pip3 install testproject-python-sdk
+              set -x
+              docker-compose up -d
+              trap 'kill $(jobs -p)' EXIT
+              attempt_counter=0
+              max_attempts=45
+              mkdir -p build/reports/agent
+              docker-compose -f docker-compose.yml logs -f | tee build/reports/agent/log.txt&
+              until curl -s http://localhost:8585/api/status | jq '.registered' | grep true; do
+                if [ ${attempt_counter} -eq ${max_attempts} ]; then
+                  echo "Agent failed to register. Terminating..."
+                  exit 1
+                fi
+                attempt_counter=$(($attempt_counter+1))
+                sleep 1
+              done
+
       - run:
           name: Run Tests
-          command: |
-            sleep 20
-            cd circle-ci-python-example
-            python3 web_test.py
-workflows:
-  main:
-    jobs:
-      - build-compose-run-test
+          command:
+            - pytest
+
 ```
 
 The following config above uses these environment variables:
@@ -293,17 +324,17 @@ You can set them in CircleCI Dashboard:
 
 ![](../.gitbook/assets/21.png)
 
-1. Click on Environment Variables:
+2.   Click on Environment Variables:
 
 ![](../.gitbook/assets/22.png)
 
-1. Add Environment Variable:
+3.   Add Environment Variable:
 
 ![](../.gitbook/assets/23.png)
 
 Now you are good to go running your Python Coded tests using TestProject SDK in your pipeline.
 
-![](../.gitbook/assets/24.png)
+![](../.gitbook/assets/image%20%28258%29.png)
 
 ## **Running TestProject coded Java tests with CircleCI CI/CD Pipelines**
 
@@ -315,51 +346,34 @@ We will use Gradle in this example.
 
 First, we set up our **build.gradle** to point to the classes which hold our tests.
 
-In this simple example, we will use one class called JavaExample which holds the main method.
-
-In the **build.gradle**:
-
-```text
-application {
- mainClassName = "JavaExample" //This points to your entry point class
-}
-
-plugins {
- id 'java'
- id 'application'
-}
-
-dependencies {
- testCompile group: 'junit', name: 'junit', version: '4.12'
- implementation 'io.testproject:java-sdk:0.65.0-RELEASE' //Use the latest version of the SDK
-}
-```
-
-In our config we will use Gradle to run that main method.
+In this simple example, we will use one class called JavaExample which holds the test using JUNIT, and we will be using Gradle wrapper\(gradlew\) to execute the tests.
 
 Example of **build.gradle:**
 
 ```text
 plugins {
- id 'java'
- id 'application'
+    id 'java'
 }
 
-group 'org.example'
+group 'testproject.io'
 version '1.0-SNAPSHOT'
 
 repositories {
- mavenCentral()
+    mavenCentral()
 }
 
-application {
- mainClassName = "JavaExample"
+test {
+    useJUnit()
 }
 
 dependencies {
- testCompile group: 'junit', name: 'junit', version: '4.12'
- implementation 'io.testproject:java-sdk:0.65.0-RELEASE'
+    implementation 'junit:junit:4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'io.testproject:java-sdk:0.65.0-RELEASE'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
+
 }
+
 ```
 
 **The config.yml**:
@@ -367,47 +381,54 @@ dependencies {
 ```text
 version: 2
 jobs:
- build:
- machine:
-  image: ubuntu-2004:202010-01
- working_directory: ~/testproject
- steps:
-  - run:
-    name: Update Dependancies And Install Java 11
-    command: |
-      sudo apt-get -y update
-      sudo apt install -y openjdk-11-jdk wget git
-      java -version
- - run:
-    name: Download And Install Gradle
-    command: |
-      VERSION=6.5.1
-      wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp
-      sudo unzip -d /opt/gradle /tmp/gradle-${VERSION}-bin.zip
-      export GRADLE_HOME=/opt/gradle/latest
-      export PATH=${GRADLE_HOME}/bin:${PATH}
-      gradle -v
- - run:
-   name: Clone Code Repo
-   command: |
-     git clone https://github.com/testproject-io/circle-ci-java-example.git
- - run:
-   name: Start Docker Agent
-   command: |
-     cd circle-ci-java-example
-     set -x
-     docker-compose up -d
-     sleep 10
- # run tests
- - run:
-   name: Run Test
-   command: |
-     gradle run
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: Update Dependancies And Install Java 11
+          command: |
+            sudo apt-get -y update
+            sudo apt install -y openjdk-11-jdk
+            java -version
+
+      - run:
+         name: Download And Install Gradle
+         command: |
+            chmod +x gradlew
+            ./gradlew build -x test
+            
+      - run:
+          name: Start Agent and Wait for agent to register
+          command: |
+              set -x
+              docker-compose up -d
+              trap 'kill $(jobs -p)' EXIT
+              attempt_counter=0
+              max_attempts=45
+              mkdir -p build/reports/agent
+              docker-compose -f docker-compose.yml logs -f | tee build/reports/agent/log.txt&
+              until curl -s http://localhost:8585/api/status | jq '.registered' | grep true; do
+                if [ ${attempt_counter} -eq ${max_attempts} ]; then
+                  echo "Agent failed to register. Terminating..."
+                  exit 1
+                fi
+                attempt_counter=$(($attempt_counter+1))
+                sleep 1
+              done
+
+      # run tests
+      - run:
+          name: Run Test
+          command: 
+              - ./gradlew test
+
 ```
 
 This pipeline will install **JDK 11** which is required by the TestProject SDK, install Gradle, Start the docker agent, and execute the test.
 
-![](../.gitbook/assets/25.png)
+![](../.gitbook/assets/image%20%28257%29.png)
 
 **Summary Diagram**
 
@@ -417,7 +438,7 @@ For summary, the following diagram shows the flow from development to automation
 
 ## **View Execution Reports**
 
-After execution we can view the Reports in the Reports page.
+After execution, we can view the Reports in the Reports page.
 
 In your TestProject account click on **Reports**
 
@@ -433,5 +454,5 @@ Expanding it will show all previous execution under that Job.
 
 We can also download the PDF reports to see the full detailed report with screenshots.
 
-**All examples can be found on our** [**GitHub**](https://github.com/testproject-io)**.**
+**All examples can be found on our** [**GitHub**](https://github.com/testproject-io/circle-ci/tree/main)**.**
 
