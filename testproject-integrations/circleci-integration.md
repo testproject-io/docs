@@ -189,6 +189,7 @@ services:
       - chrome
       - firefox
     environment:
+      TP_AGENT_TEMP: "true"
       TP_API_KEY: $TP_API_KEY
       TP_JOB_ID: $TP_JOB_ID
       TP_JOB_PARAMS: '"jobParameters" : {"browsers": [ "chrome", "firefox" ],  "testParameters": [{"data": [{"username":"TestProject", "password":$PASSWORD}]}]}'
@@ -204,6 +205,7 @@ services:
     image: selenium/standalone-firefox
     volumes:
       - /dev/shm:/dev/shm
+
 ```
 
 Using the above compose file, we will spin a docker agent which will execute the Job stated in $**TP\_JOB\_ID**.
@@ -221,15 +223,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update
-          command: |
-            sudo apt-get -y update
-          
-      - run:
           name: Run tests
-          command: |
-            set -x
-            docker-compose up --abort-on-container-exit
+          command:
+            - set -x
+            - docker-compose up -d
 
 workflows:
   main:
@@ -267,9 +264,9 @@ Here is a complete example of a config.yml that does the following:
 
 1. Creates a clean ubuntu 20.04 environment.
 2. Spins up docker container using docker-compose from a public example’s repo from TestProject.
-3. Runs the Example python tests on the Docker Agent.
+3. Runs the Example python tests on the Docker Agent using Pytest.
 
-**Note: When using Docker Agent on CircleCI, you must use Machine config and Not Docker Executor.**
+**`Note: When using Docker Agent on CircleCI, you must use Machine config and Not Docker Executor.`**
 
 **Config.yml:**
 
@@ -282,11 +279,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update And Install SDK
-          command: |
-            sudo apt-get -y update
-            python3 --version
-            pip3 install -r requirements.txt
+          name: Install SDK
+          command:
+            - pip3 install -r requirements.txt
 
       - run:
           name: Start Agent and wait for agent to register
@@ -387,17 +382,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update Dependancies And Install Java 11
-          command: |
-            sudo apt-get -y update
-            sudo apt install -y openjdk-11-jdk
-            java -version
+          name: Update Dependencies And Install Java 11
+          command:
+            - sudo apt-get -y update
+            - sudo apt install -y openjdk-11-jdk
+            - java -version
 
       - run:
-         name: Download And Install Gradle
-         command: |
-            chmod +x gradlew
-            ./gradlew build -x test
+          name: Build the code
+          command:
+            - chmod +x gradlew
+            - ./gradlew build -x test
             
       - run:
           name: Start Agent and Wait for agent to register
