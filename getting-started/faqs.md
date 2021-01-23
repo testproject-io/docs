@@ -2,7 +2,7 @@
 
 ## Can I execute tests on real devices and on emulators?
 
-Sure! With TestProject you can connect your physical devices \(both Android and iOS\) via a USB cable and connect right away! You can also use Android emulators if you’d like \(support for iOS simulators is coming soon!\).That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+Sure! With TestProject you can connect your physical devices \(both Android and iOS\) via a USB cable and connect right away! You can also use Android emulators or iOS Simulators if you’d like.
 
 ## Can I automate iOS tests on Windows?
 
@@ -18,6 +18,8 @@ Yes, TestProject exposes a RESTful API which allows you to easily schedule and t
 
 In addition, if you are using Jenkins for your CI/CD flows, we also have a simple plugin for that. Here’s a tutorial that will help you through the process of setting TestProject-Jenkins integration: [https://blog.testproject.io/2019/02/28/integrating-testproject-with-jenkins-ci/](https://blog.testproject.io/2019/02/28/integrating-testproject-with-jenkins-ci/).
 
+We have many more built-in integrations you can explore in the Integrations section in this Docs.
+
 ## What is an Agent?
 
 TestProject Agent is a cross-platform local desktop automation component that communicates with TestProject’s cloud testing repository and is responsible for local test execution.
@@ -26,7 +28,7 @@ This allows for a highly collaborative environment where you have Agents install
 
 We make sure to always keep the TestProject Agent up to date with the latest tools, drivers and SDKs required for your test automation. All you need to do is download and install the Agent in a simple installation process on any of your favorite operating systems \(Windows, Linux or macOS\).
 
-Watch how to easily setup your Agent here: [https://www.youtube.com/watch?v=XVeOL1wfNIc](https://www.youtube.com/watch?v=XVeOL1wfNIc).
+Watch how to easily setup your Agent here: [https://youtu.be/6TWgSBPP2YU](https://youtu.be/6TWgSBPP2YU)
 
 ## Can I use more than one Agent?
 
@@ -73,18 +75,6 @@ Yes! TestProject offers a Free Forever plan for a lifetime, with no commitment. 
 ## Are there any contracts or hidden charges or setup fees?
 
 No contracts, no hidden charges, no setup fees. There is no long-term commitment and you can cancel your subscription at any time you wish.
-
-## Can I change pricing plans or cancel my account later?
-
-Yes. Our plans are fully flexible and you can upgrade, downgrade or cancel your account at any time. Simply go to the Billing page in your account settings.
-
-## What types of payment do you accept?
-
-TestProject accepts all major credit cards.
-
-## Can someone help customize a proposal for my team?
-
-Yes. Simply [contact us](https://testproject.io/contact-us/) and we will customize a pricing plan according to your individual needs.
 
 ## How can I secure test parameters?
 
