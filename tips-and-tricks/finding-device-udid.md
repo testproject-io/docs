@@ -11,7 +11,7 @@ Once your device is connected at least once and verified by the agent, you can u
 1. Head over to the TestProject platform agents page: [https://app.testproject.io/\#/agents](https://app.testproject.io/#/agents)
 2. At the agent's page, click on your agent.
 
-![](../.gitbook/assets/image%20%28262%29.png)
+![](../.gitbook/assets/image%20%28264%29.png)
 
    3. Click on Devices
 
@@ -19,9 +19,11 @@ Once your device is connected at least once and verified by the agent, you can u
 
 ![](../.gitbook/assets/image%20%28260%29.png)
 
+![](../.gitbook/assets/image%20%28262%29.png)
+
 Here you can see Previously/Current connected devices and Simulators.
 
 You can now copy the UDID to the clipboard and use it wherever you need.
 
-![](../.gitbook/assets/image%20%28261%29.png)
+![](../.gitbook/assets/image%20%28263%29.png)
 
