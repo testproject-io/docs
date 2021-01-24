@@ -1,5 +1,5 @@
 ---
-description: 'TestProject SDK for C#'
+description: 'C# OpenSDK'
 ---
 
 # C\#
@@ -12,325 +12,228 @@ To get started, you need to complete the following prerequisites checklist:
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account.
 * Get a development token from [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
-* Have [.NET Core SDK 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) installed on your machine.
-* Have a [Visual Studio](https://visualstudio.microsoft.com/downloads/) IDE installed.
 
 ### Installation
 
-TestProject SDK for C\# is available via [NuGet](https://www.nuget.org/packages/TestProject.SDK).
+ The TestProject C\# OpenSDK is [available via NuGet](https://www.nuget.org/packages/TestProject.OpenSDK/).
 
 * Right-click the project and select `Manage NuGet Packages...`
 * Search for `TestProject SDK` and add it to your project.
 
 ## Test Development
 
-A test class has to implement **one** of the following interfaces:
+Using a TestProject driver is exactly identical to using a Selenium driver. Changing the import statement is enough in most cases.
+
+> The following examples use the `ChromeDriver`, but they are applicable to all other supported drivers.
+
+Here's an example of how to create a TestProject version of `ChromeDriver`:
 
 ```text
-TestProject.SDK.Tests
-├── IWebTest
-├── IAndroidTest
-└── IIOSTest
-```
+// using OpenQA.Selenium.Chrome;; <-- Replaced
+using TestProject.OpenSDK.Drivers.Web;
 
-Here is an example of creating & running a test class implementing the `IWebTest` interface.  
- This test performs a login and expects a logout button to appear:
+...
 
-```text
-using OpenQA.Selenium;
-using TestProject.Common.Attributes;
-using TestProject.Common.Enums;
-using TestProject.SDK;
-using TestProject.SDK.Tests;
-using TestProject.SDK.Tests.Helpers;
-
-namespace MyFirstExample
-{
-	public class Program
-	{
-		static void Main(string[] args)
-		{
-			using (Runner runner = new RunnerBuilder("YOUR-DEV-TOKEN")
-						.AsWeb(AutomatedBrowserType.Chrome).Build())
-			{
-				runner.Run(new BasicTest());
-			}
-		}
-
-		[Test(Name="Basic Test")]
-		class BasicTest : IWebTest
-		{
-			public ExecutionResult Execute(WebTestHelper helper)
-			{
-				// Get driver initialized by TestProject Agent
-				// No need to specify browser type, it can be done later via UI
-				var driver = helper.Driver;
-
-				driver.Navigate().GoToUrl("https://example.testproject.io/web/");
-
-				driver.FindElementByCssSelector("#name").SendKeys("John Smith");
-				driver.FindElementByCssSelector("#password").SendKeys("12345");
-				driver.FindElementByCssSelector("#login").Click();
-
-				if (driver.FindElements(By.CssSelector("#logout")).Count > 0)
-					return ExecutionResult.Passed;
-				return ExecutionResult.Failed;
-			}
-		}
-	}
+public class MyTest {
+  ChromeDriver driver = new ChromeDriver(chromeOptions: ChromeOptions());
 }
 ```
 
-Below are links to other examples with complete source code:
+## Drivers
 
-* [Web](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://example.testproject.io/web/index.html) website.
-* [Android](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Android/Test/TestProject.SDK.Examples.Android.Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/android-demo-app) App for Android.
-* [iOS](https://github.com/testproject-io/csharp-sdk-examples/blob/master/IOS/Test/Test/BasicTest.cs) test executed on [TestProject Demo](https://github.com/testproject-io/ios-demo-app) App for iOS.
-
-### Test Running
-
-To debug or run the test, you will have to use the **Runner** class.  
- Here' is an `NUnit` example that executes the `BasicTest` shown above:
+The TestProject SDK overrides standard Selenium/Appium drivers with extended functionality. Below is the packages structure containing all supported drivers:
 
 ```text
-using NUnit.Framework;
-using TestProject.Common.Enums;
-using TestProject.SDK.Examples.Web.Runners.Nunit.Base;
-
-namespace TestProject.SDK.Examples.Runners.Nunit
-{
-	public class BasicTests
-	{
-		Runner runner;
-
-		[OneTimeSetUp]
-        public void SetUp()
-        {
-            runner = new RunnerBuilder(DevToken).AsWeb(AutomatedBrowserType.Chrome).Build();
-        }
-
-		[Test]
-		public void TestLogin()
-		{
-			runner.Run(new BasicTest());
-		}
-
-		[OneTimeTearDown]
-		public void TearDown()
-		{
-			runner.Dispose();
-		}
-	}
-}
+TestProject.OpenSDK.Drivers
+├── Web
+│   ├── ChromeDriver
+│   ├── EdgeDriver
+│   ├── FirefoxDriver
+│   ├── InternetExplorerDriver
+│   ├── SafariDriver
+│   └── RemoteWebDriver
+├── Generic
+│   └── GenericDriver
 ```
 
-Below are examples for initialization of other Runner types:
+> The GenericDriver can be used to run non-UI tests and still report the results to TestProject.
 
-**Desktop Web**
+### Development Token
+
+The SDK uses a development token for communication with the Agent and the TestProject platform. Drivers search the developer token in an environment variable `TP_DEV_TOKEN`. This token can be also provided explicitly using the constructor:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.AsWeb(AutomatedBrowserType...).Build();
+ChromeDriver driver = new ChromeDriver(token: "your_token_goes_here");
+
 ```
 
-**Android**
+### Remote Agent
+
+By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585/).
+
+The Agent URL \(host and port\) can be also provided explicitly using this constructor:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.AsAndroid("DEVICE_UDID", "APP_PACKAGE", "ACTIVITY").Build();
+ChromeDriver driver = new ChromeDriver(remoteAddress: "your_address_and_port_go_here");
 ```
 
-**Chrome on Android**
+It can also be set using the `TP_AGENT_URL` environment variable.
+
+## Reports
+
+TestProject SDK reports all driver commands and their results to the TestProject Cloud. Doing so allows us to present beautifully designed reports and statistics in its dashboards.
+
+Reports can be completely disabled using this constructor:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.AsAndroidWeb("DEVICE_UDID").Build();
+ChromeDriver driver = new ChromeDriver(disableReports: true);
 ```
-
-**iOS**
-
-```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.AsIOS("DEVICE_UDID", "DEVICE_NAME", "APP_BUNDLE_ID").Build();
-```
-
-**Safari on iOS**
-
-```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.AsIOSWeb("IOS_DEVICE_ID", "IOS_DEVICE_NAME").Build();
-```
-
-### Reports
-
-TestProject SDK reports all driver commands and their results to the TestProject Cloud.  
- Doing so, allows us to present beautifully designed reports and statistics in our dashboards.
-
-Reports can be completely disabled via `RunnerBuilder`, for example:
-
-```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.WithReportsDisabled()
-	.AsWeb(AutomatedBrowserType...)
-	.Build();
-```
-
-There are more options to disable reporting of specific entities.  
- See [Disabling Reports](https://github.com/testproject-io/csharp-sdk-examples#disabling-reports) section for more information.
 
 ### Implicit Project and Job Names
 
-The SDK will attempt to infer Project and Job names from NUnit / MSTest / XUnit attributes.  
- If found, the following logic and priorities take place:
+By default, the SDK will attempt to infer Project and Job names when you're using NUnit, MSTest or XUnit as a testing framework.
 
-* _Namespace_ of the class where the `Runner` is created, is used for **Project** name.
-* _Class_ name where the `Runner` is created, is used for the **Job** name.
-* _Test class_ name, or the _Name_ property of the `Test` attribute on the class is used for the **Test** name.
+If any of these unit testing frameworks is detected, the following reporting settings will be inferred:
 
-Examples of implicit Project & Job names inferred from annotations:
+* The project name will be equal to the final segment of the namespace that your test class is part of. For example, if your test class is in the `TestProject.OpenSDK.Example` namespace, the project name will be equal to `Example`.
+* The job name will be equal to the name of your test class.
+* The test name will be equal to the name of your test method.
 
-* [NUnit example](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Runners/Nunit/DesktopTests.cs)
-* [Console Program example](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Runners/Console/Program.cs)
+Examples of implicit project and job names inferred from annotations:
+
+* [MSTest example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/MSTest/InferredReportTest.cs)
+* [NUnit example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/NUnit/InferredReportTest.cs)
+* [XUnit example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/XUnit/InferredReportTest.cs)
 
 ### Explicit Names
 
-Project and Job names can be also specified explicitly using the relevant options in `RunnerBuilder`, for example:
+Project and job names can also be specified explicitly using this constructor:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.WithProjectName("My First Project")
-	.WithJobName("My First Job")
-	.AsWeb(AutomatedBrowserType...)
-	.Build();
+ChromeDriver driver = new ChromeDriver(projectName: "your_project_name", jobName: "your_job_name");
 ```
 
-You can specify a Project, a Job name or both. If you don't, the value will be inferred automatically.  
- See [Implicit Project and Job Names](https://github.com/testproject-io/csharp-sdk-examples#implicit-project-and-job-names) section for more information on how these names are inferred.
+Examples of explicit project and job name configuration:
 
-Examples of explicit Project & Job names configuration:
-
-* [NUnit example](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Runners/Nunit/ExplicitNameTests.cs)
+* [MSTest example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/MSTest/ExplicitReportTest.cs)
+* [NUnit example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/NUnit/ExplicitReportTest.cs)
+* [XUnit example](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/XUnit/ExplicitReportTest.cs)
 
 ### Tests Reports
 
-#### Tests Reporting
+#### Automatic Tests Reporting
 
-Tests are reported automatically when a test **ends**, in other works, when `Runner.Run()` method execution ends.  
- Test names are inferred from the `[Test]` attribute's _Name_ property if it is present, or from the test class name.
+Tests are reported automatically when a test **ends** or when driver _quits_. This behavior can be overridden or disabled \(see the [Disabling Reports](https://github.com/testproject-io/csharp-sdk#disabling-reports) section below\).
 
-> This behavior can't be overridden or disabled at this time.
+In order to determine whether a test has ended, the call stack is inspected, searching for the current test method. When the test name is different from the latest known test name, it is concluded that the execution of the previous test has ended. This is supported for MSTest, NUnit and XUnit.
 
-Each call to `Runner.Run` will create a separate test in a job report.  
- Even calls in the same testing framework method behave this way.
+#### Manual Tests Reporting
 
-For example, following NUnit based code, will generate the following _four_ tests in the report:
+To report tests manually, you can use the `driver.Report().Test()` method, for example:
 
 ```text
-		class Test : IWebTest 
-		{
-			[Parameter]
-			public string url;
-
-			public ExecutionResult Execute(WebTestHelper helper)
-			{
-				helper.Driver.Navigate().GoToUrl(url);
-				return ExecutionResult.Passed;
-			}
-		}
-
-		public DesktopTests(AutomatedBrowserType automatedBrowserType)
-		{
-			runner = new RunnerBuilder("DevToken")
-						.AsWeb(AutomatedBrowserType.Chrome).Build();
-		}
-
-		[Test]
-		public void RunGoogle()
-		{
-			var test = new Test() { url = "http://www.google.com" };
-			runner.Run(test);
-		}
-
-		[Test]
-		public void RunTestProject()
-		{
-			var test = new Test() { url = "http://testproject.io" };
-			runner.Run(test);
-		}
-
-		[Test]
-		public void RunAll()
-		{
-			var test = new Test() { url = "http://www.google.com" };
-			runner.Run(test);
-			test = new Test() { url = "http://testproject.io" };
-			runner.Run(test);
-		}
-
-		[OneTimeTearDown]
-		public void TearDown()
-		{
-			runner.Dispose();
-		}
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().Test("My First Test");
 ```
 
-Report:
-
-```text
-Report
-├── RunGoogle
-│   └── Navigate To https://google.com/
-├── RunTestProject
-│   └── Navigate To http://testproject.io
-└── RunAll
-    ├── Navigate To https://google.com/
-    └── Navigate To http://testproject.io
-```
+> It is important to disable automatic tests reporting when using the manual option to avoid any collision.
 
 #### Steps
 
-Steps are reported automatically when driver commands are executed.  
- Even if this feature is disabled, or in addition, steps can still be reported **manually**
-
-Notice the following line in the [Extended Test](https://github.com/testproject-io/csharp-sdk-examples/blob/master/Web/Test/TestProject.SDK.Examples.Web.Test/Test/ExtendedTest.cs) example.  
- This line reports a step based on provided condition and takes a screenshot:
+Steps are reported automatically when driver commands are executed. If this feature is disabled, or in addition, manual reports can be performed, for example:
 
 ```text
-helper.Reporter.Step("Profile information saved", profilePage.Saved, TakeScreenshotConditionType.Always);
-```
-
-Using the following code one can set test result message:
-
-```text
-report.Result = "Test completed successfully";
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().Step("User logged in successfully");
 ```
 
 ### Disabling Reports
 
-Reporting can be disabled during Runner creation.  
- If reporting was explicitly disabled when the runner was created, it can **not** be enabled later.
+If reports were **not** disabled when the driver was created, they can be disabled or enabled later. However, if reporting was explicitly disabled when the driver was created, it can **not** be enabled later.
 
 #### Disable all reports
 
-The following will create a runner with all types of reports disabled \(except manual step reports\):
+This will disable all types of reports:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.WithReportsDisabled()
-	.Build();
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().DisableReports(true);
 ```
 
-#### Disable driver commands reports
+#### Disable automatic test reports
 
-Disabling commands reporting will result in test reports with no steps, unless they are reported manually using `helper.Reporter.step()`. The following will disable driver _commands_ reporting:
+This will disable automatic test reporting. All steps will end up in a single test report, unless tests are reported manually using `driver.Report().Test()`:
 
 ```text
-var runner = new RunnerBuilder("DEV_TOKEN")
-	.WithDriverCommandReportingDisabled()
-	.Build();
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().DisableAutoTestReports(true);
 ```
+
+#### Disable driver command reports
+
+This will disable driver _command_ reporting. The resulting report will have no steps, unless reported manually using `driver.Report().Step()`:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().DisableCommandReports(true);
+```
+
+#### Disable command redaction
+
+When reporting driver commands, the SDK performs redaction of sensitive data \(values\) sent to secured elements. If the element is one of the following:
+
+* Any element with `type` attribute set to `password`
+* With XCUITest, on iOS an element type of `XCUIElementTypeSecureTextField`
+
+the values sent to these elements will be converted to three asterisks - `***`. This behavior can be disabled as follows:
+
+```text
+ChromeDriver driver = new ChromeDriver(new ChromeOptions());
+driver.Report().DisableRedaction(true);
+```
+
+## SpecFlow support
+
+The SDK also supports automatic reporting of SpecFlow features, scenarios and steps through the [TestProject OpenSDK SpecFlow plugin](https://www.nuget.org/packages/TestProject.OpenSDK.SpecFlowPlugin/).
+
+After installing the plugin package using NuGet, SpecFlow-based scenarios that use an SDK driver will be automatically reported to TestProject Cloud.
+
+When the plugin detects that SpecFlow is used, it will disable the reporting of driver command and automatic reporting of tests.
+
+Instead, it will report:
+
+* A separate job for every feature file
+* A test for every scenario in a feature file
+* All steps in a scenario as steps in the corresponding test
+
+Steps are automatically marked as passed or failed, and Scenario Outlines are supported to create comprehensive living documentation from your specifications on TestProject Cloud.
+
+A working example project can be found [here](https://github.com/testproject-io/csharp-sdk/tree/main/TestProject.OpenSDK.SpecFlowExamples).
+
+## Examples
+
+More usage examples for the SDK can be found [here](https://github.com/testproject-io/csharp-sdk/tree/main/TestProject.OpenSDK.Tests/Examples):
+
+* Drivers
+  * [Chrome Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/ChromeDriverTest.cs)
+  * [Edge Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/EdgeDriverTest.cs)
+  * [Firefox Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/FirefoxDriverTest.cs)
+  * [Internet Explorer Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/InternetExplorerDriverTest.cs)
+  * [Safari Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/SafariDriverTest.cs)
+  * [Remote Web Driver Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/RemoteWebDriverTest.cs)
+  * [Generic Driver Test](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Drivers/GenericDriverTest.cs)
+* Frameworks
+  * MSTest
+    * [Inferred Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/MSTest/InferredReportTest.cs)
+    * [Explicit Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/MSTest/ExplicitReportTest.cs)
+  * NUnit
+    * [Inferred Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/NUnit/InferredReportTest.cs)
+    * [Explicit Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/NUnit/ExplicitReportTest.cs)
+  * XUnit
+    * [Inferred Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/XUnit/InferredReportTest.cs)
+    * [Explicit Report](https://github.com/testproject-io/csharp-sdk/blob/main/TestProject.OpenSDK.Tests/Examples/Frameworks/XUnit/ExplicitReportTest.cs)
 
 ## License
 
-TestProject SDK For C\# is licensed under the LICENSE file in the root directory of this source tree.
+The TestProject SDK For C\# is licensed under the LICENSE file in the root directory of this source tree.
 
