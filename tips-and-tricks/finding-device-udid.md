@@ -15,15 +15,13 @@ Once your device is connected at least once and verified by the agent, you can u
 
    3. Click on Devices
 
+![](../.gitbook/assets/image%20%28266%29.png)
 
-
-![](../.gitbook/assets/image%20%28260%29.png)
-
-![](../.gitbook/assets/image%20%28262%29.png)
+![](../.gitbook/assets/image%20%28267%29.png)
 
 Here you can see Previously/Current connected devices and Simulators.
 
 You can now copy the UDID to the clipboard and use it wherever you need.
 
-![](../.gitbook/assets/image%20%28263%29.png)
+![](../.gitbook/assets/image%20%28268%29.png)
 
