@@ -199,6 +199,7 @@
 * [Troubleshooting DevToolsActivePort file doesn't exists](tips-and-tricks/troubleshooting-devtoolsactiveport-file-doesnt-exists.md)
 * [How To Record a Web Test for a Mobile Browser](tips-and-tricks/how-to-record-a-web-test-for-a-mobile-browser.md)
 * [Running a Web Test on a Mobile Device](tips-and-tricks/running-a-web-test-on-a-mobile-device.md)
+* [Finding Device UDID](tips-and-tricks/finding-device-udid.md)
 
 ## Releases
 
