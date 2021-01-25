@@ -28,8 +28,8 @@ TestProject Agent will detect all the simulators it comes with and display them 
 
 ![](../../.gitbook/assets/list.png)
 
-> **If the simulators are still not detected even when Xcode is correctly installed in /Applications  
-> Open a terminal, run the command below and restart your Agent:**
+> If the simulators are still not detected even when Xcode is correctly installed in /Applications  
+> Open a terminal \(using Launchpad\), run the command below and restart your Agent:
 
 `sudo xcode-select -s $(ls -td /Applications/Xcode* | head -1)/Contents/Developer`
 
