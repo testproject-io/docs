@@ -20,6 +20,8 @@ You interact with Simulator by using the keyboard and the mouse to emulate taps,
 
 With Xcode installed:
 
+> It must be inside your /Applications folder.
+
 ![](../../.gitbook/assets/xcode.png)
 
 TestProject Agent will detect all the simulators it comes with and display them in the connected simulators list in the TestProject application:
