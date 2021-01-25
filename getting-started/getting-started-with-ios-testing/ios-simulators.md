@@ -28,6 +28,10 @@ TestProject Agent will detect all the simulators it comes with and display them 
 
 ![](../../.gitbook/assets/list.png)
 
+**Note: If the simulators are still not detected even if xCode is installed under Applications, open the terminal and run the below and restart your Agent:**
+
+`sudo xcode-select -s $(ls -td /Applications/Xcode* | head -1)/Contents/Developer`
+
 You can mirror any iOS simulator screen:
 
 ![](../../.gitbook/assets/list___mirroring.png)
