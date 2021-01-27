@@ -25,6 +25,8 @@ Here we will learn how to incorporate TestProject into your behavior driven deve
 
 The TestProject Java OpenSDK supports automatic reporting of Cucumber features, scenarios and steps using the CucumberReporter plugin in the SDK.
 
+While utilizing the TestProject OpenSDK with Cucumber you will be able to collaborate with your team members in the cloud , share reports, screenshots and automation progress.
+
 Using the plugin will disable the reporting of driver command and automatic reporting of tests.
 
 Instead, it will report:
@@ -228,6 +230,8 @@ A fully working example can be found in the JavaOpenSDK GitHub documentation [he
 ## Python OpenSDK
 
 The TestProject Python OpenSDK supports automatic reporting of Behave features, scenarios and steps using the **@behave\_reporter** annotation.
+
+While utilizing the TestProject OpenSDK with Behave you will be able to collaborate with your team members in the cloud , share reports, screenshots and automation progress.
 
 You can install Behave with the following command:
 
@@ -441,6 +445,8 @@ The example code is available in the Python OpenSDK GitHub documentation [here](
 ## C\# OpenSDK
 
 The SDK also supports automatic reporting of SpecFlow features, scenarios and steps through the [TestProject OpenSDK SpecFlow plugin](https://www.nuget.org/packages/TestProject.OpenSDK.SpecFlowPlugin/).
+
+While utilizing the TestProject OpenSDK with SpecFlow you will be able to collaborate with your team members in the cloud , share reports, screenshots and automation progress.
 
 After installing the plugin package using NuGet, SpecFlow-based scenarios that use an SDK driver will be automatically reported to TestProject Cloud.
 
