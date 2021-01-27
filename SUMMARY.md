@@ -150,6 +150,7 @@
   * [Python](testproject-sdk/opensdk-v2/python-sdk.md)
   * [C\#](testproject-sdk/opensdk-v2/csharp-sdk.md)
 * [Using OpenSDK within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
+* [Using OpenSDK with Behavior Driven Development](testproject-sdk/behavior-driven-development.md)
 
 ## TestProject Integrations
 
