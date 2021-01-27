@@ -19,7 +19,7 @@ Here's an example of how this can be done with Gradle in build.gradle:
 
 ```text
 jar {
-    from { configurations.testCompile.collect { it.isDirectory() ? it : zipTree(it) } }
+    from { configurations.testRuntimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     from sourceSets.test.output+sourceSets.test.allSource
 }
 ```
