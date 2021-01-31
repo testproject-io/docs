@@ -9,37 +9,27 @@ description: >-
 
 ## Description 
 
-With this addon, you will be able to extract the RGB value that represent the dominate color of an element/screenshot in Web as well as **Android and IOS**, and if required, to compare with an expected result.
+With this addon, you will be able to extract the [RGB ](https://www.w3schools.com/colors/colors_rgb.asp)value that represent the dominate color of an element/screenshot in Web as well as **Android and IOS**, and if required, to compare with an expected result.
 
 ## Web and Mobile
 
-Using the Web Recorder, all the is required is to hover over the element, press double shift, then search for **Get Color From Element** action:
+Hover over the element ith TestProject recorder, press double shift, then search for **Get Color** action
 
 ![](../../.gitbook/assets/image%20%28287%29.png)
 
-You can also input the expected result:
-
-
+You can also input the expected result and compare the desired color 
 
 ![](../../.gitbook/assets/image%20%28283%29.png)
 
 The Action will pass if both RGB values are equal, and will fail either wise.
 
-The output will always have the dominant color.
+The output will return the dominant color of the element/image.
 
 ![](../../.gitbook/assets/image%20%28282%29.png)
 
-This is the same in Mobile\(IOS and Android\), all that is required is to hover over the element, and search the **Get Color From Element** action:
+## Get Color From Local Image 
 
-![](../../.gitbook/assets/image%20%28285%29.png)
-
-
-
-## Generic
-
-There is also a generic option, which is not bound to a platform and element.
-
-It is exactly the same, just this time it requires a path to the screenshot to evaluate the color.
+You can utilize the "Get Color From Local Image" action to read the dominant color from locally saved image 
 
 ![](../../.gitbook/assets/image%20%28284%29.png)
 
