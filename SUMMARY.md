@@ -123,6 +123,7 @@
   * [Bootstrap4 - Buttons Group Addon](testproject-addons/available-addons/bootstrap4-buttons-group-addon.md)
   * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
   * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
+  * [Get Element Color](testproject-addons/available-addons/get-element-color.md)
 
 ## Reports
 
