@@ -70,5 +70,5 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Bootstrap4 - Dropdown](bootstrap4-dropdown-addon.md) |
 | [Tap and Get Toast Message](https://docs.testproject.io/testproject-addons/available-addons/tap-and-get-toast-message) |
 | [Teradata Database Addon](https://docs.testproject.io/testproject-addons/available-addons/teradata-database-addon) |
-| Get Color Value |
+| [Get Color Value](https://docs.testproject.io/testproject-addons/available-addons/get-element-color) |
 
