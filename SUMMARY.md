@@ -152,6 +152,7 @@
   * [C\#](testproject-sdk/opensdk-v2/csharp-sdk.md)
 * [Using OpenSDK within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 * [Using OpenSDK with Behavior Driven Development](testproject-sdk/behavior-driven-development/README.md)
+  * [Useful mobile scripts for Python OpenSDK](testproject-sdk/behavior-driven-development/python-tips-and-tricks.md)
   * [SpecFlow \(C\#\)](testproject-sdk/behavior-driven-development/specflow-c.md)
   * [Cucumber \(Java\)](testproject-sdk/behavior-driven-development/cucumber-java.md)
   * [Behave \(Python\)](testproject-sdk/behavior-driven-development/behave-python.md)
