@@ -177,7 +177,7 @@
 
 ## Tips and Tricks
 
-* [Mobile Scripts examples with Python OpenSDK](tips-and-tricks/python-tips-and-tricks.md)
+* [Mobile Scripts Python OpenSDK](tips-and-tricks/python-tips-and-tricks.md)
 * [Explicit Wait & Adaptive Wait](tips-and-tricks/explicit-wait-and-adaptive-wait.md)
 * [Using Page object model and Page Factory with TestProject](tips-and-tricks/using-page-object-model-and-page-factory-with-testproject.md)
 * [Organizing and Managing Test Data](tips-and-tricks/organizing-and-managing-test-data.md)

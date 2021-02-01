@@ -4,7 +4,7 @@ description: >-
   Python OpenSDK
 ---
 
-# Mobile Scripts examples with Python OpenSDK
+# Mobile Scripts Python OpenSDK
 
 ## Prerequisites
 
