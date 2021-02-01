@@ -12,13 +12,13 @@ Before using some of the below methods, we will need to obtain an API key, agent
 
 1. Navigate to TestProject API Page: [https://app.testproject.io/\#/integrations/api](https://app.testproject.io/#/integrations/api), get your API Key, or create one if you do not have one.
 
-![](../../.gitbook/assets/image%20%28293%29.png)
+![](.gitbook/assets/image%20%28293%29.png)
 
    3. In the Agents tab, press on the desired agent, devices and copy the UDID, read more about how to do it [here](https://docs.testproject.io/tips-and-tricks/finding-device-udid).
 
    4. Copy the Agent ID which you can find on the Agents page [here](https://app.testproject.io/#/agents).
 
-![](../../.gitbook/assets/image%20%28292%29.png)
+![](.gitbook/assets/image%20%28292%29.png)
 
 ## Get a list of connected mobile devices
 
