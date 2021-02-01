@@ -4,7 +4,7 @@ description: >-
   Python OpenSDK
 ---
 
-# Useful mobile scripts for Python OpenSDK
+# Mobile Scripts examples with Python OpenSDK
 
 ## Prerequisites
 
@@ -12,13 +12,13 @@ Before using some of the below methods, we will need to obtain an API key, agent
 
 1. Navigate to TestProject API Page: [https://app.testproject.io/\#/integrations/api](https://app.testproject.io/#/integrations/api), get your API Key, or create one if you do not have one.
 
-![](.gitbook/assets/image%20%28293%29.png)
+![](../.gitbook/assets/image%20%28293%29.png)
 
    3. In the Agents tab, press on the desired agent, devices and copy the UDID, read more about how to do it [here](https://docs.testproject.io/tips-and-tricks/finding-device-udid).
 
    4. Copy the Agent ID which you can find on the Agents page [here](https://app.testproject.io/#/agents).
 
-![](.gitbook/assets/image%20%28292%29.png)
+![](../.gitbook/assets/image%20%28292%29.png)
 
 ## Get a list of connected mobile devices
 
@@ -93,10 +93,21 @@ TestProject takes care of IPA/APK installations and deployment process out of th
 
 You can reinstall the application if the 'noReset' capability is provided with the value of 'true'.
 
-Prerequisites: TestProject agent is installed, registered and in Ready state, the latest version of TestProject OpenSDK is installed, developer key is provided \(can be obtained from the integration area as described above\).
+Prerequisites: TestProject agent is installed, registered and in Ready state, the latest version of TestProject OpenSDK is installed, developer key is provided \(can be obtained from the [integration ](https://app.testproject.io/#/integrations/sdk)area as described above\).
+
+
+
+{% hint style="info" %}
+If no token is provided in the constructor of the driver, it will use the environment variable TP\__DEV\_TOKEN_
+{% endhint %}
+
+
+
+```
+from selenium.webdriver.common.by import By
+```
 
 ```text
-from selenium.webdriver.common.by import By
 from src.testproject.sdk.drivers import webdriver
 import pytest
 
@@ -112,7 +123,8 @@ def driver():
         "fullReset": "true",
     }
 
-    driver = webdriver.Remote(desired_capabilities=desired_capabilities)
+    #  Replace 'token' with your developer token https://app.testproject.io/#/integrations/sdk
+    driver = webdriver.Remote(token="kJCeheorpsyq8u4Z17k0JQyBck1qLIf5ZrynbI6t7Fk1", desired_capabilities=desired_capabilities)
 
     yield driver
 
