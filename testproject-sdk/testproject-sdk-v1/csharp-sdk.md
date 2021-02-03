@@ -13,8 +13,8 @@ This document describes the bare minimum steps to start developing tests using t
 
 ## Minimum Requirements
 
-* In order to develop TestProject C\# tests/addons, you must have .Net Core SDK version v2.1 or greater \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
-* In order to execute C\# tests/addons, you must have .Net Runtime v2.1 or greater \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
+* In order to develop TestProject C\# tests/addons, you must have .Net Core SDK version v2.1 \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\)
+* In order to execute C\# tests/addons, you must have .Net Runtime v2.1 \(Can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/2.1)\). Please note that newer framework version are not compatible with 2.1.
 * If you are developing with visual studio, you must use Visual Studio 2017 \(Can be downloaded [here](https://visualstudio.microsoft.com/downloads/)\)
 
 ## Preparations
