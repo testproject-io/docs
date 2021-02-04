@@ -452,9 +452,11 @@ Create a new file `src/main/resources/logback.xml` in your project and paste the
 configuration>
 ```
 
-## Packaging
+## Package & Upload Tests to TestProject
 
-When using the OpenSDK v2, you have to include the SDK with the final JAR you create, the easiest way to do it is by building a "fat" JAR. Also, in order to include your unit tests in the final JAR, you have to explicitly configure it during the build.
+Tests can be executed locally using the SDK, or triggered remotely from the TestProject platform. Before uploading your Tests, they should be packaged into a JAR.
+
+This JAR must contain all the dependencies \(including TestProject SDK\) and your unit tests \(JUnit / TestNG\). Since unit tests are not packaged by default, they must be included explicitly during the build.
 
 ### Gradle <a id="gradle"></a>
 
