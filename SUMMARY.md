@@ -141,8 +141,7 @@
 ## TestProject SDK
 
 * [Overview](testproject-sdk/overview/README.md)
-  * [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/overview/sdk-v1-vs-opensdk-v2/README.md)
-    * [Packaging](testproject-sdk/overview/sdk-v1-vs-opensdk-v2/packaging.md)
+  * [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/overview/sdk-v1-vs-opensdk-v2.md)
 * [SDK \(v1\)](testproject-sdk/testproject-sdk-v1/README.md)
   * [Java](testproject-sdk/testproject-sdk-v1/java-sdk.md)
   * [C\#](testproject-sdk/testproject-sdk-v1/csharp-sdk.md)
