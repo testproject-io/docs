@@ -30,7 +30,7 @@ For a Maven project, add the following to your `pom.xml` file:
 For a Gradle project, add the following to your `build.gradle` file:
 
 ```text
-implementation 'io.testproject:java-sdk:0.63.4-RELEASE'
+implementation 'io.testproject:java-sdk:0.65.3-RELEASE'
 ```
 
 ## Test Development
