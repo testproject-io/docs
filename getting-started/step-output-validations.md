@@ -27,5 +27,5 @@ Select the output field and validation type and insert the value you want to com
 | Greater than or Equals | Check if a number output is greater than or equals to the validation value |
 | Less than | Check if a number output is less than validation value |
 | Less than or Equals | Check if a number output is less than or equals to the validation value |
-| RegEx | Validate the output field by regex \(Requires entire output string to match, e.g. '^' at the start of the string and '$' at the end\) |
+| RegEx | Validate the output field by regex \(Requires entire output string to match, e.g. '^' at the start of the regex and '$' at the end\) |
 
