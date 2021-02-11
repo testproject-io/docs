@@ -2,7 +2,7 @@
 description: >-
   This document will show you how to set up, and perform various actions on
   Google Sheets and Drive using TestProject Google Actions. This can be useful
-  if you store test parameter with Google Sheets.
+  if you store test parameters with Google Sheets.
 ---
 
 # Google Actions
