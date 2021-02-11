@@ -71,6 +71,7 @@ There are many [Addons](https://addons.testproject.io/) available in TestProject
 | [Tap and Get Toast Message](https://docs.testproject.io/testproject-addons/available-addons/tap-and-get-toast-message) |
 | [Teradata Database Addon](https://docs.testproject.io/testproject-addons/available-addons/teradata-database-addon) |
 | [Get Element Color](https://docs.testproject.io/testproject-addons/available-addons/get-element-color) |
+| [Google Actions](https://docs.testproject.io/testproject-addons/available-addons/google-actions) |
 
 
 
