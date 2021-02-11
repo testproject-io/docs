@@ -124,6 +124,7 @@
   * [Bootstrap4 - Dropdown Addon](testproject-addons/available-addons/bootstrap4-dropdown-addon.md)
   * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
   * [Get Element Color](testproject-addons/available-addons/get-element-color.md)
+  * [Google Actions](testproject-addons/available-addons/google-actions.md)
 
 ## Reports
 
