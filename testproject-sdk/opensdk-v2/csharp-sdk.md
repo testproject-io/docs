@@ -18,7 +18,7 @@ To get started, you need to complete the following prerequisites checklist:
  The TestProject C\# OpenSDK is [available via NuGet](https://www.nuget.org/packages/TestProject.OpenSDK/).
 
 * Right-click the project and select `Manage NuGet Packages...`
-* Search for `TestProject SDK` and add it to your project.
+* Search for `TestProject Open SDK` and add it to your project.
 
 ## Test Development
 
