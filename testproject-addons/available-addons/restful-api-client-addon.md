@@ -23,12 +23,17 @@ There are 5 actions in this Addon:
 | uri | X | INPUT | X | X | X | X | X |
 | query |  | INPUT | X | X | X | X | X |
 | headers |  | INPUT | X | X | X | X | X |
-| body |  | INPUT |  | X | X |  | X |
-| format |  | INPUT |  | X | X |  | X |
+| body |  | INPUT | X | X | X | X | X |
+| format |  | INPUT | X | X | X | X | X |
 | jsonPath |  | INPUT | X | X | X | X | X |
 | expectedStatus |  | INPUT | X | X | X | X | X |
+| schenaPath |  | INPUT | X | X | X | X | X |
+| headerDelimiter |  | INPUT | X | X | X | X | X |
+| filePath |  | INPUT |  | X | X |  | X |
 | response |  | OUTPUT | X | X | X | X | X |
 | status |  | OUTPUT | X | X | X | X | X |
+| responseHeaders |  | OUTPUT | X | X | X | X | X |
+| jsonSchemaValidation |  | OUTPUT | X | X | X | X | X |
 
 #### Input Fields
 
@@ -108,7 +113,9 @@ There are 5 actions in this Addon:
 
 * `createFile` - This parameter is a boolean flag to indicate that a validation results output is required.
 
-  If set to `true`, and the `schemaValidationOutput` parameter is set, a file holding the validation result will be created in the provided location.
+  If set to`true`, and the `schemaValidationOutput` parameter is set, a file holding the validation result will be created in the provided location.
+
+* `filePath` - This parameter is the full path of a local file which should be sent to the designated endpoint using _**POST**_, _**PUT**_, or _**PATCH**_. if this parameter is set, the file will be sent as multipart/form-data format, you can still supply a separate body and body format to the request.
 
 #### Output Fields
 
@@ -130,14 +137,14 @@ There are 5 actions in this Addon:
 
 #### Failure Criteria
 
-All actions have several criterions that may result in failure assertion:
+All actions have several criterias that may result in failure assertion:
 
 * When `expectedStatus` does not match the actual response status:
 
   > Note: If the `expectedStatus` is not set, and the server responds with status other than 1xx, this will not be considered a failure.
 
 * When the requested node/value by `jsonPath` is not found in the response.
-* When server fails to respond.
+* When the server fails to respond.
 * Connectivity errors
 
 ## Result Description
@@ -208,6 +215,106 @@ Action result: _PASSED_
 | status | 200 | OUTPUT |
 
 Action result: _PASSED_
+
+#### Example 4: POST Request to Upload a text file to a web server using API Key in headers
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/posts | INPUT |
+| filePath | /files/users.txt | INPUT |
+| headers | Authorization=API\_KEY | INPUT |
+| response | `{"messsage":"Users updated"}` | OUTPUT |
+| status | 200 | OUTPUT |
+
+#### Example 5: GET Request to get the Upload Link which we will use in the next example to upload an APK
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://api.testproject.io/v2/projects/{project_id}/applications/{app_id}/file/upload-link | INPUT |
+| headers | Authorization=[API\_KEY](https://app.testproject.io/#/integrations/api) | INPUT |
+| jsonPath | $.url | INPUT |
+| response | URL to upload the APK/IPA to TestProject | OUTPUT |
+| status | 200 | OUTPUT |
+
+#### Example 6: PUT Request to upload an APK to TestProject using TestProject Restful API
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | URL From the previous Example | INPUT |
+| filePath | Local path to file e.g. `C:\files\application.apk` | INPUT |
+| status | 200 | OUTPUT |
+
+{% hint style="info" %}
+Files are sent as **`multipart/form data`**, additional body and body format can be supplied to the request.
+{% endhint %}
+
+#### Example 7: POST Request to confirm file upload with BODY
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://api.testproject.io/v2/projects/{project_id}/applications/{app_id}/file | INPUT |
+| headers | Authorization=[API\_KEY](https://app.testproject.io/#/integrations/api) | INPUT |
+| body | `{"fileName": "Enter-the-desired-file-name-here.apk/ipa"}` | INPUT |
+| status | 200 | OUTPUT |
+
+#### Example 8: POST Request using GraphQL
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | [https://graphql.anilist.co](https://graphql.anilist.co) | INPUT |
+| body | `{"query": "query ($id: Int) {Media(id: $id, type: ANIME) { id title {romaji english native}}}"}` | INPUT |
+| format | application/graphql | INPUT |
+| response | `{ "data": { "Media": { "id": 1, "title": { "romaji": "Cowboy Bebop", "english": "Cowboy Bebop", "native": "カウボーイビバップ" } } } }` | OUTPUT |
+| response | 200 | OUTPUT |
+
+{% hint style="info" %}
+To use GraphQL, you must supply all Mutations/Queries as a valid JSON format.
+{% endhint %}
+
+#### Example 9: POST Request with application/x-www-form-urlencoded format
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | [https://jsonplaceholder.typicode.com/posts/1](https://jsonplaceholder.typicode.com/posts/1) | INPUT |
+| body | `grant_type=password&password=test&client_id=test&username=testproject@testproject.io` | INPUT |
+| format | application/x-xxx-form-urlencoded | INPUT |
+| response | {"token":"1234"} | OUTPUT |
+| status | 200 | OUTPUT |
+
+{% hint style="info" %}
+#### `'application/x-www-form-urlencoded'`body requires to be in key=value format where each key-value pair is chained with &
+{% endhint %}
+
+#### Example 10: POST Request with API Key in Query Params
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/posts | INPUT |
+| query | `apikey=1234&userna`me=test&password=project | INPUT |
+| body | `{"postsId":"15"}` | INPUT |
+| status | 201 | OUTPUT |
+
+#### Example 11: POST Request with Basic Auth with Bearer Token
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/posts | INPUT |
+| headers | Authorization= Basic {base64encoded\)  | INPUT |
+| status | 200 | OUTPUT |
+
+{% hint style="info" %}
+To use Basic Auth, the token needs to be encoded to Base64 prior to running the step, you can easily do that using the Base64 encode action which you can see [here](https://intercom.help/testprojectio/en/articles/3844760-restful-basic-authentication-using-testproject).
+{% endhint %}
+
+#### Example 12: POST Request with Basic Auth using username and password with Raw format
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/posts | INPUT |
+| headers | `username=test,password=project` | INPUT |
+| body | `This is a test` | INPUT |
+| format | application/raw | INPUT |
+| status | 200 |  |
 
 ## Valid Schema Format
 

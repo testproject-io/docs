@@ -142,6 +142,8 @@
 ## TestProject SDK
 
 * [Overview](testproject-sdk/overview/README.md)
+  * [Getting Ready to Use an SDK](testproject-sdk/overview/getting-ready-to-use-an-sdk.md)
+  * [Drivers](testproject-sdk/overview/drivers.md)
   * [SDK \(v1\) vs. OpenSDK \(v2\)](testproject-sdk/overview/sdk-v1-vs-opensdk-v2.md)
 * [SDK \(v1\)](testproject-sdk/testproject-sdk-v1/README.md)
   * [Java](testproject-sdk/testproject-sdk-v1/java-sdk.md)
