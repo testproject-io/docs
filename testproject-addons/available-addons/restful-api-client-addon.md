@@ -290,7 +290,7 @@ To use GraphQL, you must supply all Mutations/Queries as a valid JSON format.
 | Field | Value | Input/Output |
 | :--- | :--- | :--- |
 | uri | https://jsonplaceholder.typicode.com/posts | INPUT |
-| query | `apikey=1234&userna`me=test&password=project | INPUT |
+| query | `apikey=1234&username=test&password=project` | INPUT |
 | body | `{"postsId":"15"}` | INPUT |
 | status | 201 | OUTPUT |
 
@@ -311,7 +311,7 @@ To use Basic Auth, the token needs to be encoded to Base64 prior to running the 
 | Field | Value | Input/Output |
 | :--- | :--- | :--- |
 | uri | https://jsonplaceholder.typicode.com/posts | INPUT |
-| query | `username=test,password=project` | INPUT |
+| query | `username=test&password=project` | INPUT |
 | body | `This is a test` | INPUT |
 | format | application/raw | INPUT |
 | status | 200 |  |
