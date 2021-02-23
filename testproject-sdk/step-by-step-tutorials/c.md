@@ -24,7 +24,7 @@ First, open the _File_ menu and choose _New -&gt; Project..._:
 
 ![](../../.gitbook/assets/image%20%28362%29.png)
 
-Next, select the _NUnit Test Project \(.NET Core\)_ option.
+Next, select the _SpecFlow Project_ option.
 
 > You can also build your tests with xUnit or MSTest, but we will use NUnit in this tutorial.
 
@@ -221,6 +221,11 @@ The next step is to upload our test to the TestProject platform, so we can trigg
 Before uploading our Test, we should package them into a single ZIP file. Here's how to do it:
 
 * Right-click your solution in the _Solution Explorer_ panel and select _Publish..._
+
+#### First time publishing
+
+If this is your first time publishing, create a new publishing target:
+
 * Choose _Folder_ as your publish target, and press _Next_. 
 
 ![](../../.gitbook/assets/image%20%28377%29.png)
@@ -230,12 +235,15 @@ Before uploading our Test, we should package them into a single ZIP file. Here's
 ![](../../.gitbook/assets/image%20%28372%29.png)
 
 * Change the folder your code is built in to _publish\_ and press _Finish_.
-* The publish window now has a new _FolderProfile_ target. Press _Publish_ to create this folder.
+
+#### Publish 
+
+* Press _Publish_ next to the _FolderProfile_ target to create this folder.
 
 ![](../../.gitbook/assets/image%20%28373%29.png)
 
 * Right-click your solution in the _Solution Explorer_ panel and select _Open Folder in File Explorer_.
-* Right-click the _publish_ folder and select _Send To -&gt; Compressed \(Zipped\) archive_.
+* Zip the newly created `out` folder \(right-click the _publish_ folder and select _Send To -&gt; Compressed \(Zipped\) archive\)_
 
 ### Upload
 

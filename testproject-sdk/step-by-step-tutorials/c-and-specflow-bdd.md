@@ -229,24 +229,36 @@ As you can see, because we added the _TestProject.OpenSDK.SpecFlowPlugin_ depend
 
 The next step is to upload our test to the TestProject platform, so we can trigger it remotely from there.
 
+### Package
+
 Before uploading our Test, we should package them into a single ZIP file. Here's how to do it:
 
 * Right-click your solution in the _Solution Explorer_ panel and select _Publish..._
-* Choose _Folder_ as your publish target, and press _Next_.
 
-![](../../.gitbook/assets/image%20%28357%29.png)
+#### First time publishing
+
+If this is your first time publishing, create a new publishing target:
+
+* Choose _Folder_ as your publish target, and press _Next_. 
+
+![](../../.gitbook/assets/image%20%28377%29.png)
 
 * Choose _Folder_ again, and press _Next_.
 
-![](../../.gitbook/assets/image%20%28342%29.png)
+![](../../.gitbook/assets/image%20%28372%29.png)
 
 * Change the folder your code is built in to _publish\_ and press _Finish_.
-* The publish window now has a new _FolderProfile_ target. Press _Publish_ to create this folder. 
 
-![](../../.gitbook/assets/image%20%28343%29.png)
+#### Publish 
+
+* Press _Publish_ next to the _FolderProfile_ target to create this folder.
+
+![](../../.gitbook/assets/image%20%28373%29.png)
 
 * Right-click your solution in the _Solution Explorer_ panel and select _Open Folder in File Explorer_.
-* Right-click the _publish_ folder and select _Send To -&gt; Compressed \(Zipped\) archive_.
+* Zip the newly created `out` folder \(right-click the _publish_ folder and select _Send To -&gt; Compressed \(Zipped\) archive\)_
+
+## _Upload_
 
 Now we can upload it to TestProject platform.
 
