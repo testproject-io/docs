@@ -311,7 +311,7 @@ To use Basic Auth, the token needs to be encoded to Base64 prior to running the 
 | Field | Value | Input/Output |
 | :--- | :--- | :--- |
 | uri | https://jsonplaceholder.typicode.com/posts | INPUT |
-| headers | `username=test,password=project` | INPUT |
+| query | `username=test,password=project` | INPUT |
 | body | `This is a test` | INPUT |
 | format | application/raw | INPUT |
 | status | 200 |  |
