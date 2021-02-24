@@ -1,15 +1,15 @@
 ---
-description: 'C# SDK (v1)'
+description: 'C# Legacy SDK (v1)'
 ---
 
 # C\#
 
-This repository contains code examples based on TestProject C\# SDK.
+This repository contains code examples based on TestProject C\# Legacy SDK.
 
 ## Briefing
 
 This document describes the bare minimum steps to start developing tests using the C\# .Net Core SDK.  
- TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source Selenium and Appium frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more. TestProject's C\# SDK adds several features not present in .Net Core such as Page Object support via PageFactory.
+TestProject provides a unified test automation SDK with support for Android, iOS and Web applications by utilizing the open-source Selenium and Appium frameworks. TestProject is OS agnostic and can run on Windows, Linux or Mac. It is a full stack automation framework with capabilities that allow automation test management, remote and local test execution, job scheduling, reporting dashboards, collaboration and more. TestProject's C\# SDK adds several features not present in .Net Core such as Page Object support via PageFactory.
 
 ## Minimum Requirements
 

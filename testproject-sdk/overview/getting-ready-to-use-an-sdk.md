@@ -7,5 +7,5 @@ TestProject has several powerful SDKs in different languages. Before you get sta
 * Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account. If you already have an agent installed make sure it is currently running on your machine.
 * Get a development token from [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
 
-Once you have all these prerequisites in place, you are ready to setup the SDK that you want to use. Currently TestProject supports [Java](../opensdk-v2/java-sdk.md), [Python ](../opensdk-v2/python-sdk.md)and [C\#](../opensdk-v2/csharp-sdk.md) SDKs. 
+Once you have all these prerequisites in place, you are ready to setup the SDK that you want to use. Currently TestProject supports [Java](../opensdk-v2/java-sdk.md), [Python ](../opensdk-v2/python-sdk.md)and [C\#]() SDKs. 
 

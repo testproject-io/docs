@@ -4,7 +4,7 @@ description: >-
   and C# OpenSDK's.
 ---
 
-# Using OpenSDK with Behavior Driven Development
+# Using OpenSDK with BDD
 
 Behavior driver development \(BDD\) is a software development process that encourages collaboration among developers, QA and non-technical or business participants in a software project.
 
