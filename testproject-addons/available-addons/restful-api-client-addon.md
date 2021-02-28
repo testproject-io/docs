@@ -373,7 +373,7 @@ Text in curly brackets {} represents Parameters in TestProject recorded tests
 | :--- | :--- | :--- |
 | uri | [https://jsonplaceholder.typicode.com/posts/{post\_id}](https://jsonplaceholder.typicode.com/posts/{post_id}) | INPUT |
 | headers | Authorization={api\_key} | INPUT |
-| body | { "username":"{username}", "password":"{password}"} | INPUT |
+| body | `{ "username":"{username}", "password":"{password}"}` | INPUT |
 | status | 201 | OUTPUT |
 
 ![](../../.gitbook/assets/post-2.png)
