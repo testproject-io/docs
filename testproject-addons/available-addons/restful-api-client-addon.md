@@ -133,6 +133,24 @@ There are 5 actions in this Addon:
 
   This parameter will contain the output of any violations in the JSON file according to the provided schema.
 
+## Using Parameters
+
+By using parameters in your rest API calls, you will be able to pass information between test steps like bearer tokens, API keys and server responses and create data driven tests \(utilizing CSV files\). 
+
+Parameters on rest API tests are avilbale on **any input fields.**
+
+To create/select a parameter, simply select the input field and click on Select parameter:
+
+![](../../.gitbook/assets/image%20%28383%29.png)
+
+From the Parameters menu, you can create a new parameter or select existing ones to use in your steps.
+
+{% hint style="info" %}
+Project parameters are shared across all your tests, and test variables are set per test
+{% endhint %}
+
+You will easily be able to **chain requests** and transfer data from one request to another, like shown in **Examples 13-15**, by saving the response of the POST request, we receive the URL to use in the next PUT request.
+
 ## Results
 
 #### Failure Criteria
@@ -153,11 +171,13 @@ All actions will report a message with the following information, no matter if t
 
 * Server response status \(taken from the `status` field\)
 * Response body or “No body/value was returned by the server” when it's absent.
-* Report of violations discovered using provided json schema, or a statement that none were found.
+* Report of violations discovered using provided JSON schema, or a statement that none were found.
 
 ## Examples
 
 Following TestProject platform conventions, unset parameters will be treated as nulls / empty strings and won't be used.
+
+`If the format field is empty it will take` **`application/json`** `as the default value.`
 
 #### Example 1: POST Request with body
 
@@ -314,7 +334,49 @@ To use Basic Auth, the token needs to be encoded to Base64 prior to running the 
 | query | `username=test&password=project` | INPUT |
 | body | `This is a test` | INPUT |
 | format | application/raw | INPUT |
-| status | 200 |  |
+| status | 201 | OUTPUT |
+
+{% hint style="info" %}
+#### By Parameterizing your tests, we can use previous responses as future inputs, like API keys, bearer tokens, and much more.
+{% endhint %}
+
+#### Example 13: GET Request with parameters in Headers and Query field
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/users | INPUT |
+| query | `username={username}&password={password}` | INPUT |
+| headers | `Authorization={api_key}` | INPUT |
+| response | `{"user":"Test", "ID:1}` | OUTPUT |
+| status | 200 | OUTPUT |
+
+![](../../.gitbook/assets/get.png)
+
+{% hint style="info" %}
+Text in curly brackets {} represents Parameters in TestProject recorded tests
+{% endhint %}
+
+#### Example 14: POST Request with parameters in the body field
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | https://jsonplaceholder.typicode.com/posts | INPUT |
+| body | `{ "username":"{username}", "password":"{userpassword}"}` | INPUT |
+| status | 201 | OUTPUT |
+| response | `{"message": "user created"}` | OUTPUT |
+
+![](../../.gitbook/assets/post.png)
+
+#### Example 15: POST Request with Parameters in the Body, head and URI
+
+| Field | Value | Input/Output |
+| :--- | :--- | :--- |
+| uri | [https://jsonplaceholder.typicode.com/posts/{post\_id}](https://jsonplaceholder.typicode.com/posts/{post_id}) | INPUT |
+| headers | Authorization={api\_key} | INPUT |
+| body | { "username":"{username}", "password":"{password}"} | INPUT |
+| status | 201 | OUTPUT |
+
+![](../../.gitbook/assets/post-2.png)
 
 ## Valid Schema Format
 
