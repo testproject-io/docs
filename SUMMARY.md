@@ -186,7 +186,7 @@
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
 * [Troubleshooting](tips-and-tricks/troubleshooting.md)
 * [Troubleshooting Android Device Connection Issues](tips-and-tricks/troubleshooting-android-device-connection-issues.md)
-* [Element Mangement](tips-and-tricks/element-mangement.md)
+* [Element Management](tips-and-tricks/element-mangement.md)
 * [Best Practices for Element Locators](tips-and-tricks/best-practices-for-element-locators.md)
 * [How to Deal with Dynamic Elements](tips-and-tricks/how-to-deal-with-dynamic-elements.md)
 * [Creating automation building blocks with TestProject](tips-and-tricks/creating-automation-building-blocks-with-testproject.md)

@@ -1,4 +1,4 @@
-# Element Mangement
+# Element Management
 
 Elements are a key part of test automation. There are a few ways to [find and use elements](../using-the-smart-test-recorder/finding-and-using-elements/) in TestProject. However, over time you can quickly end up with many different elements and it becomes important to be able to manage those elements well. There are ways to manage your elements in TestProject. If you open a project you can click on the elements menu option in the left navigation panel to see and manage the elements associated with that project.
 
