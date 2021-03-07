@@ -37,7 +37,7 @@ By using TestProject Restful API, we will create a curl command that will execut
 
 **Generating the Curl Command**
 
-In the API Swagger, we will scroll down to the Endpoint we wish, in this example we will use the **Run Job Endpoint** which can be found [here](https://api.testproject.io/docs/v2/#/Tests/Tests_RunTestAsync).
+In the API Swagger, we will scroll down to the Endpoint we wish, in this example we will use the **Run Job Endpoint** which can be found [here](https://api.testproject.io/docs/v2/#/Jobs/Jobs_RunJobAsync).
 
 With this Endpoint, we can execute a Test on any registered agent in the account associated with our API key.
 
