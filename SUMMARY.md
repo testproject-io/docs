@@ -211,7 +211,7 @@
 
 ## Releases
 
-* [v0.66](releases/untitled.md)
+* [v0.66](releases/v0.66.md)
 * [v0.65](releases/v0.65.md)
 * [v0.64](releases/v0.64.md)
 * [v0.63](releases/v0.63.md)
