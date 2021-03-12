@@ -218,9 +218,9 @@ Will result in:
 }
 ```
 
-Information about available browsers can be used to configure [execution settings]().
+Information about available browsers can be used to configure execution settings.
 
-> Chrome and Firefox have a headless operation mode.  When configuring [execution settings](), use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
+> Chrome and Firefox have a headless operation mode.  When configuring execution settings, use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
 
 #### Devices
 
@@ -454,7 +454,7 @@ Targets
       --device=<devices>     Target devices (multi-value)
 ```
 
-As [stated earlier]() a package can be either a single JSON or YAML file, or an archive \(ZIP\).
+As stated earlier a package can be either a single JSON or YAML file, or an archive \(ZIP\).
 
 **Settings**
 
@@ -505,7 +505,7 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --brows
 
 **Parameters**
 
-Similar to [settings](), test parameters can be overridden or provided externally.
+Similar to _settings_, test parameters can be overridden or provided externally.
 
 In order to override bundled test parameters using an external file, `-p` or `--parameters` option should be used:
 
