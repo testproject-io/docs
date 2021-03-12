@@ -4,15 +4,15 @@ description: TestProject Agent CLI (Command-Line Interface)
 
 # TestProject Agent CLI
 
-## TestProject Agent CLI
+TestProject Agent CLI is a cross operating system command line interface utility.  It is made for the execution of test packages generated using the TestProject platform.
 
-TestProject Agent CLI is a cross operating system command line interface utility.  It is made for execution of test packages generated using the TestProject platform.
+These files can be stored outside of the TestProject cloud, including in an on-premises version control such as git.
 
 ### Test Packages
 
-A package can be either a single file \(JSON or YAML\) that contains a test, and it's auxiliary \(nested and recovery\) tests, or an archive \(ZIP\) that is called a bundle and will contain additional files besides the test itself.
+A package can be either a single file \(JSON or YAML\) that contains a test, and its auxiliary \(nested and recovery\) tests, or an archive \(ZIP\) that is called a bundle and will contain additional files besides the test itself.
 
-A single file \(JSON or YAML\) doesn't contain any dependencies like apps, coded tests or addons that are used in the test.  The assumption is that they were already downloaded by the executing Agent or will be downloaded on demand from the TestProject cloud over the internet by the executing Agent before an execution.
+A single file \(JSON or YAML\) doesn't contain any dependencies like apps, coded tests, or addons that are used in the test.  The assumption is that they were already downloaded by the executing Agent or will be downloaded on demand from the TestProject cloud over the internet by the executing Agent before an execution.
 
 A package bundle, on the contrary to a single file, will contain all the dependencies \(apps, coded tests or addons\) and additional files such as settings and parameters for overriding default values and data-driven execution.
 
@@ -87,7 +87,7 @@ foo@bar:~$ testproject-agent -v
 Will print:
 
 ```text
-1.0-RELEASE
+2.0.0-RELEASE
 ```
 
 ### Commands
@@ -96,13 +96,13 @@ TestProject Agent CLI allows invocation of various features using a command para
 
 #### Start
 
-This command allows starting a local Agent.  Before CLI attempts to start the Agent, it verifies that no other Agent process is running.
+This command allows starting a local Agent. Before CLI attempts to start the Agent, it verifies that no other Agent process is running.
 
 ```text
 foo@bar:~$ testproject-agent start
 ```
 
-The command above with no options specified will start the Agent from within the CLI.  CLI process will keep running until the Agent quits or is shut down.
+The command above with no options specified will start the Agent from within the CLI. CLI process will keep running until the Agent quits or is shut down.
 
 Here's the command help:
 
@@ -331,7 +331,7 @@ When the `apps` parameter specified, CLI will list apps installed on a device.  
 foo@bar:~$ testproject-agent devices apps -d ***
 ```
 
-Assuming the tripple asterisks above are an actual UDID of a device, this command will print a list of apps installed on a device with this UDID, for example here's a printout of apps on an Android device:
+Assuming the triple asterisks above are an actual UDID of a device, this command will print a list of apps installed on a device with this UDID, for example here's a printout of apps on an Android device:
 
 ```text
 +============+=========================================+===============================================================+
@@ -458,7 +458,7 @@ As [stated earlier]() a package can be either a single JSON or YAML file, or an 
 
 **Settings**
 
-A bundle \(ZIP\) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution. While a stand-alone JSON or YAML file requires to specify these settings.
+A bundle \(ZIP\) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution.  While a stand-alone JSON or YAML file requires to specify these settings.
 
 In order to override execution settings included in a bundle or to specify execution settings for a stand-alone JSON or YAML file, the following options are available:
 
