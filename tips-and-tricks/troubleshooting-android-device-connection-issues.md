@@ -20,8 +20,13 @@ You should get a message that says you've enabled the developer options.
 * Under "Select USB configuration" select "MTP" or "File transfer"
 * Scroll down and turn the animation off for: "Window animation scale", "Transition animation scale", "Animator duration scale".
 * When you plug the USB cable to your Android device, you will be asked 2 things:
+
   * Allow access to device data -&gt; select "YES"
   * Allow USB debugging -&gt; select "OK"
+
+{% hint style="info" %}
+`In case your mirroring/recording still does not work, go to the developer options, clear trusted computers, unplug and replug.`
+{% endhint %}
 
 ## **Xiaomi/Oppo extra permissions**
 
