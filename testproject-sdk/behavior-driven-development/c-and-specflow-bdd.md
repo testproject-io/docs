@@ -284,7 +284,7 @@ Now we can execute our test, just click on the play button:
 
 ## Sources
 
-The whole solution and project including demonstrated sources are [available in GitHub](https://github.com/testproject-io/opensdk-examples/csharp).
+The whole solution and project including demonstrated sources are [available in GitHub](https://github.com/testproject-io/csharp-opensdk).
 
 ## Summary
 
