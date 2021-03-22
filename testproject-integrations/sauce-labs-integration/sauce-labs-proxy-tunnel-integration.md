@@ -92,16 +92,16 @@ What happens if you want to achieve the same functionality while utilizing the T
 ![](../../.gitbook/assets/desired-capabilities.png)
 
 {% hint style="info" %}
-You can find a tunnel's ID/Name under the "Tunnels" section in your Sauce Labs account.
+You can find a tunnel's Name under the "Tunnels" section in your Sauce Labs account.
 {% endhint %}
 
-![](../../.gitbook/assets/desired-capabilities-in-sauce.png)
+![](../../.gitbook/assets/image%20%28384%29.png)
 
 ## Run Coded Tests using TestProject OpenSDK
 
 ### **Configure Remote \(Cloud\) Driver to your Sauce Labs proxy tunnel**
 
-By default, TestProject Agent communicates with the local Selenium drivers or Appium server that are bundled within the agent application, then send automatic execution reports to TestProject Dashboard In order to initialize a remote driver for a Sauce Labs proxy tunnel, a custom capability “cloud:URL” and a “tunnelIndetifier” with a given tunnel id/name should be set.
+By default, TestProject Agent communicates with the local Selenium drivers or Appium server that are bundled within the agent application, then send automatic execution reports to TestProject Dashboard In order to initialize a remote driver for a Sauce Labs proxy tunnel, a custom capability “cloud:URL” and a “tunnelIndetifier” with a given tunnel name should be set.
 
 A basic example of running Selenium tests on remote Sauce Labs servers by utilizing TestProject’s Agent:
 
@@ -113,7 +113,7 @@ ChromeOptions chromeOptions = new ChromeOptions();
 chromeOptions.setCapability(
         TestProjectCapabilityType.CLOUD_URL,
         "https://{USERNAME}:{PASSWORD}@ondemand.us-west-1.saucelabs.com:443/wd/hub");
-chromeOptions.setCapability(“tunnelIdentifier”, “{tunnelName}”) // or “{tunnelID}”
+chromeOptions.setCapability(“tunnelIdentifier”, “{tunnelName}”)”
 ChromeDriver driver = new ChromeDriver(chromeOptions);
 ```
 
