@@ -14,3 +14,7 @@ With The OpenSDK v2, users save a bunch of time and enjoy the following benefits
 * Cross platform support for Mac, Windows, Linux and Docker.
 * Ability to store and execute tests locally on any source control tool, such as Git.
 
+## License
+
+TestProject SDKs are open source!  You can find the LICENSE file in the root directory of the source tree for each SDK repository.
+
