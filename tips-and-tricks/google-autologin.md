@@ -63,3 +63,5 @@ options.addArguments("--user-data-dir=PATH_TO/Test User Data", "profile-director
 `You can see the current profile you are using by navigating to chrome://version inside your Chromr browser.`
 {% endhint %}
 
+\`\`
+
