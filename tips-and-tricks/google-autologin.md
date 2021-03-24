@@ -37,7 +37,7 @@ impossible when we are using TestProject\) we use a copy of the profile.
 
 the Set Driver Desired Capabilities icon
 
-![](https://downloads.intercomcdn.com/i/o/262212383/4601c50e3fffc0a685840fa0/image.png)
+![](../.gitbook/assets/image%20%28398%29.png)
 
 And add
 
