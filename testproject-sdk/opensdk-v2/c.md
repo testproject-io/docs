@@ -221,6 +221,36 @@ Here's a look at the full report, where you can see the new steps, \#7 and \#11:
 
 Now that we have a working test, let's upload it to TestProject and run it from there.
 
+
+
+## Cloud and Local Report
+
+By default, the execution report is uploaded to the cloud, and a local report is created, as an HTML file in a temporary folder.
+
+At the end of execution, the report is uploaded to the cloud and SDK outputs to the console/terminal the path for a local report file:
+
+`Execution Report: {temporary_folder}/report.html`
+
+This behavior can be controlled, by requesting only a `LOCAL` or only a `CLOUD` report.
+
+> When the Agent is offline, and only a _cloud_ report is requested, execution will fail with appropriate message.
+
+Via a driver constructor:
+
+```text
+var driver = new ChromeDriver(chromeOptions: new ChromeOptions(), reportType: ReportType.LOCAL);
+```
+
+Via Driver Builder:
+
+```text
+var driver = new DriverBuilder<FirefoxDriver>()
+    .WithJobName("DriverBuilder Job")
+    .WithProjectName("TestProject C# OpenSDK")
+    .WithReportType(ReportType.LOCAL)
+    .Build();
+```
+
 ## Package & Upload Tests to TestProject
 
 The next step is to upload our test to the TestProject platform, so we can trigger it remotely from there.

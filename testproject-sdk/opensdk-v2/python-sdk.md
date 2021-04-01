@@ -159,9 +159,27 @@ Examples using explicitly specified project and job names:
 * [pytest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/pytest/explicit_report_test.py)
 * [unittest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/unittest/explicit_report_test.py)
 
-### Test reports
+## Test reports
 
-#### Automatic test reporting
+### Cloud and Local Report
+
+By default, the execution report is uploaded to the cloud, and a local report is created, as an HTML file in a temporary folder.
+
+At the end of execution, the report is uploaded to the cloud, and SDK outputs to the console/terminal the path for a local report file:
+
+Execution Report: {temporary\_folder}/report.html
+
+This behavior can be controlled, by requesting only a LOCAL or only a CLOUD report.
+
+> When the Agent is offline, and only a \_cloud\_ report is requested, execution will fail with appropriate message.
+
+Via a driver constructor:
+
+```text
+driver = webdriver.Chrome(report_type=ReportType.LOCAL)
+```
+
+### Automatic test reporting
 
 Tests are reported automatically when a test ends or when the `quit()` command is called on the driver. This behavior can be overridden or disabled \(see the [Disabling Reports]() section below\).
 
