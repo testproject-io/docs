@@ -28,7 +28,9 @@ On Mac, after you have installed the agent, you can run it by finding it in the 
 
 First navigate to TestProject app:
 
-`cd /home/`**`UserName`**`/testproject/agent/bin`
+```text
+cd /home/UserName/testproject/agent/bin
+```
 
 {% hint style="info" %}
 `Dont forget to replace UserName with the actuall user`
@@ -36,7 +38,9 @@ First navigate to TestProject app:
 
 Than start the agent in fork mode so you can use the current terminal:
 
-`./testproject-agent start -f`
+```text
+./testproject-agent start -f
+```
 
 It should look like this:
 
@@ -60,35 +64,33 @@ To register your agent to an account using a CLI on any machine you will need to
 
 Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure TestProject agent is running:
 
-First navigate to TestProject app:
+First navigate to TestProject folder:
 
-`cd /home/`**`UserName`**`/testproject/agent/bin`
-
-{% hint style="info" %}
-`Dont forget to replace UserName with the actuall user`
-{% endhint %}
+```text
+cd /home/UserName/testproject/agent/bin
+```
 
 Than start the agent in fork mode so you can use the current terminal:
 
-`./testproject-agent start -f`
-
-It should look like this:
-
-![Starting the agent on Linux terminal](../.gitbook/assets/image%20%28402%29.png)
+```text
+./testproject-agent start -f
+```
 
 Now to register your agent use this command:
 
-`./testproject-agent register -a agantName -t Your_API_Key _or_DevelopmentToken`
+```text
+./testproject-agent register -a agantName -t Your_API_Key _or_DevelopmentToken
+```
 
-Like in the image below:
+It should look like this:
 
 ![Registering the agent on Linux terminal](../.gitbook/assets/image%20%28404%29.png)
 
-`Now you can find this agent in your account.`
-
 {% hint style="info" %}
-The API key and or Development token will determine to which account this agent will register to. 
+Note: the API key and or Development token will determine to which account this agent will register to. 
 {% endhint %}
+
+#### 
 
 #### For Windows 
 
@@ -104,9 +106,11 @@ You can use the image below:
 
 ![Adding TestProject to the environment variables](../.gitbook/assets/image%20%28399%29.png)
 
-Now simply execute this command on your shell:
+Now simply execute this command on your shell or CMD:
 
-`testproject-agent register -a agentName -t Your_API_Key _or_DevelopmentToken`
+```text
+testproject-agent register -a agentName -t Your_API_Key _or_DevelopmentToken
+```
 
 It should look like this:
 
