@@ -26,15 +26,89 @@ On Mac, after you have installed the agent, you can run it by finding it in the 
 
 ### Linux
 
-On Linux you will need to run the `TestProjectAgent` command from the `testproject/agent` folder
+First navigate to TestProject app:
 
-![Starting TestProject agent on Linux](../.gitbook/assets/image%20%2857%29.png)
+`cd /home/`**`UserName`**`/testproject/agent/bin`
+
+{% hint style="info" %}
+`Dont forget to replace UserName with the actuall user`
+{% endhint %}
+
+Than start the agent in fork mode so you can use the current terminal:
+
+`./testproject-agent start -f`
+
+It should look like this:
+
+![Starting the agent on Linux terminal](../.gitbook/assets/image%20%28402%29.png)
 
 ## Register the Agent
 
+### Register via UI
+
 Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the Agents menu.
 
-![Register an Agent](../.gitbook/assets/image%20%2840%29%20%281%29.png)
+![Registering the agent from TestProject app](../.gitbook/assets/image%20%28400%29.png)
 
 You will be prompted to give your agent an alias. Put something meaningful in here like "Joe Smith's Windows laptop" as it is possible to share agents with other team members. Once you have done that you just need to click on the register button to automatically register your agent with the TestProject application, and you are ready to start using TestProject!
+
+### Register via CLI
+
+To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) or [Development Token](https://docs.testproject.io/testproject-sdk/using-testproject-scripted-tests-within-ci-cd#testproject-agent).
+
+#### For Linux
+
+Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure TestProject agent is running:
+
+First navigate to TestProject app:
+
+`cd /home/`**`UserName`**`/testproject/agent/bin`
+
+{% hint style="info" %}
+`Dont forget to replace UserName with the actuall user`
+{% endhint %}
+
+Than start the agent in fork mode so you can use the current terminal:
+
+`./testproject-agent start -f`
+
+It should look like this:
+
+![Starting the agent on Linux terminal](../.gitbook/assets/image%20%28402%29.png)
+
+Now to register your agent use this command:
+
+`./testproject-agent register -a agantName -t Your_API_Key _or_DevelopmentToken`
+
+Like in the image below:
+
+![Registering the agent on Linux terminal](../.gitbook/assets/image%20%28404%29.png)
+
+`Now you can find this agent in your account.`
+
+{% hint style="info" %}
+The API key and or Development token will determine to which account this agent will register to. 
+{% endhint %}
+
+#### For Windows 
+
+You can follow the same steps as in Linux with a few minor changes, first add TestProject agent to your environment variables to execute the following steps with ease.
+
+Head to Control Panel -&gt; All Control Panel Items -&gt; System -&gt; Advanced system settings -&gt; Advanced -&gt; Environment Variables -&gt; New -&gt; 
+
+Variable name: TestProject
+
+Variable value: C:\Program Files\TestProject Agent
+
+You can use the image below:
+
+![Adding TestProject to the environment variables](../.gitbook/assets/image%20%28399%29.png)
+
+Now simply execute this command on your shell:
+
+`testproject-agent register -a agentName -t Your_API_Key _or_DevelopmentToken`
+
+It should look like this:
+
+![Registering the agent on Windows CMD](../.gitbook/assets/image%20%28403%29.png)
 
