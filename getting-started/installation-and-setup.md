@@ -60,21 +60,15 @@ You will be prompted to give your agent an alias. Put something meaningful in he
 
 To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) or [Development Token](https://docs.testproject.io/testproject-sdk/using-testproject-scripted-tests-within-ci-cd#testproject-agent).
 
+{% hint style="info" %}
+Note: the API key and or Development token will determine to which account this agent will register to. 
+{% endhint %}
+
 #### For Linux
 
 Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure TestProject agent is running:
 
-First navigate to TestProject folder:
-
-```text
-cd /home/UserName/testproject/agent/bin
-```
-
-Than start the agent in fork mode so you can use the current terminal:
-
-```text
-./testproject-agent start -f
-```
+First make sure your TestProject agent is running you can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
 
 Now to register your agent use this command:
 
@@ -86,27 +80,11 @@ It should look like this:
 
 ![Registering the agent on Linux terminal](../.gitbook/assets/image%20%28404%29.png)
 
-{% hint style="info" %}
-Note: the API key and or Development token will determine to which account this agent will register to. 
-{% endhint %}
-
-#### 
-
 #### For Windows 
 
-You can follow the same steps as in Linux with a few minor changes, first add TestProject agent to your environment variables to execute the following steps with ease.
+First make sure your[ agent is running](https://docs.testproject.io/getting-started/installation-and-setup#windows).
 
-Head to Control Panel -&gt; All Control Panel Items -&gt; System -&gt; Advanced system settings -&gt; Advanced -&gt; Environment Variables -&gt; New -&gt; 
-
-Variable name: TestProject
-
-Variable value: C:\Program Files\TestProject Agent
-
-You can use the image below:
-
-![Adding TestProject to the environment variables](../.gitbook/assets/image%20%28399%29.png)
-
-Now simply execute this command on your shell or CMD:
+Simply execute this command on your shell or CMD:
 
 ```text
 testproject-agent register -a agentName -t Your_API_Key _or_DevelopmentToken
@@ -115,4 +93,20 @@ testproject-agent register -a agentName -t Your_API_Key _or_DevelopmentToken
 It should look like this:
 
 ![Registering the agent on Windows CMD](../.gitbook/assets/image%20%28403%29.png)
+
+If your windows does not recognize testproject-agent commands:
+
+Add TestProject agent to your environment variables
+
+Head to Control Panel -&gt; All Control Panel Items -&gt; System -&gt; Advanced system settings -&gt; Advanced -&gt; Environment Variables -&gt; New -&gt; 
+
+Variable name:`TestProject`
+
+Variable value: `C:\Program Files\TestProject Agent`
+
+You can use the image below:
+
+![Adding TestProject to the environment variables](../.gitbook/assets/image%20%28399%29.png)
+
+
 
