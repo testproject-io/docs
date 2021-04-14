@@ -33,7 +33,7 @@ cd /home/UserName/testproject/agent/bin
 ```
 
 {% hint style="info" %}
-`Dont forget to replace UserName with the actuall user`
+Don't forget to replace UserName with the actuall user
 {% endhint %}
 
 Than start the agent in fork mode so you can use the current terminal:
