@@ -50,7 +50,7 @@ It should look like this:
 
 ### Register via UI
 
-Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the Agents menu.
+Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the [Agents menu](https://app.testproject.io/#/agents).
 
 ![Registering the agent from TestProject app](../.gitbook/assets/image%20%28400%29.png)
 
