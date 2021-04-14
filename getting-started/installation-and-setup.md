@@ -82,7 +82,7 @@ It should look like this:
 
 #### For Windows 
 
-First make sure your[ agent is running](https://docs.testproject.io/getting-started/installation-and-setup#windows).
+First make sure your agent is running you can check [here](https://docs.testproject.io/getting-started/installation-and-setup#windows).
 
 Simply execute this command on your shell or CMD:
 
