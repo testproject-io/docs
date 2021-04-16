@@ -66,9 +66,9 @@ Note: the API key and or Development token will determine to which account this 
 
 #### For Linux
 
-Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure TestProject agent is running:
+Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure your agent is running.
 
-First make sure your TestProject agent is running you can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
+ you can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
 
 Now to register your agent use this command:
 
@@ -98,15 +98,13 @@ If your windows does not recognize testproject-agent commands:
 
 Add TestProject agent to your environment variables
 
-Head to Control Panel -&gt; All Control Panel Items -&gt; System -&gt; Advanced system settings -&gt; Advanced -&gt; Environment Variables -&gt; New -&gt; 
-
-Variable name:`TestProject`
+Head to Control Panel -&gt; All Control Panel Items -&gt; System -&gt; Advanced system settings -&gt; Advanced -&gt; Environment Variables -&gt; Path -&gt; New
 
 Variable value: `C:\Program Files\TestProject Agent`
 
 You can use the image below:
 
-![Adding TestProject to the environment variables](../.gitbook/assets/image%20%28399%29.png)
+![Adding test project agent to Environment Variables ](../.gitbook/assets/image%20%28405%29.png)
 
 
 
