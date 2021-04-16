@@ -68,7 +68,7 @@ Note: the API key and or Development token will determine to which account this 
 
 Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure your agent is running.
 
- you can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
+You can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
 
 Now to register your agent use this command:
 
