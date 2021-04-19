@@ -8,7 +8,7 @@ After that there is only one step left. You need to register you agent with the 
 
 ## Starting the TestProject Agent
 
-### Windows
+### Starting the agent on Windows
 
 On Windows the easiest way to run the agent is just to search for TestProject in the Windows search bar and clicking on the Agent to start it.
 
@@ -18,13 +18,13 @@ The agent will then start up on your computer and you will be able to see the st
 
 ![TestProject Status in System Tray](../.gitbook/assets/image%20%281%29%20%281%29.png)
 
-### Mac
+### Starting the agent on Mac
 
 On Mac, after you have installed the agent, you can run it by finding it in the application folder and double clicking. This will open it in the dock and you can see the options on it by right clicking 
 
 ![TestProject Agent on Mac](../.gitbook/assets/image%20%289%29.png)
 
-### Linux
+### Starting the agent on Linux
 
 First navigate to TestProject app:
 
@@ -48,7 +48,7 @@ It should look like this:
 
 ## Register the Agent
 
-### Register via UI
+### Register the agent via UI
 
 Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the [Agents menu](https://app.testproject.io/#/agents).
 
@@ -56,9 +56,13 @@ Once you have verified that the agent is running, you can go into the TestProjec
 
 You will be prompted to give your agent an alias. Put something meaningful in here like "Joe Smith's Windows laptop" as it is possible to share agents with other team members. Once you have done that you just need to click on the register button to automatically register your agent with the TestProject application, and you are ready to start using TestProject!
 
-### Register via CLI
+### Register the agent via CLI
 
-To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) or [Development Token](https://docs.testproject.io/testproject-sdk/using-testproject-scripted-tests-within-ci-cd#testproject-agent).
+{% hint style="success" %}
+This method can be used for remote agent registration.
+{% endhint %}
+
+To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) or ****a [Development Token](https://docs.testproject.io/testproject-sdk/using-testproject-scripted-tests-within-ci-cd#testproject-agent).
 
 {% hint style="info" %}
 Note: the API key and or Development token will determine to which account this agent will register to. 
