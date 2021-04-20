@@ -86,15 +86,15 @@ services:
       - chrome
       - firefox
     environment:
-      TP_API_KEY: <your_api_key>
+      TP_API_KEY: "your_api_key"
       TP_AGENT_ALIAS: "Docker Agent"
-      TP_JOB_ID: <job_id>
+      TP_JOB_ID: "job_id"
       TP_JOB_PARAMS: '"jobParameters" : { "browsers": [ "chrome", "firefox" ] }'
       CHROME: "chrome:4444"
       FIREFOX: "firefox:4444"
   chrome:
     image: selenium/standalone-chrome
-    Volumes:
+    volumes:
       - /dev/shm:/dev/shm
   firefox:
     image: selenium/standalone-firefox
