@@ -629,7 +629,7 @@ For example, command above will list available browsers on the Agent at `10.0.0.
 Sometimes, it might be necessary to allow an extended timeout connecting to the Agent.  This can be done using the `-C` or `--connect-timeout` option, specified in _seconds_, as shown below:
 
 ```text
-foo@bar:~$ testproject-agent --connect-timeout 10 run MyFirstTestBackup.zip
+foo@bar:~$ testproject-agent --connect-timeout 10 browsers list
 ```
 
 The default value is _10_ seconds, and using this option can be changed.
