@@ -4,15 +4,15 @@ description: TestProject Agent CLI (Command-Line Interface)
 
 # TestProject Agent CLI
 
-TestProject Agent CLI is a cross operating system command line interface utility.  It is made for the execution of test packages generated using the TestProject platform.
+TestProject Agent CLI is a cross operating system command line interface utility.  It is made for execution of test packages generated using the TestProject platform.
 
-These files can be stored outside of the TestProject cloud, including in an on-premises version control such as git.
+Exported test packages are stand alone textual YAML files. These file can be stores outside of the TestProject cloud, including in an on-premises version control such as git.
 
 ### Test Packages
 
-A package can be either a single file \(JSON or YAML\) that contains a test, and its auxiliary \(nested and recovery\) tests, or an archive \(ZIP\) that is called a bundle and will contain additional files besides the test itself.
+A package can be either a single YAML file that contains a test, and its auxiliary \(nested and recovery\) tests, or an archive \(ZIP\) that is called a bundle and will contain additional files besides the test itself.
 
-A single file \(JSON or YAML\) doesn't contain any dependencies like apps, coded tests, or addons that are used in the test.  The assumption is that they were already downloaded by the executing Agent or will be downloaded on demand from the TestProject cloud over the internet by the executing Agent before an execution.
+A single YAML file doesn't contain any dependencies like apps, coded tests, or addons that are used in the test.  The assumption is that they were already downloaded by the executing Agent or will be downloaded on demand from the TestProject cloud over the internet by the executing Agent before an execution.
 
 A package bundle, on the contrary to a single file, will contain all the dependencies \(apps, coded tests or addons\) and additional files such as settings and parameters for overriding default values and data-driven execution.
 
@@ -34,9 +34,9 @@ package.zip
 │   ├── {test-guid}.{jar/dll/zip}
 │   ├── {test-guid}.{jar/dll/zip}
 │   ├── {test-guid}.{jar/dll/zip}
-├── package.{json/yaml}
-├── project-parameters.{json/yaml}
-├── settings.{json/yaml}
+├── package.{yaml}
+├── project-parameters.{yaml}
+├── settings.{yaml}
 └── test-parameters.csv
 ```
 
@@ -65,7 +65,11 @@ foo@bar:~$ testproject-agent help
 Will print:
 
 ```text
-Usage: testproject-agent [-v] [-a=<agent>] [COMMAND]
+Usage: testproject-agent [-hv] [-A=<agent>] [-C=<grpcTimeout>] [COMMAND]
+  -A, --agent=<agent>   Target Agent (host:port)
+  -C, --connect-timeout=<grpcTimeout>
+
+  -h, --help            Print usage information.
   -v, --version         Print version information and exit
 Commands:
   start     Starts the Agent
@@ -75,7 +79,6 @@ Commands:
   devices   List and query available devices
   validate  Inspects and validates an execution package file(s)
   run       Runs an execution package file(s)
-  help      Displays help information about the specified command
 ```
 
 Running it with the `-v` or `--version` option will print the TestProject Agent CLI version, e.g.
@@ -107,22 +110,47 @@ The command above with no options specified will start the Agent from within the
 Here's the command help:
 
 ```text
-foo@bar:~$ testproject-agent -h
-
-Usage: testproject-agent start [-fhjsV] [-d=<dataPath>]
+Usage: testproject-agent start [-fhjsV] [-A=<agent>] [-C=<grpcTimeout>]
+                               [-d=<dataPath>] [--grpc-address=<grpcAddress>]
+                               [--rest-address=<restAddress>]
 Starts the Agent
+  -A, --agent=<agent>   Target Agent (host:port)
+  -C, --connect-timeout=<grpcTimeout>
+                        Connection timeout in seconds
   -d, --data-path=<dataPath>
-                   Path to Agent's data folder
-  -f, --fork       Fork current process and exit after Agent is started
-  -h, --help       Show this help message and exit.
-  -j, --json       Change default output format to JSON
-  -s, --headless   Run Agent headless (do not show system tray icon)
-  -V, --version    Print version information and exit.
+                        Path to Agent's data folder
+  -f, --fork            Fork current process and exit after Agent is started
+      --grpc-address=<grpcAddress>
+                        Agent's spawned gRPC server address (host:port)
+  -h, --help            Show this help message and exit.
+  -j, --json            Change default output format to JSON
+      --rest-address=<restAddress>
+                        Agent's REST API address (host:port)
+  -s, --headless        Run Agent headless (do not show system tray icon)
+  -V, --version         Print version information and exit.
 ```
 
 **Fork**
 
 Using the `-f` or `--fork` option CLI process can be forked when the Agent process is started.  In this mode, no STD will be attached and CLI will not wait for the Agent to exit.  This might be useful in CI / CD pipelines and various configurations.
+
+**External Connectivity**
+
+By default, Agent starts its gRPC and Web servers, binding them to localhost.  Starting from Agent version `2.2.0`, to allow external connectivity for the CLI or the SDK incoming requests, additional parameters should be used:
+
+* Using `--grpc-address`, Agent can be instructed for binding its gRPC to other host and port.
+* Using `--rest-address`, Agent can be instructed for binding its Web Server to other hosts and port.
+
+```text
+foo@bar:~$ testproject-agent start --grpc-address 10.0.0.2:65000 --rest-address 0.0.0.0:65001
+```
+
+Command above will start the Agent, instructing it for binding its:
+
+* gRPC server to a specific IP `10.0.0.2` and port `65000`
+* Web server to all the available interfaces on the machine it's running on, and port `65001`
+
+This way, CLI can communicate with the started Agent via `10.0.0.2:65000`,  and SDK can communicate with the Agent using any of the available hosts and port `65001`.
 
 #### Connect
 
@@ -151,9 +179,13 @@ Here's the command usage help:
 ```text
 foo@bar:~$ testproject-agent register --help
 
-Usage: testproject-agent register [-hV] -a=<alias> -t=<token>
+Usage: testproject-agent register [-hV] -a=<alias> [-A=<agent>]
+                                  [-C=<grpcTimeout>] -t=<token>
 Registers an Agent using provided API or Development token
   -a, --alias=<alias>   Alias to use when naming the Agent
+  -A, --agent=<agent>   Target Agent (host:port)
+  -C, --connect-timeout=<grpcTimeout>
+                        Connection timeout in seconds
   -h, --help            Show this help message and exit.
   -t, --token=<token>   Token to use for registration
   -V, --version         Print version information and exit.
@@ -218,9 +250,9 @@ Will result in:
 }
 ```
 
-Information about available browsers can be used to configure execution settings.
+Information about available browsers can be used to configure [execution settings]().
 
-> Chrome and Firefox have a headless operation mode.  When configuring execution settings, use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
+> Chrome and Firefox have a headless operation mode.  When configuring [execution settings](), use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
 
 #### Devices
 
@@ -231,18 +263,22 @@ Here's a usage help printout:
 ```text
 foo@bar:~$ testproject-agent devices list --help
 
-Usage: testproject-agent devices list [-hjV] [--android | --ios]
-       [--physical | --virtual]
+Usage: testproject-agent devices list [-hjV] [-A=<agent>] [-C=<grpcTimeout>]
+                                      [--android | --ios] [--physical |
+                                      --virtual]
 List available devices
-  -h, --help       Show this help message and exit.
-  -j, --json       Change default output format to JSON
-  -V, --version    Print version information and exit.
+  -A, --agent=<agent>   Target Agent (host:port)
+  -C, --connect-timeout=<grpcTimeout>
+                        Connection timeout in seconds
+  -h, --help            Show this help message and exit.
+  -j, --json            Change default output format to JSON
+  -V, --version         Print version information and exit.
 Mobile Platform
-      --android    List only Android devices
-      --ios        List only iOS devices
+      --android         List only Android devices
+      --ios             List only iOS devices
 Device Type
-      --physical   List only physical devices
-      --virtual    List only virtual (emulator or simulator) devices
+      --physical        List only physical devices
+      --virtual         List only virtual (emulator or simulator) devices
 ```
 
 **List**
@@ -379,7 +415,7 @@ foo@bar:~$ testproject-agent devices apps -d *** --json
 This command inspects the contents of a backup package or bundle, validates it, and prints basic details about it:
 
 ```text
-foo@bar:~$ testproject-agent validate backup.json
+foo@bar:~$ testproject-agent validate backup.yaml
 ```
 
 Running the command shown above will print similar details:
@@ -406,7 +442,7 @@ Tests
 Same data can be presented as a JSON if the `--json` the option is used:
 
 ```text
-foo@bar:~$ testproject-agent validate backup.json --json
+foo@bar:~$ testproject-agent validate backup.yaml --json
 ```
 
 Will output similar details:
@@ -454,13 +490,13 @@ Targets
       --device=<devices>     Target devices (multi-value)
 ```
 
-As stated earlier a package can be either a single JSON or YAML file, or an archive \(ZIP\).
+As [stated earlier]() a package can be either a single YAML file, or an archive \(ZIP\).
 
 **Settings**
 
-A bundle \(ZIP\) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution.  While a stand-alone JSON or YAML file requires to specify these settings.
+A bundle \(ZIP\) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution.  While a stand-alone YAML file requires to specify these settings.
 
-In order to override execution settings included in a bundle or to specify execution settings for a stand-alone JSON or YAML file, the following options are available:
+In order to override execution settings included in a bundle or to specify execution settings for a stand-alone YAML file, the following options are available:
 
 * `-s` or `--settings` should be used to provide an external setting file.
 * `--browser` or `--device` to provide a list of target browsers or devices as command arguments.
@@ -497,7 +533,7 @@ The command above will override bundled settings and use provided list of browse
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --device *** --device ***
 ```
 
-Command arguments can also be used to provide settings for _unbundled_ files such as stand-alone JSON or YAML:
+Command arguments can also be used to provide settings for _unbundled_ files such as stand-alone YAML:
 
 ```text
 foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --browser EDGE
@@ -505,7 +541,7 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --brows
 
 **Parameters**
 
-Similar to _settings_, test parameters can be overridden or provided externally.
+Similar to [settings](), test parameters can be overridden or provided externally.
 
 In order to override bundled test parameters using an external file, `-p` or `--parameters` option should be used:
 
@@ -513,7 +549,7 @@ In order to override bundled test parameters using an external file, `-p` or `--
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --parameters parameters.csv
 ```
 
-The same syntax should be used to supply parameters values for an _unbundled_ stand-alone JSON or YAML backup files:
+The same syntax should be used to supply parameters values for an _unbundled_ stand-alone YAML backup files:
 
 ```text
 foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --parameters parameters.csv
@@ -523,7 +559,28 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --parameters parameters.
 
 Following an execution, a local report generated.  By default, it will be created under Agent's data folder, inside `reports` folder.
 
-To specify a different location, `-o` or `--output-path` parameter can be used:
+Running the following command:
+
+```text
+foo@bar:~$ testproject-agent run MyFirstTestBackup.zip
+```
+
+Will produce a similar output:
+
+```text
+Executing target 1/1: [Chrome (Headless) 88.0.4324.192]
+Tests 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
+Steps 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
+Execution Report Path: /Users/testproject/Desktop/{TIMESTAMP}.html
+Execution Report URL: http://localhost:8585/api/report/{TIMESTAMP}.html
+Execution is complete.
+```
+
+Notice the _Execution Report Path_ and _Execution Report URL_ log lines.  URL provided might be useful in combination with the `-A` or `--agent` parameter that is used to specify a remote Agent.  Using this URL, a report that is generated by the remote Agent can be retrieved from the remote machine.
+
+**Custom Report Location**
+
+To specify a different location for the report file, `-o` or `--output-path` parameter can be used:
 
 ```text
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip -o ~/Desktop
@@ -535,9 +592,11 @@ the command above will run `MyFirstTestBackup.zip` bundle and generate a report 
 Executing target 1/1: [Chrome (Headless) 88.0.4324.192]
 Tests 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
 Steps 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
-Execution Report: /Users/testproject/Desktop/{GUID}.html
+Execution Report Path: /Users/testproject/Desktop/{TIMESTAMP}.html
 Execution is complete.
 ```
+
+> Specifying a custom report file location will result in no report URL link appearing in logs.
 
 In the example above, the report file created in `/Users/testproject/Desktop/MyFirstTest-{TIMESTAMP}.html`
 
@@ -548,6 +607,30 @@ Execution progress is represented using progress bars by default.  For consoles 
 > Progress does **not** indicate steps results such as passed or failed, but only a periodic indication of the execution advancement. Therefore, when using the `--plain` option, the same step might appear more than once or do not appear at all if execution advances too quickly.
 
 It is also possible that when using progress bars, it will not reach 100% if the test fails on one of the steps before reaching the end. To inspect the actual execution results, refer to the report file generated a the end of the execution.
+
+#### Global Options
+
+Starting from Agent version `2.2.0`, there are several global options that can be used with all the commands that interact with an Agent.  For example, `connect`, `devices`, `browsers`, etc.
+
+**Remote Agent**
+
+By default, CLI uses the local Agent, running on the same machine where the CLI is running.  Using the `-A` or `--agent` option, allows targeting a remote Agent, in the same network, on a different machine:
+
+```text
+foo@bar:~$ testproject-agent --agent 10.0.0.2:9999 run MyFirstTestBackup.zip
+```
+
+Command above will run `MyFirstTestBackup.zip` bundle on a remote Agent at `10.0.0.2:9999`.  The accepted format for the target Agent address is `{HOST}:{PORT}`.
+
+**Connection Timeout**
+
+Sometimes, it might be necessary to allow an extended timeout connecting to the Agent.  This can be done using the `-C` or `--connect-timeout` option, specified in _seconds_, as shown below:
+
+```text
+foo@bar:~$ testproject-agent --connect-timeout 10 run MyFirstTestBackup.zip
+```
+
+The default value is _10_ seconds, and using this option can be changed.
 
 ## Summary
 
