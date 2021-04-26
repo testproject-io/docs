@@ -617,10 +617,12 @@ Starting from Agent version `2.2.0`, there are several global options that can b
 By default, CLI uses the local Agent, running on the same machine where the CLI is running.  Using the `-A` or `--agent` option, allows targeting a remote Agent, in the same network, on a different machine:
 
 ```text
-foo@bar:~$ testproject-agent --agent 10.0.0.2:9999 run MyFirstTestBackup.zip
+foo@bar:~$ testproject-agent --agent 10.0.0.2:9999 browsers list
 ```
 
-Command above will run `MyFirstTestBackup.zip` bundle on a remote Agent at `10.0.0.2:9999`.  The accepted format for the target Agent address is `{HOST}:{PORT}`.
+For example, command above will list available browsers on the Agent at `10.0.0.2:9999`.  The accepted format for the target Agent address is `{HOST}:{PORT}`.
+
+> Running packages on a remote Agent, is currently not supported.
 
 **Connection Timeout**
 
