@@ -16,6 +16,10 @@ Type in your team member's email address and click **Next**. You will be present
 
 That's it! Your team member will get an email with a link to join your account, and can complete the process by clicking that link to create a password to log in.
 
+{% hint style="info" %}
+Getting this error message: "This email already in use"? Please follow any of [these 3 options](https://intercom.help/testprojectio/en/articles/3572408-can-t-add-a-team-member-to-my-account-because-the-email-is-already-in-use) or reach out to support@testproject.io
+{% endhint %}
+
 ## Sharing Tests
 
 In order to share tests with someone, go to that test in the project viewer and click on the menu item beside it. You can then choose the **Share Test** option.
