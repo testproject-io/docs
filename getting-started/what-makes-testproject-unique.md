@@ -12,6 +12,10 @@ It doesn't stop there though. The Smart Recorder also has best in class support 
 
 As any test automation engineer will tell you, UI automation often requires coding in wait times, and as you might have guessed, TestProject also takes care of this problem! **With built in Adaptive-wait technology it automatically handles deviations in web application loading times**. No more hard coding in wait times and slowing down tests. 
 
+TestProject also supports what we call the **hybrid cloud.**  This means that you can record, save and run tests locally or on premise if you want to have full control of your data, but you can also seamlessly record save and run test in our cloud offering as well.  It is as simple as clicking a button to choose which way you want to do it. There are no string attached. You get to pick which way works for you and your company. 
+
+Modern testing needs to happen continuously. Modern software systems have frequent builds and having good tests to run on those builds is important. This is why TestProject supports integration with CI systems like Jenkins, TeamCity and CircleCI. TestProject also has a **CLI Agent.** This means that you can execute test packages generated with the TestProject platform from anywhere you want. You can integrate directly into a CI system, run locally or on any machine in your test lab. This gives you the maximum possible flexibilty in running your tests. 
+
 Our mission is to create a powerful and collaborative environment that the entire test automation community can use without any barriers, including the barrier of cost. We believe in the importance  of test automation and want to make sure that no one is prevented from using our tool and so we provide a first of its kind in the test automation world. A SaaS test automation framework that is **free forever** for anyone to use.  
 ****
 

@@ -8,6 +8,7 @@
 * [What Makes TestProject Unique](getting-started/what-makes-testproject-unique.md)
 * [Using AI to Improve Testing](getting-started/using-ai-to-improve-testing.md)
 * [Creating an Account](getting-started/creating-an-account.md)
+* [Collaboration and Sharing](getting-started/collaboration-and-sharing.md)
 * [Installation and Setup](getting-started/installation-and-setup.md)
 * [Supported Environments](getting-started/supported-environments.md)
 * [Getting started with iOS testing](getting-started/getting-started-with-ios-testing/README.md)
