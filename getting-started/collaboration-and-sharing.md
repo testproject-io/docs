@@ -1,6 +1,6 @@
 # Collaboration and Sharing
 
-There are several ways to collaborate within TestProject. If you want to work closely with teammates, you can invite them to your account so that you can all collaborate together. You can also take a more targeted approach and just share a particular test with people. 
+There are several ways to collaborate within TestProject. If you want to work closely with teammates, you can invite them to your account so that you can all collaborate together. You can also take a more targeted approach and just share a particular test with people.
 
 ## Inviting Teammates to Your Account
 
