@@ -4,7 +4,7 @@ description: TestProject SDK For Addons
 
 # Creating an Addon
 
-This artcle covers getting started with creating addons using the Java SDK. You can also create addons with the C\# SDK as well. You can find information on how to do that in the C[\# SDK documentation](../../testproject-sdk/testproject-sdk-v1/csharp-sdk.md#addon-development).
+This article covers getting started with creating addons using the Java SDK.
 
 ## Getting Started
 
