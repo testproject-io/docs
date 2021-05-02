@@ -10,3 +10,5 @@ There are many other addons available as well, so if you are looking for a parti
 
 ![Addons Menu](../.gitbook/assets/image%20%2879%29%20%281%29.png)
 
+You can also very easily create your own addons as well if none of the shared addons provide the actions you are interested in. Check out how to get started with creating addons [here ](develop-an-addon/)in the documentation.
+
