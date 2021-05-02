@@ -2,7 +2,7 @@
 
 ## Use cases
 
-* Parallel test's execution.
+* Parallel tests execution.
 * Setup many agents in seconds.
 * Test different browser versions.
 * Save time in the execution of your test suites. 
@@ -29,7 +29,7 @@ The TestProject Agent will automatically detect the Chrome & Firefox containers.
 
 By setting the `TP_API_KEY` environment variable we instruct the Agent to automatically register TestProject Agent. The API key can be created in the TestProject Web Application \(as described [here](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api)\).
 
-1. For enhanced security, it's recommended to use a Kubernetes secrets for setting the TP\_API\_KEY.  Create file '.secret' with `TP_API_KEY`.  Then create the `testproject-secrets` as following: 
+1. For enhanced security, it's recommended to use Kubernetes secrets for setting the TP\_API\_KEY.  Create file '.secret' with `TP_API_KEY`.  Then create the `testproject-secrets` as following: 
 
 ```text
 kubectl create secret generic testproject-secrets --from-literal "TP_API_KEY=$(cat .secret)"
@@ -237,13 +237,13 @@ spec:
 cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-2/g" | sed "s/testproject-agent/testproject-agent-2/g" | kubectl apply -f - ;
 ```
 
-* As result, You will have 2 TestProject agents: 
-  * the first one from the firstly run with default parameters bring up the latest Firefox and Chrome
-  * the second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent` 
+* As result, You will have 2 TestProject Agents: 
+  * The first one from the firstly run with default parameters bring up the latest Firefox and Chrome
+  * The second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent` 
 
 ![](../.gitbook/assets/2021-04-26-10_17_30-testproject.png)
 
-## Test different browsers versions
+## Test different browser versions
 
 * The following  will bring up an additional TestProject agent named `My First k8s Agent-3`
 
@@ -253,7 +253,7 @@ cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-2/g" | 
 cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-3/g" | sed "s/testproject-agent/testproject-agent-3/g" |  sed "s/name: firefox/name: firefox-3/g" | sed "s/selenium\/standalone-firefox/selenium\/standalone-firefox:86.0/g" | kubectl apply -f - ;
 ```
 
-* As result, You will have 3 TestProject agents: 
+* As result, you will have 3 TestProject Agents: 
   * the first one `My First k8s Agent` from the firstly run with default parameters and the latest Firefox and Chrome
   * the second `My First k8s Agent-2` running with default parameters and the latest Firefox and Chrome
   * the third `My First k8s Agent-3` that work against the latest Chrome but Firefox:86.0
