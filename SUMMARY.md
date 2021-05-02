@@ -28,6 +28,7 @@
 * [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
 * [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
 * [TestProject Agent in Docker](testproject-agents/testproject-agent-in-docker.md)
+* [TestProject Agent on Kubernetes](testproject-agents/testproject-agent-on-kubernetes.md)
 * [TestProject Agent CLI](testproject-agents/testproject-agent-cli.md)
 * [Silent Deployment](testproject-agents/silent-deployment.md)
 
