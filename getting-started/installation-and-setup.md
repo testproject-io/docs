@@ -1,3 +1,7 @@
+---
+description: 'Download, install, start, and register your agent, remote registration.'
+---
+
 # Installation and Setup
 
 Once you have [created an account](creating-an-account.md) with TestProject you just need to follow a few simple steps to get setup and ready for testing.  TestProject works on almost any platform, with the install of a single agent.
