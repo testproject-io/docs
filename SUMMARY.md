@@ -222,6 +222,7 @@
 
 ## Releases
 
+* [v2.3.0](releases/v2.3.0.md)
 * [v2.0](releases/v2.0.md)
 * [v0.66](releases/v0.66.md)
 * [v0.65](releases/v0.65.md)
