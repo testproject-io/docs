@@ -6,7 +6,7 @@ From a browser's perspective, an iframe, or inline frame, is an html document em
 
 When most test automation framework are looking for elements on a page, they will only look for the element in the current document. This means that if the element you want is inside of an iframe, it won't find it since that iframe is considered to be a separate document. 
 
-TestProject's Smart Recorder, on the other hand can deal with iFrames seamlessly. Simply click through you test scenario as you usally would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly. 
+TestProject's Smart Recorder, on the other hand, can deal with iFrames seamlessly. Simply click through your test scenario as you usually would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly. 
 
 If you are still using the old test recorder in TestProject, you might need to manually create steps that navigate you into the iFrame.  
 
