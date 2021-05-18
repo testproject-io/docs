@@ -6,7 +6,7 @@ From a browser's perspective, an iframe, or inline frame, is an html document em
 
 When most test automation framework are looking for elements on a page, they will only look for the element in the current document. This means that if the element you want is inside of an iframe, it won't find it since that iframe is considered to be a separate document. 
 
-TestProject's Smart Recorder, on the other hand can deal with iFrames seamlessly. Simply click throuhgh you test scenario as you usally would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly. 
+TestProject's Smart Recorder, on the other hand can deal with iFrames seamlessly. Simply click through you test scenario as you usally would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly. 
 
 If you are still using the old test recorder in TestProject, you might need to manually create steps that navigate you into the iFrame.  
 
@@ -18,11 +18,11 @@ Start up the test recorder and for this example let's see if we can type somethi
 
 ### Navigate to iFrame
 
-In order to actually interact with element inside the iframe, you will first need to tell TestProject to navigate into that iframe. In order to do this you can use the Switch to iFrame action. This action is available through the Element Extensions addon. More information on installing and using addons can be found in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md). 
+In order to actually interact with an element inside the iframe, you will first need to tell TestProject to navigate into that iframe. In order to do this you can use the Switch to iFrame action. This action is available through the Element Extensions addon. More information on installing and using addons can be found in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md). 
 
 ![iFrame action from Element Extensions Addon](../.gitbook/assets/image%20%2899%29.png)
 
-This action, will allow you to navigate into the iframe, but in order to do that you will need to let it know what element on the page is the iframe you are interested. You can find the iframe id on the page using the Element Explorer.
+This action, will allow you to navigate into the iframe, but in order to do that you will need to let it know what element on the page is the iframe in which you are interested. You can find the iframe id on the page using the Element Explorer.
 
 ![iframe ID in Element Explorer](../.gitbook/assets/image%20%2818%29.png)
 
@@ -30,7 +30,7 @@ Once you have found the ID you can close the element explorer and return to the 
 
 ![Add a New Element](../.gitbook/assets/image%20%28132%29%20%281%29.png)
 
-Name the element to something like iframe and set the element type to be a generic web element. For the locator, use ID and then in text box type in the ID you found in the Element Explorer.
+Name the element to something like iframe and set the element type to be a generic web element. For the locator, use ID and then in the text box type in the ID you found in the Element Explorer.
 
 ![Create iframe element](../.gitbook/assets/image%20%2895%29%20%281%29.png)
 
@@ -40,11 +40,11 @@ You can then click on the Create button to create this element and add it your t
 
 ### Locate Elements in an iFrame
 
-Now that you are inside the iFrame you can start to interact with elements on this part of the page. The test recorder still won't record the clicks and interactions on the screen, but we can easily find the elements we wan using the Element Explorer. 
+Now that you are inside the iFrame you can start to interact with elements on this part of the page. The test recorder still won't record the clicks and interactions on the screen, but we can easily find the elements we want using the Element Explorer. 
 
 ![iFrame Element](../.gitbook/assets/image%20%28117%29%20%282%29.png)
 
-You can see that the id of the is tinymce and then from the menu for this element we can select Actions and then Clear Contents to add a step that will clear the contents of the cell.
+You can see that the id of the element is tinymce and then from the menu for this element we can select Actions and then Clear Contents to add a step that will clear the contents of the cell.
 
 ![Clear Contents Action](../.gitbook/assets/image%20%28134%29%20%281%29.png)
 
