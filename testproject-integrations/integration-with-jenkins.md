@@ -1,6 +1,6 @@
 # Jenkins Integration
 
-The [TestProject plugin for Jenkins](https://plugins.jenkins.io/testproject) provides an easy way to execute TestProject jobs, update applications, data sources, project parameter, test packagesת generate a configuration for the TestProject Agent and more. The plugin supports both **FreeStyle** and **Pipeline** jobs.
+The [TestProject plugin for Jenkins](https://plugins.jenkins.io/testproject) provides an easy way to execute TestProject jobs, update applications, data sources, project parameters, test packages, generate a configuration for the TestProject Agent and more. The plugin supports both **FreeStyle** and **Pipeline** jobs.
 
 ## **Prerequisites**
 
