@@ -6,7 +6,7 @@ The TestProject Trends chart let's you see how various [jobs](../../schedule-and
 
 The Trends chart can be found on the same page as the targets chart by clicking on the third dot under the charts view.
 
-![Trends and Target Chart Location](../../.gitbook/assets/image%20%28116%29%20%281%29.png)
+![Trends and Target Chart Location](../../.gitbook/assets/image%20%28116%29%20%281%29%20%281%29.png)
 
 These charts are available as a high level summary of all tests run or to summarize each project that you have setup. 
 

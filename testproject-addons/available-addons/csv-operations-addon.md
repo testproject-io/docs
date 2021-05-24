@@ -58,3 +58,11 @@ This action requires the following inputs:
 * `filePath` - Path to the CSV file you wish to read \(e.g. C:\Test\test.csv\)
 * `column`- the index other the column to read \(starts from 1\)
 
+As of version **4.0** of the addon, you are able to specify the **encoding** of the CSV file being read and written to with an additional optional field.
+
+* `fileEncoding`
+
+By default, the encoding used will be UTF-8 and supports others such as UTF-8, UTF-16, UTF-16LE, UTF-16BE, US-ASCII, ISO-8859-1etc.
+
+
+

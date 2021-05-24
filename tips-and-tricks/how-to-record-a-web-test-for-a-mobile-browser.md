@@ -43,7 +43,7 @@ To make sure we record a Web Test which will run well on the Mobile Device resol
 1. In the Recorder window, click on F12 to open Chrome Developer Tools.
 2. In the Developer Tools Window, click on 'Toggle Device Toolbar'
 
-![](../.gitbook/assets/image%20%28244%29.png)
+![](../.gitbook/assets/image%20%28246%29.png)
 
 The screen will then resize to a default resolution, we can adjust the resolution to be the one we need for the Specific devices we will be running the Test on.
 

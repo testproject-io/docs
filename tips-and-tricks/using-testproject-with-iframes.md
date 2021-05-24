@@ -4,21 +4,21 @@ From a browser's perspective, an iframe, or inline frame, is an html document em
 
 ## Finding Elements
 
-When most test automation framework are looking for elements on a page, they will only look for the element in the current document. This means that if the element you want is inside of an iframe, it won't find it since that iframe is considered to be a separate document. 
+When most test automation framework are looking for elements on a page, they will only look for the element in the current document. This means that if the element you want is inside of an iframe, it won't find it since that iframe is considered to be a separate document.
 
-TestProject's Smart Recorder, on the other hand, can deal with iFrames seamlessly. Simply click through your test scenario as you usually would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly. 
+TestProject's Smart Recorder, on the other hand, can deal with iFrames seamlessly. Simply click through your test scenario as you usually would and when you run the test, TestProject's AI will handle the iframe switch for you seamlessly.
 
-If you are still using the old test recorder in TestProject, you might need to manually create steps that navigate you into the iFrame.  
+If you are still using the old test recorder in TestProject, you might need to manually create steps that navigate you into the iFrame.
 
 ## iFrame Example \(For Legacy Test Recorder\)
 
-If you have not yet setup a project and test, you can learn how to create them in the documentation section on [web testing](../using-the-smart-test-recorder/web-testing/). For this example, set up a test that navigates to this URL: [http://the-internet.herokuapp.com/iframe](http://the-internet.herokuapp.com/iframe) . This is an example page that we can use to practice working with iframes. 
+If you have not yet setup a project and test, you can learn how to create them in the documentation section on [web testing](../using-the-smart-test-recorder/web-testing/). For this example, set up a test that navigates to this URL: [http://the-internet.herokuapp.com/iframe](http://the-internet.herokuapp.com/iframe) . This is an example page that we can use to practice working with iframes.
 
 Start up the test recorder and for this example let's see if we can type something in the editor text box. Normally with the test recorder you can just click on the element on the page you want to interact with and the test recorder will add a test step with that element and action. However, in this case the editor text box is inside an iframe so \(if you are using the legacy recorder\) when you try to click on it you will see that no test step is added.
 
 ### Navigate to iFrame
 
-In order to actually interact with an element inside the iframe, you will first need to tell TestProject to navigate into that iframe. In order to do this you can use the Switch to iFrame action. This action is available through the Element Extensions addon. More information on installing and using addons can be found in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md). 
+In order to actually interact with an element inside the iframe, you will first need to tell TestProject to navigate into that iframe. In order to do this you can use the Switch to iFrame action. This action is available through the Element Extensions addon. More information on installing and using addons can be found in the documentation [here](../testproject-addons/using-addons-in-the-testproject-recorder.md).
 
 ![iFrame action from Element Extensions Addon](../.gitbook/assets/image%20%2899%29.png)
 
@@ -40,7 +40,7 @@ You can then click on the Create button to create this element and add it your t
 
 ### Locate Elements in an iFrame
 
-Now that you are inside the iFrame you can start to interact with elements on this part of the page. The test recorder still won't record the clicks and interactions on the screen, but we can easily find the elements we want using the Element Explorer. 
+Now that you are inside the iFrame you can start to interact with elements on this part of the page. The test recorder still won't record the clicks and interactions on the screen, but we can easily find the elements we want using the Element Explorer.
 
 ![iFrame Element](../.gitbook/assets/image%20%28117%29%20%282%29.png)
 
@@ -52,7 +52,7 @@ Once you hit create to create the step, you can follow a similar process to crea
 
 ## Conclusion
 
-iFrames can be a bit challenging to deal with in UI test automation, but you can see that by using the switch to iFrame action in combination with other tools like the Element Explorer, you are able to execute the actions you want. 
+iFrames can be a bit challenging to deal with in UI test automation, but you can see that by using the switch to iFrame action in combination with other tools like the Element Explorer, you are able to execute the actions you want.
 
 Even better, if you switch to using the new Smart Test Recorder, you can let TestProject do all the heavy lifting for you and interact with elements inside of iFrames as seamlessly as you do any other element on a page. Maybe now is a good time to switch to the new Smart Recorder!
 

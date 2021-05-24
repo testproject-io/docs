@@ -99,9 +99,9 @@ If you decide to edit the mapping of Automation Statuses to qTest Statuses, plea
 
 All test folders created in synced projects in TestProject will be synced into the corresponding qTest project's Test Design as a module, under a parent module named "TestProject":
 
-![A folder called &quot;Test Folder&quot; is created in TestProject, in a project synced from qTest](../.gitbook/assets/image%20%2895%29.png)
+![A folder called &quot;Test Folder&quot; is created in TestProject, in a project synced from qTest](../.gitbook/assets/image%20%2895%29%20%282%29.png)
 
-![This &quot;Test Folder&quot; is synced from TestProject and created as a module in Test Design, in the corresponding project.](../.gitbook/assets/image%20%28117%29%20%281%29%20%281%29.png)
+![This &quot;Test Folder&quot; is synced from TestProject and created as a module in Test Design, in the corresponding project.](../.gitbook/assets/image%20%28117%29%20%281%29%20%281%29%20%281%29.png)
 
 The test module data synchronized to qTest will be as follows: 
 
@@ -116,9 +116,9 @@ You can move synced modules in qTest without affecting the results of the synchr
 
 All test cases created in synced projects in TestProject will be synced into the synced qTest modules in Test Design, under a parent module named "TestProject":
 
-![&quot;Test \#1&quot; created in TestProject.](../.gitbook/assets/image%20%2895%29%20%282%29.png)
+![&quot;Test \#1&quot; created in TestProject.](../.gitbook/assets/image%20%2895%29%20%282%29%20%281%29.png)
 
-![&quot;Test \#1&quot; synced into qTest, in the newly synced &quot;Test Folder&quot; module.](../.gitbook/assets/image%20%28117%29%20%281%29.png)
+![&quot;Test \#1&quot; synced into qTest, in the newly synced &quot;Test Folder&quot; module.](../.gitbook/assets/image%20%28117%29%20%281%29%20%281%29.png)
 
 The test case data synchronized to qTest will be as follows: 
 
@@ -137,7 +137,7 @@ Test case data only flows from TestProject to qTest.  Any updates to synchronize
 
 All test jobs created in synced projects in TestProject will become test cycles in Test Execution.  These cycles will have child suites below them which are organized by browser \(for web tests\) or device \(for mobile tests\):
 
-![Test Job &quot;Demo Web Tests&quot; created in TestProject.](../.gitbook/assets/image%20%28169%29%20%282%29.png)
+![Test Job &quot;Demo Web Tests&quot; created in TestProject.](../.gitbook/assets/image%20%28169%29%20%282%29%20%281%29.png)
 
 ![Test Cycle &quot;Demo Web Tests&quot; synced into qTest, with test suites for browsers created as children.](../.gitbook/assets/image%20%2861%29.png)
 
@@ -158,7 +158,7 @@ Any ad-hoc executions in TestProject \(i.e. directly from the test case\) will b
 
 All tests executed in synced projects in TestProject will become test runs in Test Execution \(in the corresponding test cycles/test suites.  These runs will have corresponding test logs created within them for each subsequent execution:
 
-![&quot;Test\#1&quot; executed in test job &quot;Demo Web Tests&quot; in TestProject.](../.gitbook/assets/image%20%28169%29.png)
+![&quot;Test\#1&quot; executed in test job &quot;Demo Web Tests&quot; in TestProject.](../.gitbook/assets/image%20%28169%29%20%282%29.png)
 
 ![&quot;Test \#1&quot; synced into test cycle and suite in qTest, with a test log created for each subsequent run.](../.gitbook/assets/image%20%2819%29.png)
 

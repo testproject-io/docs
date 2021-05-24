@@ -60,7 +60,7 @@ Expected output:
 
 *  Create a job by clicking on “New Job” button
 
-![](../../.gitbook/assets/image%20%28138%29%20%282%29.png)
+![](../../.gitbook/assets/image%20%28138%29%20%282%29%20%282%29.png)
 
 * Configure your job to execute assigned tests on BrowserStack remote browsers, Drag and Drop the required tests into it. For example:
 

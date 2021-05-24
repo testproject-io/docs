@@ -10,7 +10,7 @@ description: >-
 
 1. Navigate to the reports page
 
-![](../.gitbook/assets/image%20%28221%29.png)
+![](../.gitbook/assets/image%20%28166%29%20%281%29.png)
 
 2.  Select which Project to view the reports from, by default it will select the current Project
 

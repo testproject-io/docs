@@ -6,7 +6,7 @@ The distribution chart in TestProject shows a summary the number of tests that h
 
 The distribution chart can be found by clicking on the middle navigation dot under the charts.
 
-![Distribution and platform chart location](../../.gitbook/assets/image%20%28105%29.png)
+![Distribution and platform chart location](../../.gitbook/assets/image%20%28105%29%20%281%29.png)
 
 These charts are available at the main reports level as a summary view and are also available for each project you have defined
 

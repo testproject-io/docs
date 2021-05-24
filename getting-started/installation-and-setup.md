@@ -112,7 +112,7 @@ Variable value: `C:\Program Files\TestProject Agent`
 
 You can use the image below:
 
-![Adding test project agent to Environment Variables ](../.gitbook/assets/image%20%28405%29.png)
+![Adding test project agent to Environment Variables ](../.gitbook/assets/image%20%28406%29.png)
 
 
 

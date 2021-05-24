@@ -107,7 +107,7 @@ Now we can set up our pipeline using the above command to execute the Job every 
 
 4.   Paste the curl command in the proper step.
 
-![](../.gitbook/assets/image%20%28256%29.png)
+![](../.gitbook/assets/image%20%28256%29%20%281%29.png)
 
    5.   Click on **Commit and Run** to configure the pipeline in the selected branch
 
@@ -163,15 +163,15 @@ You can set them in CircleCI Dashboard:
 
 1. Go to project settings:
 
-![](../.gitbook/assets/16%20%281%29.png)
+![](../.gitbook/assets/21.png)
 
 2.  Click on Environment Variables:
 
-![](../.gitbook/assets/17.png)
+![](../.gitbook/assets/22%20%281%29.png)
 
 3.  Add Environment Variable:
 
-![](../.gitbook/assets/18.png)
+![](../.gitbook/assets/23.png)
 
 **Configuring Docker Compose YML file**
 
@@ -315,7 +315,7 @@ You can set them in CircleCI Dashboard:
 
 1. Go to project settings:
 
-![](../.gitbook/assets/21.png)
+![](../.gitbook/assets/21%20%281%29.png)
 
 2.   Click on Environment Variables:
 
@@ -323,7 +323,7 @@ You can set them in CircleCI Dashboard:
 
 3.   Add Environment Variable:
 
-![](../.gitbook/assets/23.png)
+![](../.gitbook/assets/23%20%281%29.png)
 
 Now you are good to go running your Python Coded tests using TestProject SDK in your pipeline.
 

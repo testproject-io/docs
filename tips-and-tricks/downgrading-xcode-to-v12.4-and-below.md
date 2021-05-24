@@ -15,7 +15,7 @@ To start you'll need to either:
 
 Then you'll need to head into the [official Apple site](https://developer.apple.com/download/more/?=xcode), and download then install your choice of Xcode:
 
-![Apple Download Center.](../.gitbook/assets/image%20%28425%29.png)
+![Apple Download Center.](../.gitbook/assets/image%20%28426%29.png)
 
 After downloading an installing this version of Xcode, you'll need to set it as the active one on your system.
 

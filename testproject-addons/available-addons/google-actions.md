@@ -21,7 +21,7 @@ First, navigate to Google Developer Console, and choose the Google Account who s
 
 {% embed url="https://console.developers.google.com/" %}
 
-![](../../.gitbook/assets/image%20%28300%29.png)
+![](../../.gitbook/assets/image%20%28300%29%20%281%29.png)
 
 
 
@@ -59,7 +59,7 @@ Create a new Service Account:
 
 You can give it any Name and Description
 
-![](../../.gitbook/assets/image%20%28296%29.png)
+![](../../.gitbook/assets/image%20%28305%29.png)
 
 And click on CREATE, for the Role, select Currently Used \(Owner\)
 
