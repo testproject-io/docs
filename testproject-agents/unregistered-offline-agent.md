@@ -10,7 +10,7 @@ TestProject Agent uses the TestProject cloud in oder to operate. Trough this com
 
 When the Agent is not registered and not authenticated with your TestProject account, it can still operate  using the components that were bundled into the installer. However this implies several limitations, for example a version mismatch might occur, between the installed browser or the connected device and the bundled driver version.
 
-Same limitations apply to a scenario when the Agent is offline and is not able to communicate with the TestProject cloud \(even after it has been successfully registered\). Not being able to update the drivers and other component to match the version of the installed browsers or the connected devices, won't allow the TestProject Agent functioning correctly and will lead to:
+Same limitations apply to a scenario when the Agent is offline and is not able to communicate with the TestProject cloud \(even after it has been successfully registered\). Not being able to update the drivers and other component to match the version of the installed browsers or the connected devices, won't allow the TestProject Agent to function correctly and will lead to:
 
 * Failure to open a recording session
 * Failure to mirror devices
@@ -63,5 +63,7 @@ Agent stores the drivers in:
 
 ![](../.gitbook/assets/image%20%2837%29.png)
 
+## Unregistered Agent and the SDK
 
+When using the TestProject SDK with a not registerred or an offline TestProject Agent, there is no need to supply the development token, as the Agent is not able to verify and validate it with the TestProject Cloud. Even so, the development session will still be established without it when the Agent is not registered or offline.
 
