@@ -32,6 +32,7 @@
 * [TestProject Agent on Kubernetes](testproject-agents/testproject-agent-on-kubernetes.md)
 * [TestProject Agent CLI](testproject-agents/testproject-agent-cli.md)
 * [Silent Deployment](testproject-agents/silent-deployment.md)
+* [Unregistered/Offline Agent](testproject-agents/unregistered-offline-agent.md)
 
 ## Create Your First Test <a id="using-the-smart-test-recorder"></a>
 
