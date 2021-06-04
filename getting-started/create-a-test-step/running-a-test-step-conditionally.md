@@ -34,7 +34,7 @@ Now, let's add a step that uses this value to conditionally run. Once again add 
 
 Save the test step and run it. 
 
-This is obviously a trivial example, but you think of other ways when you would use this kind of functionality. In addtion to examples like this were you can inject some randomness into your tests, you could have cleanup steps that you run if a certain condition is dected, or you could have a test that you use on a couple of very similar pages, but with a minor difference or two been each page that you accound for with a condition. 
+This is obviously a trivial example, but you may think of other ways when you would use this kind of functionality. In addition to examples like this where you can inject some randomness into your tests, you could have cleanup steps that you run if a certain condition is detected, or you could have a test that you use on a couple of very similar pages, but with a minor difference or two between each page that you account for with a condition. 
 
-This powerful option is just one more way that TestProject makes it easy for you do do exactly what you need to when creating tests.
+This powerful option is just one more way that TestProject makes it easy for you to do exactly what you need to when creating tests.
 
