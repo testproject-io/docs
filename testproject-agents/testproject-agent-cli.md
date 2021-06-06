@@ -490,7 +490,7 @@ Targets
       --device=<devices>     Target devices (multi-value)
 ```
 
-As [stated earlier]() a package can be either a single YAML file, or an archive \(ZIP\).
+As stated earlier a package can be either a single YAML file, or an archive \(ZIP\).
 
 **Settings**
 
@@ -541,7 +541,7 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --brows
 
 **Parameters**
 
-Similar to [settings](), test parameters can be overridden or provided externally.
+Similar to settings, test parameters can be overridden or provided externally.
 
 In order to override bundled test parameters using an external file, `-p` or `--parameters` option should be used:
 

@@ -9,6 +9,8 @@
 * [Using AI to Improve Testing](getting-started/using-ai-to-improve-testing.md)
 * [Creating an Account](getting-started/creating-an-account.md)
 * [Collaboration and Sharing](getting-started/collaboration-and-sharing.md)
+* [Hybrid Cloud and Offline Mode](getting-started/hybrid-cloud-and-offline-mode/README.md)
+  * [Understanding Test Files](getting-started/hybrid-cloud-and-offline-mode/understanding-test-files.md)
 * [Installation and Setup](getting-started/installation-and-setup.md)
 * [Supported Environments](getting-started/supported-environments.md)
 * [Getting started with iOS testing](getting-started/getting-started-with-ios-testing/README.md)

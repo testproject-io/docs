@@ -10,11 +10,11 @@ Once you have followed those steps you will be able to start creating iOS tests 
 
 Creating a new mobile test is as simple as clicking on the New Test button and then choosing the Mobile test option as your test type
 
-![Add New Test](../../.gitbook/assets/image%20%2817%29.png)
+![Add a New Test](../../.gitbook/assets/image%20%28255%29.png)
 
 Once you have done that you can fill in a name and description for your test and press Next.  You will then need to select which platform and application you want to use. For recording on an iOS device you would choose the IOS platform and then you can select the app that you want to test.  If this is the first test you are creating for this device there will not be any applications in the list and so you will need to click on the Add a new application for testing button.
 
-![Select Platform and Application](../../.gitbook/assets/image%20%2855%29%20%282%29.png)
+![Add a New Application](../../.gitbook/assets/image%20%28265%29.png)
 
 ## Adding an Application
 
@@ -22,13 +22,13 @@ You can add an application in a few different ways. A very simple way to do this
 
 To select an application from your device, select it from the Device dropdown. The App dropdown will then be populated with all the apps on the device you have chosen and you can select the application you want to use from the list.
 
-Once you have picked the application you want to use and given it a name you can click on Finish to select that application for the test you are creating.
+Once you have picked the application you want to use and given it a name you can click on **Done** to select the application for the test you are creating.
 
 ## Recording a Test
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers
 
-![Record a Test](../../.gitbook/assets/image%20%2845%29%20%281%29%20%281%29.png)
+![Record a Test](../../.gitbook/assets/image%20%28264%29.png)
 
 Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
 

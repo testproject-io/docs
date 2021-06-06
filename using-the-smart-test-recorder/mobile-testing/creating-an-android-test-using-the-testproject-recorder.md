@@ -10,15 +10,21 @@ Once you have done that you can find an option in the settings called developer 
 
 Creating a new mobile test is as simple as clicking on the New Test button and then choosing the Mobile test option as your test type
 
-![Add New Test](../../.gitbook/assets/image%20%2817%29.png)
+![Add a New Test](../../.gitbook/assets/image%20%2895%29.png)
 
 Once you have done that you can fill in a name and description for your test and press Next.  You will then need to select which platform and application you want to use. For recording on an Android device you would choose the Android platform and then you can select the app that you want to test.  If this is the first test you are creating there will not be any applications in the list and so you will need to click on the Add a new application for testing button.
 
-![Selecting Platform and Application](../../.gitbook/assets/image%20%2831%29.png)
+![Add a new Application](../../.gitbook/assets/image%20%28221%29.png)
 
 ## Adding an Application
 
-You can add an application in a few different ways. A very simple way to do this is to make sure your device is connected and the agent is running and then selecting an application from the device. If you need to you can also manually add an application or just upload an APK. To select an application from your device, select it from the dropdown.
+You can add an application in a few different ways. A very simple way to do this is to make sure your device is connected and the agent is running and then selecting an application from the device. 
+
+{% hint style="info" %}
+If you do not see your device on the list, check that you have authorized it. You will need to approve USB debugging on your device. You can also check the Devices section on Agents tab to ensure that the device has been authorized to be used with TestProject. 
+{% endhint %}
+
+If you need to you can also manually add an application or just upload an APK. For this tutorial though, we will look at how to select an application from your device. Ensure that the application you want to test is installed on your device and then select your device from the dropdown.
 
 ![Choose a Device](../../.gitbook/assets/image%20%2876%29%20%281%29.png)
 
@@ -26,27 +32,31 @@ The App dropdown will then be populated with all the apps on the device you have
 
 ![Select an Application](../../.gitbook/assets/image%20%2868%29.png)
 
-Once you have picked the application you want to use and given it a name you can click on Finish to select that application for the test you are creating.
+Once you have picked the application you want to use and given it a name you can click on **Done** to select that application for the test you are creating.
 
 ## Recording a Test
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute. You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers.
 
-![Record a Test](../../.gitbook/assets/image%20%2845%29%20%281%29%20%281%29.png)
+![Start Creating a Test](../../.gitbook/assets/image%20%28169%29.png)
 
-Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
+You will also notice that you can choose to have the test files saved in the cloud, or saved to a local file. The **File**  option allows you to create tests that can be run offline. To learn more about the cloud versus offlines modes, check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/). 
+
+When getting started, the best course of action is to use this test recorder. This will help walk you through the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing. Simply choose the **Record** option and then click on **Start recording** to immediately get started.
+
+### Creating Test Steps
 
 In order to create test steps all you need to do is interact with the application in the emulator and each action will be recorded as a step in the test case. For example if you were testing the calculator app you could click on a number on the screen and that click would be recorded as a test step. 
 
-![Test Step Recorded](../../.gitbook/assets/image%20%288%29.png)
+![Actions recorded as Test Steps](../../.gitbook/assets/image%20%28261%29.png)
 
-You can repeat that for each test step that you want to record, in able to quickly and easily build an entire test case. Once you have added the test steps that you want, you can add validation to your test by mousing over the element you want to validate and then hitting shift twice quickly \(Double Shift\). You can choose the validations option on the menu to add a validation step to your test
+You can repeat that for each test step that you want to record, in order to quickly and easily build an entire test case. Once you have added the test steps that you want, you can add validation to your test by mousing over the element you want to validate and then hitting shift twice quickly \(Double Shift\). You can choose the validations option on the menu to add a validation step to your test
 
-![Add validation step](../../.gitbook/assets/image%20%2841%29%20%281%29.png)
+![Add a Validation Step](../../.gitbook/assets/image%20%28295%29.png)
 
-After completing the test creation you can simply click on the Save and Exit button to save your changes and your test is ready to use!
+After completing the test creation you can simply click on the **Save and Exit** button to save your changes and your test is ready to use!
 
-![Save and Exit](../../.gitbook/assets/image%20%2878%29.png)
+![Save and Exit](../../.gitbook/assets/image%20%28138%29.png)
 
 ## Next Steps
 

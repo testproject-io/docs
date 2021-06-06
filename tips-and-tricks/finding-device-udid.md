@@ -11,13 +11,13 @@ Once your device is connected at least once and verified by the agent, you can u
 1. Head over to the TestProject platform agents page: [https://app.testproject.io/\#/agents](https://app.testproject.io/#/agents)
 2. At the agent's page, click on your agent.
 
-![](../.gitbook/assets/image%20%28259%29%20%281%29.png)
+![](../.gitbook/assets/image%20%28259%29.png)
 
    3. Click on Devices
 
 ![](../.gitbook/assets/image%20%28266%29.png)
 
-![](../.gitbook/assets/image%20%28267%29%20%281%29.png)
+![](../.gitbook/assets/image%20%28267%29.png)
 
 Here you can see Previously/Current connected devices and Simulators.
 

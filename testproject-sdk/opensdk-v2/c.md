@@ -51,7 +51,7 @@ Next, let's add TestProject's OpenSDK to the project, so we can write our first 
 2. Click the _Browse_ tab and search for `testproject opensdk`
 3. You will see 2 dependencies: one for the SDK itself and one for TestProject's SpecFlow plugin, which we'll cover in another tutorial. Select TestProject.OpenSDK and click install.
 
-![](../../.gitbook/assets/image%20%28336%29.png)
+![](../../.gitbook/assets/image%20%28336%29%20%281%29.png)
 
 Congratulations! You are now ready to write your first test.
 
@@ -271,7 +271,7 @@ If this is your first time publishing, create a new publishing target:
 
 * Choose _Folder_ again, and press _Next_.
 
-![](../../.gitbook/assets/image%20%28342%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%28342%29.png)
 
 * Change the folder your code is built in to _publish\_ and press _Finish_.
 
