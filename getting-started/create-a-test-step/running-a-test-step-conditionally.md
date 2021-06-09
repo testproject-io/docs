@@ -24,11 +24,11 @@ In the output section click on the **Select parameter** field and use the blue p
 
 ![Create an Output Parameter](../../.gitbook/assets/image%20%28179%29.png)
 
-Save the parameter and then select it from the list and save the test step. This will automatically run the step and if you hoover over the little green beside the test step, it will fly out and show you what value has been generated.
+Save the parameter and then select it from the list and save the test step. This will automatically run the step and if you hover over the little green beside the test step, it will fly out and show you what value has been generated.
 
 ![View Generated Value](../../.gitbook/assets/image%20%28215%29.png)
 
-Now, let's add a step that uses this value to conditionally run. Once again add a manually test step. Set the action to `click` and the choose the `logout` element to act on. Expand the advanced options and under the conditions section choose to add a condition. Click the **Select parameter** dropdown and choose the `randomBool` parameter. Choose **Equals** from the operator dropdown and type `true` into the value field.
+Now, let's add a step that uses this value to conditionally run. Once again add a manually test step. Set the action to `click` and choose the `logout` element to act on. Expand the advanced options and under the conditions section choose to add a condition. Click the **Select parameter** dropdown and choose the `randomBool` parameter. Choose **Equals** from the operator dropdown and type `true` into the value field.
 
 ![Create a condition](../../.gitbook/assets/image%20%28209%29.png)
 
