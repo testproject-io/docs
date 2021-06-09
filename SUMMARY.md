@@ -25,6 +25,7 @@
 * [Available Validations](getting-started/available-validations.md)
 * [Step output validations](getting-started/step-output-validations.md)
 * [FAQs](getting-started/faqs.md)
+* [Knowledge Base](getting-started/knowledge-base.md)
 
 ## TestProject Agents
 
