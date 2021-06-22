@@ -56,6 +56,7 @@
 * [Manage TestProject Agents](schedule-and-run-tests/manage-testproject-agents.md)
 * [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
 * [Using Data Driven Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
+* [Parallel Execution](schedule-and-run-tests/parallel-execution.md)
 
 ## TestProject Addons
 

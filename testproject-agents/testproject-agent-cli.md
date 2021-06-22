@@ -4,6 +4,8 @@ description: TestProject Agent CLI (Command-Line Interface)
 
 # TestProject Agent CLI
 
+## TestProject Agent CLI
+
 TestProject Agent CLI is a cross operating system command line interface utility.  It is made for execution of test packages generated using the TestProject platform.
 
 Exported test packages are stand alone textual YAML files. These file can be stores outside of the TestProject cloud, including in an on-premises version control such as git.
@@ -90,7 +92,7 @@ foo@bar:~$ testproject-agent -v
 Will print:
 
 ```text
-2.0.0-RELEASE
+3.0.0-RELEASE
 ```
 
 ### Commands
@@ -111,19 +113,22 @@ Here's the command help:
 
 ```text
 Usage: testproject-agent start [-fhjsV] [-A=<agent>] [-C=<grpcTimeout>]
-                               [-d=<dataPath>] [--grpc-address=<grpcAddress>]
+                               [-D=<dataPath>] [--grpc-address=<grpcAddress>]
+                               [--max-workers=<maxWorkers>]
                                [--rest-address=<restAddress>]
 Starts the Agent
   -A, --agent=<agent>   Target Agent (host:port)
   -C, --connect-timeout=<grpcTimeout>
                         Connection timeout in seconds
-  -d, --data-path=<dataPath>
+  -D, --data-path=<dataPath>
                         Path to Agent's data folder
   -f, --fork            Fork current process and exit after Agent is started
       --grpc-address=<grpcAddress>
                         Agent's spawned gRPC server address (host:port)
   -h, --help            Show this help message and exit.
   -j, --json            Change default output format to JSON
+      --max-workers=<maxWorkers>
+                        Agent's maximum amount of workers.
       --rest-address=<restAddress>
                         Agent's REST API address (host:port)
   -s, --headless        Run Agent headless (do not show system tray icon)
@@ -151,6 +156,14 @@ Command above will start the Agent, instructing it for binding its:
 * Web server to all the available interfaces on the machine it's running on, and port `65001`
 
 This way, CLI can communicate with the started Agent via `10.0.0.2:65000`,  and SDK can communicate with the Agent using any of the available hosts and port `65001`.
+
+**Max Workers**
+
+Using the `--max-workers` option, it is possible to set the maximum amount of workers for an Agent. Workers amount is the number of tasks an Agent can perform in parallel.
+
+A task can be a test/job execution, a recording session, or an OpenSDK development session. Make sure this is a reasonable value. Too many concurrent executions can impact automation performance due to CPU and Memory starvation. Typically this value should not exceed 50% of the available CPU cores and 2GB of RAM per worker.
+
+For example, if the host has 8 CPU cores, it is recommended to not exceed 4 Agent workers.
 
 #### Connect
 
@@ -466,31 +479,52 @@ This command should be used to execute a backup package.  Here are the usage ins
 ```text
 foo@bar:~$ testproject-agent run --help
 
-Usage: testproject-agent run [-hV] [-rd] [-o=<outputPath>]
+Usage: testproject-agent run [-hV] [--parallel-targets] [--parallel-tests]
+                             [--plain] [-rd] [-a=<alias>] [-A=<agent>]
+                             [-C=<grpcTimeout>] [-D=<dataPath>]
+                             [--grpc-address=<grpcAddress>] [-o=<outputPath>]
                              [-p=<parametersFile>] [-r=<report>]
-                             [-s=<settingsFile>] [-d=<servers>]...
+                             [--rest-address=<restAddress>] [-s=<settingsFile>]
+                             [-t=<token>] [-d=<servers>]...
                              [--browser=<browsers> [--browser=<browsers>]... |
                              --device=<devices> [--device=<devices>]...]
                              <files>...
 Runs an execution package file(s)
       <files>...             Path to execution package file(s)
+  -a, --alias=<alias>        Alias to use when naming the Agent
+  -A, --agent=<agent>        Target Agent (host:port)
+  -C, --connect-timeout=<grpcTimeout>
+                             Connection timeout in seconds
+  -d, --driver-server=<servers>
+                             Driver server - local within the Agent (default)
+                               or cloud.
+  -D, --data-path=<dataPath> Path to Agent's data folder
+      --grpc-address=<grpcAddress>
+                             Agent's spawned gRPC server address (host:port)
   -h, --help                 Show this help message and exit.
   -o, --output-path=<outputPath>
                              Output folder path for the local report file(s)
   -p, --parameters=<parametersFile>
                              Parameters file (data-source CSV/YAML)
+      --parallel-targets     Execute package(s) in parallel on all configured
+                               browsers/devices
+      --parallel-tests       Execute all tests in package(s) in parallel on all
+                               configured browsers/devices
       --plain                Produce plain output (without progress bars).
   -r, --report=<report>      Report type - local, cloud or both (default)
       -rd, --restart-driver  Restart driver before each test
+      --rest-address=<restAddress>
+                             Agent's REST API address (host:port)
   -s, --settings=<settingsFile>
                              Execution settings file (targets, etc.)
+  -t, --token=<token>        Token to use for registration
   -V, --version              Print version information and exit.
 Targets
       --browser=<browsers>   Target browsers (multi-value)
       --device=<devices>     Target devices (multi-value)
 ```
 
-As stated earlier a package can be either a single YAML file, or an archive \(ZIP\).
+As [stated earlier]() a package can be either a single YAML file, or an archive \(ZIP\).
 
 **Settings**
 
@@ -541,7 +575,7 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --brows
 
 **Parameters**
 
-Similar to settings, test parameters can be overridden or provided externally.
+Similar to [settings](), test parameters can be overridden or provided externally.
 
 In order to override bundled test parameters using an external file, `-p` or `--parameters` option should be used:
 
@@ -608,6 +642,16 @@ Execution progress is represented using progress bars by default.  For consoles 
 
 It is also possible that when using progress bars, it will not reach 100% if the test fails on one of the steps before reaching the end. To inspect the actual execution results, refer to the report file generated a the end of the execution.
 
+**Parallel Execution Settings**
+
+Using the `--parallel-targets` or `--parallel-tests` options, package execution can be parallelized. By default the execution is _serial_, meaning that tests will be executed one by one on **each** defined browser/device.
+
+Enabling `--parallel-targets` will result in tests being executed one by one on **all** defined browsers/devices, in parallel.
+
+Enabling `--parallel-tests` will result in **all** tests being executed on **all** defined browsers simultaneously. If a test has a data source, all data iterations will run at the same time as well.
+
+> These options override any similar settings set via the package's bundle settings YAML file.
+
 #### Global Options
 
 Starting from Agent version `2.2.0`, there are several global options that can be used with all the commands that interact with an Agent.  For example, `connect`, `devices`, `browsers`, etc.
@@ -629,10 +673,14 @@ For example, command above will list available browsers on the Agent at `10.0.0.
 Sometimes, it might be necessary to allow an extended timeout connecting to the Agent.  This can be done using the `-C` or `--connect-timeout` option, specified in _seconds_, as shown below:
 
 ```text
-foo@bar:~$ testproject-agent --connect-timeout 10 browsers list
+foo@bar:~$ testproject-agent --connect-timeout 10 run MyFirstTestBackup.zip
 ```
 
 The default value is _10_ seconds, and using this option can be changed.
+
+### CLI Versions & Backwards Compatibility
+
+CLI versions are not backward compatible with previous Agents.  Therefore CLI version 2.x should be used with Agents 2.x and CLI 3.x should be used with Agents 3.x
 
 ## Summary
 
