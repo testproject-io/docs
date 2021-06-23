@@ -45,8 +45,8 @@ You can execute **iOS tests** on any iOS device running version 10 - 14.4
 
 #### Supported Emulators Frameworks
 
-* Android Studio: **Lastest**
-* Genymotion: **Lastest**
+* Android Studio: **Latest**
+* Genymotion: **Latest**
 * XCode: **10-12.4**
 
 ## Supported Agent Operating Systems \(x64 only\)
