@@ -42,7 +42,6 @@ description: Version 3.0 - Release notes
 
 #### Agent
 
-* Tests containing addon were failing on dockers and the virtual agent.
 * Running jobs on BrowserStack got stuck in _Initializing_ state for a long time.
 * Once in a while, reports were not uploaded immediately.
 * Fixed failure to install _.ipa_ on simulator - java.net.SocketException: Connection reset.
@@ -50,7 +49,6 @@ description: Version 3.0 - Release notes
 * Device mirroring was disconnecting during a recording session in some edge cases.
 * Running on some Safari versions was failing due to driver issues.
 * In some cases, the agent was not recognizing the correct MacOS version.
-* iOS device mirroring now works with Xcode 12.5.
 * iOS physical devices mirroring sometimes flickered at the beginning of a recording session.
 
 #### SDK
