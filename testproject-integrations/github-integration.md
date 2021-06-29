@@ -114,21 +114,25 @@ Click on the "Show History" option in the test's menu.
 
 #### Test history window
 
-* `Open commit in GitHub` - Click on the commit hash to open the commit in GitHub.
+`Open commit in GitHub` - Click on the commit hash to open the commit in GitHub.
 
 ![](../.gitbook/assets/test-history-hash.png)
 
-* `Copy commit hash` - If you want to copy the full commit hash, click on the copy icon.
+`Copy commit hash` - If you want to copy the full commit hash, click on the copy icon.
 
 ![](../.gitbook/assets/test-history-copy.png)
 
-* `See full commit details` - Click on the three-dots icon to expand the commit and view its full details.
+`See full commit details` - Click on the three-dots icon to expand the commit and view its full details.
 
 ![](../.gitbook/assets/test-history-expanded.png)
 
-* `Download the test` - By clicking on the download button, you can download a specific test version based on the selected commit. The test will be downloaded as a `.yaml` file. It can be then executed using [TestProject CLI](https://docs.testproject.io/testproject-agents/testproject-agent-cli) or re-imported into TestProject to become a recorded test.
+`Download the test` - By clicking on the download button, you can download a specific test version based on the selected commit. The test will be downloaded as a `.yaml` file. It can be then executed using [TestProject CLI](https://docs.testproject.io/testproject-agents/testproject-agent-cli) or re-imported into TestProject to become a recorded test.
 
 ![](../.gitbook/assets/test-history-download.png)
+
+`Import test from selected commit` - The import option allows you to retrieve a specific version of your test into TestProject. The imported test will be automatically added to the current project as a new test. The short commit hash will be appended to the name of the imported test.
+
+![](../.gitbook/assets/test-history-import.png)
 
 {% hint style="info" %}
 Please note that only recorded tests are being synchronized. Coded tests will not appear in your GitHub repositories.
