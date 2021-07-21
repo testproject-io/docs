@@ -156,6 +156,7 @@
   * [Drivers](testproject-sdk/overview/drivers.md)
   * [Legacy SDK vs. OpenSDK](testproject-sdk/overview/sdk-v1-vs-opensdk-v2.md)
 * [OpenSDK \(v2\)](testproject-sdk/opensdk-v2/README.md)
+  * [JavaScript](testproject-sdk/opensdk-v2/javascript.md)
   * [Java](testproject-sdk/opensdk-v2/java-sdk/README.md)
     * [Automatically Generate Code](testproject-sdk/opensdk-v2/java-sdk/untitled.md)
     * [Examples](testproject-sdk/opensdk-v2/java-sdk/examples.md)
