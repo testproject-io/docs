@@ -49,7 +49,7 @@ You will need to add a  `<dependencies>` section to the file and then add the Te
   <dependency>
     <groupId>io.testproject</groupId>
     <artifactId>java-sdk</artifactId>
-    <version>0.65.4-RELEASE</version>
+    <version>1.2.3-RELEASE</version>
   </dependency>
 </dependencies>
 ```
@@ -84,7 +84,7 @@ If you prefer to build with a gradle project, you can do that as well. As with u
 Once you've done this, find the `build.gradle` file in your project and add the following into the dependencies section. 
 
 ```java
-implementation 'io.testproject:java-sdk:0.63.4-RELEASE'
+implementation 'io.testproject:java-sdk:1.2.3-RELEASE'
 ```
 
 Note that the Gradle addon usually comes installed with Eclipse. If you are using a different IDE you might need to install Gradle which you can do from [here](https://gradle.org/). If Eclipse did not install it, you can go the Help&gt;Ecliple Marketplace and search for **gradle** and install the Buildship Gradle Integration addon.
