@@ -271,7 +271,7 @@ If this is your first time publishing, create a new publishing target:
 
 * Choose _Folder_ again, and press _Next_.
 
-![](../../.gitbook/assets/image%20%28342%29.png)
+![](../../.gitbook/assets/image%20%28342%29%20%281%29%20%281%29.png)
 
 * Change the folder your code is built in to _publish\_ and press _Finish_.
 

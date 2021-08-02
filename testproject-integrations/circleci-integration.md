@@ -315,7 +315,7 @@ You can set them in CircleCI Dashboard:
 
 1. Go to project settings:
 
-![](../.gitbook/assets/21.png)
+![](../.gitbook/assets/21%20%281%29%20%281%29.png)
 
 2.   Click on Environment Variables:
 

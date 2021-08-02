@@ -24,7 +24,7 @@ In order to use this GitHub integration, you need to have:
 
 Go to the personal access token page in your [GitHub settings](https://github.com/settings/tokens).
 
-![](../.gitbook/assets/personal-access-token-page%20%281%29.png)
+![](../.gitbook/assets/personal-access-token-page%20%281%29%20%281%29.png)
 
 Click on "Generate new token".
 
@@ -52,7 +52,7 @@ Enter your organization/username and your access key and click "Next".
 
 Select the projects that you want to synchronize with GitHub and click the "Save" button to create the integration.
 
-![](../.gitbook/assets/tp-git-select-projects.png)
+![](../.gitbook/assets/tp-git-select-projects%20%281%29.png)
 
 That's it! The projects that you've selected are now synchronized with GitHub
 
@@ -70,7 +70,7 @@ Edit the organization/username and the access key and click on the "Next" button
 
 Select the projects that you want to sync with GitHub and click "Save". Make sure to include all the projects that you want to sync. Projects that are currently synced and are not included in the list, will not be synced anymore.
 
-![](../.gitbook/assets/tp-git-select-projects%20%281%29.png)
+![](../.gitbook/assets/tp-git-select-projects%20%281%29%20%281%29.png)
 
 ### Indication for a synced project
 
