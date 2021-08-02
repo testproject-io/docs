@@ -44,6 +44,10 @@ Once you have those values, you can click on the try it out button for the `uplo
 
 You can then click on the Execute button to send the request. You should get back an API response which contains the url for the application you are interested in. You can now use this url as the location where you will put your APK or IPA file. You will need to call the API endpoint as a `PUT` request using a tool like Postman and including the APK or IPA file as the body to the request.
 
+{% hint style="info" %}
+When uploading a file in the request body select the option **binary**
+{% endhint %}
+
 Once you have uploaded the file, you will need to confirm the upload using the  `v2/projects/{projectId}/applications/{appId}/file` endpoint.  Once again fill in the application Id and the Project Id and execute the request
 
 ![Confirm the upload](../.gitbook/assets/image%20%28167%29.png)
