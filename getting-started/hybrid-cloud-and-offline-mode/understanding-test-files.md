@@ -2,7 +2,7 @@
 
 You can download tests from the TestProject platform to run them locally. 
 
-![Save a test locally](../../.gitbook/assets/image%20%28116%29.png)
+![Save a test locally](../../.gitbook/assets/image%20%28219%29.png)
 
 When you download these tests, the information is stored in a `.yaml` file. YAML is a human-readable format for describing structured data. Once you have downloaded the files locally, you can open them in a text editor and see information about the test. The `.yaml` file for each test stores information about the test that will allow it to run, however, you can also download a test package that will include additional information about how to run the test.
 

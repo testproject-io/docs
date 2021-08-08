@@ -119,7 +119,7 @@ While in the Monitor, notice that the browser has a Sauce Labs icon over it, ind
 
 In addition to that, if you open your [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/tests), you can see the execution happens in real time and even control the browser or device if needed.
 
-![](../../.gitbook/assets/image%20%2837%29%20%282%29.png)
+![](../../.gitbook/assets/image%20%2837%29%20%282%29%20%281%29%20%281%29.png)
 
 ### Execution Reports
 

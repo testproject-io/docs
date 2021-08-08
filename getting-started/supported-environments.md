@@ -47,13 +47,13 @@ You can execute **iOS tests** on any iOS device running version 10 - 14.4
 
 * Android Studio: **Latest**
 * Genymotion: **Latest**
-* XCode: **10-12.4**
+* XCode: **10-12.5**
 
 ## Supported Agent Operating Systems \(x64 only\)
 
 * Windows **7, 8, 8.1, 10**
 * macOS **10.14+**
-* Ubuntu **16.04, 18.04,** ~~**20.04**~~
+* Ubuntu **16.04, 18.04, 20.04**
 
 
 

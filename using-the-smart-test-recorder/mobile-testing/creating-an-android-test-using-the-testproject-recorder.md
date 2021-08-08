@@ -10,7 +10,7 @@ Once you have done that you can find an option in the settings called developer 
 
 Creating a new mobile test is as simple as clicking on the New Test button and then choosing the Mobile test option as your test type
 
-![Add a New Test](../../.gitbook/assets/image%20%2895%29.png)
+![Add a New Test](../../.gitbook/assets/image%20%28255%29.png)
 
 Once you have done that you can fill in a name and description for your test and press Next.  You will then need to select which platform and application you want to use. For recording on an Android device you would choose the Android platform and then you can select the app that you want to test.  If this is the first test you are creating there will not be any applications in the list and so you will need to click on the Add a new application for testing button.
 

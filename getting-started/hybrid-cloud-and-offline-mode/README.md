@@ -48,7 +48,7 @@ This will print out information about the various commands that are available. Y
 
 If you need to run particular tests in an isolated environment, without access to the TestProject cloud, you can download the tests as either a YAML file or as a complete test package and then copy those files to the isolated environment in order to run the tests there. In order to do that you can use the **Save as File** option on the more menu of a test.
 
-![Save as File](../../.gitbook/assets/image%20%28219%29.png)
+![Save as File](../../.gitbook/assets/image%20%28219%29%20%281%29.png)
 
 You can then directly save it, which will save `.yaml` file with the test information. For basic tests this is fine, but if you have a more complex test \(for example, one using addons\) you can choose to download it as a "Test Package" which will include all dependencies required for running in an offline environment. 
 
