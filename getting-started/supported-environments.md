@@ -1,6 +1,6 @@
 # Supported Environments
 
-TestProject supports a wide variety of environments.  You can create and run tests with it on all operating systems \(Windows, Linux and macOS\). It supports Web, Android and iOS tests and covers all the major browsers.
+TestProject supports a wide variety of environments. You can create and run tests with it on all operating systems \(Windows, Linux and macOS\). It supports Web, Android and iOS tests and covers all the major browsers.
 
 You can execute **Web tests** on:
 
@@ -54,8 +54,4 @@ You can execute **iOS tests** on any iOS device running version 10 - 14.4
 * Windows **7, 8, 8.1, 10**
 * macOS **10.14+**
 * Ubuntu **16.04, 18.04, 20.04**
-
-
-
-
 
