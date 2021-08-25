@@ -8,9 +8,11 @@ You can execute **Web tests** on:
 * Chrome browser on Android devices
 * Safari browser on iOS devices
 
-You can execute **Android tests** on any Android device running version 5.0 - 11.0
+You can execute **Android tests** on any Android devices.
 
-You can execute **iOS tests** on any iOS device running version 10 - 14.4
+You can execute **iOS tests** on any iOS devices.
+
+You can execute **API / Database** tests using any target.
 
 ## Full list of currently supported frameworks:
 
@@ -40,8 +42,8 @@ You can execute **iOS tests** on any iOS device running version 10 - 14.4
 
 #### Recording and Execution
 
-* Android: **5.0** _\(Lollipop\)_ - **11.0**
-* iOS: **10** - **14.4**
+* Android: **6.0** _\(_ Marshmallow_\)_ - **11.0 /** API level **23+**
+* iOS: **10** - **14.6**
 
 #### Supported Emulators Frameworks
 
