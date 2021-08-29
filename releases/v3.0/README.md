@@ -78,20 +78,20 @@ description: Version 3.0 - Release notes
 
 ## Hotfixes
 
-* 3.0.1
+* **3.0.1**
   * Added support for simulators on Xcode 12.5
-* 3.0.2
+* **3.0.2**
   * Fixed a conflict happening when parallel execution use the same addon
-* 3.0.3
+* **3.0.3**
   * Fixed problem with tests containing addons that were failing on dockers and the virtual agent.
   * Fixed aborted execution reports that were interfering with the upload of reports of other finished executions.
-* 3.0.4
+* **3.0.4**
   * Fixed an issue with project parameters that were not getting updated after execution.
   * Fixed issue with only one browser appears in reports for tests running on multiple browsers when using C\# OpenSDK.
   * Fixed addon execution failures case when curly brackets were present in action parameters.
   * Fixed execution failure occurring when a nested test is disabled.
   * Reduced the frequency of new Agent version popup appearance to only once per day.
-* 3.0.5
+* **3.0.5**
   * Fixed issue with screenshots missing in the local HTML report
   * Fixed wrong execution progress percentage is shown above 100%
   * Fixed findElements\(\) command showing as failed when no elements yielded.
