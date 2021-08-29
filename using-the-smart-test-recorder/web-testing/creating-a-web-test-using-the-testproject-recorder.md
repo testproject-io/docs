@@ -6,37 +6,41 @@ Creating a web test is a simple and straightforward process with the TestProject
 
 Creating a web test is as simple as clicking on the New Test button and then choosing the Web option as your test type
 
-![Create a New Test](../../.gitbook/assets/image%20%28195%29.png)
+![Create a New Test](../../.gitbook/assets/image%20%2895%29.png)
 
-You will then need to select what type of test you want to create. In this tutorial, you are going to create a Web test, so choose that option and then click on Next.
+You will then need to select what type of test you want to create. In this tutorial, you are going to create a Web test, so choose that option and then click on **Next**.
 
-![Selct Web Test](../../.gitbook/assets/image%20%28181%29.png)
+![](../../.gitbook/assets/image%20%28360%29.png)
 
-You can now give your test a name and description and then click Next again. 
+You can now give your test a name and description. You can also add tags to your test to help organize tests so that you can more easily search and filter them in the future. Once you have filled in all the desired information, click **Next** again. 
 
-![Add Test Details](../../.gitbook/assets/image%20%28196%29.png)
+![](../../.gitbook/assets/image%20%28259%29.png)
 
 The next thing you will be asked for is the application you are going to test. If this is the first test you are creating there will not be any applications in the list and so you will need to click on the Add a new application for testing button
 
-![Add a New Application](../../.gitbook/assets/image%20%28218%29.png)
+![Add a New Application](../../.gitbook/assets/image%20%28116%29.png)
 
 This will prompt you for the URL of the application that you want to test and also ask you to give it a name for the system to use. For this example we will put in the URL of the TestProject example site.
 
 ![Add New Example Site](../../.gitbook/assets/image%20%28216%29.png)
 
-After entering in the required information you can click Finish and you will be taken back to the test creation wizard which will automatically select the application you just created. You can then click Next and move on to the next step.
+After entering in the required information you can click **Done** and you will be taken back to the test creation wizard which will automatically select the application you just created. You can then click **Next** and move on to the next step.
 
 ## Step 2 - Recording a Test
 
-Now that you have named your test and the system knows what site to use for the testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers. In order to use the recorder you will need to make sure that you have a local agent setup and running.  If you have not yet setup and started an agent you can follow the instructions in the [installation and setup](../../getting-started/installation-and-setup.md) section to do so. 
+Now that you have named your test and the system knows what site to use for the testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers. In order to use the recorder you will need to make sure that you have a local agent setup and running.  If you have not yet setup and started an agent you can follow the instructions in the [installation and setup](../../getting-started/installation-and-setup.md) section to do so.  
 
-![No Agent Available](../../.gitbook/assets/image%20%28202%29.png)
+If the Start recording button is not available after you clikc on the Record icon, be sure to check that your agent is running and connected
 
-Once a local agent is running you will be able to click on the record button and then choose the Start recording option. This will open the new Smart Test Recorder for you and is the recommended options, however, if you want you can still use the legacy recorder by selecting that option. 
+![Agent not connected, leads to recording being disabled](../../.gitbook/assets/image%20%28267%29.png)
 
-![Start Recording with the Smart Recorder](../../.gitbook/assets/image%20%28203%29.png)
+Once a local agent is running you will be able to click on the record button andhave the option to click on the Start recording option.  It should look something like this:
 
-This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
+![TestProject Record Ready to use](../../.gitbook/assets/image%20%28342%29.png)
+
+Notice, that you have the option to choose to save the recording of the test steps in the cloud or in a local files. To learn more about how the TestProject cloud and offline modes works, you can check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/). 
+
+Clicking **Start recording** will open the new Smart Test Recorder for you.This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
 
 ## Step 3 - Add Test Steps
 

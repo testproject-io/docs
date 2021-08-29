@@ -46,5 +46,23 @@ In addtion, a test package includes a `settings.yaml` file. This file defines wh
 
 If your test does have parameters defined, the package will also include a file called `test-parameters.csv` which contains the values for the parameters. If you want, you can add additional parameters to this file to run the test in a data driven manner. 
 
+## Upload test Files to TestProject
+
+In addition to downloading files and interacting with them locally, you can also upload test files back into the TestProject cloud if you want. If you have made some changed to a file and want to share that with someone else on your team, you can upload the file into the TestProject application to enable the seamless team collaboration options. 
+
+In order to do that, simply click on the arrow beside **Open File** button and choose the Import Test option.
+
+![Import Test](../../.gitbook/assets/image%20%28296%29.png)
+
+Then select the test file that you want to upload and click **Import**. This will import the test into the currently selected project.
+
+### Modifying local tests
+
+You can also choose to start from an existing test and edit it, by choosing the Open File button directly.
+
+![Open a file for Editing](../../.gitbook/assets/image%20%28344%29.png)
+
+In that case, after uploading the test file, you will be given the option to start the test recorder or edit the test. You can make any changes that you want and then **Save** the changes to save an updated local file with the new changes included.
+
 
 

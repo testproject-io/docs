@@ -8,11 +8,15 @@ The [TestProject recorder](creating-a-web-test-using-the-testproject-recorder.md
 
 Before you create your first web test, you will need to have a project that you can store it in. A project helps you manage all tests related to the project you are working on, and is also designed around the idea of collaboration. You can add an unlimited number of users to a project giving them the permissions you want, which makes it easy for an entire team to work together on testing a project.
 
-In order to create a project log into the TestProject application and click on the Add a new Project button:
+When you first start using TestProject, it will prompt you to create a new project.
 
-![Add new Project](../../.gitbook/assets/image%20%2853%29%20%281%29.png)
+![Creating a New Project](../../.gitbook/assets/image%20%28264%29.png)
 
-Give your project a name and description and then create it. TestProject will take you to the tests page for that project. From here you can do a few things. You can create tests, create jobs, add elements or add data sources for data driven tests and more!
+Once you have created that intial project, you can add additional projects from the project selector dropdown:
+
+![Add a New Project](../../.gitbook/assets/image%20%28336%29.png)
+
+Once you give your project a name and description and create it, TestProject will take you to the tests page for that project. From here you can do a few things. You can create tests, create jobs, add elements or add data sources for data driven tests and more!
 
 ## Next Step
 

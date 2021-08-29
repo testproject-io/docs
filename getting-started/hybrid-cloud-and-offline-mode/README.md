@@ -30,6 +30,18 @@ In addition, you can use the [TestProject Agent Command Line Interface \(CLI\)](
 
 Creating and running tests in offline mode requires having a local test agent installed. You will need to [download the agent](https://app.testproject.io/#/agents) and copy it onto the computer that will be running the tests. Once you do that you can follow the steps in the section on [installation and setup](../installation-and-setup.md). Of course, don't register the agent if you want to remain offline. 
 
+#### Creating Tests in Offline Mode
+
+When creating tests, you can choose if you want to save them in the cloud or as a file. When working in offiline mode, select the **File**  option and the test steps will be save locally rather than in the cloud.
+
+![Use File saving to work in Offline Mode](../../.gitbook/assets/image%20%28166%29.png)
+
+You can then record the test as you normally would. Once you have completed recording the test steps, click on the **Save**  button and the recorder will automatically save the file locally for you. 
+
+![Save Files locally](../../.gitbook/assets/image%20%28341%29.png)
+
+#### Running the Agent in Offline Mode
+
 In order to run the agent offline, you will need to use the agent CLI. This should be available by calling the agent executable, but you will need to make sure that the executable is in your path. You can do this by locating the installed executable location on your computer and ensuring that this location is added to your PATH environment variable. For example, on a windows machine, the agent would be installed to `C:\Program Files\TestProject Agent` by default. The `Program Files` folder should already be in your PATH variable, but if it was not, you would need to add it. Once you are sure that the executable is in your path you can call it by opening a command prompt and typing in the following command:
 
 ```bash
