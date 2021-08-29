@@ -16,13 +16,6 @@ description: Version 3.0 - Release notes
 
 **Performance** - In addition to all the new features, we've made some major tweaks to improve platform performance and stability. We will always continue adjusting and enhancing the platform to make it even greater and faster.
 
-## Minor Releases
-
-* 3.1.0
-  * Added support for Git integration on any change in subtest to be reflected in parent tests
-  * Now you can drag multiple steps in the recorder.
-  * Added support for Microsoft Teams Webhook integration
-
 ## Fixes
 
 #### Addons
@@ -58,37 +51,6 @@ description: Version 3.0 - Release notes
 * In some cases, the agent was not recognizing the correct MacOS version.
 * iOS physical devices mirroring sometimes flickered at the beginning of a recording session.
 
-#### Hotfixes
-
-* 3.0.1
-  * Added support for simulators on Xcode 12.5
-* 3.0.2
-  * Fixed a conflict happening when parallel execution use the same addon
-* 3.0.3
-  * Fixed problem with tests containing addons that were failing on dockers and the virtual agent.
-  * Fixed aborted execution reports that were interfering with the upload of reports of other finished executions.
-* 3.0.4
-  * Fixed an issue with project parameters that were not getting updated after execution.
-  * Fixed issue with only one browser appears in reports for tests running on multiple browsers when using C\# OpenSDK.
-  * Fixed addon execution failures case when curly brackets were present in action parameters.
-  * Fixed execution failure occurring when a nested test is disabled.
-  * Reduced the frequency of new Agent version popup appearance to only once per day.
-* 3.0.5
-  * Fixed issue with screenshots missing in the local HTML report
-  * Fixed wrong execution progress percentage is shown above 100%
-  * Fixed findElements\(\) command showing as failed when no elements yielded.
-  * Improved network addons performance.
-  * Improved execution progress refresh time.
-  * Fixed issue with dynamic locators using parameters when executing YAMLs.
-* 3.1.0
-  * Fixed issues with execution in mobile emulation mode on Chrome 
-  * Fixed registration issues on ubuntu when the process was sometimes frozen
-  * Local Agent is now the first in _Execute Test_ and _Create Job_  wizards.
-  * Fixed issue with updating Project Parameters in nested tests
-* 3.2.0
-  * Fixed issue with updating reports to the platform 
-  * Fixed issues with custom capabilities supplied via Job.
-
 #### SDK
 
 * SDK executions were not reporting until agent restarts.
@@ -113,6 +75,29 @@ description: Version 3.0 - Release notes
 * PDF reports now have improved image quality for included screenshots.
 * Fixed some UI issues for data-driven execution reports.
 * Generating PDF reports from imported YAML files no longer fails.
+
+## Hotfixes
+
+* 3.0.1
+  * Added support for simulators on Xcode 12.5
+* 3.0.2
+  * Fixed a conflict happening when parallel execution use the same addon
+* 3.0.3
+  * Fixed problem with tests containing addons that were failing on dockers and the virtual agent.
+  * Fixed aborted execution reports that were interfering with the upload of reports of other finished executions.
+* 3.0.4
+  * Fixed an issue with project parameters that were not getting updated after execution.
+  * Fixed issue with only one browser appears in reports for tests running on multiple browsers when using C\# OpenSDK.
+  * Fixed addon execution failures case when curly brackets were present in action parameters.
+  * Fixed execution failure occurring when a nested test is disabled.
+  * Reduced the frequency of new Agent version popup appearance to only once per day.
+* 3.0.5
+  * Fixed issue with screenshots missing in the local HTML report
+  * Fixed wrong execution progress percentage is shown above 100%
+  * Fixed findElements\(\) command showing as failed when no elements yielded.
+  * Improved network addons performance.
+  * Improved execution progress refresh time.
+  * Fixed issue with dynamic locators using parameters when executing YAMLs.
 
 ## Supported Browsers
 
