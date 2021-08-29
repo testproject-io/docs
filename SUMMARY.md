@@ -254,3 +254,7 @@
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
 
+---
+
+* [v3.2.0](v3.2.0.md)
+
