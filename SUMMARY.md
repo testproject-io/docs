@@ -231,6 +231,7 @@
 ## Releases
 
 * [v3.0](releases/v3.0/README.md)
+  * [v3.2.0](releases/v3.0/v3.2.0.md)
   * [v3.1.0](releases/v3.0/v3.1.0.md)
 * [v2.0](releases/v2.0/README.md)
   * [v2.3](releases/v2.0/v2.3.md)
@@ -253,8 +254,4 @@
   * [v0.51](releases/older-versions/v0.51.md)
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
-
----
-
-* [v3.2.0](v3.2.0.md)
 
