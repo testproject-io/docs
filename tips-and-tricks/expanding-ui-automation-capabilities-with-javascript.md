@@ -4,7 +4,7 @@ The powerful tools TestProject provides around finding and using elements will b
 
 ## Javascript Addons
 
-There are some handy ways to use javascript in TestProject and to access them you need to have a couple of [addons](../testproject-addons/using-addons-in-the-testproject-recorder.md) installed. The Web Extensions addon will give you the ability to execute javascript directly against the page you are one and the Javascript Actions addon will give you access to some built in javascript actions like clicking with javascript that can be useful.
+There are some handy ways to use javascript in TestProject and to access them you need to have a couple of [addons](../testproject-addons/using-addons-in-the-testproject-recorder.md) installed. The Web Extensions addon will give you the ability to execute javascript directly against the page you are on and the Javascript Actions addon will give you access to some built in javascript actions like clicking with javascript that can be useful.
 
 ## Example Using Javascript
 
@@ -42,7 +42,7 @@ When we do that, you can see that it has added a new button to the page
 
 Let's try doing one more thing with directly executed javascript. Let's set a hidden attribute on that Delete button we just created.  To do this we will once again create a new test step with the type set to Action and the Action itself set to Execute JavaScript. Now to modify the element attribute with Javascript we need to somehow get the element. We can find out some information about the element by freezing it and then looking at it's attributes.
 
-To freeze and element we just hoover over it and hit shift twice quickly. We can then go to the Attributes option and see what attributes this element has.
+To freeze an element we just hover over it and hit shift twice quickly. We can then go to the Attributes option and see what attributes this element has.
 
 ![Element Attributes](../.gitbook/assets/image%20%28140%29.png)
 
