@@ -82,7 +82,7 @@ You can then modify the parameter using the edit icon.
 
 ![Modify Parameter](../.gitbook/assets/image%20%28162%29.png)
 
-Parameters can also be managed at the project leve and controlled at run time, which make it easy to run and maintain test like this.
+Parameters can also be managed at the project level and controlled at run time, which make it easy to run and maintain test like this.
 
 ## Conclusion
 
