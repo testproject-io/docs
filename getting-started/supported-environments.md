@@ -1,3 +1,9 @@
+---
+description: >-
+  Supported Devices, Supported Browsers, supported operating, systems supported
+  emulators and supported simulators.
+---
+
 # Supported Environments
 
 TestProject supports a wide variety of environments. You can create and run tests with it on all operating systems \(Windows, Linux and macOS\). It supports Web, Android and iOS tests and covers all the major browsers.
@@ -14,9 +20,7 @@ You can execute **iOS tests** on any iOS devices.
 
 You can execute **API / Database** tests using any target.
 
-## Full list of currently supported frameworks:
-
-### Supported Browsers
+## Supported Browsers
 
 #### Recording \(Local\)
 
@@ -38,14 +42,14 @@ You can execute **API / Database** tests using any target.
 * Edge **44+**
 * Internet Explorer **11**
 
-### Supported Mobile Devices
+## Supported Devices
 
 #### Recording and Execution
 
 * Android: **6.0** _\(_ Marshmallow_\)_ - **11.0 /** API level **23+**
 * iOS: **10** - **14.6**
 
-#### Supported Emulators Frameworks
+#### Supported Emulators/Simulators Frameworks
 
 * Android Studio: **Latest**
 * Genymotion: **Latest**
