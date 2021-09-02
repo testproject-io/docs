@@ -16,7 +16,7 @@ TestProjects support Chrome versions 77 and newer, make sure the Chrome version 
 
 To update Chrome go to the 3 dots next to the profile icon on the top toolbar &gt; help &gt; About Google Chrome
 
-![](../.gitbook/assets/image-1-%20%283%29%20%283%29%20%283%29%20%282%29%20%283%29.png)
+![](../.gitbook/assets/image-1-%20%283%29%20%283%29%20%283%29%20%282%29%20%283%29%20%283%29.png)
 
 **Running Agent as administrator**
 
@@ -32,7 +32,7 @@ If the above options didn't solve the issue go to `C:\Users\<username>\AppData\R
 
 In case you are using Quick Heal antivirus you need to disable browser sandbox. Open Quick Heal Total Security dashboard and go to Protection and select Browser Sandbox
 
-![](../.gitbook/assets/capture%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+![](../.gitbook/assets/capture%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
 And turn browser sandbox off by toggling the the on/off switch
 

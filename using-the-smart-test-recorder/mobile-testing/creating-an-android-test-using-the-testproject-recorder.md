@@ -10,7 +10,7 @@ Once you have done that you can find an option in the settings called developer 
 
 Creating a new mobile test is as simple as clicking on the New Test button and then choosing the Mobile test option as your test type
 
-![Add a New Test](../../.gitbook/assets/image%20%28255%29.png)
+![Add a New Test](../../.gitbook/assets/image%20%28255%29%20%282%29.png)
 
 Once you have done that you can fill in a name and description for your test and press Next.  You will then need to select which platform and application you want to use. For recording on an Android device you would choose the Android platform and then you can select the app that you want to test.  If this is the first test you are creating there will not be any applications in the list and so you will need to click on the Add a new application for testing button.
 
@@ -38,7 +38,7 @@ Once you have picked the application you want to use and given it a name you can
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute. You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers.
 
-![Start Creating a Test](../../.gitbook/assets/image%20%28169%29%20%283%29.png)
+![Start Creating a Test](../../.gitbook/assets/image%20%28169%29%20%283%29%20%281%29.png)
 
 You will also notice that you can choose to have the test files saved in the cloud, or saved to a local file. The **File**  option allows you to create tests that can be run offline. To learn more about the cloud versus offlines modes, check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/). 
 

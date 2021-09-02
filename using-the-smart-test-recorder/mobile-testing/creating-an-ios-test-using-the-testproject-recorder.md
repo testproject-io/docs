@@ -28,7 +28,7 @@ Once you have picked the application you want to use and given it a name you can
 
 Now that you have created your test and specified the application to use for testing, you are ready to start creating the steps that you want your test to execute.  You can create the steps manually if you want, or you can use the powerful recorder that TestProject offers
 
-![Record a Test](../../.gitbook/assets/image%20%28169%29%20%283%29%20%281%29.png)
+![Record a Test](../../.gitbook/assets/image%20%28169%29%20%283%29%20%281%29%20%281%29.png)
 
 Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
 

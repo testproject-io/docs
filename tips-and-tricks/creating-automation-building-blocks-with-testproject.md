@@ -1,6 +1,6 @@
 # Creating automation building blocks with TestProject
 
-Organizing and managing automated tests directly contributes to a successful test automation initiative. Test automation isn't a set it and forget it kind of activity. In order to have automated tests continue to add value they will need to be updated and changed as the product changes. A test suite that is designed with this in mind can continue to be valuable as time goes on. 
+Organizing and managing automated tests directly contributes to a successful test automation initiative. Test automation isn't a set it and forget it kind of activity. In order to have automated tests continue to add value they will need to be updated and changed as the product changes. A test suite that is designed with this in mind can continue to be valuable as time goes on.
 
 There are several strategies that can be used to help with this and one powerful strategy that can be used in TestProject, is breaking up tests into smaller pieces that can be shared. These building blocks make it much easier to update tests as they help organize your test actions and also consolidate common actions in one place. Another powerful strategy built into TestProject is the ability to setup and share parameters across tests. The also helps prevent duplication and allows you to make updates quickly and easily.
 
@@ -14,7 +14,7 @@ The first thing we need to do after navigating to the demo page is to login. Cre
 
 ![Example Form After Login](../.gitbook/assets/image%20%2856%29.png)
 
-If you have not yet set up a test in TestProject, you can find details on how to do that [here](../using-the-smart-test-recorder/web-testing/) in the documentation. 
+If you have not yet set up a test in TestProject, you can find details on how to do that [here](../using-the-smart-test-recorder/web-testing/) in the documentation.
 
 ### Creating a Valid Email Test
 
@@ -44,7 +44,7 @@ This will bring up the the TestProject recorder, and you can run the login step.
 
 ![Run Test Step](../.gitbook/assets/image%20%2853%29.png)
 
-Once you have done this, you can write the rest of your test. So in this case, let's complete the filling out of the form with a valid email address. We can click on the Country dropdown and select the country we want, and then type in the address we want to use. Similarly, we can enter in the phone number and email address that we want to use and then click on the Save button. The TestProject recorder will add test steps for each of these actions. 
+Once you have done this, you can write the rest of your test. So in this case, let's complete the filling out of the form with a valid email address. We can click on the Country dropdown and select the country we want, and then type in the address we want to use. Similarly, we can enter in the phone number and email address that we want to use and then click on the Save button. The TestProject recorder will add test steps for each of these actions.
 
 ### Create Test Parameters
 
@@ -89,12 +89,4 @@ Parameters can also be managed at the project level and controlled at run time, 
 In the scenario we have been thinking about we have created tests that build up on each other and this is a powerful way to make it easier to manage the tests in a test suite. With the example we created, we can imagine something changing on the login page. In that case we would just need to modify the one login test and all the test would be ok. If we hadn't set this up by building up parts of the test we would have needed to update each test that uses that code.
 
 In this example we have demonstrated how this would work with recorded tests, but of course the same principles apply and can be put into effect with TestProject when working with coded tests as well. When it comes to managing your tests, the tools the TestProject offers make it straightforward to create and maintain tests that will be effective for as long as you need them.
-
-
-
-
-
-
-
-
 

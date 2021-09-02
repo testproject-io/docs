@@ -1,6 +1,6 @@
 # Expanding UI Automation Capabilities with Javascript
 
-The powerful tools TestProject provides around finding and using elements will be what you need for most application, but there are times when you might need to do something that goes beyond what can be done with built in element locators. In that case you may want to consider using Javascript to help you accomplish the task at hand. 
+The powerful tools TestProject provides around finding and using elements will be what you need for most application, but there are times when you might need to do something that goes beyond what can be done with built in element locators. In that case you may want to consider using Javascript to help you accomplish the task at hand.
 
 ## Javascript Addons
 
@@ -8,13 +8,13 @@ There are some handy ways to use javascript in TestProject and to access them yo
 
 ## Example Using Javascript
 
-Let's take a look at an example to see what it looks like to use these actions. For this example we will use a very [simple example page](http://the-internet.herokuapp.com/add_remove_elements/) where we can click on buttons to add and remove elements from the page. If you have not yet setup a project, you can follow the documentation on [creating a web test](../using-the-smart-test-recorder/web-testing/) to see how to get started. For this example the URL used in the test will be [http://the-internet.herokuapp.com/add\_remove\_elements/](http://the-internet.herokuapp.com/add_remove_elements/). 
+Let's take a look at an example to see what it looks like to use these actions. For this example we will use a very [simple example page](http://the-internet.herokuapp.com/add_remove_elements/) where we can click on buttons to add and remove elements from the page. If you have not yet setup a project, you can follow the documentation on [creating a web test](../using-the-smart-test-recorder/web-testing/) to see how to get started. For this example the URL used in the test will be [http://the-internet.herokuapp.com/add\_remove\_elements/](http://the-internet.herokuapp.com/add_remove_elements/).
 
 ### Execute Javascript Directly
 
-The first thing we will look at is executing javascript directly on the page. Usually you will not want to do this as you can be modifying the page from how it presenting to users or you can be interacting with it in ways that interactive users will not be. However, sometimes there are cases were you may have a specific need that requires you to be able to interact directly with javascript on the page or that requires you to run some custom javascript on the page. In these case you can use the Execute Javascript action in TestProject. 
+The first thing we will look at is executing javascript directly on the page. Usually you will not want to do this as you can be modifying the page from how it presenting to users or you can be interacting with it in ways that interactive users will not be. However, sometimes there are cases were you may have a specific need that requires you to be able to interact directly with javascript on the page or that requires you to run some custom javascript on the page. In these case you can use the Execute Javascript action in TestProject.
 
-On the page we are looking at, there is a button that we can click to add a new element to the page. If we inspect that element, we can see that it calls a javascript method called `addElement()`. 
+On the page we are looking at, there is a button that we can click to add a new element to the page. If we inspect that element, we can see that it calls a javascript method called `addElement()`.
 
 ![addElement\(\)](../.gitbook/assets/image%20%28141%29.png)
 
@@ -40,7 +40,7 @@ When we do that, you can see that it has added a new button to the page
 
 ![Delete Button Added](../.gitbook/assets/image%20%28155%29%20%281%29.png)
 
-Let's try doing one more thing with directly executed javascript. Let's set a hidden attribute on that Delete button we just created.  To do this we will once again create a new test step with the type set to Action and the Action itself set to Execute JavaScript. Now to modify the element attribute with Javascript we need to somehow get the element. We can find out some information about the element by freezing it and then looking at it's attributes.
+Let's try doing one more thing with directly executed javascript. Let's set a hidden attribute on that Delete button we just created. To do this we will once again create a new test step with the type set to Action and the Action itself set to Execute JavaScript. Now to modify the element attribute with Javascript we need to somehow get the element. We can find out some information about the element by freezing it and then looking at it's attributes.
 
 To freeze an element we just hover over it and hit shift twice quickly. We can then go to the Attributes option and see what attributes this element has.
 
@@ -82,7 +82,7 @@ The element is then immediately available to choose in the select element panel 
 
 ![Javascript Click Action](../.gitbook/assets/image%20%2811%29.png)
 
-At this point we can run this step and the button gets 'clicked' even though it is hidden. This can be verified by checking in the Element Explorer, where the Delete Button element will no longer be available. 
+At this point we can run this step and the button gets 'clicked' even though it is hidden. This can be verified by checking in the Element Explorer, where the Delete Button element will no longer be available.
 
 So we can see that although you probably won't usually want to do things like click on a hidden button, there are ways to do things like this with javascript if you really need to. TestProject's javascript addons give you the ability to work with details like this if the testing you are doing requires it.
 

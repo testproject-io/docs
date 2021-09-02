@@ -6,7 +6,7 @@ Creating a web test is a simple and straightforward process with the TestProject
 
 Creating a web test is as simple as clicking on the New Test button and then choosing the Web option as your test type
 
-![Create a New Test](../../.gitbook/assets/image%20%2895%29.png)
+![Create a New Test](../../.gitbook/assets/image%20%28255%29.png)
 
 You will then need to select what type of test you want to create. In this tutorial, you are going to create a Web test, so choose that option and then click on **Next**.
 
