@@ -81,7 +81,7 @@ You can verify it [here](https://docs.testproject.io/getting-started/installatio
 Now to register your agent use this command:
 
 ```text
-./testproject-agent register -a agantName -t Your_API_Key
+./testproject-agent register -a agentName -t Your_API_Key
 ```
 
 It should look like this:
