@@ -8,7 +8,7 @@ We do validations on the returned value. Click on add validation under Validatio
 
 ![](../.gitbook/assets/image%20%28231%29.png)
 
-Select the output field and validation type and insert the value you want to compare the field to as fixed value or as parameter 
+Select the output field and validation type and insert the value you want to compare the field to as a fixed value or as a parameter 
 
 ![](../.gitbook/assets/image%20%28229%29.png)
 
