@@ -16,7 +16,7 @@ This technology automatically optimizing the wait times for different automation
 
 ## Automation Assistant
 
-In the spirit of having AI technology work with testers and not try to replace them, the TestProject automation assistant will give you suggestions that help make your tests more stable and valuable. If the self-healing technogoly correct a locator the automation assistant will let you know and offer you a suggestion for a new locator to use. It will also help stabilize your tests in the event of pop-ups or other page actions that can sometimes interfere with the running of UI tests. 
+In the spirit of having AI technology work with testers and not try to replace them, the TestProject automation assistant will give you suggestions that help make your tests more stable and valuable. If the self-healing technology corrects a locator, the automation assistant will let you know and offer you a suggestion for a new locator to use. It will also help stabilize your tests in the event of pop-ups or other page actions that can sometimes interfere with the running of UI tests. 
 
 The automation assistant is on by default, but you can double check that you have not disabled it by going to the **Test** tab of the recorder.
 
