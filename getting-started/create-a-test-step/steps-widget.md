@@ -80,7 +80,7 @@ If you do have a test step that you know is going to be quite slow, you can set 
 
 ### Context
 
-Step context defines where the interaction with your web application happens. It can be the default DOM, a shadow DOM, or an iFrame. The context is defined by a set of locators \(like for elements\) and when the step is executed, these locators will be taken into consideration before proceeding with the actual step action. In most cases, these are generated automatically while you record and there is no need to worry about it, but if necessary, they can be manually edited. In case there is no context defined on a step, the interaction will happen on the highest possible level of the tested DOM.
+Step context defines where the interaction with your web application happens. It can be the default DOM or an iFrame. The context is defined by a set of locators \(like for elements\) and when the step is executed, these locators will be taken into consideration before proceeding with the actual step action. In most cases, these are generated automatically while you record and there is no need to worry about it, but if necessary, they can be manually edited. In case there is no context defined on a step, the interaction will happen on the highest possible level of the tested DOM.
 
 ### Repeat
 
