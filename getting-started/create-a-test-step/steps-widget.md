@@ -88,5 +88,5 @@ There may be times when you want to repeat a step a few times. Perhaps you have 
 
 ### Invert Step Result
 
-Negative testing is an important tool in any tester's toolbox. You may want to create test steps that you expect to 'fail' in that they cause some kind of expected error to occur. In this case, you can enable the Invert Step Result option so that a failure on that step will be reported as a passing test step.
+Negative testing is an important tool in any tester's toolbox. You may want to create test steps that you expect to 'fail' which would be normal behavior of the application. In this case, you can enable the **Invert Step Result** option so that a failure on that step will be reported as a passing step.
 
