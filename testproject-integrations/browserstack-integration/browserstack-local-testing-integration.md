@@ -106,25 +106,27 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 #### **Java –** \(available in maven-center\)
 
-Gradle:
-
-```text
+{% tabs %}
+{% tab title="Gradle" %}
+```groovy
 compile group: 'com.browserstack', name: 'browserstack-local-java', version: '1.0.3'
 ```
+{% endtab %}
 
-Maven:
-
-```text
+{% tab title="Maven" %}
+```markup
 <dependency>
     <groupId>com.browserstack</groupId>
     <artifactId>browserstack-local-java</artifactId>
     <version>1.0.3</version>
 </dependency>
 ```
+{% endtab %}
+{% endtabs %}
 
-#### **Python -**
+#### Python -
 
-```text
+```python
 pip install browserstack-local
 ```
 
