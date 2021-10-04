@@ -46,8 +46,8 @@ You can execute **API / Database** tests using any target.
 
 #### Recording and Execution
 
-* Android: **6.0** _\(_ Marshmallow_\)_ - **11.0 /** API level **23+**
-* iOS: **10** - **14.6**
+* Android: **6.0** _\(_ Marshmallow_\)_ - **12.0 /** API level **23+**
+* iOS: **10** - **15.0**
 
 #### Supported Emulators/Simulators Frameworks
 
