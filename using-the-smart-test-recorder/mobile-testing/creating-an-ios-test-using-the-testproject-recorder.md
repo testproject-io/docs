@@ -32,11 +32,11 @@ Now that you have created your test and specified the application to use for tes
 
 Choosing this will open the test recorder for you. The test recorder will show you the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing.
 
-![TestProject Recorder](../../.gitbook/assets/image%20%2830%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%28432%29.png)
 
 During recording you can conveniently use the TestProject [Element Inspector](../finding-and-using-elements/element-inspector.md) and [Element Locator ](../finding-and-using-elements/element-locator.md)to verify your location strategies as you interact with your application through the mirrored view.
 
-![Element Inspector and Locator](https://blog.testproject.io/wp-content/uploads/2018/06/iOS-Element-Locator-512x441.png)
+![Use the Elements Inspector to create locators based on attributes](../../.gitbook/assets/image%20%28431%29.png)
 
 Actions that you perform on the mirror device will be added as steps in your test and you can quickly and easily build the test that you need. 
 
