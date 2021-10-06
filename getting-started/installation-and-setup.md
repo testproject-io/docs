@@ -40,7 +40,22 @@ cd /home/UserName/testproject/agent/bin
 Don't forget to replace UserName with the actual user
 {% endhint %}
 
-Then start the agent in fork mode so you can use the current terminal:
+Then install the Agent:
+
+1. Right click on that file-&gt; Properties-&gt; Permissions-&gt; check the "**Execute**" option.
+2. Open the folder that contains this file on terminal and type:
+
+```text
+./TestProject_Agent_3.3.0.sh
+```
+
+{% hint style="warning" %}
+Make sure to type the correct file name \(agent version may differ\)
+{% endhint %}
+
+After installing:
+
+Start the agent in fork mode so you can use the current terminal:
 
 ```text
 ./testproject-agent start -f
