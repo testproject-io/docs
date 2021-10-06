@@ -30,20 +30,11 @@ On Mac, after you have installed the agent, you can run it by finding it in the 
 
 ### Start the Agent on Linux
 
-First navigate to TestProject app:
+First install the Agent:
 
-```text
-cd /home/UserName/testproject/agent/bin
-```
-
-{% hint style="info" %}
-Don't forget to replace UserName with the actual user
-{% endhint %}
-
-Then install the Agent:
-
-1. Right click on that file-&gt; Properties-&gt; Permissions-&gt; check the "**Execute**" option.
-2. Open the folder that contains this file on terminal and type:
+1. Navigate to downloads.
+2. Right click on that file-&gt; Properties-&gt; Permissions-&gt; check the "**Execute**" option.
+3. Open the folder that contains this file on terminal \(right click -&gt; open in terminal\) and type:
 
 ```text
 ./TestProject_Agent_3.3.0.sh
@@ -53,9 +44,17 @@ Then install the Agent:
 Make sure to type the correct file name \(agent version may differ\)
 {% endhint %}
 
-After installing:
+After installing navigate to TestProject app:
 
-Start the agent in fork mode so you can use the current terminal:
+```text
+cd /home/UserName/testproject/agent/bin
+```
+
+{% hint style="info" %}
+Don't forget to replace UserName with the actual user
+{% endhint %}
+
+Then start the agent in fork mode so you can use the current terminal:
 
 ```text
 ./testproject-agent start -f
