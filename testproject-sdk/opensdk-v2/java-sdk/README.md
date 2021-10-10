@@ -148,7 +148,7 @@ The different drivers in the tests will search for the developer token in an env
 
 You can also explicity provide the development token when calling the driver constructor. If you use this option, you can pass in your token as an argument to the constructor. So instead of just setting the `ChromeOptions()` when creating a new driver, you can also specify the token as a string. If you wanted to take this approach, Line 10 in the example above would be replaced with something like this:
 
-```
+```java
 ChromeDriver driver =  new ChromeDriver("your token", new ChromeOptions());
 ```
 
@@ -158,7 +158,7 @@ You of course, need to put in the value for your development token so that it ca
 
 Another option you have is to use the generic driver builder that the SDK provides. For example, you could construct a `ChromeDriver` with the following code:
 
-```
+```java
 ChromeDriver driver = new DriverBuilder<ChromeDriver>(new ChromeOptions())
   .withRemoteAddress(new URL("http://localhost:8585"))
   .withToken("your token")
