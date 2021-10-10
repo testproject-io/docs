@@ -195,7 +195,7 @@ You can build packages in a few different ways. You will probably want to use ei
 
 If you are building with Maven, you can add the following `build` section to your `pom.xml` file
 
-```markup
+```xml
 <build>
     <plugins>
         <!-- Use maven-jar-plugin to include tests -->
@@ -235,7 +235,7 @@ If you are building with Maven, you can add the following `build` section to you
 
 The maven assembly plugin references a descriptor file. With the example we are working through in this tutorial, you will not yet have that file. You will need to create it. In order to do that in Eclipse, right click on the `src/main/java` folder in your project and from the **New** menu choose the **Folder** option. Name the folder `assembly` and then right click on it and from the **New** menu select the **File** option. Name this file `test-jar-with-dependencies.xml` and paste the following text into this file:
 
-```markup
+```html
 <assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
