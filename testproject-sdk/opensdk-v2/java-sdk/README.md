@@ -59,7 +59,7 @@ Make sure to set the `<version>` to the name of the latest TestProject SDK versi
 
 You don't have to use testing frameworks, but they usually make life a lot simpler, so if you do not yet have one, you might want to also add the following dependency to your `pom.xml`file to add the junit4 test framework into your project.
 
-```markup
+```xml
 <dependency>
      <groupId>junit</groupId>
      <artifactId>junit</artifactId>
@@ -82,7 +82,7 @@ If you prefer to build with a gradle project, you can do that as well. As with u
 
 Once you've done this, find the `build.gradle` file in your project and add the following into the dependencies section.
 
-```java
+```groovy
 implementation 'io.testproject:java-sdk:1.2.3-RELEASE'
 ```
 
