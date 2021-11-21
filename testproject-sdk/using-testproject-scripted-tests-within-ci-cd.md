@@ -13,7 +13,7 @@ Functional testing ensures us that:
 
 Functional testing is usually carried out at the end of the development cycle before deployment.
 
-Here we will review how to use TestProject scripted tests within a CI/CD pipeline, including examples for Python, C\# and Java tests. 
+Here we will review how to use TestProject scripted tests within a CI/CD pipeline, including examples for Python, C# and Java tests.&#x20;
 
 ![CI/CD using TestProject SDK](../.gitbook/assets/ci-cd-using-testproject-sdk.png)
 
@@ -27,7 +27,7 @@ Please make sure your agent is installed and running before continuing.
 
 TestProject Agents can be installed on all major operating systems including Windows, Linux and macOS. As mentioned previously, the Agent can also be installed as a Docker container.
 
-To install the TestProject Agent on your local or virtual machine, you can head over to the TestProject platform at [https://app.testproject.io/\#/agents](https://app.testproject.io/#/agents)
+To install the TestProject Agent on your local or virtual machine, you can head over to the TestProject platform at [https://app.testproject.io/#/agents](https://app.testproject.io/#/agents)
 
 Download an Agent and install it using the installation wizard.
 
@@ -46,18 +46,18 @@ Make sure to review the TestProject SDK and Docker Agent section on the [DockerH
 
 ## SDK Installation
 
-Links to all installation sources for supported languages, guides and examples are available from the **Integrations** section at: [https://app.testproject.io/\#/integrations/sdk](https://app.testproject.io/#/integrations/sdk)
+Links to all installation sources for supported languages, guides and examples are available from the **Integrations** section at: [https://app.testproject.io/#/integrations/sdk](https://app.testproject.io/#/integrations/sdk)
 
-![SDK Installation sources](../.gitbook/assets/3%20%281%29.png)
+![SDK Installation sources](<../.gitbook/assets/3 (1).png>)
 
 **For Java**:
 
-Install a dependency for your [Maven or Gradle](https://search.maven.org/artifact/io.testproject/java-sdk) project.  
+Install a dependency for your [Maven or Gradle](https://search.maven.org/artifact/io.testproject/java-sdk) project.\
 To compile your tests and execute them, use appropriate Gradle or Maven commands.
 
-**For C\#**:
+**For C#**:
 
-Install the TestProject SDK [Nuget](https://www.nuget.org/packages/TestProject.SDK) package  
+Install the TestProject SDK [Nuget](https://www.nuget.org/packages/TestProject.SDK) package\
 To compile your tests and execute them, use _`msbuild`_, e.g:
 
 `msbuild buildapp.csproj`
@@ -82,19 +82,19 @@ The TestProject SDK relies on your dev token when initializing your automation d
 
 Head to ‘Credentials’:
 
-![Credentials in Jenkins](../.gitbook/assets/4%20%281%29.png)
+![Credentials in Jenkins](<../.gitbook/assets/4 (1).png>)
 
 Go to the global domain:
 
-![Jenkins Global Domain](../.gitbook/assets/5%20%281%29.png)
+![Jenkins Global Domain](<../.gitbook/assets/5 (1).png>)
 
 Add a new credential:
 
-![Add a New Jenkins Credential](../.gitbook/assets/6%20%281%29.png)
+![Add a New Jenkins Credential](<../.gitbook/assets/6 (1).png>)
 
 Select the **secret text** option, the secret field should be your developer token, the ID is the identifier that will be used in your pipeline and the description is optional.
 
-![Jenkins Secret Text Option](../.gitbook/assets/7%20%281%29.png)
+![Jenkins Secret Text Option](<../.gitbook/assets/7 (1).png>)
 
 In your pipeline, you can pull the tests from your Git repositories and then execute them as you would any other programmatically written test through your CI/CD pipeline.
 
@@ -106,7 +106,7 @@ In the following pipeline:
 
 ![](../.gitbook/assets/8.png)
 
-The **complete** pipeline code is:
+The **complete **pipeline code is:
 
 ```python
 pipeline {
@@ -131,7 +131,7 @@ pipeline {
 }
 ```
 
-Source code of the example test used is available [here](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/simple/web_test.py)
+Source code of the example test used is available [here](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/simple/web\_test.py)
 
 Upon running the Jenkins build, the script will be pulled into your Jenkins workspace and the test will be executed along with a report being automatically generated for that execution on the TestProject platform.
 
@@ -182,11 +182,11 @@ pipeline {
 }
 ```
 
-Please note that to automatically register your docker agent, you will need to create an API key for TestProject. You can create a key from here: [https://app.testproject.io/\#/integrations/api](https://app.testproject.io/#/integrations/api) and then proceed to add the key as another credential as you did for the developer token.
+Please note that to automatically register your docker agent, you will need to create an API key for TestProject. You can create a key from here: [https://app.testproject.io/#/integrations/api](https://app.testproject.io/#/integrations/api) and then proceed to add the key as another credential as you did for the developer token.
 
 More details are available on [DockerHub](https://hub.docker.com/r/testproject/agent).
 
-## C\# Test Example
+## C# Test Example
 
 ```csharp
 pipeline {
@@ -229,12 +229,12 @@ pipeline {
 
 Has been changed to:
 
-`private static string DevToken =   
-Environment.GetEnvironmentVariable("TP_DEV_TOKEN");`
+`private static string DevToken = `\
+`Environment.GetEnvironmentVariable("TP_DEV_TOKEN");`
 
 In order for the test to pull the development token from an environment variable instead of hardcoding it in.
 
-### Start Docker Agent and Execute C\# Web Test
+### Start Docker Agent and Execute C# Web Test
 
 ```csharp
 pipeline {
@@ -396,7 +396,6 @@ You can view more details about these options in each SDK’s repository:
 
 * [Java](https://github.com/testproject-io/java-sdk)
 * [Python](https://github.com/testproject-io/python-sdk)
-* [C\#](https://github.com/testproject-io/csharp-sdk-examples)
+* [C#](https://github.com/testproject-io/csharp-sdk-examples)
 
 For Python, you can also review this [in-depth tutorial series by Bas Dijkstra](https://blog.testproject.io/2020/07/15/getting-started-with-testproject-python-sdk/) to learn how to get started with the Python SDK for both web and mobile apps, and how to customize your test reports.
-

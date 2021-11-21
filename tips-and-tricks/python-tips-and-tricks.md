@@ -10,21 +10,21 @@ description: >-
 
 Before using some of the below methods, we will need to obtain an API key, agent ID and device UDID which are all can be extracted from TestProject UI, no worries it really simple.
 
-1. Navigate to TestProject API Page: [https://app.testproject.io/\#/integrations/api](https://app.testproject.io/#/integrations/api), get your API Key, or create one if you do not have one.
+1. Navigate to TestProject API Page: [https://app.testproject.io/#/integrations/api](https://app.testproject.io/#/integrations/api), get your API Key, or create one if you do not have one.
 
-![](../.gitbook/assets/image%20%28293%29.png)
+![](<../.gitbook/assets/image (293).png>)
 
-   3. In the Agents tab, press on the desired agent, devices and copy the UDID, read more about how to do it [here](https://docs.testproject.io/tips-and-tricks/finding-device-udid).
+&#x20;  3\. In the Agents tab, press on the desired agent, devices and copy the UDID, read more about how to do it [here](https://docs.testproject.io/tips-and-tricks/finding-device-udid).
 
-   4. Copy the Agent ID which you can find on the Agents page [here](https://app.testproject.io/#/agents).
+&#x20;  4\. Copy the Agent ID which you can find on the Agents page [here](https://app.testproject.io/#/agents).
 
-![](../.gitbook/assets/image%20%28292%29.png)
+![](<../.gitbook/assets/image (292).png>)
 
 ## Get a list of connected mobile devices
 
-The bellow Python script will get the agent connected devices based on agent ID. Make sure to supply the API key and Agent ID which you obtained as described before. 
+The bellow Python script will get the agent connected devices based on agent ID. Make sure to supply the API key and Agent ID which you obtained as described before.&#x20;
 
-```text
+```
 import requests as req
 
 api_key = ""  # Your API Key, which you get from TestProject UI https://app.testproject.io/#/integrations/api
@@ -44,9 +44,9 @@ if __name__ == '__main__':
 
 ## Get agent state
 
-The agent can be in 5 different states: Disconnected, Idle, Development, Recording, Executing. to start your CI the agent should be in **Ready** state. Use the below Python script for validating the agent state. 
+The agent can be in 5 different states: Disconnected, Idle, Development, Recording, Executing. to start your CI the agent should be in **Ready **state. Use the below Python script for validating the agent state.&#x20;
 
-```text
+```
 import requests as req
 
 api_key = ""  # Your API Key, which you get from TestProject UI https://app.testproject.io/#/integrations/api
@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
 Below is the Python code to query the agent API to get the installed applications on the connected device. The response will be a JSON array of all installed applications on the device selected.
 
-```text
+```
 import requests as req
 
 port = "8585"  # This is the feault Agent communication port
@@ -87,13 +87,13 @@ if __name__ == '__main__':
     
 ```
 
-## Installing an APK/IPA in Runtime with OpenSDK 
+## Installing an APK/IPA in Runtime with OpenSDK&#x20;
 
-TestProject takes care of IPA/APK installations and deployment process out of the box when using recorded tests or when uploading the code binaries to TestProject cloud. If you prefer to use a local CI with the OpenSDK, the process to install an IPA/APK programmatically on a device in Runtime will be the same as using fluent Appium commands.  The below Python script will deploy and install locally saved APK/IPA on the connected device and execute the example test script. 
+TestProject takes care of IPA/APK installations and deployment process out of the box when using recorded tests or when uploading the code binaries to TestProject cloud. If you prefer to use a local CI with the OpenSDK, the process to install an IPA/APK programmatically on a device in Runtime will be the same as using fluent Appium commands.  The below Python script will deploy and install locally saved APK/IPA on the connected device and execute the example test script.&#x20;
 
 You can reinstall the application if the 'noReset' capability is provided with the value of 'true'.
 
-Prerequisites: TestProject agent is installed, registered and in Ready state, the latest version of TestProject OpenSDK is installed, developer key is provided \(can be obtained from the [integration ](https://app.testproject.io/#/integrations/sdk)area as described above\).
+Prerequisites: TestProject agent is installed, registered and in Ready state, the latest version of TestProject OpenSDK is installed, developer key is provided (can be obtained from the [integration ](https://app.testproject.io/#/integrations/sdk)area as described above).
 
 
 
@@ -107,7 +107,7 @@ If no token is provided in the constructor of the driver, it will use the enviro
 from selenium.webdriver.common.by import By
 ```
 
-```text
+```
 from src.testproject.sdk.drivers import webdriver
 import pytest
 
@@ -152,4 +152,3 @@ def test_install(driver):
 {% hint style="info" %}
 You can also install an IPA for an IOS device by changing the 'platformName' to IOS.
 {% endhint %}
-

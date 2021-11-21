@@ -2,7 +2,7 @@
 description: Perform Behavior Driven Development with the Java OpenSDK.
 ---
 
-# Cucumber \(Java\)
+# Cucumber (Java)
 
 The TestProject Java OpenSDK supports automatic reporting of Cucumber features, scenarios and steps using the CucumberReporter plugin in the SDK.
 
@@ -20,9 +20,9 @@ Instead, it will report:
 
 If working with IntelliJ as your IDE, it is recommended to install the Gherkin plugin for feature file syntax highlighting and execution.
 
-You can find the plugin through file &gt; settings &gt; plugins:
+You can find the plugin through file > settings > plugins:
 
-![IntelliJ Plugin](../../.gitbook/assets/image%20%28275%29.png)
+![IntelliJ Plugin](<../../.gitbook/assets/image (275).png>)
 
 To create your feature files, simply create a file with the .feature extension, it is recommended to store the feature files in a directory for easy access later on.
 
@@ -30,7 +30,7 @@ The feature file will include our Gherkin syntax scenarios and steps, for exampl
 
 login\_scenario.feature
 
-```text
+```
 Feature: TestProject with Cucumber Framework
   Perform a login scenario with Cucumber
 
@@ -46,11 +46,11 @@ Now that you have a feature file created, created the step definitions is necess
 
 If you have the plugin installed, you can right click on a step in a feature file, and generate step definitions automatically:
 
-![Generate Step Definitions](../../.gitbook/assets/image%20%28277%29.png)
+![Generate Step Definitions](<../../.gitbook/assets/image (277).png>)
 
 This will give us a step implementations file with methods annotated to match our feature file:
 
-```text
+```
 public class MyStepdefs {
     public MyStepdefs() {
         Given("^I navigate to the TestProject example page$", () -> {
@@ -72,7 +72,7 @@ For web and mobile tests you can use any of the available drivers in the SDK or 
 
 The following is an example of creating a web test through the step implementations with the ChromeDriver from the SDK.
 
-```text
+```
 package io.testproject.sdk.tests.examples.frameworks.cucumber.stepdefinitions;
 
 import io.cucumber.java.en.And;
@@ -142,17 +142,17 @@ The driver will be initialized in our first step implementation.
 
 To run your feature file with the plugin, you can either run the feature files directly from your IDE and specify the plugin in your Run/Debug configuration by specifying the following argument:
 
-```text
+```
  --plugin io.testproject.sdk.internal.reporting.extensions.cucumber.CucumberReporter
 ```
 
-![Set Plugin](../../.gitbook/assets/image%20%28270%29.png)
+![Set Plugin](<../../.gitbook/assets/image (270).png>)
 
 In addition, you can run the tests via a runner with the @CucumberOptions annotation for JUnit 4 and TestNG.
 
 A runner will look like the following:
 
-```text
+```
 package io.testproject.sdk.tests.examples.frameworks.cucumber;
 
 import io.cucumber.junit.Cucumber;
@@ -190,19 +190,18 @@ public class JUnitTestRunner {
 
 Where the TestProject Cucumber reporting plugin is set in the annotation parameters, in general the parameters in the annotation are:
 
-* **features -** Local path to the feature file or directory containing the features.
-* **glue -** Package of step implementations.
-* **plugins -** Package path of the reporting plugin, in this case it should always be:
+* **features - **Local path to the feature file or directory containing the features.
+* **glue - **Package of step implementations.
+*   **plugins - **Package path of the reporting plugin, in this case it should always be:
 
-  ```text
-  io.testproject.sdk.internal.reporting.extensions.cucumber.CucumberReporter
-  ```
+    ```
+    io.testproject.sdk.internal.reporting.extensions.cucumber.CucumberReporter
+    ```
 
-  To point to the TestProject reporting plugin.
+    To point to the TestProject reporting plugin.
 
 After running the test, your Gherkin syntax will be reported into TestProject:
 
-![TestProject Report](../../.gitbook/assets/image%20%28273%29.png)
+![TestProject Report](<../../.gitbook/assets/image (273).png>)
 
 A fully working example can be found in the JavaOpenSDK GitHub documentation [here](https://github.com/testproject-io/java-sdk/tree/master/src/test/java/io/testproject/sdk/tests/examples/frameworks/cucumber).
-

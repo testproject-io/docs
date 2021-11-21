@@ -1,6 +1,6 @@
 # Shell Commands Addon
 
-The [Shell Commands Addon](https://addons.testproject.io/shell-commands) allows you to execute commands and scripts while running your tests. It supports all major operating systems: Windows \(CMD\), Linux \(sh\) and macOS. By utilizing “Command” parameter, you can execute any system command or a locally stored script.
+The [Shell Commands Addon](https://addons.testproject.io/shell-commands) allows you to execute commands and scripts while running your tests. It supports all major operating systems: Windows (CMD), Linux (sh) and macOS. By utilizing “Command” parameter, you can execute any system command or a locally stored script.
 
 If you ever need to send system shell commands or run scripts during your tests, this Addon will allow you to do so.
 
@@ -8,15 +8,15 @@ If you ever need to send system shell commands or run scripts during your tests,
 
 This Addon contains a single action for sending those commands called: 'Execute'.
 
-The **input** parameters are: 
+The **input **parameters are:&#x20;
 
 * Command
-* Expected result 
+* Expected result&#x20;
 * Timeout
 * Output file path
 * Output file name
 
-The **output** parameters are: 
+The **output **parameters are:&#x20;
 
 * The exit code
 * The output file path
@@ -50,11 +50,9 @@ Once we complete the test run, we can see the file was created as expected on ou
 
 In this example, we’ll create a new folder within a folder on our macOS desktop. We will use the Execute action with the command “mkdir path folder\_name.”:
 
-![Execute Shell Command Action in the TestProject Recorder Step Widget](../../.gitbook/assets/shell-commands-addon-macos1%20%281%29.png)
+![Execute Shell Command Action in the TestProject Recorder Step Widget](<../../.gitbook/assets/shell-commands-addon-macos1 (1).png>)
 
 Once we complete our test run, we'll be able to see the new folder at the desired location:
 
 ![New folder created on our macOS desktop](../../.gitbook/assets/shell-commands-addon-macos2.png)
-
-
 

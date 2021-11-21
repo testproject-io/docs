@@ -6,13 +6,13 @@ The [TestProject plugin for Jenkins](https://plugins.jenkins.io/testproject) pro
 
 In order to use this plugin, you **must** have:
 
-1. An active **TestProject account** which can be created for free at [https://testproject.io](https://testproject.io/).
+1. An active **TestProject account** which can be created for free at [https://testproject.io](https://testproject.io).
 2. At least one registered and running [**TestProject Agent**](https://docs.testproject.io/testproject-agents/what-is-a-testproject-agent).
 3. An **API key** as explained in [getting started with using the TestProject API](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api).
 
 ## Installing TestProject Jenkins Plugin
 
-[TestProject’s Jenkins plugin](https://plugins.jenkins.io/testproject) is available in the Jenkins plugin index. In order to install it, login to your Jenkins server and choose **Manage Jenkins** → **Manage Plugin → Available**. in the filter field type **“TestProject”** and then select the TestProject plugin and hit **Install without Restart**.
+[TestProject’s Jenkins plugin](https://plugins.jenkins.io/testproject) is available in the Jenkins plugin index. In order to install it, login to your Jenkins server and choose **Manage Jenkins** → **Manage Plugin → Available**. in the filter field type** “TestProject” **and then select the TestProject plugin and hit **Install without Restart**.
 
 That’s it! After a few seconds, the plugin will be installed in your Jenkins server.
 
@@ -24,10 +24,10 @@ In order to integrate with TestProject, you will need an API key that your Jenki
 
 ## Configuring the TestProject Jenkins Plugin
 
-Next you will need to configure the TestProject Jenkins plugin and set the newly created API key. This is a one-time step \(unless you wish to change your key at some point\)
+Next you will need to configure the TestProject Jenkins plugin and set the newly created API key. This is a one-time step (unless you wish to change your key at some point)
 
 * In Jenkins, choose **Manage Jenkins** → **Configure System.**
-* Locate the **TestProject** configuration section, paste your key into the **API Key** field and hit **Save**.
+* Locate the **TestProject **configuration section, paste your key into the **API Key** field and hit **Save**.
 
 You can tick the "**Verbose**" checkbox to receive more detailed reports in your build’s console output. After completing these steps, you will be all set for using the TestProject Jenkins plugin.
 
@@ -61,7 +61,7 @@ As implied by the name, this step will **execute a job** you have created on the
 
 The **Agent Id** is an **optional** choice you can set. The **default will use the agent you have configured your job with when creating it through the platform.** However, you can overwrite this selection from here by selecting one of the other agents available to you.
 
-The **Wait to finish** parameter will set the amount of time the build will wait for a job’s execution to finish within the defined time frame. If the ****automation doesn't finish running in the defined period or the TestProject job execution fails, ****the Jenkins build will be marked as failed, however the following build steps will continue.
+The **Wait to finish** parameter will set the amount of time the build will wait for a job’s execution to finish within the defined time frame. If the** **automation doesn't finish running in the defined period or the TestProject job execution fails,** **the Jenkins build will be marked as failed, however the following build steps will continue.
 
 **If** **you do not want to wait for the TestProject job to finish**, set it to 0, causing the build to continue normally even if the TestProject job fails. This means that the result of the TestProject job will not affect the result of the Jenkins build.
 
@@ -81,7 +81,7 @@ The parameters are the Project Id, the Data Source Id and the path to the update
 
 ### Update Web Application
 
-You can override test execution parameters such as URL’s as part of your CI/CD job/pipeline by using one of the available build steps in the TestProject plugin. You can use the same job and adjust your job or pipeline to a different environment dynamically. 
+You can override test execution parameters such as URL’s as part of your CI/CD job/pipeline by using one of the available build steps in the TestProject plugin. You can use the same job and adjust your job or pipeline to a different environment dynamically.&#x20;
 
 In the following example you will see the web application URL changing before triggering the job, causing the TestProject job to run on the new URL instead:
 
@@ -97,13 +97,13 @@ Will allow you to similarly **update mobile application APK/IPA files, project l
 
 ## Pipeline Jenkins Projects
 
-You can create a new pipeline the same way you created the Freestyle job above, by simply selecting the pipeline option after creating a new Jenkins item. 
+You can create a new pipeline the same way you created the Freestyle job above, by simply selecting the pipeline option after creating a new Jenkins item.&#x20;
 
 For running a TestProject job through a pipeline, use the following syntax:
 
 `tpJobRun jobId: 'YOUR_JOB_ID', projectId: 'YOUR_PROJECT_ID', waitJobFinishSeconds: 1800`
 
-You will need to **input the value of your project and job Id**, along with the **wait to finish time** parameter, behaving the same way as in the Freestyle job. 
+You will need to **input the value of your project and job Id**, along with the **wait to finish time** parameter, behaving the same way as in the Freestyle job.&#x20;
 
 You can enter **Pipeline Syntax** to help you generate the groovy commands needed to execute the TestProject plugin using your pipeline:
 
@@ -117,7 +117,7 @@ Note that all TestProject commands start with tp as seen here:
 
 ![TestProject Commands](../.gitbook/assets/testproject-commands.png)
 
-In the pipeline, there is an additional command that is not available in the Freestyle job. The **“Generate Agent Configuration”** command, that handles configuring the [TestProject Agent in Docker](https://docs.testproject.io/testproject-agents/testproject-agent-in-docker). You can find more details about this command in our API documentation [here](https://api.testproject.io/docs/v2/#/Agents/Agents_GenerateAgentConfigAsync).
+In the pipeline, there is an additional command that is not available in the Freestyle job. The **“Generate Agent Configuration”** command, that handles configuring the [TestProject Agent in Docker](https://docs.testproject.io/testproject-agents/testproject-agent-in-docker). You can find more details about this command in our API documentation [here](https://api.testproject.io/docs/v2/#/Agents/Agents\_GenerateAgentConfigAsync).
 
 The following snippet generator example will generate the command for running a specific job:
 
@@ -125,7 +125,7 @@ The following snippet generator example will generate the command for running a 
 
 The following pipeline example will execute a TestProject job and create a JUnit report using the pipeline:
 
-![Execute Job &amp; Create JUnit report using Pipeline](../.gitbook/assets/pipeline-example.png)
+![Execute Job & Create JUnit report using Pipeline](../.gitbook/assets/pipeline-example.png)
 
 ## Reviewing Execution Results
 
@@ -141,13 +141,13 @@ Note that the report link will not be available through the console output if yo
 
 ## Email and Web Hook Automation Reports
 
-If you’d like to get [email notifications](https://docs.testproject.io/testproject-integrations/setting-up-email-notification) and web hook notifications of the status of your test automation execution, you can add these options to your job through the TestProject web platform. 
+If you’d like to get [email notifications](https://docs.testproject.io/testproject-integrations/setting-up-email-notification) and web hook notifications of the status of your test automation execution, you can add these options to your job through the TestProject web platform.&#x20;
 
 Head to the job you have created in your project and manage your job’s notification settings:
 
 ![Manage TestProject Job Notifications](../.gitbook/assets/manage-testproject-job-notifications.png)
 
-From there, you’ll be able to set who on your team should receive a notification or what web hook should receive a notification \([for example Slack](https://docs.testproject.io/testproject-integrations/integration-to-slack)\), and when:
+From there, you’ll be able to set who on your team should receive a notification or what web hook should receive a notification ([for example Slack](https://docs.testproject.io/testproject-integrations/integration-to-slack)), and when:
 
 ![TestProject Job Notification Settings](../.gitbook/assets/job-notifications-settings.png)
 
@@ -165,9 +165,9 @@ And of course, the final notification will contain some statistics and a direct 
 
 ## How to Fail Jenkins Build if Job Execution Fails
 
-The success of the build is tied directly to the success of the TestProject job. This is determined by the **wait to finish** parameter you have set when creating your job/pipeline. 
+The success of the build is tied directly to the success of the TestProject job. This is determined by the **wait to finish** parameter you have set when creating your job/pipeline.&#x20;
 
-If you choose to wait for the TestProject job to finish, the build will fail if the job fails and vice versa. 
+If you choose to wait for the TestProject job to finish, the build will fail if the job fails and vice versa.&#x20;
 
 If you want your build to be independent of the TestProject job, set the wait to finish parameter to 0, this will trigger the job and continue your build disregarding its result.
 
@@ -187,7 +187,7 @@ Using **tpAgentConfig: Generate TestProject Agent Configuration**, you can gener
 
 To read the agent configuration object in your pipeline script and access to the config property, follow the example below:
 
-```text
+```
 node {
     def agentConfig = tpAgentConfig(
             alias: '<AGENT_ALIAS>', 
@@ -207,13 +207,13 @@ And assigned to a job, you can use it in the same way explained in the previous 
 
 ## Get TestProject Automation Execution Reports in Jenkins Scope
 
-The JUnit plugin accepts **XML test reports generated during the builds** and provides some **graphical visualization of the test as well as a web UI for viewing test reports**, tracking failures, and so on. 
+The JUnit plugin accepts **XML test reports generated during the builds** and provides some **graphical visualization of the test as well as a web UI for viewing test reports**, tracking failures, and so on.&#x20;
 
 If you want to get a report in JUnit format report from TestProject, **create a JUnit test result report post-build action**:
 
 ![JUnit Report from TestProject](../.gitbook/assets/junit-report-from-testproject.png)
 
-As mentioned previously, when creating a build step using the TestProject plugin, **you can specify a path for the JUnit XML report to be saved at**. 
+As mentioned previously, when creating a build step using the TestProject plugin, **you can specify a path for the JUnit XML report to be saved at**.&#x20;
 
 We will reuse that path here:
 
@@ -232,4 +232,3 @@ You can head to “**Test Result**” in your build to get more detailed informa
 ![Jenkins Test Results](../.gitbook/assets/jenkins-test-results.png)
 
 You can view more examples and the direct implementation of the plugin at our public GitHub repository located [here](https://github.com/testproject-io/jenkins-plugin).
-

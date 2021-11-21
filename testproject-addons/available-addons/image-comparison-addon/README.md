@@ -6,7 +6,5 @@ The Image Comparison addon provides actions to visually compare images. You can 
 If you have any issues with taking screenshots using the actions in the addon on mobile devices, try closing your keyboard.
 {% endhint %}
 
-\*\*\*\*
-
-
+****
 

@@ -12,11 +12,11 @@ In order to build an Addon Action that can be executed by TestProject, you need 
 * AndroidElementAction
 * IOSElementAction
 
-In order to use these interfaces you need to create an implementation of the _execute\(\)_ method. This method is what the platform uses when it is running the Action. The _execute\(\)_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
+In order to use these interfaces you need to create an implementation of the _execute()_ method. This method is what the platform uses when it is running the Action. The _execute()_ method returns _ExecutionResult_ enum which can be **PASSED** or **FAILED**.
 
 Action class can also be decorated with the `@Action` annotation to provide extra information about the action.
 
-All actions run in the context of a test and they assume that the required UI state is already in place.  
+All actions run in the context of a test and they assume that the required UI state is already in place.\
 When an action is used in a test it is represented as a single step, usually preceded by other steps that setup the UI state.
 
 ### Web Action
@@ -30,7 +30,7 @@ public class <YourAddonClass> implements WebAction {
 }
 ```
 
-Inside this class you need to implement the execute method using the `WebAddonHelper`  
+Inside this class you need to implement the execute method using the `WebAddonHelper` &#x20;
 
 ```java
  public ExecutionResult execute(WebAddonHelper helper) throws FailureException {
@@ -38,7 +38,7 @@ Inside this class you need to implement the execute method using the `WebAddonHe
  }
 ```
 
-You can see a full example of an implementation of a WebAction class [here](https://github.com/testproject-io/addons/blob/master/Examples/IOS/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java) on GitHub. 
+You can see a full example of an implementation of a WebAction class [here](https://github.com/testproject-io/addons/blob/master/Examples/IOS/src/main/java/io/testproject/examples/sdk/actions/ClearFieldsAction.java) on GitHub.&#x20;
 
 ### Android Action
 
@@ -103,7 +103,7 @@ public ExecutionResult execute(AddonHelper helper) throws FailureException {
 
 You can see a full example of an implementation of a GenericAddon class [here ](https://github.com/testproject-io/addons/blob/master/Examples/Generic/src/main/java/io/testproject/examples/sdk/actions/AdditionAction.java)in GitHub.
 
-The generic action can be used for scenarios that automate non-UI actions \(those that do not require a Selenium or Appium driver\).
+The generic action can be used for scenarios that automate non-UI actions (those that do not require a Selenium or Appium driver).
 
 ### Element Actions
 
@@ -111,7 +111,7 @@ Actions can be element based, which means that their scope is limited to operati
 
 Element Actions may be limited to a particular element by the user selection, or they may be set to only use a specific Element Type. Element Types are defined in TestProject using XPath to describe target element similarities. They can be as simple as you want. For example:
 
-```text
+```
 \\div
 ```
 
@@ -204,7 +204,7 @@ public String countryCode = "1";
 public int maxDigits;
 ```
 
-You can also define output parameters in your addons. Output parameters are a way to store the output of  the actions that your addon does and provide the users of the addon access to that data. They are also defined with the `@Parameter` annotation, but with the **direction** set to `ParameterDirection.OUTPUT`
+You can also define output parameters in your addons. Output parameters are a way to store the output of  the actions that your addon does and provide the users of the addon access to that data. They are also defined with the `@Parameter` annotation, but with the **direction **set to `ParameterDirection.OUTPUT`
 
 ```java
  @Parameter(direction = ParameterDirection.OUTPUT)
@@ -213,9 +213,9 @@ You can also define output parameters in your addons. Output parameters are a wa
 
 The _**Parameter**_ annotation is used to better describe your action's inputs and outputs. I has the following fields available:
 
-* **description** - \(optional\) The description of the parameter
-* **direction** - \(optional\) Defines the parameter as an _input_ \(default if omitted\) or an _output_ parameter. An _input_ parameter will able to receive values when it is being executed while the _output_ parameter value will be retrieved at the end of test execution \(and can be used in other places later on in the automation scenario\).
-* **defaultValue** - \(optional\) Defines a default value that will be used for the parameter.
+* **description** - (optional) The description of the parameter
+* **direction** - (optional) Defines the parameter as an _input_ (default if omitted) or an _output_ parameter. An _input_ parameter will able to receive values when it is being executed while the _output_ parameter value will be retrieved at the end of test execution (and can be used in other places later on in the automation scenario).
+* **defaultValue** - (optional) Defines a default value that will be used for the parameter.
 
 ## Debugging Addons Locally
 
@@ -289,7 +289,6 @@ runner.run(action, By.id("phone"));
 
 TestProject SDK provides annotations to describe the action. The _**Action**_ annotation is used to better describe your action and define how it will appear later in TestProject UI:
 
-* **name** - \(optional\) The name of the action \(if omitted, the name of the class will be used\).
-* **description** - \(optional\) A description of the test which is shown in various places in TestProject platform \(reports for example\). The description can use placeholders {{propertyName}} do dynamically change the text according to test properties.
-* **version** - \(optional\) A version string which is used for future reference.
-
+* **name** - (optional) The name of the action (if omitted, the name of the class will be used).
+* **description** - (optional) A description of the test which is shown in various places in TestProject platform (reports for example). The description can use placeholders {{propertyName}} do dynamically change the text according to test properties.
+* **version** - (optional) A version string which is used for future reference.

@@ -8,27 +8,27 @@ description: Running TestProject Tests & Jobs with Local Testing on BrowserStack
 
 ## What is Local Testing on BrowserStack Automate?
 
-Local Testing on BrowserStack will let you test your applications hosted on your local computer \("localhost"\) or behind a corporate firewall, hosted in development or testing environments.
+Local Testing on BrowserStack will let you test your applications hosted on your local computer ("localhost") or behind a corporate firewall, hosted in development or testing environments.
 
 ## When is BrowserStack Local Necessary?
 
 In order for BrowserStack to be able to test your in-house/non-public tests, and make it accessible for BrowserStack’s servers, a tunnel should be opened between your machine to BrowserStack. If you will try to test your in-house/non-public tests on BrowserStack, your test will fail, due to ERR\_CONNECTION\_REFUSED, your app will not be accessible.
 
-![](../../.gitbook/assets/image%20%28149%29%20%281%29.png)
+![](<../../.gitbook/assets/image (149) (1).png>)
 
 ## Execute TestProject Recorded Tests on Local Resources via BrowserStack
 
 ### Requirements
 
-1. [**TestProject**](https://testproject.io/) **account:** you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free forever account [here](https://app.testproject.io/signup/).
+1. [**TestProject**](https://testproject.io) **account:** you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free forever account [here](https://app.testproject.io/signup/).
 2. **Connect BrowserStack with TestProject as** **explained** [here](https://docs.testproject.io/testproject-integrations/browserstack-integration#setting-up-browserstack-integration).
 
 To use BrowserStack with local resources you need to download **BrowserStackLocal** **binary**:
 
-* [OS X \(10.7 and above\)](https://www.browserstack.com/browserstack-local/BrowserStackLocal-darwin-x64.zip)
+* [OS X (10.7 and above)](https://www.browserstack.com/browserstack-local/BrowserStackLocal-darwin-x64.zip)
 * [Linux 32-bit](https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-ia32.zip)
-* [Linux 64-bit](https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip) 
-* [Windows \(XP and above\)](https://www.browserstack.com/browserstack-local/BrowserStackLocal-win32.zip)
+* [Linux 64-bit](https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip)&#x20;
+* [Windows (XP and above)](https://www.browserstack.com/browserstack-local/BrowserStackLocal-win32.zip)
 
 ### **Get** **Your BrowserStack** **Access Key** **& Run it with the BrowserStack Binary**
 
@@ -38,19 +38,19 @@ Copy your access key to clipboard, open CMD/Terminal in the folder where Browser
 
 OS X & Linux:
 
-```text
+```
 ./BrowserStackLocal --key {YOUR_ACCESS_KEY}
 ```
 
 Windows:
 
-```text
+```
 BrowserStackLocal.exe --key {YOUR_ACCESS_KEY}
 ```
 
 Expected output:
 
-![](../../.gitbook/assets/image%20%28144%29.png)
+![](<../../.gitbook/assets/image (144).png>)
 
 ## **Execute recorded tests by TestProject on remote Browserstack cloud**
 
@@ -58,31 +58,31 @@ Expected output:
 2. Create a job and assign the desired tests– a job is a tool to aggregate, manage, schedule and run    tests
 3. Set desired capability
 
-*  Create a job by clicking on “New Job” button
+* &#x20;Create a job by clicking on “New Job” button
 
-![](../../.gitbook/assets/image%20%28138%29%20%282%29%20%282%29%20%281%29%20%282%29%20%282%29%20%282%29.png)
+![](<../../.gitbook/assets/image (138) (2) (2) (1) (2) (2) (2).png>)
 
 * Configure your job to execute assigned tests on BrowserStack remote browsers, Drag and Drop the required tests into it. For example:
 
-![](../../.gitbook/assets/image%20%28131%29.png)
+![](<../../.gitbook/assets/image (131).png>)
 
-* Set a Desired Capability to this job, that will activate the connection with BrowserStack and enable access to your app. ![](file:///C:/Users/TESTPR~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+* Set a Desired Capability to this job, that will activate the connection with BrowserStack and enable access to your app. ![](file:///C:/Users/TESTPR\~1/AppData/Local/Temp/msohtmlclip1/01/clip\_image006.jpg)
 
-        Set **browserstack.local** capability to true by adding the following:
+&#x20;       Set **browserstack.local** capability to true by adding the following:
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](<../../.gitbook/assets/image (152).png>)
 
 You are all set to run your job.
 
 ## Run Coded Tests on Local Resources with BrowserStack Cloud and TestProject OpenSDK
 
-**Configure Remote \(Cloud\) Driver to BrowserStack**
+**Configure Remote (Cloud) Driver to BrowserStack**
 
 By default, TestProject Agent communicates with the local Selenium drivers or Appium server that are bundled within the agent application, then send automatic execution reports to TestProject Dashboard.
 
 A basic example of running Selenium tests on remote BrowserStack servers by utilizing TestProject’s Agent:
 
-```text
+```
 import io.testproject.sdk.drivers.TestProjectCapabilityType;
 import io.testproject.sdk.drivers.web.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -102,9 +102,9 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 **There are two different ways to establish a Local Testing connection:**
 
-**1. Within your code**, using browsetstack-local dependency 
+**1. Within your code**, using browsetstack-local dependency&#x20;
 
-#### **Java –** \(available in maven-center\)
+#### **Java – **(available in maven-center)
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -132,13 +132,13 @@ pip install browserstack-local
 
 **2. By running BroswerStack Local binary** via command-line interface as mentioned in[ “**Get** **Your BrowserStack** **Access Key** **& Run it with the BrowserStack Binary**”](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) guide above.
 
-\*\*\*\*
+****
 
 **Within your code:**
 
-Integrate your code with the following to establish the ****BrowserStack Local connection:
+Integrate your code with the following to establish the** **BrowserStack Local connection:
 
-```text
+```
 import com.browserstack.local.Local;
 
 
@@ -151,13 +151,13 @@ bsLocal.stop();
 
 After establishing the Local Testing connection, set **browserstack.local** capability to true in driver’s desired capabilities:
 
-```text
+```
 setCapability("browserstack.local", "true");
 ```
 
 ### TestProject Java OpenSDK example for cross-platform testing on an app hosted in localhost using BrowserStack local:
 
-```text
+```
 import com.browserstack.local.Local;
 import io.testproject.sdk.drivers.TestProjectCapabilityType;
 import io.testproject.sdk.drivers.web.ChromeDriver;
@@ -216,13 +216,13 @@ public final class WebTest {
 }
 ```
 
-\*\*\*\*
+****
 
 **By running BroswerStack Local binary:**
 
 As mentioned in [Get Your BrowserStack Access Key & Run BrowserStack Binary](https://docs.testproject.io/testproject-integrations/browserstack-integration/browserstack-local-testing-integration#get-your-browserstack-access-key-and-run-it-with-the-browserstack-binary) you can easily run BroswerStack Local binary via command-line interface, and only set **browserstack.local** capability to true in driver’s desired capabilities:
 
-```text
+```
 setCapability("browserstack.local", "true");
 ```
 
@@ -232,7 +232,7 @@ It is important to note - BrowserStack Local binary should be up and running whi
 
 ### TestProject Python OpenSDK example for cross-browsers testing on an app hosted in localhost using BrowserStack local:
 
-```text
+```
 from selenium.webdriver import DesiredCapabilities
 from src.testproject.sdk.drivers import webdriver
 
@@ -257,13 +257,12 @@ if __name__ == "__main__":
 
 ## **Execution Test Reports**
 
-Once your recorded/coded test execution has been completed, you can hop over to the [Reports](https://app.testproject.io/#/reports) section in your TestProject account to see the results of your test\(s\).
+Once your recorded/coded test execution has been completed, you can hop over to the [Reports](https://app.testproject.io/#/reports) section in your TestProject account to see the results of your test(s).
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](<../../.gitbook/assets/image (151).png>)
 
 ### **BrowserStack** **test execution information**
 
-Once you click the Open BrowserStack report link, you will be redirected to BrowserStack where you will be able to see that your website \(that is not publicly accessible\) has been reached, with some additional information about that execution:
+Once you click the Open BrowserStack report link, you will be redirected to BrowserStack where you will be able to see that your website (that is not publicly accessible) has been reached, with some additional information about that execution:
 
-![](../../.gitbook/assets/image%20%28133%29.png)
-
+![](<../../.gitbook/assets/image (133).png>)

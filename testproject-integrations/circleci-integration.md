@@ -26,18 +26,18 @@ Below is a diagram that explains high-level TestProject architecture and the pre
 
 **Getting Started With TestProject API:**
 
-1. You need to create an API Key from here: [https://app.testproject.io/\#/integrations/api](https://app.testproject.io/#/integrations/api)
+1. You need to create an API Key from here: [https://app.testproject.io/#/integrations/api](https://app.testproject.io/#/integrations/api)
 2. Generate your API key: [here](https://app.testproject.io/#/integrations/api), and copy it.
 3. Go to the API documentation: [here](https://api.testproject.io/docs/v2/#/)
 4. Click on the Authorize button and paste your API key and click on Authorize.
 
-![](../.gitbook/assets/1%20%286%29.png)
+![](<../.gitbook/assets/1 (6).png>)
 
 By using TestProject Restful API, we will create a curl command that will execute the desired recorded tests using a CURL command in the Pipeline.
 
 **Generating the Curl Command**
 
-In the API Swagger, we will scroll down to the Endpoint we wish, in this example we will use the **Run Job Endpoint** which can be found [here](https://api.testproject.io/docs/v2/#/Jobs/Jobs_RunJobAsync).
+In the API Swagger, we will scroll down to the Endpoint we wish, in this example we will use the **Run Job Endpoint** which can be found [here](https://api.testproject.io/docs/v2/#/Jobs/Jobs\_RunJobAsync).
 
 With this Endpoint, we can execute a Test on any registered agent in the account associated with our API key.
 
@@ -49,21 +49,21 @@ In this example, we will run a Recorded Web test on Chrome using the Run Job end
 
 **In the “Run” Job endpoint, click on ‘Try It Out’**
 
-![](../.gitbook/assets/2%20%286%29.png)
+![](<../.gitbook/assets/2 (6).png>)
 
 We will insert the Project ID:
 
-![](../.gitbook/assets/3%20%286%29.png)
+![](<../.gitbook/assets/3 (6).png>)
 
 And the Job ID:
 
-![](../.gitbook/assets/4%20%286%29.png)
+![](<../.gitbook/assets/4 (6).png>)
 
 Next, we can edit the body of the request, here we can insert values that will override the default job values on runtime.
 
 To just run the Job as is, with the default values, you can just keep the body empty like so:
 
-![](../.gitbook/assets/5%20%286%29.png)
+![](<../.gitbook/assets/5 (6).png>)
 
 In our example, we will edit the values of the body to override default values from the Job.
 
@@ -75,19 +75,19 @@ We will override those parameters on runtime using the **testParameters** JSON w
 
 This is how the parameters are defined in the tests:
 
-![](../.gitbook/assets/6%20%285%29.png)
+![](<../.gitbook/assets/6 (5).png>)
 
 **This is how we override them using the request body**:
 
-![](../.gitbook/assets/7%20%285%29.png)
+![](<../.gitbook/assets/7 (5).png>)
 
 We will now generate the CURL command by pressing Execute:
 
-![](../.gitbook/assets/8%20%284%29.png)
+![](<../.gitbook/assets/8 (4).png>)
 
 And we will see the CURL command generated:
 
-![](../.gitbook/assets/9%20%284%29.png)
+![](<../.gitbook/assets/9 (4).png>)
 
 This is the curl command we will be used in our pipeline.
 
@@ -97,25 +97,25 @@ Now we can set up our pipeline using the above command to execute the Job every 
 
 1. In your Dashboard, add a Project, this will be the project which will have the pipeline, once we push a new change to this project, we will execute the pipeline.
 
-![](../.gitbook/assets/10%20%282%29.png)
+![](<../.gitbook/assets/10 (2).png>)
 
-2.     Select the project
+2\.     Select the project
 
-![](../.gitbook/assets/11%20%282%29.png)
+![](<../.gitbook/assets/11 (2).png>)
 
-3.   In the following window, we will have the option to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file.
+3\.   In the following window, we will have the option to choose pre-configured YAML files for our pipeline, in this example, I will select the Python file.
 
-4.   Paste the curl command in the proper step.
+4\.   Paste the curl command in the proper step.
 
-![](../.gitbook/assets/image%20%28256%29%20%281%29.png)
+![](<../.gitbook/assets/image (256) (1).png>)
 
-   5.   Click on **Commit and Run** to configure the pipeline in the selected branch
+&#x20;  5\.   Click on **Commit and Run** to configure the pipeline in the selected branch
 
 Now every time we push a change to the selected branch, the Pipeline will trigger the Curl command which in the following will trigger the tests.
 
 **A Complete example of a pipeline config.yml**
 
-```text
+```
 version: 2.1
 orbs:
   python: circleci/python@0.2.1
@@ -139,7 +139,7 @@ workflows:
 
 You can view the pipeline execution in the Dashboard:
 
-![](../.gitbook/assets/13%20%282%29.png)
+![](<../.gitbook/assets/13 (2).png>)
 
 **Running TestProject recorded tests with CircleCI CI/CD Pipelines using Docker Ephemeral Agent**
 
@@ -157,19 +157,19 @@ First, we will need to config the correct environment variables.
 
 The following config below uses these Environment variables:
 
-![](../.gitbook/assets/15%20%281%29.png)
+![](<../.gitbook/assets/15 (1).png>)
 
 You can set them in CircleCI Dashboard:
 
 1. Go to project settings:
 
-![](../.gitbook/assets/21%20%281%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/21 (1) (1) (1).png>)
 
-2.  Click on Environment Variables:
+2\.  Click on Environment Variables:
 
-![](../.gitbook/assets/22%20%281%29.png)
+![](<../.gitbook/assets/22 (1).png>)
 
-3.  Add Environment Variable:
+3\.  Add Environment Variable:
 
 ![](../.gitbook/assets/23.png)
 
@@ -179,7 +179,7 @@ You will need a docker-compose.yml file that will spin up the Docker agent.
 
 In this example we are overriding the **username**/**password** parameters that are used in the tests by using this YAML file:
 
-```text
+```
 version: "3.1"
 services:
   testproject-agent:
@@ -212,9 +212,9 @@ Using the above compose file, we will spin a docker agent which will execute the
 
 The variable **TP\_JOB\_PARAMS** holds the JSON which holds the username and password parameters that will be overridden in runtime.
 
-Using [this](https://github.com/Rantzur1992/recorded_example/blob/main/.circleci/config.yml) config in the pipeline to execute the Job on the Docker agent.
+Using [this](https://github.com/Rantzur1992/recorded\_example/blob/main/.circleci/config.yml) config in the pipeline to execute the Job on the Docker agent.
 
-```text
+```
 version: 2.1
 jobs:
   run-recorded-tests:
@@ -249,7 +249,7 @@ Below is a diagram on the flow of the process:
 
 Before integrating your coded tests with CircleCI, we need to make sure you are using our Python SDK.
 
-1. Navigate to [https://app.testproject.io/\#/integrations/sdk](https://app.testproject.io/#/integrations/sdk)
+1. Navigate to [https://app.testproject.io/#/integrations/sdk](https://app.testproject.io/#/integrations/sdk)
 2. Download the Python SDK using **pip3 install testproject-python-sdk**
 3. Copy the Developer Token, which we can later use in our Python code.
 4. You can read more in the Python SDK repository: [https://github.com/testproject-io/python-sdk](https://github.com/testproject-io/python-sdk)
@@ -270,7 +270,7 @@ Here is a complete example of a config.yml that does the following:
 
 **Config.yml:**
 
-```text
+```
 version: 2
 jobs:
   build:
@@ -315,19 +315,19 @@ You can set them in CircleCI Dashboard:
 
 1. Go to project settings:
 
-![](../.gitbook/assets/21%20%281%29%20%281%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/21 (1) (1) (1) (1).png>)
 
-2.   Click on Environment Variables:
+2\.   Click on Environment Variables:
 
 ![](../.gitbook/assets/22.png)
 
-3.   Add Environment Variable:
+3\.   Add Environment Variable:
 
-![](../.gitbook/assets/23%20%281%29.png)
+![](<../.gitbook/assets/23 (1).png>)
 
 Now you are good to go running your Python Coded tests using TestProject SDK in your pipeline.
 
-![](../.gitbook/assets/image%20%28258%29.png)
+![](<../.gitbook/assets/image (258).png>)
 
 ## **Running TestProject coded Java tests with CircleCI CI/CD Pipelines**
 
@@ -339,11 +339,11 @@ We will use Gradle in this example.
 
 First, we set up our **build.gradle** to point to the classes which hold our tests.
 
-In this simple example, we will use one class called JavaExample which holds the test using JUNIT, and we will be using Gradle wrapper\(gradlew\) to execute the tests.
+In this simple example, we will use one class called JavaExample which holds the test using JUNIT, and we will be using Gradle wrapper(gradlew) to execute the tests.
 
 Example of **build.gradle:**
 
-```text
+```
 plugins {
     id 'java'
 }
@@ -371,7 +371,7 @@ dependencies {
 
 **The config.yml**:
 
-```text
+```
 version: 2
 jobs:
   build:
@@ -420,7 +420,7 @@ jobs:
 
 This pipeline will install **JDK 11** which is required by the TestProject SDK, install Gradle, Start the docker agent, and execute the test.
 
-![](../.gitbook/assets/image%20%28257%29.png)
+![](<../.gitbook/assets/image (257).png>)
 
 **Summary Diagram**
 
@@ -446,5 +446,4 @@ Expanding it will show all previous execution under that Job.
 
 We can also download the PDF reports to see the full detailed report with screenshots.
 
-**All examples can be found on our** [**GitHub**](https://github.com/testproject-io/circle-ci/tree/main)**.**
-
+**All examples can be found on our **[**GitHub**](https://github.com/testproject-io/circle-ci/tree/main)**.**

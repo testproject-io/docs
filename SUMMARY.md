@@ -37,7 +37,7 @@
 * [Silent Deployment](testproject-agents/silent-deployment.md)
 * [Unregistered/Offline Agent](testproject-agents/unregistered-offline-agent.md)
 
-## Create Your First Test <a id="using-the-smart-test-recorder"></a>
+## Create Your First Test <a href="using-the-smart-test-recorder" id="using-the-smart-test-recorder"></a>
 
 * [Web Testing](using-the-smart-test-recorder/web-testing/README.md)
   * [Introduction to Web Testing](using-the-smart-test-recorder/web-testing/introduction-to-web-testing.md)
@@ -74,8 +74,8 @@
   * [Element Extensions Addon](testproject-addons/available-addons/element-extensions-addon.md)
   * [Generic Extensions Addon](testproject-addons/available-addons/generic-extensions-addon.md)
   * [Geolocation Utils Addon](testproject-addons/available-addons/geolocation-utils-addon.md)
-  * [Get Attribute Value \(Mobile\)](testproject-addons/available-addons/get-attribute-value-mobile.md)
-  * [Get Page Source \(Mobile\)](testproject-addons/available-addons/get-page-source-mobile.md)
+  * [Get Attribute Value (Mobile)](testproject-addons/available-addons/get-attribute-value-mobile.md)
+  * [Get Page Source (Mobile)](testproject-addons/available-addons/get-page-source-mobile.md)
   * [HTML Table Actions](testproject-addons/available-addons/html-table-actions.md)
   * [iOS Wheel Picker](testproject-addons/available-addons/ios-wheel-picker.md)
   * [Image Comparison Addon](testproject-addons/available-addons/image-comparison-addon/README.md)
@@ -155,7 +155,7 @@
   * [Getting Ready to Use an SDK](testproject-sdk/overview/getting-ready-to-use-an-sdk.md)
   * [Drivers](testproject-sdk/overview/drivers.md)
   * [Legacy SDK vs. OpenSDK](testproject-sdk/overview/sdk-v1-vs-opensdk-v2.md)
-* [OpenSDK \(v2\)](testproject-sdk/opensdk-v2/README.md)
+* [OpenSDK (v2)](testproject-sdk/opensdk-v2/README.md)
   * [Java](testproject-sdk/opensdk-v2/java-sdk/README.md)
     * [Automatically Generate Code](testproject-sdk/opensdk-v2/java-sdk/untitled.md)
     * [Examples](testproject-sdk/opensdk-v2/java-sdk/examples.md)
@@ -163,16 +163,16 @@
     * [Reports](testproject-sdk/opensdk-v2/java-sdk/reports.md)
     * [Running on Remote Agents](testproject-sdk/opensdk-v2/java-sdk/running-on-remote-agents.md)
   * [Python](testproject-sdk/opensdk-v2/python-sdk.md)
-  * [C\#](testproject-sdk/opensdk-v2/c.md)
+  * [C#](testproject-sdk/opensdk-v2/c.md)
   * [JavaScript](testproject-sdk/opensdk-v2/javascript.md)
 * [Using OpenSDK within CI/CD](testproject-sdk/using-testproject-scripted-tests-within-ci-cd.md)
 * [Using OpenSDK with BDD](testproject-sdk/behavior-driven-development/README.md)
-  * [SpecFlow \(C\#\)](testproject-sdk/behavior-driven-development/c-and-specflow-bdd.md)
-  * [Cucumber \(Java\)](testproject-sdk/behavior-driven-development/cucumber-java.md)
-  * [Behave \(Python\)](testproject-sdk/behavior-driven-development/behave-python.md)
-* [Legacy SDK \(v1\)](testproject-sdk/testproject-sdk-v1/README.md)
+  * [SpecFlow (C#)](testproject-sdk/behavior-driven-development/c-and-specflow-bdd.md)
+  * [Cucumber (Java)](testproject-sdk/behavior-driven-development/cucumber-java.md)
+  * [Behave (Python)](testproject-sdk/behavior-driven-development/behave-python.md)
+* [Legacy SDK (v1)](testproject-sdk/testproject-sdk-v1/README.md)
   * [Java](testproject-sdk/testproject-sdk-v1/java-sdk.md)
-  * [C\#](testproject-sdk/testproject-sdk-v1/csharp-sdk.md)
+  * [C#](testproject-sdk/testproject-sdk-v1/csharp-sdk.md)
 
 ## TestProject Integrations
 
@@ -189,7 +189,7 @@
 * [CircleCI Integration](testproject-integrations/circleci-integration.md)
 * [GitHub Integration](testproject-integrations/github-integration.md)
 
-## TestProject API <a id="api"></a>
+## TestProject API <a href="api" id="api"></a>
 
 * [RESTful API v2](api/v2.md)
 * [Getting Started With Using the TestProject API](api/getting-started-with-using-the-testproject-api.md)
@@ -230,6 +230,7 @@
 
 ## Releases
 
+* [v3.4.0](releases/v3.4.0.md)
 * [v3.3.0](releases/v3.3.0.md)
 * [v3.2.0](releases/v3.2.0.md)
 * [v3.1.0](releases/v3.1.0.md)
@@ -255,4 +256,3 @@
   * [v0.51](releases/older-versions/v0.51.md)
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
-

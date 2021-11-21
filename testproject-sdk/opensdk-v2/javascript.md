@@ -8,7 +8,7 @@ description: JavaScript OpenSDK
 
 To get started, you need to complete the following prerequisites checklist:
 
-* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register](https://app.testproject.io/signup/) a new one.
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io) or [register](https://app.testproject.io/signup/) a new one.
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account.
 * Get a development token from [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
@@ -19,7 +19,7 @@ To get started, you need to complete the following prerequisites checklist:
 
 The TestProject JavaScript OpenSDK is available on [NPM](https://www.npmjs.com/package/@tpio/javascript-opensdk). All you need to do is add it as an NPM module using:
 
-```text
+```
 npm install @tpio/javascript-opensdk
 ```
 
@@ -74,7 +74,7 @@ export const simpleTest = async (): Promise<void> => {
 
 TestProject's OpenSDK overrides standard Selenium/Appium drivers with extended functionality.  Below is the package's structure containing all supported drivers:
 
-```text
+```
 src
  └── sdk
       └── drivers
@@ -111,7 +111,7 @@ const createChromeDriver = async () => {
 
 By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585).
 
-Agent URL \(host and port\), can be also provided explicitly using driver builder:
+Agent URL (host and port), can be also provided explicitly using driver builder:
 
 ```javascript
 driver = new Builder().forBrowser('chrome').withToken('YOUR_DEV_TOKEN').withRemoteAgent('http://URL:PORT').build();
@@ -119,14 +119,14 @@ driver = new Builder().forBrowser('chrome').withToken('YOUR_DEV_TOKEN').withRemo
 
 It can also be set using the `TP_AGENT_URL` environment variable.
 
-**NOTE:** By default, the agent binds to localhost. In order to allow the SDK to communicate with agents running on a remote machine \(_On the same network_\), the agent should bind to an external interface. For additional documentation on how to achieve such, please refer [here](https://docs.testproject.io/testproject-agents/testproject-agent-cli#start)
+**NOTE:** By default, the agent binds to localhost. In order to allow the SDK to communicate with agents running on a remote machine (_On the same network_), the agent should bind to an external interface. For additional documentation on how to achieve such, please refer [here](https://docs.testproject.io/testproject-agents/testproject-agent-cli#start)
 
 ### Implicit project and job names
 
 The SDK will attempt to infer Project and Job names automatically when running tests using the [Mocha](https://mochajs.org) framework. For example:
 
 * Directory `e2e_tests/chrome` contains `my_tests.spec.ts` test file.
-* When executing `my_tests.spec.ts`, the SDK will infer `e2e_tests/chrome` as the project name \(replacing any slashes `/` with dots `.`\).
+* When executing `my_tests.spec.ts`, the SDK will infer `e2e_tests/chrome` as the project name (replacing any slashes `/` with dots `.`).
 * The job name will be set to the file name, skipping the `.spec.ts` suffix. In this example: `my_tests`.
 
 ### Explicit project and job names
@@ -155,7 +155,7 @@ const createChromeDriver = async () => {
 
 ### Automatic reporting
 
-Tests are reported automatically when a test **ends** or when the driver _quits_. This behavior can be overridden or disabled \(see [Disabling Reports]() section below\).
+Tests are reported automatically when a test **ends** or when the driver _quits_. This behavior can be overridden or disabled (see [Disabling Reports](broken-reference) section below).
 
 ### Manual reporting
 
@@ -177,7 +177,7 @@ const createChromeDriver = async () => {
 };
 ```
 
-Steps are reported automatically when driver commands are executed. If this feature is disabled \(or in addition to automatic reports\) manual reports can be performed. For example:
+Steps are reported automatically when driver commands are executed. If this feature is disabled (or in addition to automatic reports) manual reports can be performed. For example:
 
 ```javascript
 import { Builder } from '@tpio/javascript-opensdk';
@@ -231,7 +231,7 @@ const testTemporarilyDisableAllReportingThenReenableItLater = async () => {
 };
 ```
 
-### The importance of using the quit\(\) method
+### The importance of using the quit() method
 
 Even more so than with regular Selenium-based tests, it is important to make sure that you call the `quit()` method of the driver object at the end of every test that uses the TestProject SDK. Upon calling `quit()`, the SDK will send all remaining report items to the Agent, ensuring that your report on the TestProject platform is complete.
 
@@ -240,11 +240,10 @@ Even more so than with regular Selenium-based tests, it is important to make sur
 Examples are available at the [OpenSDK Examples](https://github.com/testproject-io/opensdk-examples/tree/main/javascript) repo, but tests from this repo can be used as simple examples as well:
 
 * Simple Flows
-  * [Web](tests/ci/headless/web/chromeBasic.spec.ts)
-  * [Android](tests/mobile/basicAndroid.spec.ts)
-  * [iOS](tests/mobile/basicIOS.spec.ts)
+  * [Web](https://app.gitbook.com/s/-Ll7jrseWgVXoVhnULBe/testproject-sdk/opensdk-v2/tests/ci/headless/web/chromeBasic.spec.ts)
+  * [Android](https://app.gitbook.com/s/-Ll7jrseWgVXoVhnULBe/testproject-sdk/opensdk-v2/tests/mobile/basicAndroid.spec.ts)
+  * [iOS](https://app.gitbook.com/s/-Ll7jrseWgVXoVhnULBe/testproject-sdk/opensdk-v2/tests/mobile/basicIOS.spec.ts)
 
 ## License
 
 The TestProject JavaScript OpenSDK is licensed under the LICENSE file in the root directory of the project source tree.
-

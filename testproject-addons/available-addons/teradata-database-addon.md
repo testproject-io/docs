@@ -8,11 +8,11 @@ This addon allows you to test connections and to send queries to Teradata databa
 
 This action takes in the following input parameters:
 
-* `Host` – Name/IP of the host machine where the database is \(required\)
-* `Port` - Port number to connect to \(default port is 1025 if none specified\)
-* `Username` - Username to connect to the database \(required\)
-* `Password` - Password for connecting to the database \(required\)
-* `UserQuery` - The SQL query you want to execute
+* `Host` – Name/IP of the host machine where the database is (required)
+* `Port `- Port number to connect to (default port is 1025 if none specified)
+* `Username `- Username to connect to the database (required)
+* `Password `- Password for connecting to the database (required)
+* `UserQuery `- The SQL query you want to execute
 
 For example:
 
@@ -24,12 +24,11 @@ For example:
 
 This action takes in the following input parameters:
 
-* `Host` – Name/IP of the host machine where the database is \(required\)
-* `Port` - Port number to connect to \(default port is 1025 if none specified\)
-* `Username` - Username to connect to the database \(required\)
-* `Password` - Password for connecting to the database \(required\)
+* `Host `– Name/IP of the host machine where the database is (required)
+* `Port `- Port number to connect to (default port is 1025 if none specified)
+* `Username `- Username to connect to the database (required)
+* `Password` - Password for connecting to the database (required)
 
 For example:
 
 ![](../../.gitbook/assets/teradata-addon-2.png)
-

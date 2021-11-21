@@ -4,35 +4,35 @@ Test automation is an important part of any software testing project, but effect
 
 ## Page Object in Recorded Tests
 
-The page object model is essentially a way of organizing your tests so that you have one class per page and that class contains the elements for that page along with the methods for acting on those elements. A similar concept can be applied within the test recorder. For example, you could create a test for logging into your app. You can then use that test in all other tests in the project that need to start with logging in. 
+The page object model is essentially a way of organizing your tests so that you have one class per page and that class contains the elements for that page along with the methods for acting on those elements. A similar concept can be applied within the test recorder. For example, you could create a test for logging into your app. You can then use that test in all other tests in the project that need to start with logging in.&#x20;
 
 To do that in the test recorder, just add a new test and change the type to Test.
 
-![Add a test and change the type](../.gitbook/assets/image%20%282%29%20%281%29.png)
+![Add a test and change the type](<../.gitbook/assets/image (2) (1).png>)
 
-![Set the type to Test](../.gitbook/assets/image%20%2823%29.png)
+![Set the type to Test](<../.gitbook/assets/image (23).png>)
 
-You can then chose the login test as test step in your current test case. 
+You can then chose the login test as test step in your current test case.&#x20;
 
-![Select Test](../.gitbook/assets/image%20%2846%29%20%282%29.png)
+![Select Test](<../.gitbook/assets/image (46) (2).png>)
 
 This let's you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test and all tests using it will get that change.
 
 ## Page Object in Coded Tests
 
-The Page object model is of course well suited to coded tests. This section will walk you through an example of how you can use the page object model in an android test ****written in Java.
+The Page object model is of course well suited to coded tests. This section will walk you through an example of how you can use the page object model in an android test** **written in Java.
 
 ### **Build your First Test with Appium**
 
 Let’s start by learning how to create a “plain” Appium automated test for Android. The code below automates the TestProject Demo app. You can download its [APK](https://github.com/testproject-io/android-demo-app/tree/master/APK) or view the [complete source code](https://github.com/testproject-io/android-demo-app).
 
-To start the automation, the test prepares Android driver capabilities with all the required information about the device under test \(DUT\) and App under test \(AUT\). Then, using these capabilities, it initiates the Android driver that will be used to invoke various Appium actions on the mobile application. To perform the actions, Appium must identify the elements it interacts with. To do so, it uses various location strategies.
+To start the automation, the test prepares Android driver capabilities with all the required information about the device under test (DUT) and App under test (AUT). Then, using these capabilities, it initiates the Android driver that will be used to invoke various Appium actions on the mobile application. To perform the actions, Appium must identify the elements it interacts with. To do so, it uses various location strategies.
 
-The most convenient location strategy is the ID \(aka. resource-id in Android\). For example, it searches for the login button to make sure that the login screen is displayed using _By.id_ and the value _login._ I will show how to identify your element locators later in this tutorial, [here](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#ElementLocator).
+The most convenient location strategy is the ID (aka. resource-id in Android). For example, it searches for the login button to make sure that the login screen is displayed using _By.id_ and the value _login. _I will show how to identify your element locators later in this tutorial, [here](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#ElementLocator).
 
-**Basic Login Test:** 
+**Basic Login Test: **
 
-```text
+```
 package io.testproject.appium.tests;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -97,21 +97,21 @@ public class PositiveLoginTest {
 
 ### **Page Object Model and Page Factory Advantages vs. “Plain” Appium**
 
-This demonstrates how to create a “Plain” Appium test, but let's see how we can improve it with the Page Object Model \(POM\). Below are the advantages of utilizing POM as opposed to “plain” Appium:
+This demonstrates how to create a “Plain” Appium test, but let's see how we can improve it with the Page Object Model (POM). Below are the advantages of utilizing POM as opposed to “plain” Appium:
 
-| **“Plain” Appium** | **POM Appium** |
-| :--- | :--- |
-| Mix of test logic and UI actions | Separation of duties to OOP classes |
-| Coupled design | Decoupling objects library from decision taking in tests |
-| Difficult maintenance | One authority to manage page elements and UI action |
-| Code redundancy | No duplicate findElement calls and UI manipulations |
-| Unnecessary complexity | Self-explanatory code, thanks to FindBy annotations |
+| **“Plain” Appium**               | **POM Appium**                                           |
+| -------------------------------- | -------------------------------------------------------- |
+| Mix of test logic and UI actions | Separation of duties to OOP classes                      |
+| Coupled design                   | Decoupling objects library from decision taking in tests |
+| Difficult maintenance            | One authority to manage page elements and UI action      |
+| Code redundancy                  | No duplicate findElement calls and UI manipulations      |
+| Unnecessary complexity           | Self-explanatory code, thanks to FindBy annotations      |
 
 ### **Create Page Classes by Utilizing Page Object and Page Factory**
 
 In order to create the page object model you will need to define the page classes. In the [demo application](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#DemoApp) there are two pages: the Login page and the Profile page.
 
-To map the elements, POM uses the FindBy annotations. These annotations should be used to decorate the fields declared for the elements. Location strategies can be different, but the most convenient one is the ID \(aka. resource-id in Android\).
+To map the elements, POM uses the FindBy annotations. These annotations should be used to decorate the fields declared for the elements. Location strategies can be different, but the most convenient one is the ID (aka. resource-id in Android).
 
 While creating tests like this it can be helpful to use the [inspector ](../using-the-smart-test-recorder/finding-and-using-elements/element-inspector.md)and [element locator](../using-the-smart-test-recorder/finding-and-using-elements/element-locator.md) in order to find the correct values.
 
@@ -123,7 +123,7 @@ Elements, page class fields, are now being used across the page to manipulate th
 
 **Login Page Class**:
 
-```text
+```
 package io.testproject.appium.pom.tests.pages;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -195,7 +195,7 @@ The element inspector and locator can be used to find the profile page class on 
 
 **Profile Page Class**:
 
-```text
+```
 package io.testproject.appium.pom.tests.pages;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -293,9 +293,9 @@ public class ProfilePage {
 
 This test is identical to the one [above](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#AppiumTest) with the only difference that all the UI actions are now encapsulated into the pages classes.
 
-Instead of searching and manipulating elements directly, this is being done using convenience methods \(e.g.isDisplayed\)that are implemented by every page.
+Instead of searching and manipulating elements directly, this is being done using convenience methods (e.g.isDisplayed)that are implemented by every page.
 
-```text
+```
 package io.testproject.appium.pom.tests;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -357,7 +357,7 @@ This test can be enhanced even further by utilizing TestProject, so let's look a
 * Calls to _report.step_ allow reporting of test milestones and provided better progress granulation when reviewing them in the results and reporting dashboard.
 * The call to _report.result_ allows for providing a final statement for the test execution before it passes or fails.
 
-```text
+```
 import io.testproject.java.annotations.v2.Parameter;
 import io.testproject.java.annotations.v2.Test;
 import io.testproject.java.enums.TakeScreenshotConditionType;
@@ -413,7 +413,7 @@ public class DemoTestWithDefaults implements AndroidTest {
 
 To run the test locally, create a Runner as can be seen in the following example:
 
-```text
+```
 import io.testproject.java.sdk.v2.Runner;
 
 import java.io.IOException;
@@ -443,4 +443,3 @@ public class RunTests {
 
 
 You can find more documentation for TestProject SDK here: [https://github.com/testproject-io/java-sdk-examples.](https://github.com/testproject-io/java-sdk-examples)
-

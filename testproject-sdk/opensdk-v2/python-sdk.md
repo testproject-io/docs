@@ -8,7 +8,7 @@ description: Python OpenSDK
 
 To get started, you need to complete the following prerequisites checklist:
 
-* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register a new one](https://app.testproject.io/signup/).
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io) or [register a new one](https://app.testproject.io/signup/).
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register it](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) with your Account.
 * Get a development token from the [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
@@ -17,7 +17,7 @@ To get started, you need to complete the following prerequisites checklist:
 
 The TestProject Python SDK is [available on PyPI](https://pypi.org/project/testproject-python-sdk/). All you need to do is add it as a Python module using:
 
-```text
+```
 pip3 install testproject-python-sdk
 ```
 
@@ -29,7 +29,7 @@ Using a TestProject driver is identical to using a Selenium driver. Once you hav
 
 You can create a TestProject-powered version of a test using Chrome by using the TestProject Chrome driver:
 
-```text
+```
 # from selenium import webdriver  <-- replace this import
 from src.testproject.sdk.drivers import webdriver
 
@@ -41,7 +41,7 @@ def test_create_a_chrome_driver_instance():
 
 Here's an example of a complete test that is using the Chrome driver from the TestProject SDK:
 
-```text
+```
 from src.testproject.sdk.drivers import webdriver
 
 def simple_test():
@@ -73,8 +73,8 @@ The examples shown in this document are based on Chrome. The SDK works in the sa
 * Safari
 * Edge
 * Internet Explorer
-* Android apps \(using Appium\)
-* iOS apps \(using Appium\)
+* Android apps (using Appium)
+* iOS apps (using Appium)
 
 ### Development token
 
@@ -82,7 +82,7 @@ The SDK uses a development token for communication with the Agent and the TestPr
 
 Alternatively, you can pass in your developer token as an argument to the driver constructor:
 
-```text
+```
 def test_create_a_chrome_driver_instance():
     driver = webdriver.Chrome(token='YOUR_TOKEN_GOES_HERE')
     # Your test code goes here
@@ -91,13 +91,13 @@ def test_create_a_chrome_driver_instance():
 
 ### TestProject Agent
 
-By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585/). This value can be overridden by setting the `TP_AGENT_URL` environment variable to the correct Agent address.
+By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585). This value can be overridden by setting the `TP_AGENT_URL` environment variable to the correct Agent address.
 
-### Remote \(Cloud\) Driver
+### Remote (Cloud) Driver
 
 By default, TestProject Agent communicates with the local Selenium or Appium server. In order to initialize a remote driver for cloud providers such as SauceLabs or BrowserStack, a custom capability `cloud:URL` should be set, for example:
 
-```text
+```
 def driver():
     chrome_options = ChromeOptions()
     chrome_options.set_capability("cloud:URL", "https://{USERNAME}:{PASSWORD}@ondemand.us-west-1.saucelabs.com:443/wd/hub")
@@ -112,7 +112,7 @@ By default, the TestProject SDK reports all executed driver commands and their r
 
 Reports can be completely disabled using this driver constructor:
 
-```text
+```
 def test_disable_reporting():
     driver = webdriver.Chrome(disable_reports=True)
     # no reports will be created for this test
@@ -128,14 +128,14 @@ The SDK will attempt to infer Project and Job names when you use pytest or unitt
 
 Examples using inferred project and job names:
 
-* [pytest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/pytest/implicit_report_test.py)
-* [unittest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/unittest/implicit_report_test.py)
+* [pytest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/pytest/implicit\_report\_test.py)
+* [unittest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/unittest/implicit\_report\_test.py)
 
 ### Explicit project and job names
 
 Project and Job names can be also specified explicitly using this constructor:
 
-```text
+```
 def test_specify_project_and_job_names_in_driver_constructor():
     driver = webdriver.Chrome(projectname='My custom project', jobname='My custom job')
     # Your test code goes here
@@ -144,7 +144,7 @@ def test_specify_project_and_job_names_in_driver_constructor():
 
 or using the `@report` decorator:
 
-```text
+```
 from src.testproject.decorator import report
 
 @report(project='My project', job='My job')
@@ -156,8 +156,8 @@ def test_specify_project_and_job_name_in_decorator():
 
 Examples using explicitly specified project and job names:
 
-* [pytest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/pytest/explicit_report_test.py)
-* [unittest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/unittest/explicit_report_test.py)
+* [pytest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/pytest/explicit\_report\_test.py)
+* [unittest](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/frameworks/unittest/explicit\_report\_test.py)
 
 ## Test reports
 
@@ -175,19 +175,19 @@ This behavior can be controlled, by requesting only a LOCAL or only a CLOUD repo
 
 Via a driver constructor:
 
-```text
+```
 driver = webdriver.Chrome(report_type=ReportType.LOCAL)
 ```
 
 ### Automatic test reporting
 
-Tests are reported automatically when a test ends or when the `quit()` command is called on the driver. This behavior can be overridden or disabled \(see the [Disabling Reports]() section below\).
+Tests are reported automatically when a test ends or when the `quit()` command is called on the driver. This behavior can be overridden or disabled (see the [Disabling Reports](broken-reference) section below).
 
 In order to determine whether a test has ended, the call stack is inspected, searching for the current test method. When the test name is different from the latest known test name, it is concluded that the execution of the previous test has ended. This is supported for both pytest and unittest.
 
 To override the inferring of the test name and specify a custom test name instead, you can use the `@report` decorator:
 
-```text
+```
 from src.testproject.decorator import report
 
 @report(test='My test name')
@@ -197,13 +197,13 @@ def test_specify_test_name_in_decorator():
     driver.quit()
 ```
 
-Here is a complete example using [automatic reporting](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/reports/automatic_reporting_test.py).
+Here is a complete example using [automatic reporting](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/reports/automatic\_reporting\_test.py).
 
 #### Manual test reporting
 
 To report tests manually, you can use `driver.report().test()`:
 
-```text
+```
 def test_report_test_manually():
     driver = webdriver.Chrome()
     # Your test code goes here
@@ -215,7 +215,7 @@ def test_report_test_manually():
 
 Steps are reported automatically for every driver commands that is executed. If this feature is disabled, or you would like to add steps manually, you can use `driver.report().step()`:
 
-```text
+```
 def test_report_step_manually():
     driver = webdriver.Chrome()
     # Your test code goes here
@@ -223,7 +223,7 @@ def test_report_step_manually():
     driver.quit()
 ```
 
-Here is a complete example using [manual test reporting of tests and steps](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/reports/manual_reporting_test.py).
+Here is a complete example using [manual test reporting of tests and steps](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/reports/manual\_reporting\_test.py).
 
 ### Disabling reports
 
@@ -233,7 +233,7 @@ If reports were not disabled when the driver was created, they can be disabled o
 
 The following will temporarily disable all reporting:
 
-```text
+```
 def test_temporarily_disable_all_reporting_then_reenable_it_later():
     driver = webdriver.Chrome()
     driver.report().disable_reports(True)
@@ -246,7 +246,7 @@ def test_temporarily_disable_all_reporting_then_reenable_it_later():
 
 The following will disable automatic reporting of tests. All steps will end up in a single test report, unless tests are reported manually using `driver.report().test()`:
 
-```text
+```
 def test_disable_automatic_test_reporting():
     driver = webdriver.Chrome()
     driver.report().disable_auto_test_reports(True)
@@ -258,7 +258,7 @@ def test_disable_automatic_test_reporting():
 
 The following will disable driver command reporting, which results in the reporting of tests that will have no steps, unless reported manually using `driver.report().step()`:
 
-```text
+```
 def test_disable_automatic_reporting():
     driver = webdriver.Chrome()
     driver.report().disable_command_reports(True)
@@ -268,14 +268,14 @@ def test_disable_automatic_reporting():
 
 #### Disable driver command redaction
 
-When driver commands are being reported, the SDK will, by default, redact the values typed into sensitive elements by replacing the actual text with three asterisks \(`***`\) in the report. Elements are considered sensitive if they:
+When driver commands are being reported, the SDK will, by default, redact the values typed into sensitive elements by replacing the actual text with three asterisks (`***`) in the report. Elements are considered sensitive if they:
 
-* have an attribute `type` with value `password` \(all browsers and platforms\)
-* are of type `XCUIElementTypeSecureTextField` \(iOS / XCUITest only\)
+* have an attribute `type` with value `password` (all browsers and platforms)
+* are of type `XCUIElementTypeSecureTextField` (iOS / XCUITest only)
 
 This redaction of sensitive commands can be disabled, if desired:
 
-```text
+```
 def test_disable_driver_command_report_redaction():
     driver = webdriver.Chrome()
     driver.report().disable_redaction(True)
@@ -293,7 +293,7 @@ Upon calling `quit()`, the SDK will send all remaining report items to the Agent
 
 **Tip for pytest users**: use a [pytest fixture](https://docs.pytest.org/en/stable/fixture.html#fixtures-as-function-arguments) to ensure that `quit()` is called at the end of the test, even when an error occurred during test execution:
 
-```text
+```
 import pytest
 
 @pytest.fixture
@@ -308,7 +308,7 @@ def test_using_pytest_fixture(driver):
 
 **Tip for unittest users**: use the `setUp()` and `tearDown()` [methods](https://docs.python.org/3/library/unittest.html#organizing-tests) for driver creation and destroying:
 
-```text
+```
 import unittest
 
 class ChromeTest(unittest.TestCase):
@@ -342,25 +342,24 @@ Here is a list of all examples for the different drivers that are supported by t
 
 _Web_
 
-* [Chrome test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/chrome_driver_test.py)
-* [Firefox test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/firefox_driver_test.py)
-* [Safari test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/safari_driver_test.py)
-* [Edge test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/edge_driver_test.py)
-* [Internet Explorer test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/ie_driver_test.py)
+* [Chrome test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/chrome\_driver\_test.py)
+* [Firefox test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/firefox\_driver\_test.py)
+* [Safari test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/safari\_driver\_test.py)
+* [Edge test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/edge\_driver\_test.py)
+* [Internet Explorer test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/web/ie\_driver\_test.py)
 
 _Android_
 
-* [Android native test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/android/android_driver_test.py)
+* [Android native test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/android/android\_driver\_test.py)
 * [Android native app](https://github.com/testproject-io/android-demo-app)
-* [Web test on mobile Chrome](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/android/android_driver_chrome_test.py)
+* [Web test on mobile Chrome](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/android/android\_driver\_chrome\_test.py)
 
 _iOS_
 
-* [iOS native test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/ios/ios_driver_test.py)
+* [iOS native test](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/ios/ios\_driver\_test.py)
 * [iOS native app](https://github.com/testproject-io/ios-demo-app)
-* [Web test on mobile Safari](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/ios/ios_driver_safari_test.py)
+* [Web test on mobile Safari](https://github.com/testproject-io/python-sdk/blob/master/tests/examples/drivers/ios/ios\_driver\_safari\_test.py)
 
 ### License
 
 The TestProject Python SDK is licensed under the LICENSE file in the root directory of the project source tree.
-

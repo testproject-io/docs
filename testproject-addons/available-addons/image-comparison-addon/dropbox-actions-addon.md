@@ -10,31 +10,31 @@ As part of the [Image Comparison Addon](https://docs.testproject.io/testproject-
 
 ## How to Get Started with Dropbox Actions?
 
-First, you need to create a **free Dropbox account** by navigating to their site: [https://www.dropbox.com/basic](https://www.dropbox.com/basic).   
-  
-Once you have a Dropbox account set and ready, you need to create a **Generated Access Token** to be able to access your Dropbox storage through the TestProject Dropbox Actions Addon.   
-  
+First, you need to create a **free Dropbox account** by navigating to their site: [https://www.dropbox.com/basic](https://www.dropbox.com/basic). \
+\
+Once you have a Dropbox account set and ready, you need to create a **Generated Access Token** to be able to access your Dropbox storage through the TestProject Dropbox Actions Addon. \
+\
 Go to the Dropbox developer section [here](https://www.dropbox.com/developers/documentation) and **create a new app**.
 
 ![](../../../.gitbook/assets/2.png)
 
 ![Create a New App in Dropbox Developer Section](../../../.gitbook/assets/3.png)
 
-  
+\
 Configure your settings as follows:
 
-![App Settings](../../../.gitbook/assets/1%20%285%29.png)
+![App Settings](<../../../.gitbook/assets/1 (5).png>)
 
-In the **permissions** tab, enable the following settings:
+In the **permissions **tab, enable the following settings:
 
-![Files and folders permissions](../../../.gitbook/assets/2%20%285%29.png)
+![Files and folders permissions](<../../../.gitbook/assets/2 (5).png>)
 
-  
+\
 Now, you will have the option to generate a token:
 
 ![Generated Access Token to Dropbox Storage](../../../.gitbook/assets/5.png)
 
-  
+\
 This token will need to be inserted into **every Dropbox related action**, in order to access and interact with files you have stored on your Dropbox.
 
 ## Example for Using Dropbox Actions with TestProject
@@ -49,5 +49,4 @@ This is the result: both files created by Dropbox upon registration.
 
 ![](../../../.gitbook/assets/7.png)
 
-This is just one example of the available Dropbox actions. In the [Image Comparison Addon](https://docs.testproject.io/testproject-addons/available-addons/image-comparison-addon) actions you can find additional Dropbox related actions including: **uploading, deleting and downloading files** from your Storage, **saving element screenshots to Dropbox** and **comparing images from Dropbox**.
-
+This is just one example of the available Dropbox actions. In the [Image Comparison Addon](https://docs.testproject.io/testproject-addons/available-addons/image-comparison-addon) actions you can find additional Dropbox related actions including: **uploading, deleting and downloading files** from your Storage, **saving element screenshots to Dropbox **and **comparing images from Dropbox**.

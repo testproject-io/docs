@@ -12,17 +12,17 @@ Exported test packages are stand alone textual YAML files. These file can be sto
 
 ### Test Packages
 
-A package can be either a single YAML file that contains a test, and its auxiliary \(nested and recovery\) tests, or an archive \(ZIP\) that is called a bundle and will contain additional files besides the test itself.
+A package can be either a single YAML file that contains a test, and its auxiliary (nested and recovery) tests, or an archive (ZIP) that is called a bundle and will contain additional files besides the test itself.
 
 A single YAML file doesn't contain any dependencies like apps, coded tests, or addons that are used in the test.  The assumption is that they were already downloaded by the executing Agent or will be downloaded on demand from the TestProject cloud over the internet by the executing Agent before an execution.
 
-A package bundle, on the contrary to a single file, will contain all the dependencies \(apps, coded tests or addons\) and additional files such as settings and parameters for overriding default values and data-driven execution.
+A package bundle, on the contrary to a single file, will contain all the dependencies (apps, coded tests or addons) and additional files such as settings and parameters for overriding default values and data-driven execution.
 
 #### Package Bundle Structure
 
 The following files tree demonstrates a package bundle structure:
 
-```text
+```
 package.zip
 ├── addons
 │   ├── {addon-guid}
@@ -48,25 +48,25 @@ TestProject Agent CLI allows interaction with the Agent and specifically executi
 
 CLI can be started from the Agent installation folder or from any other location by executing the following command from the shell:
 
-```text
+```
 foo@bar:~$ testproject-agent
 ```
 
 Or via command prompt / PowerShell in Windows:
 
-```text
+```
 testproject-agent.exe
 ```
 
 When started without parameters or with the `help` parameter, CLI will display self-explanatory usage instructions, e.g.
 
-```text
+```
 foo@bar:~$ testproject-agent help
 ```
 
 Will print:
 
-```text
+```
 Usage: testproject-agent [-hv] [-A=<agent>] [-C=<grpcTimeout>] [COMMAND]
   -A, --agent=<agent>   Target Agent (host:port)
   -C, --connect-timeout=<grpcTimeout>
@@ -85,13 +85,13 @@ Commands:
 
 Running it with the `-v` or `--version` option will print the TestProject Agent CLI version, e.g.
 
-```text
+```
 foo@bar:~$ testproject-agent -v
 ```
 
 Will print:
 
-```text
+```
 3.0.0-RELEASE
 ```
 
@@ -103,7 +103,7 @@ TestProject Agent CLI allows invocation of various features using a command para
 
 This command allows starting a local Agent. Before CLI attempts to start the Agent, it verifies that no other Agent process is running.
 
-```text
+```
 foo@bar:~$ testproject-agent start
 ```
 
@@ -111,7 +111,7 @@ The command above with no options specified will start the Agent from within the
 
 Here's the command help:
 
-```text
+```
 Usage: testproject-agent start [-fhjsV] [-A=<agent>] [-C=<grpcTimeout>]
                                [-D=<dataPath>] [--grpc-address=<grpcAddress>]
                                [--max-workers=<maxWorkers>]
@@ -146,7 +146,7 @@ By default, Agent starts its gRPC and Web servers, binding them to localhost.  S
 * Using `--grpc-address`, Agent can be instructed for binding its gRPC to other host and port.
 * Using `--rest-address`, Agent can be instructed for binding its Web Server to other hosts and port.
 
-```text
+```
 foo@bar:~$ testproject-agent start --grpc-address 10.0.0.2:65000 --rest-address 0.0.0.0:65001
 ```
 
@@ -169,13 +169,13 @@ For example, if the host has 8 CPU cores, it is recommended to not exceed 4 Agen
 
 This command connects to an Agent and prints its version:
 
-```text
+```
 foo@bar:~$ testproject-agent connect
 ```
 
 Will print:
 
-```text
+```
 Agent Version: [1.0]
 ```
 
@@ -189,7 +189,7 @@ This command allows registering an Agent when it is not registered.
 
 Here's the command usage help:
 
-```text
+```
 foo@bar:~$ testproject-agent register --help
 
 Usage: testproject-agent register [-hV] -a=<alias> [-A=<agent>]
@@ -206,13 +206,13 @@ Registers an Agent using provided API or Development token
 
 Notice the `-a` or `--alias` and the `-t` or `--token` required options that should be used to invoke the command properly.  For example right after installation, you can run the following command to register the Agent as _MyAgent_:
 
-```text
+```
 foo@bar:~$ testproject-agent register -a MyAgent -t ***
 ```
 
 **Token**
 
-The token used in the command above \(masked as triple asterisks\) is actually an **API** or a **Development** token.  Any of them can be obtained from the [Integrations](https://app.testproject.io/#/developers/sdk) page on the TestProject platform.
+The token used in the command above (masked as triple asterisks) is actually an **API** or a **Development** token.  Any of them can be obtained from the [Integrations](https://app.testproject.io/#/developers/sdk) page on the TestProject platform.
 
 > If the Agent is already registered, a relevant error message will appear.
 
@@ -220,13 +220,13 @@ The token used in the command above \(masked as triple asterisks\) is actually a
 
 This command queries the Agent and provides a list of browsers that are installed on the machine where Agent is running.  It can be used to efficiently configure the execution settings with a list of available browsers for Web test execution.
 
-```text
+```
 foo@bar:~$ testproject-agent browsers
 ```
 
 Running the command shown above will result in an output similar to the below:
 
-```text
+```
 +=========+===============+
 | type    | version       |
 |=========|===============|
@@ -239,7 +239,7 @@ Running the command shown above will result in an output similar to the below:
 
 It can be formatted as JSON if an additional option `--json` is set:
 
-```text
+```
 foo@bar:~$ testproject-agent browsers --json
 ```
 
@@ -263,17 +263,17 @@ Will result in:
 }
 ```
 
-Information about available browsers can be used to configure [execution settings]().
+Information about available browsers can be used to configure [execution settings](broken-reference).
 
-> Chrome and Firefox have a headless operation mode.  When configuring [execution settings](), use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
+> Chrome and Firefox have a headless operation mode.  When configuring [execution settings](broken-reference), use `CHROME_HEADLESS` and `FIREFOX_HEADLESS` when required.
 
 #### Devices
 
-This command allows listing connected devices \(also Android emulators or iOS simulators\) to an Agent.  It also allows listing Apps installed on a device.
+This command allows listing connected devices (also Android emulators or iOS simulators) to an Agent.  It also allows listing Apps installed on a device.
 
 Here's a usage help printout:
 
-```text
+```
 foo@bar:~$ testproject-agent devices list --help
 
 Usage: testproject-agent devices list [-hjV] [-A=<agent>] [-C=<grpcTimeout>]
@@ -298,13 +298,13 @@ Device Type
 
 When the `list` parameter specified, CLI will list devices:
 
-```text
+```
 foo@bar:~$ testproject-agent devices list
 ```
 
 Will result in a similar output to the following:
 
-```text
+```
 +======+==========+==========+=======================================+=======================================+=========+
 | udid | platform | type     | name                                  | model                                 | version |
 |======|==========|==========|=======================================|=======================================|=========|
@@ -346,7 +346,7 @@ There are additional options available to narrow down the list:
 
 Another useful option is the `--json`, that will output results as JSON, for example:
 
-```text
+```
 foo@bar:~$ testproject-agent devices list --physical --json
 ```
 
@@ -376,13 +376,13 @@ Will result in a similar output:
 
 When the `apps` parameter specified, CLI will list apps installed on a device.  It requires an additional argument `-d` or `--device` to be specified, for example:
 
-```text
+```
 foo@bar:~$ testproject-agent devices apps -d ***
 ```
 
 Assuming the triple asterisks above are an actual UDID of a device, this command will print a list of apps installed on a device with this UDID, for example here's a printout of apps on an Android device:
 
-```text
+```
 +============+=========================================+===============================================================+
 | name       | packageName                             | activityName                                                  |
 |============|=========================================|===============================================================|
@@ -399,7 +399,7 @@ Assuming the triple asterisks above are an actual UDID of a device, this command
 
 Or something similar for an iOS device:
 
-```text
+```
 +===========+===================+=======================================+
 | name      | version           | bundleId                              |
 |===========|===================|=======================================|
@@ -419,7 +419,7 @@ Or something similar for an iOS device:
 
 Using the `--json` option same output will be presented as a JSON:
 
-```text
+```
 foo@bar:~$ testproject-agent devices apps -d *** --json
 ```
 
@@ -427,13 +427,13 @@ foo@bar:~$ testproject-agent devices apps -d *** --json
 
 This command inspects the contents of a backup package or bundle, validates it, and prints basic details about it:
 
-```text
+```
 foo@bar:~$ testproject-agent validate backup.yaml
 ```
 
 Running the command shown above will print similar details:
 
-```text
+```
 Package Protocol: 1
 Project
 +========================+==================+
@@ -454,7 +454,7 @@ Tests
 
 Same data can be presented as a JSON if the `--json` the option is used:
 
-```text
+```
 foo@bar:~$ testproject-agent validate backup.yaml --json
 ```
 
@@ -476,7 +476,7 @@ Will output similar details:
 
 This command should be used to execute a backup package.  Here are the usage instructions following the execution of the command with the `--help` option:
 
-```text
+```
 foo@bar:~$ testproject-agent run --help
 
 Usage: testproject-agent run [-hV] [--parallel-targets] [--parallel-tests]
@@ -524,11 +524,11 @@ Targets
       --device=<devices>     Target devices (multi-value)
 ```
 
-As [stated earlier]() a package can be either a single YAML file, or an archive \(ZIP\).
+As [stated earlier](broken-reference) a package can be either a single YAML file, or an archive (ZIP).
 
 **Settings**
 
-A bundle \(ZIP\) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution.  While a stand-alone YAML file requires to specify these settings.
+A bundle (ZIP) is a self-sufficient archive that contains a settings file with a pre-selected list of browsers or devices for execution.  While a stand-alone YAML file requires to specify these settings.
 
 In order to override execution settings included in a bundle or to specify execution settings for a stand-alone YAML file, the following options are available:
 
@@ -537,13 +537,13 @@ In order to override execution settings included in a bundle or to specify execu
 
 The following example demonstrates the execution of a bundle:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip
 ```
 
 And this is an example of an _unbundled_ stand-alone YAML:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml
 ```
 
@@ -551,41 +551,41 @@ foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml
 
 To override bundled settings using a file, the following command can be executed with `-s` or `--settings` option:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --settings settings.yaml
 ```
 
 The command above will use settings configured in `settings.yaml` instead of the settings inside the archive.  The same could be achieved using the `--browser` option:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --browser CHROME --browser FIREFOX
 ```
 
-The command above will override bundled settings and use provided list of browsers.  In case of a mobile test, device\(s\) UDID\(s\) should be provided using `--device` option:
+The command above will override bundled settings and use provided list of browsers.  In case of a mobile test, device(s) UDID(s) should be provided using `--device` option:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --device *** --device ***
 ```
 
 Command arguments can also be used to provide settings for _unbundled_ files such as stand-alone YAML:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --browser SAFARI --browser EDGE
 ```
 
 **Parameters**
 
-Similar to [settings](), test parameters can be overridden or provided externally.
+Similar to [settings](broken-reference), test parameters can be overridden or provided externally.
 
 In order to override bundled test parameters using an external file, `-p` or `--parameters` option should be used:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip --parameters parameters.csv
 ```
 
 The same syntax should be used to supply parameters values for an _unbundled_ stand-alone YAML backup files:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.yaml --parameters parameters.csv
 ```
 
@@ -595,13 +595,13 @@ Following an execution, a local report generated.  By default, it will be create
 
 Running the following command:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip
 ```
 
 Will produce a similar output:
 
-```text
+```
 Executing target 1/1: [Chrome (Headless) 88.0.4324.192]
 Tests 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
 Steps 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
@@ -616,13 +616,13 @@ Notice the _Execution Report Path_ and _Execution Report URL_ log lines.  URL pr
 
 To specify a different location for the report file, `-o` or `--output-path` parameter can be used:
 
-```text
+```
 foo@bar:~$ testproject-agent run MyFirstTestBackup.zip -o ~/Desktop
 ```
 
 the command above will run `MyFirstTestBackup.zip` bundle and generate a report in `~/Desktop`, for example:
 
-```text
+```
 Executing target 1/1: [Chrome (Headless) 88.0.4324.192]
 Tests 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
 Steps 100% │██████████████████████████████████████████│ 1/1 (0:00:00 / 0:00:00) 
@@ -660,7 +660,7 @@ Starting from Agent version `2.2.0`, there are several global options that can b
 
 By default, CLI uses the local Agent, running on the same machine where the CLI is running.  Using the `-A` or `--agent` option, allows targeting a remote Agent, in the same network, on a different machine:
 
-```text
+```
 foo@bar:~$ testproject-agent --agent 10.0.0.2:9999 browsers list
 ```
 
@@ -672,7 +672,7 @@ For example, command above will list available browsers on the Agent at `10.0.0.
 
 Sometimes, it might be necessary to allow an extended timeout connecting to the Agent.  This can be done using the `-C` or `--connect-timeout` option, specified in _seconds_, as shown below:
 
-```text
+```
 foo@bar:~$ testproject-agent --connect-timeout 10 run MyFirstTestBackup.zip
 ```
 
@@ -687,4 +687,3 @@ CLI versions are not backward compatible with previous Agents.  Therefore CLI ve
 TestProject CLI is a powerful tool allowing the execution of backup packages.  It can be used on-premises and integrated into any CI / CD pipelines.
 
 TestProject CLI is available as part of the TestProject Agent v2.0.0 installation.
-

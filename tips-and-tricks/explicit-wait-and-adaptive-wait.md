@@ -22,7 +22,7 @@ To save you time and improve the stability of your tests, we have developed an a
 
 ### **Adaptive Wait within the TestProject Smart Recorder**
 
-The adaptive wait functionality is located within **every step or validation** in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails \(Set to 15 seconds by default\), so your test will be able to continue even if the conditions are not met.
+The adaptive wait functionality is located within **every step or validation** in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails (Set to 15 seconds by default), so your test will be able to continue even if the conditions are not met.
 
 ![Adaptive Wait](../.gitbook/assets/adaptive-waits.png)
 
@@ -40,51 +40,51 @@ In the following example, we will navigate to a URL and input a username and pas
 
 `// This is the test’s execute method, it will contain the actions taken in the test.`
 
-  `public ExecutionResult execute(WebTestHelper helper) throws FailureException {`
+`  public ExecutionResult execute(WebTestHelper helper) throws FailureException {`
 
 `// Leverage the TestProject driver.`
 
-    **`WebDriver driver = helper.getDriver();`**
+**`    WebDriver driver = helper.getDriver();`**
 
-   `// set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
+`   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
 
-    **`driver.setTimeout(15000);`**
+**`    driver.setTimeout(15000);`**
 
 `// The TestProject reporter.`
 
-    `TestReporter report = helper.getReporter();`
+`    TestReporter report = helper.getReporter();`
 
-    `By by;`
+`    By by;`
 
-    `boolean booleanResult;`
+`    boolean booleanResult;`
 
-    `//    Navigates the specified URL.`
+`    //    Navigates the specified URL.`
 
-    `booleanResult = driver.testproject().navigateToUrl(ApplicationURL);`
+`    booleanResult = driver.testproject().navigateToUrl(ApplicationURL);`
 
-    `report.step(String.format("Navigate to '%s'",ApplicationURL), booleanResult, TakeScreenshotConditionType.Failure);`
+`    report.step(String.format("Navigate to '%s'",ApplicationURL), booleanResult, TakeScreenshotConditionType.Failure);`
 
-    `// Type the username.`
+`    // Type the username.`
 
-    `by = By.cssSelector("#name");`
+`    by = By.cssSelector("#name");`
 
-    `booleanResult = driver.testproject().typeText(by,"Username");`
+`    booleanResult = driver.testproject().typeText(by,"Username");`
 
-    `report.step("Type 'Username' in 'name1'", booleanResult, TakeScreenshotConditionType.Failure);`
+`    report.step("Type 'Username' in 'name1'", booleanResult, TakeScreenshotConditionType.Failure);`
 
-    `// Type the password.`
+`    // Type the password.`
 
-    `by = By.cssSelector("#password");`
+`    by = By.cssSelector("#password");`
 
-    `booleanResult = driver.testproject().typeText(by,"12345678");`
+`    booleanResult = driver.testproject().typeText(by,"12345678");`
 
-    `report.step("Type '12345678' in 'password1'", booleanResult, TakeScreenshotConditionType.Failure);`
+`    report.step("Type '12345678' in 'password1'", booleanResult, TakeScreenshotConditionType.Failure);`
 
 `// Report the test as passed.`
 
-    `return ExecutionResult.PASSED;`
+`    return ExecutionResult.PASSED;`
 
-  `}`
+`  }`
 
 **Mobile Example**
 
@@ -94,31 +94,31 @@ In the following example, we will use the adaptive wait functionality to wait fo
 
 `public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {`
 
-   `// Leverage the TestProject driver.`
+`   // Leverage the TestProject driver.`
 
-    **`AndroidDriver driver = helper.getDriver();`**
+**`    AndroidDriver driver = helper.getDriver();`**
 
-   `// set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
+`   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
 
-    **`driver.setTimeout(15000);`**
+**`    driver.setTimeout(15000);`**
 
 `// The TestProject reporter.`
 
-    `TestReporter report = helper.getReporter();`
+`    TestReporter report = helper.getReporter();`
 
-    `By by;`
+`    By by;`
 
-    `boolean booleanResult;`
+`    boolean booleanResult;`
 
-    `ExecutionResult executionresult;`
+`    ExecutionResult executionresult;`
 
 `Then, any action you perform will employ an adaptive wait, for example:`
 
-    `// Tap on the element by the locator the ID.`
+`    // Tap on the element by the locator the ID.`
 
-    `by = By.id("com.google.android.youtube:id/menu_item_1");`
+`    by = By.id("com.google.android.youtube:id/menu_item_1");`
 
-    `booleanResult = driver.testproject().tap(by);`
+`    booleanResult = driver.testproject().tap(by);`
 
 `// Report the step result via the TestProject reporter.`
 
@@ -126,23 +126,23 @@ In the following example, we will use the adaptive wait functionality to wait fo
 
 `// Report the test as passed.`
 
-    `return ExecutionResult.PASSED;`
+`    return ExecutionResult.PASSED;`
 
-  `}`
+`  }`
 
-### \*\*\*\*
+### ****
 
 ### **Advanced Capabilities: “If visible”**
 
 The **“If visible” actions** are:
 
-* Clear contents \(if visible\)
+* Clear contents (if visible)
 * Click if visible
-* Contains text? \(if visible\)
-* Get text \(if visible\)
-* Long press gesture \(if visible\)
-* Tap \(if visible\)
-* Type text \(if visible\)
+* Contains text? (if visible)
+* Get text (if visible)
+* Long press gesture (if visible)
+* Tap (if visible)
+* Type text (if visible)
 
 These actions will consider your set adaptive wait time and **only** be executed if the element you have applied them onto appears on the screen. In case that the element does not appear on the screen, the test will continue without failing, showing 100% pass rate, with an indication in the “If visible” action, saying the element never appeared, causing the step not to execute, but pass regardless.
 
@@ -164,4 +164,3 @@ These validate if the element is visible or invisible on the page or screen and 
 ![](../.gitbook/assets/is-visible-actions.png)
 
 You can find all available validations and more details [here](https://docs.testproject.io/getting-started/available-validations).
-

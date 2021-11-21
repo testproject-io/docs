@@ -5,9 +5,9 @@
 * Parallel tests execution.
 * Setup many agents in seconds.
 * Test different browser versions.
-* Save time in the execution of your test suites. 
+* Save time in the execution of your test suites.&#x20;
 
-## **Diagram**  
+## **Diagram **&#x20;
 
 ![](../.gitbook/assets/testproject-agent-selenium-testproject-k8s-standalone.png)
 
@@ -15,7 +15,7 @@
 
 * Kubernetes cluster
 * kubectl
-* TestProject Agent =&gt; v0.66.4 
+* TestProject Agent => v0.66.4&#x20;
 
 ## Deployment
 
@@ -27,15 +27,18 @@ This YAML snippet spins up 3 deployments:
 
 The TestProject Agent will automatically detect the Chrome & Firefox containers.
 
-By setting the `TP_API_KEY` environment variable we instruct the Agent to automatically register TestProject Agent. The API key can be created in the TestProject Web Application \(as described [here](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api)\).
+By setting the `TP_API_KEY` environment variable we instruct the Agent to automatically register TestProject Agent. The API key can be created in the TestProject Web Application (as described [here](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api)).
 
-1. For enhanced security, it's recommended to use Kubernetes secrets for setting the TP\_API\_KEY.  Create file '.secret' with `TP_API_KEY`.  Then create the `testproject-secrets` as following: 
+1. For enhanced security, it's recommended to use Kubernetes secrets for setting the TP\_API\_KEY.\
+   &#x20;Create file '.secret' with `TP_API_KEY`.\
+   &#x20;Then create the `testproject-secrets` as following:\
 
-```text
+
+```
 kubectl create secret generic testproject-secrets --from-literal "TP_API_KEY=$(cat .secret)"
 ```
 
-2. Save the code below as `k8s-testproject.yaml` , then execute that YAML file in your local Kubernetes environment.
+2\. Save the code below as `k8s-testproject.yaml` , then execute that YAML file in your local Kubernetes environment.
 
 ```bash
 kubectl apply -f k8s-testproject.yaml
@@ -237,34 +240,34 @@ spec:
 cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-2/g" | sed "s/testproject-agent/testproject-agent-2/g" | kubectl apply -f - ;
 ```
 
-* As result, You will have 2 TestProject Agents: 
-  * The first one from the firstly run with default parameters bring up the latest Firefox and Chrome
-  * The second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent` 
+* As result, You will have 2 TestProject Agents:\
 
-![](../.gitbook/assets/2021-04-26-10_17_30-testproject.png)
+  * The first one from the firstly run with default parameters bring up the latest Firefox and Chrome
+  * The second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent `
+
+![](../.gitbook/assets/2021-04-26-10\_17\_30-testproject.png)
 
 ## Test different browser versions
 
-* The following  will bring up an additional TestProject agent named `My First k8s Agent-3`
+*   The following  will bring up an additional TestProject agent named `My First k8s Agent-3`
 
-  Firefox with version `standalone-firefox:86.0`
+    Firefox with version `standalone-firefox:86.0`
 
-```text
+```
 cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-3/g" | sed "s/testproject-agent/testproject-agent-3/g" |  sed "s/name: firefox/name: firefox-3/g" | sed "s/selenium\/standalone-firefox/selenium\/standalone-firefox:86.0/g" | kubectl apply -f - ;
 ```
 
-* As result, you will have 3 TestProject Agents: 
+* As result, you will have 3 TestProject Agents:\
+
   * the first one `My First k8s Agent` from the firstly run with default parameters and the latest Firefox and Chrome
   * the second `My First k8s Agent-2` running with default parameters and the latest Firefox and Chrome
   * the third `My First k8s Agent-3` that work against the latest Chrome but Firefox:86.0
 
-![](../.gitbook/assets/2021-04-26-10_36_08-testproject.png)
+![](../.gitbook/assets/2021-04-26-10\_36\_08-testproject.png)
 
 ## Flow
 
 
 
 ![](../.gitbook/assets/testproject-agent-selenium-testproject-k8s-standalone-low-level.png)
-
-
 
