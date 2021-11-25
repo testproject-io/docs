@@ -77,9 +77,13 @@ Next, we will generate the JWT token to use in the addon.
 
 ### Generate JWT Token
 
-In the Service Account we just created, click on the 3 dots on the right, and click on Create Key:
+In the Service Account we just created, click on the 3 dots on the right, and click on Manage keys:
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311)(1).png>)
+
+Click on ADD KEY and select "Create new key"
+
+![](<../../.gitbook/assets/image (450).png>)
 
 Select JSON and Click CREATE
 
