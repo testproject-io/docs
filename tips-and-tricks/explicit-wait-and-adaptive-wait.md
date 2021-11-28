@@ -16,7 +16,7 @@ By default, the step pause is happening before the execution of each step and yo
 
 You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default execution speed.
 
-![](<../.gitbook/assets/image (461).png>)
+![](<../.gitbook/assets/image (466).png>)
 
 Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
@@ -42,7 +42,7 @@ You can edit the Adaptive Wait time **globally** for your test from the test’s
 
 This is how you can change **specific step** Adaptive Wait first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (463).png>)
+![](<../.gitbook/assets/image (469).png>)
 
 
 
