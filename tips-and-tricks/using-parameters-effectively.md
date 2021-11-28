@@ -1,3 +1,7 @@
+---
+description: Learn about the different types and option when using Parameters
+---
+
 # Using Parameters Effectively
 
 Parameters are a powerful way to make your tests more maintainable. They also make it easy to share inputs and outputs between test steps or even between tests in a project.
@@ -29,6 +33,16 @@ Should be used to return information from a sub-test to the main test.
 ### Private Parameters
 
 Use private when the parameter value should not be defined during the test setup. For example, When the get text action is used and a parameter captures the value for comparison during the test, this parameter inherits its value from an element inside the test, and therefore should be set to private. (as there is no reason to override the parameter value with a data source).&#x20;
+
+## Secret Parameters
+
+The Secret parameters option allows us to define a special parameter that can be used to store sensitive information safely and hide it from the test report.
+
+{% hint style="success" %}
+Useful for sensitive information such as passwords, API tokens, or other login credentials.
+{% endhint %}
+
+Unlike regular parameters, secret parameters values are stored in an **encrypted state** and can not be viewed by anyone. After setting the value of a secret parameter, it is only possible to replace it with a new value. The Secret parameter values will be **hidden from the reports** and in no case are stored as plain text.
 
 ## Input and Output Fields
 
