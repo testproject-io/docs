@@ -1,136 +1,114 @@
-# Explicit Wait & Adaptive Wait
+---
+description: >-
+  Use Adaptive Wait to stabilize your tests, Make your test slower or faster
+  using Execution speed.
+---
+
+# Execution Speed & Adaptive Wait
 
 There are various ways to add waits in your tests. Let's review them and understand each one and their differences.
 
-## **Explicit Wait Times**
+## **Execution Speed**
 
-Explicit wait times are an option available for **each step** of your test as "Step Pause". You can choose to add an explicit wait time either **before** or **after** the execution of your test step.
+Execution speed is an option available for the **entire test **and on **each step** of your test. It should be used for controlling the speed of the tests and not to add fixed pauses in the test. To add dynamic pauses use Adaptive Wait.
 
-![Explicit Wait - Step Pause](../.gitbook/assets/explicit-wait.png)
+By default, the step pause is happening before the execution of each step and you can choose from "Fast, Normal, Slow, and Very slow" options. You can choose to override the default settings by changing the option to **custom** and choose either **before** or **after** the execution of your test steps. When choosing custom you can also change the pause time manually by typing a preferred number of milliseconds. (1 second = 1000ms)
 
-You will need to set the duration of the wait time in milliseconds.
+You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default execution speed.
 
-![Explicit Wait - Set pause duration](../.gitbook/assets/explicit-wait-set-time.png)
+![](<../.gitbook/assets/image (454).png>)
 
-You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default step pause.
+Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![Test Settings](../.gitbook/assets/test-settings.png)
+![](<../.gitbook/assets/image (450).png>)
 
-## **Adaptive Wait Time**
 
-To save you time and improve the stability of your tests, we have developed an adaptive wait that knows when to move to the next action. Now, you can trust your tests without having unnecessarily long wait times built in.
+
+## **Adaptive Wait**
+
+To save you time and improve the stability of your tests, we have developed an adaptive wait that knows when to move to the next action. Now, you can trust your tests without having unnecessary fixed pauses in your tests.
 
 ### **Adaptive Wait within the TestProject Smart Recorder**
 
-The adaptive wait functionality is located within **every step or validation** in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails (Set to 15 seconds by default), so your test will be able to continue even if the conditions are not met.
+The adaptive wait functionality is located within **every step **in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails (Set to 15 seconds by default).&#x20;
 
-![Adaptive Wait](../.gitbook/assets/adaptive-waits.png)
+Unlike a fixed pause, your test will be able to continue even before the time limit if the conditions allow it, therefore increasing the Adaptive wait time can help **stabilize your test** without adding time to the execution.&#x20;
 
-You can also edit the adaptive wait time globally for your test from the test’s settings:
+You can edit the Adaptive Wait time **globally** for your test from the test’s settings:
 
-![Test Settings](../.gitbook/assets/test-settings.png)
+![](<../.gitbook/assets/image (448).png>)
+
+
+
+This is how you can change **specific step** Adaptive Wait first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
+
+![](<../.gitbook/assets/image (456).png>)
+
+
 
 ### **How to use Adaptive Wait with the TestProject SDK**
 
 The adaptive wait functionality also appears in the TestProject SDK. You will be able to use it as long as you use the TestProject web/mobile **driver**.
 
-**Web Example**
-
+{% tabs %}
+{% tab title="Web Example" %}
 In the following example, we will navigate to a URL and input a username and password in their respective fields:
 
-`// This is the test’s execute method, it will contain the actions taken in the test.`
+```
+// This is the test’s execute method, it will contain the actions taken in the test.
+  public ExecutionResult execute(WebTestHelper helper) throws FailureException {
+// Leverage the TestProject driver.
+    WebDriver driver = helper.getDriver();
+   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.
+    driver.setTimeout(15000);
+// The TestProject reporter.
+    TestReporter report = helper.getReporter();
+    By by;
+    boolean booleanResult;
+    //    Navigates the specified URL.
+    booleanResult = driver.testproject().navigateToUrl(ApplicationURL);
+    report.step(String.format("Navigate to '%s'",ApplicationURL), booleanResult, TakeScreenshotConditionType.Failure);
+    // Type the username.
+    by = By.cssSelector("#name");
+    booleanResult = driver.testproject().typeText(by,"Username");
+    report.step("Type 'Username' in 'name1'", booleanResult, TakeScreenshotConditionType.Failure);
+    // Type the password.
+    by = By.cssSelector("#password");
+    booleanResult = driver.testproject().typeText(by,"12345678");
+    report.step("Type '12345678' in 'password1'", booleanResult, TakeScreenshotConditionType.Failure);
+// Report the test as passed.
+    return ExecutionResult.PASSED;
+  }
+```
+{% endtab %}
 
-`  public ExecutionResult execute(WebTestHelper helper) throws FailureException {`
-
-`// Leverage the TestProject driver.`
-
-**`    WebDriver driver = helper.getDriver();`**
-
-`   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
-
-**`    driver.setTimeout(15000);`**
-
-`// The TestProject reporter.`
-
-`    TestReporter report = helper.getReporter();`
-
-`    By by;`
-
-`    boolean booleanResult;`
-
-`    //    Navigates the specified URL.`
-
-`    booleanResult = driver.testproject().navigateToUrl(ApplicationURL);`
-
-`    report.step(String.format("Navigate to '%s'",ApplicationURL), booleanResult, TakeScreenshotConditionType.Failure);`
-
-`    // Type the username.`
-
-`    by = By.cssSelector("#name");`
-
-`    booleanResult = driver.testproject().typeText(by,"Username");`
-
-`    report.step("Type 'Username' in 'name1'", booleanResult, TakeScreenshotConditionType.Failure);`
-
-`    // Type the password.`
-
-`    by = By.cssSelector("#password");`
-
-`    booleanResult = driver.testproject().typeText(by,"12345678");`
-
-`    report.step("Type '12345678' in 'password1'", booleanResult, TakeScreenshotConditionType.Failure);`
-
-`// Report the test as passed.`
-
-`    return ExecutionResult.PASSED;`
-
-`  }`
-
-**Mobile Example**
-
+{% tab title="Mobile Example" %}
 In the following example, we will use the adaptive wait functionality to wait for an Android Element to appear in a coded test, before tapping on it:
 
-`// This is the test’s execute method, will contain the actions taken in the test.`
-
-`public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {`
-
-`   // Leverage the TestProject driver.`
-
-**`    AndroidDriver driver = helper.getDriver();`**
-
-`   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.`
-
-**`    driver.setTimeout(15000);`**
-
-`// The TestProject reporter.`
-
-`    TestReporter report = helper.getReporter();`
-
-`    By by;`
-
-`    boolean booleanResult;`
-
-`    ExecutionResult executionresult;`
-
-`Then, any action you perform will employ an adaptive wait, for example:`
-
-`    // Tap on the element by the locator the ID.`
-
-`    by = By.id("com.google.android.youtube:id/menu_item_1");`
-
-`    booleanResult = driver.testproject().tap(by);`
-
-`// Report the step result via the TestProject reporter.`
-
-`report.step("Tap 'Search1'", booleanResult, TakeScreenshotConditionType.Failure);`
-
-`// Report the test as passed.`
-
-`    return ExecutionResult.PASSED;`
-
-`  }`
-
-### ****
+```
+// This is the test’s execute method, will contain the actions taken in the test.
+public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {
+   // Leverage the TestProject driver.
+    AndroidDriver driver = helper.getDriver();
+   // set timeout for adaptive wait driver actions, by increasing this timeout you increase the maximum threshold that the driver will wait for element to become visible.
+    driver.setTimeout(15000);
+// The TestProject reporter.
+    TestReporter report = helper.getReporter();
+    By by;
+    boolean booleanResult;
+    ExecutionResult executionresult;
+Then, any action you perform will employ an adaptive wait, for example:
+    // Tap on the element by the locator the ID.
+    by = By.id("com.google.android.youtube:id/menu_item_1");
+    booleanResult = driver.testproject().tap(by);
+// Report the step result via the TestProject reporter.
+report.step("Tap 'Search1'", booleanResult, TakeScreenshotConditionType.Failure);
+// Report the test as passed.
+    return ExecutionResult.PASSED;
+  }
+```
+{% endtab %}
+{% endtabs %}
 
 ### **Advanced Capabilities: “If visible”**
 
