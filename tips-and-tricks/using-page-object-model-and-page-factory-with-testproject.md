@@ -30,7 +30,7 @@ The most convenient location strategy is the ID (aka. resource-id in Android). F
 
 **Basic Login Test: **
 
-```
+```java
 package io.testproject.appium.tests;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -121,7 +121,7 @@ Elements, page class fields, are now being used across the page to manipulate th
 
 **Login Page Class**:
 
-```
+```java
 package io.testproject.appium.pom.tests.pages;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -193,7 +193,7 @@ The element inspector and locator can be used to find the profile page class on 
 
 **Profile Page Class**:
 
-```
+```java
 package io.testproject.appium.pom.tests.pages;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -293,7 +293,7 @@ This test is identical to the one [above](https://blog.testproject.io/2018/07/14
 
 Instead of searching and manipulating elements directly, this is being done using convenience methods (e.g.isDisplayed)that are implemented by every page.
 
-```
+```java
 package io.testproject.appium.pom.tests;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -355,7 +355,7 @@ This test can be enhanced even further by utilizing TestProject, so let's look a
 * Calls to _report.step_ allow reporting of test milestones and provided better progress granulation when reviewing them in the results and reporting dashboard.
 * The call to _report.result_ allows for providing a final statement for the test execution before it passes or fails.
 
-```
+```java
 import io.testproject.java.annotations.v2.Parameter;
 import io.testproject.java.annotations.v2.Test;
 import io.testproject.java.enums.TakeScreenshotConditionType;
@@ -411,7 +411,7 @@ public class DemoTestWithDefaults implements AndroidTest {
 
 To run the test locally, create a Runner as can be seen in the following example:
 
-```
+```java
 import io.testproject.java.sdk.v2.Runner;
 
 import java.io.IOException;
