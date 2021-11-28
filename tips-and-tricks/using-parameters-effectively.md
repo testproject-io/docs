@@ -28,7 +28,7 @@ Should be used for any parameter that we want to change during test setup for ex
 
 ### Output Parameters
 
-Should be used to return information from a sub-test to the main test.
+Should be used to return information from a [sub-test](using-page-object-model-and-page-factory-with-testproject.md#page-object-in-recorded-tests) to the main test.
 
 ### Private Parameters
 
