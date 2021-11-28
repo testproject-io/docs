@@ -1,22 +1,20 @@
 # Using Page object model and Page Factory with TestProject
 
-Test automation is an important part of any software testing project, but effective test automation needs to be thought through and designed well. There are several strategies and methods that can be used to keep your test automation efficient and easy to run and maintain over time. A couple of common strategies for this include the page object and page factory models. These approaches to test automation allow you keep the tests modular and well organized for maximum effectiveness. These strategies are most often used in coded tests and TestProject supports them in any coded tests you make or run in the platform, but the same concepts can also be used within the Test Recorder as well.
+Test automation is an important part of any software testing project, but effective test automation needs to be thought through and designed well. There are several strategies and methods that can be used to keep your test automation efficient and easy to run and maintain over time. A couple of common strategies for this include the page object and page factory models. These approaches to test automation allow you to keep the tests modular and well organized for maximum effectiveness. These strategies are most often used in coded tests and TestProject supports them in any coded tests you make or run in the platform, but the same concepts can also be used within the Test Recorder as well.
 
 ## Page Object in Recorded Tests
 
-The page object model is essentially a way of organizing your tests so that you have one class per page and that class contains the elements for that page along with the methods for acting on those elements. A similar concept can be applied within the test recorder. For example, you could create a test for logging into your app. You can then use that test in all other tests in the project that need to start with logging in.&#x20;
+The page object model is essentially a way of organizing your tests so that you have one class per page and that class contains the elements for that page along with the methods for acting on those elements. A similar concept can be applied within the Recorder. For example, you could create a test for logging into your app. You can then use that test in all other tests in the project that need to start with logging in.&#x20;
 
-To do that in the test recorder, just add a new test and change the type to Test.
+To do that in the Recorder, just click "add a new test as a step" and select the test. (In our case the login test):
 
-![Add a test and change the type](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (452).png>)
 
-![Set the type to Test](<../.gitbook/assets/image (23).png>)
+You can then choose the login test as a test step in your current test case.&#x20;
 
-You can then chose the login test as test step in your current test case.&#x20;
+![](<../.gitbook/assets/image (451).png>)
 
-![Select Test](<../.gitbook/assets/image (46) (2).png>)
-
-This let's you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test and all tests using it will get that change.
+This lets you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test, and all of the tests using it will get that change.
 
 ## Page Object in Coded Tests
 
@@ -109,7 +107,7 @@ This demonstrates how to create a “Plain” Appium test, but let's see how we 
 
 ### **Create Page Classes by Utilizing Page Object and Page Factory**
 
-In order to create the page object model you will need to define the page classes. In the [demo application](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#DemoApp) there are two pages: the Login page and the Profile page.
+In order to create the page object model, you will need to define the page classes. In the [demo application](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#DemoApp) there are two pages: the Login page and the Profile page.
 
 To map the elements, POM uses the FindBy annotations. These annotations should be used to decorate the fields declared for the elements. Location strategies can be different, but the most convenient one is the ID (aka. resource-id in Android).
 
@@ -437,8 +435,6 @@ public class RunTests {
     }
 }
 ```
-
-
 
 
 
