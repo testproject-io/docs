@@ -10,7 +10,7 @@ There are various ways to add waits in your tests. Let's review them and underst
 
 ## **Execution Speed**
 
-Execution speed is an option available for the **entire test **and on **each step** of your test. It should be used for controlling the speed of the tests and not to add fixed pauses in the test. To add dynamic pauses use Adaptive Wait.
+Execution speed is an option available for the **entire test **and on **each step** of your test. It should be used for controlling the speed of the tests and not to add fixed pauses in the test. To add dynamic pauses use [Adaptive Wait](https://docs.testproject.io/tips-and-tricks/explicit-wait-and-adaptive-wait#adaptive-wait).
 
 By default, the step pause is happening before the execution of each step and you can choose from "Fast, Normal, Slow, and Very slow" options. You can choose to override the default settings by changing the option to **custom** and choose either **before** or **after** the execution of your test steps. When choosing custom you can also change the pause time manually by typing a preferred number of milliseconds. (1 second = 1000ms)
 
