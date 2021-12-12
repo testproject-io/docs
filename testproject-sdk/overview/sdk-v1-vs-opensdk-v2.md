@@ -24,7 +24,7 @@ The Legacy SDKs are used exclusively for creating Addons.
 
 Below is a short summary of key differences between the two:
 
-| **Feature**                                   | ** Legacy SDK**      | **OpenSDK**               |
+| **Feature**                                   |  **Legacy SDK**      | **OpenSDK**               |
 | --------------------------------------------- | -------------------- | ------------------------- |
 | Selenium driver management for all browsers   | Supported            | Supported                 |
 | Appium driver management for iOS and Android  | Supported            | Supported                 |
@@ -42,6 +42,6 @@ Below is a short summary of key differences between the two:
 
 TestProject Addons should be developed with TestProject Legacy SDK (Java, C#).
 
-**Java, C# **- both SDKs support test artifacts upload to the platform, this feature (if required) can help with test artifacts distribution by the TestProject platform which can simplify the automation CI process. &#x20;
+**Java, C#** - both SDKs support test artifacts upload to the platform, this feature (if required) can help with test artifacts distribution by the TestProject platform which can simplify the automation CI process. &#x20;
 
-**Python  **- upload tests to the platform is not supported at the moment.&#x20;
+**Python**  - upload tests to the platform is not supported at the moment.&#x20;

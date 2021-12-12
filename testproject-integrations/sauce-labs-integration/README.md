@@ -21,7 +21,7 @@ Integrating TestProject with Sauce Labs allows you and your teammates to run you
 
 ### Get Sauce Labs Username & Access Key
 
-In order to setup the integration, you will have to obtain a Sauce Labs Access key. After logging into your Sauce Labs account, visit the [setting area](https://app.saucelabs.com/user-settings) (1-2) and copy your **User Name (3) **and** Access Key (4)**.
+In order to setup the integration, you will have to obtain a Sauce Labs Access key. After logging into your Sauce Labs account, visit the [setting area](https://app.saucelabs.com/user-settings) (1-2) and copy your **User Name (3)** and **Access Key (4)**.
 
 ![Obtaining Sauce Labs Username and Access Key](<../../.gitbook/assets/image (27) (1).png>)
 
@@ -31,7 +31,7 @@ In order to setup the integration, you will have to obtain a Sauce Labs Access k
 Only account administrators can set up Sauce Labs integration.
 {% endhint %}
 
-After you have the Sauce Labs **User Name **and** Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) (3) near the Sauce Labs logo to enable the integration. You will now see the Sauce Labs integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
+After you have the Sauce Labs **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) (3) near the Sauce Labs logo to enable the integration. You will now see the Sauce Labs integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
 
 ![Configuring Sauce Labs access information in TestProject](<../../.gitbook/assets/image (86).png>)
 
@@ -55,7 +55,7 @@ As you probably already know, TestProject allows you to connect infinite number 
 * Emulators running on the agent machine.
 * Browsers that are installed on the agent machine.
 
-In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** (1), choose the **Agent browsers **(2) section, choose your browser (3) or device and run your test.
+In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** (1), choose the **Agent browsers** (2) section, choose your browser (3) or device and run your test.
 
 ![Running the "Login" web test on the Chrome 79 browser using Eldar's Agent](<../../.gitbook/assets/image (93) (1).png>)
 

@@ -8,17 +8,17 @@ The page object model is essentially a way of organizing your tests so that you 
 
 To do that in the Recorder, just click "add a new test as a step" and select the test. (In our case the login test):
 
-![](<../.gitbook/assets/image (461).png>)
+![](<../.gitbook/assets/image (461) (1).png>)
 
 You can then choose the login test as a test step in your current test case.&#x20;
 
-![](<../.gitbook/assets/image (453).png>)
+![](<../.gitbook/assets/image (453) (1).png>)
 
 This lets you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test, and all of the tests using it will get that change.
 
 ## Page Object in Coded Tests
 
-The Page object model is of course well suited to coded tests. This section will walk you through an example of how you can use the page object model in an android test** **written in Java.
+The Page object model is of course well suited to coded tests. This section will walk you through an example of how you can use the page object model in an android test **** written in Java.
 
 ### **Build your First Test with Appium**
 
@@ -26,9 +26,9 @@ Let’s start by learning how to create a “plain” Appium automated test for 
 
 To start the automation, the test prepares Android driver capabilities with all the required information about the device under test (DUT) and App under test (AUT). Then, using these capabilities, it initiates the Android driver that will be used to invoke various Appium actions on the mobile application. To perform the actions, Appium must identify the elements it interacts with. To do so, it uses various location strategies.
 
-The most convenient location strategy is the ID (aka. resource-id in Android). For example, it searches for the login button to make sure that the login screen is displayed using _By.id_ and the value _login. _I will show how to identify your element locators later in this tutorial, [here](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#ElementLocator).
+The most convenient location strategy is the ID (aka. resource-id in Android). For example, it searches for the login button to make sure that the login screen is displayed using _By.id_ and the value _login._ I will show how to identify your element locators later in this tutorial, [here](https://blog.testproject.io/2018/07/14/page-object-model-appium-java-android/#ElementLocator).
 
-**Basic Login Test: **
+**Basic Login Test:**&#x20;
 
 ```java
 package io.testproject.appium.tests;

@@ -22,7 +22,7 @@ Instead, it will report:
 
 To enable Behave feature reporting, in your **environment.py** annotate the following methods:
 
-* method used to initialize your driver (usually, **before\_all**, **before\_feature **or a **fixture**)
+* method used to initialize your driver (usually, **before\_all**, **before\_feature** or a **fixture**)
 * **after\_step**
 * **after\_scenario**
 
@@ -47,7 +47,7 @@ after_scenario(context, scenario):
     pass
 ```
 
-Screenshots by default are only taken on step failure, you can however override this behavior by passing the **screenshot** argument as **True **in your annotation.
+Screenshots by default are only taken on step failure, you can however override this behavior by passing the **screenshot** argument as **True** in your annotation.
 
 ```
 @behave_reporter(screenshot=True)
@@ -114,17 +114,17 @@ def step_impl(context):
     raise NotImplementedError(u'STEP: Then I should see a logout button')
 ```
 
-In the same features directory, create a file called** environment.py. **
+In the same features directory, create a file called **environment.py.**&#x20;
 
 Behave uses the environment file to define hooks that will be called before or after each step, scenario, feature or even entire test run.
 
-Inside the environment file, create the **after\_step(context, step)** and **after\_scenario(context, scenario) **methods and annotate them with the **@behave\_reporter** annotation.
+Inside the environment file, create the **after\_step(context, step)** and **after\_scenario(context, scenario)** methods and annotate them with the **@behave\_reporter** annotation.
 
 {% hint style="info" %}
-**Please make sure to also annotate the method used to construct the TestProject driver. Usually the driver is constructed in the environment.py file under a before\_all(context), before\_feature(context, feature) hooks or before\_tag(context, ** **tag) hook using a fixture to guarantee the driver is initialized before the test run.**
+**Please make sure to also annotate the method used to construct the TestProject driver. Usually the driver is constructed in the environment.py file under a before\_all(context), before\_feature(context, feature) hooks or before\_tag(context,** **tag) hook using a fixture to guarantee the driver is initialized before the test run.**
 {% endhint %}
 
-If you do not want to perform any additional operations after each step or scenario, you can use **pass **in the method.
+If you do not want to perform any additional operations after each step or scenario, you can use **pass** in the method.
 
 Example of an **environment.py** file:
 
@@ -171,7 +171,7 @@ def after_all(context):
     context.driver.quit()
 ```
 
-By creating the driver in the **before\_all **hook and storing it in the Behave context, we can use the driver in all other methods using the context after the hook method call, meaning that we have direct access the the driver in all the following hooks, and even our step implementations.
+By creating the driver in the **before\_all** hook and storing it in the Behave context, we can use the driver in all other methods using the context after the hook method call, meaning that we have direct access the the driver in all the following hooks, and even our step implementations.
 
 The following will be our step implementations, performing a simple login scenario and validation on Chrome using the TestProject example page:
 

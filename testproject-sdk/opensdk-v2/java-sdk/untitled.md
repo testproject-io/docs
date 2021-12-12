@@ -25,11 +25,11 @@ Once the code has downloaded, you can navigate to the file on your hard drive, a
 
 In this documentation we will show you how to use the generated code in Eclipse. If you are using a different IDE, you should be able to modify these steps to work for your IDE of choice.&#x20;
 
-In Eclipse, open the **File **menu, and choose the **Import** option. On the import wizard, ensure that you have the **Existing Gradle Project** option selected and then click **Next**.
+In Eclipse, open the **File** menu, and choose the **Import** option. On the import wizard, ensure that you have the **Existing Gradle Project** option selected and then click **Next**.
 
 ![Importing a Gradle Project](<../../../.gitbook/assets/image (391).png>)
 
-If you get the Gradle welcome page, click **Next **again and then use the **browse** button to browse to the folder that contians the files you unzipped. Select that folder and click **Finish** to complete the import.&#x20;
+If you get the Gradle welcome page, click **Next** again and then use the **browse** button to browse to the folder that contians the files you unzipped. Select that folder and click **Finish** to complete the import.&#x20;
 
 If you expand the `/src/test` folder you should be able to find the generated code in there.
 

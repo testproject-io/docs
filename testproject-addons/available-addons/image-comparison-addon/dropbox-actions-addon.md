@@ -25,7 +25,7 @@ Configure your settings as follows:
 
 ![App Settings](<../../../.gitbook/assets/1 (5).png>)
 
-In the **permissions **tab, enable the following settings:
+In the **permissions** tab, enable the following settings:
 
 ![Files and folders permissions](<../../../.gitbook/assets/2 (5).png>)
 
@@ -49,4 +49,4 @@ This is the result: both files created by Dropbox upon registration.
 
 ![](../../../.gitbook/assets/7.png)
 
-This is just one example of the available Dropbox actions. In the [Image Comparison Addon](https://docs.testproject.io/testproject-addons/available-addons/image-comparison-addon) actions you can find additional Dropbox related actions including: **uploading, deleting and downloading files** from your Storage, **saving element screenshots to Dropbox **and **comparing images from Dropbox**.
+This is just one example of the available Dropbox actions. In the [Image Comparison Addon](https://docs.testproject.io/testproject-addons/available-addons/image-comparison-addon) actions you can find additional Dropbox related actions including: **uploading, deleting and downloading files** from your Storage, **saving element screenshots to Dropbox** and **comparing images from Dropbox**.

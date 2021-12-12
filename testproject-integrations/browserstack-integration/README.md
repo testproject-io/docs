@@ -8,7 +8,7 @@ description: Run TestProject Tests & Jobs on BrowserStack Cloud
 
 ****[**BrowserStack** ](https://www.browserstack.com)is a cloud web and mobile testing platform that enables you to test your websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
 
-Users can choose from more than 1,200 on-demand real mobile devices, browsers and operating systems and rely on a secure, stable and scalable infrastructure to support thousands of concurrent manual and automated tests. By reducing the time, cost and maintenance overhead associated with testing, **BrowserStack **helps teams keep focus on what matters most - building better products and services.
+Users can choose from more than 1,200 on-demand real mobile devices, browsers and operating systems and rely on a secure, stable and scalable infrastructure to support thousands of concurrent manual and automated tests. By reducing the time, cost and maintenance overhead associated with testing, **BrowserStack** helps teams keep focus on what matters most - building better products and services.
 
 ## Why do I need BrowserStack Integration?
 
@@ -23,7 +23,7 @@ Integrating TestProject with BrowserStack allows you and your teammates to run y
 
 ### Get BrowserStack Username & Access Key
 
-In order to setup the integration, you will have to obtain a BrowserStack Access key. After logging into your BrowserStack  account, visit the [setting area](https://www.browserstack.com/accounts/settings) (1-2) and copy your **User Name (3) **and** Access Key (4)**.
+In order to setup the integration, you will have to obtain a BrowserStack Access key. After logging into your BrowserStack  account, visit the [setting area](https://www.browserstack.com/accounts/settings) (1-2) and copy your **User Name (3)** and **Access Key (4)**.
 
 ![Obtaining BrowserStack Username and Access Key](../../.gitbook/assets/djpmifkyvk.png)
 
@@ -33,7 +33,7 @@ In order to setup the integration, you will have to obtain a BrowserStack Access
 Only account administrators can set up BrowserStack integration.
 {% endhint %}
 
-After you have the BrowserStack **User Name **and** Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) (3) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
+After you have the BrowserStack **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) (3) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
 
 ![Configuring BrowserStack access information in TestProject](../../.gitbook/assets/nufiuwudwg.png)
 
@@ -57,11 +57,11 @@ As you probably already know, TestProject allows you to connect infinite number 
 * Emulators running on the agent machine.
 * Browsers that are installed on the agent machine.
 
-In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** (1), choose the **Agent browsers **(2) section, choose your browser (3) or device and run your test.
+In this case you are using your own lab. In practice, when running a test or setting up a job, just choose one of your registered **Agents** (1), choose the **Agent browsers** (2) section, choose your browser (3) or device and run your test.
 
 ![Running the "Login" web test on the Chrome 79 browser using Eldar's Agent](<../../.gitbook/assets/image (93) (1).png>)
 
-#### **Running on **BrowserStack** Cloud using own Agents**
+#### **Running on** BrowserStack **Cloud using own Agents**
 
 Once you have the integration set up, you can use your own TestProject Agents to run tests and jobs on the BrowserStack cloud. This means that your agents (wherever they are installed) will be running your tests in the cloud using BrowserStack devices or browsers. To achieve that, choose one of your **Agents (1)**, expand the BrowserStack (2) section and select a browser (you can use the search option to quickly find the desired target) (3) or device from the BrowserStack cloud and run your test. That's it!
 

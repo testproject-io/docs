@@ -106,7 +106,7 @@ In the following pipeline:
 
 ![](../.gitbook/assets/8.png)
 
-The **complete **pipeline code is:
+The **complete** pipeline code is:
 
 ```python
 pipeline {
@@ -229,7 +229,7 @@ pipeline {
 
 Has been changed to:
 
-`private static string DevToken = `\
+`private static string DevToken =` \
 `Environment.GetEnvironmentVariable("TP_DEV_TOKEN");`
 
 In order for the test to pull the development token from an environment variable instead of hardcoding it in.

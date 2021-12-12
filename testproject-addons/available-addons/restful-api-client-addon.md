@@ -75,7 +75,7 @@ There are 5 actions in this Addon:
 
 
 
-    * > Note: You can delimit the headers with a different character by using the **HeaderDelimiter **field.
+    * > Note: You can delimit the headers with a different character by using the **HeaderDelimiter** field.
 * `body`- Body that will be sent in the request
 *   `format`- Body (if provided) format. For example: _application/json_ or _text/html_, etc...
 
@@ -84,7 +84,7 @@ There are 5 actions in this Addon:
 
     If the actual status code is not the expected status code then action fail.\
     &#x20;Accepted values are numbers between 100 and 599 (1xx - 5xx).
-* `HeaderDelimiter `- This parameter is used to decide the character to delimit the headers around, by default '=' will be used.
+* `HeaderDelimiter` - This parameter is used to decide the character to delimit the headers around, by default '=' will be used.
 *   `jsonPath` - This parameter is used to extract nodes or value from server's JSON response (if such is available).
 
     Supported syntax is the _Jayway JsonPath_ syntax.\
@@ -105,7 +105,7 @@ There are 5 actions in this Addon:
 *   `createFile` - This parameter is a boolean flag to indicate that a validation results output is required.
 
     If set to`true`, and the `schemaValidationOutput` parameter is set, a file holding the validation result will be created in the provided location.
-* `filePath `- This parameter is the full path of a local file which should be sent to the designated endpoint using _**POST**_, _**PUT**_, or _**PATCH**_. if this parameter is set, the file will be sent as multipart/form-data format, you can still supply a separate body and body format to the request.
+* `filePath` - This parameter is the full path of a local file which should be sent to the designated endpoint using _**POST**_, _**PUT**_, or _**PATCH**_. if this parameter is set, the file will be sent as multipart/form-data format, you can still supply a separate body and body format to the request.
 
 #### Output Fields
 
@@ -137,7 +137,7 @@ From the Parameters menu, you can create a new parameter or select existing ones
 Project parameters are shared across all your tests, and test variables are set per test
 {% endhint %}
 
-You will easily be able to** chain requests** and transfer data from one request to another, like shown in **Examples 13-15**, by saving the response of the POST request, we receive the URL to use in the next PUT request.
+You will easily be able to **chain requests** and transfer data from one request to another, like shown in **Examples 13-15**, by saving the response of the POST request, we receive the URL to use in the next PUT request.
 
 ## Results
 
@@ -164,7 +164,7 @@ All actions will report a message with the following information, no matter if t
 
 Following TestProject platform conventions, unset parameters will be treated as nulls / empty strings and won't be used.
 
-`If the format field is empty it will take `**`application/json`**` as the default value.`
+`If the format field is empty it will take`` `**`application/json`**` ``as the default value.`
 
 #### Example 1: POST Request with body
 

@@ -14,7 +14,7 @@ After the redirect you will need to choose the team and a channel where your Tes
 
 ## Sending TestProject Job Notifications to Slack
 
-After setting up Slack integration and authorizing a designated channel, notifications can be sent. Simply navigate to a project that has jobs setup and click on the _envelope _icon of your job of choice to open the notifications preferences. You can then Enable Web Hooks and select the Slack integration you want to use.
+After setting up Slack integration and authorizing a designated channel, notifications can be sent. Simply navigate to a project that has jobs setup and click on the _envelope_ icon of your job of choice to open the notifications preferences. You can then Enable Web Hooks and select the Slack integration you want to use.
 
 ![](<../.gitbook/assets/image (80) (1).png>)
 

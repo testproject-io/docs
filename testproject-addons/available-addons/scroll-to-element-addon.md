@@ -2,11 +2,11 @@
 
 This addon provides actions to scroll to an elements using identifiers such as element text, element id, etc.
 
-### **Actions **
+### **Actions**&#x20;
 
 These actions all apply only to web based tests and not android or iOS tests.  &#x20;
 
-* Scroll to element by class name** - **Provide an element class name to scroll to
+* Scroll to element by class name **-** Provide an element class name to scroll to
 * Scroll to element by ID - Provide an element ID to scroll to
 * Scroll to element by ID that contain text  - Provide the ID text of an element to scroll to
 * Scroll to element by xpath - Provide the xpath of an element to scroll to

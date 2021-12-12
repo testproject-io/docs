@@ -84,11 +84,11 @@ Back in the API Swagger page, paste the Project ID:
 
 ![](<../.gitbook/assets/image (107).png>)
 
-In the **deleteParameters **field, we can decide on which reports we want to delete.
+In the **deleteParameters** field, we can decide on which reports we want to delete.
 
-* **From **- The date from where to begin deleting reports.
-* **To **- The date from until to delete the reports.
-* **OlderThan **- Delete all reports until that date.
+* **From** - The date from where to begin deleting reports.
+* **To** - The date from until to delete the reports.
+* **OlderThan** - Delete all reports until that date.
 
 To delete all Project reports, just delete "**from**" and "**to**", it will automaticlly generate the current date in the "**olderThan**" field.
 

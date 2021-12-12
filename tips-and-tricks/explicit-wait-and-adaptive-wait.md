@@ -10,17 +10,17 @@ There are various ways to add waits in your tests. Let's review them and underst
 
 ## **Execution Speed**
 
-Execution speed is an option available for the **entire test **and on **each step** of your test. It should be used for controlling the speed of the tests and not to add fixed pauses in the test. To add dynamic pauses use [Adaptive Wait](https://docs.testproject.io/tips-and-tricks/explicit-wait-and-adaptive-wait#adaptive-wait).
+Execution speed is an option available for the **entire test** and on **each step** of your test. It should be used for controlling the speed of the tests and not to add fixed pauses in the test. To add dynamic pauses use [Adaptive Wait](https://docs.testproject.io/tips-and-tricks/explicit-wait-and-adaptive-wait#adaptive-wait).
 
 By default, the step pause is happening before the execution of each step and you can choose from "Fast, Normal, Slow, and Very slow" options. You can choose to override the default settings by changing the option to **custom** and choose either **before** or **after** the execution of your test steps. When choosing custom you can also change the pause time manually by typing a preferred number of milliseconds. (1 second = 1000ms)
 
 You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default execution speed.
 
-![](<../.gitbook/assets/image (466).png>)
+![](<../.gitbook/assets/image (466) (1).png>)
 
 Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (451).png>)
+![](<../.gitbook/assets/image (451) (1).png>)
 
 
 
@@ -30,7 +30,7 @@ To save you time and improve the stability of your tests, we have developed an a
 
 ### **Adaptive Wait within the TestProject Smart Recorder**
 
-The adaptive wait functionality is located within **every step **in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails (Set to 15 seconds by default).&#x20;
+The adaptive wait functionality is located within **every step** in your test. TestProject will adapt to the actual loading pace of your application and execute the next action **only** when the proper conditions are met. You can set the maximum timeout before the step fails (Set to 15 seconds by default).&#x20;
 
 Unlike a fixed pause, your test will be able to continue even before the time limit if the conditions allow it, therefore increasing the Adaptive wait time can help **stabilize your test** without adding time to the execution.&#x20;
 
@@ -42,7 +42,7 @@ You can edit the Adaptive Wait time **globally** for your test from the test’s
 
 This is how you can change **specific step** Adaptive Wait first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (469).png>)
+![](<../.gitbook/assets/image (469) (1).png>)
 
 
 

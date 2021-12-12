@@ -14,7 +14,7 @@ Project and Job names can be specified explicitly using this constructor:
 public ChromeDriver(final ChromeOptions options, final String projectName, final String jobName)
 ```
 
-For example the following code would create a project called **My First Project ** and the job that ran tests using this would be called **My First Job** :
+For example the following code would create a project called **My First Project** and the job that ran tests using this would be called **My First Job** :
 
 ```
 ChromeDriver driver = new ChromeDriver(new ChromeOptions(), "My First Project", "My First Job");

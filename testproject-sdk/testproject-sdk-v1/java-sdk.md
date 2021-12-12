@@ -347,7 +347,7 @@ Please note that once uploaded, the tests **cannot be edited unless reuploaded**
 
 The following examples have been created using **IntelliJ**.
 
-_**Gradle**_
+_**Gradle**_
 
 Open the Gradle tab in your IDE, you will need to compile a jar using **Tasks/build/jar**.
 

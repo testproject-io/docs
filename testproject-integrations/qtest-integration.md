@@ -22,28 +22,28 @@ By integrating **qTest** with TestProject, users will get a number of additional
 
 **qTest** and TestProject are separately licensed and deployed products.  **qTest** is a commercial tool which has a separate license and fee from TestProject.  A [free trial ](https://www.tricentis.com/software-testing-tool-trial-demo/qtest-trial/)of **qTest** is available for 14 days via the Tricentis website.
 
-The **qTest **integration is compatible with any **qTest **Cloud Elite or Cloud Trial licenses.  Future plans are being made to make this feature available to **qTest** On-Premise Elite customers.
+The **qTest** integration is compatible with any **qTest** Cloud Elite or Cloud Trial licenses.  Future plans are being made to make this feature available to **qTest** On-Premise Elite customers.
 
 ## How are qTest and TestProject accounts integrated?
 
-**qTest** users that create a TestProject account from the 9-box will be integrating their **qTest **instance (site) with a newly created TestProject instance.  From that point forward, all newly created TestProject users from that **qTest **instance will be added to the same TestProject instance.
+**qTest** users that create a TestProject account from the 9-box will be integrating their **qTest** instance (site) with a newly created TestProject instance.  From that point forward, all newly created TestProject users from that **qTest** instance will be added to the same TestProject instance.
 
-Once an integration is initiated, the **qTest **artifacts that will be integrated with TestProject include:
+Once an integration is initiated, the **qTest** artifacts that will be integrated with TestProject include:
 
-* **Projects: **new projects will be created in TestProject every time to align with the existing **qTest **project hierarchy.  Users can also create projects directly in TestProject, which will not be integrated back to **qTest**
-* **Test Suites: **any new jobs created in TestProject will be synchronized and created as test suites in their corresponding projects in **qTest**
-* **Test Runs/Logs: **any new test runs (within a job) created in TestProject will be synchronized to **qTest **as test runs/logs and organized in the proper suites (which relate to TestProject jobs)
-* **Test Cases: **for any executed jobs in TestProject, the corresponding test cases will be created in qTest and organized in a separate module named "TestProject".
+* **Projects:** new projects will be created in TestProject every time to align with the existing **qTest** project hierarchy.  Users can also create projects directly in TestProject, which will not be integrated back to **qTest**
+* **Test Suites:** any new jobs created in TestProject will be synchronized and created as test suites in their corresponding projects in **qTest**
+* **Test Runs/Logs:** any new test runs (within a job) created in TestProject will be synchronized to **qTest** as test runs/logs and organized in the proper suites (which relate to TestProject jobs)
+* **Test Cases:** for any executed jobs in TestProject, the corresponding test cases will be created in qTest and organized in a separate module named "TestProject".
 
 ## Setting up qTest Integration
 
-Users of **qTest **(Cloud Elite or Cloud Trial) should now see the TestProject icon within their 9-box:
+Users of **qTest** (Cloud Elite or Cloud Trial) should now see the TestProject icon within their 9-box:
 
 ![TestProject logo within the qTest 9-box.](<../.gitbook/assets/image (170).png>)
 
-Clicking on the TestProject logo within the **qTest **9-box will trigger the account creation process in TestProject for that **qTest **user**.  **First, TestProject will check to see if there is an existing TestProject account for that **qTest** user's email address.
+Clicking on the TestProject logo within the **qTest** 9-box will trigger the account creation process in TestProject for that **qTest** user**.**  First, TestProject will check to see if there is an existing TestProject account for that **qTest** user's email address.
 
-If the **qTest **user's email is already established as a user in TestProject, TestProject will skip forward to integrating that TestProject account to the **qTest **account.
+If the **qTest** user's email is already established as a user in TestProject, TestProject will skip forward to integrating that TestProject account to the **qTest** account.
 
 If the **qTest** user's email is not yet established as a user in TestProject, TestProject will automatically initiate the process of creating an integrated TestProject account with that user's email address.  First, the user must validate their email address:
 

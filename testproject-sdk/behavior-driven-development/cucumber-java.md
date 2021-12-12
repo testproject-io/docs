@@ -190,9 +190,9 @@ public class JUnitTestRunner {
 
 Where the TestProject Cucumber reporting plugin is set in the annotation parameters, in general the parameters in the annotation are:
 
-* **features - **Local path to the feature file or directory containing the features.
-* **glue - **Package of step implementations.
-*   **plugins - **Package path of the reporting plugin, in this case it should always be:
+* **features -** Local path to the feature file or directory containing the features.
+* **glue -** Package of step implementations.
+*   **plugins -** Package path of the reporting plugin, in this case it should always be:
 
     ```
     io.testproject.sdk.internal.reporting.extensions.cucumber.CucumberReporter

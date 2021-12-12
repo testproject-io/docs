@@ -104,7 +104,7 @@ ChromeDriver driver = new ChromeDriver(chromeOptions);
 
 **1. Within your code**, using browsetstack-local dependency&#x20;
 
-#### **Java – **(available in maven-center)
+#### **Java –** (available in maven-center)
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -136,7 +136,7 @@ pip install browserstack-local
 
 **Within your code:**
 
-Integrate your code with the following to establish the** **BrowserStack Local connection:
+Integrate your code with the following to establish the **** BrowserStack Local connection:
 
 ```
 import com.browserstack.local.Local;

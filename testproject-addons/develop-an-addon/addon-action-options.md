@@ -204,7 +204,7 @@ public String countryCode = "1";
 public int maxDigits;
 ```
 
-You can also define output parameters in your addons. Output parameters are a way to store the output of  the actions that your addon does and provide the users of the addon access to that data. They are also defined with the `@Parameter` annotation, but with the **direction **set to `ParameterDirection.OUTPUT`
+You can also define output parameters in your addons. Output parameters are a way to store the output of  the actions that your addon does and provide the users of the addon access to that data. They are also defined with the `@Parameter` annotation, but with the **direction** set to `ParameterDirection.OUTPUT`
 
 ```java
  @Parameter(direction = ParameterDirection.OUTPUT)

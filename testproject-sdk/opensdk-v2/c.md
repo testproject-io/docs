@@ -33,7 +33,7 @@ First, open the _File_ menu and choose _New -> Project..._:
 
 ![](<../../.gitbook/assets/image (362).png>)
 
-Next, select the _SpecFlow Project _option.
+Next, select the _SpecFlow Project_ option.
 
 > &#x20;You can also build your tests with xUnit or MSTest, but we will use NUnit in this tutorial.
 

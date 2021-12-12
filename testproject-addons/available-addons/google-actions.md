@@ -13,7 +13,7 @@ Google Authorization Process of using their API has two options, using an OAuth 
 
 By Choosing OAuth, one has direct access to his personal Google software like Drive, Sheets and so on, but using this method requires the **Browser to open to accept the token**, which is **NOT possible while automating**.
 
-For automating, we can use a **JWT token **generated from a Google **Service Account**.
+For automating, we can use a **JWT token** generated from a Google **Service Account**.
 
 ### Setting Up A Service Account
 
@@ -111,7 +111,7 @@ And we will use that parameter inside the JsonSecrets input Field in every actio
 
 ### Set Up Google Drive With A Shared Account
 
-Service Accounts are considered Virtual Machines, they have their own Google Sheets and Google Drive **(With no UI)**, so to access your personal items from another account, they need to be shared** (As well as be given access permissions in the Service Account as we saw above while creating the account).**
+Service Accounts are considered Virtual Machines, they have their own Google Sheets and Google Drive **(With no UI)**, so to access your personal items from another account, they need to be shared **(As well as be given access permissions in the Service Account as we saw above while creating the account).**
 
 Enter the Desired Google Drive account, after that, create/select a Shared Drive:
 
@@ -125,7 +125,7 @@ After you have created the Shared Drive,  we will now give it permissions for th
 
 ![](<../../.gitbook/assets/image (323).png>)
 
-Now we will add the email of the service account, go back to the[ **IAM & Admin**](https://console.developers.google.com/iam-admin/)** page, you will see your service account has an email:**
+Now we will add the email of the service account, go back to the[ **IAM & Admin**](https://console.developers.google.com/iam-admin/) **page, you will see your service account has an email:**
 
 ![](<../../.gitbook/assets/image (327).png>)
 

@@ -18,7 +18,7 @@ You can execute **Android tests** on any Android devices.
 
 You can execute **iOS tests** on any iOS devices.
 
-You can execute** API / Database** tests using any target.
+You can execute **API / Database** tests using any target.
 
 ## Supported Browsers
 
@@ -46,7 +46,7 @@ You can execute** API / Database** tests using any target.
 
 #### Recording and Execution
 
-* Android: **7.0** - **12.0 / **API level **24+**
+* Android: **7.0** - **12.0 /** API level **24+**
 * iOS: **12** - **15.1**
 
 #### Supported Emulators/Simulators Frameworks
@@ -57,6 +57,6 @@ You can execute** API / Database** tests using any target.
 
 ## Supported Agent Operating Systems (x64 only)
 
-* Windows **7, 8, 8.1, 10, 11 **
+* Windows **7, 8, 8.1, 10, 11**&#x20;
 * macOS **10.14+**
 * Ubuntu **16.04, 18.04, 20.04**

@@ -62,5 +62,5 @@ You can also choose to start from an existing test and edit it, by choosing the 
 
 ![Open a file for Editing](<../../.gitbook/assets/image (344).png>)
 
-In that case, after uploading the test file, you will be given the option to start the test recorder or edit the test. You can make any changes that you want and then **Save **the changes to save an updated local file with the new changes included.
+In that case, after uploading the test file, you will be given the option to start the test recorder or edit the test. You can make any changes that you want and then **Save** the changes to save an updated local file with the new changes included.
 

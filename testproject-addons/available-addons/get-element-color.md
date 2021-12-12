@@ -13,7 +13,7 @@ With this addon, you will be able to extract the [RGB ](https://www.w3schools.co
 
 ## Web and Mobile
 
-Hover over the element ith TestProject recorder, press double shift, then search for **Get Color **action
+Hover over the element ith TestProject recorder, press double shift, then search for **Get Color** action
 
 ![](<../../.gitbook/assets/image (288).png>)
 

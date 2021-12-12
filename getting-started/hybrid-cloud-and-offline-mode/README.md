@@ -1,6 +1,6 @@
 # Hybrid Cloud and Offline Mode
 
-TestProject provides you with maximum flexibility for running your test in the way that fits your needs and use case. For many users, our **Hybrid Cloud **offering will make for an easy and simple setup with seamless collaboration by default along with automatic deployment.  Other users might need ways to create and run tests that do not reside in an external cloud provider. In that case, TestProject provides an **offline mode** that will enable local on-premise test executions that leave no footprint in the cloud.&#x20;
+TestProject provides you with maximum flexibility for running your test in the way that fits your needs and use case. For many users, our **Hybrid Cloud** offering will make for an easy and simple setup with seamless collaboration by default along with automatic deployment.  Other users might need ways to create and run tests that do not reside in an external cloud provider. In that case, TestProject provides an **offline mode** that will enable local on-premise test executions that leave no footprint in the cloud.&#x20;
 
 Whatever your needs, TestProject has a way to meet them, and best of all it is free to get started with either approach.&#x20;
 
@@ -32,11 +32,11 @@ Creating and running tests in offline mode requires having a local test agent in
 
 #### Creating Tests in Offline Mode
 
-When creating tests, you can choose if you want to save them in the cloud or as a file. When working in offiline mode, select the **File ** option and the test steps will be save locally rather than in the cloud.
+When creating tests, you can choose if you want to save them in the cloud or as a file. When working in offiline mode, select the **File** option and the test steps will be save locally rather than in the cloud.
 
 ![Use File saving to work in Offline Mode](<../../.gitbook/assets/image (166).png>)
 
-You can then record the test as you normally would. Once you have completed recording the test steps, click on the **Save ** button and the recorder will automatically save the file locally for you.&#x20;
+You can then record the test as you normally would. Once you have completed recording the test steps, click on the **Save** button and the recorder will automatically save the file locally for you.&#x20;
 
 ![Save Files locally](<../../.gitbook/assets/image (341).png>)
 

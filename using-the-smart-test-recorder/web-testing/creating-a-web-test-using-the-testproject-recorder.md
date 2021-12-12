@@ -12,7 +12,7 @@ You will then need to select what type of test you want to create. In this tutor
 
 ![](<../../.gitbook/assets/image (360).png>)
 
-You can now give your test a name and description. You can also add tags to your test to help organize tests so that you can more easily search and filter them in the future. Once you have filled in all the desired information, click **Next **again.&#x20;
+You can now give your test a name and description. You can also add tags to your test to help organize tests so that you can more easily search and filter them in the future. Once you have filled in all the desired information, click **Next** again.&#x20;
 
 ![](<../../.gitbook/assets/image (259).png>)
 
@@ -24,7 +24,7 @@ This will prompt you for the URL of the application that you want to test and al
 
 ![Add New Example Site](<../../.gitbook/assets/image (216).png>)
 
-After entering in the required information you can click **Done **and you will be taken back to the test creation wizard which will automatically select the application you just created. You can then click **Next **and move on to the next step.
+After entering in the required information you can click **Done** and you will be taken back to the test creation wizard which will automatically select the application you just created. You can then click **Next** and move on to the next step.
 
 ## Step 2 - Recording a Test
 
@@ -40,7 +40,7 @@ Once a local agent is running you will be able to click on the record button and
 
 Notice, that you have the option to choose to save the recording of the test steps in the cloud or in a local files. To learn more about how the TestProject cloud and offline modes works, you can check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/).&#x20;
 
-Clicking **Start recording **will open the new Smart Test Recorder for you.This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
+Clicking **Start recording** will open the new Smart Test Recorder for you.This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
 
 ## Step 3 - Add Test Steps
 

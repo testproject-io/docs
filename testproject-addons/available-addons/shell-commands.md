@@ -8,7 +8,7 @@ If you ever need to send system shell commands or run scripts during your tests,
 
 This Addon contains a single action for sending those commands called: 'Execute'.
 
-The **input **parameters are:&#x20;
+The **input** parameters are:&#x20;
 
 * Command
 * Expected result&#x20;
@@ -16,7 +16,7 @@ The **input **parameters are:&#x20;
 * Output file path
 * Output file name
 
-The **output **parameters are:&#x20;
+The **output** parameters are:&#x20;
 
 * The exit code
 * The output file path

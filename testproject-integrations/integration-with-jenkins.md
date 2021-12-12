@@ -12,7 +12,7 @@ In order to use this plugin, you **must** have:
 
 ## Installing TestProject Jenkins Plugin
 
-[TestProject’s Jenkins plugin](https://plugins.jenkins.io/testproject) is available in the Jenkins plugin index. In order to install it, login to your Jenkins server and choose **Manage Jenkins** → **Manage Plugin → Available**. in the filter field type** “TestProject” **and then select the TestProject plugin and hit **Install without Restart**.
+[TestProject’s Jenkins plugin](https://plugins.jenkins.io/testproject) is available in the Jenkins plugin index. In order to install it, login to your Jenkins server and choose **Manage Jenkins** → **Manage Plugin → Available**. in the filter field type **“TestProject”** and then select the TestProject plugin and hit **Install without Restart**.
 
 That’s it! After a few seconds, the plugin will be installed in your Jenkins server.
 
@@ -27,7 +27,7 @@ In order to integrate with TestProject, you will need an API key that your Jenki
 Next you will need to configure the TestProject Jenkins plugin and set the newly created API key. This is a one-time step (unless you wish to change your key at some point)
 
 * In Jenkins, choose **Manage Jenkins** → **Configure System.**
-* Locate the **TestProject **configuration section, paste your key into the **API Key** field and hit **Save**.
+* Locate the **TestProject** configuration section, paste your key into the **API Key** field and hit **Save**.
 
 You can tick the "**Verbose**" checkbox to receive more detailed reports in your build’s console output. After completing these steps, you will be all set for using the TestProject Jenkins plugin.
 
@@ -61,7 +61,7 @@ As implied by the name, this step will **execute a job** you have created on the
 
 The **Agent Id** is an **optional** choice you can set. The **default will use the agent you have configured your job with when creating it through the platform.** However, you can overwrite this selection from here by selecting one of the other agents available to you.
 
-The **Wait to finish** parameter will set the amount of time the build will wait for a job’s execution to finish within the defined time frame. If the** **automation doesn't finish running in the defined period or the TestProject job execution fails,** **the Jenkins build will be marked as failed, however the following build steps will continue.
+The **Wait to finish** parameter will set the amount of time the build will wait for a job’s execution to finish within the defined time frame. If the **** automation doesn't finish running in the defined period or the TestProject job execution fails, **** the Jenkins build will be marked as failed, however the following build steps will continue.
 
 **If** **you do not want to wait for the TestProject job to finish**, set it to 0, causing the build to continue normally even if the TestProject job fails. This means that the result of the TestProject job will not affect the result of the Jenkins build.
 

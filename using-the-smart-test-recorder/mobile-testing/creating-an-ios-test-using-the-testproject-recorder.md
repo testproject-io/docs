@@ -22,7 +22,7 @@ You can add an application in a few different ways. A very simple way to do this
 
 To select an application from your device, select it from the Device dropdown. The App dropdown will then be populated with all the apps on the device you have chosen and you can select the application you want to use from the list.
 
-Once you have picked the application you want to use and given it a name you can click on **Done **to select the application for the test you are creating.
+Once you have picked the application you want to use and given it a name you can click on **Done** to select the application for the test you are creating.
 
 ## Recording a Test
 

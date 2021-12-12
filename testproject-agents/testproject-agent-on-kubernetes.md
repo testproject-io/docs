@@ -7,7 +7,7 @@
 * Test different browser versions.
 * Save time in the execution of your test suites.&#x20;
 
-## **Diagram **&#x20;
+## **Diagram**&#x20;
 
 ![](../.gitbook/assets/testproject-agent-selenium-testproject-k8s-standalone.png)
 
@@ -243,7 +243,7 @@ cat k8s-testproject.yaml  | sed "s/My First k8s Agent/My First k8s Agent-2/g" | 
 * As result, You will have 2 TestProject Agents:\
 
   * The first one from the firstly run with default parameters bring up the latest Firefox and Chrome
-  * The second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent `
+  * The second brings up an additional agent named  `My First k8s Agent-2` that work against the same Firefox and Chrome as `My First k8s Agent`&#x20;
 
 ![](../.gitbook/assets/2021-04-26-10\_17\_30-testproject.png)
 

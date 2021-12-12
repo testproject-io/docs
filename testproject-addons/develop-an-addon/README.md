@@ -23,7 +23,7 @@ In an Eclipe project, make sure that you have a `lib` folder and if not add one 
 
 ![TestProject SDK](<../../.gitbook/assets/image (411).png>)
 
-Once you have done that, you can right click on the SDK file and choose the properties option. This will show you the **Location **of the SDK. Copy that location and then edit your `pom.xml` file  and add the following dependecy into it:
+Once you have done that, you can right click on the SDK file and choose the properties option. This will show you the **Location** of the SDK. Copy that location and then edit your `pom.xml` file  and add the following dependecy into it:
 
 ```markup
 <dependency>
@@ -73,7 +73,7 @@ Now that you have the manifest file and the proper dependencies, you are ready t
 
 ### Implement the Addon
 
-Lets look at implementing the code for a simple Addon with a **ClearFields** action that clears a form. In order to do this, you will need to create a package in Eclipse. On the `src/main/java` folder, right-click and under new, choose **Package**. Name the package something like _io.testproject.myaddon_ and click **Finish**. You can then add a class to that package by right-clicking on it and going to new>Class. Name the class something like _ClearFieldsAction _and click on **Finish**._ _You can then fill in the following code to create the addon.
+Lets look at implementing the code for a simple Addon with a **ClearFields** action that clears a form. In order to do this, you will need to create a package in Eclipse. On the `src/main/java` folder, right-click and under new, choose **Package**. Name the package something like _io.testproject.myaddon_ and click **Finish**. You can then add a class to that package by right-clicking on it and going to new>Class. Name the class something like _ClearFieldsAction_ and click on **Finish**. __ You can then fill in the following code to create the addon.
 
 ```java
 package io.testproject.myaddon;
@@ -155,7 +155,7 @@ It really is that easy to create your own addon, but you in order to use it in t
 </build>
 ```
 
-As you can see in the code above, the `maven-assembly-plugin` is going to look at the file `src/main/descriptor.xml` to find out what assemblies to generate. If you don't have that file yet, you can go ahead and create it from the right-click menu on the `src/main` folder. Choose **new>File **and naming the file _descriptor.xml. _Add the following `xml` into the file and save it:
+As you can see in the code above, the `maven-assembly-plugin` is going to look at the file `src/main/descriptor.xml` to find out what assemblies to generate. If you don't have that file yet, you can go ahead and create it from the right-click menu on the `src/main` folder. Choose **new>File** and naming the file _descriptor.xml._ Add the following `xml` into the file and save it:
 
 ```markup
 
@@ -208,13 +208,13 @@ As you can see in the code above, the `maven-assembly-plugin` is going to look a
 
 This file provides the information maven needs in order to assemble all the dependencies for the jar file along with the SDK properties, while excluding the SDK itself from the jar file.
 
-Once you have these files created and saved, you can run the commands to package it up. First make sure everything in maven is up to date, by going to **Maven **on the right click menu and choosing the **Update Project** option. You can then make sure everything is ready by going to ** Run As** on the right click menu and choosing **Maven Clean. **Once you run that choose the Maven build option ensuring that the **Goal **is set to _package_.  This should create the jar files that you need and if you refresh the package, you should see jar files in the target folder of your package.
+Once you have these files created and saved, you can run the commands to package it up. First make sure everything in maven is up to date, by going to **Maven** on the right click menu and choosing the **Update Project** option. You can then make sure everything is ready by going to **Run As** on the right click menu and choosing **Maven Clean.** Once you run that choose the Maven build option ensuring that the **Goal** is set to _package_.  This should create the jar files that you need and if you refresh the package, you should see jar files in the target folder of your package.
 
 ![Generated Addon Files](<../../.gitbook/assets/image (416).png>)
 
 You will need to upload the `jar-with-dependencies.jar` file to TestProject which you can see how to do in the [next section](./#uploading-the-addon-to-testproject).
 
-If you prefer to build with gradle, you can use the following build.gradle file to package your addons, just update the **TP\_SDK **variable to the correct location of the TestProject SDK on your system.
+If you prefer to build with gradle, you can use the following build.gradle file to package your addons, just update the **TP\_SDK** variable to the correct location of the TestProject SDK on your system.
 
 ```java
 group 'io.testproject'
@@ -272,7 +272,7 @@ Once you have packaged up the addon, you can add it into the TestProject applica
 
 ![Upload Addon File](<../../.gitbook/assets/image (418).png>)
 
-Once the file has uploaded, click **Next **and then review your actions to make sure everything looks good.
+Once the file has uploaded, click **Next** and then review your actions to make sure everything looks good.
 
 ![Review Addon Actions](<../../.gitbook/assets/image (414).png>)
 

@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
 ## Get agent state
 
-The agent can be in 5 different states: Disconnected, Idle, Development, Recording, Executing. to start your CI the agent should be in **Ready **state. Use the below Python script for validating the agent state.&#x20;
+The agent can be in 5 different states: Disconnected, Idle, Development, Recording, Executing. to start your CI the agent should be in **Ready** state. Use the below Python script for validating the agent state.&#x20;
 
 ```
 import requests as req
