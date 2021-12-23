@@ -37,7 +37,7 @@
 * [Silent Deployment](testproject-agents/silent-deployment.md)
 * [Unregistered/Offline Agent](testproject-agents/unregistered-offline-agent.md)
 
-## Create Your First Test <a href="using-the-smart-test-recorder" id="using-the-smart-test-recorder"></a>
+## Create Your First Test <a href="#using-the-smart-test-recorder" id="using-the-smart-test-recorder"></a>
 
 * [Web Testing](using-the-smart-test-recorder/web-testing/README.md)
   * [Introduction to Web Testing](using-the-smart-test-recorder/web-testing/introduction-to-web-testing.md)
@@ -135,6 +135,7 @@
   * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
   * [Get Element Color](testproject-addons/available-addons/get-element-color.md)
   * [Google Actions](testproject-addons/available-addons/google-actions.md)
+  * [Robot Operations Addon](testproject-addons/available-addons/robot-operations-addon.md)
 
 ## Reports
 
@@ -189,7 +190,7 @@
 * [CircleCI Integration](testproject-integrations/circleci-integration.md)
 * [GitHub Integration](testproject-integrations/github-integration.md)
 
-## TestProject API <a href="api" id="api"></a>
+## TestProject API <a href="#api" id="api"></a>
 
 * [RESTful API v2](api/v2.md)
 * [Getting Started With Using the TestProject API](api/getting-started-with-using-the-testproject-api.md)
