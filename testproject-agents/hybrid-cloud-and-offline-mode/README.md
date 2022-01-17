@@ -6,17 +6,17 @@ Whatever your needs, TestProject has a way to meet them, and best of all it is f
 
 ## What is the Hybrid Cloud?
 
-With the hybrid cloud approach, test artifacts and reports on them will be stored in TestProject's safe and secure cloud environment. However, the recording and execution of the tests themselves happen locally with the [TestProject Agent](../../testproject-agents/what-is-a-testproject-agent.md).&#x20;
+With the hybrid cloud approach, test artifacts and reports on them will be stored in TestProject's safe and secure cloud environment. However, the recording and execution of the tests themselves happen locally with the [TestProject Agent](../what-is-a-testproject-agent.md).&#x20;
 
 You can use the TestProject recorder to create your tests and it will use the local agent to record the tests in a cached browser on your own local machine. You can then run your tests from within the TestProject platform which will once again utilize the local agent. Those locally executed results are seamlessly integrated with the cloud repository giving you instant insights into test runs.&#x20;
 
-As you can imagine, this hybrid approach gives you the best of both worlds and allows you to have effortless test setup without needing to worry about keeping different driver versions up to date or orchestrating your test runs. It also gives you access to a lot of great features. For example, you can create tests with the[ AI-powered online test recorder](../create-a-test-step/#smart-recorder). You can also easily collaborate with team members across your company with the powerful [sharing](../collaboration-and-sharing.md) features.  You also have access to [test reports](../../testproject-sdk/opensdk-v2/java-sdk/reports.md) and dashboards along with the ability to do remote test execution on platforms like [Sauce Labs](../../testproject-integrations/sauce-labs-integration/) and [BrowserStack ](../../testproject-integrations/browserstack-integration/)and many other available tool integrations.&#x20;
+As you can imagine, this hybrid approach gives you the best of both worlds and allows you to have effortless test setup without needing to worry about keeping different driver versions up to date or orchestrating your test runs. It also gives you access to a lot of great features. For example, you can create tests with the[ AI-powered online test recorder](../../using-the-smart-test-recorder/create-a-test-step/#smart-recorder). You can also easily collaborate with team members across your company with the powerful [sharing](broken-reference) features.  You also have access to [test reports](../../testproject-sdk/opensdk-v2/java-sdk/reports.md) and dashboards along with the ability to do remote test execution on platforms like [Sauce Labs](../../testproject-integrations/sauce-labs-integration/) and [BrowserStack ](../../testproject-integrations/browserstack-integration/)and many other available tool integrations.&#x20;
 
 The hybrid cloud approach is highly secured. Data is saved in encrypted parameters and can be stored as “Secret Parameters” that are saved with AES 256 standard for an even further layer of data encryption.
 
 ### Getting started with using the Hybrid Cloud
 
-Hybrid cloud is the default way to use TestProject, so you once you have [created your free account](../creating-an-account.md), you can [install and setup the agent ](../installation-and-setup.md)and then [start creating tests](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md). It really is that easy to get started with using the hybrid cloud. The agent will run locally and seamlessly communicate with the TestProject cloud.&#x20;
+Hybrid cloud is the default way to use TestProject, so you once you have [created your free account](../../getting-started/creating-an-account.md), you can [install and setup the agent ](../../getting-started/installation-and-setup.md)and then [start creating tests](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md). It really is that easy to get started with using the hybrid cloud. The agent will run locally and seamlessly communicate with the TestProject cloud.&#x20;
 
 ## What is Offline Mode?
 
@@ -24,11 +24,11 @@ Sometimes though, you might need even more control of your tests using your own 
 
 However, that doesn't mean you are left to do all the heavy lifting on your own. In fact, you can still retain much of the power and functionality that you would get in the hybrid cloud mode. You can still create, edit and debug test with TestProject's in-browser recorder. However, instead of saving your test artifacts in the cloud they will be saved locally. You can also debug and summarize test results using local HTML test reports that are automatically created for you.
 
-In addition, you can use the [TestProject Agent Command Line Interface (CLI)](../../testproject-agents/testproject-agent-cli.md) to easily execute your tests. The agent CLI will even give you access to the [AI self-healing capabilities](../using-ai-to-improve-testing.md#self-healing) that TestProject has and will also include any addons that your test uses.&#x20;
+In addition, you can use the [TestProject Agent Command Line Interface (CLI)](../testproject-agent-cli.md) to easily execute your tests. The agent CLI will even give you access to the [AI self-healing capabilities](../../why-testproject/using-ai-to-improve-testing.md#self-healing) that TestProject has and will also include any addons that your test uses.&#x20;
 
 ### Getting started with Offline Mode
 
-Creating and running tests in offline mode requires having a local test agent installed. You will need to [download the agent](https://app.testproject.io/#/agents) and copy it onto the computer that will be running the tests. Once you do that you can follow the steps in the section on [installation and setup](../installation-and-setup.md). Of course, don't register the agent if you want to remain offline.&#x20;
+Creating and running tests in offline mode requires having a local test agent installed. You will need to [download the agent](https://app.testproject.io/#/agents) and copy it onto the computer that will be running the tests. Once you do that you can follow the steps in the section on [installation and setup](../../getting-started/installation-and-setup.md). Of course, don't register the agent if you want to remain offline.&#x20;
 
 #### Creating Tests in Offline Mode
 
@@ -54,7 +54,7 @@ If you are on a Mac or Linux device you can just type:
 testproject-agent help
 ```
 
-This will print out information about the various commands that are available. You can read more about using the testproject-agent CLI [here](../../testproject-agents/testproject-agent-cli.md).
+This will print out information about the various commands that are available. You can read more about using the testproject-agent CLI [here](../testproject-agent-cli.md).
 
 ### Download tests&#x20;
 
@@ -84,4 +84,4 @@ If you go to the file location indicated in the report path and open the `.html`
 
 ![Local Test Report](<../../.gitbook/assets/image (105).png>)
 
-And there you have it. Without any connection to the cloud, you are able to run and report on test results on a local machine. If you want to dig a little deeper into how you can work with TestProject in offline mode, you can read about how to use the TestProject CLI [here ](../../testproject-agents/testproject-agent-cli.md)or you can read more about how local test files work [here](understanding-test-files.md).
+And there you have it. Without any connection to the cloud, you are able to run and report on test results on a local machine. If you want to dig a little deeper into how you can work with TestProject in offline mode, you can read about how to use the TestProject CLI [here ](../testproject-agent-cli.md)or you can read more about how local test files work [here](understanding-test-files.md).

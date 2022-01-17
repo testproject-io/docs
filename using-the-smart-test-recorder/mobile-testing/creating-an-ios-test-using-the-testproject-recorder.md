@@ -2,7 +2,7 @@
 
 ## Preparing for iOS Testing
 
-You can record iOS tests in a live app from Windows using TestProject recording studio, but in order to do so you will need to setup a few things first. Make sure that you have followed the steps in the section of the documentation on [getting started with iOS testing from Windows](../../getting-started/getting-started-with-ios-testing/).
+You can record iOS tests in a live app from Windows using TestProject recording studio, but in order to do so you will need to setup a few things first. Make sure that you have followed the steps in the section of the documentation on [getting started with iOS testing from Windows](getting-started-with-ios-testing/).
 
 Once you have followed those steps you will be able to start creating iOS tests on any attached devices.&#x20;
 

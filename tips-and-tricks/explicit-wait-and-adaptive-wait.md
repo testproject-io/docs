@@ -20,7 +20,7 @@ You can also edit this setting **globally** for each of your test steps by going
 
 Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (451) (1).png>)
+![](<../.gitbook/assets/image (451) (2).png>)
 
 
 
@@ -36,7 +36,7 @@ Unlike a fixed pause, your test will be able to continue even before the time li
 
 You can edit the Adaptive Wait time **globally** for your test from the test’s settings:
 
-![](<../.gitbook/assets/image (448).png>)
+![](<../.gitbook/assets/image (448) (1).png>)
 
 
 

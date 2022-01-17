@@ -1,38 +1,52 @@
 ---
-description: Download, install, start, and register your agent, remote registration.
+description: Download, install, start, and register your agent locally or remotely.
 ---
 
 # Installation and Setup
 
-Once you have [created an account](creating-an-account.md) with TestProject you just need to follow a few simple steps to get setup and ready for testing.  TestProject works on almost any platform, with the install of a single agent.
+Once you have [created an account](creating-an-account.md#registration) with TestProject you just need to follow a few simple steps to get setup and ready for testing. TestProject works on almost any platform, with the install of a single agent.
 
-The first thing you will need to do is login to the TestProject app. Once you have done that you can go to the agents tab at the top of the page and click on the link for the platform you are on to download the agent executable or go to [Agent Download](https://app.testproject.io/#/download). Once that download has finished you can use it to install the TestProject agent on your machine.
+## Install TestProject Agent
 
-After that, there is only one step left. You need to register your agent with the TestProject app so that you can use it to create and run tests. In order to do that, the agent needs to be running on your local machine. You can start it up by finding the installed TestProjectAgent executable on your machine and running that.
+### Download
 
-## Starting TestProject Agent
+The first thing you will need to do is login to the TestProject app. Once you have done that you can go to the agent's tab at the top of the page and click on the link for the platform you are on to download the agent executable or go to [Agent Download](https://app.testproject.io/#/download). You can find more information about the TestProject here Agent [here](broken-reference).
 
-### Start the agent on Windows
+### Installation
 
-On Windows, the easiest way to run the agent is just to search for TestProject in the Windows search bar and clicking on the Agent to start it.
+Now you are ready to install the TestProject agent on your machine. The installation is a very simple process, on macOS and Windows simply launch the installer and follow the instructions. For Linux follow this guide.
 
-![TestProject Agent on Windows](<../.gitbook/assets/image (65).png>)
+{% hint style="info" %}
+We support x64bit operating systems find more info [here](../supported-environments.md#supported-agent-operating-systems-x64-only).
+{% endhint %}
+
+### iOS on Windows
+
+If you are going to use iOS devices on Windows you will require Apple Device Support which is automatically installed when installing [iTunes](https://support.apple.com/downloads/itunes).
+
+## Start TestProject Agent
+
+Once the Agent is installed you will need to start it.
+
+### On Windows
+
+The easiest way to run the agent is just to search for TestProject in the Windows search bar and click on the Agent to start it.
+
+![TestProject Agent on Windows](<../.gitbook/assets/image (451).png>)
 
 The agent will then start up on your computer and you will be able to see the status of it by right-clicking on the icon in the system tray.
 
-![TestProject Status in System Tray](<../.gitbook/assets/image (1) (1).png>)
+### On Mac
 
-### Start the agent on Mac
+On Mac, after you have installed the agent, you can run it by finding it in the application folder and double-clicking. This will open it in the dock and you can see the options on it by right-clicking the icon:
 
-On Mac, after you have installed the agent, you can run it by finding it in the application folder and double-clicking. This will open it in the dock and you can see the options on it by right clicking&#x20;
+![TestProject Agent on Mac](<../.gitbook/assets/image (456).png>)
 
-![TestProject Agent on Mac](<../.gitbook/assets/image (9).png>)
+### On Linux
 
-### Start the Agent on Linux
+After downloading the installer let's install the Agent:
 
-First install the Agent:
-
-1. Navigate to downloads.
+1. &#x20;Navigate to downloads.
 2. Right-click on that file-> Properties-> Permissions-> check the "**Execute**" option. For headless you can use the command: `chmod +x ./TestProject_Agent_3.3.0.sh`
 3. Open the folder that contains this file on terminal (right-click -> open in terminal) and type:
 
@@ -40,7 +54,7 @@ First install the Agent:
 ./TestProject_Agent_3.3.0.sh
 ```
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Make sure to type the correct file name (agent version may differ)
 {% endhint %}
 
@@ -62,35 +76,33 @@ Then start the agent in fork mode so you can use the current terminal:
 
 It should look like this:
 
-![Starting the agent on Linux terminal](<../.gitbook/assets/image (402).png>)
+![TestProject Agent on Linux terminal](../.gitbook/assets/Picture1.png)
 
-## Register the Agent
+## Register TestProject Agent
 
-### Register via UI
+Once you have verified that the agent is running, you can now registered it to your account.
 
-Once you have verified that the agent is running, you can go into the TestProject app and choose the Register an Agent option from the [Agents menu](https://app.testproject.io/#/agents).
+### UI Registration
 
-![Registering the agent from TestProject app](<../.gitbook/assets/image (400).png>)
+Navigate to the TestProject app and choose the Register an Agent option from the [Agents menu](https://app.testproject.io/#/agents).
+
+![Registering the Agent from TestProject app](../.gitbook/assets/Picture2.png)
 
 You will be prompted to give your agent an alias. Put something meaningful in here like "Joe Smith's Windows laptop" as it is possible to share agents with other team members. Once you have done that you just need to click on the register button to automatically register your agent with the TestProject application, and you are ready to start using TestProject!
 
-### Register via CLI - Remote registration&#x20;
+### CLI - Remote/Headless Registration
 
 {% hint style="success" %}
-This method can be used for remote agent registration.
+This method can be used for remote and headless registration.
 {% endhint %}
 
-To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key).
-
-{% hint style="info" %}
-Note: the API key will determine to which account this agent will register to.&#x20;
-{% endhint %}
+To register your agent to an account using a CLI on any machine you will need to generate an [API key](https://app.testproject.io/#/integrations/api). The API key will determine to which account this agent will register.
 
 #### For Linux
 
-Once you have your [API key](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api#getting-an-api-key) head over to the terminal and make sure your agent is running.
+Once you have your [API key](https://app.testproject.io/#/integrations/api) head over to the terminal and make sure your agent is running.
 
-You can verify it [here](https://docs.testproject.io/getting-started/installation-and-setup#linux).
+You can verify it [here](installation-and-setup.md#on-linux).
 
 Now to register your agent use this command:
 
@@ -100,11 +112,11 @@ Now to register your agent use this command:
 
 It should look like this:
 
-![Registering the agent on Linux terminal](<../.gitbook/assets/image (404).png>)
+![Registering the Agent on Linux terminal](../.gitbook/assets/Picture3.png)
 
-#### For Windows&#x20;
+#### For Windows
 
-First, make sure your agent is running you can check [here](https://docs.testproject.io/getting-started/installation-and-setup#windows).
+First, make sure your agent is running you can check [here](installation-and-setup.md#on-windows).
 
 Simply execute this command on your shell or CMD:
 
@@ -114,9 +126,9 @@ testproject-agent register -a agentName -t Your_API_Key
 
 It should look like this:
 
-![Registering the agent on Windows CMD](<../.gitbook/assets/image (403).png>)
+![Registering the Agent on Windows CMD](<../.gitbook/assets/image (457).png>)
 
-If your windows does not recognize testproject-agent commands:
+If your windows does not recognize `testproject-agent` commands:
 
 Add TestProject agent to your environment variables
 
@@ -126,5 +138,4 @@ Variable value: `C:\Program Files\TestProject Agent`
 
 You can use the image below:
 
-![Adding test project agent to Environment Variables ](<../.gitbook/assets/image (406).png>)
-
+![Adding TestProject to the environment variables ](../.gitbook/assets/Picture4.png)

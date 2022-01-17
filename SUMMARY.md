@@ -4,40 +4,29 @@
 
 ## Getting Started
 
-* [Why Should You Use TestProject](getting-started/why-should-you-use-testproject.md)
-* [What Makes TestProject Unique](getting-started/what-makes-testproject-unique.md)
-* [Using AI to Improve Testing](getting-started/using-ai-to-improve-testing.md)
-* [Creating an Account](getting-started/creating-an-account.md)
-* [Collaboration and Sharing](getting-started/collaboration-and-sharing.md)
-* [Hybrid Cloud and Offline Mode](getting-started/hybrid-cloud-and-offline-mode/README.md)
-  * [Understanding Test Files](getting-started/hybrid-cloud-and-offline-mode/understanding-test-files.md)
+* [Register and Collaborate ](getting-started/creating-an-account.md)
 * [Installation and Setup](getting-started/installation-and-setup.md)
-* [Supported Environments](getting-started/supported-environments.md)
-* [Getting started with iOS testing](getting-started/getting-started-with-ios-testing/README.md)
-  * [iOS Devices](getting-started/getting-started-with-ios-testing/ios-devices.md)
-  * [iOS Simulators](getting-started/getting-started-with-ios-testing/ios-simulators.md)
-* [Create a Test Step](getting-started/create-a-test-step/README.md)
-  * [Steps Widget](getting-started/create-a-test-step/steps-widget.md)
-  * [Legacy Steps Widget](getting-started/create-a-test-step/legacy-steps-widget.md)
-  * [Using Parameters in Test Steps](getting-started/create-a-test-step/using-parameters-in-test-steps.md)
-  * [Running a Test Step Conditionally](getting-started/create-a-test-step/running-a-test-step-conditionally.md)
-* [Available Actions](getting-started/available-actions.md)
-* [Available Validations](getting-started/available-validations.md)
-* [Step output validations](getting-started/step-output-validations.md)
-* [Knowledge Base](getting-started/knowledge-base.md)
-* [FAQs](getting-started/faqs.md)
+* [Create Your First Test](getting-started/create-your-first-test.md)
+
+## Why TestProject
+
+* [Why Should You Use TestProject](why-testproject/why-should-you-use-testproject.md)
+* [What Makes TestProject Unique](why-testproject/what-makes-testproject-unique.md)
+* [Using AI to Improve Testing](why-testproject/using-ai-to-improve-testing.md)
 
 ## TestProject Agents
 
 * [What is a TestProject Agent?](testproject-agents/what-is-a-testproject-agent.md)
 * [How Does an Agent fit into the Ecosystem?](testproject-agents/how-does-an-agent-fit-into-the-ecosystem.md)
+* [Hybrid Cloud and Offline Mode](testproject-agents/hybrid-cloud-and-offline-mode/README.md)
+  * [Understanding Test Files](testproject-agents/hybrid-cloud-and-offline-mode/understanding-test-files.md)
 * [TestProject Agent in Docker](testproject-agents/testproject-agent-in-docker.md)
 * [TestProject Agent on Kubernetes](testproject-agents/testproject-agent-on-kubernetes.md)
 * [TestProject Agent CLI](testproject-agents/testproject-agent-cli.md)
 * [Silent Deployment](testproject-agents/silent-deployment.md)
 * [Unregistered/Offline Agent](testproject-agents/unregistered-offline-agent.md)
 
-## Create Your First Test <a href="#using-the-smart-test-recorder" id="using-the-smart-test-recorder"></a>
+## Smart Test Recorder <a href="#using-the-smart-test-recorder" id="using-the-smart-test-recorder"></a>
 
 * [Web Testing](using-the-smart-test-recorder/web-testing/README.md)
   * [Introduction to Web Testing](using-the-smart-test-recorder/web-testing/introduction-to-web-testing.md)
@@ -46,17 +35,41 @@
   * [Introduction to Mobile Testing](using-the-smart-test-recorder/mobile-testing/introduction-to-mobile-testing.md)
   * [Creating an Android test using the TestProject Recorder](using-the-smart-test-recorder/mobile-testing/creating-an-android-test-using-the-testproject-recorder.md)
   * [Creating an iOS test using the TestProject Recorder](using-the-smart-test-recorder/mobile-testing/creating-an-ios-test-using-the-testproject-recorder.md)
+  * [Getting started with iOS testing](using-the-smart-test-recorder/mobile-testing/getting-started-with-ios-testing/README.md)
+    * [iOS Devices](using-the-smart-test-recorder/mobile-testing/getting-started-with-ios-testing/ios-devices.md)
+    * [iOS Simulators](using-the-smart-test-recorder/mobile-testing/getting-started-with-ios-testing/ios-simulators.md)
+* [Create a Test Step](using-the-smart-test-recorder/create-a-test-step/README.md)
+  * [Steps Widget](using-the-smart-test-recorder/create-a-test-step/steps-widget.md)
+  * [Legacy Steps Widget](using-the-smart-test-recorder/create-a-test-step/legacy-steps-widget.md)
+  * [Using Parameters in Test Steps](using-the-smart-test-recorder/create-a-test-step/using-parameters-in-test-steps.md)
+  * [Running a Test Step Conditionally](using-the-smart-test-recorder/create-a-test-step/running-a-test-step-conditionally.md)
 * [Finding and Using Elements](using-the-smart-test-recorder/finding-and-using-elements/README.md)
   * [Element Locator](using-the-smart-test-recorder/finding-and-using-elements/element-locator.md)
   * [Element Inspector](using-the-smart-test-recorder/finding-and-using-elements/element-inspector.md)
   * [Element Explorer](using-the-smart-test-recorder/finding-and-using-elements/element-explorer.md)
+* [Available Actions](using-the-smart-test-recorder/available-actions.md)
+* [Available Validations](using-the-smart-test-recorder/available-validations.md)
+* [Step output validations](using-the-smart-test-recorder/step-output-validations.md)
+* [Using Data Driven Tests and Jobs in TestProject](using-the-smart-test-recorder/using-data-driven-jobs-in-testproject.md)
 
 ## Schedule and Run Tests
 
 * [Manage TestProject Agents](schedule-and-run-tests/manage-testproject-agents.md)
 * [Create and Schedule Jobs](schedule-and-run-tests/create-and-schedule-jobs.md)
-* [Using Data Driven Tests and Jobs in TestProject](schedule-and-run-tests/using-data-driven-jobs-in-testproject.md)
 * [Parallel Execution](schedule-and-run-tests/parallel-execution.md)
+
+## Reports
+
+* [Introduction to Reports in TestProject](reports/introduction-to-reports-in-testproject.md)
+* [Types of Plots in TestProject Reports](reports/types-of-plots-in-testproject-reports/README.md)
+  * [Velocity Chart](reports/types-of-plots-in-testproject-reports/velocity-chart.md)
+  * [Distribution Chart](reports/types-of-plots-in-testproject-reports/distribution-chart.md)
+  * [Platforms Chart](reports/types-of-plots-in-testproject-reports/platforms-chart.md)
+  * [Trends Chart](reports/types-of-plots-in-testproject-reports/trends-chart.md)
+  * [Targets Chart](reports/types-of-plots-in-testproject-reports/targets-chart.md)
+* [Individual Run Reports](reports/individual-run-reports.md)
+* [Get Test Reports via API](reports/get-test-reports-via-api.md)
+* [Deleting old reports](reports/clearing-reports.md)
 
 ## TestProject Addons
 
@@ -125,6 +138,7 @@
   * [jQuery - Dialog Addon](testproject-addons/available-addons/jquery-dialog-addon.md)
   * [jQueryUI - Accordion Addon](testproject-addons/available-addons/jqueryui-accordion-addon.md)
   * [Foundation - Accordion Addon](testproject-addons/available-addons/foundation-accordion-addon.md)
+  * [Robot Operations Addon](testproject-addons/available-addons/robot-operations-addon.md)
   * [Foundation - Pagination Addon](testproject-addons/available-addons/foundation-pagination-addon.md)
   * [Foundation - Orbit Addon](testproject-addons/available-addons/foundation-orbit-addon.md)
   * [Foundation - Tabs Addon](testproject-addons/available-addons/foundation-tabs-addon.md)
@@ -135,22 +149,8 @@
   * [Teradata Database Addon](testproject-addons/available-addons/teradata-database-addon.md)
   * [Get Element Color](testproject-addons/available-addons/get-element-color.md)
   * [Google Actions](testproject-addons/available-addons/google-actions.md)
-  * [Robot Operations Addon](testproject-addons/available-addons/robot-operations-addon.md)
 
-## Reports
-
-* [Introduction to Reports in TestProject](reports/introduction-to-reports-in-testproject.md)
-* [Types of Plots in TestProject Reports](reports/types-of-plots-in-testproject-reports/README.md)
-  * [Velocity Chart](reports/types-of-plots-in-testproject-reports/velocity-chart.md)
-  * [Distribution Chart](reports/types-of-plots-in-testproject-reports/distribution-chart.md)
-  * [Platforms Chart](reports/types-of-plots-in-testproject-reports/platforms-chart.md)
-  * [Trends Chart](reports/types-of-plots-in-testproject-reports/trends-chart.md)
-  * [Targets Chart](reports/types-of-plots-in-testproject-reports/targets-chart.md)
-* [Individual Run Reports](reports/individual-run-reports.md)
-* [Get Test Reports via API](reports/get-test-reports-via-api.md)
-* [Deleting old reports](reports/clearing-reports.md)
-
-## TestProject SDK
+## Open Source SDK <a href="#testproject-sdk" id="testproject-sdk"></a>
 
 * [Overview](testproject-sdk/overview/README.md)
   * [Getting Ready to Use an SDK](testproject-sdk/overview/getting-ready-to-use-an-sdk.md)
@@ -175,7 +175,7 @@
   * [Java](testproject-sdk/testproject-sdk-v1/java-sdk.md)
   * [C#](testproject-sdk/testproject-sdk-v1/csharp-sdk.md)
 
-## TestProject Integrations
+## Integrations <a href="#testproject-integrations" id="testproject-integrations"></a>
 
 * [qTest Integration](testproject-integrations/qtest-integration.md)
 * [BrowserStack Integration](testproject-integrations/browserstack-integration/README.md)
@@ -229,6 +229,10 @@
 * [Finding Device UDID](tips-and-tricks/finding-device-udid.md)
 * [Downgrading Xcode to v12.4 and Below](tips-and-tricks/downgrading-xcode-to-v12.4-and-below.md)
 
+***
+
+* [Supported Environments](supported-environments.md)
+
 ## Releases
 
 * [v3.4.0](releases/v3.4.0.md)
@@ -257,3 +261,9 @@
   * [v0.51](releases/older-versions/v0.51.md)
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
+
+## Contact us
+
+* [Support](contact-us/support.md)
+* [Knowledge Base](contact-us/knowledge-base.md)
+* [FAQs](contact-us/faqs.md)

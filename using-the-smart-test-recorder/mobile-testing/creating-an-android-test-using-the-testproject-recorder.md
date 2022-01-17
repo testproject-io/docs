@@ -40,7 +40,7 @@ Now that you have created your test and specified the application to use for tes
 
 ![Start Creating a Test](<../../.gitbook/assets/image (169) (3) (1).png>)
 
-You will also notice that you can choose to have the test files saved in the cloud, or saved to a local file. The **File** option allows you to create tests that can be run offline. To learn more about the cloud versus offlines modes, check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/).&#x20;
+You will also notice that you can choose to have the test files saved in the cloud, or saved to a local file. The **File** option allows you to create tests that can be run offline. To learn more about the cloud versus offlines modes, check out the documentation [here](../../testproject-agents/hybrid-cloud-and-offline-mode/).&#x20;
 
 When getting started, the best course of action is to use this test recorder. This will help walk you through the test steps and will also connect to your device and include a mirrored view of it with the application under test loaded up and ready for you to start testing. Simply choose the **Record** option and then click on **Start recording** to immediately get started.
 

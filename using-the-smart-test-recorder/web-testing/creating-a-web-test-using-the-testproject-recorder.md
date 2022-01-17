@@ -38,7 +38,7 @@ Once a local agent is running you will be able to click on the record button and
 
 ![TestProject Record Ready to use](<../../.gitbook/assets/image (342).png>)
 
-Notice, that you have the option to choose to save the recording of the test steps in the cloud or in a local files. To learn more about how the TestProject cloud and offline modes works, you can check out the documentation [here](../../getting-started/hybrid-cloud-and-offline-mode/).&#x20;
+Notice, that you have the option to choose to save the recording of the test steps in the cloud or in a local files. To learn more about how the TestProject cloud and offline modes works, you can check out the documentation [here](../../testproject-agents/hybrid-cloud-and-offline-mode/).&#x20;
 
 Clicking **Start recording** will open the new Smart Test Recorder for you.This will open a new instance of your browser and start recording. If a new instance does not open, you will want to check that your browser version is up to date.
 

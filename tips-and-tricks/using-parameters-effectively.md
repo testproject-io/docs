@@ -10,11 +10,11 @@ Parameters are a powerful way to make your tests more maintainable. They also ma
 
 You can see and manage all the parameters for a test by clicking on the test in the project view to open it in the recorder and then choosing Parameters.
 
-![Opening parameters tab](<../.gitbook/assets/image (456).png>)
+![Opening parameters tab](<../.gitbook/assets/image (456) (1).png>)
 
 This will open the parameters panel for you where you can view, edit, add or remove parameters for the test. Parameters can be created that are **only** for the particular test you are working on (Test Parameters), or they can be created at the project level so that you can use the same parameter in **multiple** tests (Project Parameters). You can add a new parameter with the plus button at the bottom of the panel.
 
-![Create new Parameter](<../.gitbook/assets/image (454).png>)
+![Create new Parameter](<../.gitbook/assets/image (454) (1).png>)
 
 Fill in the name, description, value, secret, and type for the parameter and click on the Save button to add it to your test.
 
@@ -70,7 +70,7 @@ You want to make sure that you do not create dependencies between tests, where o
 
 ## Using Parameters
 
-After we have created the parameter it is now ready to be used in the test. parameters can be used in multiple test steps and can also be used for [data-driven testing](../schedule-and-run-tests/using-data-driven-jobs-in-testproject.md).&#x20;
+After we have created the parameter it is now ready to be used in the test. parameters can be used in multiple test steps and can also be used for [data-driven testing](../using-the-smart-test-recorder/using-data-driven-jobs-in-testproject.md).&#x20;
 
 You can access the parameters directly from a test step (for actions that with input/output fields), by clicking on the blue "Parameter" label on top of the input field or on the "Select parameter" option on the output fields in the steps.
 
@@ -78,7 +78,7 @@ You can access the parameters directly from a test step (for actions that with i
 
 Parameters can also be used in combination with static text for example validating the welcome message on our example login page:&#x20;
 
-![Using a parameter with text](<../.gitbook/assets/image (455).png>)
+![Using a parameter with text](<../.gitbook/assets/image (455) (1).png>)
 
 
 

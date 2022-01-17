@@ -9,5 +9,6 @@ Read further about:
 * [Getting started with iOS testing on physical devices.](ios-devices.md)
 * [Getting started with iOS testing on simulators.](ios-simulators.md)
 
-{% page-ref page="../../using-the-smart-test-recorder/mobile-testing/creating-an-ios-test-using-the-testproject-recorder.md" %}
-
+{% content-ref url="../creating-an-ios-test-using-the-testproject-recorder.md" %}
+[creating-an-ios-test-using-the-testproject-recorder.md](../creating-an-ios-test-using-the-testproject-recorder.md)
+{% endcontent-ref %}

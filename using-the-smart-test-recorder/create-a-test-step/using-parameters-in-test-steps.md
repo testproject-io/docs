@@ -2,13 +2,13 @@
 
 Parameters are a very helpful way to organize and extend the capabilities of tests. When using the test recorder, you can access parameters in a couple of different ways. The Parameters tab at the top of the recorder panel contains information about all of the parameters in your test and allows you to add new parameters
 
-![Parameters tab](../../.gitbook/assets/image%20%28186%29.png)
+![Parameters tab](<../../.gitbook/assets/image (186).png>)
 
 On this panel, you can also go to the **Project Parameters** sub-tab to see parameters that are shared across all the tests in a project.
 
 If you create or edit a test step that had inputs, you can also create or view parameters with the **Use Parameters** option.
 
-![Access Parameter from a Test Step](../../.gitbook/assets/image%20%28161%29.png)
+![Access Parameter from a Test Step](<../../.gitbook/assets/image (161).png>)
 
 {% hint style="info" %}
 Note that if your UI looks different you might be using the legacy test recorder. If you start using the new Smart Recorder, you should see options like those above.
@@ -16,7 +16,7 @@ Note that if your UI looks different you might be using the legacy test recorder
 
 ## What is a parameter?
 
-A parameter is a way to store some information into a variable that can be manipulated in various ways. For example, an input parameter can be defined that has a certain value, and then at run time it can be set to have another value. It could also be set to programatically take on several values through [_data driven testing_](../../schedule-and-run-tests/using-data-driven-jobs-in-testproject.md). Another example is to parameterize the output of a test step so that the value can be used in another step later on in the test.
+A parameter is a way to store some information into a variable that can be manipulated in various ways. For example, an input parameter can be defined that has a certain value, and then at run time it can be set to have another value. It could also be set to programatically take on several values through [_data driven testing_](../using-data-driven-jobs-in-testproject.md). Another example is to parameterize the output of a test step so that the value can be used in another step later on in the test.
 
 ## Input and Output Parameters
 
@@ -28,7 +28,6 @@ Output parameters on the other hand are used to store information that is genera
 
 Parameters can be used on an input field on their own or they can be used together with non-parameterized inputs.
 
-![](../../.gitbook/assets/image%20%28207%29.png)
+![](<../../.gitbook/assets/image (207).png>)
 
 In the example shown in the previous image, when the test is run, the input field will receive a value that says `Hi John. How are you?` since the parameter `FirstName` will be replaced with the parameter value. If your test uses a first name in multiple places, you can reference the parameter from all those places and any changes made to the parameters will automatically show up in all of those places.
-
