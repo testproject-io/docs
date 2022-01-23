@@ -6,6 +6,22 @@ description: Documentation for Robot operations addon
 
 This addon allows you to press keys, move the cursor, and perform clicks using Windows and Linux operating system keyboard and mouse.
 
+### See the example below:
+
+1\) Perform a login flow on [example.testproject.io](https://example.testproject.io).
+
+2\) Save the current document as a PDF file.
+
+3\) Take a full-page screenshot using Chrome dev tools.
+
+4\) Navigate to an [upload test](https://ps.uci.edu/\~franklin/doc/file\_upload.html) and upload a file.
+
+5\) Automate HTML5 drag and drop on [W3C](https://www.w3schools.com/html/html5\_draganddrop.asp).
+
+6\) Navigate to [Angular](https://material.angular.io/cdk/drag-drop/examples) and perform drag and drop in all directions.
+
+![Automate any interface using Robot](../../.gitbook/assets/chrome\_jyn0MIUFvq.gif)
+
 ### Available Actions
 
 * `Click at coordinates`
