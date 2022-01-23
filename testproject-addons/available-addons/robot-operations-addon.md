@@ -4,7 +4,11 @@ description: Documentation for Robot operations addon
 
 # Robot Operations Addon
 
-This addon allows you to press keys, move the cursor, and perform clicks using Windows and Linux operating system keyboard and mouse.
+This addon allows you to press keys, move the cursor, and perform clicks using Windows, Linux, and macOS\* operating systems keyboard and mouse.
+
+{% hint style="info" %}
+For macOS\* add TestProject Agent.app to Accessibility -> Privacy
+{% endhint %}
 
 ### See the example below:
 
