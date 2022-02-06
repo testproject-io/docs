@@ -10,7 +10,7 @@ This addon provides actions for working with XLSX files. You can use this addon 
 
 #### Generic Actions (any file)
 
-`Wait for file download`
+`Wait for file to download`
 
 `Delete file (if exists)`
 
@@ -22,19 +22,19 @@ This addon provides actions for working with XLSX files. You can use this addon 
 
 `Get cell value`
 
-`Get the sum of a column`
+`Get column sum`
 
-`Get the value of a column`
+`Get column values`
 
-`Get the row value`
+`Get the row values`
 
-`Search value and replace it in Excel file`
+`Search and replace by value`
 
-`Search value in Excel file`
+`Search value`
 
-`Search index value of header in Excel file`
+`Search header index by value`
 
-`Set value to a cell in excel file`
+`Set cell value`
 
 
 
