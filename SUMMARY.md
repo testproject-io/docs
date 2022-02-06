@@ -80,6 +80,7 @@
   * [Addon Action Options](testproject-addons/develop-an-addon/addon-action-options.md)
 * [Available Addons](testproject-addons/available-addons/README.md)
   * [Tap and Get Toast Message](testproject-addons/available-addons/tap-and-get-toast-message.md)
+  * [XLSX Operations](testproject-addons/available-addons/xlsx-operations.md)
   * [Base64 Encoder/Decoder Addon](testproject-addons/available-addons/base64-encoder-decoder-addon.md)
   * [Shell Commands Addon](testproject-addons/available-addons/shell-commands.md)
   * [Android Monkey Addon](testproject-addons/available-addons/android-monkey-addon.md)
