@@ -43,5 +43,5 @@ This addon provides actions for working with XLSX files. You can use this addon 
 * All other parameters are **required** unless they have a default value.
 * Column and row index starts at **1**.&#x20;
 * The result for the operation can be validated on the output field.
-* Search and replace actions will match all the results found in the workbook and should be used cautiously, an index of the row and column for the desired match can be extracted from the output.
+* Search and replace actions will match all the results found in the workbook and should be used cautiously.
 
