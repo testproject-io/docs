@@ -79,6 +79,10 @@ Accepts **`timeout`** between pixels movement in MS default=1ms.
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+The screen starting point is the top left corner (0,0) the bottom right corner is (1920,1080)
+{% endhint %}
+
 {% tabs %}
 {% tab title="Press multiple keys" %}
 Accepts up to 3 lowercase characters, letters, or any special key from the following list:
