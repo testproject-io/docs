@@ -38,9 +38,9 @@ This addon provides actions for working with XLSX files. You can use this addon 
 
 
 
-* All XLSX actions accept a **path** and the path must end with XLSX, for example: `"C:\Temp\workbook.xlsx"`
-* Sheet is optional, if the sheet is not provided the action will default to use the **first shee**t in the workbook.
-* All other parameters are **required**.
+* All XLSX actions require a **path** and the path must end with XLSX, for example: `"C:\Temp\workbook.xlsx"`
+* Sheet is optional, if the sheet is not provided the action will use the **first sheet** in the workbook by default.
+* All other parameters are **required** unless they have a default value.
 * Column and row index starts at **1**.&#x20;
 * The result for the operation can be validated on the output field.
 * Search and replace actions will match all the results found in the workbook and should be used cautiously, an index of the row and column for the desired match can be extracted from the output.
