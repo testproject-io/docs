@@ -54,7 +54,7 @@ The adaptive wait functionality also appears in the TestProject SDK. You will be
 {% tab title="Web Example" %}
 In the following example, we will navigate to a URL and input a username and password in their respective fields:
 
-```
+```java
 // This is the test’s execute method, it will contain the actions taken in the test.
   public ExecutionResult execute(WebTestHelper helper) throws FailureException {
 // Leverage the TestProject driver.
@@ -85,7 +85,7 @@ In the following example, we will navigate to a URL and input a username and pas
 {% tab title="Mobile Example" %}
 In the following example, we will use the adaptive wait functionality to wait for an Android Element to appear in a coded test, before tapping on it:
 
-```
+```java
 // This is the test’s execute method, will contain the actions taken in the test.
 public ExecutionResult execute(AndroidTestHelper helper) throws FailureException {
    // Leverage the TestProject driver.
