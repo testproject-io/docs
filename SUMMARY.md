@@ -79,6 +79,7 @@
 * [Creating an Addon](testproject-addons/develop-an-addon/README.md)
   * [Addon Action Options](testproject-addons/develop-an-addon/addon-action-options.md)
 * [Available Addons](testproject-addons/available-addons/README.md)
+  * [Yaml Validator](testproject-addons/available-addons/yaml-validator.md)
   * [Tap and Get Toast Message](testproject-addons/available-addons/tap-and-get-toast-message.md)
   * [XLSX Operations](testproject-addons/available-addons/xlsx-operations.md)
   * [Base64 Encoder/Decoder Addon](testproject-addons/available-addons/base64-encoder-decoder-addon.md)
