@@ -10,7 +10,7 @@ Once you have [created an account](creating-an-account.md#registration) with Tes
 
 ### Download
 
-The first thing you will need to do is login to the TestProject app. Once you have done that you can go to the agent's tab at the top of the page and click on the link for the platform you are on to download the agent executable or go to [Agent Download](https://app.testproject.io/#/download). You can find more information about the TestProject here Agent [here](broken-reference).
+The first thing you will need to do is login to the TestProject app. Once you have done that you can navigate to the agent's tab at the top of the page and choose the desired platform. You can also use this link to directly navigate to the [agent download](https://app.testproject.io/#/download) page. If you want to know more about the TestProject agent click [here](broken-reference).
 
 ### Installation
 
