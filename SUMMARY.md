@@ -237,6 +237,7 @@
 
 ## Releases
 
+* [v3.5.0](releases/v3.5.0.md)
 * [v3.4.0](releases/v3.4.0.md)
 * [v3.3.0](releases/v3.3.0.md)
 * [v3.2.0](releases/v3.2.0.md)
