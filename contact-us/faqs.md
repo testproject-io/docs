@@ -68,9 +68,9 @@ You can choose whether you want to develop new addons for your individual needs,
 
 Very easily! TestProject’s SDK is based on standard Selenium APIs, which makes the development of new tests or porting existing ones easy and straightforward. Read more about our SDK [here](https://testproject.io/powerful-sdk/).
 
-## Is the Free Forever plan really free?
+## Is the Free plan really free?
 
-Yes! TestProject offers a Free Forever plan for a lifetime, with no commitment. There is no trial period and you do not need to enter your credit card, since it really is completely free. Our way of giving back to the test automation community.
+Yes! TestProject offers a Free plan, with no commitment. There is no trial period and you do not need to enter your credit card, since it really is completely free. Our way of giving back to the test automation community.
 
 ## Are there any contracts or hidden charges or setup fees?
 
