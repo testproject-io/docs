@@ -265,6 +265,21 @@
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
 
+## Articles
+
+* [Help Articles](<articles/Help Articles/README.md>)
+  * [Drag and Drop Operations](<articles/Help Articles/Drag and Drop Operations.md>)
+  * [Copy of v0.65](<articles/Help Articles/v0.65.md>)
+  * [Copy of v0.64](<articles/Help Articles/v0.64.md>)
+  * [Copy of v0.63](<articles/Help Articles/v0.63.md>)
+  * [Copy of v0.62](<articles/Help Articles/v0.62.md>)
+  * [Copy of v0.61](<articles/Help Articles/v0.61.md>)
+  * [Copy of v0.60](<articles/Help Articles/v0.60.md>)
+  * [Copy of v0.59](<articles/Help Articles/v0.59.md>)
+  * [Copy of v0.58](<articles/Help Articles/v0.58.md>)
+  * [Copy of v0.57](<articles/Help Articles/v0.57.md>)
+  * [Copy of v0.56](<articles/Help Articles/v0.56.md>)
+
 ## Contact us
 
 * [Support](contact-us/support.md)
