@@ -197,10 +197,24 @@
 * [RESTful API v2](api/v2.md)
 * [Getting Started With Using the TestProject API](api/getting-started-with-using-the-testproject-api.md)
 
+## Articles
+
+* [Help Articles](<articles/Help Articles/README.md>)
+  * [Drag and Drop Operations](<articles/Help Articles/Drag and Drop Operations.md>)
+  * [How To Upload Coded Test file with Postman](<articles/Help Articles/how-to-upload-coded-test-file-with-postman.md>)
+  * [Report was not uploaded](<articles/Help Articles/v0.65.md>)
+  * [Paginated Table Loop](<articles/Help Articles/v0.64.md>)
+  * [Dynamic loop](<articles/Help Articles/v0.63.md>)
+  * [Solving Proxy issues on Appium remote session](<articles/Help Articles/v0.61.md>)
+  * [Fix Invalid Argument invalid locator error on Agent 3.4.0+ (Appium 2.0)](<articles/Help Articles/fix-invalid-argument-invalid-locator-error-on-agent-3.4.0+-appium-2.0.md>)
+  * [Delete temporary agent files](<articles/Help Articles/delete-temporary-agent-files.md>)
+  * [Remove Headless properties on Chrome](<articles/Help Articles/remove-headless-properties-on-chrome.md>)
+* [Tips And Tricks](articles/tips-and-tricks/README.md)
+  * [Execution Speed & Adaptive Wait](articles/tips-and-tricks/explicit-wait-and-adaptive-wait.md)
+  * [Mobile Scripts Python OpenSDK](articles/tips-and-tricks/python-tips-and-tricks.md)
+
 ## Tips and Tricks
 
-* [Mobile Scripts Python OpenSDK](tips-and-tricks/python-tips-and-tricks.md)
-* [Execution Speed & Adaptive Wait](tips-and-tricks/explicit-wait-and-adaptive-wait.md)
 * [Using Page object model and Page Factory with TestProject](tips-and-tricks/using-page-object-model-and-page-factory-with-testproject.md)
 * [Organizing and Managing Test Data](tips-and-tricks/organizing-and-managing-test-data.md)
 * [Using Parameters Effectively](tips-and-tricks/using-parameters-effectively.md)
@@ -264,19 +278,6 @@
   * [v0.51](releases/older-versions/v0.51.md)
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
-
-## Articles
-
-* [Help Articles](<articles/Help Articles/README.md>)
-  * [Drag and Drop Operations](<articles/Help Articles/Drag and Drop Operations.md>)
-  * [How To Upload Coded Test file with Postman](<articles/Help Articles/how-to-upload-coded-test-file-with-postman.md>)
-  * [Report was not uploaded](<articles/Help Articles/v0.65.md>)
-  * [Paginated Table Loop](<articles/Help Articles/v0.64.md>)
-  * [Dynamic loop](<articles/Help Articles/v0.63.md>)
-  * [Solving Proxy issues on Appium remote session](<articles/Help Articles/v0.61.md>)
-  * [Fix Invalid Argument invalid locator error on Agent 3.4.0+ (Appium 2.0)](<articles/Help Articles/fix-invalid-argument-invalid-locator-error-on-agent-3.4.0+-appium-2.0.md>)
-  * [Delete temporary agent files](<articles/Help Articles/delete-temporary-agent-files.md>)
-  * [Remove Headless properties on Chrome](<articles/Help Articles/remove-headless-properties-on-chrome.md>)
 
 ## Contact us
 

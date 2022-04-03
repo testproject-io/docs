@@ -16,11 +16,11 @@ By default, the step pause is happening before the execution of each step and yo
 
 You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default execution speed.
 
-![](<../.gitbook/assets/image (466) (1).png>)
+![](<../../.gitbook/assets/image (466) (1).png>)
 
 Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (451) (2).png>)
+![](<../../.gitbook/assets/image (451) (2).png>)
 
 
 
@@ -36,13 +36,13 @@ Unlike a fixed pause, your test will be able to continue even before the time li
 
 You can edit the Adaptive Wait time **globally** for your test from the test’s settings:
 
-![](<../.gitbook/assets/image (448) (1).png>)
+![](<../../.gitbook/assets/image (448) (1).png>)
 
 
 
 This is how you can change **specific step** Adaptive Wait first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../.gitbook/assets/image (469) (1).png>)
+![](<../../.gitbook/assets/image (469) (1).png>)
 
 
 
@@ -124,7 +124,7 @@ The **“If visible” actions** are:
 
 These actions will consider your set adaptive wait time and **only** be executed if the element you have applied them onto appears on the screen. In case that the element does not appear on the screen, the test will continue without failing, showing 100% pass rate, with an indication in the “If visible” action, saying the element never appeared, causing the step not to execute, but pass regardless.
 
-![](../.gitbook/assets/if-visible-action.png)
+![](../../.gitbook/assets/if-visible-action.png)
 
 
 
@@ -139,6 +139,6 @@ The **“Is Visible”** **validations** are:
 
 These validate if the element is visible or invisible on the page or screen and use the adaptive wait mechanism to determine if the step passes or fails.
 
-![](../.gitbook/assets/is-visible-actions.png)
+![](../../.gitbook/assets/is-visible-actions.png)
 
 You can find all available validations and more details [here](https://docs.testproject.io/getting-started/available-validations).

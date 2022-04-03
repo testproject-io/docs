@@ -10,7 +10,7 @@ This results in testers spending much less of their valuable time in debugging t
 
 ## Adaptive Wait
 
-Another AI driven setting in TestProject is the adaptive wait functionality. With this technology, you won't need to worry about failed tests due to changes in page load times. You also don't need to worry about having tests that run much longer than then necesary to due to explicit waits programmed into them. You can learn more about how to us the adaptive wait technology in [this](../tips-and-tricks/explicit-wait-and-adaptive-wait.md) tips and tricks article.&#x20;
+Another AI driven setting in TestProject is the adaptive wait functionality. With this technology, you won't need to worry about failed tests due to changes in page load times. You also don't need to worry about having tests that run much longer than then necesary to due to explicit waits programmed into them. You can learn more about how to us the adaptive wait technology in [this](../articles/tips-and-tricks/explicit-wait-and-adaptive-wait.md) tips and tricks article.&#x20;
 
 This technology automatically optimizing the wait times for different automation actions so that your tests are running as efficiently as possible while not failing due to unecessary time outs. When using this technology, you can trust your tests results without needing to build in long wait times between tests steps.
 
