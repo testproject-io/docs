@@ -272,8 +272,11 @@
   * [How To Upload Coded Test file with Postman](<articles/Help Articles/how-to-upload-coded-test-file-with-postman.md>)
   * [Report was not uploaded](<articles/Help Articles/v0.65.md>)
   * [Paginated Table Loop](<articles/Help Articles/v0.64.md>)
-  * [Copy of v0.63](<articles/Help Articles/v0.63.md>)
-  * [Copy of v0.61](<articles/Help Articles/v0.61.md>)
+  * [Dynamic loop](<articles/Help Articles/v0.63.md>)
+  * [Solving Proxy issues on Appium remote session](<articles/Help Articles/v0.61.md>)
+  * [Fix Invalid Argument invalid locator error on Agent 3.4.0+ (Appium 2.0)](<articles/Help Articles/fix-invalid-argument-invalid-locator-error-on-agent-3.4.0+-appium-2.0.md>)
+  * [Delete temporary agent files](<articles/Help Articles/delete-temporary-agent-files.md>)
+  * [Remove Headless properties on Chrome](<articles/Help Articles/remove-headless-properties-on-chrome.md>)
 
 ## Contact us
 
