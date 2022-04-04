@@ -274,12 +274,6 @@
 
 * [v3.5.0](releases/v3.5.0.md)
 * [v3.4.0](releases/v3.4.0.md)
-* [v3.3.0](releases/v3.3.0.md)
-* [v3.2.0](releases/v3.2.0.md)
-* [v3.1.0](releases/v3.1.0.md)
-* [v3.0](releases/v3.0.md)
-* [v2.0](releases/v2.0/README.md)
-  * [v2.3](releases/v2.0/v2.3.md)
 * [Older Versions](releases/older-versions/README.md)
   * [v0.66](releases/older-versions/v0.66.md)
   * [v0.65](releases/older-versions/v0.65.md)
@@ -299,6 +293,12 @@
   * [v0.51](releases/older-versions/v0.51.md)
   * [v0.50](releases/older-versions/v0.50.md)
   * [v0.49](releases/older-versions/v0.49.md)
+  * [v2.0](releases/older-versions/v2.0/README.md)
+    * [v2.3](releases/older-versions/v2.0/v2.3.md)
+  * [v3.0](releases/older-versions/v3.0.md)
+  * [v3.1.0](releases/older-versions/v3.1.0.md)
+  * [v3.2.0](releases/older-versions/v3.2.0.md)
+  * [v3.3.0](releases/older-versions/v3.3.0.md)
 
 ## Contact us
 
