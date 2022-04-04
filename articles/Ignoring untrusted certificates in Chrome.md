@@ -1,0 +1,42 @@
+---
+description: >-
+  In this article we will utilize Job Custom Capabilities to bypass untrusted
+  certificates in while executing a Job on Chrome
+---
+
+# Ignoring untrusted certificates in Chrome
+
+In case your tests are blocked by the warning of an untrusted certificate, selenium offers arguments to pass to the driver which can bypass it so the tests can continue executing.
+
+First, we will create a Job:
+
+![](https://downloads.intercomcdn.com/i/o/295442379/de5854f43113eba9584c14cf/image.png)
+
+Now we shall Select Web, Chrome as the Browser, and the agent who shall execute the Tests.
+
+![](https://downloads.intercomcdn.com/i/o/295442767/0ab8354eb59f39bfa2877fa1/image.png)
+
+![](https://downloads.intercomcdn.com/i/o/295442929/5f3455338c3adf5095413d9d/image.png)
+
+Next, after we create the Job, we will drag all the tests we wish to execute inside the Job:
+
+![](https://downloads.intercomcdn.com/i/o/295443300/1f52ca5d1cfb496628e5b623/image.png)
+
+Now we will set the Custom Capabilities:
+
+![](https://downloads.intercomcdn.com/i/o/295443500/f4d46ac8b72ae1fc006fc826/image.png)
+
+We will add the following to the capabilities:
+
+```
+"goog:chromeOptions": {
+    "args": ["--ignore-untrusted-certificate"]
+  }
+
+```
+
+![](https://downloads.intercomcdn.com/i/o/295444642/7a4e5c1ab948d6fa9197480d/image.png)
+
+And that is it, once we run the Job, this capabilities will be set, and the tests will run without the warnings.
+
+\
