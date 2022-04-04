@@ -1,6 +1,6 @@
 # Random Data Generator Addon
 
-This Addon provides actions to generate random data such as names, emails, dates, numbers, etc. You can find the documentation and full list of actions [here](https://github.com/xdrop/jRand). You can also see an example using some of these actions in the article about how to [Create Tests with Random Data](../../tips-and-tricks/create-tests-with-random-data.md).
+This Addon provides actions to generate random data such as names, emails, dates, numbers, etc. You can find the documentation and full list of actions [here](https://github.com/xdrop/jRand). You can also see an example using some of these actions in the article about how to [Create Tests with Random Data](../../articles/tips-and-tricks/create-tests-with-random-data.md).
 
 ### Available Actions
 
@@ -65,4 +65,3 @@ This Addon provides actions to generate random data such as names, emails, dates
 `Random syllable` - Generates random syllable
 
 `Random word` - Generates random word
-
