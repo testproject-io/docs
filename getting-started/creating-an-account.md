@@ -56,7 +56,7 @@ Enter the email addresses of those you want to share the test with and then clic
 
 You can also create publicly sharable links to a test. You can do that on the Share Test panel by copying the link, or by using the **Get Direct Link** option on the menu.
 
-![Sharing Tests](<../.gitbook/assets/image (454).png>)
+![Sharing Tests](<../.gitbook/assets/image (454) (1).png>)
 
 {% hint style="info" %}
 Note that this option allows for sharing individual tests. To share and work on the same project you should invite the user to your account as explained [above](creating-an-account.md#inviting-teammates-to-your-account).

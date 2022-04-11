@@ -32,7 +32,7 @@ Now if we just want another test to use those steps we can just call it as a nes
 
 By adding a Test as a step:
 
-![](<../../.gitbook/assets/image (470).png>)
+![](<../../.gitbook/assets/image (470) (1).png>)
 
 To use those steps on a different project we shall click on the 3 dots near the test in your Tests page.
 
