@@ -78,7 +78,7 @@ You can access the parameters directly from a test step (for actions that with i
 
 Parameters can also be used in combination with static text for example validating the welcome message on our example login page:&#x20;
 
-![Using a parameter with text](<../../.gitbook/assets/image (455) (1).png>)
+![Using a parameter with text](<../../.gitbook/assets/image (455) (1) (1).png>)
 
 
 

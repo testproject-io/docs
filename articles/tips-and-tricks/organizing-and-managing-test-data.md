@@ -24,7 +24,7 @@ Keeping structure and organization like this in place will help make test mainte
 
 Tests themselves are an important part of the data that needs to be maintained in a test automation initiative. As with elements, tests can also be organized and placed into folders. You can use this to structure tests into logical areas that make it easy to decide which tests to run and to set up and [schedule ](../../schedule-and-run-tests/create-and-schedule-jobs.md)them into the jobs that you want.
 
-![Creating Test Folders](<../../.gitbook/assets/image (463) (1).png>)
+![Creating Test Folders](<../../.gitbook/assets/image (463) (1) (1).png>)
 
 In the same way as with elements, tests can be moved to a different folder by either using drag and drop or by using the Move to folder option on the more menu for the test.&#x20;
 

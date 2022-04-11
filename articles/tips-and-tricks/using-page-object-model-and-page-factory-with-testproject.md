@@ -8,7 +8,7 @@ The page object model is essentially a way of organizing your tests so that you 
 
 To do that in the Recorder, just click "add a new test as a step" and select the test. (In our case the login test):
 
-![](<../../.gitbook/assets/image (461) (2).png>)
+![](<../../.gitbook/assets/image (461) (2) (1).png>)
 
 You can then choose the login test as a test step in your current test case.&#x20;
 
