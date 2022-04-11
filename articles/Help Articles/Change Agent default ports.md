@@ -42,25 +42,25 @@ You can change the agent default ports from here.
 
 navigate to `%appdata%/TestProject/Agent` in your run command (`⊞ WinKey + R`):
 
-![](https://downloads.intercomcdn.com/i/o/330414389/cdcecc4fc62818d77ceeb3c0/image.png?expires=1620558534\&signature=45d3a365f4866293934e2b17fa843520f1db10a2c04335c73d95596172c1ebe0)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 you can change the ports from here:
 
-![](https://downloads.intercomcdn.com/i/o/330414578/3233bec6a9c25a11a7140a76/image.png?expires=1620558534\&signature=e436abe3f954a721480b6d733e3f92c14d35f8edb9caeaabbfefa268619f75aa)
+![](<../../.gitbook/assets/image (8) (1).png>)
 
 #### macOS: <a href="#h_6e4a920fb2" id="h_6e4a920fb2"></a>
 
 ﻿Open `Files Finder` and choose `Go` form the top menu, select `Go to Folder` and type:\
 ﻿ `~/Library/Application Support/TestProject/Agent/agent-configuration.json`
 
-![](https://downloads.intercomcdn.com/i/o/403489142/dc46f818f35c996e41834d22/image.png)
+![](<../../.gitbook/assets/image (9) (1).png>)
 
 **Linux**\
 ﻿Navigate to `~/.testproject/agent/` and edit the ports using the command:
 
 `vi agent-configuration.json` from terminal or use any editing tool.
 
-![](https://downloads.intercomcdn.com/i/o/403489692/2c78b77e5f2a9170fc4d6069/image.png)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 _**Note:**_
 
