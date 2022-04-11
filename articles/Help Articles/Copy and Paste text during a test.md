@@ -22,7 +22,7 @@ Create a parameter:
 
 Name it, and then leave the default value empty if it's dynamically assigned during the test.
 
-![](<../../.gitbook/assets/image (461).png>)
+![](<../../.gitbook/assets/image (461) (1).png>)
 
 Select your parameter:
 
@@ -36,13 +36,13 @@ And Save the step:\
 Now to use it hover over the element and use double "SHIFT" to open the element inspector in the field Actions choose Type text action:\
 ﻿
 
-![](<../../.gitbook/assets/image (469).png>)
+![](<../../.gitbook/assets/image (469) (1).png>)
 
 \
 ﻿Then choose the text parameter that you have created:\
 ﻿
 
-![](<../../.gitbook/assets/image (455).png>)
+![](<../../.gitbook/assets/image (455) (1).png>)
 
 Select this:
 
@@ -58,13 +58,13 @@ Select this:
 ﻿So now you can run your flow and save text into a parameter and type or use it as you want.\
 ﻿
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (476) (1).png>)
 
 \
 ﻿The text will be taken, assigned into the parameter, and then typed on the field:\
 ﻿
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (474) (1).png>)
 
 _**NOTE:**_
 
