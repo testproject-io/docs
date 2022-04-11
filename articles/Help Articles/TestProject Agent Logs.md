@@ -10,7 +10,7 @@ Sometimes when you report an issue you will be requested to provide your Agent l
 
 If your agent is registered you can find the logs here:
 
-![](https://downloads.intercomcdn.com/i/o/366635157/0603da3668c63dd687066c3b/RNBqvabTR6.gif)
+![](../../.gitbook/assets/RNBqvabTR6.gif)
 
 #### Unregistered Agent logs: <a href="#h_a4f248d483" id="h_a4f248d483"></a>
 

@@ -22,6 +22,6 @@ If the issue is not resolved please follow these steps:
 * Press F12
 * Go to the "reload page" button and right click:
 
-![](https://downloads.intercomcdn.com/i/o/377111132/2e9aaa15f6a6c6a2a58bfeac/chrome\_qhgK17QOF4.png)
+![](<../../.gitbook/assets/image (471).png>)
 
 * Click on "Empty cache and Hard Reload"
