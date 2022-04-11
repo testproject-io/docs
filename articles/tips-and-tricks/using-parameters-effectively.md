@@ -74,7 +74,7 @@ After we have created the parameter it is now ready to be used in the test. para
 
 You can access the parameters directly from a test step (for actions that with input/output fields), by clicking on the blue "Parameter" label on top of the input field or on the "Select parameter" option on the output fields in the steps.
 
-![Using a parameter in both input and output fields](<../../.gitbook/assets/image (468) (1).png>)
+![Using a parameter in both input and output fields](<../../.gitbook/assets/image (468) (1) (1).png>)
 
 Parameters can also be used in combination with static text for example validating the welcome message on our example login page:&#x20;
 
