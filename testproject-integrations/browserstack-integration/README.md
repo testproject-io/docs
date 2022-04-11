@@ -18,7 +18,7 @@ Integrating TestProject with BrowserStack allows you and your teammates to run y
 
 ### Requirements
 
-* [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free forever plan [here](https://app.testproject.io/signup/).
+* [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free plan [here](https://app.testproject.io/signup/).
 * [**BrowserStack**](https://www.browserstack.com) account - To utilize BrowserStack cloud you need an account. If you don't already have one, just visit [here](https://www.browserstack.com/users/sign\_up) to create a free trial.
 
 ### Get BrowserStack Username & Access Key

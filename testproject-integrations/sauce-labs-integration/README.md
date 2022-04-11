@@ -16,7 +16,7 @@ Integrating TestProject with Sauce Labs allows you and your teammates to run you
 
 ### Requirements
 
-* [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free forever plan [here](https://app.testproject.io/signup/).
+* [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free plan [here](https://app.testproject.io/signup/).
 * [Sauce Labs](https://saucelabs.com) account - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here ](https://saucelabs.com/sign-up)to create a free trial.
 
 ### Get Sauce Labs Username & Access Key
