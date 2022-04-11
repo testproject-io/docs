@@ -31,11 +31,11 @@ In this example, I will create a loop to find a specific name and store the text
     (In this example, I build my unique locator using the element text. You can read more about locating techniques [_**here**_](https://intercom.help/testprojectio/en/articles/4206256-mastering-element-locating-techniques-and-relative-xpath-writing-skill)).
 * Then, using the unique locator, I will add a step with the action "**Get text(if visible)**" and **store the value into a **_**project parameter**_(let's call it "Name\_text").
 
-![](https://downloads.intercomcdn.com/i/o/466933547/39c6fc41b4fe3c1aa0f6f343/image.png)
+![](<../../.gitbook/assets/image (1) (2).png>)
 
-* After that, I will add a step that clicks on the "Next" button if it is visible(using the action "Click if visible") :
+* After that, I will add a step that clicks on the "Next" button if it is visible(using the action "Click if visible")
 
-![](https://downloads.intercomcdn.com/i/o/466938715/e8d5956def72cfc6dc121702/image.png)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 * After adding these steps, we are ready to create the loop.\
   To achieve that, first, we will need to group our steps into a test and give it a name (let’s call our subtest “Paginated Table Loop”).\
@@ -43,15 +43,15 @@ In this example, I will create a loop to find a specific name and store the text
 
 This is how you can group the steps into a subtest:
 
-![](https://downloads.intercomcdn.com/i/o/466943786/c95ff700fe167c1f72d2a542/image.png)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 * Now, let’s add a loop to this subtest with a condition. We can achieve that by opening the advanced options of this subtest:
 
-![](https://downloads.intercomcdn.com/i/o/466946772/eb3b39b8363b7de8526df9f6/image.png)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 * We will add a loop that repeats the subtest the maximum times we might need it to perform the "Click" action to find the element. At the same time, we will add a condition that stops repeating the subtest if the element is found. This is how you can achieve it:
 
-![](https://downloads.intercomcdn.com/i/o/466955471/7acf8913b412a27b39512c84/image.png)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 That’s it; the test is ready to be executed. Simply adapt the loop to your needs - you can perform actions in any column of this row once you find the element.
 
@@ -78,7 +78,7 @@ Once the test is created(for the first page of the table) - we only need to add 
 * To achieve that, we have to **group as a step** all the steps of the dynamic loop created.
 * After that, I will add a step that clicks on the "Next" button if it is visible(using the action "Click if visible") :
 
-![](https://downloads.intercomcdn.com/i/o/466938715/e8d5956def72cfc6dc121702/image.png)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 * Then, we have to **group as a step** again the subtest and the "click if visible" action.
 * Finally, we will open the new subtest, open the "advanced options" and add to the "REPEAT" field the number of pages our table has(or more).
@@ -102,10 +102,10 @@ Have a look at this shared test:
 
 Step two calls a nested test withten0 iterations (10 pages):
 
-![](https://downloads.intercomcdn.com/i/o/366087598/e39812acb4f7c24f392fc7bb/Screen+Shot+2021-07-21+at+21.06.05.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-21 at 21.06.05.png>)
 
 And this is the inner test:
 
-![](https://downloads.intercomcdn.com/i/o/366087659/9b96823281954fa76cdac390/Screen+Shot+2021-07-21+at+21.06.26.png)
+![](<../../.gitbook/assets/Screen Shot 2021-07-21 at 21.06.26.png>)
 
 That’s it; the test is ready to be executed. Simply adapt the loop to your needs.😃

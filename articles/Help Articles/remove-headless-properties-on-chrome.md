@@ -49,7 +49,7 @@ We can change these properties using the Selenium Desired Capabilities to start 
 
 You can set them on TestProject on the job like this:
 
-![](<../../.gitbook/assets/image (2) (2).png>)
+![](<../../.gitbook/assets/image (2) (2) (1).png>)
 
 * Be sure to **remove headless** from the User-Agent, use [this site ](https://developers.whatismybrowser.com/useragents/explore/software\_name/chrome/)to determine your user agent.
 * Request your application in the correct language in "lang=en"

@@ -24,7 +24,7 @@ And sign up or log in with the Gmail account you'd like to access.
 
 ​
 
-![](<../../.gitbook/assets/image (1) (2).png>)
+![](<../../.gitbook/assets/image (1) (2) (1).png>)
 
 And then, you will be able to return to and log in to your Gmail account.
 
