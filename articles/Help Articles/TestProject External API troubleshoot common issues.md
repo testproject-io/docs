@@ -10,11 +10,13 @@ When you are getting started with TestProject External API you might come across
 
 Did you authorize the page to use the API key? check that you are using an authorization token (API Token) with access to the correct Project.
 
-![](https://downloads.intercomcdn.com/i/o/340730450/3078d2343d9e39fef3515ee4/image.png)
+![](<../../.gitbook/assets/image (11) (3).png>)
 
 Make sure to change the required data on the example values, the default data is an example of a valid JSON object and will **not** match your details.
 
-![](https://downloads.intercomcdn.com/i/o/340730808/8c02bbdc5f1c366841b66a6d/image.png)
+
+
+![](<../../.gitbook/assets/image (12) (3).png>)
 
 #### 400: Bad request <a href="#h_341392155b" id="h_341392155b"></a>
 
@@ -26,7 +28,7 @@ In case you want to use details make sure you provide them in a valid JSON objec
 
 Solution: use the API Key in the lock on the right side.
 
-![](https://downloads.intercomcdn.com/i/o/354977480/7185324b8c2900181491d3ce/image.png)
+![](<../../.gitbook/assets/image (13) (1).png>)
 
 #### 404: Not found <a href="#h_676d88dcc5" id="h_676d88dcc5"></a>
 

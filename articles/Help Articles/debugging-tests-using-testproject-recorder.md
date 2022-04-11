@@ -16,11 +16,11 @@ We can execute all the steps until 5, or all steps from 5 to the end by clicking
 
 We can execute all the steps selected by hovering on the left side of any step and selecting it.
 
-![](https://downloads.intercomcdn.com/i/o/402949636/ffd6a2c07ac9cda931cc7996/image.png)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 we can also hold "SHIFT" to multiple select all the steps from 1 point to another
 
-![](https://downloads.intercomcdn.com/i/o/402951745/77c7451a222a8d92727a5b6c/ynPDkCYMRQ.gif)
+![](../../.gitbook/assets/ynPDkCYMRQ.gif)
 
 #### Make sure you are locators are working <a href="#h_351fd3b91a" id="h_351fd3b91a"></a>
 
@@ -32,15 +32,15 @@ Sometimes elements are changing from recording to execution, this is how you can
 
 Go into the step and use the magnifying glass to locate the Element on the page
 
-![](https://downloads.intercomcdn.com/i/o/402964907/f2807a2ea1eb3e35eb575174/image.png)
+![](<../../.gitbook/assets/image (15) (2).png>)
 
 If the element is not detected, go into Edit Element using the pencil sign:
 
-![](https://downloads.intercomcdn.com/i/o/402965590/4b925bfa6cf811e28776700e/image.png)
+![](<../../.gitbook/assets/image (16) (1).png>)
 
 and now check the other locators:
 
-![](https://downloads.intercomcdn.com/i/o/402966190/cd8fa8be4e5a70dd54e12524/image.png)
+![](<../../.gitbook/assets/image (17) (1).png>)
 
 To change the priority of the locator use the arrow and move the wanted locator to the top. if there is an unnecessary locator use the X and remove it.
 
@@ -56,7 +56,7 @@ This window helps to understand which activities lead to the step failing, and i
 
 The Recorder automatically creates "switch to window" steps for you, however, it's important to know how to create and manage them. as sometimes you will need to add them manually. For moving between tabs please use a specific index if you want to verify you are on the correct window you can check the URL or use any other method but if you are running the same flow switching to a specific window should be the same.
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/402960317/b058f03861e5100874d49c34/3a07a44ff8819e03bb8d97e3f84d60153406d0b3.jpeg)
+![](../../.gitbook/assets/3a07a44ff8819e03bb8d97e3f84d60153406d0b3.jpeg)
 
 _Note that the index starts at 0 (first tab)_
 
