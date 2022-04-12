@@ -22,7 +22,7 @@ navigate to the Agents tab: [https://app.testproject.io/#/agents](https://app.te
 
 Choose your local agent and click on Devices.
 
-![](<../../.gitbook/assets/image (510).png>)
+![](<../../.gitbook/assets/image (510) (1).png>)
 
 For this moment you can simply follow the new test creation flow in TestProject and select one of the simulators as you do for physical devices to start recording your automated tests. after you create a simulator just search your application from the installed application list:
 

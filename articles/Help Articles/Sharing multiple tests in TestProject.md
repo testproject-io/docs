@@ -36,7 +36,7 @@ To share multiple tests we can simply follow these steps:
 
 a) Duplicate a project in our account.
 
-![](<../../.gitbook/assets/image (478).png>)
+![](<../../.gitbook/assets/image (479).png>)
 
 b) Remove or keep the tests we want to share.
 
@@ -52,15 +52,15 @@ d) Invite the user to our account.
 
 e) Give the user permissions to the project:
 
-![](<../../.gitbook/assets/image (480).png>)
+![](<../../.gitbook/assets/image (481).png>)
 
-![](<../../.gitbook/assets/image (479).png>)
+![](<../../.gitbook/assets/image (480).png>)
 
 #### Share multiple tests using subtests <a href="#h_e314b18317" id="h_e314b18317"></a>
 
 To share multiple tests as we can use nested tests first we will create a new test. now let's edit the test and use the following button to add all the tests we would like to share:
 
-![](<../../.gitbook/assets/image (516).png>)
+![](<../../.gitbook/assets/image (517).png>)
 
 We are going to "SAVE & EXIT" and now we can simply share this test as a file a direct link or via email. any subtest inside the test we shared will be saved in the file or will be available to the user when sharing
 

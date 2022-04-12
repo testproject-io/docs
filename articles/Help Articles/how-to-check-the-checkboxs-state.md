@@ -16,11 +16,11 @@ _(Notice: if the checkbox is checked, the “checked” attribute value will be 
 
 1. Click on the “Advanced Options”
 
-![](<../../.gitbook/assets/image (566).png>)
+![](<../../.gitbook/assets/image (566) (1).png>)
 
 1. Scroll down to the “Conditions” section, set the parameter to “is\_checked”, the condition to “Equals”, and leave the last field empty, so the condition will check whether the value is empty or not.
 
-![](<../../.gitbook/assets/image (537) (1).png>)
+![](<../../.gitbook/assets/image (537) (1) (1).png>)
 
 This way, the “Click” step will be executed only if the condition is met, otherwise, it will be skipped.\
 ﻿Using these two test steps, you can click on a checkbox only if it’s unchecked.

@@ -49,7 +49,7 @@ description: >-
 
 1. Go to your TestProject account and click on **Integrations -> API**
 
-![](<../../.gitbook/assets/image (470) (1).png>)
+![](<../../.gitbook/assets/image (470) (1) (1).png>)
 
 2\. If you do not have an API key, click on **Create API Key**; now, we can copy it for further use in our Jenkins Project.
 
@@ -71,11 +71,11 @@ Press on **Try It out** to see the body and parameters of the request.
 \
 First, we will get the project id, go to your TestProject account, find your project, and select the three dots near it -> **Copy Id**.
 
-![](<../../.gitbook/assets/image (558).png>)
+![](<../../.gitbook/assets/image (558) (1).png>)
 
 Now that you have the ID, you can do the following:
 
-![](<../../.gitbook/assets/image (559).png>)
+![](<../../.gitbook/assets/image (559) (1).png>)
 
 8\. You can press on Execute to see the Request URL **OR** take the URL from here and fill in the {projectid} with your project id.
 

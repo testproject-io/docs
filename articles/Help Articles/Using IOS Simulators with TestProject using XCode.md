@@ -8,7 +8,7 @@ The simulator app, available within Xcode, presents the iPhone or iPad user inte
 
 `It is not possible to run Xcode on a Windows or Linux operating systems.`
 
-![](<../../.gitbook/assets/image (537).png>)
+![](<../../.gitbook/assets/image (537) (1).png>)
 
 You interact with the Simulator by using the keyboard and the mouse to emulate taps, device rotation, and other user actions. It also allows you to automate your App without the need for a physical device.
 

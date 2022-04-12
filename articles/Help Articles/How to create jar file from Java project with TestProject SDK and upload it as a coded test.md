@@ -2,7 +2,7 @@
 
 Download Java SDK from [Integrations](https://app.testproject.io/#/integrations/develop-addon) under Develop an Addon.
 
-![](<../../.gitbook/assets/image (463).png>)
+![](<../../.gitbook/assets/image (463) (1).png>)
 
 Add the downloaded Jar to the project.
 

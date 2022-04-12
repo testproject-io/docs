@@ -38,26 +38,26 @@ Then click next, and select the first option:
 
 Then click browse and create the file to output to, then hit next:
 
-![](<../../.gitbook/assets/image (463) (1).png>)
+![](<../../.gitbook/assets/image (463) (1) (1).png>)
 
 Now double click the new file and follow the instructions:
 
-![](<../../.gitbook/assets/image (453) (1).png>)
+![](<../../.gitbook/assets/image (453) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (497).png>)
 
 Now choose the **Trusted Root Certification Authorities** via browse button:
 
-![](<../../.gitbook/assets/image (487).png>)
+![](<../../.gitbook/assets/image (487) (1).png>)
 
 Click next, then finish, windows will ask you in you are sure, agree.\
 
 
 Now simply restart Chrome with chrome://restart:
 
-![](<../../.gitbook/assets/image (546).png>)
+![](<../../.gitbook/assets/image (546) (1).png>)
 
 And you should be good to go!\
 
 
-![](<../../.gitbook/assets/image (494).png>)
+![](<../../.gitbook/assets/image (494) (1).png>)

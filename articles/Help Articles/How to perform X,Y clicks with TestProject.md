@@ -33,7 +33,7 @@ We can either use the new tab name or the tooltip we have added.
 
 After we retrieved the X, Y coordinates, we will execute a step from the addon Web Extensions named Execute JavaScript.
 
-![](<../../.gitbook/assets/image (483).png>)
+![](<../../.gitbook/assets/image (485).png>)
 
 We will type this into our Code input to click on the exact coordinates:
 

@@ -15,7 +15,7 @@ Now copy the **“TestProjectAgent\_x64.sh”** file to the headless machine via
 Select your machine and go to the Edit option:\
 
 
-![](<../../.gitbook/assets/image (561).png>)
+![](<../../.gitbook/assets/image (561) (1).png>)
 
 Then navigate to the options tab, choose shared folders, click add and add your path:
 
@@ -56,7 +56,7 @@ Now open TestProject application with chrome browser, go to the agent tab and cl
 
 Type in the agent's IP saved from earlier, and choose a name for your agent:
 
-![](<../../.gitbook/assets/image (488).png>)
+![](<../../.gitbook/assets/image (488) (1).png>)
 
 Click save, then register:\
 

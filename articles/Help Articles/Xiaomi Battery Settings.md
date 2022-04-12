@@ -16,7 +16,7 @@ You can do this by heading to your device's **settings**:
 
 Then **battery & performance**:
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (453) (1).png>)
 
 Select _**Manage apps battery usage:**_
 

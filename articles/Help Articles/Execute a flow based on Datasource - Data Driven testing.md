@@ -12,7 +12,7 @@ This solution includes True/False values on your CSV file that you upload to Tes
 
 For example this is my **main test:**
 
-![](<../../.gitbook/assets/image (536).png>)
+![](<../../.gitbook/assets/image (537).png>)
 
 These are the parameters:
 
@@ -20,7 +20,7 @@ These are the parameters:
 
 These are the conditions on the sub-tests:
 
-![](<../../.gitbook/assets/image (481).png>)
+![](<../../.gitbook/assets/image (483).png>)
 
 And this is the second sub-test
 
@@ -34,7 +34,7 @@ You can determine which subtest will run on each iteration. (all, none or some)
 
 ![](<../../.gitbook/assets/image (476).png>)
 
-![](<../../.gitbook/assets/image (461).png>)
+![](<../../.gitbook/assets/image (462).png>)
 
 ![](<../../.gitbook/assets/image (544).png>)
 

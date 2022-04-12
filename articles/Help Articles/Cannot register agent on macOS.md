@@ -13,7 +13,7 @@ If you get an error, follow the steps below.
 
 After registration is complete (if you got no errors), you should see the "TV" icon go green, and your agent with the name you gave it pop up under My Agents.
 
-![](<../../.gitbook/assets/image (517).png>)
+![](<../../.gitbook/assets/image (517) (1).png>)
 
 If you get a registration error:
 

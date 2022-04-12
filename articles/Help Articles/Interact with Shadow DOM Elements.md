@@ -8,9 +8,9 @@ Here are the steps to follow to perform actions on the Element:
 
 1. Create a step with the method Execute JavaScript
 
-![](https://downloads.intercomcdn.com/i/o/355657749/897107bf5879654c2cfbf1de/1.png)
+![](<../../.gitbook/assets/image (470).png>)
 
-![](<../../.gitbook/assets/image (466) (2).png>)
+![](<../../.gitbook/assets/image (478).png>)
 
 2\. Get into developer tools (F12 Button) or:
 
@@ -18,11 +18,11 @@ Here are the steps to follow to perform actions on the Element:
 2. click on more tools
 3. click developer tools at the bottom
 
-![](https://downloads.intercomcdn.com/i/o/355660713/9f13b291be8f2f52670c6683/3.png)
+![](<../../.gitbook/assets/image (453).png>)
 
 Now we will find the js path of the element you want to act. This will serve as your locator.
 
-![](https://downloads.intercomcdn.com/i/o/355716617/534358ccfbb2c8bc5506aefe/0i4dbdAjTi.gif)
+![](../../.gitbook/assets/0i4dbdAjTi.gif)
 
 4\. Now, it's time to build the action we want. Here are three examples for basic operations
 
@@ -30,15 +30,15 @@ Now we will find the js path of the element you want to act. This will serve as 
 
     to do that, you will need to add the `.click()` function at the end of your locator:
 
-![](https://downloads.intercomcdn.com/i/o/355718079/8b9d6112283ce20eac84535e/5.png)
+![](<../../.gitbook/assets/image (516).png>)
 
 2\. Type text in element: to do that, you will need to add this to the end of the path you copied `.value="the text you want to put in"`
 
-![](https://downloads.intercomcdn.com/i/o/355718603/48bd9bda5016fa1182494cf2/6.png)
+![](<../../.gitbook/assets/image (566).png>)
 
 3\. Get text to a parameter: to do that, you will need to add this to the start of the path you copied "return" and to the end ".textContent"
 
-![](https://downloads.intercomcdn.com/i/o/355719189/3b72cf2c1cc1e2e455636a6a/7.png)
+![](<../../.gitbook/assets/image (547).png>)
 
 So as you can see, using execute javascript is very easy,
 

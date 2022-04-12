@@ -30,7 +30,7 @@ you can see the path to the profile folder by opening Firefox browser, and searc
 about:profiles
 ```
 
-![](<../../.gitbook/assets/image (462).png>)
+![](<../../.gitbook/assets/image (463).png>)
 
 ### What is the Best Practice? <a href="#h_d9397b918a" id="h_d9397b918a"></a>
 
@@ -58,7 +58,7 @@ then click on Create a New Profile
 
 3\) We can set the following Selenium Desired capabilities on our job:
 
-![](<../../.gitbook/assets/image (482).png>)
+![](<../../.gitbook/assets/image (484).png>)
 
 And add these capabilities:
 
@@ -82,7 +82,7 @@ To change these settings follow these steps:
 
 For **example** zip file (open with WinRar):
 
-![](<../../.gitbook/assets/image (545).png>)
+![](<../../.gitbook/assets/image (546).png>)
 
 2\) Click on the zip file option in Firefox settings under the Applications section and change it from always ask to save the file, this will automatically save the file to the default directory.
 

@@ -66,7 +66,7 @@ Now let's take another scenario that evaluate the **sum of 2 values** operation 
 
 Here how it achieved with TestProject recorder:
 
-![](<../../.gitbook/assets/image (547).png>)
+![](<../../.gitbook/assets/image (547) (1).png>)
 
 Now we call subtest A if the value from the previous step was 3:
 
@@ -80,7 +80,7 @@ Search the test name:
 
 In the advanced options, we will add the condition
 
-![](<../../.gitbook/assets/image (553).png>)
+![](<../../.gitbook/assets/image (553) (1).png>)
 
 And now the step will show the 'if' symbol:
 
@@ -94,4 +94,4 @@ We have achieved If 3 flow A Else Flow B.
 
 In the reports, you will see flow A execute and flow B skipped:
 
-![](<../../.gitbook/assets/image (484).png>)
+![](<../../.gitbook/assets/image (484) (1).png>)
