@@ -79,7 +79,7 @@ Now that you have the ID, you can do the following:
 
 8\. You can press on Execute to see the Request URL **OR** take the URL from here and fill in the {projectid} with your project id.
 
-![](<../../.gitbook/assets/image (532).png>)
+![](<../../.gitbook/assets/image (532) (1).png>)
 
 ## Now we will go back to the Jenkins dashboard and fill in the HTTP Request build Step. <a href="#now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step" id="now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step"></a>
 

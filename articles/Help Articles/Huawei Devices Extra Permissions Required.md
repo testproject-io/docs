@@ -8,6 +8,6 @@ If you cannot mirror and view your Huawei Android device, make sure to enable th
 
 1. Enable **Allow ADB debugging in charge only mode.**&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/205861233/bce807295b2abd7b9385889e/The-Allow-ADB-debugging-in-charge-only-mode-option-in-Huawei-Honor-phones.png)
+![](<../../.gitbook/assets/image (532).png>)
 
-2\. Tap on **Select debug app**  and choose either **Chrome** or **uiautomator server**.
+2\. Tap on **Select debug app** and choose either **Chrome** or **uiautomator server**.
