@@ -16,20 +16,22 @@ I will use __ [_https://material.angular.io/_](https://material.angular.io) __ p
 
 We will need Chrome Developer Tools (or similar in another browser, but i will use this one)
 
-![](https://downloads.intercomcdn.com/i/o/222244158/ea009e19a9e1dba62f396ac0/2020-06-29\_12h02\_11.gif)
+![](../../.gitbook/assets/2020-06-29\_12h02\_11.gif)
 
 We need to hit an element inspection tool and then click on element we want to inspect (to see this element in HTML page with all it's properties and where it's located in the page)
 
-![](https://downloads.intercomcdn.com/i/o/222247614/95bb75440d7fa0a0ea30bb99/2020-06-29\_12h17\_20.gif)
+![](../../.gitbook/assets/2020-06-29\_12h17\_20.gif)
 
 Now let's have a closer look to element we selected.
 
-![](https://downloads.intercomcdn.com/i/o/222270232/e3990cea11409b0fc7516fc6/2020-06-29\_12h19\_57.png)
+![](<../../.gitbook/assets/image (538).png>)
 
 Here's the copy of this element in html format
 
 ```html
-<a _ngcontent-ity-c49="" mat-button="" routerlink="guides" class="mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base" tabindex="0" aria-disabled="false" href="/guides">
+<a _ngcontent-ity-c49="" mat-button="" routerlink="guides"
+class="mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base" tabindex="0" aria-disabled="false"
+href="/guides">
 ```
 
 _The parts from which element is built from :_

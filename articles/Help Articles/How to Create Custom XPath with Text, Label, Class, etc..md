@@ -13,10 +13,10 @@ Let's try to locate the "Full Name" text box using its place holder value, which
 
 On the placeholder attribute, you have 3 buttons. The right one, will open the "Element locator" tool with the XPath value of the element based on the placeholder:
 
-![](<../../.gitbook/assets/image (490).png>)
+![](<../../.gitbook/assets/image (492).png>)
 
 In the "Element Locator" pop-up window, we can see the generated XPath value we got. You can click on "Evaluate" to identify this element in the page and check if it's a unique identifier or not. By clicking on the "Save Element" button, you can easily create a new element that would be identified using the generated XPath value.
 
-![](<../../.gitbook/assets/image (475).png>)
+![](<../../.gitbook/assets/image (476).png>)
 
 That's it! You now have a new element that you are locating using a smart XPath value :)

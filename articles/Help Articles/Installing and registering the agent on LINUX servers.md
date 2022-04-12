@@ -15,11 +15,11 @@ Now copy the **“TestProjectAgent\_x64.sh”** file to the headless machine via
 Select your machine and go to the Edit option:\
 
 
-![](<../../.gitbook/assets/image (552).png>)
+![](<../../.gitbook/assets/image (561).png>)
 
 Then navigate to the options tab, choose shared folders, click add and add your path:
 
-![](<../../.gitbook/assets/image (555).png>)
+![](<../../.gitbook/assets/image (565).png>)
 
 Click OK and run your machine.\
 Run the command&#x20;
@@ -44,7 +44,7 @@ Now run: ./TestProject\_Agent\_YOUR\_VERSION.sh
 And follow the instructions given:\
 
 
-![](<../../.gitbook/assets/image (514).png>)
+![](<../../.gitbook/assets/image (518).png>)
 
 At the end it will ask you if you want to start the application, type y and enter.\
 Type the command: sudo apt install net-tools\
@@ -52,21 +52,21 @@ Type ifconfig\
 Save the number shown after inet, this is the agents IP, you will use it to remotely register your agent on Linux server.\
 Now open TestProject application with chrome browser, go to the agent tab and click Register agent: (you can browse to TestProject application from any desktop that have a browser as long as it on the same network as your Linux server)&#x20;
 
-![](<../../.gitbook/assets/image (508).png>)
+![](<../../.gitbook/assets/image (512).png>)
 
 Type in the agent's IP saved from earlier, and choose a name for your agent:
 
-![](<../../.gitbook/assets/image (486).png>)
+![](<../../.gitbook/assets/image (488).png>)
 
 Click save, then register:\
 
 
-![](<../../.gitbook/assets/image (534).png>)
+![](<../../.gitbook/assets/image (543).png>)
 
 Congratulations! you have registered your Agent! it will now show in your agent tab:\
 
 
-![](<../../.gitbook/assets/image (522).png>)
+![](<../../.gitbook/assets/image (529).png>)
 
 And is available for use!\
 To run the agent once you restart the server:

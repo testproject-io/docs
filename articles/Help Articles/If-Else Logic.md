@@ -16,13 +16,13 @@ You can find the Conditions here:
 
 In the Recorder, locate the required step and click on the Advanced Options
 
-![](<../../.gitbook/assets/image (516).png>)
+![](<../../.gitbook/assets/image (522).png>)
 
-![](<../../.gitbook/assets/image (507).png>)
+![](<../../.gitbook/assets/image (511).png>)
 
 And in the Step Menu:
 
-![](<../../.gitbook/assets/image (536).png>)
+![](<../../.gitbook/assets/image (545).png>)
 
 #### If/Else example based on label text <a href="#ifelse-example-based-on-label-text" id="ifelse-example-based-on-label-text"></a>
 
@@ -30,15 +30,15 @@ Let's take simple scenario that check for a text label, IF the text we got is th
 
 For example, we will take the text of the following Label:
 
-![](<../../.gitbook/assets/image (558).png>)
+![](<../../.gitbook/assets/image (568).png>)
 
 Hover over the element, press double shift to freeze it, in Actions pick Get Text:
 
-![](<../../.gitbook/assets/image (483).png>)
+![](<../../.gitbook/assets/image (485).png>)
 
 Save the text into a Parameter.
 
-![](<../../.gitbook/assets/image (543).png>)
+![](<../../.gitbook/assets/image (552).png>)
 
 Next, lets create a step that will type text to a TextArea only if the text is Equal to "TestProject"
 
@@ -46,7 +46,7 @@ Next, lets create a step that will type text to a TextArea only if the text is E
 
 And add the condition in the step:
 
-![](<../../.gitbook/assets/image (542).png>)
+![](<../../.gitbook/assets/image (551).png>)
 
 If the text is NOT equal, the step will not execute and will be shown in grey.
 
@@ -54,7 +54,7 @@ If the text is NOT equal, the step will not execute and will be shown in grey.
 
 In the reports, it will look like so:
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (475).png>)
 
 #### **If/Else with different test flows** <a href="#ifelse-with-different-test-flows" id="ifelse-with-different-test-flows"></a>
 
@@ -66,32 +66,32 @@ Now let's take another scenario that evaluate the **sum of 2 values** operation 
 
 Here how it achieved with TestProject recorder:
 
-![](<../../.gitbook/assets/image (538).png>)
+![](<../../.gitbook/assets/image (547).png>)
 
 Now we call subtest A if the value from the previous step was 3:
 
 Press on 'Add test as step':
 
-![](<../../.gitbook/assets/image (547).png>)
+![](<../../.gitbook/assets/image (556).png>)
 
 Search the test name:
 
-![](<../../.gitbook/assets/image (515).png>)
+![](<../../.gitbook/assets/image (521).png>)
 
 In the advanced options, we will add the condition
 
-![](<../../.gitbook/assets/image (544).png>)
+![](<../../.gitbook/assets/image (553).png>)
 
 And now the step will show the 'if' symbol:
 
-![](<../../.gitbook/assets/image (477).png>)
+![](<../../.gitbook/assets/image (478).png>)
 
 To launch Flow B (Subtest B) we will check the opposite condition of the previous step, so we will check if it NOT equal to 3:
 
-![](<../../.gitbook/assets/image (548).png>)
+![](<../../.gitbook/assets/image (557).png>)
 
 We have achieved If 3 flow A Else Flow B.
 
 In the reports, you will see flow A execute and flow B skipped:
 
-![](<../../.gitbook/assets/image (482).png>)
+![](<../../.gitbook/assets/image (484).png>)

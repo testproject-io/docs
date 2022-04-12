@@ -8,17 +8,17 @@ description: >-
 
 First we go to the Editor or the recorder of the test you want to extract the steps from:
 
-![](<../../.gitbook/assets/image (503).png>)
+![](<../../.gitbook/assets/image (507).png>)
 
 We will now select all the steps we want to extract and move between tests or projects.
 
 For example:
 
-![](<../../.gitbook/assets/image (489).png>)
+![](<../../.gitbook/assets/image (491).png>)
 
 Now we shall click on the '**Group steps into test**' button.
 
-![](<../../.gitbook/assets/image (540).png>)
+![](<../../.gitbook/assets/image (549).png>)
 
 This will extract those steps into a auto generated test with a name of your choosing.
 
@@ -26,7 +26,7 @@ It will make those steps as nested test inside your test so no need to worry the
 
 Now we go back to our Tests folder, we will see the test we just generated.
 
-![](<../../.gitbook/assets/image (498).png>)
+![](<../../.gitbook/assets/image (500).png>)
 
 Now if we just want another test to use those steps we can just call it as a nested test.
 
@@ -36,7 +36,7 @@ By adding a Test as a step:
 
 To use those steps on a different project we shall click on the 3 dots near the test in your Tests page.
 
-![](<../../.gitbook/assets/image (512).png>)
+![](<../../.gitbook/assets/image (516).png>)
 
 And click on Copy to project
 

@@ -13,14 +13,13 @@ You can find it here: [https://addons.testproject.io/web-extensions](https://add
 \
 After the first step of "Navigate to" action add a step of "Set window size"
 
-![](https://downloads.intercomcdn.com/i/o/197379335/eaae7ea63ef399b1b01e7a2d/image.png)
+![](../../.gitbook/assets/chrome\_cRScbKPpYC.png)
 
 Then, select the Set Window Size and supply the required size.
 
-For example:\
+For example:
 
-
-![](https://downloads.intercomcdn.com/i/o/197355008/e26979424f853f688ef5affa/image.png)
+![](../../.gitbook/assets/chrome\_A5VII9jLD2.png)
 
 \
 You can also use the **Maximize Screen** action if you wish it to run on full screen.

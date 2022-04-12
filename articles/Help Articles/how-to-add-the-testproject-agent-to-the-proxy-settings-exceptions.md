@@ -7,5 +7,5 @@ You have to add this exception to your proxy settings:
 1. Open the Proxy Settings in your computer
 2. Add this exception: **\*.tpagent.io**
 
-![](<../../.gitbook/assets/image (484).png>)
+![](<../../.gitbook/assets/image (486).png>)
 
