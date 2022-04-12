@@ -31,7 +31,7 @@ Select your parameter:
 And Save the step:\
 ﻿
 
-![](<../../.gitbook/assets/image (472) (1).png>)
+![](<../../.gitbook/assets/image (472) (2).png>)
 
 Now to use it hover over the element and use double "SHIFT" to open the element inspector in the field Actions choose Type text action:\
 ﻿
@@ -46,13 +46,13 @@ Now to use it hover over the element and use double "SHIFT" to open the element 
 
 Select this:
 
-![](<../../.gitbook/assets/image (473) (1).png>)
+![](<../../.gitbook/assets/image (473) (2).png>)
 
 \
 ﻿and save the step:\
 ﻿
 
-![](<../../.gitbook/assets/image (475) (1).png>)
+![](<../../.gitbook/assets/image (475) (2).png>)
 
 \
 ﻿So now you can run your flow and save text into a parameter and type or use it as you want.\

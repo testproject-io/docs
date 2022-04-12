@@ -16,7 +16,7 @@ You can find the Conditions here:
 
 In the Recorder, locate the required step and click on the Advanced Options
 
-![](<../../.gitbook/assets/image (522).png>)
+![](<../../.gitbook/assets/image (522) (1).png>)
 
 ![](<../../.gitbook/assets/image (511).png>)
 
@@ -54,7 +54,7 @@ If the text is NOT equal, the step will not execute and will be shown in grey.
 
 In the reports, it will look like so:
 
-![](<../../.gitbook/assets/image (475).png>)
+![](<../../.gitbook/assets/image (475) (1).png>)
 
 #### **If/Else with different test flows** <a href="#ifelse-with-different-test-flows" id="ifelse-with-different-test-flows"></a>
 

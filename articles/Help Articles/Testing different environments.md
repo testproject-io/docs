@@ -10,11 +10,11 @@ First we will create a CSV file from the test we wish to run on multiple testing
 
 On the right side of the test, we have 3 dots, click on them and click on **Data Source Template**.
 
-![](<../../.gitbook/assets/image (562).png>)
+![](<../../.gitbook/assets/image (563).png>)
 
 After that we have the **ApplicationURL** header, here we will insert our different testing environment URLs
 
-![](<../../.gitbook/assets/image (454).png>)
+![](<../../.gitbook/assets/image (455).png>)
 
 Now we shall attach this Data Source to the test.
 

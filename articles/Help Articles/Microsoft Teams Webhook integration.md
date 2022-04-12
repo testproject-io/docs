@@ -62,7 +62,7 @@ _If you are a user ask your admin to create a Teams Web Hook and skip to steps 3
 
 4\) Choose the created WebHook:
 
-![](<../../.gitbook/assets/image (455) (1).png>)
+![](<../../.gitbook/assets/image (455) (2).png>)
 
 Now everything is set and ready, a TestProject notification looks like this:
 

@@ -24,7 +24,7 @@ We need to hit an element inspection tool and then click on element we want to i
 
 Now let's have a closer look to element we selected.
 
-![](<../../.gitbook/assets/image (538).png>)
+![](<../../.gitbook/assets/image (538) (1).png>)
 
 Here's the copy of this element in html format
 

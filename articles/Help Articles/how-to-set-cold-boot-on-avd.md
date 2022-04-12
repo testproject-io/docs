@@ -6,4 +6,4 @@ After you restart, it should be detected under your agent.
 
 You can find it here:
 
-![](<../../.gitbook/assets/image (473).png>)
+![](<../../.gitbook/assets/image (473) (1).png>)

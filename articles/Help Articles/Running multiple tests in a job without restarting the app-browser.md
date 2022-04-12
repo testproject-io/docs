@@ -9,7 +9,7 @@ description: >-
 First, we need to create a test. We will use the youtube website for this example:\
 
 
-![](<../../.gitbook/assets/image (452).png>)
+![](<../../.gitbook/assets/image (452) (1).png>)
 
 After creating a simple test with a few steps, we will duplicate the test, add some steps, and disable the first ones(you can delete them as they have no use) :\
 

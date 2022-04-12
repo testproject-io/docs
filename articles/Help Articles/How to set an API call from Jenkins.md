@@ -43,7 +43,7 @@ description: >-
 
 3\. In this window, you can configure the project to your liking. In this article, we will focus on the API call. Go to build, press Add Build Step, **and select HTTP Request**.
 
-![](<../../.gitbook/assets/image (506).png>)
+![](<../../.gitbook/assets/image (506) (1).png>)
 
 ## Now we will create the URL for the request. <a href="#now-we-will-create-the-url-for-the-request" id="now-we-will-create-the-url-for-the-request"></a>
 
@@ -85,7 +85,7 @@ Now that you have the ID, you can do the following:
 
 ![](<../../.gitbook/assets/image (550).png>)
 
-![](<../../.gitbook/assets/image (564).png>)
+![](<../../.gitbook/assets/image (564) (1).png>)
 
 After we save the Request, we can now build it whenever we want, and you can build it in your CI pipeline.
 

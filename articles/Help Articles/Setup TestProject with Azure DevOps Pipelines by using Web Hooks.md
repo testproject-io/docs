@@ -49,7 +49,7 @@ You do not need to fill in the Basic authentication username and password, howev
 The correct format is:\
 **Authorization: {API\_KEY}**
 
-![](<../../.gitbook/assets/image (504).png>)
+![](<../../.gitbook/assets/image (504) (1).png>)
 
 This is how you can create or find your API key using TestProject:\
 \

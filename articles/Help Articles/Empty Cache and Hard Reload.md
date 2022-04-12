@@ -22,6 +22,6 @@ If the issue is not resolved please follow these steps:
 * Press F12
 * Go to the "reload page" button and right click:
 
-![](<../../.gitbook/assets/image (471) (1).png>)
+![](<../../.gitbook/assets/image (471) (2).png>)
 
 * Click on "Empty cache and Hard Reload"

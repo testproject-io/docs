@@ -40,7 +40,7 @@ The agent will then start up on your computer and you will be able to see the st
 
 On Mac, after you have installed the agent, you can run it by finding it in the application folder and double-clicking. This will open it in the dock and you can see the options on it by right-clicking the icon:
 
-![TestProject Agent on Mac](<../.gitbook/assets/image (456) (1).png>)
+![TestProject Agent on Mac](<../.gitbook/assets/image (456) (2).png>)
 
 ### On Linux
 
@@ -126,7 +126,7 @@ testproject-agent register -a agentName -t Your_API_Key
 
 It should look like this:
 
-![Registering the Agent on Windows CMD](<../.gitbook/assets/image (457) (1).png>)
+![Registering the Agent on Windows CMD](<../.gitbook/assets/image (457) (2).png>)
 
 If your windows does not recognize `testproject-agent` commands:
 

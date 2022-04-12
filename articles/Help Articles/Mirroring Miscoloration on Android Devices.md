@@ -18,17 +18,17 @@ This tutorial is intended for Android devices that are being used on TestProject
 
 You will see the following page:
 
-![](<../../.gitbook/assets/image (470).png>)
+![](<../../.gitbook/assets/image (471).png>)
 
 2\. Select the **scRGB liner** option from the dropdown list and **relaunch the browser**:
 
 ![](<../../.gitbook/assets/image (469).png>)
 
-![](<../../.gitbook/assets/image (563).png>)
+![](<../../.gitbook/assets/image (564).png>)
 
 Afterward, attempt to mirror your device again.
 
 3\. **(Optional)** In case the above option did not resolve the issue, select **HDR10** and try again:\
 
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (454).png>)

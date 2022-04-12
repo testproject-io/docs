@@ -4,9 +4,9 @@ description: In this article I will show you how to turn off Self-Healing for Mo
 
 # How to disable self-healing AI at TestProject
 
-**About Self-healing AI powered feature at TestProject**
+**About Self-healing AI-powered feature at TestProject.**
 
-The self-healing helps stabilize tests by using multiple locator strategies on while locating elements. that means that if the element locator was changed or identified badly in the first place a fallback strategies will be used to execute the test.
+The self-healing helps stabilize tests by using multiple locator strategies on while locating elements. That means that if the element locator was changed or identified badly in the first place, fallback strategies will be used to execute the test.
 
 **Possible reasons for disabling the self-healing feature**
 
@@ -21,22 +21,22 @@ To completely disable the self-healing on a specific step in your tests, all you
 
 Open the advanced step settings for the step you wish to disable the self-healing.
 
-![](https://downloads.intercomcdn.com/i/o/259409049/51af756365e9af81eabfaef6/image.png)
+![](<../../.gitbook/assets/image (522).png>)
 
-Inside the step , press on edit element (pencil icon) and remove all alternative locators found by TestProject, leavening the desired locator only.
+Inside the step, press on edit element (pencil icon) and remove all alternative locators found by TestProject, leavening the desired locator only.
 
-![](https://downloads.intercomcdn.com/i/o/259409348/799356c117458f2f9013dce5/image.png)
+![](<../../.gitbook/assets/image (472).png>)
 
-It will shut down the self healing feature and indicate to TestProject self-healing AI engine that this specific step shouldn't be exacted with alternative strategies.
+It will shut down the self healing feature and indicate to TestProject's self-healing AI engine that this specific step shouldn't be exacted with alternative strategies.
 
-* **important note** , some of the self-healing capabilities will be still applied such as adaptive wait and element prediction appearance, but these has very low chance to affect you automation negatively.
-* Yet, if you want to disable the adaptive wait feature (not recommended) you can set the default time for adaptive for for 0ms.
+* **important note** , some of the self-healing capabilities will still be applied, such as adaptive wait and element prediction appearance, but these have a  very low chance to affect your automation negatively.
+* Yet, if you want to disable the adaptive wait feature (not recommended), you can set the default time for adaptive to 0ms.
 
 To disable the adaptive wait:
 
-In your test, click on the 3 dots and click on settings:
+In your test, click on the three dots and click on settings:
 
-![](https://downloads.intercomcdn.com/i/o/259445961/01df3f12166ebfee56eb8d15/image.png)
+
 
 Set the adaptive wait to 0:
 

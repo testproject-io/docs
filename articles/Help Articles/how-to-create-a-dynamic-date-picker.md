@@ -14,7 +14,7 @@ then, go into the click step and change the day to a parameter in the locator:
 ﻿You need to delete all the locators and leave only the first one with the parameter so they do not affect the selection of the element.\
 ﻿Now, let’s create the parameter so we can make the selection dynamic:
 
-![](<../../.gitbook/assets/image (455).png>)
+![](<../../.gitbook/assets/image (455) (1).png>)
 
 Create the parameter for the day:
 

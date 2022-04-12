@@ -10,7 +10,7 @@ Elements make up the core of any test automation effort and so within each proje
 
 Elements can be easily moved to different folders by dragging and dropping them.
 
-![Organizing the recorded elements in the different folders](<../../.gitbook/assets/image (457) (2).png>)
+![Organizing the recorded elements in the different folders](<../../.gitbook/assets/image (457) (2) (1).png>)
 
 
 

@@ -10,11 +10,11 @@
 
 To create a new simulator on Xcode go to Windows -> Devices and Simulators:
 
-![](https://downloads.intercomcdn.com/i/o/286039605/85f14645e77cedb745e2b515/image.png)
+![](<../../.gitbook/assets/image (452).png>)
 
 Click on the Plus icon at the bottom of the screen to create a new simulator.
 
-![](https://downloads.intercomcdn.com/i/o/286040724/1e4547dc28ec817a95d2ecdb/image.png)
+![](<../../.gitbook/assets/image (504).png>)
 
 TestProject Agent will detect all the simulators it comes with atutomatcily and display them in the connected simulators list in the TestProject application.
 
@@ -22,10 +22,10 @@ navigate to the Agents tab: [https://app.testproject.io/#/agents](https://app.te
 
 Choose your local agent and click on Devices.
 
-![](https://downloads.intercomcdn.com/i/o/286044328/e88d19c65cd24c1caf55ae32/image.png)
+![](<../../.gitbook/assets/image (510).png>)
 
 For this moment you can simply follow the new test creation flow in TestProject and select one of the simulators as you do for physical devices to start recording your automated tests. after you create a simulator just search your application from the installed application list:
 
-![](https://downloads.intercomcdn.com/i/o/286072747/7ea2a725691568e4c230e3aa/image.png)
+![](<../../.gitbook/assets/image (538).png>)
 
 **Important Clarification** - for start recording tests on iOS simulators you don't need to own apple developer account or create a provisioning profile as you required for physical devices .
