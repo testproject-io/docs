@@ -10,46 +10,46 @@ description: >-
 
 1. In your Jenkins dashboard, go to **Manage Jenkins**
 
-![](<../../.gitbook/assets/image (473).png>)
+![](<../../.gitbook/assets/image (481).png>)
 
 2\. Go to **Manage Plugins**.
 
 \
 
 
-![](<../../.gitbook/assets/image (498).png>)
+![](<../../.gitbook/assets/image (511).png>)
 
 3\. Go to **Available** and search for **HTTP Request**
 
 \
 
 
-![](<../../.gitbook/assets/image (457).png>)
+![](<../../.gitbook/assets/image (458).png>)
 
 4\. Select the plugin and **Install Without Restart**.
 
 \
 
 
-![](<../../.gitbook/assets/image (471).png>)
+![](<../../.gitbook/assets/image (478).png>)
 
 ## Now we shall create the FreeStyle project for the API call. <a href="#now-we-shall-create-the-freestyle-project-for-the-api-call" id="now-we-shall-create-the-freestyle-project-for-the-api-call"></a>
 
 1. Back in your Jenkins dashboard, select **New Item**.
 
-![](<../../.gitbook/assets/image (497).png>)
+![](<../../.gitbook/assets/image (510).png>)
 
 2\. Select **Freestyle project** and give it a name.
 
 3\. In this window, you can configure the project to your liking. In this article, we will focus on the API call. Go to build, press Add Build Step, **and select HTTP Request**.
 
-![](<../../.gitbook/assets/image (490).png>)
+![](<../../.gitbook/assets/image (502).png>)
 
 ## Now we will create the URL for the request. <a href="#now-we-will-create-the-url-for-the-request" id="now-we-will-create-the-url-for-the-request"></a>
 
 1. Go to your TestProject account and click on **Integrations -> API**
 
-![](<../../.gitbook/assets/image (465).png>)
+![](<../../.gitbook/assets/image (469).png>)
 
 2\. If you do not have an API key, click on **Create API Key**; now, we can copy it for further use in our Jenkins Project.
 
@@ -61,7 +61,7 @@ description: >-
 
 6\. Scroll down to **ProjectParameters** and select the **Create New Project Parameter**,
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (454).png>)
 
 We can see the request method. In this case it will be POST.
 
@@ -71,27 +71,27 @@ Press on **Try It out** to see the body and parameters of the request.
 \
 First, we will get the project id, go to your TestProject account, find your project, and select the three dots near it -> **Copy Id**.
 
-![](<../../.gitbook/assets/image (525).png>)
+![](<../../.gitbook/assets/image (549).png>)
 
 Now that you have the ID, you can do the following:
 
-![](<../../.gitbook/assets/image (526).png>)
+![](<../../.gitbook/assets/image (550).png>)
 
 8\. You can press on Execute to see the Request URL **OR** take the URL from here and fill in the {projectid} with your project id.
 
-![](<../../.gitbook/assets/image (510).png>)
+![](<../../.gitbook/assets/image (525).png>)
 
 ## Now we will go back to the Jenkins dashboard and fill in the HTTP Request build Step. <a href="#now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step" id="now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step"></a>
 
-![](<../../.gitbook/assets/image (522).png>)
+![](<../../.gitbook/assets/image (541).png>)
 
-![](<../../.gitbook/assets/image (530).png>)
+![](<../../.gitbook/assets/image (554).png>)
 
 After we save the Request, we can now build it whenever we want, and you can build it in your CI pipeline.
 
 After we run the Build we will get the following:
 
-![](<../../.gitbook/assets/image (533).png>)
+![](<../../.gitbook/assets/image (557).png>)
 
 It was a success, and now we can see the new Project Parameter!
 

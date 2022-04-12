@@ -9,14 +9,14 @@ In this article, we are going to learn how to create an element using custom XPa
 
 Let's try to locate the "Full Name" text box using its place holder value, which is: "Enter your full name".&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/170644810/2fd1aa1ba8395f89ad23b992/1.png)
+![](<../../.gitbook/assets/image (468).png>)
 
 On the placeholder attribute, you have 3 buttons. The right one, will open the "Element locator" tool with the XPath value of the element based on the placeholder:
 
-![](https://downloads.intercomcdn.com/i/o/170644830/aecb546675a2d0d727e7bc3d/2.png)
+![](<../../.gitbook/assets/image (490).png>)
 
 In the "Element Locator" pop-up window, we can see the generated XPath value we got. You can click on "Evaluate" to identify this element in the page and check if it's a unique identifier or not. By clicking on the "Save Element" button, you can easily create a new element that would be identified using the generated XPath value.
 
-![](https://downloads.intercomcdn.com/i/o/170644842/113938972f7c9940a345d2c8/3.png)
+![](<../../.gitbook/assets/image (475).png>)
 
 That's it! You now have a new element that you are locating using a smart XPath value :)

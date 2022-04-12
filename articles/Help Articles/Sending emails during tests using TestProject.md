@@ -8,7 +8,7 @@ If you'd like to send emails during the execution of your test, you can do so by
 
 To use this addon, you'll need to install the addon from the addons section:
 
-![](<../../.gitbook/assets/image (493).png>)
+![](<../../.gitbook/assets/image (505).png>)
 
 Then create the '**Picksmart Send Email**' action in one of your tests.
 
@@ -39,7 +39,7 @@ In the following example, we'll send an email using the Google SMTP server.
 Before proceeding, you'll need to allow access from less secure apps for your account. These settings need to be turned on:\
 [https://myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
 
-![](<../../.gitbook/assets/image (489).png>)
+![](<../../.gitbook/assets/image (501).png>)
 
 Then, as mentioned before, create the step and fill in the input fields:
 
@@ -51,9 +51,9 @@ The SSLPort should be: 465
 
 The SMTP username is your Google account email address, without the domain, i.e. [my\_email@gmail.com](mailto:my\_email@gmail.com), the username should be **my\_email**, and the password is the same as for that account itself.
 
-![](<../../.gitbook/assets/image (529).png>)
+![](<../../.gitbook/assets/image (553).png>)
 
-![](<../../.gitbook/assets/image (472).png>)
+![](<../../.gitbook/assets/image (479).png>)
 
 After running the step, the email will be sent to the account specified:
 

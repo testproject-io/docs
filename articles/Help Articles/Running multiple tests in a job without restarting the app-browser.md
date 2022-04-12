@@ -9,32 +9,32 @@ description: >-
 First, we need to create a test. We will use the youtube website for this example:\
 
 
-![](<../../.gitbook/assets/image (451).png>)
+![](<../../.gitbook/assets/image (452).png>)
 
 After creating a simple test with a few steps, we will duplicate the test, add some steps, and disable the first ones(you can delete them as they have no use) :\
 
 
-![](<../../.gitbook/assets/image (470).png>)
+![](<../../.gitbook/assets/image (476).png>)
 
 As you can see, the navigation step is disabled (does not apply in a mobile test), so the test will not try to open the website.\
 Now, we need to create a job by clicking the add new job option in the project toolbar:\
 
 
-![](<../../.gitbook/assets/image (512).png>)
+![](<../../.gitbook/assets/image (528).png>)
 
 And when you get to the 3rd step in creating a job, you will notice this switch below:\
 
 
-![](<../../.gitbook/assets/image (469).png>)
+![](<../../.gitbook/assets/image (473).png>)
 
 or if using a mobile test:
 
-![](<../../.gitbook/assets/image (516).png>)
+![](<../../.gitbook/assets/image (533).png>)
 
 now drag and drop your tests to the job on the right:\
 
 
-![](<../../.gitbook/assets/image (508).png>)
+![](<../../.gitbook/assets/image (523).png>)
 
 And you are good to go; you can now run the job.
 

@@ -16,48 +16,48 @@ In this case, you might not be able to record or execute tests on the platform! 
 
 Navigate to the website with untrusted certificate, and click on the "Not Secure" label next to the URL:
 
-![](<../../.gitbook/assets/image (466).png>)
+![](<../../.gitbook/assets/image (470).png>)
 
 Click on Certificate
 
-![](<../../.gitbook/assets/image (492).png>)
+![](<../../.gitbook/assets/image (504).png>)
 
 \
 Switch to the last tab - Certification Path, and you should see a certificates chain tree, choose the **first** one (not he 2nd one selected).
 
-![](<../../.gitbook/assets/image (514).png>)
+![](<../../.gitbook/assets/image (531).png>)
 
 \
 Click on View certificate, switch to the details tab and click copy the certificate to file.
 
-![](<../../.gitbook/assets/image (455).png>)
+![](<../../.gitbook/assets/image (456).png>)
 
 Then click next, and select the first option:
 
-![](<../../.gitbook/assets/image (496).png>)
+![](<../../.gitbook/assets/image (509).png>)
 
 Then click browse and create the file to output to, then hit next:
 
-![](<../../.gitbook/assets/image (461).png>)
+![](<../../.gitbook/assets/image (463).png>)
 
 Now double click the new file and follow the instructions:
 
-![](<../../.gitbook/assets/image (452).png>)
+![](<../../.gitbook/assets/image (453).png>)
 
-![](<../../.gitbook/assets/image (483).png>)
+![](<../../.gitbook/assets/image (495).png>)
 
 Now choose the **Trusted Root Certification Authorities** via browse button:
 
-![](<../../.gitbook/assets/image (475).png>)
+![](<../../.gitbook/assets/image (485).png>)
 
 Click next, then finish, windows will ask you in you are sure, agree.\
 
 
 Now simply restart Chrome with chrome://restart:
 
-![](<../../.gitbook/assets/image (519).png>)
+![](<../../.gitbook/assets/image (537).png>)
 
 And you should be good to go!\
 
 
-![](<../../.gitbook/assets/image (480).png>)
+![](<../../.gitbook/assets/image (492).png>)

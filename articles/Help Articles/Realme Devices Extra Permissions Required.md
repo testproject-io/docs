@@ -8,18 +8,18 @@ description: >-
 
 Users with realme 2c needs to scroll down in the developer options and find the "Disable Permission Monitoring".
 
-![](https://downloads.intercomcdn.com/i/o/190847366/86e249fb03e57e83de370967/image.png)
+![](<../../.gitbook/assets/image (527).png>)
 
 And enable it, and you are good to go, you can start recording.
 
 \--------------------------------------------------------------------------------------\
 For realme pro 3 users\
-Go to developer options and enable this 3 options:
+Go to developer options and enable these 3 options:
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/190848126/95cc2233f998d0671b311f99/74775647-24072a00-52bc-11ea-88a1-63913e46fd1a.png)
+![](<../../.gitbook/assets/image (488).png>)
 
 And that is it, everything should work now.
 
-Happy testing!
+
 
 \
