@@ -16,7 +16,7 @@ And enable it, and you are good to go, you can start recording.
 For realme pro 3 users\
 Go to developer options and enable these 3 options:
 
-![](<../../.gitbook/assets/image (490).png>)
+![](<../../.gitbook/assets/image (490) (1).png>)
 
 And that is it, everything should work now.
 

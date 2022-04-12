@@ -24,7 +24,7 @@ description: >-
 \
 
 
-![](<../../.gitbook/assets/image (458).png>)
+![](<../../.gitbook/assets/image (458) (1).png>)
 
 4\. Select the plugin and **Install Without Restart**.
 
@@ -37,7 +37,7 @@ description: >-
 
 1. Back in your Jenkins dashboard, select **New Item**.
 
-![](<../../.gitbook/assets/image (514).png>)
+![](<../../.gitbook/assets/image (514) (1).png>)
 
 2\. Select **Freestyle project** and give it a name.
 

@@ -22,7 +22,7 @@ Create the parameter for the day:
 
 I chose the default day to be 1.
 
-![](<../../.gitbook/assets/image (495).png>)
+![](<../../.gitbook/assets/image (495) (1).png>)
 
 You can select another value for this parameter from the parameter tab to 20 to, just for the example.
 

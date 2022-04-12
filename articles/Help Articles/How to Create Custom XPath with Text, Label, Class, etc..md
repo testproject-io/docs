@@ -9,7 +9,7 @@ In this article, we are going to learn how to create an element using custom XPa
 
 Let's try to locate the "Full Name" text box using its place holder value, which is: "Enter your full name".&#x20;
 
-![](<../../.gitbook/assets/image (468).png>)
+![](<../../.gitbook/assets/image (468) (1).png>)
 
 On the placeholder attribute, you have 3 buttons. The right one, will open the "Element locator" tool with the XPath value of the element based on the placeholder:
 
@@ -17,6 +17,6 @@ On the placeholder attribute, you have 3 buttons. The right one, will open the "
 
 In the "Element Locator" pop-up window, we can see the generated XPath value we got. You can click on "Evaluate" to identify this element in the page and check if it's a unique identifier or not. By clicking on the "Save Element" button, you can easily create a new element that would be identified using the generated XPath value.
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (476) (1).png>)
 
 That's it! You now have a new element that you are locating using a smart XPath value :)

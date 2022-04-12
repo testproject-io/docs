@@ -52,7 +52,7 @@ What we should do, is to create a designated profile for us to use in our jobs.
 
 2\) After we created that profile and logged in we should change our site settings to allow all the permissions we need:
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (476).png>)
 
 3\) Then we should navigate to:
 
@@ -60,7 +60,7 @@ C:\Users{username}\AppData\Local\Google\Chrome\User Data\\
 
 And make sure we can find the profile we have just created.
 
-![](<../../.gitbook/assets/image (489).png>)
+![](<../../.gitbook/assets/image (490).png>)
 
 4\) Now let's copy **the entire User Data folder** to our desktop for example.
 
@@ -82,7 +82,7 @@ _`argument, or don't use --user-data-dir`_
 
 Use this button:
 
-![](<../../.gitbook/assets/image (506).png>)
+![](<../../.gitbook/assets/image (507).png>)
 
 And add these capabilities:
 

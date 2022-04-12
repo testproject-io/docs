@@ -2,13 +2,13 @@
 
 Download Java SDK from [Integrations](https://app.testproject.io/#/integrations/develop-addon) under Develop an Addon.
 
-![](https://downloads.intercomcdn.com/i/o/259546633/4f83c74d5aded2ab3176c2d9/image.png)
+![](<../../.gitbook/assets/image (463).png>)
 
 Add the downloaded Jar to the project.
 
 In Intellij, go to file > project structure (ctrl + alt + shift + s with keyboard shortcut) > Modules > Dependencies > click on the plus button > Jars and > select the Jar and click Ok > click Apply and Ok to close settings.
 
-![](https://downloads.intercomcdn.com/i/o/259546851/3e16fd6c61e43e7793192a97/image.png)
+![](<../../.gitbook/assets/image (448).png>)
 
 In Eclipse, Right click on your project > select Build Path > click on Configure
 
@@ -38,14 +38,14 @@ Write your tests. Keep in mind [Implicit Project and Job Names](https://intercom
 
 Add file named `testproject-sdk.properties` under resources folder with the content `version=0.63.1` (or other version if you prefer).
 
-![](https://downloads.intercomcdn.com/i/o/259550245/1b196b63a3e7f545ee3b86b2/image.png)
+![](<../../.gitbook/assets/image (556).png>)
 
 Run Maven commands Clean > Compile > Package. You will see a Jar file under target in the project tree.
 
-![](https://downloads.intercomcdn.com/i/o/259550449/c704c15ca8e9bc70846b3064/image.png)
+![](<../../.gitbook/assets/image (468).png>)
 
 Or Gradle commands Clean > Build > Jar. You will see the Jar file under build > libs
 
-![](https://downloads.intercomcdn.com/i/o/259550537/a26d6523357174508b3a916d/image.png)
+![](<../../.gitbook/assets/image (458).png>)
 
 In TestProject go to your project and click on Add a new Test > select Code test type > drag the Jar file to the upload area and click on Upload > click Next > provide (meaningful!) package name, you can add Description and Application as well > finish the wizard.

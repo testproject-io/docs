@@ -8,7 +8,7 @@ The simulator app, available within Xcode, presents the iPhone or iPad user inte
 
 `It is not possible to run Xcode on a Windows or Linux operating systems.`
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/291647765/21683f02b5ccfce9d2accf85/assets-2F-Ll7jrseWgVXoVhnULBe-2F-MNAE-NrKn1uqd1F-DVn-2F-MNAV\_yABeXcYZlX9S3u-2FSimulator\_Window.png)
+![](<../../.gitbook/assets/image (537).png>)
 
 You interact with the Simulator by using the keyboard and the mouse to emulate taps, device rotation, and other user actions. It also allows you to automate your App without the need for a physical device.
 
@@ -22,11 +22,11 @@ You interact with the Simulator by using the keyboard and the mouse to emulate t
 
 With Xcode installed:
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/291647775/0742ae079dccdf16f5f8f738/assets-2F-Ll7jrseWgVXoVhnULBe-2F-MNAE-NrKn1uqd1F-DVn-2F-MNAV4OJipcR1CJwZM3Y-2FXcode.png)
+![](<../../.gitbook/assets/image (489).png>)
 
 The TestProject Agent will detect all the simulators it comes with and display them in the connected simulators list in the TestProject application:
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/291647778/233323a70c99d62d6968658d/assets-2F-Ll7jrseWgVXoVhnULBe-2F-MNAE-NrKn1uqd1F-DVn-2F-MNAV9ZF10ajKDip93TO-2FList.png)
+![](<../../.gitbook/assets/image (474).png>)
 
 If the simulators are still not detected even when Xcode is correctly installed, open the terminal (using Launchpad), and make sure you have an active developer directory by running the command below:
 
@@ -48,7 +48,7 @@ sudo xcode-select --switch path/to/Xcode.app
 
 You can mirror any iOS simulator screen:
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/291647781/af5b22c0155b93dc986b6384/assets-2F-Ll7jrseWgVXoVhnULBe-2F-MNAE-NrKn1uqd1F-DVn-2F-MNAVDx9itauyXPmashv-2FList\_\_\_Mirroring.png)
+![](<../../.gitbook/assets/image (521).png>)
 
 There is no need to have an Apple Developer Account in order to do this (on the contrary to IOS physical devices).
 

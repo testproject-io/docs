@@ -18,7 +18,7 @@ In the Recorder, locate the required step and click on the Advanced Options
 
 ![](<../../.gitbook/assets/image (522) (1).png>)
 
-![](<../../.gitbook/assets/image (511).png>)
+![](<../../.gitbook/assets/image (511) (1).png>)
 
 And in the Step Menu:
 
@@ -42,7 +42,7 @@ Save the text into a Parameter.
 
 Next, lets create a step that will type text to a TextArea only if the text is Equal to "TestProject"
 
-![](<../../.gitbook/assets/image (465).png>)
+![](<../../.gitbook/assets/image (465) (1).png>)
 
 And add the condition in the step:
 
@@ -72,7 +72,7 @@ Now we call subtest A if the value from the previous step was 3:
 
 Press on 'Add test as step':
 
-![](<../../.gitbook/assets/image (556).png>)
+![](<../../.gitbook/assets/image (556) (1).png>)
 
 Search the test name:
 

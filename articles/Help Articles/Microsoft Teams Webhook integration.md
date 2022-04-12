@@ -22,7 +22,7 @@ Admin or sufficient privileges to add connectors.
 
 1\) Add a Connectors from context menu --> Connectors:
 
-![](<../../.gitbook/assets/image (468) (1).png>)
+![](<../../.gitbook/assets/image (468) (2).png>)
 
 2\) Add "Incoming Webhook":
 
@@ -34,7 +34,7 @@ Admin or sufficient privileges to add connectors.
 
 4\) Click "Connectors" one more time:
 
-![](<../../.gitbook/assets/image (476) (1).png>)
+![](<../../.gitbook/assets/image (476) (2).png>)
 
 5\) Choose "Configure":
 
@@ -54,7 +54,7 @@ _If you are a user ask your admin to create a Teams Web Hook and skip to steps 3
 
 2\) Add all the Required information:
 
-![](<../../.gitbook/assets/image (464) (1).png>)
+![](<../../.gitbook/assets/image (464) (2).png>)
 
 3\) You are now ready to add this Webhook to the job notifications, you can do it from here:
 

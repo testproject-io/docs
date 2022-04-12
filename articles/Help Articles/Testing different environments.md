@@ -20,7 +20,7 @@ Now we shall attach this Data Source to the test.
 
 Go to the Data Sources Tab and add the CSV file we just edited.
 
-![](<../../.gitbook/assets/image (521).png>)
+![](<../../.gitbook/assets/image (522).png>)
 
 Give it a name and create.
 

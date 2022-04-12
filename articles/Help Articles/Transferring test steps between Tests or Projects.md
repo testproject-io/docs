@@ -8,7 +8,7 @@ description: >-
 
 First we go to the Editor or the recorder of the test you want to extract the steps from:
 
-![](<../../.gitbook/assets/image (507).png>)
+![](<../../.gitbook/assets/image (507) (1).png>)
 
 We will now select all the steps we want to extract and move between tests or projects.
 

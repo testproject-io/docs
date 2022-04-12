@@ -26,7 +26,7 @@ Name it, and then leave the default value empty if it's dynamically assigned dur
 
 Select your parameter:
 
-![](<../../.gitbook/assets/image (463) (1).png>)
+![](<../../.gitbook/assets/image (463) (2).png>)
 
 And Save the step:\
 ﻿

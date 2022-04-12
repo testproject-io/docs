@@ -9,7 +9,7 @@ description: >-
 Some websites (especially ones under development) can be seen by google chrome as potentially harmful, like shown here\
 
 
-![](<../../.gitbook/assets/image (448).png>)
+![](<../../.gitbook/assets/image (448) (1).png>)
 
 In this case, you might not be able to record or execute tests on the platform! in this article, i will show you how to authorize the websites on your machine so you can carry on with your tests. I will use [https://untrusted-root.badssl.com/](https://untrusted-root.badssl.com) as an example.\
 
@@ -38,7 +38,7 @@ Then click next, and select the first option:
 
 Then click browse and create the file to output to, then hit next:
 
-![](<../../.gitbook/assets/image (463).png>)
+![](<../../.gitbook/assets/image (463) (1).png>)
 
 Now double click the new file and follow the instructions:
 

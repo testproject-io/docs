@@ -18,7 +18,7 @@ This will open the parameters panel for you where you can view, edit, add or rem
 
 Fill in the name, description, value, secret, and type for the parameter and click on the Save button to add it to your test.
 
-![Creating Parameter](<../../.gitbook/assets/image (458) (1).png>)
+![Creating Parameter](<../../.gitbook/assets/image (458) (2).png>)
 
 ## Parameters types
 

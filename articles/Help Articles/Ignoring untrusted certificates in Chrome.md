@@ -10,33 +10,33 @@ In case your tests are blocked by the warning of an untrusted certificate, selen
 
 First, we will create a Job:
 
-![](https://downloads.intercomcdn.com/i/o/295442379/de5854f43113eba9584c14cf/image.png)
+![](<../../.gitbook/assets/image (514).png>)
 
 Now we shall Select Web, Chrome as the Browser, and the agent who shall execute the Tests.
 
-![](https://downloads.intercomcdn.com/i/o/295442767/0ab8354eb59f39bfa2877fa1/image.png)
+![](<../../.gitbook/assets/image (473).png>)
 
-![](https://downloads.intercomcdn.com/i/o/295442929/5f3455338c3adf5095413d9d/image.png)
+![](<../../.gitbook/assets/image (504).png>)
 
 Next, after we create the Job, we will drag all the tests we wish to execute inside the Job:
 
-![](https://downloads.intercomcdn.com/i/o/295443300/1f52ca5d1cfb496628e5b623/image.png)
+![](<../../.gitbook/assets/image (511).png>)
 
 Now we will set the Custom Capabilities:
 
-![](https://downloads.intercomcdn.com/i/o/295443500/f4d46ac8b72ae1fc006fc826/image.png)
+![](<../../.gitbook/assets/image (498).png>)
 
 We will add the following to the capabilities:
 
-```
+```json
 "goog:chromeOptions": {
     "args": ["--ignore-untrusted-certificate"]
   }
 
 ```
 
-![](https://downloads.intercomcdn.com/i/o/295444642/7a4e5c1ab948d6fa9197480d/image.png)
+![](<../../.gitbook/assets/image (465).png>)
 
-And that is it, once we run the Job, this capabilities will be set, and the tests will run without the warnings.
+And that is it, once we run the Job, these capabilities will be set, and the tests will run without the warnings.
 
 \
