@@ -48,11 +48,11 @@ What we should do, is to create a designated profile for us to use in our jobs.
 
 1\) We can do it by adding a chrome profile like this:
 
-![](<../../.gitbook/assets/image (544).png>)
+![](<../../.gitbook/assets/image (544) (1).png>)
 
 2\) After we created that profile and logged in we should change our site settings to allow all the permissions we need:
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (476) (1).png>)
 
 3\) Then we should navigate to:
 
@@ -82,7 +82,7 @@ _`argument, or don't use --user-data-dir`_
 
 Use this button:
 
-![](<../../.gitbook/assets/image (507).png>)
+![](<../../.gitbook/assets/image (507) (1).png>)
 
 And add these capabilities:
 

@@ -26,7 +26,7 @@ With Xcode installed:
 
 The TestProject Agent will detect all the simulators it comes with and display them in the connected simulators list in the TestProject application:
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (474) (1).png>)
 
 If the simulators are still not detected even when Xcode is correctly installed, open the terminal (using Launchpad), and make sure you have an active developer directory by running the command below:
 

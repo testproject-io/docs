@@ -38,7 +38,7 @@ Write your tests. Keep in mind [Implicit Project and Job Names](https://intercom
 
 Add file named `testproject-sdk.properties` under resources folder with the content `version=0.63.1` (or other version if you prefer).
 
-![](<../../.gitbook/assets/image (556).png>)
+![](<../../.gitbook/assets/image (556) (1).png>)
 
 Run Maven commands Clean > Compile > Package. You will see a Jar file under target in the project tree.
 

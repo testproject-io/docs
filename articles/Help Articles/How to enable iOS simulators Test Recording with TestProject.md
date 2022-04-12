@@ -10,7 +10,7 @@
 
 To create a new simulator on Xcode go to Windows -> Devices and Simulators:
 
-![](<../../.gitbook/assets/image (452).png>)
+![](<../../.gitbook/assets/image (452) (1).png>)
 
 Click on the Plus icon at the bottom of the screen to create a new simulator.
 

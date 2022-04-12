@@ -20,7 +20,7 @@ Now we shall Select Web, Chrome as the Browser, and the agent who shall execute 
 
 Next, after we create the Job, we will drag all the tests we wish to execute inside the Job:
 
-![](<../../.gitbook/assets/image (511).png>)
+![](<../../.gitbook/assets/image (511) (1).png>)
 
 Now we will set the Custom Capabilities:
 

@@ -20,12 +20,12 @@ Navigate to the website with untrusted certificate, and click on the "Not Secure
 
 Click on Certificate
 
-![](<../../.gitbook/assets/image (508).png>)
+![](<../../.gitbook/assets/image (508) (1).png>)
 
 \
 Switch to the last tab - Certification Path, and you should see a certificates chain tree, choose the **first** one (not he 2nd one selected).
 
-![](<../../.gitbook/assets/image (540) (1).png>)
+![](<../../.gitbook/assets/image (540) (1) (1).png>)
 
 \
 Click on View certificate, switch to the details tab and click copy the certificate to file.

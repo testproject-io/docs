@@ -18,11 +18,11 @@ In the Recorder, locate the required step and click on the Advanced Options
 
 ![](<../../.gitbook/assets/image (522) (1).png>)
 
-![](<../../.gitbook/assets/image (511) (1).png>)
+![](<../../.gitbook/assets/image (511) (1) (1).png>)
 
 And in the Step Menu:
 
-![](<../../.gitbook/assets/image (545).png>)
+![](<../../.gitbook/assets/image (545) (1).png>)
 
 #### If/Else example based on label text <a href="#ifelse-example-based-on-label-text" id="ifelse-example-based-on-label-text"></a>
 
@@ -30,15 +30,15 @@ Let's take simple scenario that check for a text label, IF the text we got is th
 
 For example, we will take the text of the following Label:
 
-![](<../../.gitbook/assets/image (568).png>)
+![](<../../.gitbook/assets/image (568) (1).png>)
 
 Hover over the element, press double shift to freeze it, in Actions pick Get Text:
 
-![](<../../.gitbook/assets/image (485).png>)
+![](<../../.gitbook/assets/image (485) (1).png>)
 
 Save the text into a Parameter.
 
-![](<../../.gitbook/assets/image (552).png>)
+![](<../../.gitbook/assets/image (552) (1).png>)
 
 Next, lets create a step that will type text to a TextArea only if the text is Equal to "TestProject"
 
@@ -46,7 +46,7 @@ Next, lets create a step that will type text to a TextArea only if the text is E
 
 And add the condition in the step:
 
-![](<../../.gitbook/assets/image (551).png>)
+![](<../../.gitbook/assets/image (551) (1).png>)
 
 If the text is NOT equal, the step will not execute and will be shown in grey.
 
@@ -72,7 +72,7 @@ Now we call subtest A if the value from the previous step was 3:
 
 Press on 'Add test as step':
 
-![](<../../.gitbook/assets/image (556) (1).png>)
+![](<../../.gitbook/assets/image (556) (1) (1).png>)
 
 Search the test name:
 
@@ -84,11 +84,11 @@ In the advanced options, we will add the condition
 
 And now the step will show the 'if' symbol:
 
-![](<../../.gitbook/assets/image (478).png>)
+![](<../../.gitbook/assets/image (478) (1).png>)
 
 To launch Flow B (Subtest B) we will check the opposite condition of the previous step, so we will check if it NOT equal to 3:
 
-![](<../../.gitbook/assets/image (557).png>)
+![](<../../.gitbook/assets/image (557) (1).png>)
 
 We have achieved If 3 flow A Else Flow B.
 

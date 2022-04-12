@@ -30,7 +30,7 @@ you can see the path to the profile folder by opening Firefox browser, and searc
 about:profiles
 ```
 
-![](https://downloads.intercomcdn.com/i/o/379797865/f0e049af3ca245ca7a5956b4/image.png)
+![](<../../.gitbook/assets/image (462).png>)
 
 ### What is the Best Practice? <a href="#h_d9397b918a" id="h_d9397b918a"></a>
 
@@ -48,17 +48,17 @@ about:profiles
 
 then click on Create a New Profile
 
-![](https://downloads.intercomcdn.com/i/o/379921909/7e1a98d3ee4cdced993eb7b1/image.png)
+![](<../../.gitbook/assets/image (549).png>)
 
 2\) After we have created the firefox profile we need to open firefox with this profile and add our application URL to the permissions we need.
 
 (use about:profiles to check current profile)
 
-![](https://downloads.intercomcdn.com/i/o/379888074/0abdbdd041f8cdd4b1fb84c0/269.png)
+![](<../../.gitbook/assets/image (460).png>)
 
 3\) We can set the following Selenium Desired capabilities on our job:
 
-![](https://downloads.intercomcdn.com/i/o/342317300/2fc141742ed24efb22d62d26/image.png)
+![](<../../.gitbook/assets/image (482).png>)
 
 And add these capabilities:
 
@@ -82,11 +82,11 @@ To change these settings follow these steps:
 
 For **example** zip file (open with WinRar):
 
-![](https://downloads.intercomcdn.com/i/o/380358287/86c1d1de9f84a95ce97e35c9/image.png)
+![](<../../.gitbook/assets/image (545).png>)
 
 2\) Click on the zip file option in Firefox settings under the Applications section and change it from always ask to save the file, this will automatically save the file to the default directory.
 
-![](https://downloads.intercomcdn.com/i/o/380354166/1f3a230d807fc6b41e58dc1b/273.png)
+![](<../../.gitbook/assets/image (543).png>)
 
 \*Note - Firefox ability to automatically save the content type may vary dependent on the file type\*
 
@@ -129,7 +129,7 @@ Firefox base64 Job capabilities:
 
 Here is an example of how to set preferences to download files automatically in Firefox without presenting the dialogue:
 
-```
+```java
 FirefoxOptions options = new FirefoxOptions();
         FirefoxProfile profile = new FirefoxProfile();
         profile.setPreference("browser.download.folderList", 2);
@@ -143,7 +143,7 @@ FirefoxOptions options = new FirefoxOptions();
 
 2\. You can also create a profile out of a local path on your system:
 
-```
+```java
 FirefoxOptions options = new FirefoxOptions();
 FirefoxProfile profile = new FirefoxProfile(new File              ("C:/Users/Username/AppData/Roaming/Mozilla/Firefox/Profiles/MyProfile.test"));
     options.setProfile(profile);

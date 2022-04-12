@@ -26,7 +26,7 @@ Admin or sufficient privileges to add connectors.
 
 2\) Add "Incoming Webhook":
 
-![](<../../.gitbook/assets/image (461) (1).png>)
+![](<../../.gitbook/assets/image (461) (2).png>)
 
 3\) Add:
 
@@ -42,7 +42,7 @@ Admin or sufficient privileges to add connectors.
 
 6\) Enter the required details and **Copy URL Link:**
 
-![](<../../.gitbook/assets/image (460) (1).png>)
+![](<../../.gitbook/assets/image (460) (2).png>)
 
 **Steps on TestProject (Admin):**
 

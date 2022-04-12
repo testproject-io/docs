@@ -10,7 +10,7 @@ While recording tests, elements are created automatically using default locator 
 
 you can find this feature in your project, under the 'Applications' tab:
 
-![](<../../.gitbook/assets/image (540).png>)
+![](<../../.gitbook/assets/image (540) (1).png>)
 
 Using this feature, all tests which use this specific application will use the default attributes to create its locators.
 
@@ -18,7 +18,7 @@ here is an example of setting up custom attributes on YouTube:
 
 **- setting up custom attributes**
 
-![](<../../.gitbook/assets/image (562).png>)
+![](<../../.gitbook/assets/image (562) (1).png>)
 
 **- as you can see, the recorder has created an Xpath locator based on the class attribute as its first priority.**
 

@@ -14,7 +14,7 @@ On the right side of the test, we have 3 dots, click on them and click on **Data
 
 After that we have the **ApplicationURL** header, here we will insert our different testing environment URLs
 
-![](<../../.gitbook/assets/image (455).png>)
+![](<../../.gitbook/assets/image (455) (1).png>)
 
 Now we shall attach this Data Source to the test.
 

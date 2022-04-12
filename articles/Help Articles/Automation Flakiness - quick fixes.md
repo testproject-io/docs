@@ -38,7 +38,7 @@ How can we change that?
 
 From the Test settings Tab like in the image below:
 
-![](https://downloads.intercomcdn.com/i/o/345818116/a7853b2f3b3771c7381bbee3/image.png)
+![](<../../.gitbook/assets/image (562).png>)
 
 **Please make sure that the Automation Assistant is enabled.**
 
@@ -72,7 +72,7 @@ How do set it up?
 
 Follow these steps:
 
-![](https://downloads.intercomcdn.com/i/o/345838975/ec78225da38a5572ed8f57ae/image.png)
+![](<../../.gitbook/assets/image (474).png>)
 
 Here are some capabilities you can use for example:
 
@@ -120,9 +120,9 @@ You can either do it for the specific step manually by creating a more unique XP
 
 This is how you change the strategies for Elements Locators in your application:
 
-![](https://downloads.intercomcdn.com/i/o/326954672/efe625793d4b66bbf6e43881/image.png?expires=1619067600\&signature=7b7131de5eb47c32843b4157f89d70ca37d38e6a55623634a3a460d2404ef8fb)
+![](<../../.gitbook/assets/image (515).png>)
 
-![](https://downloads.intercomcdn.com/i/o/326955039/9e117c3c8fda372c5330e72a/image.png?expires=1619067600\&signature=53e7e7914d39fa681179f39fbc8deedfa35e8b10f3cf04a951bae2bb8f5d1e03)
+![](<../../.gitbook/assets/image (542).png>)
 
 You can add custom locator strategies for your Application or you cancel certain strategies, You can also choose a different priority to the locator's strategy.
 

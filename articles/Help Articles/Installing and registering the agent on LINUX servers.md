@@ -61,7 +61,7 @@ Type in the agent's IP saved from earlier, and choose a name for your agent:
 Click save, then register:\
 
 
-![](<../../.gitbook/assets/image (543).png>)
+![](<../../.gitbook/assets/image (543) (1).png>)
 
 Congratulations! you have registered your Agent! it will now show in your agent tab:\
 

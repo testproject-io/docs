@@ -51,9 +51,9 @@ The SSLPort should be: 465
 
 The SMTP username is your Google account email address, without the domain, i.e. [my\_email@gmail.com](mailto:my\_email@gmail.com), the username should be **my\_email**, and the password is the same as for that account itself.
 
-![](<../../.gitbook/assets/image (562) (1).png>)
+![](<../../.gitbook/assets/image (562) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (481).png>)
+![](<../../.gitbook/assets/image (481) (1).png>)
 
 After running the step, the email will be sent to the account specified:
 

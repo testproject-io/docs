@@ -10,7 +10,7 @@ To achieve CI/CD process and run TestProject automation as part of your pipeline
 In Azure, go to your project settings, from there navigate to **Service hooks**, and proceed to **Create a subscription**.\
 Here, select the **Web Hooks** service in order to provide event communication via HTTP, and hit next.
 
-![](<../../.gitbook/assets/image (528).png>)
+![](<../../.gitbook/assets/image (528) (1).png>)
 
 In the **Trigger** section, you can choose when to execute the test. We will choose release created, to trigger the test to execute when the release is done.\
 \
@@ -26,7 +26,7 @@ You can see a guide on how to set up your pipeline in this video:\
 
 In the **Action**, next, you will need to provide the **API endpoint URL**.
 
-![](<../../.gitbook/assets/image (469) (1).png>)
+![](<../../.gitbook/assets/image (469) (1) (1).png>)
 
 \
 The URL should be:\
@@ -35,7 +35,7 @@ The URL should be:\
 You can get your project and job ID's from the TestProject website.\
 This is how you get your project ID:
 
-![](<../../.gitbook/assets/image (479).png>)
+![](<../../.gitbook/assets/image (479) (1).png>)
 
 And this is how you get your job ID from inside that project:
 
@@ -60,7 +60,7 @@ From here you will be able to see all available keys or create one.
 
 When creating a key, you can restrict it's access, and in this example it will be restricted to only the project we want to use with the API.
 
-![](<../../.gitbook/assets/image (536) (1).png>)
+![](<../../.gitbook/assets/image (536) (1) (1).png>)
 
 After creating the API key, all you need to do is **Copy** it:
 

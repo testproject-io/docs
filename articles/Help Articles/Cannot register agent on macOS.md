@@ -31,7 +31,7 @@ then enable "Show Library Folder":
 
 ![](<../../.gitbook/assets/image (467).png>)
 
-![](<../../.gitbook/assets/image (459).png>)
+![](<../../.gitbook/assets/image (459) (1).png>)
 
 Now go to Library>Application Support>TestProject\
 and delete the folder named "Agent", then re-install the agent (do not forget to make sure it is running as shown in step 1).\

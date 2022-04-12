@@ -10,14 +10,14 @@ description: >-
 
 1. In your Jenkins dashboard, go to **Manage Jenkins**
 
-![](<../../.gitbook/assets/image (483).png>)
+![](<../../.gitbook/assets/image (483) (1).png>)
 
 2\. Go to **Manage Plugins**.
 
 \
 
 
-![](<../../.gitbook/assets/image (515).png>)
+![](<../../.gitbook/assets/image (515) (1).png>)
 
 3\. Go to **Available** and search for **HTTP Request**
 
@@ -31,7 +31,7 @@ description: >-
 \
 
 
-![](<../../.gitbook/assets/image (480).png>)
+![](<../../.gitbook/assets/image (480) (1).png>)
 
 ## Now we shall create the FreeStyle project for the API call. <a href="#now-we-shall-create-the-freestyle-project-for-the-api-call" id="now-we-shall-create-the-freestyle-project-for-the-api-call"></a>
 
@@ -43,7 +43,7 @@ description: >-
 
 3\. In this window, you can configure the project to your liking. In this article, we will focus on the API call. Go to build, press Add Build Step, **and select HTTP Request**.
 
-![](<../../.gitbook/assets/image (506) (1).png>)
+![](<../../.gitbook/assets/image (506) (1) (1).png>)
 
 ## Now we will create the URL for the request. <a href="#now-we-will-create-the-url-for-the-request" id="now-we-will-create-the-url-for-the-request"></a>
 
@@ -83,7 +83,7 @@ Now that you have the ID, you can do the following:
 
 ## Now we will go back to the Jenkins dashboard and fill in the HTTP Request build Step. <a href="#now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step" id="now-we-will-go-back-to-the-jenkins-dashboard-and-fill-in-the-http-request-build-step"></a>
 
-![](<../../.gitbook/assets/image (550).png>)
+![](<../../.gitbook/assets/image (550) (1).png>)
 
 ![](<../../.gitbook/assets/image (564) (1).png>)
 
