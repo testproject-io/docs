@@ -12,9 +12,9 @@ I will use the most popular website to demonstrate the following test case:
 2. define search parameter that will be typed in the search box
 3. Click on the search button.
 
-![](https://downloads.intercomcdn.com/i/o/178812645/200c71ca7967c8410018c948/8DUVviYnux.gif)
+![](../../.gitbook/assets/8DUVviYnux.gif)
 
-![](https://downloads.intercomcdn.com/i/o/178832657/d012ea21e04626a06532d350/KPfwH6TFjR.gif)
+![](../../.gitbook/assets/KPfwH6TFjR.gif)
 
 ## Generating the data source file <a href="#generating-the-data-source-file" id="generating-the-data-source-file"></a>
 
@@ -27,7 +27,7 @@ Once the test is ready, we will download the 'Data Source Template' from our Pro
 
 Now we will edit the CSV file we received. In the first line, you can see the two parameters we set: the **URL** and the **search parameter**. Each line below the parameter setting represents a test. We will build three test cases:
 
-![](https://downloads.intercomcdn.com/i/o/178825534/474bbfd9ed72198edef723ab/pyZiQECmpf.gif)
+![](../../.gitbook/assets/pyZiQECmpf.gif)
 
 All left to do is run the test and select our Data Drive file:
 
@@ -38,7 +38,7 @@ All left to do is run the test and select our Data Drive file:
 5. add your CSV file and give it a name
 6. run your test with the data source file
 
-![](https://downloads.intercomcdn.com/i/o/178836651/a272562a2182e35bc18b5614/EJ0ohaBakC.gif)
+![](<../../.gitbook/assets/EJ0ohaBakC (1).gif>)
 
 Here are also a few video guides for working with data sources in TestProject:&#x20;
 

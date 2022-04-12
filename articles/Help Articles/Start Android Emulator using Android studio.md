@@ -17,7 +17,7 @@ After installation you go to tools-> AVD Manager:
 \
 ﻿Then you do the following:
 
-![](<../../.gitbook/assets/image (462).png>)
+![](<../../.gitbook/assets/image (462) (1).png>)
 
 Select the device you wish to emulate then select the version, after that you can fine tune it to your desires or just open the emulator and start testing.
 
@@ -29,4 +29,4 @@ Select the device you wish to emulate then select the version, after that you ca
 
 2\) If you do not see the device on TestProject please set the following option on the Emulator and restart it:
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (453) (1).png>)

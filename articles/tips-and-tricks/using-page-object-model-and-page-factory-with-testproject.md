@@ -12,7 +12,7 @@ To do that in the Recorder, just click "add a new test as a step" and select the
 
 You can then choose the login test as a test step in your current test case.&#x20;
 
-![](<../../.gitbook/assets/image (453) (1) (1).png>)
+![](<../../.gitbook/assets/image (453) (1) (1) (1).png>)
 
 This lets you re-use the same login test in multiple tests which means that if something changes on the login page, you only need to update that one test, and all of the tests using it will get that change.
 

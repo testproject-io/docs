@@ -6,7 +6,7 @@ An Agent can be associated to only one Account at a time. If you want to switch 
 
 Right-click on the Agent icon from the system tray, and click on the "Quit" option:
 
-![](https://downloads.intercomcdn.com/i/o/118122306/a81b98498aeece446a97f5e2/Restart+agent.PNG)
+![](<../../.gitbook/assets/image (467).png>)
 
 #### 2. Open the Agent's folder: <a href="#2-open-the-agents-folder" id="2-open-the-agents-folder"></a>
 

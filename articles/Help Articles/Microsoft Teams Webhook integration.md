@@ -22,27 +22,27 @@ Admin or sufficient privileges to add connectors.
 
 1\) Add a Connectors from context menu --> Connectors:
 
-![](<../../.gitbook/assets/image (468).png>)
+![](<../../.gitbook/assets/image (468) (1).png>)
 
 2\) Add "Incoming Webhook":
 
-![](<../../.gitbook/assets/image (461).png>)
+![](<../../.gitbook/assets/image (461) (1).png>)
 
 3\) Add:
 
-![](<../../.gitbook/assets/image (467).png>)
+![](<../../.gitbook/assets/image (467) (1).png>)
 
 4\) Click "Connectors" one more time:
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (476) (1).png>)
 
 5\) Choose "Configure":
 
-![](<../../.gitbook/assets/image (469).png>)
+![](<../../.gitbook/assets/image (469) (1).png>)
 
 6\) Enter the required details and **Copy URL Link:**
 
-![](<../../.gitbook/assets/image (460).png>)
+![](<../../.gitbook/assets/image (460) (1).png>)
 
 **Steps on TestProject (Admin):**
 
@@ -50,20 +50,20 @@ _If you are a user ask your admin to create a Teams Web Hook and skip to steps 3
 
 1\) go to Integrations --> Web Hooks + Slack --> Add Web Hook:
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (474) (1).png>)
 
 2\) Add all the Required information:
 
-![](<../../.gitbook/assets/image (464).png>)
+![](<../../.gitbook/assets/image (464) (1).png>)
 
 3\) You are now ready to add this Webhook to the job notifications, you can do it from here:
 
-![](<../../.gitbook/assets/image (449).png>)
+![](<../../.gitbook/assets/image (449) (1).png>)
 
 4\) Choose the created WebHook:
 
-![](<../../.gitbook/assets/image (455).png>)
+![](<../../.gitbook/assets/image (455) (1).png>)
 
 Now everything is set and ready, a TestProject notification looks like this:
 
-![](<../../.gitbook/assets/image (450).png>)
+![](<../../.gitbook/assets/image (450) (1).png>)

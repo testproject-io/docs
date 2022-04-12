@@ -22,49 +22,49 @@ Create a parameter:
 
 Name it, and then leave the default value empty if it's dynamically assigned during the test.
 
-![](<../../.gitbook/assets/image (461) (1).png>)
+![](<../../.gitbook/assets/image (461) (1) (1).png>)
 
 Select your parameter:
 
-![](<../../.gitbook/assets/image (463).png>)
+![](<../../.gitbook/assets/image (463) (1).png>)
 
 And Save the step:\
 ﻿
 
-![](<../../.gitbook/assets/image (472).png>)
+![](<../../.gitbook/assets/image (472) (1).png>)
 
 Now to use it hover over the element and use double "SHIFT" to open the element inspector in the field Actions choose Type text action:\
 ﻿
 
-![](<../../.gitbook/assets/image (469) (1).png>)
+![](<../../.gitbook/assets/image (469) (1) (1).png>)
 
 \
 ﻿Then choose the text parameter that you have created:\
 ﻿
 
-![](<../../.gitbook/assets/image (455) (1).png>)
+![](<../../.gitbook/assets/image (455) (1) (1).png>)
 
 Select this:
 
-![](<../../.gitbook/assets/image (473).png>)
+![](<../../.gitbook/assets/image (473) (1).png>)
 
 \
 ﻿and save the step:\
 ﻿
 
-![](<../../.gitbook/assets/image (475).png>)
+![](<../../.gitbook/assets/image (475) (1).png>)
 
 \
 ﻿So now you can run your flow and save text into a parameter and type or use it as you want.\
 ﻿
 
-![](<../../.gitbook/assets/image (476) (1).png>)
+![](<../../.gitbook/assets/image (476) (1) (1).png>)
 
 \
 ﻿The text will be taken, assigned into the parameter, and then typed on the field:\
 ﻿
 
-![](<../../.gitbook/assets/image (474) (1).png>)
+![](<../../.gitbook/assets/image (474) (1) (1).png>)
 
 _**NOTE:**_
 

@@ -10,7 +10,7 @@ Here are the steps to follow to perform actions on the Element:
 
 ![](https://downloads.intercomcdn.com/i/o/355657749/897107bf5879654c2cfbf1de/1.png)
 
-![](<../../.gitbook/assets/image (466).png>)
+![](<../../.gitbook/assets/image (466) (1).png>)
 
 2\. Get into developer tools (F12 Button) or:
 

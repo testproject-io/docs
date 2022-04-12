@@ -8,7 +8,7 @@ If you'd like to send emails during the execution of your test, you can do so by
 
 To use this addon, you'll need to install the addon from the addons section:
 
-![](https://downloads.intercomcdn.com/i/o/223742971/0eeab40c3258b25de038acf9/email.png)
+![](<../../.gitbook/assets/image (493).png>)
 
 Then create the '**Picksmart Send Email**' action in one of your tests.
 
@@ -39,7 +39,7 @@ In the following example, we'll send an email using the Google SMTP server.
 Before proceeding, you'll need to allow access from less secure apps for your account. These settings need to be turned on:\
 [https://myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
 
-![](https://downloads.intercomcdn.com/i/o/223749368/f54c896d131d8848eceb7c2e/image.png)
+![](<../../.gitbook/assets/image (489).png>)
 
 Then, as mentioned before, create the step and fill in the input fields:
 
@@ -51,9 +51,9 @@ The SSLPort should be: 465
 
 The SMTP username is your Google account email address, without the domain, i.e. [my\_email@gmail.com](mailto:my\_email@gmail.com), the username should be **my\_email**, and the password is the same as for that account itself.
 
-![](https://downloads.intercomcdn.com/i/o/494792276/74cfff7ceaa802e25f514821/image.png)
+![](<../../.gitbook/assets/image (529).png>)
 
-![](https://downloads.intercomcdn.com/i/o/494792461/eda88d57f1a81ba5ca29af4a/image.png)
+![](<../../.gitbook/assets/image (472).png>)
 
 After running the step, the email will be sent to the account specified:
 
