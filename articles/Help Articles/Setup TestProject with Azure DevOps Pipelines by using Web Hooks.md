@@ -26,7 +26,7 @@ You can see a guide on how to set up your pipeline in this video:\
 
 In the **Action**, next, you will need to provide the **API endpoint URL**.
 
-![](<../../.gitbook/assets/image (469).png>)
+![](<../../.gitbook/assets/image (469) (1).png>)
 
 \
 The URL should be:\
@@ -56,11 +56,11 @@ This is how you can create or find your API key using TestProject:\
 You will need to go to the **Integrations** section, and into the **API** tab.\
 From here you will be able to see all available keys or create one.
 
-![](<../../.gitbook/assets/image (563).png>)
+![](<../../.gitbook/assets/image (563) (1).png>)
 
 When creating a key, you can restrict it's access, and in this example it will be restricted to only the project we want to use with the API.
 
-![](<../../.gitbook/assets/image (536).png>)
+![](<../../.gitbook/assets/image (536) (1).png>)
 
 After creating the API key, all you need to do is **Copy** it:
 

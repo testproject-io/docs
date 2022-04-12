@@ -42,7 +42,7 @@ Then click browse and create the file to output to, then hit next:
 
 Now double click the new file and follow the instructions:
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (453) (1).png>)
 
 ![](<../../.gitbook/assets/image (497).png>)
 

@@ -29,4 +29,4 @@ Select the device you wish to emulate then select the version, after that you ca
 
 2\) If you do not see the device on TestProject please set the following option on the Emulator and restart it:
 
-![](<../../.gitbook/assets/image (453) (1).png>)
+![](<../../.gitbook/assets/image (453) (2).png>)

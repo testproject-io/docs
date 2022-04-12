@@ -49,7 +49,7 @@ description: >-
 
 1. Go to your TestProject account and click on **Integrations -> API**
 
-![](<../../.gitbook/assets/image (470).png>)
+![](<../../.gitbook/assets/image (470) (1).png>)
 
 2\. If you do not have an API key, click on **Create API Key**; now, we can copy it for further use in our Jenkins Project.
 
@@ -61,7 +61,7 @@ description: >-
 
 6\. Scroll down to **ProjectParameters** and select the **Create New Project Parameter**,
 
-![](<../../.gitbook/assets/image (454).png>)
+![](<../../.gitbook/assets/image (454) (1).png>)
 
 We can see the request method. In this case it will be POST.
 

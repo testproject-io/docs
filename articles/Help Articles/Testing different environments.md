@@ -6,21 +6,21 @@ description: >-
 
 # Testing different environments
 
-First we will create a CSV file from the the test we wish to run on multiple testing environments.
+First we will create a CSV file from the test we wish to run on multiple testing environments.
 
 On the right side of the test, we have 3 dots, click on them and click on **Data Source Template**.
 
-![](https://downloads.intercomcdn.com/i/o/216421513/90c074d96256c136526793ce/image.png)
+![](<../../.gitbook/assets/image (562).png>)
 
-After that we have the **ApplicationURL** header, here we will insert our different testing environments URLs
+After that we have the **ApplicationURL** header, here we will insert our different testing environment URLs
 
-![](https://downloads.intercomcdn.com/i/o/216421927/d47ed321ee8a6ba59a65f6fb/image.png)
+![](<../../.gitbook/assets/image (454).png>)
 
 Now we shall attach this Data Source to the test.
 
 Go to the Data Sources Tab and add the CSV file we just edited.
 
-![](https://downloads.intercomcdn.com/i/o/216422314/eab9d426c17d7a7d295fd1c4/image.png)
+![](<../../.gitbook/assets/image (521).png>)
 
 Give it a name and create.
 

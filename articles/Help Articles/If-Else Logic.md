@@ -76,7 +76,7 @@ Press on 'Add test as step':
 
 Search the test name:
 
-![](<../../.gitbook/assets/image (521).png>)
+![](<../../.gitbook/assets/image (521) (1).png>)
 
 In the advanced options, we will add the condition
 

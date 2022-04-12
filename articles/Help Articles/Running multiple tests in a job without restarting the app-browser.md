@@ -25,7 +25,7 @@ Now, we need to create a job by clicking the add new job option in the project t
 And when you get to the 3rd step in creating a job, you will notice this switch below:\
 
 
-![](<../../.gitbook/assets/image (474).png>)
+![](<../../.gitbook/assets/image (474) (1).png>)
 
 or if using a mobile test:
 

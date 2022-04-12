@@ -38,7 +38,7 @@ Admin or sufficient privileges to add connectors.
 
 5\) Choose "Configure":
 
-![](<../../.gitbook/assets/image (469) (1).png>)
+![](<../../.gitbook/assets/image (469) (2).png>)
 
 6\) Enter the required details and **Copy URL Link:**
 
@@ -50,7 +50,7 @@ _If you are a user ask your admin to create a Teams Web Hook and skip to steps 3
 
 1\) go to Integrations --> Web Hooks + Slack --> Add Web Hook:
 
-![](<../../.gitbook/assets/image (474) (1).png>)
+![](<../../.gitbook/assets/image (474) (2).png>)
 
 2\) Add all the Required information:
 
