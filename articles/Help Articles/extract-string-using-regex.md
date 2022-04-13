@@ -12,4 +12,4 @@ and create a parameter to get the outputs of the string
 
 for example:
 
-![](<../../.gitbook/assets/image (512).png>)
+![](<../../.gitbook/assets/image (513).png>)

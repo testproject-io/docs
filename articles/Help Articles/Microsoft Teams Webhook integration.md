@@ -58,7 +58,7 @@ _If you are a user ask your admin to create a Teams Web Hook and skip to steps 3
 
 3\) You are now ready to add this Webhook to the job notifications, you can do it from here:
 
-![](<../../.gitbook/assets/image (449) (1).png>)
+![](<../../.gitbook/assets/image (449) (1) (1).png>)
 
 4\) Choose the created WebHook:
 

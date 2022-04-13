@@ -37,7 +37,7 @@ description: >-
 
 1. Back in your Jenkins dashboard, select **New Item**.
 
-![](<../../.gitbook/assets/image (514) (1).png>)
+![](<../../.gitbook/assets/image (514) (1) (1).png>)
 
 2\. Select **Freestyle project** and give it a name.
 

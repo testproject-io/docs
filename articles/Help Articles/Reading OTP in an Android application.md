@@ -16,7 +16,7 @@ Here's an example of getting an OTP by keywords:\
 First, create the step by finding the appropriate action.\
 
 
-![](<../../.gitbook/assets/image (538).png>)
+![](<../../.gitbook/assets/image (538) (1).png>)
 
 ![](<../../.gitbook/assets/image (454).png>)
 

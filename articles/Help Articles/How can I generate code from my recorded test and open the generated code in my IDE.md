@@ -6,11 +6,11 @@ TestProject allows you to export your recorded test into Java or C# coded tests 
 
 In your project, go to the test that you want to generate the code for and click on the three-dots icon. Then, select the Generate Code option:
 
-![](https://downloads.intercomcdn.com/i/o/173688619/44171eda1f7f0834fb2dde3c/btUlkXMsGW.png)
+![](<../../.gitbook/assets/image (453).png>)
 
 Select the preferred language that you want to export the test to, the browser and the package name:
 
-![](https://downloads.intercomcdn.com/i/o/173688891/287c5a11625944e7b122c6fc/chrome\_pa5Ge4kybI.png)
+![](<../../.gitbook/assets/image (536).png>)
 
 #### How to open the Java project <a href="#how-to-open-the-java-project" id="how-to-open-the-java-project"></a>
 

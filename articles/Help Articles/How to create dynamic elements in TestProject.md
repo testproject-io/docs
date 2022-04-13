@@ -27,7 +27,7 @@ Between the single quotes in the below screenshot, we are going to add a paramet
 
 To add a parameter to the locator value, we have to create one. Click on the "+" icon to create a new parameter:
 
-![](<../../.gitbook/assets/image (531).png>)
+![](<../../.gitbook/assets/image (532).png>)
 
 To create a new parameter, fill out the below details:
 
@@ -37,7 +37,7 @@ To create a new parameter, fill out the below details:
 
 Then, click on the "**Save**" button to complete the element creation:
 
-![](<../../.gitbook/assets/image (530).png>)
+![](<../../.gitbook/assets/image (531).png>)
 
 Then, select the parameter you just created by clicking on it:
 

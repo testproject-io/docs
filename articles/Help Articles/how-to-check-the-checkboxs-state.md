@@ -4,7 +4,7 @@ For checking a checkbox’s state and clicking on it only if it’s unchecked, y
 
 * Hover the checkbox element, press double-shift on your keyboard to capture it, and use the “Get Attribute Value” action.
 
-![](<../../.gitbook/assets/image (489) (1).png>)
+![](<../../.gitbook/assets/image (489) (1) (1).png>)
 
 * Set the AttributeName input field to “checked” which will indicate if the checkbox is checked or not. save the output value into a parameter (is\_chceked) for further use.
 

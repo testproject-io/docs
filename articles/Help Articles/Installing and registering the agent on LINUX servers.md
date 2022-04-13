@@ -73,6 +73,6 @@ To run the agent once you restart the server:
 
 run the `TestProjectAgent` command from the `testproject/agent` folder
 
-![](<../../.gitbook/assets/image (449).png>)
+![](<../../.gitbook/assets/image (449) (1).png>)
 
 And the agent will start.

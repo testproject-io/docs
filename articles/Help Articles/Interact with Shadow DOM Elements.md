@@ -18,7 +18,7 @@ Here are the steps to follow to perform actions on the Element:
 2. click on more tools
 3. click developer tools at the bottom
 
-![](<../../.gitbook/assets/image (453).png>)
+![](<../../.gitbook/assets/image (453) (1).png>)
 
 Now we will find the js path of the element you want to act. This will serve as your locator.
 

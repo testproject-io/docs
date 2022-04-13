@@ -20,7 +20,7 @@ As you can see, the navigation step is disabled (does not apply in a mobile test
 Now, we need to create a job by clicking the add new job option in the project toolbar:\
 
 
-![](<../../.gitbook/assets/image (535).png>)
+![](<../../.gitbook/assets/image (535) (1).png>)
 
 And when you get to the 3rd step in creating a job, you will notice this switch below:\
 
@@ -29,7 +29,7 @@ And when you get to the 3rd step in creating a job, you will notice this switch 
 
 or if using a mobile test:
 
-![](<../../.gitbook/assets/image (542) (1).png>)
+![](<../../.gitbook/assets/image (542) (1) (1).png>)
 
 now drag and drop your tests to the job on the right:\
 

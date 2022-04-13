@@ -39,7 +39,7 @@ This is how you get your project ID:
 
 And this is how you get your job ID from inside that project:
 
-![](<../../.gitbook/assets/image (520).png>)
+![](<../../.gitbook/assets/image (520) (1).png>)
 
 Your URL should end up looking something like this:\
 [**https://api.testproject.io/v2/projects/UKwphfwhHkaBQgYuarfUng/jobs/IRQofWcTyEStSR0AZJkeyA/run**](https://api.testproject.io/v2/projects/UKwphfwhHkaBQgYuarfUng/jobs/IRQofWcTyEStSR0AZJkeyA/run)\
@@ -60,7 +60,7 @@ From here you will be able to see all available keys or create one.
 
 When creating a key, you can restrict it's access, and in this example it will be restricted to only the project we want to use with the API.
 
-![](<../../.gitbook/assets/image (536) (1) (1).png>)
+![](<../../.gitbook/assets/image (536) (1) (1) (1).png>)
 
 After creating the API key, all you need to do is **Copy** it:
 

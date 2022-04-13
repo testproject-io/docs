@@ -17,7 +17,7 @@ Installed and running TestProject agent _\[Agent download page link_ [_HERE_](ht
 1. Connect your device to the computer
 2. Open a platform-tools folder and copy its path
 
-![](<../../.gitbook/assets/image (532).png>)
+![](<../../.gitbook/assets/image (532) (1).png>)
 
 \
 &#x20; 2\. Open a command prompt and navigate the platform-tools folder\
@@ -33,7 +33,7 @@ After the second command, you will have the IP address of your Android device\
 \
 
 
-![](<../../.gitbook/assets/image (541).png>)
+![](<../../.gitbook/assets/image (541) (1).png>)
 
 \
 Type the next command in the command prompt\

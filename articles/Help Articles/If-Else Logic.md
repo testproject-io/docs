@@ -18,7 +18,7 @@ In the Recorder, locate the required step and click on the Advanced Options
 
 ![](<../../.gitbook/assets/image (522) (1).png>)
 
-![](<../../.gitbook/assets/image (511) (1) (1).png>)
+![](<../../.gitbook/assets/image (511) (1) (1) (1).png>)
 
 And in the Step Menu:
 
@@ -80,7 +80,7 @@ Search the test name:
 
 In the advanced options, we will add the condition
 
-![](<../../.gitbook/assets/image (553) (1).png>)
+![](<../../.gitbook/assets/image (553) (1) (1).png>)
 
 And now the step will show the 'if' symbol:
 

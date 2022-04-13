@@ -8,7 +8,7 @@ description: >-
 
 In case you are experiencing miscoloration while mirroring your Android device on TestProject during **recording or mirroring**, such as in the following example:
 
-![](<../../.gitbook/assets/image (536) (1).png>)
+![](<../../.gitbook/assets/image (536) (1) (1).png>)
 
 Please follow the steps below.
 

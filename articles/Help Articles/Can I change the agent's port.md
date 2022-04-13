@@ -14,13 +14,12 @@ To change the port, go to your agent's folder located at:\
 Locate the **agent-configuration.json** file and open it.\
 
 
-![](https://downloads.intercomcdn.com/i/o/189116238/37de9676f7cc64bccc9a6f5a/pic.png)
+![](<../../.gitbook/assets/image (533).png>)
 
 \
-Inside this file, you'll be able to edit the **bindPort** and/or **bindSecurePort** values to whatever you need.\
+Inside this file, you'll be able to edit the **bindPort** and/or **bindSecurePort** values to whatever you need.
 
-
-![](https://downloads.intercomcdn.com/i/o/189116455/145ab87e95950d490395d069/pic2.png)
+![](<../../.gitbook/assets/image (509).png>)
 
 \
 **\*\*Important note:** Please be careful when editing the file, if the JSON file structure is harmed, the agent won't be able to launch!

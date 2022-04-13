@@ -18,7 +18,7 @@ then, go into the click step and change the day to a parameter in the locator:
 
 Create the parameter for the day:
 
-![](<../../.gitbook/assets/image (533).png>)
+![](<../../.gitbook/assets/image (533) (1).png>)
 
 I chose the default day to be 1.
 

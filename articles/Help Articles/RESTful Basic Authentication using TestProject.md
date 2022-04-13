@@ -9,7 +9,7 @@ This addon provides actions to to send HTTP/S requests using GET, POST, PUT and 
 
 If a client makes a request to a URL for which the server expects authentication information. Most web clients handle this response by requesting a user ID and password from the end user like seen in the following example:
 
-![](https://downloads.intercomcdn.com/i/o/196629812/d4496a79fc0ce91fd06fc141/Untitled.png)
+![](<../../.gitbook/assets/image (542).png>)
 
 In order to perform basic authentication you will need to fill in the **Headers** field of the appropriate action like so:\
 \
@@ -27,6 +27,8 @@ Authorization = Basic RGF2aWQ6MTIzNDU2
 
 The end result should look something like so:
 
-![](https://downloads.intercomcdn.com/i/o/196340613/e6309eb4e9438e5739cca188/Untitled.png)
+![](<../../.gitbook/assets/image (538).png>)
+
+![](<../../.gitbook/assets/image (479).png>)
 
 Where it can be seen that what appears after Basic is the encoded character string.

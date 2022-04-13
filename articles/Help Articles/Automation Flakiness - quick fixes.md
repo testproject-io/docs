@@ -122,7 +122,7 @@ This is how you change the strategies for Elements Locators in your application:
 
 ![](<../../.gitbook/assets/image (515).png>)
 
-![](<../../.gitbook/assets/image (542).png>)
+![](<../../.gitbook/assets/image (542) (1).png>)
 
 You can add custom locator strategies for your Application or you cancel certain strategies, You can also choose a different priority to the locator's strategy.
 

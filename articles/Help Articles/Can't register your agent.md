@@ -65,7 +65,7 @@ On Mac, after installing the agent, you can run it by finding it in the applicat
 Then when you run it, you will have the TestProject icon on the top taskbar, with the same options as in windows.\
 
 
-![](<../../.gitbook/assets/image (534).png>)
+![](<../../.gitbook/assets/image (534) (1).png>)
 
 Click it and make sure it says "Running".\
 Now try registering your agent like on the windows steps (all troubleshooting steps but steps 2 and 5 apply, the folder for step 5 on mac is the one shown below in moving the agent between accounts). If that does not work, then contact support.

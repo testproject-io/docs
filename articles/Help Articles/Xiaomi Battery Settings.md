@@ -12,11 +12,11 @@ You will need to disable this setting, by **disabling Xiaomi's UIAutomator batte
 
 You can do this by heading to your device's **settings**:
 
-![](<../../.gitbook/assets/image (541) (1).png>)
+![](<../../.gitbook/assets/image (541) (2).png>)
 
 Then **battery & performance**:
 
-![](<../../.gitbook/assets/image (453) (1).png>)
+![](<../../.gitbook/assets/image (453) (1) (1).png>)
 
 Select _**Manage apps battery usage:**_
 

@@ -8,7 +8,7 @@ _**To add a new team member, click on the "Invite Teammate" button at the top of
 
 _**Now, you need to provide your other team member's email address. Then, simply click "Next":**_
 
-![](<../../.gitbook/assets/image (509).png>)
+![](<../../.gitbook/assets/image (510).png>)
 
 _**In this window, you will be presented with the options for granting permission for your team member. You can restrict him to specific projects, or grant him administrator rights. Then, click on the "Finish" button:**_
 

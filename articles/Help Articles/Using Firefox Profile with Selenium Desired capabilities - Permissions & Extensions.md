@@ -82,7 +82,7 @@ To change these settings follow these steps:
 
 For **example** zip file (open with WinRar):
 
-![](<../../.gitbook/assets/image (546).png>)
+![](<../../.gitbook/assets/image (546) (1).png>)
 
 2\) Click on the zip file option in Firefox settings under the Applications section and change it from always ask to save the file, this will automatically save the file to the default directory.
 

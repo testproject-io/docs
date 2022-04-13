@@ -24,7 +24,7 @@ These are the conditions on the sub-tests:
 
 And this is the second sub-test
 
-![](<../../.gitbook/assets/image (511).png>)
+![](<../../.gitbook/assets/image (511) (1).png>)
 
 Now we will use this **data source**:
 

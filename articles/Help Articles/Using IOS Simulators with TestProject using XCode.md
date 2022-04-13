@@ -22,7 +22,7 @@ You interact with the Simulator by using the keyboard and the mouse to emulate t
 
 With Xcode installed:
 
-![](<../../.gitbook/assets/image (489).png>)
+![](<../../.gitbook/assets/image (489) (1).png>)
 
 The TestProject Agent will detect all the simulators it comes with and display them in the connected simulators list in the TestProject application:
 
