@@ -16,7 +16,7 @@ By default, the step pause is happening before the execution of each step and yo
 
 You can also edit this setting **globally** for each of your test steps by going to the settings of your test and changing the default execution speed.
 
-![](<../../.gitbook/assets/image (466) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (466) (1) (1) (1) (1).png>)
 
 Here is how you can change **specific step** Execution Speed first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 

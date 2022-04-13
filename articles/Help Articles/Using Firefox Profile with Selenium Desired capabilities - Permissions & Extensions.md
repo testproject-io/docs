@@ -48,7 +48,7 @@ about:profiles
 
 then click on Create a New Profile
 
-![](<../../.gitbook/assets/image (549).png>)
+![](<../../.gitbook/assets/image (549) (1).png>)
 
 2\) After we have created the firefox profile we need to open firefox with this profile and add our application URL to the permissions we need.
 

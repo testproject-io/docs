@@ -6,7 +6,7 @@ You can let TestProject install the IPA for you. ﻿
 
 ![](<../../.gitbook/assets/image (483).png>)
 
-![](<../../.gitbook/assets/image (551).png>)
+![](<../../.gitbook/assets/image (552).png>)
 
 ![](<../../.gitbook/assets/image (547).png>)
 

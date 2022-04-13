@@ -34,7 +34,7 @@ or if using a mobile test:
 now drag and drop your tests to the job on the right:\
 
 
-![](<../../.gitbook/assets/image (530).png>)
+![](<../../.gitbook/assets/image (530) (1).png>)
 
 And you are good to go; you can now run the job.
 

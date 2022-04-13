@@ -14,13 +14,13 @@ First, we will create a Job:
 
 Now we shall Select Web, your desired browser, and the agent who shall execute the Tests.
 
-![](<../../.gitbook/assets/image (552).png>)
+![](<../../.gitbook/assets/image (552) (1).png>)
 
 ![](<../../.gitbook/assets/image (508).png>)
 
 Next, after we create the Job, we will drag all the tests we wish to execute inside the Job:
 
-![](<../../.gitbook/assets/image (507).png>)
+![](<../../.gitbook/assets/image (507) (1).png>)
 
 Now we will set the Custom Capabilities:
 

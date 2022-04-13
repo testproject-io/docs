@@ -30,7 +30,7 @@ Admin or sufficient privileges to add connectors.
 
 3\) Add:
 
-![](<../../.gitbook/assets/image (467) (1).png>)
+![](<../../.gitbook/assets/image (467) (1) (1).png>)
 
 4\) Click "Connectors" one more time:
 

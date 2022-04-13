@@ -5,7 +5,7 @@ When you are working with TestProject, you don't upload the files to SauceLabs d
 ﻿\
 ﻿To create an IPA, you have to build an App for a simulator, e.g
 
-![](<../../.gitbook/assets/image (472).png>)
+![](<../../.gitbook/assets/image (473).png>)
 
 And not a device
 

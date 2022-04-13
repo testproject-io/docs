@@ -83,7 +83,7 @@ then enable "Show Library Folder":
 Now go to Library>Application Support>TestProject>Agent\
 and delete agentidentity.jbin or id.dat.
 
-![](<../../.gitbook/assets/image (509).png>)
+![](<../../.gitbook/assets/image (509) (1).png>)
 
 ![](<../../.gitbook/assets/image (463).png>)
 

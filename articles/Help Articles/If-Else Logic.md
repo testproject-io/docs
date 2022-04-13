@@ -38,7 +38,7 @@ Hover over the element, press double shift to freeze it, in Actions pick Get Tex
 
 Save the text into a Parameter.
 
-![](<../../.gitbook/assets/image (552) (1).png>)
+![](<../../.gitbook/assets/image (552) (1) (1).png>)
 
 Next, lets create a step that will type text to a TextArea only if the text is Equal to "TestProject"
 

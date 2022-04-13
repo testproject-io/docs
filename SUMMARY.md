@@ -280,7 +280,6 @@
   * [TestProject Useful Resources](<articles/Help Articles/TestProject Useful Resources.md>)
   * [How can I add a new team member to my account?](<articles/Help Articles/How can I add a new team member to my account.md>)
   * [How can I associate an existing agent to a different account](<articles/Help Articles/How can I associate an existing agent to a different account.md>)
-  * [Can I use a test inside another test? (Nested Tests)](<articles/Help Articles/Can I use a test inside another test (Nested Tests).md>)
   * [The Agent failed to detect the installed browsers](<articles/Help Articles/The Agent failed to detect the installed browsers.md>)
   * [Can I install an agent on 32-bit Windows machine?](<articles/Help Articles/Can I install an agent on 32-bit Windows machine.md>)
   * [Why do I get this message: "SDK version is incompatible with the agent version"](<articles/Help Articles/Why do I get this message SDK version is incompatible with the agent version.md>)

@@ -37,7 +37,7 @@ Admin or sufficient permissions to manage Webhooks.
 
 4\) Give your Webhook a name, select the channel and click on save changes, and then copy the URL
 
-![](<../../.gitbook/assets/image (482).png>)
+![](<../../.gitbook/assets/image (482) (1).png>)
 
 **Steps on TestProject (Admin):**
 

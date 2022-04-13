@@ -29,7 +29,7 @@ _**2.**_ Reinstall the agent. To do that on MacOS, you need to first go to your 
 
 then enable "Show Library Folder":
 
-![](<../../.gitbook/assets/image (467).png>)
+![](<../../.gitbook/assets/image (467) (1).png>)
 
 ![](<../../.gitbook/assets/image (459) (1).png>)
 

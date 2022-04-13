@@ -14,7 +14,7 @@ First, we will create a Job:
 
 Now we shall Select Web, Chrome as the Browser, and the agent who shall execute the Tests.
 
-![](<../../.gitbook/assets/image (473).png>)
+![](<../../.gitbook/assets/image (473) (1).png>)
 
 ![](<../../.gitbook/assets/image (504).png>)
 

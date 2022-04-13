@@ -24,7 +24,7 @@ Can be done by clicking on the context menu of the test --> share test:
 
 We can save our test as a file:
 
-![](<../../.gitbook/assets/image (466).png>)
+![](<../../.gitbook/assets/image (466) (1).png>)
 
 We can share the file using any platform we choose.
 

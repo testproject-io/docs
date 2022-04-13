@@ -4,11 +4,11 @@ One of the key features of TestProject is team collaboration. We allow you and y
 
 _**To add a new team member, click on the "Invite Teammate" button at the top of the page:**_
 
-![](https://downloads.intercomcdn.com/i/o/170645876/efd23880379f762e99d63bb1/JjLcnD9h0A.png)
+![](<../../.gitbook/assets/image (472).png>)
 
 _**Now, you need to provide your other team member's email address. Then, simply click "Next":**_
 
-![](https://downloads.intercomcdn.com/i/o/170645978/ac95397c1dcd21cc61d96015/yGL5NGwajC.png)
+![](<../../.gitbook/assets/image (509).png>)
 
 _**In this window, you will be presented with the options for granting permission for your team member. You can restrict him to specific projects, or grant him administrator rights. Then, click on the "Finish" button:**_
 

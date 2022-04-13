@@ -82,7 +82,7 @@ _`argument, or don't use --user-data-dir`_
 
 Use this button:
 
-![](<../../.gitbook/assets/image (507) (1).png>)
+![](<../../.gitbook/assets/image (507) (1) (1).png>)
 
 And add these capabilities:
 

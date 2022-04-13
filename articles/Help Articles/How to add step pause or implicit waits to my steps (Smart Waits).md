@@ -15,3 +15,5 @@ You can find both of these waits in the Smart Recorder step editor as seen below
 
 
 ![](https://downloads.intercomcdn.com/i/o/170672799/56755a964b34d2d7c4842756/A2pIKiySWO.png)
+
+![](<../../.gitbook/assets/image (549).png>)

@@ -13,7 +13,7 @@ Let's have a look at the **Swipe to element (vertically)** action:
 
 **BottomMarginPercent & TopMarginPercent -** Defining the area in which your "finger" will perform the swipe action. This image explains it better:
 
-![](<../../.gitbook/assets/image (482) (1).png>)
+![](<../../.gitbook/assets/image (482) (1) (1).png>)
 
 **MaxSwipes -** Defines the amount of swipes you want to perform in this step. For example, if you set it to 3 swipes, it will try to find the element for 3 swipes maximum. If the element will be found before that, it will stop the swipes actions.
 
