@@ -25,7 +25,7 @@ Open the advanced step settings for the step you wish to disable the self-healin
 
 Inside the step, press on edit element (pencil icon) and remove all alternative locators found by TestProject, leavening the desired locator only.
 
-![](<../../.gitbook/assets/image (472).png>)
+![](<../../.gitbook/assets/image (472) (1).png>)
 
 It will shut down the self healing feature and indicate to TestProject's self-healing AI engine that this specific step shouldn't be exacted with alternative strategies.
 

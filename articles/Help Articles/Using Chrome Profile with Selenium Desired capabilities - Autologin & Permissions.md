@@ -52,7 +52,7 @@ What we should do, is to create a designated profile for us to use in our jobs.
 
 2\) After we created that profile and logged in we should change our site settings to allow all the permissions we need:
 
-![](<../../.gitbook/assets/image (476) (1).png>)
+![](<../../.gitbook/assets/image (476) (1) (1).png>)
 
 3\) Then we should navigate to:
 

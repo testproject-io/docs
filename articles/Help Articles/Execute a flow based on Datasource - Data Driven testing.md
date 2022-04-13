@@ -16,11 +16,11 @@ For example this is my **main test:**
 
 These are the parameters:
 
-![](<../../.gitbook/assets/image (551).png>)
+![](<../../.gitbook/assets/image (551) (1).png>)
 
 These are the conditions on the sub-tests:
 
-![](<../../.gitbook/assets/image (483).png>)
+![](<../../.gitbook/assets/image (483) (1).png>)
 
 And this is the second sub-test
 
@@ -32,7 +32,7 @@ Now we will use this **data source**:
 
 You can determine which subtest will run on each iteration. (all, none or some)
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (476) (1).png>)
 
 ![](<../../.gitbook/assets/image (462).png>)
 

@@ -46,7 +46,7 @@ Next, lets create a step that will type text to a TextArea only if the text is E
 
 And add the condition in the step:
 
-![](<../../.gitbook/assets/image (551) (1).png>)
+![](<../../.gitbook/assets/image (551) (1) (1).png>)
 
 If the text is NOT equal, the step will not execute and will be shown in grey.
 
@@ -54,7 +54,7 @@ If the text is NOT equal, the step will not execute and will be shown in grey.
 
 In the reports, it will look like so:
 
-![](<../../.gitbook/assets/image (475) (1).png>)
+![](<../../.gitbook/assets/image (475) (1) (1).png>)
 
 #### **If/Else with different test flows** <a href="#ifelse-with-different-test-flows" id="ifelse-with-different-test-flows"></a>
 
@@ -66,7 +66,7 @@ Now let's take another scenario that evaluate the **sum of 2 values** operation 
 
 Here how it achieved with TestProject recorder:
 
-![](<../../.gitbook/assets/image (547) (1).png>)
+![](<../../.gitbook/assets/image (547) (1) (1).png>)
 
 Now we call subtest A if the value from the previous step was 3:
 

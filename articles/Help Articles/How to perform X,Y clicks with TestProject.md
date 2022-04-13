@@ -51,7 +51,7 @@ If you followed all these instructions it should look like this:
 
 To tap anywhere on the mobile screen at coordinates we will use the step " tap gesture at coordinates".
 
-![](<../../.gitbook/assets/image (477).png>)
+![](<../../.gitbook/assets/image (477) (1).png>)
 
 To find the X, Y we will use the TestProject recorder.
 

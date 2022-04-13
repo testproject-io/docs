@@ -19,7 +19,7 @@ Select your machine and go to the Edit option:\
 
 Then navigate to the options tab, choose shared folders, click add and add your path:
 
-![](<../../.gitbook/assets/image (565).png>)
+![](<../../.gitbook/assets/image (565) (1).png>)
 
 Click OK and run your machine.\
 Run the command&#x20;
@@ -52,7 +52,7 @@ Type ifconfig\
 Save the number shown after inet, this is the agents IP, you will use it to remotely register your agent on Linux server.\
 Now open TestProject application with chrome browser, go to the agent tab and click Register agent: (you can browse to TestProject application from any desktop that have a browser as long as it on the same network as your Linux server)&#x20;
 
-![](<../../.gitbook/assets/image (512).png>)
+![](<../../.gitbook/assets/image (512) (1).png>)
 
 Type in the agent's IP saved from earlier, and choose a name for your agent:
 
@@ -66,7 +66,7 @@ Click save, then register:\
 Congratulations! you have registered your Agent! it will now show in your agent tab:\
 
 
-![](<../../.gitbook/assets/image (529).png>)
+![](<../../.gitbook/assets/image (529) (1).png>)
 
 And is available for use!\
 To run the agent once you restart the server:

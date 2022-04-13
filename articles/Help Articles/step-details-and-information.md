@@ -14,6 +14,6 @@ simply hover over the red label on the left side of the step and press on "detai
 
 3\) This is the Step execution details window and it is very important for debugging a test.
 
-![](<../../.gitbook/assets/image (559).png>)
+![](<../../.gitbook/assets/image (559) (1).png>)
 
 _Please make sure the images are visible and highlight any important information._

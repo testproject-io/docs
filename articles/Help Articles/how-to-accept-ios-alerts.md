@@ -2,15 +2,19 @@
 
 You can accept IOS alerts using these desired capabilities on your job,
 
-![](https://downloads.intercomcdn.com/i/o/332315552/372718103807b59c2fe42d86/image.png)
+![](<../../.gitbook/assets/image (559).png>)
 
-![](https://downloads.intercomcdn.com/i/o/332315649/1de1d71c4feea3ccf49c636c/image.png)
+![](<../../.gitbook/assets/image (529).png>)
 
-I have also added the capabilities I used here:
+You can also see here the capabilities that were used:
 
 ```json
 {  "platformName": "iOS",  "platformVersion": "14.5",  "deviceName": "iPhone",  "udid": "00008030-000C71643EA1802E",  "bundleId": "com.waze.iphone",  "autoAcceptAlerts": "true"}
 ```
 
 Don't forget to change the version and device UDID according to your environment.
+
+You can find more Appium desired capabilities here:
+
+[https://appium.io/docs/en/writing-running-appium/caps/](https://appium.io/docs/en/writing-running-appium/caps/)
 

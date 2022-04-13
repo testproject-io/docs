@@ -24,7 +24,7 @@ Installed and running TestProject agent _\[Agent download page link_ [_HERE_](ht
 cd C:\Program Files\TestProject Agent\android-sdk\platform-tools\
 
 
-![](<../../.gitbook/assets/image (465).png>)
+![](<../../.gitbook/assets/image (465) (1).png>)
 
 3\. Run the next commands in the command prompt (one after another, not all at once)\
 adb tcpip 5555\

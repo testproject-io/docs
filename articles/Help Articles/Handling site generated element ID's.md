@@ -41,7 +41,7 @@ However, during the next execution the ID will change and the correct XPATH will
 And the step will fail due to timeout during execution.\
 
 
-![](<../../.gitbook/assets/image (503).png>)
+![](<../../.gitbook/assets/image (503) (1).png>)
 
 A solution to this problem would be to to generalize the XPATH value to not require the specific ID and locate the element despite it.\
 

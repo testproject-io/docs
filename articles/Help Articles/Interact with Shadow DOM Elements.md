@@ -8,7 +8,7 @@ Here are the steps to follow to perform actions on the Element:
 
 1. Create a step with the method Execute JavaScript
 
-![](<../../.gitbook/assets/image (470).png>)
+![](<../../.gitbook/assets/image (470) (1).png>)
 
 ![](<../../.gitbook/assets/image (478) (1).png>)
 
@@ -38,7 +38,7 @@ Now we will find the js path of the element you want to act. This will serve as 
 
 3\. Get text to a parameter: to do that, you will need to add this to the start of the path you copied "return" and to the end ".textContent"
 
-![](<../../.gitbook/assets/image (547).png>)
+![](<../../.gitbook/assets/image (547) (1).png>)
 
 So as you can see, using execute javascript is very easy,
 

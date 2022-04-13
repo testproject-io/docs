@@ -44,7 +44,7 @@ b) Remove or keep the tests we want to share.
 
 c) We can change the name of the project to Shared tests for instance.
 
-![](<../../.gitbook/assets/image (469).png>)
+![](<../../.gitbook/assets/image (469) (1).png>)
 
 d) Invite the user to our account.
 
@@ -64,4 +64,4 @@ To share multiple tests as we can use nested tests first we will create a new te
 
 We are going to "SAVE & EXIT" and now we can simply share this test as a file a direct link or via email. any subtest inside the test we shared will be saved in the file or will be available to the user when sharing
 
-![](<../../.gitbook/assets/image (492).png>)
+![](<../../.gitbook/assets/image (492) (1).png>)

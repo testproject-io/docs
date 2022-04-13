@@ -33,7 +33,7 @@ Admin or sufficient permissions to manage Webhooks.
 3\) Go to the Integrations tab and click on create Webhook\
 
 
-![](<../../.gitbook/assets/image (461).png>)
+![](<../../.gitbook/assets/image (461) (1).png>)
 
 4\) Give your Webhook a name, select the channel and click on save changes, and then copy the URL
 

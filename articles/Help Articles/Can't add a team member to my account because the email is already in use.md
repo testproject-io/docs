@@ -6,7 +6,7 @@ description: This email already in use! Solutions and more!
 
 If you are trying to add a team member to your account and getting this error message: "This email already in use!", it means that this user already has a TestProject account.&#x20;
 
-![](<../../.gitbook/assets/image (461) (1).png>)
+![](<../../.gitbook/assets/image (461) (1) (1).png>)
 
 **In such a case, you have 3 options:**
 

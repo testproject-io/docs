@@ -22,7 +22,7 @@ Create a parameter:
 
 Name it, and then leave the default value empty if it's dynamically assigned during the test.
 
-![](<../../.gitbook/assets/image (461) (1) (1).png>)
+![](<../../.gitbook/assets/image (461) (1) (1) (1).png>)
 
 Select your parameter:
 

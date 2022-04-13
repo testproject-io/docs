@@ -17,7 +17,7 @@ In the **Trigger** section, you can choose when to execute the test. We will cho
 In the **Filters** section, you can choose a pipeline.\
 In case you already have a pipeline set up for TestProject, you can just select it and hit **Next**.
 
-![](<../../.gitbook/assets/image (519).png>)
+![](<../../.gitbook/assets/image (519) (1).png>)
 
 In case you do not, you will need to create one.\
 You can see a guide on how to set up your pipeline in this video:\
@@ -26,7 +26,7 @@ You can see a guide on how to set up your pipeline in this video:\
 
 In the **Action**, next, you will need to provide the **API endpoint URL**.
 
-![](<../../.gitbook/assets/image (469) (1) (1).png>)
+![](<../../.gitbook/assets/image (469) (1) (1) (1).png>)
 
 \
 The URL should be:\

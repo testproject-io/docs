@@ -42,7 +42,7 @@ You can edit the Adaptive Wait time **globally** for your test from the test’s
 
 This is how you can change **specific step** Adaptive Wait first, disable "Use Test Default" (inherits from test settings) then choose a custom behavior:
 
-![](<../../.gitbook/assets/image (469) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (469) (1) (1) (1) (1).png>)
 
 
 

@@ -74,7 +74,7 @@ Now try registering your agent like on the windows steps (all troubleshooting st
 
 On MacOS, you need to go to your user's folder and enable "view libraries", so right-click and click "Show View Options":
 
-![](<../../.gitbook/assets/image (486).png>)
+![](<../../.gitbook/assets/image (486) (1).png>)
 
 then enable "Show Library Folder":
 

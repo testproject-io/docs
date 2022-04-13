@@ -20,7 +20,7 @@ Then **battery & performance**:
 
 Select _**Manage apps battery usage:**_
 
-![](<../../.gitbook/assets/image (560).png>)
+![](<../../.gitbook/assets/image (560) (1).png>)
 
 Select _**Choose apps**_ from _**Manage apps' battery usage**:_
 
@@ -30,6 +30,6 @@ __
 
 Select _**Installed apps** _ and choose **UIAutomator,** and then tap _**No restrictions:**_
 
-![](<../../.gitbook/assets/image (475).png>)
+![](<../../.gitbook/assets/image (475) (1).png>)
 
 \

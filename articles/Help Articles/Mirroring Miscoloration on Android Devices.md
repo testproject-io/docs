@@ -22,7 +22,7 @@ You will see the following page:
 
 2\. Select the **scRGB liner** option from the dropdown list and **relaunch the browser**:
 
-![](<../../.gitbook/assets/image (469) (1).png>)
+![](<../../.gitbook/assets/image (469) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (564).png>)
 
