@@ -18,7 +18,7 @@ This tutorial is intended for Android devices that are being used on TestProject
 
 You will see the following page:
 
-![](<../../.gitbook/assets/image (471).png>)
+![](<../../.gitbook/assets/image (471) (1).png>)
 
 2\. Select the **scRGB liner** option from the dropdown list and **relaunch the browser**:
 

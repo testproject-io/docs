@@ -44,7 +44,7 @@ Now run: ./TestProject\_Agent\_YOUR\_VERSION.sh
 And follow the instructions given:\
 
 
-![](<../../.gitbook/assets/image (518).png>)
+![](<../../.gitbook/assets/image (518) (1).png>)
 
 At the end it will ask you if you want to start the application, type y and enter.\
 Type the command: sudo apt install net-tools\
@@ -61,7 +61,7 @@ Type in the agent's IP saved from earlier, and choose a name for your agent:
 Click save, then register:\
 
 
-![](<../../.gitbook/assets/image (543) (1).png>)
+![](<../../.gitbook/assets/image (543) (1) (1).png>)
 
 Congratulations! you have registered your Agent! it will now show in your agent tab:\
 

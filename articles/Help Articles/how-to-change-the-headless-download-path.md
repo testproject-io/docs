@@ -34,6 +34,6 @@ For macOS:
 }
 ```
 
-![](<../../.gitbook/assets/image (457) (1).png>)
+![](<../../.gitbook/assets/image (457) (1) (1).png>)
 
 Then all you have to do is click save and execute the job you desire with these desired capabilities.

@@ -10,7 +10,7 @@ Here are the steps to follow to perform actions on the Element:
 
 ![](<../../.gitbook/assets/image (470).png>)
 
-![](<../../.gitbook/assets/image (478).png>)
+![](<../../.gitbook/assets/image (478) (1).png>)
 
 2\. Get into developer tools (F12 Button) or:
 

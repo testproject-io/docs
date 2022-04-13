@@ -8,7 +8,7 @@ If you'd like to send emails during the execution of your test, you can do so by
 
 To use this addon, you'll need to install the addon from the addons section:
 
-![](<../../.gitbook/assets/image (509) (1).png>)
+![](<../../.gitbook/assets/image (509) (1) (1).png>)
 
 Then create the '**Picksmart Send Email**' action in one of your tests.
 

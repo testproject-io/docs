@@ -11,7 +11,7 @@ In order to retrieve the HAR file, please perform the following points:
 * Open developer tools using F12 on the keyboard.
 * Navigate to the Network tab
 
-![](<../../.gitbook/assets/image (486).png>)
+![](<../../.gitbook/assets/image (486) (1).png>)
 
 * Clear table content
 

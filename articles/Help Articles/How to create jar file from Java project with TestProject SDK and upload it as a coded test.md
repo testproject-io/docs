@@ -2,7 +2,7 @@
 
 Download Java SDK from [Integrations](https://app.testproject.io/#/integrations/develop-addon) under Develop an Addon.
 
-![](<../../.gitbook/assets/image (463) (1).png>)
+![](<../../.gitbook/assets/image (463) (1) (1).png>)
 
 Add the downloaded Jar to the project.
 
@@ -46,6 +46,6 @@ Run Maven commands Clean > Compile > Package. You will see a Jar file under targ
 
 Or Gradle commands Clean > Build > Jar. You will see the Jar file under build > libs
 
-![](<../../.gitbook/assets/image (458).png>)
+![](<../../.gitbook/assets/image (458) (1).png>)
 
 In TestProject go to your project and click on Add a new Test > select Code test type > drag the Jar file to the upload area and click on Upload > click Next > provide (meaningful!) package name, you can add Description and Application as well > finish the wizard.

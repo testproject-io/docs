@@ -24,7 +24,7 @@ Select _**Manage apps battery usage:**_
 
 Select _**Choose apps**_ from _**Manage apps' battery usage**:_
 
-![](<../../.gitbook/assets/image (457).png>)
+![](<../../.gitbook/assets/image (457) (1).png>)
 
 __
 

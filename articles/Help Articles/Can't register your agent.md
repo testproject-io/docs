@@ -21,29 +21,29 @@ If you have downloaded the agent and have trouble registering it, a few options 
 
 Go to agents and click register. A message will pop up and ask you to input the agent's alias, so just type in the name you want.
 
-![](https://downloads.intercomcdn.com/i/o/200713982/17e80e27ba6641633ca13f2e/image.png)
+![](<../../.gitbook/assets/image (471).png>)
 
 After registration is complete, you should see the "TV" icon go green, and your agent with the name you gave it pop up under My Agents.
 
-![](https://downloads.intercomcdn.com/i/o/200713248/2812dd6b9f86d6bfca1b5048/image.png)
+![](<../../.gitbook/assets/image (518).png>)
 
 1. Make sure the agent is running,
 
 ( to check this, click the icon shown below, it will show the status of the agent)
 
-![](https://downloads.intercomcdn.com/i/o/199644283/0552473a2b5d1ae4c511f172/image.png)
+![](<../../.gitbook/assets/image (543).png>)
 
 _**2.**_ If the agent is running and you are getting an "unable to register" error, go to the agent's installation folder. On windows, the agent is typically located in C:\Program Files\TestProject Agent\
 Delete data.bin in the agent folder (only if it is there)\
 And now just run the executable&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/199628206/94cd5f15cc6a7dc6cdf18092/image.png)
+![](<../../.gitbook/assets/image (458).png>)
 
 \
 \
 **3.** _click the icon-_
 
-![](https://downloads.intercomcdn.com/i/o/199644283/0552473a2b5d1ae4c511f172/image.png)
+![](<../../.gitbook/assets/image (506).png>)
 
 Then click restart.\
 \
@@ -60,12 +60,12 @@ If all those steps fail, contact support.\
 **Registering the agent:**\
 On Mac, after installing the agent, you can run it by finding it in the application folder and double-clicking. This will open it in the dock, and you can see its options by right-clicking.&#x20;
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/200730456/843f773ff80efc6a8ebb55e4/assets-2F-Ll7jrseWgVXoVhnULBe-2F-Lo0Ug96w5K3B7yLMRwX-2F-Lo0aajB-Z-QY-cPuv4l-2Fimage.png)
+![](<../../.gitbook/assets/image (460).png>)
 
 Then when you run it, you will have the TestProject icon on the top taskbar, with the same options as in windows.\
 
 
-![](https://downloads.intercomcdn.com/i/o/200721198/62c921b1dcb902c991e5a6ee/Screen+Shot+2020-04-15+at+10.44.46+AM111.png)
+![](<../../.gitbook/assets/image (534).png>)
 
 Click it and make sure it says "Running".\
 Now try registering your agent like on the windows steps (all troubleshooting steps but steps 2 and 5 apply, the folder for step 5 on mac is the one shown below in moving the agent between accounts). If that does not work, then contact support.
@@ -74,18 +74,18 @@ Now try registering your agent like on the windows steps (all troubleshooting st
 
 On MacOS, you need to go to your user's folder and enable "view libraries", so right-click and click "Show View Options":
 
-![](https://downloads.intercomcdn.com/i/o/200728709/946219db9dfcac5799d03f82/Screen+Shot+2020-04-15+at+10.44.46+AM.png)
+![](<../../.gitbook/assets/image (486).png>)
 
 then enable "Show Library Folder":
 
-![](https://downloads.intercomcdn.com/i/o/200729223/5f9e4fbb64cc29d981847c81/Screen+Shot+2020-04-15+at+10.44.55+AM.png)
+![](<../../.gitbook/assets/image (478).png>)
 
 Now go to Library>Application Support>TestProject>Agent\
 and delete agentidentity.jbin or id.dat.
 
-![](https://downloads.intercomcdn.com/i/o/200729505/c0a4291399ab6e415a98630a/Screen+Shot+2020-04-15+at+10.45.05+AM.png)
+![](<../../.gitbook/assets/image (509).png>)
 
-![](https://downloads.intercomcdn.com/i/o/200729527/c65edcbab7e6b2069ceabc0f/Screen+Shot+2020-04-15+at+10.45.36+AM.png)
+![](<../../.gitbook/assets/image (463).png>)
 
 Now you can register your agent.\
 If that does not work, delete the entire Agent folder, reinstall the agent and try again.
@@ -96,7 +96,7 @@ If that does not work, delete the entire Agent folder, reinstall the agent and t
 
 On Linux, you will need to run the `TestProjectAgent` command from the `testproject/agent` folder
 
-![](https://testproject-5b5666821ab7.intercom-attachments-1.com/i/o/200736772/b9a99b0bdf003fb9faf6806f/assets-2F-Ll7jrseWgVXoVhnULBe-2F-LmumzLMfJDGvW7Gnxps-2F-Lmun9lMYfn8qn5QlyCh-2Fimage.png)
+![](<../../.gitbook/assets/image (539).png>)
 
 Now troubleshoot using the windows steps, except steps 2 and 5. the folder for step 5 on Linux is: \~/.testproject/agent.
 

@@ -16,7 +16,7 @@ In this case, you might not be able to record or execute tests on the platform! 
 
 Navigate to the website with untrusted certificate, and click on the "Not Secure" label next to the URL:
 
-![](<../../.gitbook/assets/image (471) (1).png>)
+![](<../../.gitbook/assets/image (471) (1) (1).png>)
 
 Click on Certificate
 
@@ -38,7 +38,7 @@ Then click next, and select the first option:
 
 Then click browse and create the file to output to, then hit next:
 
-![](<../../.gitbook/assets/image (463) (1) (1).png>)
+![](<../../.gitbook/assets/image (463) (1) (1) (1).png>)
 
 Now double click the new file and follow the instructions:
 

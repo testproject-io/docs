@@ -8,7 +8,7 @@ description: >-
 
 Users with realme 2c needs to scroll down in the developer options and find the "Disable Permission Monitoring".
 
-![](<../../.gitbook/assets/image (534) (1).png>)
+![](<../../.gitbook/assets/image (534) (1) (1).png>)
 
 And enable it, and you are good to go, you can start recording.
 

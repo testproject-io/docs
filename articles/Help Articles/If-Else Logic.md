@@ -84,7 +84,7 @@ In the advanced options, we will add the condition
 
 And now the step will show the 'if' symbol:
 
-![](<../../.gitbook/assets/image (478) (1).png>)
+![](<../../.gitbook/assets/image (478) (1) (1).png>)
 
 To launch Flow B (Subtest B) we will check the opposite condition of the previous step, so we will check if it NOT equal to 3:
 

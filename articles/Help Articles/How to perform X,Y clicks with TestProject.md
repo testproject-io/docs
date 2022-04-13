@@ -27,7 +27,7 @@ e.target.title = "X is "+a+" and Y is "+b;
 
 it should look like this:
 
-![](<../../.gitbook/assets/image (534).png>)
+![](<../../.gitbook/assets/image (534) (1).png>)
 
 We can either use the new tab name or the tooltip we have added.
 

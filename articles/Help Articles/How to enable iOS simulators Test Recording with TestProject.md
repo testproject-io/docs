@@ -26,6 +26,6 @@ Choose your local agent and click on Devices.
 
 For this moment you can simply follow the new test creation flow in TestProject and select one of the simulators as you do for physical devices to start recording your automated tests. after you create a simulator just search your application from the installed application list:
 
-![](<../../.gitbook/assets/image (539).png>)
+![](<../../.gitbook/assets/image (539) (1).png>)
 
 **Important Clarification** - for start recording tests on iOS simulators you don't need to own apple developer account or create a provisioning profile as you required for physical devices .

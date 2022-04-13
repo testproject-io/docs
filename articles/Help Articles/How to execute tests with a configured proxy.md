@@ -24,7 +24,7 @@ Next, after we create the Job, we will drag all the tests we wish to execute ins
 
 Now we will set the Custom Capabilities:
 
-![](<../../.gitbook/assets/image (506).png>)
+![](<../../.gitbook/assets/image (506) (1).png>)
 
 We will add the following to the capabilities:
 
