@@ -22,11 +22,11 @@ _**Settings > Battery > High background power consumption**_\
 Then you can allow or disallow apps to run in the background even though they consume a lot of power.\
 
 
-![](https://downloads.intercomcdn.com/i/o/194458616/1bc4a0034a17fd3e34ba00ef/5141d50f5b85193c2a7eaf638d44945a.gif)
+![](../../.gitbook/assets/5141d50f5b85193c2a7eaf638d44945a.gif)
 
 For the _**below**_ _**Funtouch OS 3.0 version**_, go to:\
 **i Manager > Power manager > Excessive background battery usage**\
 Then you can allow or disallow apps to run in the background even though they consume a lot of power.\
 
 
-![](https://downloads.intercomcdn.com/i/o/194458657/cc42c2518b89f4b456ee1f1b/3938cdee59dc10203d1b6e6381507192.gif)
+![](../../.gitbook/assets/3938cdee59dc10203d1b6e6381507192.gif)
