@@ -31,4 +31,4 @@ Afterward, attempt to mirror your device again.
 3\. **(Optional)** In case the above option did not resolve the issue, select **HDR10** and try again:\
 
 
-![](<../../.gitbook/assets/image (454).png>)
+![](<../../.gitbook/assets/image (454) (1).png>)

@@ -14,7 +14,7 @@ You can see and manage all the parameters for a test by clicking on the test in 
 
 This will open the parameters panel for you where you can view, edit, add or remove parameters for the test. Parameters can be created that are **only** for the particular test you are working on (Test Parameters), or they can be created at the project level so that you can use the same parameter in **multiple** tests (Project Parameters). You can add a new parameter with the plus button at the bottom of the panel.
 
-![Create new Parameter](<../../.gitbook/assets/image (454) (1) (1) (1).png>)
+![Create new Parameter](<../../.gitbook/assets/image (454) (1) (1) (1) (1).png>)
 
 Fill in the name, description, value, secret, and type for the parameter and click on the Save button to add it to your test.
 

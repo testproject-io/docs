@@ -22,4 +22,4 @@ here is an example of setting up custom attributes on YouTube:
 
 **- as you can see, the recorder has created an Xpath locator based on the class attribute as its first priority.**
 
-![](<../../.gitbook/assets/image (538).png>)
+![](<../../.gitbook/assets/image (538) (1).png>)

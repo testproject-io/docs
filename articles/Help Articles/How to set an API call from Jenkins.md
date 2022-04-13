@@ -61,7 +61,7 @@ description: >-
 
 6\. Scroll down to **ProjectParameters** and select the **Create New Project Parameter**,
 
-![](<../../.gitbook/assets/image (454) (1).png>)
+![](<../../.gitbook/assets/image (454) (1) (1).png>)
 
 We can see the request method. In this case it will be POST.
 
