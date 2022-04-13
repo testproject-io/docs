@@ -4,9 +4,8 @@ The TestProject Element Explorer can be used to view and examine the structure o
 
 You can access the element explorer when using the Smart Test Recorder, by clicking on the **Element Explorer** tab near the top of recorder.
 
-![Element Explorer](../../.gitbook/assets/image%20%28217%29.png)
+![Element Explorer](../../.gitbook/assets/chrome\_VKAjk9fLsE.png)
 
-This will open the explorer with a tree view of the application layout that you can drill into and interact with as you study the layout and structure of the application you are testing. As you mouse over the page, the element explorer will automatically scroll to and highlight the element, helping you to understand and visualize the structure and layout of the page. 
+This will open the explorer with a tree view of the application layout that you can drill into and interact with as you study the layout and structure of the application you are testing. As you mouse over the page, the element explorer will automatically scroll to and highlight the element, helping you to understand and visualize the structure and layout of the page.&#x20;
 
-You can also click on any element in the explorer to bring up the options menu for it along with information about the element details. The explorer also lets you search for elements. This tool can be of great help when you are trying to understand complex pages, particularily those with things like IFrames and other complext page structures. 
-
+You can also click on any element in the explorer to bring up the options menu for it along with information about the element details. The explorer also lets you search for elements. This tool can be of great help when you are trying to understand complex pages, particularly those with things like IFrames and other complex page structures.&#x20;

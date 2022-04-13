@@ -2,13 +2,13 @@
 
 A test in TestProject is composed of a number of tests steps. These steps can be automatically added to the test when working with the test recorder, or they can be manually added using the **Add Step** plus icon at the bottom of the **steps** widget. In either case, the steps widget can be accessed by clicking on the test step of interest.
 
-This article will show you the many features that are available for test steps created with the Smart Recorder. If you are still using the legacy recorder, you can see details on those step features in the next section of the documentation [here](legacy-steps-widget.md).
+This article will show you the many features that are available for test steps created with the Smart Recorder. If you are still using the legacy recorder, you can see details on those step features in the next section of the documentation [here](broken-reference).
 
 ## Test Step Widget
 
 There are 5 main parts to a test step, as shown in the following image.
 
-![5 Parts of a Test Step](../../.gitbook/assets/image%20%28172%29.png)
+![5 Parts of a Test Step](<../../.gitbook/assets/image (172).png>)
 
 ## Comments
 
@@ -22,21 +22,21 @@ The second part of a test step is the action that the step will perform. This ca
 
 Next up is the element section. This is where you define what element is being acted on. When using the smart recorder, the element locator will be automatically filled in. If you are creating a step manually, you can click on this field to search for the element. For example, if you wanted to find the password element on a page, you could type`pass`into the search bar, and it would find any elements that matched that search. Doing this search on the [TestProject example page](https://example.testproject.io/web/) will give you a result like this:
 
-![Password Elements](../../.gitbook/assets/image%20%28212%29.png)
+![Password Elements](<../../.gitbook/assets/image (212).png>)
 
 You can also create your own element if you need to use a custom selector that does not show up in the list. Additionally, you can edit elements by using the Edit Element icon.
 
-![Edit Element](../../.gitbook/assets/image%20%28173%29.png)
+![Edit Element](<../../.gitbook/assets/image (173).png>)
 
 This allows you to see which locators the Smart Recorder will use to find the element. The first one in the list is the one it will use by default. But if a test is running and it can't find the element using that locator it will continue on down through that list until it finds a locator that works. You can also add your own locators in here as well if you know of one that will be stable. An example of what this looks like for the password field on the TestProject example page is shown in the following image:
 
-![Element Selectors for Password Field](../../.gitbook/assets/image%20%28157%29.png)
+![Element Selectors for Password Field](<../../.gitbook/assets/image (157).png>)
 
 You can see that it will first try to use the `CSS Selector,` but if that doesn't work it will look at a few different `XPATHs` to hopefully find the element for you.
 
 One other item worth noticing about the element field on a test step is that you can click on the **Find Element** magnifying glass and TestProject will highlight where on the page the element is.
 
-![Find Element on Page](../../.gitbook/assets/image%20%28193%29%20%282%29%20%282%29.png)
+![Find Element on Page](<../../.gitbook/assets/image (193) (2) (2).png>)
 
 This is very helpful to check that the locator is working correctly and to see what exactly is going on.
 
@@ -58,7 +58,7 @@ TestProject also provides a **Recovery Test** option. This option can be used to
 
 * **Continue Test:** After the recovery test is executed, the current test will continue execution from the following step.
 * **Fail Test:** After the recovery test is executed, the execution of the current test will stop with a "Fail" result.
-* **Repeat Step:** After the recovery test is executed, the current step will be executed once again. If it passes the second time, the current test execution will continue. If the step will fail the second time \(after the recovery\), it will not be repeated and the current test will fail.
+* **Repeat Step:** After the recovery test is executed, the current step will be executed once again. If it passes the second time, the current test execution will continue. If the step will fail the second time (after the recovery), it will not be repeated and the current test will fail.
 
 ### Take Screenshot
 
@@ -74,13 +74,13 @@ By default, there is no pause between running test steps, but occasionally you w
 
 ### Adaptive Wait
 
-TestProject uses adaptive wait technology to ensure that you don't spend any extra time waiting for test steps to finish. Many other UI testing frameworks will require guessing at how long of a wait you should put in so that your test step doesn't fail unnecessarily, but also does not take too long to run. TestProject takes care of this with its adaptive wait technology. You can specify a max amount of time that it will wait \(by default 15 seconds\) but if a test step finishes in less time, TestProject will move on to the next step.
+TestProject uses adaptive wait technology to ensure that you don't spend any extra time waiting for test steps to finish. Many other UI testing frameworks will require guessing at how long of a wait you should put in so that your test step doesn't fail unnecessarily, but also does not take too long to run. TestProject takes care of this with its adaptive wait technology. You can specify a max amount of time that it will wait (by default 15 seconds) but if a test step finishes in less time, TestProject will move on to the next step.
 
 If you do have a test step that you know is going to be quite slow, you can set the max wait time to a higher value, by turning off the **Use Test Default** option.
 
 ### Context
 
-Step context defines where the interaction with your web application happens. It can be the default DOM or an iFrame. The context is defined by a set of locators \(like for elements\) and when the step is executed, these locators will be taken into consideration before proceeding with the actual step action. In most cases, these are generated automatically while you record and there is no need to worry about it, but if necessary, they can be manually edited. In case there is no context defined on a step, the interaction will happen on the highest possible level of the tested DOM.
+Step context defines where the interaction with your web application happens. It can be the default DOM or an iFrame. The context is defined by a set of locators (like for elements) and when the step is executed, these locators will be taken into consideration before proceeding with the actual step action. In most cases, these are generated automatically while you record and there is no need to worry about it, but if necessary, they can be manually edited. In case there is no context defined on a step, the interaction will happen on the highest possible level of the tested DOM.
 
 ### Repeat
 
@@ -89,4 +89,3 @@ There may be times when you want to repeat a step a few times. Perhaps you have 
 ### Invert Step Result
 
 Negative testing is an important tool in any tester's toolbox. You may want to create test steps that you expect to 'fail' which would be normal behavior of the application. In this case, you can enable the **Invert Step Result** option so that a failure on that step will be reported as a passing step.
-

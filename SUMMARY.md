@@ -40,7 +40,6 @@
     * [iOS Simulators](using-the-smart-test-recorder/mobile-testing/getting-started-with-ios-testing/ios-simulators.md)
 * [Create a Test Step](using-the-smart-test-recorder/create-a-test-step/README.md)
   * [Steps Widget](using-the-smart-test-recorder/create-a-test-step/steps-widget.md)
-  * [Legacy Steps Widget](using-the-smart-test-recorder/create-a-test-step/legacy-steps-widget.md)
   * [Using Parameters in Test Steps](using-the-smart-test-recorder/create-a-test-step/using-parameters-in-test-steps.md)
   * [Running a Test Step Conditionally](using-the-smart-test-recorder/create-a-test-step/running-a-test-step-conditionally.md)
 * [Finding and Using Elements](using-the-smart-test-recorder/finding-and-using-elements/README.md)
