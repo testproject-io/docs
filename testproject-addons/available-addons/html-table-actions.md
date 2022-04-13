@@ -29,7 +29,7 @@ Input parameters:
   Both of them are zero based (meaning it starts from 0).
 * **LinkText**  - The text of the link to be pressed inside the table cell.\
   \
-  &#x20;**** ![](../../.gitbook/assets/html-table-actions-addon-1.png) **** \
+  &#x20;**** <img src="../../.gitbook/assets/html-table-actions-addon-1.png" alt="" data-size="original"> **** \
 
 
 **2. Click on given cell**: This action presses on a given table cell.\
@@ -40,7 +40,7 @@ Input parameters:
 * **Column** – The column where the table cell is located.\
   Both of them are zero based (meaning it starts from 0).\
   \
-  &#x20;**** ![](../../.gitbook/assets/html-table-actions-addon-2.png) \
+  &#x20;**** <img src="../../.gitbook/assets/html-table-actions-addon-2.png" alt="" data-size="original"> \
 
 
 **3. Create CSV file from table**: This action creates a CSV file from the table.
@@ -50,7 +50,7 @@ Input parameters (Both Required):
 * **NameOfFile** – The name that will be given to the CSV file.
 * **LocalPathToFile** – The path where the file will be saved.\
   \
-  &#x20;![](../../.gitbook/assets/html-table-actions-addon-4.png) \
+  &#x20;<img src="../../.gitbook/assets/html-table-actions-addon-4.png" alt="" data-size="original"> \
   \
   Note: Headers will be the first row of the table.\
   For example, this row in image below will be the headers in the CSV file:

@@ -6,7 +6,7 @@ description: How to log in to your Gmail account if you're being blocked from th
 
 If you're being blocked from logging into your Gmail account with the below error:​
 
-![](<../../.gitbook/assets/image (541) (1).png>)
+![](<../../.gitbook/assets/image (541) (1) (1).png>)
 
 You need to log into any other website that uses the "Log in with Google" feature.\
 Open a different website you are familiar with that allows logging into it or sign up with Google, such as:\

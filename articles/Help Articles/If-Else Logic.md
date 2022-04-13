@@ -42,7 +42,7 @@ Save the text into a Parameter.
 
 Next, lets create a step that will type text to a TextArea only if the text is Equal to "TestProject"
 
-![](<../../.gitbook/assets/image (465) (1).png>)
+![](<../../.gitbook/assets/image (465) (1) (1).png>)
 
 And add the condition in the step:
 

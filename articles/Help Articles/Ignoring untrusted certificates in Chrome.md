@@ -35,7 +35,7 @@ We will add the following to the capabilities:
 
 ```
 
-![](<../../.gitbook/assets/image (465).png>)
+![](<../../.gitbook/assets/image (465) (1).png>)
 
 And that is it, once we run the Job, these capabilities will be set, and the tests will run without the warnings.
 

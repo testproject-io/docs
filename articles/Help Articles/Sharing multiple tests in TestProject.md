@@ -36,7 +36,7 @@ To share multiple tests we can simply follow these steps:
 
 a) Duplicate a project in our account.
 
-![](<../../.gitbook/assets/image (479).png>)
+![](<../../.gitbook/assets/image (479) (1).png>)
 
 b) Remove or keep the tests we want to share.
 

@@ -24,7 +24,7 @@ Admin or sufficient permissions to manage Webhooks.
 
 1\) Create a text channel (or use '#general')
 
-![](<../../.gitbook/assets/image (558).png>)
+![](<../../.gitbook/assets/image (558) (1).png>)
 
 2\) Click on channel settings (Edit Channel)
 

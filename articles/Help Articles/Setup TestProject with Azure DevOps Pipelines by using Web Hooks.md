@@ -35,7 +35,7 @@ The URL should be:\
 You can get your project and job ID's from the TestProject website.\
 This is how you get your project ID:
 
-![](<../../.gitbook/assets/image (479) (1).png>)
+![](<../../.gitbook/assets/image (479) (1) (1).png>)
 
 And this is how you get your job ID from inside that project:
 

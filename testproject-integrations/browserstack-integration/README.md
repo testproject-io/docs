@@ -33,11 +33,11 @@ In order to setup the integration, you will have to obtain a BrowserStack Access
 Only account administrators can set up BrowserStack integration.
 {% endhint %}
 
-After you have the BrowserStack **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle ![](../../.gitbook/assets/8hvmgc32do.png) (3) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
+After you have the BrowserStack **User Name** and **Access Key**, you can proceed with setting up the integration. Go to the [**Integrations** ](https://app.testproject.io/#/integrations)(1) section of your TestProject account and click on the **Cloud Execution** (2) option on the left hand side menu. Click on the toggle <img src="../../.gitbook/assets/8hvmgc32do.png" alt="" data-size="line"> (3) near the BrowserStack logo to enable the integration. You will now see the BrowserStack integration settings window, just paste your **Username** (4) and **Access Key** (5) in the relevant places and click **Save** (6).
 
 ![Configuring BrowserStack access information in TestProject](../../.gitbook/assets/nufiuwudwg.png)
 
-Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active ![](../../.gitbook/assets/chrome\_a2uisafeu5.png) That's it!
+Once saved, we will validate that the credentials are correct and close the integration settings window. After the window closes you should see that the integration is active <img src="../../.gitbook/assets/chrome_a2uisafeu5.png" alt="" data-size="line"> That's it!
 
 {% hint style="info" %}
 Once you set up the integration you cannot retrieve your access key from TestProject, as it is being stored in an encrypted state. You can always click on the cog icon to change your credentials.
