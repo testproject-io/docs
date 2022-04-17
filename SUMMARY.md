@@ -226,7 +226,7 @@
   * [Sharing multiple tests in TestProject](<articles/Help Articles/Sharing multiple tests in TestProject.md>)
   * [Microsoft Teams Webhook integration](<articles/Help Articles/Microsoft Teams Webhook integration.md>)
   * [Automation Flakiness - quick fixes](<articles/Help Articles/Automation Flakiness - quick fixes.md>)
-  * [Managing IT restrictions using TestProject CLI (command-line interface)](<articles/Help Articles/Managing IT restrictions using TestProject CLI (command-line interface).md>)
+  * [Managing IT restrictions](<articles/Help Articles/Managing IT restrictions using TestProject CLI (command-line interface).md>)
   * [How to perform X,Y clicks with TestProject](<articles/Help Articles/How to perform X,Y clicks with TestProject.md>)
   * [Download HAR file](<articles/Help Articles/Download HAR file.md>)
   * [How to execute tests with a configured proxy](<articles/Help Articles/How to execute tests with a configured proxy.md>)

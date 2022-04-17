@@ -1,8 +1,11 @@
 ---
-description: Blocked executables, CLI, starting the agent with a custom data folder
+description: >-
+  Blocked executables, CLI, starting the agent with a custom data folder, VPN
+  settings, firewall, network issues, proxy issues, using TestProject CLI
+  (command-line interface)
 ---
 
-# Managing IT restrictions using TestProject CLI (command-line interface)
+# Managing IT restrictions
 
 ### **TestProject Agent and Organization Security** <a href="#h_d572b3a01f" id="h_d572b3a01f"></a>
 
@@ -38,7 +41,8 @@ If you are still getting errors and blockage notification for Java or other proc
 
 When your organization prevents communication outside of the internal network, and your attempts to register an Agent fail, you will need to contact your IT department and allow:
 
-* Communication with `*.testproject.io`
+* Communication with `*.testproject.io`&#x20;
+* Communication with   `*.tpagent.io`
 * Make sure the user account that runs the TestProject Agent has permissions for binding to ports `8585` and `8443` on localhost/127.0.0.1
 
 If these ports are blocked for some reason you can change the default ports using the CLI as explained here: [https://docs.testproject.io/testproject-agents/testproject-agent-cli](https://docs.testproject.io/testproject-agents/testproject-agent-cli#start) in the `Start` command description, and the _external connectivity_ section using the `--rest-address` option.
