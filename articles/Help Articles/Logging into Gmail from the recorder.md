@@ -10,7 +10,7 @@ If you're being blocked from logging into your Gmail account with the below erro
 
 You need to log into any other website that uses the "Log in with Google" feature.\
 Open a different website you are familiar with that allows logging into it or sign up with Google, such as:\
-[https://stackoverflow.com/](https://stackoverflow.com)
+[https://stackoverflow.com/](https://stackoverflow.com/)
 
 And sign up or log in with the Gmail account you'd like to access.
 

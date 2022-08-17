@@ -273,7 +273,7 @@ TestProject SDK provides annotations to describe the test and its parameters:
 
 1. The _**Test**_ annotation is used to better describe the Test and define how it will appear later in TestProject UI:
    * **name** - The name of the test (if omitted, the name of the class will be used).
-   * **description** - A description of the test which is shown in various places in TestProject platform (e.g. reporting dashboard). The description may contain placeholders {{propertyName}} that will be changed dynamically according to test parameters.
+   * **description** - A description of the test which is shown in various places in TestProject platform (e.g. reporting dashboard). The description may contain placeholders \{{propertyName\}} that will be changed dynamically according to test parameters.
    * **version** - A version string which is used for future reference.
 2. The _**Parameter**_ annotation is used to better describe your Test inputs and outputs, in the example above there are two inputs - _url_ and _expectedTitle_.
    * **description** - The description of the parameter
@@ -397,6 +397,6 @@ See build.gradle or pom.xml files in code examples for details on how to include
 
 For any further inquiries, please use TestProject support channels:
 
-* [Forum](https://forum.testproject.io)
+* [Forum](https://forum.testproject.io/)
 * In-app Chat
 * Email at support@testproject.io

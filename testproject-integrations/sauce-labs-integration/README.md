@@ -6,7 +6,7 @@ description: Run TestProject Tests & Jobs on Sauce Labs Cloud
 
 ## What is Sauce Labs?
 
-****[**Sauce Labs**](https://saucelabs.com) allows users to run tests in the cloud on 1,000's of different browsers, operating systems and device combinations, providing a comprehensive test infrastructure for automated and manual testing of web and mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
+****[**Sauce Labs**](https://saucelabs.com/) allows users to run tests in the cloud on 1,000's of different browsers, operating systems and device combinations, providing a comprehensive test infrastructure for automated and manual testing of web and mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
 
 ## Why do I need Sauce Labs Integration?
 
@@ -17,7 +17,7 @@ Integrating TestProject with Sauce Labs allows you and your teammates to run you
 ### Requirements
 
 * [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free plan [here](https://app.testproject.io/signup/).
-* [Sauce Labs](https://saucelabs.com) account - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here ](https://saucelabs.com/sign-up)to create a free trial.
+* [Sauce Labs](https://saucelabs.com/) account - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here ](https://saucelabs.com/sign-up)to create a free trial.
 
 ### Get Sauce Labs Username & Access Key
 

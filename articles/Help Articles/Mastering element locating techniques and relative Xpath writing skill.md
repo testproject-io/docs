@@ -12,7 +12,7 @@ In this practical guide we will not go thru the very beginning or explaining wha
 
 Just picking some subject element to have a closer look at the parts it's built from.
 
-I will use __ [_https://material.angular.io/_](https://material.angular.io) __ page as i think it's pretty good for the examples of difficult to find elements.
+I will use __ [_https://material.angular.io/_](https://material.angular.io/) __ page as i think it's pretty good for the examples of difficult to find elements.
 
 We will need Chrome Developer Tools (or similar in another browser, but i will use this one)
 

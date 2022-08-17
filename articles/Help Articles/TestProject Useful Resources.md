@@ -1,8 +1,8 @@
 # TestProject Useful Resources
 
 1. **TestProject Blog Tutorials**: [https://blog.testproject.io/category/testproject/](https://blog.testproject.io/category/testproject/)
-2. **TestProject Forum**: [https://forum.testproject.io/](https://forum.testproject.io)
-3. **TestProject Documentation**: [https://docs.testproject.io/](https://docs.testproject.io)
+2. **TestProject Forum**: [https://forum.testproject.io/](https://forum.testproject.io/)
+3. **TestProject Documentation**: [https://docs.testproject.io/](https://docs.testproject.io/)
 4. **Getting Started with TestProject with 5-mins Videos**: [https://www.youtube.com/playlist?list=PL5qXkPB0T6VeyY1nGBf7hU8G2Zx3LrDwg](https://www.youtube.com/playlist?list=PL5qXkPB0T6VeyY1nGBf7hU8G2Zx3LrDwg)
 5. **Online TestProject course**: [https://www.youtube.com/playlist?list=PL6tu16kXT9PrUJ842VaGcSNqIN7THFUlN](https://www.youtube.com/playlist?list=PL6tu16kXT9PrUJ842VaGcSNqIN7THFUlN)&#x20;
 6. **Tutorial for Creating Coded Web Tests and Addons using TestProject's Java SDK** [https://www.petrikainulainen.net/testproject-tutorial/](https://www.petrikainulainen.net/testproject-tutorial/)

@@ -10,7 +10,7 @@ Let's look at an example of how we might use it.
 
 ## Example Setup
 
-For this example, we will use the TestProject landing page (testproject.io). If you have not yet used TestProject, check out the documentation on [creating your first test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) and setting up a project. Once you have created a project, start creating a test with [https://testproject.io/](https://testproject.io) as the application url.  Open that test in the test recorder and it should take you to that page.
+For this example, we will use the TestProject landing page (testproject.io). If you have not yet used TestProject, check out the documentation on [creating your first test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) and setting up a project. Once you have created a project, start creating a test with [https://testproject.io/](https://testproject.io/) as the application url.  Open that test in the test recorder and it should take you to that page.
 
 ## Scrolling to a Given Element
 

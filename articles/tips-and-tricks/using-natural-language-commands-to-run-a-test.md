@@ -6,7 +6,7 @@ The [Natural Language Processing Engine Addon](../../testproject-addons/availabl
 
 ## Getting Started
 
-If you have not yet created a test, you can follow the instructions in on [creating a web test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) to get setup. For this example, we will use the TestProject forum login page. We won't actually log into it with the test, but we will look at how you can fill out the login form with and without using the natural language processing engine. Once you have a test setup that is pointing to [https://forum.testproject.io/](https://forum.testproject.io) start the test recorder and we can get going.
+If you have not yet created a test, you can follow the instructions in on [creating a web test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) to get setup. For this example, we will use the TestProject forum login page. We won't actually log into it with the test, but we will look at how you can fill out the login form with and without using the natural language processing engine. Once you have a test setup that is pointing to [https://forum.testproject.io/](https://forum.testproject.io/) start the test recorder and we can get going.
 
 ## Recording the Steps Directly
 
@@ -26,7 +26,7 @@ This is a nice enough test, but let's a take a look at how we could do it with t
 
 ## Using the NLP Engine
 
-Close the test recorder and create a new web test that also points to [https://forum.testproject.io/](https://forum.testproject.io) and start the test recorder for that test.
+Close the test recorder and create a new web test that also points to [https://forum.testproject.io/](https://forum.testproject.io/) and start the test recorder for that test.
 
 This time instead of just clicking on the elements we are going to add test steps. Use the plus button at the bottom of the test steps page to create a new test step. Change the Type to Action and click the check mark to apply the changes.
 

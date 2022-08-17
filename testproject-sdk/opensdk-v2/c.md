@@ -8,7 +8,7 @@ description: C# OpenSDK - Step-By-Step Test Create, Package and Upload Tutorial
 
 To get started, you need to complete the following prerequisites checklist:
 
-* Login to your account at [https://app.testproject.io/](https://app.testproject.io) or [register](https://app.testproject.io/signup/) a new one.
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register](https://app.testproject.io/signup/) a new one.
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account.
 * Get a development token from [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
@@ -27,7 +27,7 @@ Following this tutorial you will know how to:
 Let's start by creating our first project.
 
 In this tutorial we will use Visual Studio but you can use Visual Studio Code if you prefer. \
-You can download both [here](https://visualstudio.microsoft.com).
+You can download both [here](https://visualstudio.microsoft.com/).
 
 First, open the _File_ menu and choose _New -> Project..._:
 

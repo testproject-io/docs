@@ -8,7 +8,7 @@ In order to better understand the power of the RESTful API addon let's take a lo
 
 ### Test Setup
 
-If you have not yet used TestProject, check out the documentation on [creating your first test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) and setting up a project. Once you have a test in place using the [https://app.testproject.io/](https://app.testproject.io) as the ApplicationURL, you can start recording.  In this example we are going to look at creating and deleting test parameters.
+If you have not yet used TestProject, check out the documentation on [creating your first test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) and setting up a project. Once you have a test in place using the [https://app.testproject.io/](https://app.testproject.io/) as the ApplicationURL, you can start recording.  In this example we are going to look at creating and deleting test parameters.
 
 ### UI Test Steps
 

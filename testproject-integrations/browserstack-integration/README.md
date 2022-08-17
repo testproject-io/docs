@@ -6,7 +6,7 @@ description: Run TestProject Tests & Jobs on BrowserStack Cloud
 
 ## What is BrowserStack?
 
-****[**BrowserStack** ](https://www.browserstack.com)is a cloud web and mobile testing platform that enables you to test your websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
+****[**BrowserStack** ](https://www.browserstack.com/)is a cloud web and mobile testing platform that enables you to test your websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
 
 Users can choose from more than 1,200 on-demand real mobile devices, browsers and operating systems and rely on a secure, stable and scalable infrastructure to support thousands of concurrent manual and automated tests. By reducing the time, cost and maintenance overhead associated with testing, **BrowserStack** helps teams keep focus on what matters most - building better products and services.
 
@@ -19,7 +19,7 @@ Integrating TestProject with BrowserStack allows you and your teammates to run y
 ### Requirements
 
 * [TestProject](https://testproject.io) account - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free plan [here](https://app.testproject.io/signup/).
-* [**BrowserStack**](https://www.browserstack.com) account - To utilize BrowserStack cloud you need an account. If you don't already have one, just visit [here](https://www.browserstack.com/users/sign\_up) to create a free trial.
+* [**BrowserStack**](https://www.browserstack.com/) account - To utilize BrowserStack cloud you need an account. If you don't already have one, just visit [here](https://www.browserstack.com/users/sign\_up) to create a free trial.
 
 ### Get BrowserStack Username & Access Key
 

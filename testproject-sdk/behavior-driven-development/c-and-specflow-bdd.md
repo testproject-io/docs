@@ -19,7 +19,7 @@ Following this tutorial you will know how to:
 Let's start by creating our first project.
 
 In this tutorial we will use Visual Studio but you can use Visual Studio Code if you prefer. \
-You can download both [here](https://visualstudio.microsoft.com).
+You can download both [here](https://visualstudio.microsoft.com/).
 
 Before we create our project, we need to install SpecFlow extension for Visual Studio:
 

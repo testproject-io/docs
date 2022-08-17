@@ -10,7 +10,7 @@ This article covers getting started with creating addons using the Java SDK.
 
 To get started, you need to complete the following prerequisites checklist:
 
-* Login to your account at [https://app.testproject.io/](https://app.testproject.io) or [register](https://app.testproject.io/signup/) a new one.
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register](https://app.testproject.io/signup/) a new one.
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) it with your Account.
 * Download [Java SDK for Addons](https://app.testproject.io/#/integrations/develop-addon)
@@ -53,7 +53,7 @@ In order to get started with developing and Addon, you will need a manifest file
 
 ### Generating an Addon Manifest
 
-In order to generate a manifest file, you will need to login to the [TestProject App](https://app.testproject.io) and then go the addons tab. Click on the Create Addon button:
+In order to generate a manifest file, you will need to login to the [TestProject App](https://app.testproject.io/) and then go the addons tab. Click on the Create Addon button:
 
 ![Create Addon Button](<../../.gitbook/assets/image (413).png>)
 

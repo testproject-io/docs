@@ -282,7 +282,7 @@
   * [The Agent failed to detect the installed browsers](<articles/Help Articles/The Agent failed to detect the installed browsers.md>)
   * [Can I install an agent on 32-bit Windows machine?](<articles/Help Articles/Can I install an agent on 32-bit Windows machine.md>)
   * [Why do I get this message: "SDK version is incompatible with the agent version"](<articles/Help Articles/Why do I get this message SDK version is incompatible with the agent version.md>)
-  * [How to add step pause or implicit waits to my steps (Smart Waits)](<articles/Help Articles/How to add step pause or implicit waits to my steps (Smart Waits).md>)
+  * [How to add step pause or implicit and explicit waits to my steps (Smart Waits)](<articles/Help Articles/How to add step pause or implicit waits to my steps (Smart Waits).md>)
   * [Can't add a team member to my account because the email is already in use](<articles/Help Articles/Can't add a team member to my account because the email is already in use.md>)
   * [How to create dynamic elements in TestProject](<articles/Help Articles/How to create dynamic elements in TestProject.md>)
   * [How to change the headless download path](<articles/Help Articles/how-to-change-the-headless-download-path.md>)

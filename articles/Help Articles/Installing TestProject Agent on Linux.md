@@ -14,13 +14,13 @@ If you are running Debian/Ubuntu/Fedora/openSUSE then this is how to install the
 3\. After downloading the agent, you will see the .sh script in the directory you chosen.\
 4\. Open the terminal and navigate to the folder.\
 5\. Change the permissions of the script to executable using "chmod +x \<Agent Name>"\
-6\. Run the script using "./<[Agent-script-name.sh>".](http://agent-script-name.sh%3E%22/)\
+6\. Run the script using "./<[Agent-script-name.sh>".](broken-reference)\
 **IMPORTANT: DO NOT execute the script under root/sudo as this may cause issues with ChromeDriver.**\
 7\. After the installation the agent should start automatically, if not you can navigate to the directory of the installation and run the agent from there like so:
 
 ![](<../../.gitbook/assets/image (520).png>)
 
-8\. Go to [testproject.io](http://testproject.io) and login to your account.\
+8\. Go to [testproject.io](http://testproject.io/) and login to your account.\
 9\. Go to Agents tab and click on "Register Agent"\
 
 

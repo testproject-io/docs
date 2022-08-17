@@ -6,7 +6,7 @@ The [TestProject plugin for Jenkins](https://plugins.jenkins.io/testproject) pro
 
 In order to use this plugin, you **must** have:
 
-1. An active **TestProject account** which can be created for free at [https://testproject.io](https://testproject.io).
+1. An active **TestProject account** which can be created for free at [https://testproject.io](https://testproject.io/).
 2. At least one registered and running [**TestProject Agent**](https://docs.testproject.io/testproject-agents/what-is-a-testproject-agent).
 3. An **API key** as explained in [getting started with using the TestProject API](https://docs.testproject.io/api/getting-started-with-using-the-testproject-api).
 

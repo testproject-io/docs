@@ -11,7 +11,7 @@ Some websites (especially ones under development) can be seen by google chrome a
 
 ![](<../../.gitbook/assets/image (448) (1).png>)
 
-In this case, you might not be able to record or execute tests on the platform! in this article, i will show you how to authorize the websites on your machine so you can carry on with your tests. I will use [https://untrusted-root.badssl.com/](https://untrusted-root.badssl.com) as an example.\
+In this case, you might not be able to record or execute tests on the platform! in this article, i will show you how to authorize the websites on your machine so you can carry on with your tests. I will use [https://untrusted-root.badssl.com/](https://untrusted-root.badssl.com/) as an example.\
 
 
 Navigate to the website with untrusted certificate, and click on the "Not Secure" label next to the URL:

@@ -1,6 +1,7 @@
 ---
 description: Java OpenSDK
 ---
+
 # Java
 
 ## Getting Started
@@ -78,7 +79,7 @@ If you prefer to build with a gradle project, you can do that as well. As with u
 1. Go to File>New and select the **Other** option from the list.
 2. Type **Gradle** in the filter field and choose the **Gradle Project** option.
 3. Click **Next** and if you get the Welcome page, click **Next** again.
-4. Name your project and click **Finish** 
+4. Name your project and click **Finish**&#x20;
 
 Once you've done this, find the `build.gradle` file in your project and add the following into the dependencies section.
 
@@ -86,7 +87,7 @@ Once you've done this, find the `build.gradle` file in your project and add the 
 implementation 'io.testproject:java-sdk:1.2.3-RELEASE'
 ```
 
-Note that the Gradle addon usually comes installed with Eclipse. If you are using a different IDE you might need to install Gradle which you can do from [here](https://gradle.org). If Eclipse did not install it, you can go the Help>Ecliple Marketplace and search for **gradle** and install the Buildship Gradle Integration addon.
+Note that the Gradle addon usually comes installed with Eclipse. If you are using a different IDE you might need to install Gradle which you can do from [here](https://gradle.org/). If Eclipse did not install it, you can go the Help>Ecliple Marketplace and search for **gradle** and install the Buildship Gradle Integration addon.
 
 ## Creating Tests With the SDK
 
@@ -179,7 +180,7 @@ And there you have it! You have created and run a test with the TestProject SDK.
 
 By default the TestProject SDK reports all driver commands and their results to the TestProject Cloud. This allows you to see beautifully designed reports and statistics in the TestProject app dashboards.
 
-If you login to the [TestProject App](https://app.testproject.io) and mouse over the Reports menu item, you should see the SDK run that you just did listed there.
+If you login to the [TestProject App](https://app.testproject.io/) and mouse over the Reports menu item, you should see the SDK run that you just did listed there.
 
 ![SDK Run in Recent Reports](<../../../.gitbook/assets/image (389).png>)
 

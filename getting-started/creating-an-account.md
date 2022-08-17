@@ -6,7 +6,7 @@ description: Register and invite your team
 
 ## Registration
 
-In order to use TestProject, you will need to have an account. Creating an account is simple and **free**. In order to get started, go to the TestProject [main page](https://testproject.io) and click on the Free Sign Up button or sign up using your favorite social account. &#x20;
+In order to use TestProject, you will need to have an account. Creating an account is simple and **free**. In order to get started, go to the TestProject [main page](https://testproject.io/) and click on the Free Sign Up button or sign up using your favorite social account. &#x20;
 
 ![Signup For TestProject](<../.gitbook/assets/image (422).png>)
 

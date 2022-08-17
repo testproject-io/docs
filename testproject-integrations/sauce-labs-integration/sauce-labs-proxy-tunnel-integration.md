@@ -19,8 +19,8 @@ Sauce Connect Proxy is a built-in HTTP proxy server that opens a secure "tunnel"
 
 ### Requirements
 
-* [**TestProject**](https://testproject.io) **account** - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free account [here](https://app.testproject.io/signup/).
-* [**Sauce Labs**](https://saucelabs.com) **account** - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here](https://saucelabs.com/sign-up) to create a free trial.
+* [**TestProject**](https://testproject.io/) **account** - In order to enjoy all the features of the TestProject platform, you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free account [here](https://app.testproject.io/signup/).
+* [**Sauce Labs**](https://saucelabs.com/) **account** - To utilize Sauce Labs cloud you need an account. If you don't already have one, just visit [here](https://saucelabs.com/sign-up) to create a free trial.
 * Download **Sauce Connect Proxy.**
 * Open outbound **port 443** in your machine
 

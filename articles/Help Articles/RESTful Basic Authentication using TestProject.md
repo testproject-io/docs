@@ -15,7 +15,7 @@ In order to perform basic authentication you will need to fill in the **Headers*
 \
 **Authorization= Basic user:pass**
 
-You will need to convert the user:pass part of the field to base64 using an online converter such as [https://www.base64encode.org/](https://www.base64encode.org) or our Base64 Encoder-Decoder addon.
+You will need to convert the user:pass part of the field to base64 using an online converter such as [https://www.base64encode.org/](https://www.base64encode.org/) or our Base64 Encoder-Decoder addon.
 
 An example of conversion:\
 \

@@ -20,7 +20,7 @@ In order for BrowserStack to be able to test your in-house/non-public tests, and
 
 ### Requirements
 
-1. [**TestProject**](https://testproject.io) **account:** you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free account [here](https://app.testproject.io/signup/).
+1. [**TestProject**](https://testproject.io/) **account:** you will need an active TestProject account. If you don't already have one, you can [sign up](https://app.testproject.io/signup/) for a free account [here](https://app.testproject.io/signup/).
 2. **Connect BrowserStack with TestProject as** **explained** [here](https://docs.testproject.io/testproject-integrations/browserstack-integration#setting-up-browserstack-integration).
 
 To use BrowserStack with local resources you need to download **BrowserStackLocal** **binary**:

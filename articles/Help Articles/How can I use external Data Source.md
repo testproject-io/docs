@@ -8,7 +8,7 @@ Data-Driven Testing is when data is stored in a data source and then used as inp
 
 I will use the most popular website to demonstrate the following test case:
 
-1. enter to [https://www.google.com](https://www.google.com)
+1. enter to [https://www.google.com](https://www.google.com/)
 2. define search parameter that will be typed in the search box
 3. Click on the search button.
 

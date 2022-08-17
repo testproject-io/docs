@@ -8,7 +8,7 @@ description: Python OpenSDK
 
 To get started, you need to complete the following prerequisites checklist:
 
-* Login to your account at [https://app.testproject.io/](https://app.testproject.io) or [register a new one](https://app.testproject.io/signup/).
+* Login to your account at [https://app.testproject.io/](https://app.testproject.io/) or [register a new one](https://app.testproject.io/signup/).
 * [Download](https://app.testproject.io/#/download) and install an Agent for your operating system or pull a container from [Docker Hub](https://hub.docker.com/r/testproject/agent).
 * Run the Agent and [register it](https://docs.testproject.io/getting-started/installation-and-setup#register-the-agent) with your Account.
 * Get a development token from the [Integrations / SDK](https://app.testproject.io/#/integrations/sdk) page.
@@ -91,7 +91,7 @@ def test_create_a_chrome_driver_instance():
 
 ### TestProject Agent
 
-By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585). This value can be overridden by setting the `TP_AGENT_URL` environment variable to the correct Agent address.
+By default, drivers communicate with the local Agent listening on [http://localhost:8585](http://localhost:8585/). This value can be overridden by setting the `TP_AGENT_URL` environment variable to the correct Agent address.
 
 ### Remote (Cloud) Driver
 

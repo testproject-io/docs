@@ -6,7 +6,7 @@ The [Web Extensions Addon ](../../testproject-addons/available-addons/web-extens
 
 ## Getting Started
 
-If you have not yet created a test, you can follow the instructions in on [creating a web test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) to get setup. For this example, we will use the TestProject landing page since is has a nice responsive design. Once you have a test setup that is pointing to [https://testproject.io/](https://testproject.io) start the test recorder and we can get going
+If you have not yet created a test, you can follow the instructions in on [creating a web test](../../using-the-smart-test-recorder/web-testing/creating-a-web-test-using-the-testproject-recorder.md) to get setup. For this example, we will use the TestProject landing page since is has a nice responsive design. Once you have a test setup that is pointing to [https://testproject.io/](https://testproject.io/) start the test recorder and we can get going
 
 ## Resizing
 

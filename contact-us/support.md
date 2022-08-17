@@ -8,13 +8,13 @@ You can contact our support via any of the following channels:
 
 #### TestProject Live Chat available at:
 
-* [app.testproject.io](https://app.testproject.io)
-* [testproject.io](https://testproject.io)
-* [docs.testproject.io](https://docs.testproject.io)
+* [app.testproject.io](https://app.testproject.io/)
+* [testproject.io](https://testproject.io/)
+* [docs.testproject.io](https://docs.testproject.io/)
 
 #### TestProject Forum available at:
 
-* [forum.testproject.io](https://forum.testproject.io)
+* [forum.testproject.io](https://forum.testproject.io/)
 
 #### TestProject support mail:
 

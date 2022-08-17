@@ -6,7 +6,7 @@ description: Leverage TestProject Agents to run in Docker containers and setup v
 
 ## What is Docker?
 
-[Docker](https://www.docker.com) is the de-facto standard to build, run and share containerized apps from your desktop to the cloud. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+[Docker](https://www.docker.com/) is the de-facto standard to build, run and share containerized apps from your desktop to the cloud. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 ## Why do I need TestProject Agents inside Docker containers?
 
@@ -23,7 +23,7 @@ You can set up the agent in two ways:
 
 ### Requirements
 
-* All you need is a [TestProject](https://testproject.io) account, that's it! If you don't already have one, you can [sign up](https://app.testproject.io/signup/) and open your free account [here](https://app.testproject.io/signup/).
+* All you need is a [TestProject](https://testproject.io/) account, that's it! If you don't already have one, you can [sign up](https://app.testproject.io/signup/) and open your free account [here](https://app.testproject.io/signup/).
 
 The TestProject Agent docker container can be used in two distinct ways, as also described in our [DockerHub](https://hub.docker.com/r/testproject/agent) page:
 

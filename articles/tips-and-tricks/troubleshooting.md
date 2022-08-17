@@ -1,6 +1,6 @@
 # Troubleshooting
 
-If you get stuck on something, try some of suggestions below or feel free to [contact us](https://testproject.io/contact-us/) at any time.  You can always chat us directly from the TestProject app, or post a question on the [forum](https://forum.testproject.io).
+If you get stuck on something, try some of suggestions below or feel free to [contact us](https://testproject.io/contact-us/) at any time.  You can always chat us directly from the TestProject app, or post a question on the [forum](https://forum.testproject.io/).
 
 ## Agent won't register
 

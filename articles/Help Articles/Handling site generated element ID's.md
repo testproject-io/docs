@@ -16,7 +16,7 @@ For the next example we will use the following site:\
 \
 [https://www.worldsurfleague.com/\
 \
-](https://www.worldsurfleague.com)And validate the visibility of the following element on the page:\
+](https://www.worldsurfleague.com/)And validate the visibility of the following element on the page:\
 
 
 ![](<../../.gitbook/assets/image (531) (1).png>)
@@ -25,7 +25,7 @@ For the next example we will use the following site:\
 Interacting with the image normally through the recorder will use the current ID the image has on the page:\
 
 
-![](<../../.gitbook/assets/image (502).png>)
+![](<../../.gitbook/assets/image (502) (1).png>)
 
 \
 \

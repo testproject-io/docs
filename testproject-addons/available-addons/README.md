@@ -1,6 +1,6 @@
 # Available Addons
 
-There are many [Addons](https://addons.testproject.io) available in TestProject. Most of these Addons are straightforward to use, but if further information is needed, you can follow the links below to get more details on how each Addon works and why you might use it.
+There are many [Addons](https://addons.testproject.io/) available in TestProject. Most of these Addons are straightforward to use, but if further information is needed, you can follow the links below to get more details on how each Addon works and why you might use it.
 
 | Addons:                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------- |
