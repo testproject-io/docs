@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Register and Collaborate ](getting-started/creating-an-account.md)
+* [Collaborate](getting-started/creating-an-account.md)
 * [Installation and Setup](getting-started/installation-and-setup.md)
 * [Create Your First Test](getting-started/create-your-first-test.md)
 
